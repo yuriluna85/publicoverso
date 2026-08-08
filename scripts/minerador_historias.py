@@ -146,87 +146,117 @@ def gerar_id(url):
 
 # --- Verificacao de Deduplicacao ---
 def carregar_ids_existentes():
-    """Carrega os IDs e URLs ja registradas em noticias_curadoria.json."""
-    if not config.ARQUIVO_NOTICIAS.exists():
-        return set(), set()
-    with open(config.ARQUIVO_NOTICIAS, 'r', encoding='utf-8') as f:
-        noticias = json.load(f)
-    ids = {n.get('id') for n in noticias}
-    urls = {n.get('url_materia') for n in noticias if n.get('url_materia')}
+    """Carrega os IDs e URLs ja registradas em noticias_curadoria.json e historico_mineracao.json."""
+    ids = set()
+    urls = set()
+
+    # 1. noticias_curadoria.json
+    if config.ARQUIVO_NOTICIAS.exists():
+        try:
+            with open(config.ARQUIVO_NOTICIAS, 'r', encoding='utf-8') as f:
+                noticias = json.load(f)
+            for n in noticias:
+                if n.get('id'):
+                    ids.add(n.get('id'))
+                if n.get('url_materia'):
+                    urls.add(n.get('url_materia'))
+                if n.get('url_original'):
+                    urls.add(n.get('url_original'))
+        except Exception:
+            pass
+
+    # 2. historico_mineracao.json
+    if config.ARQUIVO_HISTORICO.exists():
+        try:
+            with open(config.ARQUIVO_HISTORICO, 'r', encoding='utf-8') as f:
+                historico = json.load(f)
+            for item in historico:
+                if item.get('id_mineracao'):
+                    ids.add(item.get('id_mineracao'))
+                if item.get('url'):
+                    urls.add(item.get('url'))
+        except Exception:
+            pass
+
     return ids, urls
 
 
-# --- Geracao de Rascunho .txt ---
+# --- Registro de Historico de Mineracao ---
+def registrar_historico_mineracao(id_mineracao, url, titulo, categoria):
+    """Registra a URL minerada em data/historico_mineracao.json."""
+    historico = []
+    if config.ARQUIVO_HISTORICO.exists():
+        try:
+            with open(config.ARQUIVO_HISTORICO, 'r', encoding='utf-8') as f:
+                historico = json.load(f)
+        except Exception:
+            historico = []
+
+    historico.append({
+        'id_mineracao': id_mineracao,
+        'url': url,
+        'titulo': titulo,
+        'categoria': categoria,
+        'data_mineracao': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    })
+
+    config.ARQUIVO_HISTORICO.parent.mkdir(parents=True, exist_ok=True)
+    with open(config.ARQUIVO_HISTORICO, 'w', encoding='utf-8') as f:
+        json.dump(historico, f, ensure_ascii=False, indent=2)
+
+
+# --- Geracao de Rascunho .txt em pre_curadoria/AAAA/MM/DD/ ---
 def gerar_rascunho_txt(resultado, categoria, conteudo_raspado):
-    """Gera um arquivo .txt de rascunho no padrao do pipeline build_materias.py."""
+    """Gera um arquivo .txt de rascunho em pre_curadoria/AAAA/MM/DD/slug.txt."""
     titulo = resultado.get('title', 'Titulo nao disponivel')
     resumo = resultado.get('snippet', '')
     fonte = resultado.get('source', 'Fonte desconhecida')
-    data = datetime.now().strftime('%d/%m/%Y')
+    agora = datetime.now()
+    data_str = agora.strftime('%d/%m/%Y')
     url_original = resultado.get('link', '')
+    id_mineracao = gerar_id(url_original)
+
+    # Diretorio pre_curadoria/AAAA/MM/DD
+    ano = agora.strftime('%Y')
+    mes = agora.strftime('%m')
+    dia = agora.strftime('%d')
+    diretorio_destino = config.DIRETORIO_PRE_CURADORIA / ano / mes / dia
+    diretorio_destino.mkdir(parents=True, exist_ok=True)
 
     # Gera slug para o nome do arquivo
     slug = re.sub(r'[^\w\s-]', '', titulo.lower())
     slug = re.sub(r'[\s_]+', '-', slug).strip('-')[:60]
-    nome_arquivo = f'_pendente_{slug}.txt'
-    caminho = config.DIRETORIO_RASCUNHOS / nome_arquivo
+    if not slug:
+        slug = id_mineracao
+
+    nome_arquivo = f'{slug}.txt'
+    caminho = diretorio_destino / nome_arquivo
+    if caminho.exists():
+        nome_arquivo = f'{slug}-{id_mineracao[:6]}.txt'
+        caminho = diretorio_destino / nome_arquivo
 
     # Corpo: usa raspagem se disponivel, senao usa o snippet
     corpo = conteudo_raspado if conteudo_raspado else resumo
     corpo += f'\n\nFonte original: {url_original}'
 
     conteudo = f'---\n'
+    conteudo += f'id_mineracao: {id_mineracao}\n'
     conteudo += f'titulo: {titulo}\n'
     conteudo += f'resumo: {resumo[:200]}\n'
     conteudo += f'autor: Curadoria Publicoverso\n'
     conteudo += f'categoria: {categoria}\n'
-    conteudo += f'data: {data}\n'
+    conteudo += f'data: {data_str}\n'
     conteudo += f'fonte: {fonte}\n'
     conteudo += f'status: Pendente\n'
+    conteudo += f'status_triagem: Pendente\n'
     conteudo += f'url_original: {url_original}\n'
     conteudo += f'---\n\n'
     conteudo += corpo
 
-    config.DIRETORIO_RASCUNHOS.mkdir(parents=True, exist_ok=True)
     with open(caminho, 'w', encoding='utf-8') as f:
         f.write(conteudo)
 
-    return caminho
-
-
-# --- Insercao no JSON como Pendente ---
-def inserir_no_json(resultado, categoria, url_original):
-    """Insere a noticia como entrada pendente em noticias_curadoria.json."""
-    titulo = resultado.get('title', '')
-    resumo = resultado.get('snippet', '')
-    fonte = resultado.get('source', 'Curadoria Publicoverso')
-    data = datetime.now().strftime('%d/%m/%Y')
-    novo_id = gerar_id(url_original)
-
-    nova_entrada = {
-        'id': novo_id,
-        'titulo': titulo,
-        'resumo': resumo,
-        'conteudo_completo': resumo,
-        'categoria': categoria,
-        'fonte': fonte,
-        'data': data,
-        'status': 'Pendente',
-        'destaque': False,
-        'url_materia': url_original,
-    }
-
-    noticias = []
-    if config.ARQUIVO_NOTICIAS.exists():
-        with open(config.ARQUIVO_NOTICIAS, 'r', encoding='utf-8') as f:
-            noticias = json.load(f)
-
-    noticias.insert(0, nova_entrada)
-
-    with open(config.ARQUIVO_NOTICIAS, 'w', encoding='utf-8') as f:
-        json.dump(noticias, f, ensure_ascii=False, indent=2)
-
-    return novo_id
+    return caminho, id_mineracao
 
 
 # --- Ponto de Entrada ---
@@ -249,7 +279,7 @@ def main():
         config.registrar_log('[INFO] Execute em modo de simulacao: a Serper API nao sera chamada.')
 
     ids_existentes, urls_existentes = carregar_ids_existentes()
-    config.registrar_log(f'Registros existentes no JSON: {len(ids_existentes)}')
+    config.registrar_log(f'Registros existentes no JSON / Historico: {len(ids_existentes)}')
 
     dorks = config.DORKS_HISTORIAS
     if args.categoria:
@@ -289,21 +319,23 @@ def main():
                 conteudo_raspado = raspar_conteudo(url)
                 time.sleep(config.PAUSA_ENTRE_REQUISICOES)
 
-            # Salva rascunho .txt
-            caminho_rascunho = gerar_rascunho_txt(res, categoria, conteudo_raspado)
-            config.registrar_log(f'  [RASCUNHO] {caminho_rascunho.name}')
+            # Salva rascunho .txt em pre_curadoria/AAAA/MM/DD/slug.txt
+            caminho_rascunho, id_mineracao = gerar_rascunho_txt(res, categoria, conteudo_raspado)
+            config.registrar_log(f'  [RASCUNHO] {caminho_rascunho}')
 
-            # Insere no JSON como Pendente
-            inserir_no_json(res, categoria, url)
-            ids_existentes.add(novo_id)
+            # Registra no historico de mineracao
+            registrar_historico_mineracao(id_mineracao, url, titulo, categoria)
+
+            ids_existentes.add(id_mineracao)
             urls_existentes.add(url)
             total_inseridos += 1
 
         time.sleep(config.PAUSA_ENTRE_REQUISICOES)
 
-    config.registrar_log(f'=== Mineracao concluida. {total_inseridos} novos registros inseridos (status: Pendente). ===')
-    config.registrar_log('Revise os rascunhos em materias/conteudo/ e altere o status para "Aprovada" em noticias_curadoria.json para publicar.')
+    config.registrar_log(f'=== Mineracao concluida. {total_inseridos} novos rascunhos salvos em pre_curadoria/. ===')
+    config.registrar_log('Utilize scripts/promover_materia.py para aprovar e publicar as materias.')
 
 
 if __name__ == '__main__':
     main()
+

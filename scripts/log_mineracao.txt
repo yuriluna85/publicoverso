@@ -1,0 +1,31 @@
+[2026-08-08 19:15:06] === Iniciando mineracao de historias ===
+[2026-08-08 19:15:06] [ERRO] SERPER_API_KEY nao configurada no arquivo .env
+[2026-08-08 19:15:06] [ERRO] SCRAPER_API_KEY nao configurada no arquivo .env
+[2026-08-08 19:15:06] [INFO] Execute em modo de simulacao: a Serper API nao sera chamada.
+[2026-08-08 19:15:06] Registros existentes no JSON / Historico: 8
+[2026-08-08 19:15:06] Buscando: [Gente e Cultura] ...
+[2026-08-08 19:15:06] [AVISO] SERPER_API_KEY nao configurada. Abortando busca.
+[2026-08-08 19:15:06]   Resultados retornados: 0
+[2026-08-08 19:15:09] Buscando: [Gente e Cultura] ...
+[2026-08-08 19:15:09] [AVISO] SERPER_API_KEY nao configurada. Abortando busca.
+[2026-08-08 19:15:09]   Resultados retornados: 0
+[2026-08-08 19:15:11] Buscando: [Conquistas e Premiacoes] ...
+[2026-08-08 19:15:11] [AVISO] SERPER_API_KEY nao configurada. Abortando busca.
+[2026-08-08 19:15:11]   Resultados retornados: 0
+[2026-08-08 19:15:14] Buscando: [Conquistas e Premiacoes] ...
+[2026-08-08 19:15:14] [AVISO] SERPER_API_KEY nao configurada. Abortando busca.
+[2026-08-08 19:15:14]   Resultados retornados: 0
+[2026-08-08 19:15:16] Buscando: [Inovacao e Boas Praticas] ...
+[2026-08-08 19:15:16] [AVISO] SERPER_API_KEY nao configurada. Abortando busca.
+[2026-08-08 19:15:16]   Resultados retornados: 0
+[2026-08-08 19:15:19] Buscando: [Inovacao e Boas Praticas] ...
+[2026-08-08 19:15:19] [AVISO] SERPER_API_KEY nao configurada. Abortando busca.
+[2026-08-08 19:15:19]   Resultados retornados: 0
+[2026-08-08 19:15:21] Buscando: [Carreira e Legislacao] ...
+[2026-08-08 19:15:21] [AVISO] SERPER_API_KEY nao configurada. Abortando busca.
+[2026-08-08 19:15:21]   Resultados retornados: 0
+[2026-08-08 19:15:24] Buscando: [Carreira e Legislacao] ...
+[2026-08-08 19:15:24] [AVISO] SERPER_API_KEY nao configurada. Abortando busca.
+[2026-08-08 19:15:24]   Resultados retornados: 0
+[2026-08-08 19:15:26] === Mineracao concluida. 0 novos rascunhos salvos em pre_curadoria/. ===
+[2026-08-08 19:15:26] Utilize scripts/promover_materia.py para aprovar e publicar as materias.

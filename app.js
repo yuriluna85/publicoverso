@@ -15,18 +15,12 @@
   // --- Carregamento de Dados ---
   async function inicializar() {
     try {
-      const [resNoticias, resArtigos] = await Promise.all([
-        fetch('data/noticias_curadoria.json'),
-        fetch('data/artigos_autorais.json')
-      ]);
-
-      if (!resNoticias.ok || !resArtigos.ok) throw new Error('Falha ao carregar dados JSON.');
+      const resNoticias = await fetch('data/noticias_curadoria.json');
+      if (!resNoticias.ok) throw new Error('Falha ao carregar noticias_curadoria.json.');
 
       noticiasMestre = await resNoticias.json();
-      artigosMestre = await resArtigos.json();
 
       renderizarNoticias(noticiasMestre);
-      renderizarArtigos(artigosMestre);
       configurarFiltros();
       configurarBusca();
       configurarAcessibilidade();
@@ -70,7 +64,8 @@
     }).join('');
   }
 
-  // --- Renderização de Artigos Autorais ---
+  // --- Renderizacao de Artigos Autorais (Desativado) ---
+  /*
   function renderizarArtigos(artigos) {
     const grid = document.getElementById('authorsGrid');
     if (!grid) return;
@@ -84,6 +79,7 @@
       </article>
     `).join('');
   }
+  */
 
   // --- Mapeamento de Categoria para Classe de Badge ---
   function categoriaBadgeClass(categoria) {

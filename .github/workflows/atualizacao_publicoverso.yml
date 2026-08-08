@@ -1,0 +1,51 @@
+name: Mineracao e Atualizacao Publicoverso
+
+on:
+  schedule:
+    - cron: '0 9,21 * * *'
+  workflow_dispatch:
+
+jobs:
+  build-and-mine:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do Repositorio
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar Dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Executar Minerador de Historias
+        env:
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+        run: |
+          python scripts/minerador_historias.py
+
+      - name: Executar Radar de Concursos
+        env:
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+        run: |
+          python scripts/radar_concursos.py
+
+      - name: Build de Paginas Estaticas
+        run: |
+          python build_materias.py
+
+      - name: Commit e Push de Alteracoes
+        run: |
+          git config --global user.name 'publicoverso-bot'
+          git config --global user.email 'bot@publicoverso.com.br'
+          git add .
+          git diff-index --quiet HEAD || git commit -m "[bot] Atualizacao automatica de historias e concursos"
+          git push

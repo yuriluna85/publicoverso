@@ -258,7 +258,7 @@ def atualizar_json_noticias(metadados, slug_html):
         with open(ARQUIVO_JSON_NOTICIAS, 'r', encoding='utf-8') as f:
             noticias = json.load(f)
 
-    novo_id = f"autoral-{slug_html[:30]}"
+    novo_id = metadados.get('id_mineracao') or f"autoral-{slug_html[:30]}"
     url_materia = f"/materias/paginas/{slug_html}.html"
 
     # Verificar se ja existe
@@ -267,18 +267,23 @@ def atualizar_json_noticias(metadados, slug_html):
         print(f'[AVISO] Materia ja registrada no JSON: {novo_id}')
         return
 
-    noticias.insert(0, {
+    item_noticia = {
         "id": novo_id,
         "titulo": metadados.get('titulo', ''),
         "resumo": metadados.get('resumo', ''),
         "conteudo_completo": metadados.get('resumo', ''),
         "categoria": metadados.get('categoria', 'Gente e Cultura'),
-        "fonte": metadados.get('autor', 'Redacao Publicoverso'),
+        "fonte": metadados.get('fonte') or metadados.get('autor') or 'Redacao Publicoverso',
         "data": metadados.get('data', datetime.today().strftime('%d/%m/%Y')),
-        "status": "Aprovada",
+        "status": metadados.get('status', 'Aprovada'),
         "destaque": False,
         "url_materia": url_materia
-    })
+    }
+
+    if metadados.get('url_original'):
+        item_noticia['url_original'] = metadados.get('url_original')
+
+    noticias.insert(0, item_noticia)
 
     with open(ARQUIVO_JSON_NOTICIAS, 'w', encoding='utf-8') as f:
         json.dump(noticias, f, ensure_ascii=False, indent=2)

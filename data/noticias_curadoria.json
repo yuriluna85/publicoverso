@@ -1,5 +1,17 @@
 [
   {
+    "id": "autoral-modelo-de-materia-publicoverso",
+    "titulo": "Modelo de Materia - Publicoverso",
+    "resumo": "Este arquivo serve como template. Substitua este resumo por uma frase de abertura objetiva com ate 200 caracteres.",
+    "conteudo_completo": "Este arquivo serve como template. Substitua este resumo por uma frase de abertura objetiva com ate 200 caracteres.",
+    "categoria": "Gente e Cultura",
+    "fonte": "Curadoria Publicoverso",
+    "data": "08/08/2026",
+    "status": "Aprovada",
+    "destaque": false,
+    "url_materia": "/materias/paginas/modelo-de-materia-publicoverso.html"
+  },
+  {
     "id": "noticia-01",
     "titulo": "Policial federal participa do BBB e representa os servidores de segurança pública nas telas do país",
     "resumo": "A presença de servidores públicos de segurança em programas de entretenimento abre uma janela rara para o público conhecer o ser humano por trás da função.",

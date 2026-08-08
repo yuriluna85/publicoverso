@@ -25,7 +25,9 @@ RAIZ_PROJETO = Path(__file__).parent.parent
 ARQUIVO_NOTICIAS = RAIZ_PROJETO / 'data' / 'noticias_curadoria.json'
 ARQUIVO_CONCURSOS = RAIZ_PROJETO / 'data' / 'concursos_radar.json'
 ARQUIVO_ARTIGOS = RAIZ_PROJETO / 'data' / 'artigos_autorais.json'
+ARQUIVO_HISTORICO = RAIZ_PROJETO / 'data' / 'historico_mineracao.json'
 DIRETORIO_RASCUNHOS = RAIZ_PROJETO / 'materias' / 'conteudo'
+DIRETORIO_PRE_CURADORIA = RAIZ_PROJETO / 'pre_curadoria'
 DIRETORIO_PAGINAS = RAIZ_PROJETO / 'materias' / 'paginas'
 ARQUIVO_LOG = RAIZ_PROJETO / 'scripts' / 'log_mineracao.txt'
 

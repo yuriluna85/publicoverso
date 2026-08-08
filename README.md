@@ -84,6 +84,14 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizacoes (Changelog)
 
+### 08/08/2026 (Sessao 3 - Esteira de Pre-Curadoria e Remocao de Colunas)
+- Implementada esteira de triagem e historico temporal:
+  - Os robos de mineracao gravam os rascunhos em `pre_curadoria/AAAA/MM/DD/slug.txt` com base na data atual.
+  - Criado o utilitario CLI `scripts/promover_materia.py` para validar e mover materias selecionadas da pre-curadoria para `materias/conteudo/`.
+  - Criado `requirements.txt` e o workflow do GitHub Actions em `.github/workflows/atualizacao_publicoverso.yml`.
+- Refatorado `index.html`: removida a secao de Colunas Autorais, mantendo o nome e curadoria editorial de Cristina Mascarenhas no Hero e Rodape.
+- Atualizado `app.js`: desativado o carregamento de colunas para otimizacao do feed principal.
+
 ### 08/08/2026 (Sessao 2 - Mineracao e Radar de Concursos)
 - Implementado modulo de scripts de mineracao em `scripts/`:
   - `config.py`: configuracoes globais, Dorks pre-configurados por categoria editorial e variaveis de ambiente.

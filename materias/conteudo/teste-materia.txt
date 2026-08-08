@@ -1,0 +1,17 @@
+---
+
+id_mineracao: test-12345
+titulo: Servidor Publico Vence Premio de Inovacao em Gestao
+resumo: Um analista de TI do governo federal desenvolveu uma ferramenta que automatiza a analise de dados.
+autor: Curadoria Publicoverso
+categoria: Inovacao e Boas Praticas
+data: 08/08/2026
+fonte: Agência Brasil
+status: Aprovada
+status_triagem: Aprovada
+url_original: https://agenciabrasil.ebc.com.br/exemplo
+---
+
+O analista de TI do governo federal desenvolveu um sistema inovador para otimizar processos de triagem e curadoria de dados institucionais.
+
+A iniciativa reduziu o tempo de resposta aos cidadaos de semanas para minutos.
