@@ -48,22 +48,6 @@
     "data_atualizacao": "08/08/2026"
   },
   {
-    "id": "concurso-2026-004",
-    "órgão": "Conselho Nacional de Justiça",
-    "sigla": "CNJ",
-    "esfera": "Federal",
-    "cargos": "Analista e Técnico Judiciário",
-    "vagas": 50,
-    "escolaridade": "Ensino Médio / Ensino Superior",
-    "remuneracao_max": "R$ 13.994,78",
-    "periodo_inscricao": "Consultar edital",
-    "banca": "FGV",
-    "link_edital": "https://www.cnj.jus.br",
-    "status": "Previsto 2026",
-    "destaque": false,
-    "data_atualizacao": "08/08/2026"
-  },
-  {
     "id": "concurso-2026-005",
     "órgão": "Universidades Federais - Técnico-Administrativo em Educação (TAE)",
     "sigla": "TAE/UF",
@@ -77,6 +61,22 @@
     "link_edital": "https://taes-federal.com.br/",
     "status": "Publicações Continuas",
     "destaque": true,
+    "data_atualizacao": "08/08/2026"
+  },
+  {
+    "id": "concurso-2026-004",
+    "órgão": "Conselho Nacional de Justiça",
+    "sigla": "CNJ",
+    "esfera": "Federal",
+    "cargos": "Analista e Técnico Judiciário",
+    "vagas": 50,
+    "escolaridade": "Ensino Médio / Ensino Superior",
+    "remuneracao_max": "R$ 13.994,78",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "FGV",
+    "link_edital": "https://www.cnj.jus.br",
+    "status": "Previsto 2026",
+    "destaque": false,
     "data_atualizacao": "08/08/2026"
   }
 ]

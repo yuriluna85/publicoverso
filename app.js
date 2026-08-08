@@ -138,19 +138,38 @@
     renderizarNoticias(filtradas);
   }
 
-  // --- Acessibilidade: Fonte e Alto Contraste (Alternância de Tema) ---
+  // --- Acessibilidade: Fonte e Sistema Triplo de Temas ---
   function configurarAcessibilidade() {
     let tamanhoFonte = 100;
 
     const btnMais = document.getElementById('btnFontIncrease');
     const btnMenos = document.getElementById('btnFontDecrease');
+    const btnTemaToggle = document.getElementById('btnThemeToggle');
     const btnContraste = document.getElementById('btnHighContrast');
 
-    // Restaura preferência de tema salva no navegador
-    const temaSalvo = localStorage.getItem('publicoverso-tema');
-    if (temaSalvo === 'alto-contraste') {
-      document.body.classList.add('high-contrast');
+    function aplicarTema(tema) {
+      document.body.classList.remove('theme-dark', 'theme-high-contrast');
+
+      if (tema === 'escuro') {
+        document.body.classList.add('theme-dark');
+        if (btnTemaToggle) btnTemaToggle.textContent = 'Tema: Escuro';
+        if (btnContraste) btnContraste.classList.remove('active');
+      } else if (tema === 'alto-contraste') {
+        document.body.classList.add('theme-high-contrast');
+        if (btnTemaToggle) btnTemaToggle.textContent = 'Tema: Claro';
+        if (btnContraste) btnContraste.classList.add('active');
+      } else {
+        // Claro (Padrão)
+        if (btnTemaToggle) btnTemaToggle.textContent = 'Tema: Claro';
+        if (btnContraste) btnContraste.classList.remove('active');
+      }
+
+      localStorage.setItem('publicoverso-tema-v3', tema);
     }
+
+    // Restaura preferência de tema salva no navegador (Padrão: 'claro')
+    const temaSalvo = localStorage.getItem('publicoverso-tema-v3') || 'claro';
+    aplicarTema(temaSalvo);
 
     if (btnMais) {
       btnMais.addEventListener('click', () => {
@@ -166,10 +185,19 @@
       });
     }
 
+    if (btnTemaToggle) {
+      btnTemaToggle.addEventListener('click', () => {
+        const temaAtual = localStorage.getItem('publicoverso-tema-v3') || 'claro';
+        const novoTema = (temaAtual === 'escuro') ? 'claro' : 'escuro';
+        aplicarTema(novoTema);
+      });
+    }
+
     if (btnContraste) {
       btnContraste.addEventListener('click', () => {
-        const eContraste = document.body.classList.toggle('high-contrast');
-        localStorage.setItem('publicoverso-tema', eContraste ? 'alto-contraste' : 'padrao');
+        const temaAtual = localStorage.getItem('publicoverso-tema-v3') || 'claro';
+        const novoTema = (temaAtual === 'alto-contraste') ? 'claro' : 'alto-contraste';
+        aplicarTema(novoTema);
       });
     }
   }

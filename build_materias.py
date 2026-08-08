@@ -144,10 +144,19 @@ def gerar_html(metadados, corpo_html):
       </a>
       <nav class="navbar-links" aria-label="Navegação principal">
         <a href="../../index.html" class="nav-link">Início</a>
+        <a href="../../noticias.html" class="nav-link">Notícias</a>
+        <a href="../../concursos.html" class="nav-link">Radar de Concursos</a>
         <a href="../../sobre.html" class="nav-link">Sobre</a>
         <a href="../../contato.html" class="nav-link">Contato</a>
-        <a href="../../concursos.html" class="nav-link">Radar de Concursos</a>
       </nav>
+
+      <!-- Controles de Acessibilidade e Tema -->
+      <div class="controls-bar" aria-label="Controles de Acessibilidade e Tema">
+        <button id="btnFontDecrease" class="btn-a11y" aria-label="Diminuir tamanho do texto">A-</button>
+        <button id="btnFontIncrease" class="btn-a11y" aria-label="Aumentar tamanho do texto">A+</button>
+        <button id="btnThemeToggle" class="btn-a11y" aria-label="Alternar entre Modo Claro e Escuro">Tema: Claro</button>
+        <button id="btnHighContrast" class="btn-a11y" aria-label="Alternar Modo Alto Contraste para baixa visão">Alto Contraste</button>
+      </div>
     </div>
   </header>
 
@@ -205,10 +214,43 @@ def gerar_html(metadados, corpo_html):
     </nav>
     <p class="footer-disclaimer">Portal independente, sem vinculo oficial com órgãos governamentais. Curadoria editorial: Cristina Mascarenhas.</p>
     <p>&copy; 2026 Publicoverso. Todos os direitos reservados.</p>
+  </footer>
   <script>
-    if (localStorage.getItem('publicoverso-tema') === 'alto-contraste') {{
-      document.body.classList.add('high-contrast');
-    }}
+    (function() {{
+      var btnMais = document.getElementById('btnFontIncrease');
+      var btnMenos = document.getElementById('btnFontDecrease');
+      var btnTema = document.getElementById('btnThemeToggle');
+      var btnAlto = document.getElementById('btnHighContrast');
+      var tamanho = 100;
+
+      function aplicar(tema) {{
+        document.body.classList.remove('theme-dark', 'theme-high-contrast');
+        if (tema === 'escuro') {{
+          document.body.classList.add('theme-dark');
+          if (btnTema) btnTema.textContent = 'Tema: Escuro';
+        }} else if (tema === 'alto-contraste') {{
+          document.body.classList.add('theme-high-contrast');
+          if (btnTema) btnTema.textContent = 'Tema: Claro';
+        }} else {{
+          if (btnTema) btnTema.textContent = 'Tema: Claro';
+        }}
+        localStorage.setItem('publicoverso-tema-v3', tema);
+      }}
+
+      var salvo = localStorage.getItem('publicoverso-tema-v3') || 'claro';
+      aplicar(salvo);
+
+      if (btnMais) btnMais.addEventListener('click', function() {{ tamanho = Math.min(tamanho + 10, 140); document.documentElement.style.fontSize = tamanho + '%'; }});
+      if (btnMenos) btnMenos.addEventListener('click', function() {{ tamanho = Math.max(tamanho - 10, 80); document.documentElement.style.fontSize = tamanho + '%'; }});
+      if (btnTema) btnTema.addEventListener('click', function() {{
+        var t = localStorage.getItem('publicoverso-tema-v3') || 'claro';
+        aplicar(t === 'escuro' ? 'claro' : 'escuro');
+      }});
+      if (btnAlto) btnAlto.addEventListener('click', function() {{
+        var t = localStorage.getItem('publicoverso-tema-v3') || 'claro';
+        aplicar(t === 'alto-contraste' ? 'claro' : 'alto-contraste');
+      }});
+    }})();
   </script>
 </body>
 </html>

@@ -84,10 +84,14 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizações (Changelog)
 
-### 08/08/2026 (Sessao 6 - Tema Claro Padrao Harmonizado, Cartoes Dinamicos e Responsividade)
-- Refatorados 100% dos cartoes de noticias (`.card-news`), cartoes em destaque (`.card-news.featured`), cartoes de utilitarios (`.utility-card`), cartoes de autores e badges para responderem dinamicamente às variaveis CSS de tema.
-- No **Modo Claro Padrão**, todos os cartoes passam a ter fundo branco limpo (`#FFFFFF`), texto preto/marinho (`#0F172A`), bordas suaves e badges com contraste adaptado para leitura perfeita.
-- No **Modo Alto Contraste / Dark Tech**, os cartoes e elementos se alteram instantaneamente para fundo escuro (`#0B0418`), neons turquesa (`#00D2C8`) e texto claro (`#FFFFFF`), salvando a escolha no `localStorage`.
+### 08/08/2026 (Sessao 6 - Página de Notícias em Lista, Filtros por Editoria e Seletor de Paginação)
+- Criada a página `noticias.html` (Índice Geral de Notícias) que exibe todo o acervo jornalístico em formato de lista estruturada, ordenada da matéria mais recente para a mais antiga.
+- Criado o motor `app_noticias.js` que implementa:
+  - Seletor de linhas por página com limite escolhido pelo leitor (10, 20 ou 50 matérias por página).
+  - Filtro interativo por Editoria (7 categorias jornalísticas) e campo de busca textual instantânea.
+  - Controle de paginação com botões `Anterior` / `Próxima` e rolagem suave para o topo da lista.
+  - Suporte completo ao Sistema Triplo de Temas (Claro, Escuro e Alto Contraste AAA).
+- Atualizada a navegação principal (`nav-link`) em todas as páginas para incluir o link direto para `Notícias`.
 
 ### 08/08/2026 (Sessao 4 - Minerador de Protagonistas e Atribuição de Fonte)
 - Criado o robô `scripts/minerador_protagonistas.py` dedicado a minerar histórias humanas de servidores e servidoras pública fora da reparticao (Literatura, Esportes, Cultura Pop/Realities, Voluntariado e Superacao Pessoal).

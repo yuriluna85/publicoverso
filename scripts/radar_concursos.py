@@ -170,8 +170,8 @@ def main():
     parser = argparse.ArgumentParser(
         description='Publicoverso - Radar de concursos públicos.'
     )
-    parser.add_argument('--forcar-atualização', action='store_true',
-                        help='Remove e reprocessa todos os editais existentes')
+    parser.add_argument('--forcar-atualizacao', '--forcar-atualização', dest='forcar_atualizacao',
+                        action='store_true', help='Remove e reprocessa todos os editais existentes')
     args = parser.parse_args()
 
     config.registrar_log('=== Iniciando Radar de Concursos ===')

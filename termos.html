@@ -44,14 +44,17 @@
       </a>
       <nav class="navbar-links" aria-label="Navegação principal">
         <a href="index.html" class="nav-link">Início</a>
+        <a href="noticias.html" class="nav-link">Notícias</a>
+        <a href="concursos.html" class="nav-link">Radar de Concursos</a>
         <a href="sobre.html" class="nav-link">Sobre</a>
         <a href="contato.html" class="nav-link">Contato</a>
-        <a href="concursos.html" class="nav-link">Radar de Concursos</a>
       </nav>
-      <div class="controls-bar">
+      <!-- Controles de Acessibilidade e Tema -->
+      <div class="controls-bar" aria-label="Controles de Acessibilidade e Tema">
         <button id="btnFontDecrease" class="btn-a11y" aria-label="Diminuir tamanho do texto">A-</button>
         <button id="btnFontIncrease" class="btn-a11y" aria-label="Aumentar tamanho do texto">A+</button>
-        <button id="btnHighContrast" class="btn-a11y" aria-label="Alternar modo de alto contraste">Contraste</button>
+        <button id="btnThemeToggle" class="btn-a11y" aria-label="Alternar entre Modo Claro e Escuro">Tema: Claro</button>
+        <button id="btnHighContrast" class="btn-a11y" aria-label="Alternar Modo Alto Contraste para baixa visão">Alto Contraste</button>
       </div>
     </div>
   </header>
@@ -110,13 +113,39 @@
 
   <script>
     (function () {
-      let sz = 100;
       const di = document.getElementById('btnFontDecrease');
       const ai = document.getElementById('btnFontIncrease');
+      const bt = document.getElementById('btnThemeToggle');
       const hc = document.getElementById('btnHighContrast');
+      let sz = 100;
+
+      function aplicar(tema) {
+        document.body.classList.remove('theme-dark', 'theme-high-contrast');
+        if (tema === 'escuro') {
+          document.body.classList.add('theme-dark');
+          if (bt) bt.textContent = 'Tema: Escuro';
+        } else if (tema === 'alto-contraste') {
+          document.body.classList.add('theme-high-contrast');
+          if (bt) bt.textContent = 'Tema: Claro';
+        } else {
+          if (bt) bt.textContent = 'Tema: Claro';
+        }
+        localStorage.setItem('publicoverso-tema-v3', tema);
+      }
+
+      const salvo = localStorage.getItem('publicoverso-tema-v3') || 'claro';
+      aplicar(salvo);
+
       if (di) di.addEventListener('click', () => { sz = Math.max(sz - 10, 80); document.documentElement.style.fontSize = sz + '%'; });
       if (ai) ai.addEventListener('click', () => { sz = Math.min(sz + 10, 140); document.documentElement.style.fontSize = sz + '%'; });
-      if (hc) hc.addEventListener('click', () => document.body.classList.toggle('high-contrast'));
+      if (bt) bt.addEventListener('click', () => {
+        const t = localStorage.getItem('publicoverso-tema-v3') || 'claro';
+        aplicar(t === 'escuro' ? 'claro' : 'escuro');
+      });
+      if (hc) hc.addEventListener('click', () => {
+        const t = localStorage.getItem('publicoverso-tema-v3') || 'claro';
+        aplicar(t === 'alto-contraste' ? 'claro' : 'alto-contraste');
+      });
     })();
   </script>
 </body>
