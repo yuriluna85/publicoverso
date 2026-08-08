@@ -370,6 +370,43 @@ def main():
             caminho_rascunho = salvar_rascunho_protagonista(res, item, url_limpa, veiculo, conteudo_raspado)
             salvar_historico_url(url_limpa)
             urls_conhecidas.add(url_limpa)
+
+            # Grava no Acervo Geral de Links Minerados (CSV + JSON)
+            cat_mapeada = MAPA_EIXOS_EDITORIAS.get(item['eixo'], 'Histórias e Superação')
+            id_prot = 'prot-' + hashlib.md5(url_limpa.encode()).hexdigest()[:10]
+            data_hoje = datetime.now().strftime('%d/%m/%Y')
+            resumo_limpo = (resumo[:200] if resumo else titulo).replace('\n', ' ').replace(',', ';')
+
+            # Append ao CSV
+            arquivo_csv = config.RAIZ_PROJETO / 'data' / 'acervo_links_minerados.csv'
+            if arquivo_csv.exists():
+                try:
+                    with open(arquivo_csv, 'a', encoding='utf-8') as f:
+                        f.write(f'\n{id_prot},{data_hoje},{cat_mapeada},"{titulo}","{resumo_limpo}",{veiculo},{url_limpa},Pendente')
+                except Exception as e:
+                    config.registrar_log(f'  [AVISO CSV] {e}')
+
+            # Append ao JSON
+            arquivo_json = config.RAIZ_PROJETO / 'data' / 'acervo_links_minerados.json'
+            if arquivo_json.exists():
+                try:
+                    with open(arquivo_json, 'r', encoding='utf-8') as f:
+                        lista_acervo = json.load(f)
+                    lista_acervo.insert(0, {
+                        "id": id_prot,
+                        "data": data_hoje,
+                        "categoria": cat_mapeada,
+                        "titulo": titulo,
+                        "resumo": resumo[:200],
+                        "fonte": veiculo,
+                        "url_original": url_limpa,
+                        "status_curadoria": "Pendente"
+                    })
+                    with open(arquivo_json, 'w', encoding='utf-8') as f:
+                        json.dump(lista_acervo, f, ensure_ascii=False, indent=2)
+                except Exception as e:
+                    config.registrar_log(f'  [AVISO JSON] {e}')
+
             total_novas += 1
 
             config.registrar_log(f'  [RASCUNHO PROTAGONISTA] {caminho_rascunho.name} (Fonte: {veiculo})')

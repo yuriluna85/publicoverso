@@ -18,11 +18,14 @@
   // --- Inicialização ---
   async function inicializar() {
     try {
-      const res = await fetch('data/noticias_curadoria.json');
-      if (!res.ok) throw new Error('Falha ao carregar noticias_curadoria.json.');
+      let res = await fetch('data/acervo_links_minerados.json');
+      if (!res.ok) {
+        res = await fetch('data/noticias_curadoria.json');
+      }
+      if (!res.ok) throw new Error('Falha ao carregar o acervo de notícias.');
 
       const dados = await res.json();
-      noticiasMestre = dados.filter(n => n.status === 'Aprovada');
+      noticiasMestre = dados.filter(n => n.status_curadoria !== 'Rejeitada' && n.status !== 'Rejeitada');
 
       // Ordena da notícia mais recente para a mais antiga (DD/MM/AAAA)
       noticiasMestre.sort((a, b) => converterData(b.data) - converterData(a.data));
@@ -155,8 +158,10 @@
 
     tbody.innerHTML = itens.map(noticia => {
       const badgeClass = categoriaBadgeClass(noticia.categoria);
-      const urlMateria = noticia.url_materia || '#';
-      const temLink = noticia.url_materia ? true : false;
+      const urlDestino = noticia.url_materia || noticia.url_original || '#';
+      const ehLinkExterno = !noticia.url_materia && noticia.url_original;
+      const targetAttr = ehLinkExterno ? 'target="_blank" rel="noopener noreferrer"' : '';
+      const statusBadge = noticia.status_curadoria === 'Aprovada' ? '<span style="font-size:0.75rem; color:var(--color-brand-turquoise); font-weight:600; margin-left:0.5rem;">[Curada]</span>' : '';
 
       return `
         <tr class="tr-noticia">
@@ -166,13 +171,17 @@
           </td>
           <td class="td-conteudo">
             <h3 class="noticia-list-titulo">
-              ${temLink ? `<a href="${escapar(urlMateria)}">${escapar(noticia.titulo)}</a>` : escapar(noticia.titulo)}
+              <a href="${escapar(urlDestino)}" ${targetAttr}>
+                ${escapar(noticia.titulo)} ${statusBadge}
+              </a>
             </h3>
             <p class="noticia-list-resumo">${escapar(noticia.resumo)}</p>
           </td>
           <td class="td-fonte">${escapar(noticia.fonte)}</td>
           <td class="td-acao" style="text-align: center;">
-            ${temLink ? `<a href="${escapar(urlMateria)}" class="btn-curate btn-curate-sm" aria-label="Ler notícia completa: ${escapar(noticia.titulo)}">Ler</a>` : '<span class="text-muted" style="font-size:0.78rem;">Em breve</span>'}
+            <a href="${escapar(urlDestino)}" ${targetAttr} class="btn-curate btn-curate-sm" aria-label="Abrir notícia: ${escapar(noticia.titulo)}">
+              ${ehLinkExterno ? 'Acessar Fonte' : 'Ler Matéria'}
+            </a>
           </td>
         </tr>
       `;

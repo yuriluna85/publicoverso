@@ -84,14 +84,11 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizações (Changelog)
 
-### 08/08/2026 (Sessao 6 - Página de Notícias em Lista, Filtros por Editoria e Seletor de Paginação)
-- Criada a página `noticias.html` (Índice Geral de Notícias) que exibe todo o acervo jornalístico em formato de lista estruturada, ordenada da matéria mais recente para a mais antiga.
-- Criado o motor `app_noticias.js` que implementa:
-  - Seletor de linhas por página com limite escolhido pelo leitor (10, 20 ou 50 matérias por página).
-  - Filtro interativo por Editoria (7 categorias jornalísticas) e campo de busca textual instantânea.
-  - Controle de paginação com botões `Anterior` / `Próxima` e rolagem suave para o topo da lista.
-  - Suporte completo ao Sistema Triplo de Temas (Claro, Escuro e Alto Contraste AAA).
-- Atualizada a navegação principal (`nav-link`) em todas as páginas para incluir o link direto para `Notícias`.
+### 08/08/2026 (Sessao 6 - Arquitetura de Acervo Mined CSV/JSON e Notícias Curadas)
+- **Separação de Camadas (Curadorias em Destaque vs Acervo Geral de Links):**
+  - **Portal Principal (`index.html`):** Renders exclusivamente matérias autorais e curadas com status `"Aprovada"` em formato de cartões Bento Grid (vindas de `data/noticias_curadoria.json`).
+  - **Índice Geral de Notícias (`noticias.html`):** Carrega o **Acervo Geral de Links Minerados** (`data/acervo_links_minerados.csv` e `data/acervo_links_minerados.json`). Exibe a lista completa de todas as notícias encontradas pelo robô na web (com link direto para o veículo original, data, categoria, fonte e seletor de 10, 20 ou 50 itens por página).
+- **Scripts de Mineração (`minerador_historias.py` e `minerador_protagonistas.py`):** Atualizados para alimentar automaticamente o arquivo CSV/JSON do acervo a cada rodada no GitHub Actions sem poluir as matérias curadas da página principal.
 
 ### 08/08/2026 (Sessao 4 - Minerador de Protagonistas e Atribuição de Fonte)
 - Criado o robô `scripts/minerador_protagonistas.py` dedicado a minerar histórias humanas de servidores e servidoras pública fora da reparticao (Literatura, Esportes, Cultura Pop/Realities, Voluntariado e Superacao Pessoal).

@@ -659,33 +659,79 @@ body.high-contrast .author-name {
   flex-shrink: 0;
 }
 
-/* Navegação do Cabeçalho */
+/* Navegação do Cabeçalho (Botões Balão Arredondados) */
 .navbar-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 0.65rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav-link {
-  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #FFFFFF;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.45rem 1.05rem;
+  border-radius: 24px; /* Balão Arredondado */
   text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
   transition: var(--transition-fast);
-  padding: 0.35rem 0;
-  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .nav-link:hover,
 .nav-link:focus-visible {
-  color: var(--color-brand-turquoise);
-  border-bottom-color: var(--color-brand-turquoise);
+  background: var(--color-brand-turquoise);
+  border-color: var(--color-brand-turquoise);
+  color: #0F172A;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(0, 210, 200, 0.35);
   outline: none;
+}
+
+.nav-link.active {
+  background: var(--color-brand-turquoise);
+  border-color: var(--color-brand-turquoise);
+  color: #0F172A;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0, 210, 200, 0.3);
+}
+
+/* Adaptativo por Tema */
+body.theme-dark .nav-link {
+  background: rgba(145, 70, 255, 0.2);
+  border-color: rgba(145, 70, 255, 0.45);
+  color: #F8FAFC;
+}
+
+body.theme-dark .nav-link:hover,
+body.theme-dark .nav-link.active {
+  background: var(--color-brand-turquoise);
+  border-color: var(--color-brand-turquoise);
+  color: #0B0418;
+}
+
+body.theme-high-contrast .nav-link {
+  background: #000000;
+  border: 2px solid #FFFFFF;
+  color: #FFFF00;
+}
+
+body.theme-high-contrast .nav-link:hover,
+body.theme-high-contrast .nav-link.active {
+  background: #FFFF00;
+  border-color: #FFFF00;
+  color: #000000;
 }
 
 .nav-link-external::after {
   content: ' →';
-  font-size: 0.8em;
+  font-size: 0.85em;
 }
 
 /* Hero Badge de Curadoria */

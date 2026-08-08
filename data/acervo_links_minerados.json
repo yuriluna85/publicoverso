@@ -1,0 +1,82 @@
+[
+  {
+    "id": "noticia-01",
+    "data": "08/08/2026",
+    "categoria": "Cultura Pop e Gastronomia",
+    "titulo": "Policial federal participa do BBB e representa os servidores de segurança pública nas telas do país",
+    "resumo": "A presença de servidores públicos de segurança em programas de entretenimento abre uma janela rara para o público conhecer o ser humano por trás da função.",
+    "fonte": "Curadoria Publicoverso",
+    "url_original": "https://g1.globo.com/pop-arte/noticia/2026/08/policial-federal-bbb.ghtml",
+    "status_curadoria": "Aprovada"
+  },
+  {
+    "id": "noticia-02",
+    "data": "07/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Professora da rede estadual vence prêmio internacional de práticas pedagógicas inovadoras",
+    "resumo": "Docente reconhece que o prêmio não é individual: é o resultado de anos de trabalho coletivo com estudantes de escola pública em território de baixa renda.",
+    "fonte": "Curadoria Publicoverso",
+    "url_original": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-08/professora-bahia-premio-internacional",
+    "status_curadoria": "Aprovada"
+  },
+  {
+    "id": "noticia-03",
+    "data": "06/08/2026",
+    "categoria": "Artes e Literatura",
+    "titulo": "Engenheiro do DNIT publica livro sobre soluções de baixo custo para estradas em regiões de seca",
+    "resumo": "Obra técnico-científica resultado de 15 anos de campo no semiárido nordestino é disponibilizada gratuitamente em PDF pelo próprio autor.",
+    "fonte": "Curadoria Publicoverso",
+    "url_original": "https://folha.uol.com.br/livros/2026/08/engenheiro-dnit-livro-seca.shtml",
+    "status_curadoria": "Aprovada"
+  },
+  {
+    "id": "noticia-04",
+    "data": "05/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Reestruturação do PCCTAE 2026: o que muda na carreira dos servidores Técnico-Administrativos em Educação",
+    "resumo": "Análise dos novos critérios de progressão por capacitação e mérito e o impacto do RSC na remuneração dos TAEs das universidades e institutos federais.",
+    "fonte": "DOU / Curadoria Publicoverso",
+    "url_original": "https://www.in.gov.br/dou/2026/08/pcctae-reestruturacao",
+    "status_curadoria": "Aprovada"
+  },
+  {
+    "id": "noticia-05",
+    "data": "04/08/2026",
+    "categoria": "Ciência e Tecnologia",
+    "titulo": "Agente administrativo da Previdência Social cria app para auxiliar idosos a acessar benefícios do INSS",
+    "resumo": "Aplicativo desenvolvido nas horas vagas resolve problema real enfrentado por segurados com baixa alfabetização digital em municípios do interior.",
+    "fonte": "Curadoria Publicoverso",
+    "url_original": "https://g1.globo.com/tecnologia/noticia/2026/08/agente-inss-cria-app-idosos.ghtml",
+    "status_curadoria": "Aprovada"
+  },
+  {
+    "id": "noticia-06",
+    "data": "03/08/2026",
+    "categoria": "Cultura Pop e Gastronomia",
+    "titulo": "Médica do SUS representa o Brasil em competição culinária internacional",
+    "resumo": "Servidora do SUS participa do MasterChef Profissionais e aproveita visibilidade para promover alimentação saudável como política pública de saúde preventiva.",
+    "fonte": "Curadoria Publicoverso",
+    "url_original": "https://uol.com.br/gastronomia/noticias/2026/08/medica-sus-masterchef.htm",
+    "status_curadoria": "Aprovada"
+  },
+  {
+    "id": "noticia-07",
+    "data": "01/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Proposta de reforma na licença capacitação avança no Congresso Nacional",
+    "resumo": "Projeto de lei busca desburocratizar o afastamento para pós-graduação stricto sensu de servidores federais estaduais e municipais.",
+    "fonte": "Agência Câmara de Notícias",
+    "url_original": "https://www.camara.leg.br/noticias/2026/08/licenca-capacitacao-avanca",
+    "status_curadoria": "Aprovada"
+  },
+  {
+    "id": "test-12345",
+    "data": "08/08/2026",
+    "categoria": "Ciência e Tecnologia",
+    "titulo": "Servidor Público Vence Prêmio de Inovação em Gestão",
+    "resumo": "Um analista de TI do governo federal desenvolveu uma ferramenta que automatiza a análise de dados.",
+    "fonte": "Agência Brasil",
+    "url_original": "https://agenciabrasil.ebc.com.br/exemplo",
+    "status_curadoria": "Aprovada"
+  }
+]

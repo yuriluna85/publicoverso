@@ -330,6 +330,41 @@ def main():
             # Registra no historico de mineracao
             registrar_historico_mineracao(id_mineracao, url, titulo, cat_classificada)
 
+            # Grava no Acervo Geral de Links Minerados (CSV + JSON)
+            data_hoje = datetime.now().strftime('%d/%m/%Y')
+            fonte_veiculo = res.get('source', 'Fonte minerada')
+            resumo_limpo = (resumo[:200] if resumo else titulo).replace('\n', ' ').replace(',', ';')
+
+            # Append ao CSV
+            arquivo_csv = config.RAIZ_PROJETO / 'data' / 'acervo_links_minerados.csv'
+            if arquivo_csv.exists():
+                try:
+                    with open(arquivo_csv, 'a', encoding='utf-8') as f:
+                        f.write(f'\n{id_mineracao},{data_hoje},{cat_classificada},"{titulo}","{resumo_limpo}",{fonte_veiculo},{url},Pendente')
+                except Exception as e:
+                    config.registrar_log(f'  [AVISO CSV] {e}')
+
+            # Append ao JSON
+            arquivo_json = config.RAIZ_PROJETO / 'data' / 'acervo_links_minerados.json'
+            if arquivo_json.exists():
+                try:
+                    with open(arquivo_json, 'r', encoding='utf-8') as f:
+                        lista_acervo = json.load(f)
+                    lista_acervo.insert(0, {
+                        "id": id_mineracao,
+                        "data": data_hoje,
+                        "categoria": cat_classificada,
+                        "titulo": titulo,
+                        "resumo": resumo[:200],
+                        "fonte": fonte_veiculo,
+                        "url_original": url,
+                        "status_curadoria": "Pendente"
+                    })
+                    with open(arquivo_json, 'w', encoding='utf-8') as f:
+                        json.dump(lista_acervo, f, ensure_ascii=False, indent=2)
+                except Exception as e:
+                    config.registrar_log(f'  [AVISO JSON] {e}')
+
             ids_existentes.add(id_mineracao)
             urls_existentes.add(url)
             total_inseridos += 1
