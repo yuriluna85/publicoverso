@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-20916eb358
+titulo: Muito além da aposentadoria
+resumo: O Conselho Nacional de Justiça aprovou nesta terça-feira (4), por unanimidade, uma resolução que acaba com a aposentadoria compulsória como punição...
+autor: Curadoria Publicoverso
+categoria: Carreira e Legislacao
+data: 08/08/2026
+fonte: O Bastidor
+status: Pendente
+status_triagem: Pendente
+url_original: https://obastidor.com.br/justica/muito-alem-da-aposentadoria/
+---
+
+O Conselho Nacional de Justiça aprovou nesta terça-feira (4), por unanimidade, uma resolução que acaba com a aposentadoria compulsória como punição...
+
+Fonte original: https://obastidor.com.br/justica/muito-alem-da-aposentadoria/

@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-87e1c7cc9d
+titulo: Prefeitura acompanha pavimentação da Rua Buriti e destaca melhoria na mobilidade urbana
+resumo: Obra no bairro Jardim de Alah criará uma nova ligação entre as avenidas Fátima Maia e Mário Maia, contribuindo para desafogar o trânsito na região.
+autor: Curadoria Publicoverso
+categoria: Inovacao e Boas Praticas
+data: 08/08/2026
+fonte: Prefeitura de Rio Branco
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.riobranco.ac.gov.br/emurb/prefeitura-acompanha-pavimentacao-da-rua-buriti-e-destaca-melhoria-na-mobilidade-urbana/
+---
+
+Obra no bairro Jardim de Alah criará uma nova ligação entre as avenidas Fátima Maia e Mário Maia, contribuindo para desafogar o trânsito na região.
+
+Fonte original: https://www.riobranco.ac.gov.br/emurb/prefeitura-acompanha-pavimentacao-da-rua-buriti-e-destaca-melhoria-na-mobilidade-urbana/

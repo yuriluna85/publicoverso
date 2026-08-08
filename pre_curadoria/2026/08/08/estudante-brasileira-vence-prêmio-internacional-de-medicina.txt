@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-9b4c822a30
+titulo: Estudante brasileira vence prêmio internacional de medicina
+resumo: Bruna de Souza Ferreira, estudante de Medicina da UFG, é premiada em Brasília por pesquisa que aproxima fé e neurociência, em distinção que homenageia o...
+autor: Curadoria Publicoverso
+categoria: Conquistas e Premiacoes
+data: 08/08/2026
+fonte: Público
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.publico.pt/2026/08/04/publico-brasil/noticia/estudante-brasileira-vence-premio-internacional-medicina-2183964
+---
+
+Bruna de Souza Ferreira, estudante de Medicina da UFG, é premiada em Brasília por pesquisa que aproxima fé e neurociência, em distinção que homenageia o...
+
+Fonte original: https://www.publico.pt/2026/08/04/publico-brasil/noticia/estudante-brasileira-vence-premio-internacional-medicina-2183964

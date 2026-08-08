@@ -1,0 +1,54 @@
+---
+id_mineracao: auto-030c0e5903
+titulo: STF invalida leis de Curitiba que instituíram plano de carreira para professores
+resumo: Para ministros, as normas criaram despesas com pessoal sem prévia dotação orçamentária, violando dispositivo constitucional.
+autor: Curadoria Publicoverso
+categoria: Carreira e Legislacao
+data: 08/08/2026
+fonte: Consultor Jurídico
+status: Pendente
+status_triagem: Pendente
+url_original: https://conjur.com.br/2026-ago-06/stf-invalida-leis-de-curitiba-que-instituiram-plano-de-carreira-para-professores/
+---
+
+São inconstitucionais os dispositivos das Leis municipais 14.544/2014 e 14.580/2014, elaboradas pela  Câmara de Vereadores de Curitiba , que estabeleceram uma nova estrutura de progressão funcional para os professores do município e concederam a eles aposentadoria especial. Para os ministros do Supremo Tribunal Federal, as normas criaram despesas com pessoal sem prévia dotação orçamentária, nem autorização na Lei de Diretrizes Orçamentárias. Em razão disso, o tribunal concluiu que elas violaram o artigo 169, parágrafo 1º, da Constituição.
+
+Esse dispositivo exige que a concessão de aumento de remuneração ou vantagem esteja condicionada à prévia dotação orçamentária e à autorização específica na LDO, requisitos que não foram observados.
+
+Antonio Augusto/STF   Para ministros do Supremo, leis municipais violam dispositivo da Constituição
+
+A decisão, unânime, foi tomada nesta quinta-feira (6/8). Na mesma sessão, os ministros determinaram a modulação dos seus efeitos. Isso significa que ela já está valendo, sendo preservados enquadramentos funcionais, progressões na carreira, valores remuneratórios já recebidos de boa-fé e aposentadorias concedidas aos servidores da educação municipal.
+
+As leis em questão instituíram um plano de carreira criando critérios para progressão baseados em assiduidade, formação continuada e titulação, além de conceder aposentadoria especial com menor tempo de contribuição aos professores.
+
+A discussão chegou ao STF após o prefeito de Curitiba recorrer de uma decisão do Tribunal de Justiça do Paraná. Na origem, o município questionou a constitucionalidade das leis, alegando que elas foram aprovadas sem o devido respaldo orçamentário. O TJ-PR, no entanto, não acatou o pedido do Executivo curitibano.
+
+O  julgamento teve início  em outubro de 2025, com as sustentações orais. Na ocasião, ao ler seu relatório, o ministro André Mendonça afirmou que a discussão tinha dois pontos principais: primeiro, decidir se a criação de despesa pública sem prévia dotação orçamentária e autorização específica implica inconstitucionalidade das leis municipais; segundo, estabelecer a extensão adequada das regras especiais de aposentadoria para os profissionais da educação infantil.
+
+No mês seguinte, o relator proferiu seu voto, mas o julgamento foi interrompido por um  pedido de vista do ministro Flávio Dino .
+
+Em abril deste ano, a retomada do julgamento chegou a ser marcada, mas foi retirada de pauta a pedido do próprio relator.
+
+Mendonça destacou em seu voto que a jurisprudência do Supremo nesse assunto não manda invalidar a norma, mas apontar o vício de eficácia. No entanto, ele lembrou ações que utilizaram o artigo 169 como norte para afirmar a inconstitucionalidade de leis, como nos casos das Ações Diretas de Inconstitucionalidade 7.391, 6.091 e 6.118.
+
+“É de se reconhecer que a solidez da jurisprudência que afasta o conhecimento de ações diretas por alegada violação ao artigo 169, em hipótese de vantagens remuneratórias dissociadas da capacidade orçamentária, tem sido tensionada por decisões pontuais da corte, o que recomenda a reanálise da matéria.”
+
+Além disso, o relator apontou que é possível uma modulação no sentido de preservar o direito à aposentadoria para quem cumpriu os requisitos necessários até a publicação da decisão do TJ-PR.
+
+Ao apresentar o complemento do voto, nesta quinta, Mendonça explicou que optou por adiar a conclusão do julgamento para examinar documentos e estudos técnicos protocolados pelos sindicatos após a liberação do processo. Embora tenha admitido a inclusão desse material nos autos, ele afirmou que as novas informações não foram suficientes para modificar a conclusão já adotada pela inconstitucionalidade das leis municipais.
+
+O ministro observou que a documentação comprova a elaboração de estimativas de impacto orçamentário e financeiro antes da aprovação das normas. Ainda assim, segundo ele, esse aspecto não resolve a controvérsia constitucional, pois, além da estimativa de impacto, a Constituição exige que haja dotação orçamentária prévia suficiente e autorização específica na LDO, condições que, em sua avaliação, não foram atendidas.
+
+“Não se pode simplesmente remeter a uma dotação futura. A exigência constitucional é prévia dotação orçamentária, e o próprio órgão técnico do Poder Legislativo municipal registrou que esses requisitos não estavam preenchidos.”
+
+O relator acrescentou ainda que pareceres produzidos pela própria Câmara Municipal de Curitiba já indicavam a inexistência de fonte de custeio e de previsão orçamentária capazes de suportar o aumento das despesas com pessoal. Por essa razão, ele disse que permaneciam íntegros os fundamentos do voto anteriormente apresentado.
+
+Por fim, Mendonça reiterou a proposta de modulação dos efeitos da decisão para preservar direitos já adquiridos.
+
+No voto-vista, Flávio Dino aderiu ao resultado proposto pelo relator, mas adotou fundamentação diferente.
+
+Para ele, a orientação tradicional do Supremo sempre tratou a ausência de dotação orçamentária prévia como causa de ineficácia da lei, e não de sua invalidação. Na avaliação do magistrado, esse entendimento ainda passa por um processo de evolução jurisprudencial, especialmente após a introdução do  artigo 113 no Ato das Disposições Constitucionais Transitórias (ADCT) .
+
+Dino defendeu que a discussão envolve uma controvérsia essencialmente fática sobre a suficiência da dotação orçamentária, matéria que não poderia ser aprofundada pelo STF em sede de controle concentrado de constitucionalidade. O ministro observou que as vantagens previstas nas leis foram efetivamente pagas, circunstância que, em seu entendimento, evidencia a existência de dúvida objetiva sobre a alegada insuficiência de recursos.
+
+Fonte original: https://conjur.com.br/2026-ago-06/stf-invalida-leis-de-curitiba-que-instituiram-plano-de-carreira-para-professores/

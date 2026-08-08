@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-2bf46f3633
+titulo: Vigilância Sanitária promove capacitação gratuita sobre boas práticas de manipulação de alimentos em Guabiruba
+resumo: O curso será realizado no dia 25 de agosto e abordará segurança dos alimentos, manipulação higiênica e legislação sanitária. A Prefeitura de Guabiruba,...
+autor: Curadoria Publicoverso
+categoria: Inovacao e Boas Praticas
+data: 08/08/2026
+fonte: Prefeitura de Guabiruba
+status: Pendente
+status_triagem: Pendente
+url_original: https://guabiruba.sc.gov.br/vigilancia-sanitaria-promove-capacitacao-gratuita-sobre-boas-praticas-de-manipulacao-de-alimentos-em-guabiruba/
+---
+
+O curso será realizado no dia 25 de agosto e abordará segurança dos alimentos, manipulação higiênica e legislação sanitária. A Prefeitura de Guabiruba,...
+
+Fonte original: https://guabiruba.sc.gov.br/vigilancia-sanitaria-promove-capacitacao-gratuita-sobre-boas-praticas-de-manipulacao-de-alimentos-em-guabiruba/

@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-fa679986ec
+titulo: Saiba como adotar boas práticas na cozinha de casa
+resumo: Orientações são passadas pela equipe da Cozinha Escola da Prefeitura, durante oficinas culinárias gratuitas de Hortolândia. Ao preparar as refeições,...
+autor: Curadoria Publicoverso
+categoria: Inovacao e Boas Praticas
+data: 08/08/2026
+fonte: Prefeitura de Hortolândia
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.hortolandia.sp.gov.br/2026/08/05/saiba-como-adotar-boas-praticas-na-cozinha-de-casa/
+---
+
+Orientações são passadas pela equipe da Cozinha Escola da Prefeitura, durante oficinas culinárias gratuitas de Hortolândia. Ao preparar as refeições,...
+
+Fonte original: https://www.hortolandia.sp.gov.br/2026/08/05/saiba-como-adotar-boas-praticas-na-cozinha-de-casa/

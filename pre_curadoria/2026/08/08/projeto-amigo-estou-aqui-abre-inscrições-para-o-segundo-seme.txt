@@ -1,0 +1,52 @@
+---
+id_mineracao: auto-f0985f1d96
+titulo: Projeto ‘Amigo, Estou Aqui’ abre inscrições para o segundo semestre
+resumo: Serão cinco reuniões com servidores próximos da aposentadoria, que receberão orientações para vivenciar essa nova fase de maneira saudável,...
+autor: Curadoria Publicoverso
+categoria: Carreira e Legislacao
+data: 08/08/2026
+fonte: Prefeitura de Suzano
+status: Pendente
+status_triagem: Pendente
+url_original: https://suzano.sp.gov.br/projeto-amigo-estou-aqui-abre-inscricoes-para-o-segundo-semestre/
+---
+
+Cidadão Serviços e Informações       NF-e Emissão de Nota Fiscal Eletrônica       IPTU, Taxa de Licença,  ISS Fixo e Certidão de Débito       Imprensa Oficial do Município de Suzano       Ouvidoria Ouvidoria Geral do Município       Acesso à Informação Serviços de Acesso à Informação
+
+Serão cinco reuniões com servidores próximos da aposentadoria, que receberão orientações para vivenciar essa nova fase de maneira saudável, digna e produtiva
+
+A Secretaria Municipal de Administração, por meio do Núcleo de Acompanhamento aos Servidores (NAS), deu início às inscrições para mais uma edição do projeto “Amigo, Estou Aqui”, referente ao segundo semestre de 2026. A iniciativa oferece acolhimento, orientação e uma rede de apoio aos funcionários públicos municipais que estão próximos da aposentadoria.
+
+Com o primeiro encontro marcado para 21 de agosto (sexta-feira), o projeto será realizado de forma quinzenal e é destinado aos servidores que estejam entre seis e 24 meses da conclusão do processo de aposentadoria. A proposta é auxiliar os participantes na preparação para as mudanças que acompanham o encerramento da trajetória profissional no serviço público, estimulando a construção de novos projetos e a manutenção de uma rotina saudável, ativa e produtiva.
+
+Ao longo das atividades, os servidores recebem esclarecimentos e orientações sobre aspectos emocionais, sociais e culturais relacionados à aposentadoria. Os encontros também proporcionam um espaço de diálogo e troca de experiências, permitindo que os participantes compartilhem expectativas, dúvidas e sentimentos relacionados a essa nova etapa.
+
+A programação contará com cinco encontros realizados de forma on-line, com duração aproximada de duas horas cada. Não há limite de participantes. Para integrar o projeto, o servidor interessado deve preencher o formulário disponível no endereço  bit.ly/AmigoSuzano .
+
+Outras informações podem ser obtidas diretamente na sede do NAS, localizada no Paço Municipal Prefeito Firmino José da Costa, na rua Baruel, 501, sala 202, no centro, ou pelo telefone (11) 4745-2152. O atendimento ocorre de segunda a sexta-feira, das 8 às 17 horas.
+
+A secretária Cintia Lira destacou a importância da continuidade do projeto e do acompanhamento oferecido aos servidores neste período de transição. “A aposentadoria representa uma mudança significativa na vida de qualquer profissional e, por isso, precisa ser encarada com planejamento, informação e acolhimento. Desde 2021, o ‘Amigo, Estou Aqui’ proporciona aos nossos servidores um espaço seguro para conversar, esclarecer dúvidas e se preparar para essa nova etapa de forma saudável, digna e produtiva”, afirmou.
+
+05/08/2026                                      Suzano inicia integração do login único do Portal Gov.br aos sistemas internos
+
+07/07/2026                                      Serviços essenciais serão mantidos durante feriado prolongado
+
+25/06/2026                                      Serviços essenciais serão mantidos durante jogo da Seleção Brasileira na próxima segunda
+
+01/06/2026                                      Serviços essenciais são mantidos no Corpus Christi e quatro pontos terão interdições no trânsito
+
+20/05/2026                                      Administração destaca 939 convocações e 504 contratações desde 2025
+
+29/04/2026                                      Serviços essenciais serão mantidos durante feriado do Dia do Trabalho
+
+17/04/2026                                      Novo concurso público é aberto para cadastro reserva em 12 funções
+
+15/04/2026                                      Serviços essenciais serão mantidos durante feriado de Tiradentes
+
+Envie suas dúvidas, reclamações e sugestões através do nosso fale conosco.              Fale
+
+Razão Social: Município de Suzano CNPJ: 46.523.056/0001-21  Rua Baruel, 501 - Centro CEP: 08675-000  Telefone: 11 4745-2000  E-mail:   [email&#160;protected]
+
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+Fonte original: https://suzano.sp.gov.br/projeto-amigo-estou-aqui-abre-inscricoes-para-o-segundo-semestre/

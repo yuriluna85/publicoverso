@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-ec100d88b1
+titulo: Servidor público completa 45 anos de atuação na prefeitura de Tubarão
+resumo: Há momentos na vida em que a dedicação transcende o trabalho e se transforma em um verdadeiro legado. Neste mês de agosto, o servidor público municipal...
+autor: Curadoria Publicoverso
+categoria: Inovacao e Boas Praticas
+data: 08/08/2026
+fonte: Prefeitura de Tubarão
+status: Pendente
+status_triagem: Pendente
+url_original: https://tubarao.sc.gov.br/servidor-publico-completa-45-anos-de-atuacao-na-prefeitura-de-tubarao/
+---
+
+Há momentos na vida em que a dedicação transcende o trabalho e se transforma em um verdadeiro legado. Neste mês de agosto, o servidor público municipal...
+
+Fonte original: https://tubarao.sc.gov.br/servidor-publico-completa-45-anos-de-atuacao-na-prefeitura-de-tubarao/
