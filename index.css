@@ -5,26 +5,26 @@
    ========================================================================== */
 
 :root {
-  /* Colors - Default Theme */
-  --bg-primary: #0B0418;
-  --bg-surface: #171226;
-  --bg-card: rgba(32, 28, 43, 0.85);
-  --bg-card-hover: rgba(48, 41, 66, 0.95);
+  /* Colors - Default Light Theme (Fundo Azul Clarinho / Branco com Textos Escuros) */
+  --bg-primary: #F4F7FA;
+  --bg-surface: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F8FAFC;
   
   --color-brand-primary: #0F2C3D;
-  --color-brand-turquoise: #00D2C8;
-  --color-brand-purple: #9146FF;
-  --color-brand-purple-deep: #6441A4;
+  --color-brand-turquoise: #008080;
+  --color-brand-purple: #7C3AED;
+  --color-brand-purple-deep: #5B21B6;
   
-  --text-main: #F8FAFC;
-  --text-secondary: #CBC8D0;
-  --text-muted: #8E879A;
+  --text-main: #0F172A;
+  --text-secondary: #334155;
+  --text-muted: #64748B;
   
-  --border-color: rgba(145, 70, 255, 0.25);
-  --border-color-active: #00D2C8;
+  --border-color: rgba(15, 44, 61, 0.15);
+  --border-color-active: #0F2C3D;
   
-  --shadow-glow: 0 8px 32px rgba(145, 70, 255, 0.2);
-  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 8px 32px rgba(15, 44, 61, 0.12);
+  --shadow-card: 0 4px 20px rgba(15, 44, 61, 0.06);
   
   /* Typography Scale */
   --font-main: 'Inter', system-ui, -apple-system, sans-serif;
@@ -38,19 +38,26 @@
   --transition-fast: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Modo Alto Contraste (A11y) */
+/* Modo Alto Contraste / Dark Tech Theme */
 body.high-contrast {
-  --bg-primary: #000000;
-  --bg-surface: #050505;
-  --bg-card: #0A0A0A;
-  --bg-card-hover: #141414;
+  --bg-primary: #0B0418;
+  --bg-surface: #171226;
+  --bg-card: rgba(32, 28, 43, 0.95);
+  --bg-card-hover: rgba(48, 41, 66, 0.95);
+  
+  --color-brand-primary: #0F2C3D;
+  --color-brand-turquoise: #00D2C8;
+  --color-brand-purple: #9146FF;
+  
   --text-main: #FFFFFF;
-  --text-secondary: #FFFF00;
-  --text-muted: #00FFFF;
-  --border-color: #FFFFFF;
-  --border-color-active: #FFFF00;
-  --color-brand-turquoise: #00FFFF;
-  --color-brand-purple: #FFFF00;
+  --text-secondary: #CBC8D0;
+  --text-muted: #8E879A;
+  
+  --border-color: rgba(145, 70, 255, 0.35);
+  --border-color-active: #00D2C8;
+  
+  --shadow-glow: 0 8px 32px rgba(0, 210, 200, 0.25);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Reset e Estrutura Base */

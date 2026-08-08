@@ -138,13 +138,19 @@
     renderizarNoticias(filtradas);
   }
 
-  // --- Acessibilidade: Fonte e Alto Contraste ---
+  // --- Acessibilidade: Fonte e Alto Contraste (Alternância de Tema) ---
   function configurarAcessibilidade() {
     let tamanhoFonte = 100;
 
     const btnMais = document.getElementById('btnFontIncrease');
     const btnMenos = document.getElementById('btnFontDecrease');
     const btnContraste = document.getElementById('btnHighContrast');
+
+    // Restaura preferência de tema salva no navegador
+    const temaSalvo = localStorage.getItem('publicoverso-tema');
+    if (temaSalvo === 'alto-contraste') {
+      document.body.classList.add('high-contrast');
+    }
 
     if (btnMais) {
       btnMais.addEventListener('click', () => {
@@ -162,7 +168,8 @@
 
     if (btnContraste) {
       btnContraste.addEventListener('click', () => {
-        document.body.classList.toggle('high-contrast');
+        const eContraste = document.body.classList.toggle('high-contrast');
+        localStorage.setItem('publicoverso-tema', eContraste ? 'alto-contraste' : 'padrao');
       });
     }
   }

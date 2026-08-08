@@ -205,8 +205,11 @@ def gerar_html(metadados, corpo_html):
     </nav>
     <p class="footer-disclaimer">Portal independente, sem vinculo oficial com órgãos governamentais. Curadoria editorial: Cristina Mascarenhas.</p>
     <p>&copy; 2026 Publicoverso. Todos os direitos reservados.</p>
-  </footer>
-
+  <script>
+    if (localStorage.getItem('publicoverso-tema') === 'alto-contraste') {{
+      document.body.classList.add('high-contrast');
+    }}
+  </script>
 </body>
 </html>
 """

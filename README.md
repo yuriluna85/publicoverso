@@ -84,10 +84,10 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizações (Changelog)
 
-### 08/08/2026 (Sessao 5 - Taxonomia das 7 Editorias & Acentuacao Ortografica ABNT2)
-- Implementada a arquitetura editorial estilo "G1 dos Servidores Publicos" com 7 grandes editorias: Artes & Literatura, Esportes & Aventura, Ciencia & Tecnologia, Cultura Pop & Gastronomia, Solidariedade & Comunidade, Historias & Superacao e Carreira & Conquistas.
-- Realizada varredura e auditoria ortografica completa em todo o repositorio, corrigindo 100% da acentuação ortografica em Portugues do Brasil (pt-BR ABNT2) em telas HTML, scripts Python, configuracoes JSON, folhas CSS e documentacao Markdown (Regra 19).
-- Atualizado o gerador `build_materias.py` para preservar a acentuação ortografica em todas as materias compiladas.
+### 08/08/2026 (Sessao 6 - Tema Claro Padrao, Alternancia para Alto Contraste e Responsividade Mobile/Tablet)
+- Reestruturado o tema padrao do portal para **Modo Claro Institucional** (fundo azul clarinho/branco `#F4F7FA`, cartoes brancos `#FFFFFF` e textos escuros em preto `#0F172A`).
+- O botão **Alto Contraste** (`#btnHighContrast`) no cabeçalho passou a alternar dinamicamente para o **Modo Dark Tech / Alto Contraste** (fundo `#0B0418`, neons turquesa `#00D2C8` e roxo `#9146FF`), salvando e restaurando a preferência do leitor no `localStorage`.
+- Aperfeiçoada a responsividade mobile (320px+) e tablet: barra de chips com rolagem horizontal suave sem quebra de layout, alvos de toque acessíveis de no mínimo 44px e bento grid adaptável (3 colunas em desktop, 2 em tablet e 1 em celulares).
 
 ### 08/08/2026 (Sessao 4 - Minerador de Protagonistas e Atribuição de Fonte)
 - Criado o robô `scripts/minerador_protagonistas.py` dedicado a minerar histórias humanas de servidores e servidoras pública fora da reparticao (Literatura, Esportes, Cultura Pop/Realities, Voluntariado e Superacao Pessoal).
