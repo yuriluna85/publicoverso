@@ -84,7 +84,23 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizacoes (Changelog)
 
+### 08/08/2026 (Sessao 5 - Taxonomia das 7 Editorias Jornalisticas)
+- Implementada a arquitetura editorial estilo "G1 dos Servidores Publicos" com 7 grandes editorias: Artes & Literatura, Esportes & Aventura, Ciencia & Tecnologia, Cultura Pop & Gastronomia, Solidariedade & Comunidade, Historias & Superacao e Carreira & Conquistas.
+- Atualizado o Design System em `index.css` com 7 badges coloridos exclusivos (`.badge-artes`, `.badge-esportes`, `.badge-ciencia`, `.badge-pop`, `.badge-social`, `.badge-superacao`, `.badge-carreira`).
+- Atualizados os chips de navegacao em `index.html` e a filtragem dinamica em `app.js`.
+- Criado o algoritmo `classificar_editoria()` em `scripts/minerador_protagonistas.py` e `scripts/minerador_historias.py` para categorizacao automatica das materias mineradas.
+- Reclassificada toda a base inicial em `data/noticias_curadoria.json`.
+
+### 08/08/2026 (Sessao 4 - Minerador de Protagonistas e Atribuicao de Fonte)
+- Criado o robô `scripts/minerador_protagonistas.py` dedicado a minerar historias humanas de servidores e servidoras publica fora da reparticao (Literatura, Esportes, Cultura Pop/Realities, Voluntariado e Superacao Pessoal).
+- Implementado motor de verificacao ativa de liveness (HTTP status 200), resolucao de redirecionamentos (URLs canonicas), remocao de parametros de rastreamento (UTMs) e expurgo total de pautas burocraticas/institucionais.
+- Adicionado o `.box-fonte-original` no `build_materias.py` e `materias/materia.css` para exibir obrigatoriamente a fonte original e o link direto verificado da noticia.
+- Integrado o novo minerador ao `scripts/pipeline_completo.py` e ao GitHub Actions em `.github/workflows/atualizacao_publicoverso.yml`.
+
 ### 08/08/2026 (Sessao 3 - Esteira de Pre-Curadoria e Remocao de Colunas)
+- Corrigidos todos os links internos e favicons das paginas (`index.html`, `sobre.html`, `contato.html`, `privacidade.html`, `termos.html`, `concursos.html` e `build_materias.py`) de caminhos absolutos (`/sobre.html`) para caminhos relativos funcionais (`sobre.html` / `../../sobre.html`), garantindo navegacao 100% perfeita tanto no GitHub Pages quanto em preview local.
+- Criado o script `generate_favicons.py` que gera a suite completa de favicons com base no logo hexagonal/constelacao: `favicon.ico` (16, 32, 48px), `favicon.svg`, `favicon-16x16.png`, `favicon-32x32.png`, `favicon-48x48.png` e `apple-touch-icon.png` (180x180).
+- Adicionadas as tags de favicon no `<head>` de todas as paginas (`index.html`, `sobre.html`, `contato.html`, `privacidade.html`, `termos.html`, `concursos.html` e `build_materias.py`).
 - Implementada esteira de triagem e historico temporal:
   - Os robos de mineracao gravam os rascunhos em `pre_curadoria/AAAA/MM/DD/slug.txt` com base na data atual.
   - Criado o utilitario CLI `scripts/promover_materia.py` para validar e mover materias selecionadas da pre-curadoria para `materias/conteudo/`.

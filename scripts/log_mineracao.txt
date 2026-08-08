@@ -29,166 +29,28 @@
 [2026-08-08 19:15:24]   Resultados retornados: 0
 [2026-08-08 19:15:26] === Mineracao concluida. 0 novos rascunhos salvos em pre_curadoria/. ===
 [2026-08-08 19:15:26] Utilize scripts/promover_materia.py para aprovar e publicar as materias.
-[2026-08-08 22:18:29] === Iniciando mineracao de historias ===
-[2026-08-08 22:18:29] Registros existentes no JSON / Historico: 8
-[2026-08-08 22:18:29] Buscando: [Gente e Cultura] ...
-[2026-08-08 22:18:31]   Resultados retornados: 5
-[2026-08-08 22:18:42]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/teatro-de-rua-inspirado-no-folclore-do-curupira-estreia-nest.txt
-[2026-08-08 22:18:49]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/parceira-inesperada-policial-corre-ao-lado-de-atleta-que-que.txt
-[2026-08-08 22:18:56]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/policial-militar-corre-ao-lado-de-atleta-e-evita-desistência.txt
-[2026-08-08 22:19:26] [AVISO] Scraper API falhou para https://www.google.com/goto?url=CAESuQEB7keqTc30iBNMCon9yD9DnjHkpqIaAPwOROKVOBzzuucQrw3C2-BxqVMtHA16CQaib9gJFQq078cu_boExhgARNW3UhSN9KFNdhMFhx3FBgkuHSaxe5k0frmPFeFiDmaiEPBwuKXNZebwEO8vOU5yNycTY9w459rQ1XxdmZPXrV0_SbenjZD7HxuzGZC3OAN4t-0qwNl8UrNPGdxCMakmEkwpmHQYCDY33bRGVvVvjOaedda7dCKF5g==: HTTPSConnectionPool(host='api.scraperapi.com', port=443): Read timed out. (read timeout=30)
-[2026-08-08 22:19:28]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/policial-militar-acompanha-corredora-até-a-linha-de-chegada-.txt
-[2026-08-08 22:19:38]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/policial-militar-acompanha-corredora-até-a-chegada-e-gesto-d.txt
-[2026-08-08 22:19:41] Buscando: [Gente e Cultura] ...
-[2026-08-08 22:19:42]   Resultados retornados: 10
-[2026-08-08 22:19:47]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/fotógrafo-mantém-viva-tradição-de-fotos-em-cavalinhos-há-mai.txt
-[2026-08-08 22:19:47]   [EXCLUIDO] Quem é o ator Marco Furlan, preso por estupro de vulnerável ...
-[2026-08-08 22:19:47]   [EXCLUIDO] Justiça de SP decreta prisão preventiva de ator investigado ...
-[2026-08-08 22:19:47]   [EXCLUIDO] Fotos: Preso sob suspeita de estupro de vulnerável, ator Mar...
-[2026-08-08 22:19:47]   [EXCLUIDO] Polícia Civil prende em MT foragido investigado por golpe de...
-[2026-08-08 22:19:47]   [EXCLUIDO] Preso em flagrante, ator da Globo é apontado como suspeito p...
-[2026-08-08 22:20:06]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/ator-marco-furlan-tem-instagram-desativado-após-prisão-por-a.txt
-[2026-08-08 22:20:06]   [EXCLUIDO] Preso sob suspeita de estupro de vulnerável, ator Marco Furl...
-[2026-08-08 22:20:06]   [EXCLUIDO] Ator preso por abuso de criança diz ter ‘confundido’ vítima ...
-[2026-08-08 22:20:06]   [EXCLUIDO] Ator é flagrado por familiares em quarto com menino autista ...
-[2026-08-08 22:20:09] Buscando: [Conquistas e Premiacoes] ...
-[2026-08-08 22:20:10]   Resultados retornados: 5
-[2026-08-08 22:20:16]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/contribuição-aos-estudos-do-humor-rende-a-pesquisador-da-usp.txt
-[2026-08-08 22:20:22]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/idosa-dança-após-última-quimioterapia-e-leva-tapete-vermelho.txt
-[2026-08-08 22:20:25]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/pesquisador-explica-a-importância-do-selo-de-geoparque-da-un.txt
-[2026-08-08 22:20:28]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/estudante-brasileira-vence-prêmio-internacional-de-medicina.txt
-[2026-08-08 22:20:32]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/life-genomics-recebe-reconhecimento-no-web-summit-rio-2025.txt
-[2026-08-08 22:20:35] Buscando: [Conquistas e Premiacoes] ...
-[2026-08-08 22:20:35]   Resultados retornados: 0
-[2026-08-08 22:20:38] Buscando: [Inovacao e Boas Praticas] ...
-[2026-08-08 22:20:39]   Resultados retornados: 9
-[2026-08-08 22:21:09] [AVISO] Scraper API falhou para https://tubarao.sc.gov.br/servidor-publico-completa-45-anos-de-atuacao-na-prefeitura-de-tubarao/: HTTPSConnectionPool(host='api.scraperapi.com', port=443): Read timed out. (read timeout=30)
-[2026-08-08 22:21:11]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/servidor-público-completa-45-anos-de-atuação-na-prefeitura-d.txt
-[2026-08-08 22:21:15]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/mgi-da-orientações-sobre-recesso-de-fim-de-ano-no-serviço-pú.txt
-[2026-08-08 22:21:20]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/servidor-público-7-projetos-de-lei-em-brasília-que-podem-aum.txt
-[2026-08-08 22:21:24]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/servidor-público-completa-45-anos-de-trabalho-na-prefeitura-.txt
-[2026-08-08 22:21:27]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/lula-indica-antônio-carlos-berwanger-para-diretoria-da-cvm.txt
-[2026-08-08 22:21:31]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/capep-saúde-recupera-r-32-milhões-desviados-após-ataque-cibe.txt
-[2026-08-08 22:21:34]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/uma-pessoa-escreveu-o-software-por-conta-própria-ajudando-as.txt
-[2026-08-08 22:21:49]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/servidores-federais-fazem-ato-para-pedir-isonomia-de-reajust.txt
-[2026-08-08 22:21:53]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/prefeitura-de-porto-velho-capacita-servidores-para-aplicar-i.txt
-[2026-08-08 22:21:55] Buscando: [Inovacao e Boas Praticas] ...
-[2026-08-08 22:21:56]   Resultados retornados: 10
-[2026-08-08 22:22:05]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/prefeitura-busca-mais-eficiência-nos-serviços-de-zeladoria.txt
-[2026-08-08 22:22:24]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/curso-de-boas-práticas-reforça-segurança-alimentar-nas-feira.txt
-[2026-08-08 22:22:29]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/curso-de-agentes-ambientais-capacita-população-como-multipli.txt
-[2026-08-08 22:22:42]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/682026---prefeitura-de-lauro-de-freitas-concorre-a-prêmio-na.txt
-[2026-08-08 22:23:12] [AVISO] Scraper API falhou para https://www.riobranco.ac.gov.br/emurb/prefeitura-acompanha-pavimentacao-da-rua-buriti-e-destaca-melhoria-na-mobilidade-urbana/: HTTPSConnectionPool(host='api.scraperapi.com', port=443): Read timed out. (read timeout=30)
-[2026-08-08 22:23:14]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/prefeitura-acompanha-pavimentação-da-rua-buriti-e-destaca-me.txt
-[2026-08-08 22:23:42]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/servidores-da-ouvidoria-passam-por-treinamento.txt
-[2026-08-08 22:24:13] [AVISO] Scraper API falhou para https://www.hortolandia.sp.gov.br/2026/08/05/saiba-como-adotar-boas-praticas-na-cozinha-de-casa/: HTTPSConnectionPool(host='api.scraperapi.com', port=443): Read timed out. (read timeout=30)
-[2026-08-08 22:24:15]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/saiba-como-adotar-boas-práticas-na-cozinha-de-casa.txt
-[2026-08-08 22:24:19]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/secretaria-municipal-de-urbanismo-apresenta-boas-práticas-em.txt
-[2026-08-08 22:24:37]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/sine-manaus-lidera-ranking-nacional-de-eficiência-em-inserçã.txt
-[2026-08-08 22:25:07] [AVISO] Scraper API falhou para https://guabiruba.sc.gov.br/vigilancia-sanitaria-promove-capacitacao-gratuita-sobre-boas-praticas-de-manipulacao-de-alimentos-em-guabiruba/: HTTPSConnectionPool(host='api.scraperapi.com', port=443): Read timed out. (read timeout=30)
-[2026-08-08 22:25:09]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/vigilância-sanitária-promove-capacitação-gratuita-sobre-boas.txt
-[2026-08-08 22:25:12] Buscando: [Carreira e Legislacao] ...
-[2026-08-08 22:25:12]   Resultados retornados: 10
-[2026-08-08 22:25:18]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/cnj-acaba-com-aposentadoria-compulsória-como-punição-máxima-.txt
-[2026-08-08 22:25:48] [AVISO] Scraper API falhou para https://obastidor.com.br/justica/muito-alem-da-aposentadoria/: HTTPSConnectionPool(host='api.scraperapi.com', port=443): Read timed out. (read timeout=30)
-[2026-08-08 22:25:51]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/muito-além-da-aposentadoria.txt
-[2026-08-08 22:26:21] [AVISO] Scraper API falhou para https://www.brasildefato.com.br/2026/08/04/cnj-enterra-aposentadoria-compulsoria-como-punicao-maxima-para-juizes-e-passa-a-prever-demissao/: HTTPSConnectionPool(host='api.scraperapi.com', port=443): Read timed out. (read timeout=30)
-[2026-08-08 22:26:23]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/cnj-enterra-aposentadoria-compulsória-como-punição-máxima-pa.txt
-[2026-08-08 22:26:27]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/entenda-as-propostas-no-congresso-que-reconfiguram-a-aposent.txt
-[2026-08-08 22:26:31]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/manoel-messias-se-aposenta-com-quase-56-anos-de-trabalho-ati.txt
-[2026-08-08 22:26:35]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/projeto-amigo-estou-aqui-abre-inscrições-para-o-segundo-seme.txt
-[2026-08-08 22:26:50]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/servidores-chegam-à-universidade-de-brasília.txt
-[2026-08-08 22:26:54]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/quanto-ganha-um-juiz-aposentado-no-brasil-veja-os-valores.txt
-[2026-08-08 22:26:56]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/notícia-servidor-público-7-projetos-de-lei-em-brasília-que-p.txt
-[2026-08-08 22:26:59] Buscando: [Carreira e Legislacao] ...
-[2026-08-08 22:26:59]   Resultados retornados: 8
-[2026-08-08 22:27:06]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/prorh-divulga-eventos-relacionados-ao-rsc-pcctae-na-ufmg.txt
-[2026-08-08 22:27:09]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/stf-invalida-leis-de-curitiba-que-instituíram-plano-de-carre.txt
-[2026-08-08 22:27:13]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/ufal-regulamenta-rsc-para-servidores-técnico-administrativos.txt
-[2026-08-08 22:27:21]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/fábio-do-pastel-comemora-aprovação-do-novo-plano-de-carreira.txt
-[2026-08-08 22:27:34]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/professores-da-rede-estadual-recebem-progressão-na-carreira.txt
-[2026-08-08 22:27:38]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/candidatos-ao-governo-de-sergipe-assinam-compromisso-propost.txt
-[2026-08-08 22:27:42]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/goiás-concede-progressão-na-carreira-e-reajuste-salarial-a-q.txt
-[2026-08-08 22:27:46]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/08/pc-sp-assina-decreto-do-novo-plano-de-carreira-concurso-em-a.txt
-[2026-08-08 22:27:49] === Mineracao concluida. 48 novos rascunhos salvos em pre_curadoria/. ===
-[2026-08-08 22:27:49] Utilize scripts/promover_materia.py para aprovar e publicar as materias.
-[2026-08-08 22:27:49] === Iniciando Radar de Concursos ===
-[2026-08-08 22:27:49] Editais existentes no radar: 5
-[2026-08-08 22:27:49] Buscando concursos: "inscrições abertas" ("concurso público" OR "processo seletivo") ("fed...
-[2026-08-08 22:27:50]   Resultados: 10
-[2026-08-08 22:27:50]   [NOVO EDITAL] Instituto ACCESS
-[2026-08-08 22:27:50]   [NOVO EDITAL] Concursos Federais 2026: panorama dos próximos editais
-[2026-08-08 22:27:50]   [NOVO EDITAL] Edital nº 02/2026 – Técnico-Administrativo em Educação (TAE)
-[2026-08-08 22:27:50]   [NOVO EDITAL] Concurso público: 20 editais com inscrições abertas em julho
-[2026-08-08 22:27:50]   [NOVO EDITAL] COMPEC - Concursos
-[2026-08-08 22:27:50]   [NOVO EDITAL] Quadrix
-[2026-08-08 22:27:50]   [NOVO EDITAL] tenção! O Instituto Federal do Sudeste de Minas Gerais abriu
-[2026-08-08 22:27:50]   [NOVO EDITAL] Concursos com Inscrições Abertas - Instituto Avalia
-[2026-08-08 22:27:50]   [NOVO EDITAL] Instituto Legatus
-[2026-08-08 22:27:50]   [NOVO EDITAL] Concursos Federais 2026 - Concursos Públicos no Brasil
-[2026-08-08 22:27:52] Buscando concursos: "edital publicado" "concurso público" ("DOU" OR "Diário Oficial") "vag...
-[2026-08-08 22:27:53]   Resultados: 10
-[2026-08-08 22:27:53]   [NOVO EDITAL] TEMOS NOVOS CONVOCADOS! A Prefeitura de ... - Instagram
-[2026-08-08 22:27:53]   [NOVO EDITAL] Notícias sobre edital de 07 de agosto de 2026 - Estratégia C
-[2026-08-08 22:27:53]   [NOVO EDITAL] +1 concurso público previsto para o Rio Grande do Norte em 2
-[2026-08-08 22:27:53]   [NOVO EDITAL] [PDF] EDITAL Nº 01/2026 ABERTURA DO CONCURSO PÚBLICO ...
-[2026-08-08 22:27:53]   [NOVO EDITAL] EDITAL DE PROCESSO SELETIVO N° 002/2026
-[2026-08-08 22:27:53]   [NOVO EDITAL] Concurso SES TO 2026: edital publicado, 5.124 vagas
-[2026-08-08 22:27:53]   [NOVO EDITAL] Concurso Público Municipal — Araguaína/TO 2026
-[2026-08-08 22:27:53]   [NOVO EDITAL] [PDF] EDITAL Nº 1637, DE 13 DE JULHO DE 2026 - DOU - Letras
-[2026-08-08 22:27:53]   [NOVO EDITAL] Digite Aprovado O novo concurso Prefeitura de Santos 2026 ..
-[2026-08-08 22:27:53]   [NOVO EDITAL] EsFCEx 2026/27: edital publicado com 152 vagas para médicos!
-[2026-08-08 22:27:56] Buscando concursos: site:cebraspe.org.br "inscrições" 2026...
-[2026-08-08 22:27:56]   Resultados: 10
-[2026-08-08 22:27:59] Buscando concursos: site:conhecimento.fgv.br "concurso" "inscrições" 2026...
-[2026-08-08 22:28:00]   Resultados: 10
-[2026-08-08 22:28:00]   [NOVO EDITAL] Concurso Público para o Ministério Público do Estado do Espí
-[2026-08-08 22:28:00]   [NOVO EDITAL] [PDF] 2ª RETIFICAÇÃO DO EDITAL DE CONCURSO Nº 01/2026 ...
-[2026-08-08 22:28:00]   [NOVO EDITAL] Concurso Público para a Receita Federal do Brasil
-[2026-08-08 22:28:00]   [NOVO EDITAL] [PDF] EDITAL DE CONCURSO Nº 01/2026 O PROCURADOR-GERAL DE ..
-[2026-08-08 22:28:00]   [NOVO EDITAL] [PDF] CRONOGRAMA PREVISTO CONCURSO PÚBLICO PARA ...
-[2026-08-08 22:28:00]   [NOVO EDITAL] Concurso Público para o Ministério Público do Estado de Goiá
-[2026-08-08 22:28:00]   [NOVO EDITAL] [PDF] edital de abertura do xxix concurso para ingresso na c
-[2026-08-08 22:28:00]   [NOVO EDITAL] Concurso Público para o Tribunal de Justiça do Estado de Mat
-[2026-08-08 22:28:02] Buscando concursos: site:institutoaocp.org.br "edital" "inscrições abertas" 2026...
-[2026-08-08 22:28:03]   Resultados: 10
-[2026-08-08 22:28:03]   [NOVO EDITAL] seduc - secretaria de educação do estado do rio grande do su
-[2026-08-08 22:28:03]   [NOVO EDITAL] prefeitura municipal de vitória da conquista - ba - Institut
-[2026-08-08 22:28:03]   [NOVO EDITAL] reda/smed - secretaria municipal de educação de salvador
-[2026-08-08 22:28:03]   [NOVO EDITAL] sad/pe - secretaria de administração do estado de pernambuco
-[2026-08-08 22:28:03]   [NOVO EDITAL] ifce - instituto federal de educação, ciência e tecnologia d
-[2026-08-08 22:28:03]   [NOVO EDITAL] hu brasil - empresa brasileira de serviços hospitalares - In
-[2026-08-08 22:28:03]   [NOVO EDITAL] mpgo - ministério público do estado de goiás - go - Institut
-[2026-08-08 22:28:03]   [NOVO EDITAL] tj/pr - tribunal de justiça do estado do paraná - Instituto 
-[2026-08-08 22:28:03]   [NOVO EDITAL] IGP-RS - INSTITUTO-GERAL DE PERÍCIAS - Instituto AOCP
-[2026-08-08 22:28:03]   [NOVO EDITAL] ifpb - instituto federal de educação, ciência e tecnologia d
-[2026-08-08 22:28:06] Buscando concursos: "concurso público" ("Receita Federal" OR "Banco Central" OR "Senado" O...
-[2026-08-08 22:28:06]   Resultados: 10
-[2026-08-08 22:28:06]   [NOVO EDITAL] Concurso Receita Federal 2026: autorizado, banca em breve!
-[2026-08-08 22:28:06]   [NOVO EDITAL] Ministério da Gestão autoriza novo concurso para a Receita F
-[2026-08-08 22:28:06]   [NOVO EDITAL] Concurso Receita Federal 2026: Edital autorizado! 146 vagas!
-[2026-08-08 22:28:06]   [NOVO EDITAL] Concurso da Receita Federal autorizadoooo!! 116 vagas para .
-[2026-08-08 22:28:06]   [NOVO EDITAL] Um novo edital da Receita Federal pode ser autorizado já em 
-[2026-08-08 22:28:06]   [NOVO EDITAL] Concursos - STJ
-[2026-08-08 22:28:06]   [NOVO EDITAL] Concurso Receita Federal 2026: Edital autorizado! 146 vagas!
-[2026-08-08 22:28:06]   [NOVO EDITAL] Concurso Receita Federal 2026: AUTORIZADO com 146 vagas
-[2026-08-08 22:28:09] Buscando concursos: "concurso público" ("policial federal" OR "agente federal" OR "delegad...
-[2026-08-08 22:28:10]   Resultados: 10
-[2026-08-08 22:28:10]   [NOVO EDITAL] Concursos — Polícia Federal - Portal Gov.br
-[2026-08-08 22:28:10]   [NOVO EDITAL] Concurso Público para a Polícia Civil do Estado do Paraná
-[2026-08-08 22:28:10]   [NOVO EDITAL] polícia federal - Cebraspe
-[2026-08-08 22:28:10]   [NOVO EDITAL] Concurso delegado MG 2026: vagas, banca e histórico
-[2026-08-08 22:28:10]   [NOVO EDITAL] Edital Delegado PF: PUBLICADO; R$ 26,8 mil; 120 VAGAS!
-[2026-08-08 22:28:12] Buscando concursos: "concurso público" ("Anatel" OR "ANAC" OR "ANVISA" OR "IBGE" OR "IPEA"...
-[2026-08-08 22:28:14]   Resultados: 10
-[2026-08-08 22:28:14]   [NOVO EDITAL] EDITAL ATÉ JANEIRO DE 2027! O novo concurso do Banco Central
-[2026-08-08 22:28:14]   [NOVO EDITAL] Trabalhe Conosco - IBGE
-[2026-08-08 22:28:14]   [NOVO EDITAL] Concurso IBGE 2026: sai edital com 8 mil vagas de nível médi
-[2026-08-08 22:28:14]   [NOVO EDITAL] Concurso Anatel: 50 vagas; nomeações divulgadas! VEJA
-[2026-08-08 22:28:14]   [NOVO EDITAL] O Banco Central do Brasil (Bacen) pode abrir em breve um nov
-[2026-08-08 22:28:14]   [NOVO EDITAL] Concurso - Ipea
-[2026-08-08 22:28:14]   [NOVO EDITAL] Concurso Bacen: 170 vagas são autorizadas!
-[2026-08-08 22:28:14]   [NOVO EDITAL] [PDF] AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES (ANATEL ...
-[2026-08-08 22:28:14]   [NOVO EDITAL] Concurso BACEN 2026 : r/concursospublicos - Reddit
-[2026-08-08 22:28:16] === Radar concluido. 60 novos editais adicionados. Total: 65. ===
-[2026-08-08 22:28:16] Revise os editais com status "Em Analise" e altere para "Inscricoes Abertas" apos verificacao manual.
+[2026-08-08 19:38:08] === Iniciando minerador de Protagonistas ("Vida Alem do Trabalho") ===
+[2026-08-08 19:38:08] [ERRO] SERPER_API_KEY nao configurada no arquivo .env
+[2026-08-08 19:38:09] [ERRO] SCRAPER_API_KEY nao configurada no arquivo .env
+[2026-08-08 19:38:09] URLs conhecidas no historico: 3
+[2026-08-08 19:38:09] Buscando eixo humano: [Literatura e Artes] ...
+[2026-08-08 19:38:09]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 19:38:09] Buscando eixo humano: [Literatura e Artes] ...
+[2026-08-08 19:38:10]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 19:38:10] Buscando eixo humano: [Esportes e Desafios] ...
+[2026-08-08 19:38:10]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 19:38:10] Buscando eixo humano: [Esportes e Desafios] ...
+[2026-08-08 19:38:10]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 19:38:10] Buscando eixo humano: [Entretenimento e Cultura Pop] ...
+[2026-08-08 19:38:11]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 19:38:11] Buscando eixo humano: [Entretenimento e Cultura Pop] ...
+[2026-08-08 19:38:11]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 19:38:11] Buscando eixo humano: [Voluntariado e Causa Social] ...
+[2026-08-08 19:38:12]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 19:38:12] Buscando eixo humano: [Voluntariado e Causa Social] ...
+[2026-08-08 19:38:12]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 19:38:12] Buscando eixo humano: [Trajetoria e Superacao] ...
+[2026-08-08 19:38:12]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 19:38:12] Buscando eixo humano: [Trajetoria e Superacao] ...
+[2026-08-08 19:38:13]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 19:38:13] === Mineracao de Protagonistas concluida. 0 novas historias salvas em pre_curadoria/. ===

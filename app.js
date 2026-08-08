@@ -84,10 +84,15 @@
   // --- Mapeamento de Categoria para Classe de Badge ---
   function categoriaBadgeClass(categoria) {
     const mapa = {
-      'Gente e Cultura': 'badge-cultura',
-      'Conquistas e Premiações': 'badge-conquista',
-      'Carreira e Legislação': 'badge-carreira',
-      'Inovação e Boas Práticas': 'badge-inovacao',
+      'Artes e Literatura': 'badge-artes',
+      'Esportes e Aventura': 'badge-esportes',
+      'Ciência e Tecnologia': 'badge-ciencia',
+      'Ciencia e Tecnologia': 'badge-ciencia',
+      'Cultura Pop e Gastronomia': 'badge-culturapop',
+      'Solidariedade e Comunidade': 'badge-solidariedade',
+      'Histórias e Superação': 'badge-historias',
+      'Historias e Superacao': 'badge-historias',
+      'Carreira e Conquistas': 'badge-carreira',
     };
     return mapa[categoria] || 'badge-default';
   }

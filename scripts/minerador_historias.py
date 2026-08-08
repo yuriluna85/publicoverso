@@ -34,6 +34,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 # Ajuste do path para importar config.py do mesmo diretorio
 sys.path.insert(0, str(Path(__file__).parent))
 import config
+from minerador_protagonistas import classificar_editoria
 
 try:
     import requests
@@ -319,12 +320,15 @@ def main():
                 conteudo_raspado = raspar_conteudo(url)
                 time.sleep(config.PAUSA_ENTRE_REQUISICOES)
 
+            # Classificacao automatica inteligente por palavras-chave (7 Editorias)
+            cat_classificada = config.classificar_categoria(titulo, resumo, conteudo_raspado, categoria_padrao=categoria)
+
             # Salva rascunho .txt em pre_curadoria/AAAA/MM/DD/slug.txt
-            caminho_rascunho, id_mineracao = gerar_rascunho_txt(res, categoria, conteudo_raspado)
-            config.registrar_log(f'  [RASCUNHO] {caminho_rascunho}')
+            caminho_rascunho, id_mineracao = gerar_rascunho_txt(res, cat_classificada, conteudo_raspado)
+            config.registrar_log(f'  [RASCUNHO] {caminho_rascunho} (Editoria: {cat_classificada})')
 
             # Registra no historico de mineracao
-            registrar_historico_mineracao(id_mineracao, url, titulo, categoria)
+            registrar_historico_mineracao(id_mineracao, url, titulo, cat_classificada)
 
             ids_existentes.add(id_mineracao)
             urls_existentes.add(url)

@@ -39,9 +39,39 @@ def gerar_html(metadados, corpo_html):
     titulo = metadados.get('titulo', 'Materia sem titulo')
     resumo = metadados.get('resumo', '')
     autor = metadados.get('autor', 'Redacao Publicoverso')
-    categoria = metadados.get('categoria', 'Gente e Cultura')
+    categoria = metadados.get('categoria', 'Carreira e Conquistas')
     data = metadados.get('data', datetime.today().strftime('%d/%m/%Y'))
     fonte = metadados.get('fonte', 'Publicoverso')
+    url_original = metadados.get('url_original', '').strip()
+
+    mapa_badges = {
+        'Artes e Literatura': 'badge-artes',
+        'Esportes e Aventura': 'badge-esportes',
+        'Ciência e Tecnologia': 'badge-ciencia',
+        'Ciencia e Tecnologia': 'badge-ciencia',
+        'Cultura Pop e Gastronomia': 'badge-culturapop',
+        'Solidariedade e Comunidade': 'badge-solidariedade',
+        'Histórias e Superação': 'badge-historias',
+        'Historias e Superacao': 'badge-historias',
+        'Carreira e Conquistas': 'badge-carreira',
+    }
+    badge_class = mapa_badges.get(categoria, 'badge-default')
+
+    box_fonte_html = ''
+    if url_original:
+        box_fonte_html = f'''
+      <aside class="box-fonte-original" aria-label="Atribuição de Fonte Original">
+        <span class="box-fonte-label">Fonte da Notícia Original</span>
+        <p class="box-fonte-texto">
+          Matéria produzida com base em reportagem publicada por <strong>{fonte}</strong>.
+        </p>
+        <a href="{url_original}" target="_blank" rel="noopener noreferrer" class="box-fonte-link">
+          Acessar matéria original em {fonte} &rarr;
+        </a>
+        <p class="box-fonte-disclaimer">
+          O Publicoverso referencia e valoriza o jornalismo profissional. Esta publicação é um resumo curado com link verificado para a fonte primária da informação.
+        </p>
+      </aside>'''
 
     json_ld = json.dumps({
         "@context": "https://schema.org",
@@ -76,6 +106,11 @@ def gerar_html(metadados, corpo_html):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
   <link rel="stylesheet" href="../../index.css">
   <link rel="stylesheet" href="../materia.css">
   <script type="application/ld+json">
@@ -86,7 +121,7 @@ def gerar_html(metadados, corpo_html):
 
   <header class="navbar">
     <div class="navbar-container">
-      <a href="/" class="brand-logo" aria-label="Voltar para a pagina inicial do Publicoverso">
+      <a href="../../index.html" class="brand-logo" aria-label="Voltar para a pagina inicial do Publicoverso">
         <svg class="logo-hex" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <polygon points="20,2 35,10 35,30 20,38 5,30 5,10" stroke="url(#hexGradMateria)" stroke-width="2" fill="rgba(0,210,200,0.06)"/>
           <circle cx="20" cy="8" r="2.5" fill="#00D2C8"/><circle cx="31" cy="15" r="2.5" fill="#9146FF"/>
@@ -108,9 +143,10 @@ def gerar_html(metadados, corpo_html):
         </div>
       </a>
       <nav class="navbar-links" aria-label="Navegacao principal">
-        <a href="/" class="nav-link">Inicio</a>
-        <a href="/sobre.html" class="nav-link">Sobre</a>
-        <a href="/contato.html" class="nav-link">Contato</a>
+        <a href="../../index.html" class="nav-link">Inicio</a>
+        <a href="../../sobre.html" class="nav-link">Sobre</a>
+        <a href="../../contato.html" class="nav-link">Contato</a>
+        <a href="../../concursos.html" class="nav-link">Radar de Concursos</a>
       </nav>
     </div>
   </header>
@@ -119,13 +155,12 @@ def gerar_html(metadados, corpo_html):
     <article class="materia-completa" aria-labelledby="materia-titulo">
 
       <nav class="breadcrumb" aria-label="Localizacao na pagina">
-        <a href="/">Inicio</a> &rsaquo;
-        <a href="/index.html">Noticias</a> &rsaquo;
+        <a href="../../index.html">Inicio</a> &rsaquo;
         <span>{categoria}</span>
       </nav>
 
       <header class="materia-header">
-        <span class="news-badge badge-default" aria-label="Categoria: {categoria}">{categoria}</span>
+        <span class="news-badge {badge_class}" aria-label="Categoria: {categoria}">{categoria}</span>
         <h2 id="materia-titulo" class="materia-titulo">{titulo}</h2>
         <p class="materia-resumo">{resumo}</p>
         <div class="materia-meta">
@@ -139,13 +174,15 @@ def gerar_html(metadados, corpo_html):
         {corpo_html}
       </div>
 
+      {box_fonte_html}
+
       <!-- Publicidade (AdSense) -->
       <aside class="adsense-block" aria-label="Publicidade">
         <p class="adsense-label">Publicidade</p>
       </aside>
 
       <footer class="materia-footer">
-        <a href="/" class="btn-voltar" aria-label="Voltar para o portal principal do Publicoverso">
+        <a href="../../index.html" class="btn-voltar" aria-label="Voltar para o portal principal do Publicoverso">
           &larr; Voltar ao Publicoverso
         </a>
         <div class="ferramentas-uteis">
@@ -160,11 +197,11 @@ def gerar_html(metadados, corpo_html):
   <footer class="footer">
     <p class="footer-brand">Publicoverso</p>
     <nav class="footer-links" aria-label="Links institucionais do rodape">
-      <a href="/">Inicio</a>
-      <a href="/sobre.html">Sobre</a>
-      <a href="/contato.html">Contato</a>
-      <a href="/privacidade.html">Privacidade</a>
-      <a href="/termos.html">Termos de Uso</a>
+      <a href="../../index.html">Inicio</a>
+      <a href="../../sobre.html">Sobre</a>
+      <a href="../../contato.html">Contato</a>
+      <a href="../../privacidade.html">Privacidade</a>
+      <a href="../../termos.html">Termos de Uso</a>
     </nav>
     <p class="footer-disclaimer">Portal independente, sem vinculo oficial com orgaos governamentais. Curadoria editorial: Cristina Mascarenhas.</p>
     <p>&copy; 2026 Publicoverso. Todos os direitos reservados.</p>
@@ -259,7 +296,7 @@ def atualizar_json_noticias(metadados, slug_html):
             noticias = json.load(f)
 
     novo_id = metadados.get('id_mineracao') or f"autoral-{slug_html[:30]}"
-    url_materia = f"/materias/paginas/{slug_html}.html"
+    url_materia = f"materias/paginas/{slug_html}.html"
 
     # Verificar se ja existe
     ids_existentes = {n.get('id') for n in noticias}

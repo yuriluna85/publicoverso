@@ -14,6 +14,7 @@ Instrucoes:
 
 import sys
 import os
+import re
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -62,56 +63,150 @@ DIAS_RETROATIVOS_CONCURSOS = 30     # Janela de busca de editais (dias)
 MAX_RESULTADOS_POR_DORK = 10        # Limite de resultados por consulta
 PAUSA_ENTRE_REQUISICOES = 2.5       # Segundos entre chamadas de API
 
-# --- Categorias Validas do Portal ---
+# --- Categorias Validas do Portal (7 Editorias Jornalisticas) ---
 CATEGORIAS_VALIDAS = [
-    'Gente e Cultura',
-    'Conquistas e Premiacoes',
-    'Carreira e Legislacao',
-    'Inovacao e Boas Praticas',
+    'Artes e Literatura',
+    'Esportes e Aventura',
+    'Ciência e Tecnologia',
+    'Cultura Pop e Gastronomia',
+    'Solidariedade e Comunidade',
+    'Histórias e Superação',
+    'Carreira e Conquistas',
 ]
 
 # --- Dorks de Busca: Historias Humanas ---
 DORKS_HISTORIAS = [
-    # Categoria: Gente e Cultura
+    # Categoria: Cultura Pop e Gastronomia
     {
-        'categoria': 'Gente e Cultura',
-        'query': '("servidor público" OR "servidora pública" OR "policial federal" OR "policial civil" OR "policial militar" OR "professor universitário" OR "médico do SUS" OR "analista judiciário" OR "técnico administrativo" OR "auditor fiscal") AND ("BBB" OR "Big Brother" OR "MasterChef" OR "The Voice" OR "reality show" OR "atleta" OR "campeão" OR "maratona" OR "jiu-jitsu" OR "natação" OR "corrida")',
+        'categoria': 'Cultura Pop e Gastronomia',
+        'query': '("servidor público" OR "servidora pública" OR "policial federal" OR "policial civil" OR "policial militar" OR "professor universitário" OR "médico do SUS" OR "analista judiciário" OR "técnico administrativo" OR "auditor fiscal") AND ("BBB" OR "Big Brother" OR "MasterChef" OR "The Voice" OR "reality show" OR "gastronomia" OR "culinária")',
     },
+    # Categoria: Artes e Literatura
     {
-        'categoria': 'Gente e Cultura',
-        'query': '("servidor público" OR "funcionário público" OR "servidora pública") AND ("lança livro" OR "publicou livro" OR "autor de livro" OR "exposição de arte" OR "artista plástico" OR "músico" OR "cantor" OR "ator" OR "bailarino" OR "fotógrafo")',
-    },
-
-    # Categoria: Conquistas e Premiacoes
-    {
-        'categoria': 'Conquistas e Premiacoes',
-        'query': '("servidor público" OR "professora da rede" OR "pesquisador" OR "médica" OR "enfermeira" OR "delegada") AND ("prêmio internacional" OR "vence prêmio" OR "reconhecimento internacional" OR "representará o Brasil" OR "patente registrada" OR "descoberta científica")',
-    },
-    {
-        'categoria': 'Conquistas e Premiacoes',
-        'query': '("servidor do IF" OR "servidor da UFBA" OR "servidor da UFRJ" OR "servidor da Fiocruz" OR "servidor da Embrapa" OR "servidor do INPE" OR "pesquisador federal") AND ("descoberta" OR "prêmio" OR "artigo publicado" OR "conquista" OR "condecoração")',
+        'categoria': 'Artes e Literatura',
+        'query': '("servidor público" OR "funcionário público" OR "servidora pública") AND ("lança livro" OR "publicou livro" OR "autor de livro" OR "exposição de arte" OR "artista plástico" OR "músico" OR "cantor" OR "ator" OR "bailarino" OR "fotógrafo" OR "poesia")',
     },
 
-    # Categoria: Inovacao e Boas Praticas
+    # Categoria: Esportes e Aventura
     {
-        'categoria': 'Inovacao e Boas Praticas',
-        'query': '("servidor público" OR "funcionário público" OR "agente público") AND ("criou aplicativo" OR "desenvolveu sistema" OR "app" OR "inovação" OR "tecnologia" OR "ato de bravura" OR "salvou vidas" OR "heroísmo" OR "projeto social")',
-    },
-    {
-        'categoria': 'Inovacao e Boas Praticas',
-        'query': '("prefeitura" OR "governo estadual" OR "governo federal" OR "órgão público") AND ("boas práticas" OR "case de sucesso" OR "melhoria" OR "premiação de gestão" OR "eficiência" OR "economizou" OR "reduziu desperdício")',
+        'categoria': 'Esportes e Aventura',
+        'query': '("servidor público" OR "servidora pública" OR "policial" OR "bombeiro") AND ("atleta" OR "campeão" OR "maratona" OR "jiu-jitsu" OR "natação" OR "corrida" OR "triatlo" OR "ironman" OR "olimpíadas")',
     },
 
-    # Categoria: Carreira e Legislacao
+    # Categoria: Ciência e Tecnologia
     {
-        'categoria': 'Carreira e Legislacao',
-        'query': '("servidor público" OR "serviço público") AND ("trajetória inspiradora" OR "de gari a" OR "aprovado em concurso" OR "aposentadoria" OR "30 anos de serviço" OR "progressão na carreira" OR "virou médico" OR "virou juiz")',
+        'categoria': 'Ciência e Tecnologia',
+        'query': '("servidor público" OR "professora da rede" OR "pesquisador" OR "médica" OR "enfermeira" OR "delegada") AND ("prêmio internacional" OR "vence prêmio" OR "reconhecimento internacional" OR "patente registrada" OR "descoberta científica" OR "criou aplicativo" OR "desenvolveu sistema" OR "inovação")',
     },
     {
-        'categoria': 'Carreira e Legislacao',
+        'categoria': 'Ciência e Tecnologia',
+        'query': '("servidor do IF" OR "servidor da UFBA" OR "servidor da UFRJ" OR "servidor da Fiocruz" OR "servidor da Embrapa" OR "servidor do INPE" OR "pesquisador federal") AND ("descoberta" OR "prêmio" OR "artigo publicado" OR "conquista" OR "tecnologia")',
+    },
+
+    # Categoria: Solidariedade e Comunidade
+    {
+        'categoria': 'Solidariedade e Comunidade',
+        'query': '("servidor público" OR "funcionário público" OR "agente público") AND ("projeto social" OR "ong" OR "voluntariado" OR "ato de bravura" OR "salvou vidas" OR "heroísmo" OR "ação comunitária")',
+    },
+
+    # Categoria: Histórias e Superação
+    {
+        'categoria': 'Histórias e Superação',
+        'query': '("servidor público" OR "serviço público") AND ("trajetória inspiradora" OR "de gari a" OR "superação" OR "aprovado em concurso" OR "aposentadoria" OR "30 anos de serviço" OR "virou médico" OR "virou juiz")',
+    },
+
+    # Categoria: Carreira e Conquistas
+    {
+        'categoria': 'Carreira e Conquistas',
         'query': '(PCCTAE OR "plano de carreira" OR "reajuste salarial" OR "revisão geral anual" OR "licença capacitação" OR "afastamento para mestrado" OR "afastamento para doutorado") AND ("servidor público" OR "funcional")',
     },
 ]
+
+# --- Classificador Inteligente por Palavras-Chave (7 Editorias) ---
+PALAVRAS_CHAVE_EDITORIAS = {
+    'Artes e Literatura': [
+        'livro', 'livros', 'romance', 'poesia', 'poema', 'poemas', 'escritor', 'escritora',
+        'autor', 'autora', 'literatura', 'literário', 'literária', 'quadrinista', 'hq',
+        'gibi', 'ilustrador', 'ilustradora', 'arte', 'artes', 'artista', 'escultor',
+        'escultora', 'pintura', 'quadro', 'exposição', 'teatro', 'peça', 'música',
+        'músico', 'musico', 'cantor', 'cantora', 'violino', 'banda', 'álbum', 'album',
+        'single', 'fotografia', 'fotógrafo', 'fotografa'
+    ],
+    'Esportes e Aventura': [
+        'esporte', 'esportes', 'atleta', 'campeão', 'campeã', 'campeonato', 'maratona',
+        'maratonista', 'triatlo', 'ironman', 'jiu-jitsu', 'jiujitsu', 'faixa preta',
+        'judô', 'judo', 'karatê', 'karate', 'natação', 'natacao', 'nado', 'corrida',
+        'ciclismo', 'bicicleta', 'futebol', 'basquete', 'vôlei', 'volei', 'olimpíadas',
+        'olimpiadas', 'paralimpíadas', 'paralimpiadas', 'pan-americano', 'aventura',
+        'escalada', 'travessia', 'fisiculturismo'
+    ],
+    'Ciência e Tecnologia': [
+        'ciência', 'ciencia', 'científico', 'cientifico', 'científica', 'cientifica',
+        'tecnologia', 'aplicativo', 'app', 'software', 'sistema', 'inovação', 'inovacao',
+        'descoberta', 'pesquisa', 'pesquisador', 'pesquisadora', 'artigo científico',
+        'patente', 'inteligência artificial', 'ia', 'ti', 'dados', 'automação',
+        'automacao', 'laboratório', 'laboratorio', 'fiocruz', 'embrapa', 'inpe'
+    ],
+    'Cultura Pop e Gastronomia': [
+        'bbb', 'big brother', 'masterchef', 'the voice', 'reality', 'reality show',
+        'culinária', 'culinaria', 'cozinha', 'gastronomia', 'receita', 'chef',
+        'bake off', 'no limite', 'entretenimento', 'humorista', 'stand-up', 'youtube',
+        'influenciador', 'influenciadora', 'tiktok'
+    ],
+    'Solidariedade e Comunidade': [
+        'voluntariado', 'voluntário', 'voluntario', 'voluntária', 'voluntaria', 'ong',
+        'projeto social', 'doação', 'doacao', 'doar', 'comunitário', 'comunitario',
+        'comunitária', 'comunitaria', 'ação social', 'acao social', 'resgate',
+        'causa social', 'crianças carentes', 'sopão', 'sopao', 'animais',
+        'solidariedade', 'ajuda humanitária'
+    ],
+    'Histórias e Superação': [
+        'superação', 'superacao', 'trajetória', 'trajetoria', 'história de vida',
+        'historica', 'venceu', 'vencer', 'superou', 'desafio', 'de gari a',
+        'de vigilante a', 'de merendeira a', 'de estagiário a', 'de estagiario a',
+        'superou câncer', 'superou cancer', 'superou doença', 'deficiência',
+        'deficiencia', 'pcd', 'inclusão', 'inclusao', 'inspiração', 'inspiracao',
+        'inspiradora', 'lição de vida', 'licao de vida', 'aposentadoria',
+        'centenário', 'centenario', 'legado'
+    ],
+    'Carreira e Conquistas': [
+        'concurso', 'aprovado', 'aprovada', 'aprovação', 'aprovacao', 'posse',
+        'carreira', 'promoção', 'promocao', 'progressão', 'progressao', 'pcctae',
+        'rsc', 'reajuste', 'salário', 'salario', 'licença', 'licenca', 'capacitação',
+        'capacitacao', 'prêmio', 'premio', 'premiação', 'premiacao', 'reconhecimento',
+        'conquista', 'gestão pública', 'gestao publica', 'eficiência', 'eficiencia',
+        'mérito', 'merito', 'legislação', 'legislacao', 'edital'
+    ]
+}
+
+
+def classificar_categoria(titulo, resumo='', texto_completo=None, categoria_padrao=None):
+    """
+    Classifica automaticamente o conteudo em uma das 7 Editorias Jornalisticas
+    com base em contagem ponderada de palavras-chave.
+    Ponderacao: Titulo tem peso 2, Resumo/Texto tem peso 1.
+    """
+    if not categoria_padrao or categoria_padrao not in CATEGORIAS_VALIDAS:
+        categoria_padrao = 'Carreira e Conquistas'
+
+    titulo_lower = (titulo or '').lower()
+    corpo_lower = ((resumo or '') + ' ' + (texto_completo or '')).lower()
+
+    pontuacao = {cat: 0 for cat in CATEGORIAS_VALIDAS}
+
+    for cat, kw_list in PALAVRAS_CHAVE_EDITORIAS.items():
+        for kw in kw_list:
+            pattern = r'\b' + re.escape(kw) + r'\b'
+            if re.search(pattern, titulo_lower):
+                pontuacao[cat] += 2
+            if re.search(pattern, corpo_lower):
+                pontuacao[cat] += 1
+
+    melhor_categoria = max(pontuacao, key=pontuacao.get)
+    if pontuacao[melhor_categoria] > 0:
+        return melhor_categoria
+
+    return categoria_padrao
 
 # --- Dorks de Busca: Editais de Concursos ---
 DORKS_CONCURSOS = [

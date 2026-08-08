@@ -349,9 +349,15 @@ body {
   margin-bottom: 0.75rem;
 }
 
-.badge-federal { background: rgba(145, 70, 255, 0.2); color: #B388FF; border: 1px solid #9146FF; }
-.badge-estadual { background: rgba(0, 210, 200, 0.2); color: #00E5FF; border: 1px solid #00D2C8; }
-.badge-municipal { background: rgba(255, 202, 99, 0.2); color: #FFD77A; border: 1px solid #FFCA63; }
+/* Badges das 7 Editorias Jornalisticas */
+.badge-artes { background: rgba(168, 85, 247, 0.18); color: #C084FC; border: 1px solid #A855F7; }
+.badge-esportes { background: rgba(249, 115, 22, 0.18); color: #FB923C; border: 1px solid #F97316; }
+.badge-ciencia { background: rgba(0, 210, 200, 0.18); color: #00E5D8; border: 1px solid #00D2C8; }
+.badge-culturapop, .badge-cultura-pop { background: rgba(236, 72, 153, 0.18); color: #F472B6; border: 1px solid #EC4899; }
+.badge-solidariedade { background: rgba(16, 185, 129, 0.18); color: #34D399; border: 1px solid #10B981; }
+.badge-historias { background: rgba(234, 179, 8, 0.18); color: #FACC15; border: 1px solid #EAB308; }
+.badge-carreira { background: rgba(59, 130, 246, 0.18); color: #60A5FA; border: 1px solid #3B82F6; }
+.badge-default { background: rgba(255, 255, 255, 0.1); color: var(--text-secondary); border: 1px solid var(--border-color); }
 
 .news-title {
   font-family: var(--font-heading);
@@ -873,3 +879,77 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Box de Atribuicao de Fonte Original - Dark Tech (#00D2C8) */
+.box-fonte-original {
+  background: rgba(0, 210, 200, 0.04);
+  border: 1px solid rgba(0, 210, 200, 0.25);
+  border-left: 4px solid var(--color-brand-turquoise);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  box-shadow: 0 4px 20px rgba(0, 210, 200, 0.05);
+  transition: var(--transition-fast);
+}
+
+.box-fonte-original:hover {
+  background: rgba(0, 210, 200, 0.07);
+  border-color: rgba(0, 210, 200, 0.4);
+}
+
+.box-fonte-label,
+.fonte-label {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-brand-turquoise);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.box-fonte-texto {
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.box-fonte-texto strong {
+  color: var(--text-main);
+}
+
+.box-fonte-link,
+.fonte-link {
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  color: var(--color-brand-turquoise);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: var(--transition-fast);
+}
+
+.box-fonte-link:hover,
+.box-fonte-link:focus-visible,
+.fonte-link:hover,
+.fonte-link:focus-visible {
+  color: #55EBE4;
+  text-decoration: underline;
+  outline: none;
+}
+
+.box-fonte-disclaimer,
+.fonte-disclaimer {
+  font-family: var(--font-main);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-top: 0.25rem;
+}
+

@@ -3,12 +3,13 @@
 """
 pipeline_completo.py - Orquestrador do pipeline completo do Publicoverso
 Portal: Publicoverso (publicoverso.com.br)
-Laboratorio: YLuna85 LABs
+Laboratório: YLuna85 LABs
 
-Executa em sequencia:
-  1. minerador_historias.py  - Minera novas historias de servidores
-  2. radar_concursos.py      - Atualiza o radar de editais de concursos
-  3. build_materias.py       - Gera as paginas HTML dos rascunhos aprovados
+Executa em sequência:
+  1. minerador_historias.py     - Minera novas histórias gerais de servidores
+  2. minerador_protagonistas.py - Minera os 5 eixos temáticos de protagonistas humanos
+  3. radar_concursos.py         - Atualiza o radar de editais de concursos
+  4. build_materias.py          - Gera as páginas HTML dos rascunhos aprovados
 
 Uso:
   python scripts/pipeline_completo.py
@@ -25,7 +26,8 @@ from datetime import datetime
 sys.stdout.reconfigure(encoding='utf-8')
 
 RAIZ = Path(__file__).parent.parent
-SCRIPT_MINERADOR = RAIZ / 'scripts' / 'minerador_historias.py'
+SCRIPT_MINERADOR_HISTORIAS = RAIZ / 'scripts' / 'minerador_historias.py'
+SCRIPT_MINERADOR_PROTAGONISTAS = RAIZ / 'scripts' / 'minerador_protagonistas.py'
 SCRIPT_RADAR = RAIZ / 'scripts' / 'radar_concursos.py'
 SCRIPT_BUILD = RAIZ / 'build_materias.py'
 
@@ -65,13 +67,14 @@ def main():
     sucesso_total = True
 
     if not args.apenas_build:
-        ok1 = executar(SCRIPT_MINERADOR, 'Minerador de Historias de Servidores')
-        ok2 = executar(SCRIPT_RADAR, 'Radar de Editais de Concursos')
-        sucesso_total = ok1 and ok2
+        ok1 = executar(SCRIPT_MINERADOR_HISTORIAS, 'Minerador de Historias Gerais de Servidores')
+        ok2 = executar(SCRIPT_MINERADOR_PROTAGONISTAS, 'Minerador Especialista de Protagonistas (Vida Alem do Trabalho)')
+        ok3 = executar(SCRIPT_RADAR, 'Radar de Editais de Concursos')
+        sucesso_total = ok1 and ok2 and ok3
 
     if not args.apenas_mineracao:
-        ok3 = executar(SCRIPT_BUILD, 'Build das Paginas HTML')
-        sucesso_total = sucesso_total and ok3
+        ok4 = executar(SCRIPT_BUILD, 'Build das Paginas HTML')
+        sucesso_total = sucesso_total and ok4
 
     print('\n' + '=' * 60)
     status_final = 'CONCLUIDO COM SUCESSO' if sucesso_total else 'CONCLUIDO COM ERROS'
