@@ -1,0 +1,14 @@
+---
+titulo: Modelo de Materia - Publicoverso
+resumo: Este arquivo serve como template. Substitua este resumo por uma frase de abertura objetiva com ate 200 caracteres.
+autor: Cristina Mascarenhas
+categoria: Gente e Cultura
+data: 08/08/2026
+fonte: Curadoria Publicoverso
+---
+
+Primeiro paragrafo da materia. Comece apresentando quem e a pessoa, o feito ou a conquista de forma direta. Evite introducoes longas. Apresente o fato principal logo na abertura.
+
+Segundo paragrafo com contexto ou aprofundamento. Aqui voce pode detalhar o percurso, as circunstancias ou as declaracoes do servidor. Mantenha paragrafos separados por uma linha em branco.
+
+Terceiro paragrafo com impacto, repercussao ou dado adicional. Encerre com uma informacao que situa o leitor sobre a dimensao da conquista ou do evento.
