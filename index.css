@@ -189,12 +189,12 @@ body {
 
 /* Hero Section */
 .hero-banner {
-  background: linear-gradient(135deg, rgba(15, 44, 61, 0.8), rgba(32, 28, 43, 0.9));
-  border: 1px solid var(--border-color);
+  background: linear-gradient(135deg, #0F2C3D 0%, #172554 100%);
+  border: 1px solid rgba(0, 210, 200, 0.3);
   border-radius: var(--radius-lg);
   padding: 2.5rem;
   margin-bottom: 2.5rem;
-  box-shadow: var(--shadow-card);
+  box-shadow: 0 8px 30px rgba(15, 44, 61, 0.2);
   position: relative;
   overflow: hidden;
 }
@@ -218,7 +218,7 @@ body {
 }
 
 .hero-subtitle {
-  color: var(--text-secondary);
+  color: #E2E8F0;
   font-size: 1.1rem;
   max-width: 800px;
 }
@@ -239,7 +239,7 @@ body {
 }
 
 .chip {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-card);
   border: 1px solid var(--border-color);
   color: var(--text-secondary);
   padding: 0.5rem 1.25rem;
@@ -248,14 +248,22 @@ body {
   font-size: 0.9rem;
   font-weight: 500;
   transition: var(--transition-fast);
+  box-shadow: var(--shadow-card);
 }
 
 .chip.active, .chip:hover {
+  background: var(--color-brand-primary);
+  color: #FFFFFF;
+  border-color: var(--color-brand-primary);
+  font-weight: 700;
+  box-shadow: var(--shadow-glow);
+}
+
+body.high-contrast .chip.active, 
+body.high-contrast .chip:hover {
   background: var(--color-brand-turquoise);
   color: #0F172A;
   border-color: var(--color-brand-turquoise);
-  font-weight: 700;
-  box-shadow: 0 4px 15px rgba(0, 210, 200, 0.3);
 }
 
 /* Busca */
@@ -266,13 +274,14 @@ body {
 
 .search-input {
   width: 100%;
-  background: rgba(23, 18, 38, 0.8);
+  background: var(--bg-card);
   border: 1px solid var(--border-color);
   color: var(--text-main);
   padding: 0.6rem 1rem 0.6rem 2.5rem;
   border-radius: 30px;
   font-size: 0.9rem;
   outline: none;
+  box-shadow: var(--shadow-card);
 }
 
 .search-input:focus {
@@ -299,6 +308,17 @@ body {
   gap: 0.75rem;
 }
 
+/* Bento Grid Notícias */
+.section-heading {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-main);
+}
+
 .section-heading::before {
   content: '';
   width: 4px;
@@ -323,7 +343,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   transition: var(--transition-fast);
-  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-card);
 }
 
 .card-news:hover {
@@ -335,8 +355,8 @@ body {
 
 .card-news.featured {
   grid-column: span 2;
-  border-color: var(--color-brand-purple);
-  background: linear-gradient(145deg, rgba(32, 28, 43, 0.95), rgba(23, 18, 38, 0.95));
+  border-color: var(--border-featured);
+  background: var(--bg-featured);
 }
 
 @media (max-width: 768px) {
@@ -356,21 +376,21 @@ body {
   margin-bottom: 0.75rem;
 }
 
-/* Badges das 7 Editorias Jornalisticas */
-.badge-artes { background: rgba(168, 85, 247, 0.18); color: #C084FC; border: 1px solid #A855F7; }
-.badge-esportes { background: rgba(249, 115, 22, 0.18); color: #FB923C; border: 1px solid #F97316; }
-.badge-ciencia { background: rgba(0, 210, 200, 0.18); color: #00E5D8; border: 1px solid #00D2C8; }
-.badge-culturapop, .badge-cultura-pop { background: rgba(236, 72, 153, 0.18); color: #F472B6; border: 1px solid #EC4899; }
-.badge-solidariedade { background: rgba(16, 185, 129, 0.18); color: #34D399; border: 1px solid #10B981; }
-.badge-histórias { background: rgba(234, 179, 8, 0.18); color: #FACC15; border: 1px solid #EAB308; }
-.badge-carreira { background: rgba(59, 130, 246, 0.18); color: #60A5FA; border: 1px solid #3B82F6; }
-.badge-default { background: rgba(255, 255, 255, 0.1); color: var(--text-secondary); border: 1px solid var(--border-color); }
+/* Badges Dinâmicos por Tema (7 Editorias Jornalísticas) */
+.badge-artes { background: var(--badge-artes-bg); color: var(--badge-artes-color); border: 1px solid var(--badge-artes-border); }
+.badge-esportes { background: var(--badge-esportes-bg); color: var(--badge-esportes-color); border: 1px solid var(--badge-esportes-border); }
+.badge-ciencia { background: var(--badge-ciencia-bg); color: var(--badge-ciencia-color); border: 1px solid var(--badge-ciencia-border); }
+.badge-culturapop, .badge-cultura-pop { background: var(--badge-pop-bg); color: var(--badge-pop-color); border: 1px solid var(--badge-pop-border); }
+.badge-solidariedade { background: var(--badge-social-bg); color: var(--badge-social-color); border: 1px solid var(--badge-social-border); }
+.badge-histórias, .badge-historias { background: var(--badge-superacao-bg); color: var(--badge-superacao-color); border: 1px solid var(--badge-superacao-border); }
+.badge-carreira { background: var(--badge-carreira-bg); color: var(--badge-carreira-color); border: 1px solid var(--badge-carreira-border); }
+.badge-default { background: var(--border-subtle); color: var(--text-secondary); border: 1px solid var(--border-color); }
 
 .news-title {
   font-family: var(--font-heading);
   font-size: 1.2rem;
   margin-bottom: 0.6rem;
-  color: #FFFFFF;
+  color: var(--text-main);
 }
 
 .news-summary {
@@ -386,23 +406,32 @@ body {
   justify-content: space-between;
   font-size: 0.8rem;
   color: var(--text-muted);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid var(--border-subtle);
   padding-top: 0.75rem;
 }
 
 .btn-curate {
-  background: transparent;
-  border: 1px solid var(--border-color);
-  color: var(--color-brand-turquoise);
-  padding: 0.3rem 0.75rem;
+  background: var(--color-brand-primary);
+  border: 1px solid var(--color-brand-primary);
+  color: #FFFFFF;
+  padding: 0.4rem 0.85rem;
   border-radius: var(--radius-sm);
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
   transition: var(--transition-fast);
+}
+
+body.high-contrast .btn-curate {
+  background: transparent;
+  border: 1px solid var(--color-brand-turquoise);
+  color: var(--color-brand-turquoise);
 }
 
 .btn-curate:hover {
   background: var(--color-brand-turquoise);
+  border-color: var(--color-brand-turquoise);
   color: #0F172A;
   font-weight: 700;
 }
@@ -416,11 +445,12 @@ body {
 }
 
 .card-author {
-  background: rgba(15, 44, 61, 0.4);
+  background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 1.75rem;
   transition: var(--transition-fast);
+  box-shadow: var(--shadow-card);
 }
 
 .card-author:hover {
@@ -431,8 +461,12 @@ body {
 .author-name {
   font-family: var(--font-heading);
   font-size: 1.15rem;
-  color: var(--color-brand-turquoise);
+  color: var(--color-brand-primary);
   margin-bottom: 0.25rem;
+}
+
+body.high-contrast .author-name {
+  color: var(--color-brand-turquoise);
 }
 
 .author-role {
@@ -446,7 +480,7 @@ body {
 .article-title {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
-  color: #FFFFFF;
+  color: var(--text-main);
 }
 
 .article-excerpt {
@@ -626,20 +660,21 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
-  background: rgba(15, 44, 61, 0.5);
-  border: 1px solid rgba(0, 210, 200, 0.2);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 1rem 1.25rem;
   text-decoration: none;
   color: var(--text-main);
   transition: var(--transition-fast);
+  box-shadow: var(--shadow-card);
 }
 
 .utility-card:hover,
 .utility-card:focus-visible {
   border-color: var(--color-brand-turquoise);
-  background: rgba(0, 210, 200, 0.08);
-  box-shadow: 0 4px 20px rgba(0, 210, 200, 0.15);
+  background: var(--bg-card-hover);
+  box-shadow: var(--shadow-glow);
   outline: none;
 }
 

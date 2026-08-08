@@ -84,10 +84,10 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizações (Changelog)
 
-### 08/08/2026 (Sessao 6 - Tema Claro Padrao, Alternancia para Alto Contraste e Responsividade Mobile/Tablet)
-- Reestruturado o tema padrao do portal para **Modo Claro Institucional** (fundo azul clarinho/branco `#F4F7FA`, cartoes brancos `#FFFFFF` e textos escuros em preto `#0F172A`).
-- O botão **Alto Contraste** (`#btnHighContrast`) no cabeçalho passou a alternar dinamicamente para o **Modo Dark Tech / Alto Contraste** (fundo `#0B0418`, neons turquesa `#00D2C8` e roxo `#9146FF`), salvando e restaurando a preferência do leitor no `localStorage`.
-- Aperfeiçoada a responsividade mobile (320px+) e tablet: barra de chips com rolagem horizontal suave sem quebra de layout, alvos de toque acessíveis de no mínimo 44px e bento grid adaptável (3 colunas em desktop, 2 em tablet e 1 em celulares).
+### 08/08/2026 (Sessao 6 - Tema Claro Padrao Harmonizado, Cartoes Dinamicos e Responsividade)
+- Refatorados 100% dos cartoes de noticias (`.card-news`), cartoes em destaque (`.card-news.featured`), cartoes de utilitarios (`.utility-card`), cartoes de autores e badges para responderem dinamicamente às variaveis CSS de tema.
+- No **Modo Claro Padrão**, todos os cartoes passam a ter fundo branco limpo (`#FFFFFF`), texto preto/marinho (`#0F172A`), bordas suaves e badges com contraste adaptado para leitura perfeita.
+- No **Modo Alto Contraste / Dark Tech**, os cartoes e elementos se alteram instantaneamente para fundo escuro (`#0B0418`), neons turquesa (`#00D2C8`) e texto claro (`#FFFFFF`), salvando a escolha no `localStorage`.
 
 ### 08/08/2026 (Sessao 4 - Minerador de Protagonistas e Atribuição de Fonte)
 - Criado o robô `scripts/minerador_protagonistas.py` dedicado a minerar histórias humanas de servidores e servidoras pública fora da reparticao (Literatura, Esportes, Cultura Pop/Realities, Voluntariado e Superacao Pessoal).
