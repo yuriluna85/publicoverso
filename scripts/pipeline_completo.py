@@ -32,20 +32,20 @@ SCRIPT_RADAR = RAIZ / 'scripts' / 'radar_concursos.py'
 SCRIPT_BUILD = RAIZ / 'build_materias.py'
 
 
-def executar(script, descricao):
+def executar(script, descrição):
     """Executa um script Python e exibe o resultado."""
-    print(f'\n[INICIANDO] {descricao}')
+    print(f'\n[INICIANDO] {descrição}')
     print(f'  Script: {script}')
-    inicio = datetime.now()
+    início = datetime.now()
     resultado = subprocess.run(
         [sys.executable, str(script)],
         capture_output=False,
         text=True,
         encoding='utf-8',
     )
-    duracao = (datetime.now() - inicio).seconds
+    duracao = (datetime.now() - início).seconds
     status = '[OK]' if resultado.returncode == 0 else '[ERRO]'
-    print(f'{status} {descricao} concluido em {duracao}s (codigo: {resultado.returncode})')
+    print(f'{status} {descrição} concluído em {duracao}s (codigo: {resultado.returncode})')
     return resultado.returncode == 0
 
 
@@ -54,26 +54,26 @@ def main():
         description='Publicoverso - Orquestrador do pipeline completo.'
     )
     parser.add_argument('--apenas-mineracao', action='store_true',
-                        help='Executa apenas a mineracao de historias e concursos')
+                        help='Executa apenas a mineracao de histórias e concursos')
     parser.add_argument('--apenas-build', action='store_true',
-                        help='Executa apenas o build das paginas HTML')
+                        help='Executa apenas o build das páginas HTML')
     args = parser.parse_args()
 
     print('=' * 60)
     print('PUBLICOVERSO - Pipeline Completo')
-    print(f'Inicio: {datetime.now().strftime("%d/%m/%Y %H:%M:%S")}')
+    print(f'Início: {datetime.now().strftime("%d/%m/%Y %H:%M:%S")}')
     print('=' * 60)
 
     sucesso_total = True
 
     if not args.apenas_build:
-        ok1 = executar(SCRIPT_MINERADOR_HISTORIAS, 'Minerador de Historias Gerais de Servidores')
+        ok1 = executar(SCRIPT_MINERADOR_HISTORIAS, 'Minerador de Histórias Gerais de Servidores')
         ok2 = executar(SCRIPT_MINERADOR_PROTAGONISTAS, 'Minerador Especialista de Protagonistas (Vida Alem do Trabalho)')
         ok3 = executar(SCRIPT_RADAR, 'Radar de Editais de Concursos')
         sucesso_total = ok1 and ok2 and ok3
 
     if not args.apenas_mineracao:
-        ok4 = executar(SCRIPT_BUILD, 'Build das Paginas HTML')
+        ok4 = executar(SCRIPT_BUILD, 'Build das Páginas HTML')
         sucesso_total = sucesso_total and ok4
 
     print('\n' + '=' * 60)

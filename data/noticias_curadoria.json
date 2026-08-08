@@ -1,7 +1,7 @@
 [
   {
     "id": "test-12345",
-    "titulo": "Servidor Publico Vence Premio de Inovacao em Gestao",
+    "titulo": "Servidor Público Vence Premio de Inovação em Gestao",
     "resumo": "Um analista de TI do governo federal desenvolveu uma ferramenta que automatiza a analise de dados.",
     "conteudo_completo": "Um analista de TI do governo federal desenvolveu uma ferramenta que automatiza a analise de dados.",
     "categoria": "Ciência e Tecnologia",
@@ -9,7 +9,7 @@
     "data": "08/08/2026",
     "status": "Aprovada",
     "destaque": false,
-    "url_materia": "materias/paginas/servidor-publico-vence-premio-de-inovacao-em-gestao.html",
+    "url_materia": "materias/páginas/servidor-público-vence-premio-de-inovação-em-gestao.html",
     "url_original": "https://agenciabrasil.ebc.com.br/exemplo"
   },
   {
@@ -22,10 +22,10 @@
     "data": "08/08/2026",
     "status": "Aprovada",
     "destaque": false,
-    "url_materia": "materias/paginas/modelo-de-materia-publicoverso.html"
+    "url_materia": "materias/páginas/modelo-de-materia-publicoverso.html"
   },
   {
-    "id": "noticia-01",
+    "id": "notícia-01",
     "titulo": "Policial federal participa do BBB e representa os servidores de segurança pública nas telas do país",
     "resumo": "A presença de servidores públicos de segurança em programas de entretenimento abre uma janela rara para o público conhecer o ser humano por trás da função.",
     "conteudo_completo": "A participação de um policial federal no Big Brother Brasil trouxe visibilidade inédita para o cotidiano dos servidores de segurança pública. Além da exposição midiática, o episódio gerou debate sobre a humanização dos agentes do Estado e o direito do servidor a uma vida pública para além da função institucional.",
@@ -37,7 +37,7 @@
     "url_materia": null
   },
   {
-    "id": "noticia-02",
+    "id": "notícia-02",
     "titulo": "Professora da rede estadual vence prêmio internacional de práticas pedagógicas inovadoras",
     "resumo": "Docente reconhece que o prêmio não é individual: é o resultado de anos de trabalho coletivo com estudantes de escola pública em território de baixa renda.",
     "conteudo_completo": "Uma professora da rede pública estadual da Bahia recebeu o Prêmio Internacional de Práticas Pedagógicas promovido por organismo multilateral. Seu projeto de leitura crítica com adolescentes de periferia foi selecionado entre 1.200 inscrições de 45 países. A educadora destaca que o trabalho só foi possível graças ao apoio da gestão escolar e ao engajamento das famílias.",
@@ -49,8 +49,8 @@
     "url_materia": null
   },
   {
-    "id": "noticia-03",
-    "titulo": "Engenheiro do DNIT publica livro sobre soluções de baixo custo para estradas em regiões de seca",
+    "id": "notícia-03",
+    "titulo": "Engenheiro do DNIT pública livro sobre soluções de baixo custo para estradas em regiões de seca",
     "resumo": "Obra técnico-científica resultado de 15 anos de campo no semiárido nordestino é disponibilizada gratuitamente em PDF pelo próprio autor.",
     "conteudo_completo": "Um engenheiro civil do Departamento Nacional de Infraestrutura de Transportes publicou um livro reunindo metodologias de construção e manutenção de estradas vicinais adaptadas ao clima semiárido. O trabalho, fruto de pesquisa de campo conduzida ao longo de 15 anos no interior do Nordeste, está sendo disponibilizado gratuitamente em formato digital. A iniciativa foi amplamente elogiada por prefeituras de municípios com baixo acesso a asfalto.",
     "categoria": "Artes e Literatura",
@@ -61,7 +61,7 @@
     "url_materia": null
   },
   {
-    "id": "noticia-04",
+    "id": "notícia-04",
     "titulo": "Reestruturação do PCCTAE 2026: o que muda na carreira dos servidores Técnico-Administrativos em Educação",
     "resumo": "Análise dos novos critérios de progressão por capacitação e mérito e o impacto do RSC na remuneração dos TAEs das universidades e institutos federais.",
     "conteudo_completo": "A reestruturação da carreira dos servidores Técnico-Administrativos em Educação estabelece novos parâmetros remuneratórios para progressão por capacitação e avaliação de desempenho. O Reconhecimento de Saberes e Competências (RSC) passa a ser um instrumento central de valorização dos servidores com titulação superior à exigida pelo cargo. Para simular os impactos financeiros individuais, acesse a Calculadora TAE Federal em taes-federal.com.br.",
@@ -73,7 +73,7 @@
     "url_materia": null
   },
   {
-    "id": "noticia-05",
+    "id": "notícia-05",
     "titulo": "Agente administrativo da Previdência Social cria app para auxiliar idosos a acessar benefícios do INSS",
     "resumo": "Aplicativo desenvolvido nas horas vagas resolve problema real enfrentado por segurados com baixa alfabetização digital em municípios do interior.",
     "conteudo_completo": "Um agente administrativo lotado em uma agência do INSS no interior do Pará desenvolveu, fora do horário de trabalho, um aplicativo mobile voltado a auxiliar idosos e pessoas com baixa escolaridade digital a consultar extrato, solicitar benefícios e acompanhar requerimentos no portal Meu INSS. O aplicativo, disponível gratuitamente na Play Store, acumula mais de 80 mil downloads em seis meses.",
@@ -85,7 +85,7 @@
     "url_materia": null
   },
   {
-    "id": "noticia-06",
+    "id": "notícia-06",
     "titulo": "Médica do SUS representa o Brasil em competição culinária internacional",
     "resumo": "Servidora do SUS participa do MasterChef Profissionais e aproveita visibilidade para promover alimentação saudável como política pública de saúde preventiva.",
     "conteudo_completo": "Uma médica de família e comunidade vinculada a uma Unidade Básica de Saúde do Rio Grande do Norte foi selecionada para participar do MasterChef Profissionais. Em entrevistas, ela associa sua paixão pela culinária à abordagem de saúde preventiva e nutrição que aplica no atendimento aos pacientes do SUS. Sua participação repercutiu positivamente entre colegas de profissão e nas redes de saúde pública.",
@@ -97,7 +97,7 @@
     "url_materia": null
   },
   {
-    "id": "noticia-07",
+    "id": "notícia-07",
     "titulo": "Proposta de reforma na licença capacitação avança no Congresso Nacional",
     "resumo": "Projeto de lei busca desburocratizar o afastamento para pós-graduação stricto sensu de servidores federais, estaduais e municipais.",
     "conteudo_completo": "O Projeto de Lei em tramitação na Câmara dos Deputados propõe simplificar os requisitos e o processo de concessão da licença capacitação para mestrado e doutorado de servidores públicos. A proposta estabelece prazo máximo de 30 dias para deliberação do órgão e elimina a exigência de autorização hierárquica em múltiplos níveis. Entidades representativas de servidores apoiam a medida como passo importante para a valorização da carreira.",

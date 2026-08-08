@@ -1,7 +1,7 @@
 [
   {
     "id": "concurso-2026-001",
-    "orgao": "Polícia Federal - Departamento de Polícia Federal",
+    "órgão": "Polícia Federal - Departamento de Polícia Federal",
     "sigla": "PF",
     "esfera": "Federal",
     "cargos": "Delegado, Perito Criminal, Agente, Escrivão, Papiloscopista",
@@ -17,7 +17,7 @@
   },
   {
     "id": "concurso-2026-002",
-    "orgao": "Receita Federal do Brasil",
+    "órgão": "Receita Federal do Brasil",
     "sigla": "RFB",
     "esfera": "Federal",
     "cargos": "Auditor Fiscal da Receita Federal, Analista Tributário",
@@ -33,7 +33,7 @@
   },
   {
     "id": "concurso-2026-003",
-    "orgao": "Banco Central do Brasil",
+    "órgão": "Banco Central do Brasil",
     "sigla": "BCB",
     "esfera": "Federal",
     "cargos": "Analista e Técnico do Banco Central",
@@ -49,7 +49,7 @@
   },
   {
     "id": "concurso-2026-004",
-    "orgao": "Conselho Nacional de Justiça",
+    "órgão": "Conselho Nacional de Justiça",
     "sigla": "CNJ",
     "esfera": "Federal",
     "cargos": "Analista e Técnico Judiciário",
@@ -65,7 +65,7 @@
   },
   {
     "id": "concurso-2026-005",
-    "orgao": "Universidades Federais - Técnico-Administrativo em Educação (TAE)",
+    "órgão": "Universidades Federais - Técnico-Administrativo em Educação (TAE)",
     "sigla": "TAE/UF",
     "esfera": "Federal",
     "cargos": "Técnico Administrativo em Educação (todos os níveis)",

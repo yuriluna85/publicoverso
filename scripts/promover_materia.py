@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-promover_materia.py - Promocao de materias da pre-curadoria para producao
+promover_materia.py - Promoção de materias da pre-curadoria para producao
 Portal: Publicoverso (publicoverso.com.br)
 Laboratorio: YLuna85 LABs
 
 Fluxo:
   1. Recebe um arquivo da pasta pre_curadoria/AAAA/MM/DD/slug.txt
-  2. Altera o metadado 'status:' no cabecalho para 'Aprovada'
-  3. Copia o arquivo atualizado para materias/conteudo/
+  2. Altera o metadado 'status:' no cabeçalho para 'Aprovada'
+  3. Copia o arquivo atualizado para materias/conteúdo/
   4. Executa build_materias.py para compilar o HTML e atualizar noticias_curadoria.json
 
 Uso:
@@ -36,14 +36,14 @@ def promover_materia(caminho_arquivo_str):
         caminho_origem = config.RAIZ_PROJETO / caminho_origem
 
     if not caminho_origem.exists() or not caminho_origem.is_file():
-        print(f'[ERRO] Arquivo nao encontrado: {caminho_origem}')
+        print(f'[ERRO] Arquivo não encontrado: {caminho_origem}')
         sys.exit(1)
 
-    conteudo = caminho_origem.read_text(encoding='utf-8')
+    conteúdo = caminho_origem.read_text(encoding='utf-8')
 
-    # Atualizacao do metadado status no cabecalho YAML
-    if conteudo.startswith('---'):
-        partes = conteudo.split('---', 2)
+    # Atualização do metadado status no cabeçalho YAML
+    if conteúdo.startswith('---'):
+        partes = conteúdo.split('---', 2)
         if len(partes) >= 3:
             bloco_meta = partes[1]
             linhas_meta = []
@@ -61,21 +61,21 @@ def promover_materia(caminho_arquivo_str):
             partes[1] = '\n' + '\n'.join(linhas_meta) + '\n'
             conteudo_atualizado = '---'.join(partes)
         else:
-            conteudo_atualizado = conteudo
+            conteudo_atualizado = conteúdo
     else:
-        conteudo_atualizado = f'---\nstatus: Aprovada\n---\n\n' + conteudo
+        conteudo_atualizado = f'---\nstatus: Aprovada\n---\n\n' + conteúdo
 
-    # Destino em materias/conteudo/
+    # Destino em materias/conteúdo/
     config.DIRETORIO_RASCUNHOS.mkdir(parents=True, exist_ok=True)
     caminho_destino = config.DIRETORIO_RASCUNHOS / caminho_origem.name
     caminho_destino.write_text(conteudo_atualizado, encoding='utf-8')
 
     print(f'[OK] Arquivo promovido e salvo em: {caminho_destino}')
 
-    # Execucao do pipeline build_materias.py
+    # Execução do pipeline build_materias.py
     script_build = config.RAIZ_PROJETO / 'build_materias.py'
     if not script_build.exists():
-        print(f'[ERRO] Script build_materias.py nao encontrado em: {script_build}')
+        print(f'[ERRO] Script build_materias.py não encontrado em: {script_build}')
         sys.exit(1)
 
     cmd = [sys.executable, str(script_build), '--arquivo', caminho_destino.name]

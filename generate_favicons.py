@@ -117,7 +117,7 @@ def criar_imagem_base(size=512):
 
 
 def main():
-    print('[INICIANDO] Geracao dos favicons do Publicoverso...')
+    print('[INICIANDO] Geração dos favicons do Publicoverso...')
 
     # 1. Salvar SVG
     caminho_svg = PASTA_PORTAL / 'favicon.svg'

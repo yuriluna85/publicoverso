@@ -6,9 +6,9 @@ Portal: Publicoverso (publicoverso.com.br)
 Laboratorio: YLuna85 LABs
 
 Funcao:
-  Le arquivos .txt ou .docx da pasta /materias/conteudo/
-  Gera paginas HTML individuais em /materias/paginas/
-  Cada pagina gerada contem navegacao de retorno ao portal principal,
+  Le arquivos .txt ou .docx da pasta /materias/conteúdo/
+  Gera páginas HTML individuais em /materias/páginas/
+  Cada página gerada contem navegação de retorno ao portal principal,
   JSON-LD NewsArticle e estrutura semantica conforme o System Design.
 
 Uso:
@@ -38,7 +38,7 @@ def gerar_html(metadados, corpo_html):
     """Monta o HTML completo da materia com System Design do Publicoverso."""
     titulo = metadados.get('titulo', 'Materia sem titulo')
     resumo = metadados.get('resumo', '')
-    autor = metadados.get('autor', 'Redacao Publicoverso')
+    autor = metadados.get('autor', 'Redação Publicoverso')
     categoria = metadados.get('categoria', 'Carreira e Conquistas')
     data = metadados.get('data', datetime.today().strftime('%d/%m/%Y'))
     fonte = metadados.get('fonte', 'Publicoverso')
@@ -51,8 +51,8 @@ def gerar_html(metadados, corpo_html):
         'Ciencia e Tecnologia': 'badge-ciencia',
         'Cultura Pop e Gastronomia': 'badge-culturapop',
         'Solidariedade e Comunidade': 'badge-solidariedade',
-        'Histórias e Superação': 'badge-historias',
-        'Historias e Superacao': 'badge-historias',
+        'Histórias e Superação': 'badge-histórias',
+        'Histórias e Superacao': 'badge-histórias',
         'Carreira e Conquistas': 'badge-carreira',
     }
     badge_class = mapa_badges.get(categoria, 'badge-default')
@@ -121,7 +121,7 @@ def gerar_html(metadados, corpo_html):
 
   <header class="navbar">
     <div class="navbar-container">
-      <a href="../../index.html" class="brand-logo" aria-label="Voltar para a pagina inicial do Publicoverso">
+      <a href="../../index.html" class="brand-logo" aria-label="Voltar para a página inicial do Publicoverso">
         <svg class="logo-hex" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <polygon points="20,2 35,10 35,30 20,38 5,30 5,10" stroke="url(#hexGradMateria)" stroke-width="2" fill="rgba(0,210,200,0.06)"/>
           <circle cx="20" cy="8" r="2.5" fill="#00D2C8"/><circle cx="31" cy="15" r="2.5" fill="#9146FF"/>
@@ -139,11 +139,11 @@ def gerar_html(metadados, corpo_html):
         </svg>
         <div class="brand-text">
           <h1>Publicoverso</h1>
-          <span>A rede do servico publico</span>
+          <span>A rede do serviço público</span>
         </div>
       </a>
-      <nav class="navbar-links" aria-label="Navegacao principal">
-        <a href="../../index.html" class="nav-link">Inicio</a>
+      <nav class="navbar-links" aria-label="Navegação principal">
+        <a href="../../index.html" class="nav-link">Início</a>
         <a href="../../sobre.html" class="nav-link">Sobre</a>
         <a href="../../contato.html" class="nav-link">Contato</a>
         <a href="../../concursos.html" class="nav-link">Radar de Concursos</a>
@@ -154,8 +154,8 @@ def gerar_html(metadados, corpo_html):
   <main class="main-wrapper">
     <article class="materia-completa" aria-labelledby="materia-titulo">
 
-      <nav class="breadcrumb" aria-label="Localizacao na pagina">
-        <a href="../../index.html">Inicio</a> &rsaquo;
+      <nav class="breadcrumb" aria-label="Localizacao na página">
+        <a href="../../index.html">Início</a> &rsaquo;
         <span>{categoria}</span>
       </nav>
 
@@ -186,7 +186,7 @@ def gerar_html(metadados, corpo_html):
           &larr; Voltar ao Publicoverso
         </a>
         <div class="ferramentas-uteis">
-          <p>Ferramentas para servidores publicos:</p>
+          <p>Ferramentas para servidores públicos:</p>
           <a href="https://taes-federal.com.br/" target="_blank" rel="noopener noreferrer" class="link-accent">Calculadora TAE Federal</a>
         </div>
       </footer>
@@ -196,14 +196,14 @@ def gerar_html(metadados, corpo_html):
 
   <footer class="footer">
     <p class="footer-brand">Publicoverso</p>
-    <nav class="footer-links" aria-label="Links institucionais do rodape">
-      <a href="../../index.html">Inicio</a>
+    <nav class="footer-links" aria-label="Links institucionais do rodapé">
+      <a href="../../index.html">Início</a>
       <a href="../../sobre.html">Sobre</a>
       <a href="../../contato.html">Contato</a>
       <a href="../../privacidade.html">Privacidade</a>
       <a href="../../termos.html">Termos de Uso</a>
     </nav>
-    <p class="footer-disclaimer">Portal independente, sem vinculo oficial com orgaos governamentais. Curadoria editorial: Cristina Mascarenhas.</p>
+    <p class="footer-disclaimer">Portal independente, sem vinculo oficial com órgãos governamentais. Curadoria editorial: Cristina Mascarenhas.</p>
     <p>&copy; 2026 Publicoverso. Todos os direitos reservados.</p>
   </footer>
 
@@ -212,10 +212,10 @@ def gerar_html(metadados, corpo_html):
 """
 
 
-# --- Parser de Arquivo .txt com Cabecalho Estruturado ---
+# --- Parser de Arquivo .txt com Cabeçalho Estruturado ---
 def parsear_txt(caminho_arquivo):
     """
-    Le um .txt com cabecalho YAML simplificado delimitado por '---'.
+    Le um .txt com cabeçalho YAML simplificado delimitado por '---'.
     Formato esperado:
       ---
       titulo: Titulo da materia
@@ -228,12 +228,12 @@ def parsear_txt(caminho_arquivo):
       Corpo da materia em texto corrido.
       Paragrafos separados por linha em branco.
     """
-    conteudo = caminho_arquivo.read_text(encoding='utf-8')
+    conteúdo = caminho_arquivo.read_text(encoding='utf-8')
     metadados = {}
-    corpo = conteudo
+    corpo = conteúdo
 
-    if conteudo.startswith('---'):
-        partes = conteudo.split('---', 2)
+    if conteúdo.startswith('---'):
+        partes = conteúdo.split('---', 2)
         if len(partes) >= 3:
             bloco_meta = partes[1].strip()
             corpo = partes[2].strip()
@@ -255,17 +255,17 @@ def parsear_docx(caminho_arquivo):
     try:
         from docx import Document
     except ImportError:
-        print('[ERRO] Biblioteca python-docx nao encontrada. Execute: pip install python-docx')
+        print('[ERRO] Biblioteca python-docx não encontrada. Execute: pip install python-docx')
         sys.exit(1)
 
     doc = Document(str(caminho_arquivo))
     paragrafos = [p.text.strip() for p in doc.paragraphs if p.text.strip()]
 
-    # O primeiro paragrafo e tratado como titulo se nao houver cabecalho
+    # O primeiro paragrafo e tratado como titulo se não houver cabeçalho
     metadados = {
         'titulo': paragrafos[0] if paragrafos else 'Materia sem titulo',
         'resumo': paragrafos[1] if len(paragrafos) > 1 else '',
-        'autor': 'Redacao Publicoverso',
+        'autor': 'Redação Publicoverso',
         'categoria': 'Gente e Cultura',
         'data': datetime.today().strftime('%d/%m/%Y'),
         'fonte': 'Publicoverso',
@@ -286,22 +286,22 @@ def gerar_slug(titulo):
     return slug[:80]
 
 
-# --- Atualizar JSON de Noticias ---
+# --- Atualizar JSON de Notícias ---
 def atualizar_json_noticias(metadados, slug_html):
     """Registra a nova materia no arquivo noticias_curadoria.json."""
     if not ARQUIVO_JSON_NOTICIAS.exists():
-        noticias = []
+        notícias = []
     else:
         with open(ARQUIVO_JSON_NOTICIAS, 'r', encoding='utf-8') as f:
-            noticias = json.load(f)
+            notícias = json.load(f)
 
     novo_id = metadados.get('id_mineracao') or f"autoral-{slug_html[:30]}"
-    url_materia = f"materias/paginas/{slug_html}.html"
+    url_materia = f"materias/páginas/{slug_html}.html"
 
-    # Verificar se ja existe
-    ids_existentes = {n.get('id') for n in noticias}
+    # Verificar se já existe
+    ids_existentes = {n.get('id') for n in notícias}
     if novo_id in ids_existentes:
-        print(f'[AVISO] Materia ja registrada no JSON: {novo_id}')
+        print(f'[AVISO] Materia já registrada no JSON: {novo_id}')
         return
 
     item_noticia = {
@@ -310,7 +310,7 @@ def atualizar_json_noticias(metadados, slug_html):
         "resumo": metadados.get('resumo', ''),
         "conteudo_completo": metadados.get('resumo', ''),
         "categoria": metadados.get('categoria', 'Gente e Cultura'),
-        "fonte": metadados.get('fonte') or metadados.get('autor') or 'Redacao Publicoverso',
+        "fonte": metadados.get('fonte') or metadados.get('autor') or 'Redação Publicoverso',
         "data": metadados.get('data', datetime.today().strftime('%d/%m/%Y')),
         "status": metadados.get('status', 'Aprovada'),
         "destaque": False,
@@ -320,10 +320,10 @@ def atualizar_json_noticias(metadados, slug_html):
     if metadados.get('url_original'):
         item_noticia['url_original'] = metadados.get('url_original')
 
-    noticias.insert(0, item_noticia)
+    notícias.insert(0, item_noticia)
 
     with open(ARQUIVO_JSON_NOTICIAS, 'w', encoding='utf-8') as f:
-        json.dump(noticias, f, ensure_ascii=False, indent=2)
+        json.dump(notícias, f, ensure_ascii=False, indent=2)
 
     print(f'[OK] JSON atualizado: {url_materia}')
 
@@ -337,7 +337,7 @@ def processar_arquivo(caminho_arquivo):
     elif sufixo == '.docx':
         metadados, corpo_html = parsear_docx(caminho_arquivo)
     else:
-        print(f'[IGNORADO] Formato nao suportado: {caminho_arquivo.name}')
+        print(f'[IGNORADO] Formato não suportado: {caminho_arquivo.name}')
         return
 
     titulo = metadados.get('titulo', caminho_arquivo.stem)
@@ -362,30 +362,30 @@ def main():
     parser.add_argument(
         '--arquivo',
         type=str,
-        help='Nome do arquivo especifico em materias/conteudo/ a processar (ex: minha-materia.txt)',
+        help='Nome do arquivo especifico em materias/conteúdo/ a processar (ex: minha-materia.txt)',
         default=None
     )
     args = parser.parse_args()
 
     if not DIRETORIO_CONTEUDO.exists():
-        print(f'[ERRO] Diretorio de conteudo nao encontrado: {DIRETORIO_CONTEUDO}')
+        print(f'[ERRO] Diretorio de conteúdo não encontrado: {DIRETORIO_CONTEUDO}')
         sys.exit(1)
 
     if args.arquivo:
         caminho = DIRETORIO_CONTEUDO / args.arquivo
         if not caminho.exists():
-            print(f'[ERRO] Arquivo nao encontrado: {caminho}')
+            print(f'[ERRO] Arquivo não encontrado: {caminho}')
             sys.exit(1)
         processar_arquivo(caminho)
     else:
         arquivos = list(DIRETORIO_CONTEUDO.glob('*.txt')) + list(DIRETORIO_CONTEUDO.glob('*.docx'))
         if not arquivos:
-            print('[AVISO] Nenhum arquivo .txt ou .docx encontrado em materias/conteudo/')
+            print('[AVISO] Nenhum arquivo .txt ou .docx encontrado em materias/conteúdo/')
             return
         for arq in sorted(arquivos):
             processar_arquivo(arq)
 
-    print('\nPipeline concluido.')
+    print('\nPipeline concluído.')
 
 
 if __name__ == '__main__':

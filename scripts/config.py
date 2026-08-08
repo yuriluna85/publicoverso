@@ -6,7 +6,7 @@ Portal: Publicoverso (publicoverso.com.br)
 Laboratorio: YLuna85 LABs
 
 Instrucoes:
-  1. Crie um arquivo .env na raiz do repositorio com o conteudo:
+  1. Crie um arquivo .env na raiz do repositorio com o conteúdo:
        SERPER_API_KEY=sua_chave_aqui
        SCRAPER_API_KEY=sua_chave_aqui
   2. Importe este modulo nos scripts de mineracao.
@@ -27,9 +27,9 @@ ARQUIVO_NOTICIAS = RAIZ_PROJETO / 'data' / 'noticias_curadoria.json'
 ARQUIVO_CONCURSOS = RAIZ_PROJETO / 'data' / 'concursos_radar.json'
 ARQUIVO_ARTIGOS = RAIZ_PROJETO / 'data' / 'artigos_autorais.json'
 ARQUIVO_HISTORICO = RAIZ_PROJETO / 'data' / 'historico_mineracao.json'
-DIRETORIO_RASCUNHOS = RAIZ_PROJETO / 'materias' / 'conteudo'
+DIRETORIO_RASCUNHOS = RAIZ_PROJETO / 'materias' / 'conteúdo'
 DIRETORIO_PRE_CURADORIA = RAIZ_PROJETO / 'pre_curadoria'
-DIRETORIO_PAGINAS = RAIZ_PROJETO / 'materias' / 'paginas'
+DIRETORIO_PAGINAS = RAIZ_PROJETO / 'materias' / 'páginas'
 ARQUIVO_LOG = RAIZ_PROJETO / 'scripts' / 'log_mineracao.txt'
 
 # --- Carregamento de Variaveis de Ambiente ---
@@ -58,7 +58,7 @@ SERPER_SEARCH_URL = 'https://google.serper.dev/search'
 SCRAPER_API_URL = 'https://api.scraperapi.com/'
 
 # --- Configuracoes de Mineracao ---
-DIAS_RETROATIVOS_HISTORIAS = 7      # Janela de busca de noticias (dias)
+DIAS_RETROATIVOS_HISTORIAS = 7      # Janela de busca de notícias (dias)
 DIAS_RETROATIVOS_CONCURSOS = 30     # Janela de busca de editais (dias)
 MAX_RESULTADOS_POR_DORK = 10        # Limite de resultados por consulta
 PAUSA_ENTRE_REQUISICOES = 2.5       # Segundos entre chamadas de API
@@ -74,7 +74,7 @@ CATEGORIAS_VALIDAS = [
     'Carreira e Conquistas',
 ]
 
-# --- Dorks de Busca: Historias Humanas ---
+# --- Dorks de Busca: Histórias Humanas ---
 DORKS_HISTORIAS = [
     # Categoria: Cultura Pop e Gastronomia
     {
@@ -141,8 +141,8 @@ PALAVRAS_CHAVE_EDITORIAS = {
         'escalada', 'travessia', 'fisiculturismo'
     ],
     'Ciência e Tecnologia': [
-        'ciência', 'ciencia', 'científico', 'cientifico', 'científica', 'cientifica',
-        'tecnologia', 'aplicativo', 'app', 'software', 'sistema', 'inovação', 'inovacao',
+        'ciência', 'ciencia', 'científico', 'cientifico', 'científica', 'científica',
+        'tecnologia', 'aplicativo', 'app', 'software', 'sistema', 'inovação', 'inovação',
         'descoberta', 'pesquisa', 'pesquisador', 'pesquisadora', 'artigo científico',
         'patente', 'inteligência artificial', 'ia', 'ti', 'dados', 'automação',
         'automacao', 'laboratório', 'laboratorio', 'fiocruz', 'embrapa', 'inpe'
@@ -156,7 +156,7 @@ PALAVRAS_CHAVE_EDITORIAS = {
     'Solidariedade e Comunidade': [
         'voluntariado', 'voluntário', 'voluntario', 'voluntária', 'voluntaria', 'ong',
         'projeto social', 'doação', 'doacao', 'doar', 'comunitário', 'comunitario',
-        'comunitária', 'comunitaria', 'ação social', 'acao social', 'resgate',
+        'comunitária', 'comunitaria', 'ação social', 'ação social', 'resgate',
         'causa social', 'crianças carentes', 'sopão', 'sopao', 'animais',
         'solidariedade', 'ajuda humanitária'
     ],
@@ -171,18 +171,18 @@ PALAVRAS_CHAVE_EDITORIAS = {
     ],
     'Carreira e Conquistas': [
         'concurso', 'aprovado', 'aprovada', 'aprovação', 'aprovacao', 'posse',
-        'carreira', 'promoção', 'promocao', 'progressão', 'progressao', 'pcctae',
-        'rsc', 'reajuste', 'salário', 'salario', 'licença', 'licenca', 'capacitação',
-        'capacitacao', 'prêmio', 'premio', 'premiação', 'premiacao', 'reconhecimento',
-        'conquista', 'gestão pública', 'gestao publica', 'eficiência', 'eficiencia',
-        'mérito', 'merito', 'legislação', 'legislacao', 'edital'
+        'carreira', 'promoção', 'promoção', 'progressão', 'progressao', 'pcctae',
+        'rsc', 'reajuste', 'salário', 'salário', 'licença', 'licença', 'capacitação',
+        'capacitação', 'prêmio', 'premio', 'premiação', 'premiação', 'reconhecimento',
+        'conquista', 'gestão pública', 'gestao pública', 'eficiência', 'eficiencia',
+        'mérito', 'merito', 'legislação', 'legislação', 'edital'
     ]
 }
 
 
 def classificar_categoria(titulo, resumo='', texto_completo=None, categoria_padrao=None):
     """
-    Classifica automaticamente o conteudo em uma das 7 Editorias Jornalisticas
+    Classifica automaticamente o conteúdo em uma das 7 Editorias Jornalisticas
     com base em contagem ponderada de palavras-chave.
     Ponderacao: Titulo tem peso 2, Resumo/Texto tem peso 1.
     """
@@ -225,9 +225,9 @@ def verificar_chaves():
     """Verifica se as chaves de API estao configuradas."""
     erros = []
     if not SERPER_API_KEY:
-        erros.append('SERPER_API_KEY nao configurada no arquivo .env')
+        erros.append('SERPER_API_KEY não configurada no arquivo .env')
     if not SCRAPER_API_KEY:
-        erros.append('SCRAPER_API_KEY nao configurada no arquivo .env')
+        erros.append('SCRAPER_API_KEY não configurada no arquivo .env')
     return erros
 
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-radar_concursos.py - Radar de editais de concursos publicos em aberto
+radar_concursos.py - Radar de editais de concursos públicos em aberto
 Portal: Publicoverso (publicoverso.com.br)
 Laboratorio: YLuna85 LABs
 
@@ -10,11 +10,11 @@ Fluxo:
   2. Extrai metadados estruturados de cada edital encontrado
   3. Verifica deduplicacao contra concursos_radar.json
   4. Insere novos editais com status 'Em Analise' para revisao manual
-  5. Remove automaticamente editais com inscricoes encerradas
+  5. Remove automaticamente editais com inscrições encerradas
 
 Uso:
   python scripts/radar_concursos.py
-  python scripts/radar_concursos.py --forcar-atualizacao
+  python scripts/radar_concursos.py --forcar-atualização
 """
 
 import sys
@@ -35,7 +35,7 @@ import config
 try:
     import requests
 except ImportError:
-    print('[ERRO] Biblioteca requests nao encontrada. Execute: pip install requests')
+    print('[ERRO] Biblioteca requests não encontrada. Execute: pip install requests')
     sys.exit(1)
 
 
@@ -46,7 +46,7 @@ BANCAS_RECONHECIDAS = [
     'FUMARC', 'CESPE', 'CONSULPLAN', 'FUNDEP',
 ]
 
-# --- Orgaos de Alta Relevancia (Prioridade de Destaque) ---
+# --- Órgãos de Alta Relevancia (Prioridade de Destaque) ---
 ORGAOS_DESTAQUE = [
     'Receita Federal', 'Banco Central', 'Senado Federal',
     'Câmara dos Deputados', 'TCU', 'CGU', 'STJ', 'STF', 'TST', 'TSE',
@@ -60,7 +60,7 @@ ORGAOS_DESTAQUE = [
 def buscar_concursos_serper(dork):
     """Consulta a Serper API Google Search e retorna resultados de editais."""
     if not config.SERPER_API_KEY:
-        config.registrar_log('[AVISO] SERPER_API_KEY nao configurada.')
+        config.registrar_log('[AVISO] SERPER_API_KEY não configurada.')
         return []
 
     headers = {
@@ -107,7 +107,7 @@ def extrair_metadados_edital(resultado):
         esfera = 'Estadual'
 
     # Detecta banca
-    banca = 'Nao identificada'
+    banca = 'Não identificada'
     for b in BANCAS_RECONHECIDAS:
         if b.lower() in texto.lower():
             banca = b
@@ -135,7 +135,7 @@ def extrair_metadados_edital(resultado):
 
     return {
         'id': 'concurso-' + hashlib.md5(url.encode()).hexdigest()[:8],
-        'orgao': titulo.split('|')[0].strip()[:80],
+        'órgão': titulo.split('|')[0].strip()[:80],
         'sigla': '',
         'esfera': esfera,
         'cargos': 'Consultar edital',
@@ -168,9 +168,9 @@ def salvar_concursos(concursos):
 # --- Ponto de Entrada ---
 def main():
     parser = argparse.ArgumentParser(
-        description='Publicoverso - Radar de concursos publicos.'
+        description='Publicoverso - Radar de concursos públicos.'
     )
-    parser.add_argument('--forcar-atualizacao', action='store_true',
+    parser.add_argument('--forcar-atualização', action='store_true',
                         help='Remove e reprocessa todos os editais existentes')
     args = parser.parse_args()
 
@@ -201,17 +201,17 @@ def main():
 
             novos.append(metadados)
             ids_existentes.add(metadados['id'])
-            config.registrar_log(f'  [NOVO EDITAL] {metadados["orgao"][:60]}')
+            config.registrar_log(f'  [NOVO EDITAL] {metadados["órgão"][:60]}')
 
         time.sleep(config.PAUSA_ENTRE_REQUISICOES)
 
     todos = novos + concursos_existentes
-    # Destaque primeiro, depois por data de atualizacao
+    # Destaque primeiro, depois por data de atualização
     todos.sort(key=lambda x: (not x.get('destaque', False), x.get('data_atualizacao', '')))
     salvar_concursos(todos)
 
-    config.registrar_log(f'=== Radar concluido. {len(novos)} novos editais adicionados. Total: {len(todos)}. ===')
-    config.registrar_log('Revise os editais com status "Em Analise" e altere para "Inscricoes Abertas" apos verificacao manual.')
+    config.registrar_log(f'=== Radar concluído. {len(novos)} novos editais adicionados. Total: {len(todos)}. ===')
+    config.registrar_log('Revise os editais com status "Em Analise" e altere para "Inscrições Abertas" apos verificacao manual.')
 
 
 if __name__ == '__main__':

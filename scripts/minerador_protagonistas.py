@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-minerador_protagonistas.py - Mineracao especializada em historias humanas de servidores publicos
+minerador_protagonistas.py - Mineracao especializada em histórias humanas de servidores públicos
 Portal: Publicoverso (publicoverso.com.br)
 Laboratorio: YLuna85 LABs
 
 Foco Estrito:
   - Vida alem do trabalho: Literatura, Artes, Esportes, Cultura Pop/Realities, Voluntariado e Superacao.
-  - Expurgo total de atos institucionais, burocracia e rotinas de orgaos/prefeituras.
+  - Expurgo total de atos institucionais, burocracia e rotinas de órgãos/prefeituras.
   - Verificacao ativa de liveness (HTTP 200), resolucao de redirects (URLs canonicas) e limpeza de UTMs.
-  - Atribuicao obrigatoria do veiculo original e link verificado.
+  - Atribuição obrigatoria do veiculo original e link verificado.
 
 Uso:
   python scripts/minerador_protagonistas.py
@@ -36,7 +36,7 @@ import config
 try:
     import requests
 except ImportError:
-    print('[ERRO] Biblioteca requests nao encontrada. Execute: pip install requests')
+    print('[ERRO] Biblioteca requests não encontrada. Execute: pip install requests')
     sys.exit(1)
 
 
@@ -46,7 +46,7 @@ DORKS_PROTAGONISTAS = [
     {
         'eixo': 'Literatura e Artes',
         'categoria': 'Artes e Literatura',
-        'query': '("servidor público" OR "servidora pública" OR "policial" OR "professor" OR "médico" OR "analista" OR "técnico judiciário" OR "auditor" OR "gari") AND ("lança livro" OR "publica romance" OR "escreve poesia" OR "autor do livro" OR "autora do livro" OR "ilustrador" OR "quadrinista" OR "lançou HQ")',
+        'query': '("servidor público" OR "servidora pública" OR "policial" OR "professor" OR "médico" OR "analista" OR "técnico judiciário" OR "auditor" OR "gari") AND ("lança livro" OR "pública romance" OR "escreve poesia" OR "autor do livro" OR "autora do livro" OR "ilustrador" OR "quadrinista" OR "lançou HQ")',
     },
     {
         'eixo': 'Literatura e Artes',
@@ -105,11 +105,11 @@ DORKS_PROTAGONISTAS = [
 
 
 def classificar_editoria(titulo, resumo, categoria_fallback='Carreira e Conquistas'):
-    """Classifica automaticamente a noticia em uma das 7 editorias jornalisticas."""
+    """Classifica automaticamente a notícia em uma das 7 editorias jornalisticas."""
     return config.classificar_categoria(titulo, resumo, categoria_padrao=categoria_fallback)
 
 
-# --- Filtros de Exclusao (Anti-Burocracia / Anti-Orgaos) ---
+# --- Filtros de Exclusao (Anti-Burocracia / Anti-Órgãos) ---
 TERMOS_EXPURGO_INSTITUCIONAL = [
     'prefeitura abre licitação', 'prefeitura inaugura', 'secretaria municipal de',
     'gabinete do prefeito', 'câmara municipal aprova', 'governador anuncia',
@@ -187,7 +187,7 @@ def verificar_liveness_e_canonizar(url_bruta, timeout=10):
 
         # Verifica se retornou HTML com tamanho minimo
         if len(resp.text) < 500:
-            config.registrar_log(f'  [LINK REJEITADO] Conteudo insuficiente: {url_bruta}')
+            config.registrar_log(f'  [LINK REJEITADO] Conteúdo insuficiente: {url_bruta}')
             return None, None, False
 
         url_final = resp.url
@@ -202,7 +202,7 @@ def verificar_liveness_e_canonizar(url_bruta, timeout=10):
 
 # --- Verificacao de Expurgo Burocratico ---
 def e_materia_humanizada(titulo, resumo):
-    """Retorna True apenas se nao contiver termos burocraticos de descarte."""
+    """Retorna True apenas se não contiver termos burocraticos de descarte."""
     texto = (titulo + ' ' + (resumo or '')).lower()
     for termo in TERMOS_EXPURGO_INSTITUCIONAL:
         if termo in texto:
@@ -218,9 +218,9 @@ def carregar_historico_urls():
     # 1. noticias_curadoria.json
     if config.ARQUIVO_NOTICIAS.exists():
         with open(config.ARQUIVO_NOTICIAS, 'r', encoding='utf-8') as f:
-            noticias = json.load(f)
-        urls.update(n.get('url_materia') for n in noticias if n.get('url_materia'))
-        urls.update(n.get('url_original') for n in noticias if n.get('url_original'))
+            notícias = json.load(f)
+        urls.update(n.get('url_materia') for n in notícias if n.get('url_materia'))
+        urls.update(n.get('url_original') for n in notícias if n.get('url_original'))
 
     # 2. historico_mineracao.json
     arquivo_hist = config.RAIZ_PROJETO / 'data' / 'historico_mineracao.json'
@@ -257,7 +257,7 @@ def salvar_rascunho_protagonista(resultado, item_dork, url_verificada, nome_veic
     pasta_dia = config.RAIZ_PROJETO / 'pre_curadoria' / ano / mes / dia
     pasta_dia.mkdir(parents=True, exist_ok=True)
 
-    titulo = resultado.get('title', 'Titulo nao disponivel')
+    titulo = resultado.get('title', 'Titulo não disponivel')
     resumo = resultado.get('snippet', '')
     eixo = item_dork['eixo']
     categoria = classificar_editoria(titulo, resumo, item_dork['categoria'])
@@ -269,23 +269,23 @@ def salvar_rascunho_protagonista(resultado, item_dork, url_verificada, nome_veic
 
     corpo = conteudo_raspado if conteudo_raspado else resumo
 
-    conteudo = f'---\n'
-    conteudo += f'id_mineracao: min-protagonista-{agora.strftime("%Y%m%d%H%M%S")}\n'
-    conteudo += f'titulo: {titulo}\n'
-    conteudo += f'resumo: {resumo[:200]}\n'
-    conteudo += f'autor: Curadoria Publicoverso\n'
-    conteudo += f'categoria: {categoria}\n'
-    conteudo += f'eixo_tematico: {eixo}\n'
-    conteudo += f'fonte: {nome_veiculo}\n'
-    conteudo += f'url_original: {url_verificada}\n'
-    conteudo += f'link_status: Verificado (HTTP 200)\n'
-    conteudo += f'data_verificacao: {agora.strftime("%d/%m/%Y %H:%M")}\n'
-    conteudo += f'status: Pendente\n'
-    conteudo += f'---\n\n'
-    conteudo += corpo
-    conteudo += f'\n\nFonte original: {url_verificada}'
+    conteúdo = f'---\n'
+    conteúdo += f'id_mineracao: min-protagonista-{agora.strftime("%Y%m%d%H%M%S")}\n'
+    conteúdo += f'titulo: {titulo}\n'
+    conteúdo += f'resumo: {resumo[:200]}\n'
+    conteúdo += f'autor: Curadoria Publicoverso\n'
+    conteúdo += f'categoria: {categoria}\n'
+    conteúdo += f'eixo_tematico: {eixo}\n'
+    conteúdo += f'fonte: {nome_veiculo}\n'
+    conteúdo += f'url_original: {url_verificada}\n'
+    conteúdo += f'link_status: Verificado (HTTP 200)\n'
+    conteúdo += f'data_verificacao: {agora.strftime("%d/%m/%Y %H:%M")}\n'
+    conteúdo += f'status: Pendente\n'
+    conteúdo += f'---\n\n'
+    conteúdo += corpo
+    conteúdo += f'\n\nFonte original: {url_verificada}'
 
-    caminho.write_text(conteudo, encoding='utf-8')
+    caminho.write_text(conteúdo, encoding='utf-8')
     return caminho
 
 
@@ -377,7 +377,7 @@ def main():
 
         time.sleep(config.PAUSA_ENTRE_REQUISICOES)
 
-    config.registrar_log(f'=== Mineracao de Protagonistas concluida. {total_novas} novas historias salvas em pre_curadoria/. ===')
+    config.registrar_log(f'=== Mineracao de Protagonistas concluida. {total_novas} novas histórias salvas em pre_curadoria/. ===')
 
 
 if __name__ == '__main__':

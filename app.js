@@ -30,33 +30,33 @@
   }
 
   // --- Renderização de Notícias ---
-  function renderizarNoticias(noticias) {
+  function renderizarNoticias(notícias) {
     const grid = document.getElementById('bentoGrid');
     if (!grid) return;
 
-    const aprovadas = noticias.filter(n => n.status === 'Aprovada');
+    const aprovadas = notícias.filter(n => n.status === 'Aprovada');
 
     if (aprovadas.length === 0) {
       grid.innerHTML = '<p style="color: var(--text-muted); padding: 2rem;">Nenhuma notícia disponível no momento.</p>';
       return;
     }
 
-    grid.innerHTML = aprovadas.map((noticia, idx) => {
-      const classeDestaque = (noticia.destaque && idx === 0) ? ' featured' : '';
-      const categoriaBadge = categoriaBadgeClass(noticia.categoria);
-      const urlMateria = noticia.url_materia ? `href="${noticia.url_materia}"` : '#';
+    grid.innerHTML = aprovadas.map((notícia, idx) => {
+      const classeDestaque = (notícia.destaque && idx === 0) ? ' featured' : '';
+      const categoriaBadge = categoriaBadgeClass(notícia.categoria);
+      const urlMateria = notícia.url_materia ? `href="${notícia.url_materia}"` : '#';
 
       return `
-        <article class="card-news${classeDestaque}" data-categoria="${escapar(noticia.categoria)}">
+        <article class="card-news${classeDestaque}" data-categoria="${escapar(notícia.categoria)}">
           <header>
-            <span class="news-badge ${categoriaBadge}" aria-label="Categoria: ${escapar(noticia.categoria)}">${escapar(noticia.categoria)}</span>
-            <h3 class="news-title">${escapar(noticia.titulo)}</h3>
+            <span class="news-badge ${categoriaBadge}" aria-label="Categoria: ${escapar(notícia.categoria)}">${escapar(notícia.categoria)}</span>
+            <h3 class="news-title">${escapar(notícia.titulo)}</h3>
           </header>
-          <p class="news-summary">${escapar(noticia.resumo)}</p>
+          <p class="news-summary">${escapar(notícia.resumo)}</p>
           <footer class="news-meta">
-            <span>${escapar(noticia.fonte)} &mdash; ${escapar(noticia.data)}</span>
+            <span>${escapar(notícia.fonte)} &mdash; ${escapar(notícia.data)}</span>
             <div class="news-actions">
-              ${noticia.url_materia ? `<a href="${escapar(noticia.url_materia)}" class="btn-curate" aria-label="Ler matéria completa: ${escapar(noticia.titulo)}">Ler mais</a>` : ''}
+              ${notícia.url_materia ? `<a href="${escapar(notícia.url_materia)}" class="btn-curate" aria-label="Ler matéria completa: ${escapar(notícia.titulo)}">Ler mais</a>` : ''}
             </div>
           </footer>
         </article>
@@ -90,8 +90,8 @@
       'Ciencia e Tecnologia': 'badge-ciencia',
       'Cultura Pop e Gastronomia': 'badge-culturapop',
       'Solidariedade e Comunidade': 'badge-solidariedade',
-      'Histórias e Superação': 'badge-historias',
-      'Historias e Superacao': 'badge-historias',
+      'Histórias e Superação': 'badge-histórias',
+      'Histórias e Superacao': 'badge-histórias',
       'Carreira e Conquistas': 'badge-carreira',
     };
     return mapa[categoria] || 'badge-default';

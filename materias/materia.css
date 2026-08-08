@@ -1,17 +1,17 @@
 /* ==========================================================================
-   materia.css - Estilos especificos para paginas de materias autorais
+   materia.css - Estilos especificos para páginas de materias autorais
    Portal: Publicoverso
    Herda as variaveis de index.css (carregado antes deste arquivo)
    ========================================================================== */
 
-/* Pagina de Materia Completa */
+/* Página de Materia Completa */
 .materia-completa {
   max-width: 820px;
   margin: 0 auto;
   padding: 0 0 3rem;
 }
 
-/* Cabecalho da Materia */
+/* Cabeçalho da Materia */
 .materia-header {
   margin-bottom: 2.5rem;
   padding-bottom: 2rem;
@@ -24,7 +24,7 @@
 .badge-ciencia { background: rgba(0, 210, 200, 0.18); color: #00E5D8; border: 1px solid #00D2C8; }
 .badge-culturapop, .badge-cultura-pop { background: rgba(236, 72, 153, 0.18); color: #F472B6; border: 1px solid #EC4899; }
 .badge-solidariedade { background: rgba(16, 185, 129, 0.18); color: #34D399; border: 1px solid #10B981; }
-.badge-historias { background: rgba(234, 179, 8, 0.18); color: #FACC15; border: 1px solid #EAB308; }
+.badge-histórias { background: rgba(234, 179, 8, 0.18); color: #FACC15; border: 1px solid #EAB308; }
 .badge-carreira { background: rgba(59, 130, 246, 0.18); color: #60A5FA; border: 1px solid #3B82F6; }
 .badge-default { background: rgba(255, 255, 255, 0.1); color: var(--text-secondary); border: 1px solid var(--border-color); }
 
@@ -86,7 +86,7 @@
   color: var(--text-secondary);
 }
 
-/* Rodape da Materia */
+/* Rodapé da Materia */
 .materia-footer {
   display: flex;
   align-items: center;
@@ -127,7 +127,7 @@
   gap: 0.75rem;
 }
 
-/* Paginas Institucionais */
+/* Páginas Institucionais */
 .institutional-page {
   max-width: 820px;
   margin: 0 auto;
@@ -295,7 +295,7 @@
   }
 }
 
-/* Box de Atribuicao de Fonte Original - Dark Tech (#00D2C8) */
+/* Box de Atribuição de Fonte Original - Dark Tech (#00D2C8) */
 .box-fonte-original {
   background: rgba(0, 210, 200, 0.04);
   border: 1px solid rgba(0, 210, 200, 0.25);

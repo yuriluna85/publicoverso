@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-minerador_historias.py - Mineracao de historias e conquistas de servidores publicos
+minerador_historias.py - Mineracao de histórias e conquistas de servidores públicos
 Portal: Publicoverso (publicoverso.com.br)
 Laboratorio: YLuna85 LABs
 
 Fluxo:
   1. Consulta a Serper API (Google News) com os Dorks pre-configurados em config.py
-  2. Para cada resultado relevante, raspa o conteudo limpo via Scraper API
+  2. Para cada resultado relevante, raspa o conteúdo limpo via Scraper API
   3. Verifica deduplicacao contra noticias_curadoria.json
-  4. Gera rascunho estruturado em materias/conteudo/ (status: Pendente)
+  4. Gera rascunho estruturado em materias/conteúdo/ (status: Pendente)
   5. Insere entrada pendente em noticias_curadoria.json para revisao da curadoria
 
 Uso:
@@ -39,7 +39,7 @@ from minerador_protagonistas import classificar_editoria
 try:
     import requests
 except ImportError:
-    print('[ERRO] Biblioteca requests nao encontrada. Execute: pip install requests')
+    print('[ERRO] Biblioteca requests não encontrada. Execute: pip install requests')
     sys.exit(1)
 
 
@@ -63,7 +63,7 @@ TERMOS_EXCLUSAO = [
 def buscar_noticias_serper(dork, dias=7):
     """Consulta a Serper API Google News e retorna lista de resultados."""
     if not config.SERPER_API_KEY:
-        config.registrar_log('[AVISO] SERPER_API_KEY nao configurada. Abortando busca.')
+        config.registrar_log('[AVISO] SERPER_API_KEY não configurada. Abortando busca.')
         return []
 
     headers = {
@@ -90,7 +90,7 @@ def buscar_noticias_serper(dork, dias=7):
 
 # --- Extracao de Texto Limpo via Scraper API ---
 def raspar_conteudo(url):
-    """Raspa o conteudo de uma URL via Scraper API e retorna o texto limpo."""
+    """Raspa o conteúdo de uma URL via Scraper API e retorna o texto limpo."""
     if not config.SCRAPER_API_KEY:
         return None
 
@@ -125,7 +125,7 @@ def extrair_texto_limpo(html):
 
 # --- Verificacao de Relevancia ---
 def e_relevante(titulo, resumo):
-    """Verifica se o resultado e relevante e nao esta na lista de exclusao."""
+    """Verifica se o resultado e relevante e não esta na lista de exclusao."""
     texto_verificar = (titulo + ' ' + (resumo or '')).lower()
     for termo in TERMOS_EXCLUSAO:
         if termo.lower() in texto_verificar:
@@ -139,7 +139,7 @@ def e_dominio_prioritario(url):
     return any(d in dominio for d in DOMINIOS_PRIORITARIOS)
 
 
-# --- Geracao de ID Unico ---
+# --- Geração de ID Unico ---
 def gerar_id(url):
     """Gera um ID curto unico baseado na URL."""
     return 'auto-' + hashlib.md5(url.encode()).hexdigest()[:10]
@@ -147,7 +147,7 @@ def gerar_id(url):
 
 # --- Verificacao de Deduplicacao ---
 def carregar_ids_existentes():
-    """Carrega os IDs e URLs ja registradas em noticias_curadoria.json e historico_mineracao.json."""
+    """Carrega os IDs e URLs já registradas em noticias_curadoria.json e historico_mineracao.json."""
     ids = set()
     urls = set()
 
@@ -155,8 +155,8 @@ def carregar_ids_existentes():
     if config.ARQUIVO_NOTICIAS.exists():
         try:
             with open(config.ARQUIVO_NOTICIAS, 'r', encoding='utf-8') as f:
-                noticias = json.load(f)
-            for n in noticias:
+                notícias = json.load(f)
+            for n in notícias:
                 if n.get('id'):
                     ids.add(n.get('id'))
                 if n.get('url_materia'):
@@ -206,10 +206,10 @@ def registrar_historico_mineracao(id_mineracao, url, titulo, categoria):
         json.dump(historico, f, ensure_ascii=False, indent=2)
 
 
-# --- Geracao de Rascunho .txt em pre_curadoria/AAAA/MM/DD/ ---
+# --- Geração de Rascunho .txt em pre_curadoria/AAAA/MM/DD/ ---
 def gerar_rascunho_txt(resultado, categoria, conteudo_raspado):
     """Gera um arquivo .txt de rascunho em pre_curadoria/AAAA/MM/DD/slug.txt."""
-    titulo = resultado.get('title', 'Titulo nao disponivel')
+    titulo = resultado.get('title', 'Titulo não disponivel')
     resumo = resultado.get('snippet', '')
     fonte = resultado.get('source', 'Fonte desconhecida')
     agora = datetime.now()
@@ -240,22 +240,22 @@ def gerar_rascunho_txt(resultado, categoria, conteudo_raspado):
     corpo = conteudo_raspado if conteudo_raspado else resumo
     corpo += f'\n\nFonte original: {url_original}'
 
-    conteudo = f'---\n'
-    conteudo += f'id_mineracao: {id_mineracao}\n'
-    conteudo += f'titulo: {titulo}\n'
-    conteudo += f'resumo: {resumo[:200]}\n'
-    conteudo += f'autor: Curadoria Publicoverso\n'
-    conteudo += f'categoria: {categoria}\n'
-    conteudo += f'data: {data_str}\n'
-    conteudo += f'fonte: {fonte}\n'
-    conteudo += f'status: Pendente\n'
-    conteudo += f'status_triagem: Pendente\n'
-    conteudo += f'url_original: {url_original}\n'
-    conteudo += f'---\n\n'
-    conteudo += corpo
+    conteúdo = f'---\n'
+    conteúdo += f'id_mineracao: {id_mineracao}\n'
+    conteúdo += f'titulo: {titulo}\n'
+    conteúdo += f'resumo: {resumo[:200]}\n'
+    conteúdo += f'autor: Curadoria Publicoverso\n'
+    conteúdo += f'categoria: {categoria}\n'
+    conteúdo += f'data: {data_str}\n'
+    conteúdo += f'fonte: {fonte}\n'
+    conteúdo += f'status: Pendente\n'
+    conteúdo += f'status_triagem: Pendente\n'
+    conteúdo += f'url_original: {url_original}\n'
+    conteúdo += f'---\n\n'
+    conteúdo += corpo
 
     with open(caminho, 'w', encoding='utf-8') as f:
-        f.write(conteudo)
+        f.write(conteúdo)
 
     return caminho, id_mineracao
 
@@ -263,7 +263,7 @@ def gerar_rascunho_txt(resultado, categoria, conteudo_raspado):
 # --- Ponto de Entrada ---
 def main():
     parser = argparse.ArgumentParser(
-        description='Publicoverso - Minerador de historias de servidores publicos.'
+        description='Publicoverso - Minerador de histórias de servidores públicos.'
     )
     parser.add_argument('--dias', type=int, default=config.DIAS_RETROATIVOS_HISTORIAS,
                         help='Janela de busca em dias (padrao: 7)')
@@ -271,13 +271,13 @@ def main():
                         help='Filtrar por categoria especifica')
     args = parser.parse_args()
 
-    config.registrar_log('=== Iniciando mineracao de historias ===')
+    config.registrar_log('=== Iniciando mineracao de histórias ===')
 
     erros = config.verificar_chaves()
     if erros:
         for e in erros:
             config.registrar_log(f'[ERRO] {e}')
-        config.registrar_log('[INFO] Execute em modo de simulacao: a Serper API nao sera chamada.')
+        config.registrar_log('[INFO] Execute em modo de simulação: a Serper API não sera chamada.')
 
     ids_existentes, urls_existentes = carregar_ids_existentes()
     config.registrar_log(f'Registros existentes no JSON / Historico: {len(ids_existentes)}')

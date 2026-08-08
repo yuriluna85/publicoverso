@@ -23,7 +23,7 @@
       console.error('[Publicoverso - Concursos] Erro:', erro);
       const grid = document.getElementById('gridConcursos');
       if (grid) {
-        grid.innerHTML = '<p style="color: var(--text-muted); padding: 2rem;">Nao foi possivel carregar o radar de concursos. Tente novamente em instantes.</p>';
+        grid.innerHTML = '<p style="color: var(--text-muted); padding: 2rem;">Não foi possivel carregar o radar de concursos. Tente novamente em instantes.</p>';
       }
     }
   }
@@ -54,7 +54,7 @@
               <span class="news-badge ${badgeStatus}" aria-label="Status: ${escapar(concurso.status)}">${escapar(concurso.status)}</span>
               <span class="concurso-esfera">${escapar(concurso.esfera)}</span>
             </div>
-            <h3 class="news-title">${escapar(concurso.orgao)}</h3>
+            <h3 class="news-title">${escapar(concurso.órgão)}</h3>
           </header>
 
           <div class="concurso-detalhes">
@@ -75,7 +75,7 @@
               <span class="detalhe-valor concurso-remuneracao">${escapar(concurso.remuneracao_max)}</span>
             </div>
             <div class="concurso-detalhe">
-              <span class="detalhe-label">Inscricoes</span>
+              <span class="detalhe-label">Inscrições</span>
               <span class="detalhe-valor">${escapar(concurso.periodo_inscricao)}</span>
             </div>
             <div class="concurso-detalhe">
@@ -86,7 +86,7 @@
 
           <footer class="news-meta">
             <span>Atualizado: ${escapar(concurso.data_atualizacao)}</span>
-            <a href="${escapar(concurso.link_edital)}" class="btn-curate" target="_blank" rel="noopener noreferrer" aria-label="Acessar edital oficial de ${escapar(concurso.orgao)}">
+            <a href="${escapar(concurso.link_edital)}" class="btn-curate" target="_blank" rel="noopener noreferrer" aria-label="Acessar edital oficial de ${escapar(concurso.órgão)}">
               Ver edital oficial
             </a>
           </footer>
@@ -98,7 +98,7 @@
   // --- Classe do Badge de Status ---
   function badgeStatusClass(status) {
     const mapa = {
-      'Inscricoes Abertas': 'badge-inscricoes-abertas',
+      'Inscrições Abertas': 'badge-inscrições-abertas',
       'Edital Publicado': 'badge-estadual',
       'Publicacoes Continuas': 'badge-federal',
       'Previsto 2026': 'badge-previsto',
@@ -156,7 +156,7 @@
 
     if (termo) {
       filtrados = filtrados.filter(c =>
-        (c.orgao || '').toLowerCase().includes(termo) ||
+        (c.órgão || '').toLowerCase().includes(termo) ||
         (c.cargos || '').toLowerCase().includes(termo) ||
         (c.banca || '').toLowerCase().includes(termo) ||
         (c.sigla || '').toLowerCase().includes(termo)
