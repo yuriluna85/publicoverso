@@ -84,6 +84,19 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizacoes (Changelog)
 
+### 08/08/2026 (Sessao 2 - Mineracao e Radar de Concursos)
+- Implementado modulo de scripts de mineracao em `scripts/`:
+  - `config.py`: configuracoes globais, Dorks pre-configurados por categoria editorial e variaveis de ambiente.
+  - `minerador_historias.py`: busca via Serper API (Google News), raspagem via Scraper API, filtragem de relevancia e geracao de rascunhos em `materias/conteudo/`.
+  - `radar_concursos.py`: busca de editais de concursos via Serper API, extracao de metadados estruturados e atualizacao de `data/concursos_radar.json`.
+  - `pipeline_completo.py`: orquestrador que executa todos os scripts em sequencia com um unico comando.
+- Criada base inicial `data/concursos_radar.json` com 5 editais de alta relevancia (PF, RFB, BCB, CNJ, TAE/UF).
+- Criada pagina `concursos.html` com grid interativo de editais, filtros por escolaridade e esfera, busca textual e aviso anti-fraude.
+- Criado `app_concursos.js` com motor de renderizacao e filtragem do Radar de Concursos.
+- Adicionados estilos dos cards de concurso em `index.css` (badges de status, grid de detalhes, aviso anti-fraude).
+- Atualizado `index.html` com link `Radar de Concursos` no menu e terceiro card de utilitarios.
+- Atualizado `sitemap.xml` com a URL de `concursos.html`.
+
 ### 08/08/2026
 - Implementacao completa do portal Publicoverso.
 - Logo SVG hexagonal/constelacao com tokens #00D2C8 e #9146FF.
