@@ -212,22 +212,39 @@ def e_materia_humanizada(titulo, resumo):
 
 # --- Historico e Deduplicacao ---
 def carregar_historico_urls():
-    """Carrega URLs do noticias_curadoria.json e historico_mineracao.json."""
+    """Carrega URLs do noticias_curadoria.json, acervo_links_minerados.json e historico_mineracao.json com suporte a dicts e strings."""
     urls = set()
 
     # 1. noticias_curadoria.json
     if config.ARQUIVO_NOTICIAS.exists():
-        with open(config.ARQUIVO_NOTICIAS, 'r', encoding='utf-8') as f:
-            notícias = json.load(f)
-        urls.update(n.get('url_materia') for n in notícias if n.get('url_materia'))
-        urls.update(n.get('url_original') for n in notícias if n.get('url_original'))
+        try:
+            with open(config.ARQUIVO_NOTICIAS, 'r', encoding='utf-8') as f:
+                noticias = json.load(f)
+            for n in noticias:
+                if isinstance(n, dict):
+                    if n.get('url_materia'):
+                        urls.add(n.get('url_materia'))
+                    if n.get('url_original'):
+                        urls.add(n.get('url_original'))
+        except Exception:
+            pass
 
     # 2. historico_mineracao.json
     arquivo_hist = config.RAIZ_PROJETO / 'data' / 'historico_mineracao.json'
     if arquivo_hist.exists():
-        with open(arquivo_hist, 'r', encoding='utf-8') as f:
-            hist = json.load(f)
-        urls.update(hist)
+        try:
+            with open(arquivo_hist, 'r', encoding='utf-8') as f:
+                hist = json.load(f)
+            for item in hist:
+                if isinstance(item, str):
+                    urls.add(item)
+                elif isinstance(item, dict):
+                    if item.get('url'):
+                        urls.add(item.get('url'))
+                    if item.get('url_original'):
+                        urls.add(item.get('url_original'))
+        except Exception:
+            pass
 
     return urls
 
@@ -237,10 +254,25 @@ def salvar_historico_url(url):
     arquivo_hist = config.RAIZ_PROJETO / 'data' / 'historico_mineracao.json'
     hist = []
     if arquivo_hist.exists():
-        with open(arquivo_hist, 'r', encoding='utf-8') as f:
-            hist = json.load(f)
-    if url not in hist:
-        hist.append(url)
+        try:
+            with open(arquivo_hist, 'r', encoding='utf-8') as f:
+                hist = json.load(f)
+        except Exception:
+            hist = []
+
+    # Verifica duplicidade suportando tanto strings quanto dicts
+    urls_salvas = set()
+    for item in hist:
+        if isinstance(item, str):
+            urls_salvas.add(item)
+        elif isinstance(item, dict) and item.get('url'):
+            urls_salvas.add(item.get('url'))
+
+    if url not in urls_salvas:
+        hist.append({
+            'url': url,
+            'data_mineracao': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        })
         arquivo_hist.parent.mkdir(parents=True, exist_ok=True)
         with open(arquivo_hist, 'w', encoding='utf-8') as f:
             json.dump(hist, f, ensure_ascii=False, indent=2)
