@@ -1993,12 +1993,12 @@ body.theme-high-contrast .editorial-title {
 }
 
 .news-row-item {
-  display: grid;
-  grid-template-columns: 140px 1fr;
-  gap: 1.25rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--border-subtle);
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px dashed var(--border-subtle);
   transition: var(--transition-fast);
 }
 

@@ -86,7 +86,14 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizações (Changelog)
 
+### 09/08/2026 (Sessão 11 - Correções Finas de Layout CSS, Convite Institucional Autoral e Reclassificação de Temas do STF e Histórias de Superação)
+- **Correção do Layout CSS de `.news-row-item` (`index.css`):** Ajuste da propriedade de largura para 100%, eliminando a restrição de dimensão anterior que ocasionava o esmagamento dos títulos das notícias a 140px.
+- **Esvaziamento e Atualização da Seção de Artigos Autorais:** Reinicialização da base de dados `data/artigos_autorais.json` (`[]`) e substituição da seção no portal por um convite institucional para submissão de colunas autorais.
+- **Reclassificação Temática de Decisões do STF e Legislação de C&T:** Reagrupamento dos conteúdos referentes aos Temas de Repercussão Geral do STF (1019, 1061 e 1261) e da legislação aplicável a Ciência e Tecnologia para a categoria "Jurídico e PAD".
+- **Reclassificação de Depoimentos de Redes Sociais:** Readequação editorial dos depoimentos sobre convocação e aprovação em concursos públicos coletados em redes sociais, realocando-os para a editoria "Histórias e Superação".
+
 ### 09/08/2026 (Sessão 10 - Seção Nobre de Desinformação, Landing Pages de Categoria, Verificador Semântico Inteligente e Expansão do Robô do DOU/DOEs)
+- **Implementação do Filtro Estrito Anti-Anúncios Comerciais e de Captação Advocatícia:** Adição de camada de triagem e bloqueio automatizado nos scripts `verificador_semantico_noticias.py` e `radar_movimentacao_servidores.py` para descarte imediato de conteúdos promocionais, materiais publicitários e ofertas de captação de clientes (como defesa técnica em Processo Administrativo Disciplinar - PAD, serviços de assessoria jurídica privada e cursos pagos).
 - **Desenvolvimento da Seção Nobre Mitos e Fatos (`desinformacao.html`):** Criação da página institucional destinada ao combate à desinformação sobre o serviço público brasileiro, com a apresentação de dados oficiais, esclarecimentos jurídicos e estatísticas auditadas contra mitos recorrentes do funcionalismo.
 - **Implementação das Landing Pages Exclusivas por Categoria:** Construção de 8 páginas tematizadas (`categoria-policial.html`, `categoria-esportes.html`, `categoria-saude.html`, `categoria-educacao.html`, `categoria-cultura.html`, `categoria-inovacao.html`, `categoria-carreira.html` e `categoria-premiacoes.html`) para indexação segmentada e otimização de navegação por editoria.
 - **Desenvolvimento do Verificador Semântico Inteligente (`scripts/verificador_semantico_noticias.py`):** Modulagem de motor analítico avançado com desambiguação fina de contexto textual, responsável pela validação semântica e filtragem de ruídos antes do processamento de matérias.

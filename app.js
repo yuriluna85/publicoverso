@@ -103,20 +103,14 @@
     if (!container) return;
 
     if (!artigos || artigos.length === 0) {
-      artigos = [
-        {
-          titulo: "O Desafio da Comunicação Pública em Tempos de Inteligência Artificial Generativa",
-          resumo: "Reflexão sobre a responsabilidade ética do comunicador público ao adotar ferramentas de IA sem perder a sensibilidade e a veracidade factual.",
-          data: "08/08/2026",
-          url: "sobre.html"
-        },
-        {
-          titulo: "Além da Repartição: A Dimensão Humana do Servidor Público Brasileiro",
-          resumo: "Por que contar as histórias de vida e as conquistas pessoais dos servidores fortalece a própria democracia e o respeito ao serviço público.",
-          data: "05/08/2026",
-          url: "sobre.html"
-        }
-      ];
+      container.innerHTML = `
+        <div style="background: var(--bg-card); border: 1px dashed var(--border-color); border-radius: 8px; padding: 1.25rem; text-align: center;">
+          <h4 style="font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin: 0 0 0.5rem 0;">Espaço Aberto para Artigos e Reflexões</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.4; margin: 0 0 0.8rem 0;">Temas sobre a práxis docente, tecnologia na gestão e valorização do servidorismo público.</p>
+          <a href="contato.html" style="display: inline-block; background: var(--color-brand-purple); color: #FFF; font-size: 0.8rem; font-weight: 700; padding: 0.4rem 0.9rem; border-radius: 4px; text-decoration: none;">Envie sua sugestão de pauta &rarr;</a>
+        </div>
+      `;
+      return;
     }
 
     container.innerHTML = artigos.map(artigo => `

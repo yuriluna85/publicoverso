@@ -179,8 +179,15 @@ def main():
             if not url_bruta or url_bruta in urls_conhecidas:
                 continue
 
-            # Validação Factual em 4 Camadas
+            # Validação Factual em 4 Camadas + Filtro Anti-Anúncio Comercial
             if not config.validar_servidor_publico_brasileiro(titulo, resumo, url_bruta):
+                continue
+
+            # Expurgo de anúncios comerciais e de advocacia
+            texto_chk = f"{titulo} {resumo} {url_bruta} {fonte}".lower()
+            if any(kw in texto_chk for kw in ['sindicância contra você', 'sindicancia contra voce', 'pad contra você', 'defesa técnica agora', 'contrate um advogado', 'advocacia especializada', 'escritório de advocacia', 'fale conosco pelo whatsapp', 'fale com nosso advogado', 'consulte nossos advogados', 'agende uma consulta', 'precisa de defesa', 'defenda seu cargo', 'fale com um especialista', 'nossos serviços jurídicos', 'nossos servicos juridicos', 'nosso escritório', 'prestamos assessoria jurídica', 'entre em contato conosco', 'serviços advocatícios', 'defesa em pad', 'defesa de servidores públicos', 'escritório especializado', 'garanta seus direitos']):
+                config.registrar_log(f'  [DESCARTADO ANÚNCIO] {titulo}')
+                salvar_historico_url(url_bruta)
                 continue
 
             salvar_historico_url(url_bruta)

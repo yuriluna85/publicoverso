@@ -37,6 +37,29 @@ DIRETORIO_RAIZ = Path(__file__).parent.parent
 ARQUIVO_ACERVO_JSON = DIRETORIO_RAIZ / 'data' / 'acervo_links_minerados.json'
 ARQUIVO_ACERVO_CSV = DIRETORIO_RAIZ / 'data' / 'acervo_links_minerados.csv'
 
+# --- Filtro Estrito Anti-Anúncios Comerciais e Serviços Advocatícios ---
+KEYWORDS_ANUNCIO_COMERCIAL = [
+    'sindicância contra você', 'sindicancia contra voce', 'pad contra você', 'pad contra voce',
+    'defesa técnica agora', 'defesa tecnica agora', 'contrate um advogado', 'advocacia especializada',
+    'escritório de advocacia', 'escritorio de advocacia', 'fale conosco pelo whatsapp',
+    'fale com nosso advogado', 'consulte nossos advogados', 'agende uma consulta', 'precisa de defesa',
+    'defenda seu cargo', 'fale com um especialista', 'nossos serviços jurídicos',
+    'nossos servicos juridicos', 'nosso escritório', 'nosso escritorio',
+    'prestamos assessoria jurídica', 'prestamos assessoria juridica',
+    'entre em contato conosco', 'serviços advocatícios', 'servicos advocaticios',
+    'defesa em pad', 'defesa de servidores públicos', 'defesa de servidor',
+    'escritório especializado', 'escritorio especializado', 'garanta seus direitos'
+]
+
+
+def eh_anuncio_comercial(titulo, resumo, url='', fonte=''):
+    texto = f"{titulo} {resumo} {url} {fonte}".lower()
+    for kw in KEYWORDS_ANUNCIO_COMERCIAL:
+        if kw in texto:
+            return True
+    return False
+
+
 # --- Dicionarios de Palavras-Chave para Desambiguacao Fina ---
 
 KEYWORDS_JURIDICO_PAD = [
@@ -157,12 +180,21 @@ def executar_verificacao():
     print(f"=== Executando Verificador Semântico de Notícias ({len(itens)} itens no acervo) ===")
 
     total_modificados = 0
+    itens_filtrados = []
     estatisticas_categorias = {}
 
     for item in itens:
         titulo = item.get('titulo', '')
         resumo = item.get('resumo', '')
+        url = item.get('url_original', '')
+        fonte = item.get('fonte', '')
         cat_anterior = item.get('categoria', '')
+
+        # Descartar anúncios comerciais e captação advocatícia
+        if eh_anuncio_comercial(titulo, resumo, url, fonte):
+            print(f"[REMOVIDO ANÚNCIO] {titulo} ({fonte})")
+            total_modificados += 1
+            continue
 
         cat_nova = desambiguar_categoria(titulo, resumo, cat_anterior)
 
@@ -171,9 +203,10 @@ def executar_verificacao():
             total_modificados += 1
 
         estatisticas_categorias[cat_nova] = estatisticas_categorias.get(cat_nova, 0) + 1
+        itens_filtrados.append(item)
 
     with open(ARQUIVO_ACERVO_JSON, 'w', encoding='utf-8') as f:
-        json.dump(itens, f, ensure_ascii=False, indent=2)
+        json.dump(itens_filtrados, f, ensure_ascii=False, indent=2)
 
     print(f"[SUCESSO] Verificação concluída. {total_modificados} itens reclassificados.")
     print("Distribuição final por categoria:")
