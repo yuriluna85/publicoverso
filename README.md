@@ -154,6 +154,7 @@ Antes de solicitar aprovacao do AdSense:
 - Migrada a aplicação **Radar de Concursos** (`apps/radar-concursos/index.html` e `apps/radar-concursos/app.js`).
 - Criados arquivos ponte de retrocompatibilidade na raiz (`diario-oficial.html`, `simulador-diarias-estados.html` e `concursos.html`).
 - Atualizados os scripts de indexação e extratores (`extrator_diario_oficial.py`, `build_materias.py` e `pipeline_completo.py`) para leitura e gravação no diretório particionado de dados `data/diario_oficial/`.
+- Atualizada a biografia oficial e o perfil de **Yuri de Oliveira Luna e Almeida (YLuna85 LABs)** na página `sobre.html`.
 - Atualizada a navegação global e rodapés em 100% das páginas do portal.
 
 ### 09/08/2026 (Sessao 17 - Monitor de Movimentações do Diário Oficial - DOU/DOE)
