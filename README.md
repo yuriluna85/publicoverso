@@ -147,6 +147,16 @@ Antes de solicitar aprovacao do AdSense:
 - Criado o mini servidor local Python nativo `server.py` na porta 8088 com suporte a MIME types UTF-8, no-cache em desenvolvimento e logs limpos.
 - Criado o executável Windows `iniciar_servidor_local.bat` para disparo automatizado com 1 clique e abertura direta do navegador em `http://localhost:8088`.
 - Inserido o e-mail de contato e curadoria direta `publicoverso@gmail.com` em todas as páginas (`contato.html`, `sobre.html`, `privacidade.html`, `termos.html`, `build_materias.py` e Mega-Rodapé Editorial).
+### 09/08/2026 (Sessao 14 - Calibragem Semântica Fina & Gatekeeper de Vínculo Público)
+- Implementada a validação factual de vínculo funcional público obrigatório no Gatekeeper de triagem (`TERMOS_VINCULO_PUBLICO_OBRIGATORIO`). Notícias genéricas sem menção a servidores públicos (ex.: maratonista Daniel Ferreira) são sumariamente descartadas.
+- Implementado o filtro estrito anti-eleitoral e político-partidário (`TERMOS_EXPURGO_POLITICO_ELEITORAL`), eliminando candidaturas ao governo/prefeitura e convenções partidárias (ex.: candidatos ao governo de Roraima).
+- Implementado o expurgo de documentos legislativos arcaicos (ex.: PEC de 1993).
+- Refatorada a matriz determinística de 9 editorias:
+  - Fatos criminais, assaltos e acidentes com servidores redirecionados para **Policial e Segurança Pública** (corrigindo desvios em Artes).
+  - Temas do STF (Tema 1019) e conflitos de interesses/regras de conduta (Fachin) redirecionados para **Jurídico e PAD** (corrigindo desvios em Ciência).
+  - Livros e romances reais de servidores mantidos em **Artes e Literatura**.
+- Executada a sanitização retroativa: 35 matérias 100% legítimas mantidas com categorização impecável.
+
 ### 09/08/2026 (Sessao 13 - Mineração Aberta da Vida Além do Trabalho & Expurgo Total de Redes Sociais)
 - Reformulada a engenharia de busca do Publicoverso: mineração aberta em toda a internet (sem cercadinho de domínios), cobrindo portais de sindicatos (SINPF, FASUBRA, SINASEFE, ANDES, SINDIFISCO), associações de classe (ADPESP, delegados.com.br), portais regionais/locais e imprensa nacional.
 - Implementadas Dorks de cauda longa focadas no protagonismo humano da "Vida dos Servidores Para Além do Trabalho" (livros, romances, poesia, maratonas, jiu-jitsu, MasterChef, BBB, programas de TV, voluntariado, ONGs e superação).

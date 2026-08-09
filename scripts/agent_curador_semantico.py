@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-agent_curador_semantico.py - Agente Curador e Classificador Semântico de Notícias
+agent_curador_semantico.py - Agente Curador e Classificador Semântico Fino de Notícias
 Portal: Publicoverso (publicoverso.com.br)
 Laboratório: YLuna85 LABs
 
-Módulo autônomo responsável pela triagem, limpeza de não-notícias (garbage collector),
-desambiguação semântica fina e normalização de editorias do acervo minerado.
+Módulo autônomo responsável pela triagem, validação de vínculo funcional público,
+expurgo político-eleitoral, desambiguação semântica fina por árvore determinística de 9 níveis
+e normalização de editorias do acervo minerado.
 
 Uso:
   python scripts/agent_curador_semantico.py
@@ -36,8 +37,36 @@ ARQUIVO_ACERVO_JSON = DATA_DIR / 'acervo_links_minerados.json'
 ARQUIVO_ACERVO_CSV = DATA_DIR / 'acervo_links_minerados.csv'
 LOG_FILE = RAIZ / 'scripts' / 'log_mineracao.txt'
 
-# --- 1. Matriz de Expurgo Anti-Lixo, Anti-Jurisprudência e Anti-Propaganda ---
+# --- 1. Gatekeeper: Lista Obrigatória de Vínculo Funcional Público ---
+TERMOS_VINCULO_PUBLICO_OBRIGATORIO = [
+    'servidor público', 'servidora pública', 'servidor publico', 'servidora publica',
+    'funcionário público', 'funcionária pública', 'funcionario publico', 'funcionaria publica',
+    'servidor federal', 'servidora federal', 'servidor estadual', 'servidora estadual',
+    'servidor municipal', 'servidora municipal', 'servidor concursado', 'servidora concursada',
+    'servidor estatutário', 'servidora estatutária', 'servidor da união', 'servidor do estado',
+    'policial civil', 'policial militar', 'policial federal', 'policial rodoviário', 'policial rodoviario',
+    'delegado de polícia', 'delegada de polícia', 'delegado de policia', 'delegada de policia',
+    'perito criminal', 'perita criminal', 'agente penitenciário', 'agente penitenciario',
+    'policial penal', 'guarda municipal', 'guarda civil', 'bombeiro militar', 'bombeira militar',
+    'médico do sus', 'médica do sus', 'enfermeiro do sus', 'enfermeira do sus',
+    'professor da rede pública', 'professora da rede pública', 'professor universitário', 'professora universitária',
+    'técnico judiciário', 'analista judiciário', 'auditor fiscal', 'auditora fiscal',
+    'defensor público', 'defensora pública', 'promotor de justiça', 'promotora de justiça',
+    'juiz de direito', 'juíza de direito', 'magistrado', 'magistrada', 'desembargador', 'desembargadora',
+    'gari concursado', 'serviço público', 'servico publico', 'funcionalismo público', 'funcionalismo publico'
+]
 
+# --- 2. Gatekeeper: Expurgo Político-Eleitoral e Campanhas ---
+TERMOS_EXPURGO_POLITICO_ELEITORAL = [
+    'disputam o governo', 'disputa o governo', 'candidatos a governador', 'candidato a governador',
+    'candidata a governadora', 'candidato a prefeito', 'candidata a prefeita', 'disputa a prefeitura',
+    'candidato a deputado', 'candidata a deputada', 'candidato a senador', 'candidata a senadora',
+    'convenção partidária', 'convencao partidaria', 'convenções partidárias', 'chapa eleitoral',
+    'coligação partidária', 'partido político oficializa', 'horário eleitoral', 'campanha eleitoral',
+    'pesquisa eleitoral aponta', 'corrida eleitoral', 'palanque eleitoral'
+]
+
+# --- 3. Matriz de Expurgo de Lixo, Jurisprudência Seca e Propagandas ---
 PADROES_URL_EXCLUIDOS = [
     '@@download.pdf', '/download.pdf', '/contato', '/fale-conosco', '/ouvidoria',
     '/jurisprudencia/', '/inteiro-teor/', '/processo-consulta/',
@@ -56,7 +85,8 @@ TERMOS_TITULO_EXCLUIDOS = [
     'sindicância contra você', 'defesa técnica agora', 'contrate um advogado',
     'advocacia especializada', 'escritório de advocacia', 'apostila opção',
     'compre a apostila', 'curso preparatório', 'universidade federal do espírito santo (ufes)',
-    'sei/ifmg', 'edital de convocação do ibge n 2', 'tabela de cargos', 'quadro de pessoal'
+    'sei/ifmg', 'edital de convocação do ibge n 2', 'tabela de cargos', 'quadro de pessoal',
+    'proposta de emenda à constituição 19/1993', 'data de publicação 02/10/1993'
 ]
 
 DOMINIOS_ESTRANGEIROS = [
@@ -69,90 +99,70 @@ TERMOS_ESTRANGEIROS = [
     'angola', 'luanda', 'moçambique', 'maputo'
 ]
 
-# --- 2. Matriz de Palavras-Chave e Contra-Indicações por Nível de Precedência ---
+# --- 4. Palavras-Chave para a Árvore Determinística de 9 Níveis ---
 
-# Nível 1: Jurídico e PAD
-KEYWORDS_JURIDICO_PAD = [
-    'processo administrativo disciplinar', 'pad', 'demissão a bem do serviço público',
-    'demissao a bem do servico publico', 'exoneração a pedido', 'exoneracao a pedido',
-    'pena de demissão', 'pena de demissao', 'demitido a bem', 'sindicância punitiva',
-    'sindicancia punitiva', 'improbidade administrativa', 'lei 8.112', 'lei 8112',
-    'cassação de aposentadoria', 'cassacao de aposentadoria', 'recurso administrativo',
-    'perda de cargo público', 'perda de cargo publico', 'cassação de mandato'
-]
-
-# Nível 2: Policial e Segurança Pública
-KEYWORDS_POLICIAL = [
+TERMOS_POLICIAL_CRIMES = [
+    'homicídio', 'homicidio', 'assassinado', 'assassinada', 'assaltado', 'assaltada',
+    'assalto', 'roubo', 'furto', 'esfaqueado', 'esfaqueada', 'morto a tiros', 'morta a tiros',
+    'morto ao tentar', 'morta ao tentar', 'morre após moto', 'morre e neto', 'acidente fatal',
     'operação policial', 'operacao policial', 'investigação criminal', 'investigacao criminal',
-    'prisão em flagrante', 'prisao em flagrante', 'mandado de prisão', 'mandado de busca',
-    'apreensão de drogas', 'apreensao de drogas', 'apreensão de armas', 'combate ao crime',
-    'homicídio', 'homicidio', 'assalto', 'furto', 'roubo', 'facção criminosa', 'faccao criminosa',
-    'crime organizado', 'perícia criminal', 'pericia criminal', 'confronto armado', 'esfaqueado',
-    'morto a tiros', 'assassinado', 'morto ao tentar apartar'
+    'prisão em flagrante', 'prisao em flagrante', 'mandado de prisão', 'apreensão de drogas',
+    'facção criminosa', 'crime organizado', 'perícia criminal', 'confronto armado'
 ]
 
-# Nível 3: Esportes e Aventura
-KEYWORDS_ESPORTES = [
+TERMOS_JURIDICO_STF_PAD = [
+    'tema 1019', 'stf', 'stj', 'trânsito em julgado', 'transito em julgado', 'conflito de interesses',
+    'fachin', 'ministro fachin', 'regras para participação', 'processo administrativo disciplinar',
+    'pad', 'demissão a bem do serviço público', 'demissao a bem', 'exoneração punitiva',
+    'pena de demissão', 'improbidade administrativa', 'lei 8.112', 'lei 8112',
+    'cassação de aposentadoria', 'recurso administrativo', 'perda de cargo público'
+]
+
+TERMOS_ESPORTES_LUCIDOS = [
     'maratona', 'maratonista', 'corrida de rua', 'campeonato', 'torneio', 'medalha de ouro',
     'medalha de prata', 'medalha de bronze', 'pódio', 'podio', 'atleta', 'futebol',
     'jiu-jitsu', 'jiujitsu', 'judô', 'judo', 'karatê', 'karate', 'natação', 'natacao',
-    'ciclismo', 'triathlon', 'triatlo', 'ironman', 'venceu competição', 'venceu competicao',
-    'campeão', 'campeao', 'campeã', 'campea', 'jogos universitários', 'olimpíadas', 'paralimpíadas'
+    'ciclismo', 'triathlon', 'triatlo', 'ironman', 'venceu competição', 'campeão', 'campeã'
 ]
 
-# Nível 4: Artes e Literatura
-KEYWORDS_ARTES = [
-    'lança livro', 'lanca livro', 'publicou livro', 'obra literária', 'obra literaria',
-    'romance', 'poesia', 'poema', 'exposição de arte', 'exposicao de arte', 'escritor',
-    'escritora', 'artista plástico', 'artista plastico', 'escultura', 'pintura',
-    'teatro', 'peça teatral', 'peca teatral', 'documentário', 'documentario', 'filme',
-    'álbum musical', 'album musical', 'música', 'musica', 'canção', 'sarau'
+TERMOS_ARTES_LIVROS = [
+    'lança livro', 'lanca livro', 'lançou livro', 'publicou livro', 'obra literária',
+    'romance', 'poesia', 'poema', 'exposição de arte', 'escritor', 'escritora',
+    'artista plástico', 'escultura', 'pintura', 'peça teatral', 'álbum musical', 'música', 'sarau'
 ]
 
-# Nível 5: Ciência e Tecnologia
-KEYWORDS_CIENCIA = [
-    'descoberta científica', 'descoberta cientifica', 'pesquisa científica', 'pesquisa cientifica',
-    'patente registrada', 'artigo científico', 'artigo cientifico', 'desenvolveu aplicativo',
-    'criou app', 'software livre', 'inteligência artificial', 'inovação tecnológica',
-    'inovacao tecnologica', 'fiocruz', 'embrapa', 'inpe', 'cnpq', 'finep', 'prêmio científico'
+TERMOS_CIENCIA_PESQUISA = [
+    'descoberta científica', 'pesquisa científica', 'patente registrada', 'artigo científico',
+    'artigo publicado em revista', 'desenvolveu aplicativo', 'software livre',
+    'inteligência artificial', 'inovação tecnológica', 'fiocruz', 'embrapa', 'inpe', 'cnpq'
 ]
 
-# Nível 6: Cultura Pop e Gastronomia
-KEYWORDS_CULTURA = [
-    'bbb', 'big brother', 'masterchef', 'the voice', 'reality', 'reality show',
-    'culinária', 'culinaria', 'cozinha', 'gastronomia', 'receita', 'chef',
-    'bake off', 'no limite', 'humorista', 'stand-up', 'youtube'
+TERMOS_CULTURA_POP = [
+    'bbb', 'big brother', 'masterchef', 'the voice', 'reality show', 'culinária',
+    'gastronomia', 'receita', 'chef', 'bake off', 'no limite', 'humorista', 'stand-up'
 ]
 
-# Nível 7: Solidariedade e Comunidade
-KEYWORDS_SOLIDARIEDADE = [
-    'doação de sangue', 'doacao de sangue', 'doador de sangue', 'ação solidária',
-    'acao solidaria', 'trabalho voluntário', 'trabalho voluntario', 'voluntariado',
-    'campanha do agasalho', 'arrecadação de alimentos', 'arrecadacao de alimentos',
-    'caridade', 'projeto social', 'ajuda humanitária', 'ajuda humanitaria',
-    'resgate de animais', 'sopão comunitário', 'sopao comunitario'
+TERMOS_SOLIDARIEDADE = [
+    'doação de sangue', 'doador de sangue', 'ação solidária', 'trabalho voluntário',
+    'voluntariado', 'campanha do agasalho', 'arrecadação de alimentos', 'projeto social',
+    'ajuda humanitária', 'resgate de animais', 'sopão comunitário'
 ]
 
-# Nível 8: Histórias e Superação
-KEYWORDS_HISTORIAS = [
-    'trajetória inspiradora', 'trajetoria inspiradora', 'história de vida',
-    'de gari a', 'de vigilante a', 'de merendeira a', 'de estagiário a',
-    'superou câncer', 'superou doença', 'pcd', 'inclusão', 'inspiração',
-    'superação', 'superacao', 'legado de vida', 'história exemplar'
+TERMOS_HISTORIAS = [
+    'trajetória inspiradora', 'de gari a', 'de vigilante a', 'de merendeira a', 'de estagiário a',
+    'superou câncer', 'superou doença grave', 'pcd', 'inclusão', 'inspiração', 'superação', 'legado de vida'
 ]
 
-# Nível 9: Carreira e Conquistas
-KEYWORDS_CARREIRA = [
-    'concurso', 'aprovado', 'aprovada', 'aprovação', 'aprovacao', 'toma posse',
-    'tomam posse', 'nomeação', 'nomeacao', 'convocação', 'convocacao', 'carreira',
-    'promoção', 'progressão', 'pcctae', 'rsc', 'reajuste', 'salário', 'licença capacitação',
-    'aposentadoria voluntária', 'concessão de aposentadoria', 'oficializa aposentadoria',
-    'desembargadora', 'desembargador', 'promotora de justiça', 'promotor de justiça'
+TERMOS_CARREIRA = [
+    'concurso', 'aprovado', 'aprovada', 'aprovação', 'toma posse', 'tomam posse', 'nomeação',
+    'convocação', 'carreira', 'promoção', 'progressão', 'pcctae', 'rsc', 'reajuste', 'salário',
+    'licença capacitação', 'aposentadoria voluntária', 'concessão de aposentadoria', 'oficializa aposentadoria',
+    'desembargadora', 'desembargador', 'promotora de justiça', 'promotor de justiça', 'proposta de emenda'
 ]
 
 
 def eh_lixo_digital(titulo, resumo, url, fonte):
-    """Valida se o item deve ser sumariamente descartado."""
+    """Valida se o item deve ser descartado (Gatekeeper)."""
     texto_total = f"{titulo} {resumo} {url} {fonte}".lower()
     fonte_lower = (fonte or '').strip().lower()
 
@@ -160,22 +170,32 @@ def eh_lixo_digital(titulo, resumo, url, fonte):
     if len(titulo.strip()) < 20:
         return True, "Título muito curto (< 20 caracteres)"
 
-    # 2. Checagem de fontes de redes sociais
+    # 2. Validação OBRIGATÓRIA de Vínculo Funcional Público
+    tem_vinculo = any(term in texto_total for term in TERMOS_VINCULO_PUBLICO_OBRIGATORIO)
+    if not tem_vinculo:
+        return True, "Sem vínculo funcional público comprovado no texto"
+
+    # 3. Expurgo Político-Eleitoral e Campanhas
+    for t_pol in TERMOS_EXPURGO_POLITICO_ELEITORAL:
+        if t_pol in texto_total:
+            return True, f"Notícia sobre disputa político-eleitoral ({t_pol})"
+
+    # 4. Checagem de fontes de redes sociais
     for f_banida in FONTES_REDES_BANIDAS:
         if f_banida == fonte_lower or f_banida in fonte_lower:
             return True, f"Fonte de rede social banida ({fonte})"
 
-    # 3. Checagem de padrões de URL excluídos
+    # 5. Checagem de padrões de URL excluídos
     for padrao in PADROES_URL_EXCLUIDOS:
         if padrao in url.lower() or padrao in texto_total:
             return True, f"Padrão de URL/Texto banido ({padrao})"
 
-    # 4. Checagem de títulos de não-notícias ou jurisprudência
+    # 6. Checagem de títulos de não-notícias ou jurisprudência
     for termo in TERMOS_TITULO_EXCLUIDOS:
         if termo in texto_total:
             return True, f"Termo excluído detectado ({termo})"
 
-    # 4. Checagem de contextos internacionais
+    # 7. Checagem de contextos internacionais
     parsed_url = urlparse(url)
     dominio = parsed_url.netloc.lower()
     for dom in DOMINIOS_ESTRANGEIROS:
@@ -218,58 +238,44 @@ def enriquecer_resumo_se_necessario(url, resumo_atual):
 
 def classificar_semantica_fina(titulo, resumo, categoria_atual=""):
     """
-    Aplica a matriz de prevalência hierárquica e contra-indicações estritas.
+    Árvore determinística de 9 níveis com contra-indicações estritas.
     """
     texto = f"{titulo} {resumo}".lower()
 
-    # 1. Jurídico e PAD (Processo Disciplinar, Demissão a bem do serviço público)
-    if any(kw in texto for kw in KEYWORDS_JURIDICO_PAD):
-        if not any(term in texto for term in ['toma posse', 'nomeação', 'convocação', 'concurso público']):
-            return 'Jurídico e PAD'
-
-    # 2. Policial e Segurança Pública (Operações, crimes, homicídios, esfaqueamento)
-    is_policial = any(kw in texto for kw in KEYWORDS_POLICIAL)
-    if is_policial:
-        # Se for um crime/homicídio, NÃO PODE cair em Artes ou Esportes mesmo que tenha a palavra 'show' ou 'jiu-jitsu'
-        if any(term in texto for term in ['morto', 'homicídio', 'esfaqueado', 'assassinado', 'prisão', 'operação', 'criminoso']):
-            return 'Policial e Segurança Pública'
-
-    # 3. Esportes e Aventura (Competições, atletas, maratonas, medalhas)
-    if any(kw in texto for kw in KEYWORDS_ESPORTES):
-        if not any(term in texto for term in ['morto a tiros', 'assassinado', 'preso em flagrante', 'operação policial']):
-            if any(term in texto for term in ['venceu', 'maratona', 'pódio', 'podio', 'atleta', 'campeão', 'campeao', 'campeã', 'campea', 'medalha', 'torneio', 'jiu-jitsu', 'judô', 'natação']):
-                return 'Esportes e Aventura'
-
-    # 4. Artes e Literatura (Livros, peças, música, exposições)
-    if any(kw in texto for kw in KEYWORDS_ARTES):
-        if not any(term in texto for term in ['morto ao tentar', 'apartar briga', 'esfaqueado', 'homicídio', 'assassinado']):
-            if any(term in texto for term in ['livro', 'romance', 'poesia', 'exposição', 'exposicao', 'escritor', 'escritora', 'artista', 'álbum', 'album', 'música', 'musica', 'teatro']):
-                return 'Artes e Literatura'
-
-    # 5. Ciência e Tecnologia (Inovações, patentes, artigos científicos)
-    if any(kw in texto for kw in KEYWORDS_CIENCIA):
-        if not any(term in texto for term in ['oficializa aposentadoria', 'portaria de aposentadoria', 'toma posse', 'nomeação']):
-            return 'Ciência e Tecnologia'
-
-    # 6. Cultura Pop e Gastronomia
-    if any(kw in texto for kw in KEYWORDS_CULTURA):
-        return 'Cultura Pop e Gastronomia'
-
-    # 7. Solidariedade e Comunidade
-    if any(kw in texto for kw in KEYWORDS_SOLIDARIEDADE):
-        if not any(term in texto for term in ['operação policial', 'investigação criminal', 'prisão em flagrante']):
-            return 'Solidariedade e Comunidade'
-
-    # 8. Histórias e Superação
-    if any(kw in texto for kw in KEYWORDS_HISTORIAS):
-        return 'Histórias e Superação'
-
-    # 9. Policial Fallback (Se tiver marca policial clara)
-    if is_policial:
+    # NÍVEL 1: Policial e Segurança Pública (Crimes, assaltos, homicídios, mortes violentas e acidentes)
+    if any(kw in texto for kw in TERMOS_POLICIAL_CRIMES):
         return 'Policial e Segurança Pública'
 
-    # 10. Carreira e Conquistas (Posse, nomeação, aposentadoria, concursos)
-    if any(kw in texto for kw in KEYWORDS_CARREIRA):
+    # NÍVEL 2: Jurídico e PAD (Decisões do STF, STJ, Temas, Conflito de Interesses, PADs)
+    if any(kw in texto for kw in TERMOS_JURIDICO_STF_PAD):
+        return 'Jurídico e PAD'
+
+    # NÍVEL 3: Artes e Literatura (Produção autoral concreta de servidores)
+    if any(kw in texto for kw in TERMOS_ARTES_LIVROS):
+        return 'Artes e Literatura'
+
+    # NÍVEL 4: Esportes e Aventura (Atletas e competições de servidores)
+    if any(kw in texto for kw in TERMOS_ESPORTES_LUCIDOS):
+        return 'Esportes e Aventura'
+
+    # NÍVEL 5: Ciência e Tecnologia (Inovações e pesquisas científicas reais)
+    if any(kw in texto for kw in TERMOS_CIENCIA_PESQUISA):
+        return 'Ciência e Tecnologia'
+
+    # NÍVEL 6: Cultura Pop e Gastronomia (Realities, culinária, humor)
+    if any(kw in texto for kw in TERMOS_CULTURA_POP):
+        return 'Cultura Pop e Gastronomia'
+
+    # NÍVEL 7: Solidariedade e Comunidade (Voluntariado, doações, resgates)
+    if any(kw in texto for kw in TERMOS_SOLIDARIEDADE):
+        return 'Solidariedade e Comunidade'
+
+    # NÍVEL 8: Histórias e Superação (Trajetórias inspiradoras de vida)
+    if any(kw in texto for kw in TERMOS_HISTORIAS):
+        return 'Histórias e Superação'
+
+    # NÍVEL 9: Carreira e Conquistas (Vida funcional, posses, concursos, reajustes, aposentadorias)
+    if any(kw in texto for kw in TERMOS_CARREIRA):
         return 'Carreira e Conquistas'
 
     categorias_validas = [
@@ -322,11 +328,11 @@ def processar_curadoria(reclassificar_tudo=False):
             continue
         urls_vistas.add(url)
 
-        # 1. Filtro Anti-Lixo e Anti-Propaganda
+        # 1. Gatekeeper Anti-Lixo, Anti-Político e Validação de Vínculo Público
         lixo, motivo = eh_lixo_digital(titulo, resumo, url, fonte)
         if lixo:
             descartados += 1
-            print(f"[DESCARTE LIXO] Motivo: {motivo} | {titulo[:60]}")
+            print(f"[DESCARTE GATEKEEPER] Motivo: {motivo} | {titulo[:60]}")
             continue
 
         # 2. Enriquecimento textual condicional
@@ -334,7 +340,7 @@ def processar_curadoria(reclassificar_tudo=False):
             resumo = enriquecer_resumo_se_necessario(url, resumo)
             item['resumo'] = resumo
 
-        # 3. Classificação semântica fina
+        # 3. Classificação semântica fina determinística
         cat_nova = classificar_semantica_fina(titulo, resumo, cat_original)
 
         if cat_nova != cat_original:
@@ -366,13 +372,13 @@ def processar_curadoria(reclassificar_tudo=False):
     print("-" * 65)
     print(f"SANITIÇÃO CONCLUÍDA:")
     print(f"  - Itens mantidos no acervo: {len(acervo_sanitizado)}")
-    print(f"  - Itens descartados (Lixo/Duplicados): {descartados}")
+    print(f"  - Itens descartados (Lixo/Política/Sem Vínculo): {descartados}")
     print(f"  - Itens reclassificados semanticamente: {reclassificados}")
     print("=" * 65)
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Publicoverso - Agente Curador e Classificador Semântico")
+    parser = argparse.ArgumentParser(description="Publicoverso - Agente Curador e Classificador Semântico Fino")
     parser.add_argument('--reclassificar-tudo', action='store_true', help="Reprocessa todo o acervo histórico de notícias")
     args = parser.parse_args()
 
