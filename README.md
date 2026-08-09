@@ -84,6 +84,17 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizações (Changelog)
 
+### 09/08/2026 (Sessão 8 - Correções Finais e Consolidação do Portal)
+- **Corrigido bug crítico em `app.js`:** Adicionada a função `categoriaBadgeClass()` que estava sendo chamada nas três colunas do hero grid e no bento grid mas não estava definida, causando falha silenciosa na renderização de todos os badges de editoria.
+- **Corrigido carregamento das Google Fonts em `index.html`:** Adicionado o link `<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800">` que estava ausente, fazendo o portal usar tipografia de fallback do sistema.
+- **Atualizado `app_noticias.js`:** A página `noticias.html` agora mescla `noticias_curadoria.json` e `acervo_links_minerados.json` em paralelo com deduplicação por URL, exibindo o acervo completo (curadoria + mineração) em ordem cronológica.
+- **Adicionado alias `.badge-cultura` em `index.css`:** Corrigida incompatibilidade entre o nome de classe retornado por `categoriaBadgeClass()` (`badge-cultura`) e os seletores existentes no CSS (`badge-culturapop`). Badges de "Histórias e Superação" também foram padronizados removendo o seletor com acento (`.badge-histórias`) em favor do seletor ASCII-safe (`.badge-historias`).
+
+### 08/08/2026 (Sessão 8 - Exibição Direta das Notícias Mineradas na Capa Principal)
+- **Integração Imediata do Acervo na Capa (`index.html` e `app.js`):**
+  - O motor de renderização `app.js` unifica `noticias_curadoria.json` e `acervo_links_minerados.json`.
+  - Exibe todas as notícias mineradas pelos robôs em tempo real na capa do portal (Super Manchete, Destaques Secundários e Bento Grid), direcionando o leitor para o veículo original (`target="_blank"`) no caso de matérias sem página interna autoral gerada.
+
 ### 08/08/2026 (Sessão 7 - Validação Factual em 4 Camadas, Expurgo Político e Robô de Movimentação Funcional)
 - **Filtro de Blindagem Anti-Político e Anti-Eleitoral:**
   - Expurgo automático de qualquer conteúdo sobre mandatos eletivos (vereadores, prefeitos, deputados, senadores, governadores, presidente) e disputas partidárias/eleitorais.

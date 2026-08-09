@@ -443,9 +443,9 @@ body.high-contrast .chip:hover {
 .badge-artes { background: var(--badge-artes-bg); color: var(--badge-artes-color); border: 1px solid var(--badge-artes-border); }
 .badge-esportes { background: var(--badge-esportes-bg); color: var(--badge-esportes-color); border: 1px solid var(--badge-esportes-border); }
 .badge-ciencia { background: var(--badge-ciencia-bg); color: var(--badge-ciencia-color); border: 1px solid var(--badge-ciencia-border); }
-.badge-culturapop, .badge-cultura-pop { background: var(--badge-pop-bg); color: var(--badge-pop-color); border: 1px solid var(--badge-pop-border); }
+.badge-culturapop, .badge-cultura-pop, .badge-cultura { background: var(--badge-pop-bg); color: var(--badge-pop-color); border: 1px solid var(--badge-pop-border); }
 .badge-solidariedade { background: var(--badge-social-bg); color: var(--badge-social-color); border: 1px solid var(--badge-social-border); }
-.badge-histórias, .badge-historias { background: var(--badge-superacao-bg); color: var(--badge-superacao-color); border: 1px solid var(--badge-superacao-border); }
+.badge-historias, .badge-hist { background: var(--badge-superacao-bg); color: var(--badge-superacao-color); border: 1px solid var(--badge-superacao-border); }
 .badge-carreira { background: var(--badge-carreira-bg); color: var(--badge-carreira-color); border: 1px solid var(--badge-carreira-border); }
 .badge-default { background: var(--border-subtle); color: var(--text-secondary); border: 1px solid var(--border-color); }
 

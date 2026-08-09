@@ -20,12 +20,30 @@
         fetch('data/acervo_links_minerados.json').catch(() => null)
       ]);
 
-      if (!resNoticias.ok) throw new Error('Falha ao carregar noticias_curadoria.json.');
+      let curadas = resNoticias.ok ? await resNoticias.json() : [];
+      let mineradas = (resAcervo && resAcervo.ok) ? await resAcervo.json() : [];
 
-      noticiasMestre = await resNoticias.json();
-      let acervoLinks = (resAcervo && resAcervo.ok) ? await resAcervo.json() : noticiasMestre;
+      // Unifica curadas e mineradas em uma lista mestre para a capa
+      const urlsVistas = new Set();
+      noticiasMestre = [];
 
-      renderizarHeroGrid(noticiasMestre, acervoLinks);
+      // Adiciona primeiro as curadas
+      for (const n of curadas) {
+        const chave = n.url_materia || n.url_original || n.id;
+        urlsVistas.add(chave);
+        noticiasMestre.push(n);
+      }
+
+      // Em seguida, adiciona as mineradas encontradas pelos robôs
+      for (const m of mineradas) {
+        const chave = m.url_materia || m.url_original || m.id;
+        if (!urlsVistas.has(chave)) {
+          urlsVistas.add(chave);
+          noticiasMestre.push(m);
+        }
+      }
+
+      renderizarHeroGrid(noticiasMestre);
       renderizarBentoGrid(noticiasMestre);
       configurarFiltros();
       configurarBusca();
@@ -36,52 +54,59 @@
   }
 
   // --- Renderização do Hero Grid (G1 + Jornal da USP) ---
-  function renderizarHeroGrid(noticiasCuradas, acervoLinks) {
+  function renderizarHeroGrid(noticias) {
     const mainCol = document.getElementById('heroMainCard');
     const secondaryCol = document.getElementById('heroSecondaryCards');
     const feedCol = document.getElementById('heroFeedList');
 
-    const aprovadas = noticiasCuradas.filter(n => n.status === 'Aprovada');
-    if (aprovadas.length === 0) return;
+    if (!noticias || noticias.length === 0) return;
 
     // 1. Super Manchete (Item 0)
-    const principal = aprovadas[0];
+    const principal = noticias[0];
     if (mainCol && principal) {
       const badgeClass = categoriaBadgeClass(principal.categoria);
-      const urlMateria = principal.url_materia || '#';
+      const urlDestino = principal.url_materia || principal.url_original || '#';
+      const targetAttr = !principal.url_materia && principal.url_original ? 'target="_blank" rel="noopener noreferrer"' : '';
+
       mainCol.innerHTML = `
         <div>
-          <span class="hat-badge ${badgeClass}">${escapar(principal.categoria)}</span>
+          <span class="hat-badge ${badgeClass}">${escapar(principal.categoria || 'Serviço Público')}</span>
           <h2 class="main-title">
-            <a href="${escapar(urlMateria)}">${escapar(principal.titulo)}</a>
+            <a href="${escapar(urlDestino)}" ${targetAttr}>${escapar(principal.titulo)}</a>
           </h2>
           <p class="line-fine">${escapar(principal.resumo)}</p>
         </div>
         <footer class="hero-meta-footer">
           <span>${escapar(principal.fonte)} &bull; ${escapar(principal.data)}</span>
-          ${principal.url_materia ? `<a href="${escapar(urlMateria)}" class="btn-curate" aria-label="Ler matéria: ${escapar(principal.titulo)}">Ler matéria completa &rarr;</a>` : ''}
+          <a href="${escapar(urlDestino)}" class="btn-curate" ${targetAttr} aria-label="Ler matéria: ${escapar(principal.titulo)}">
+            ${principal.url_materia ? 'Ler matéria completa &rarr;' : 'Ver no veículo original &rarr;'}
+          </a>
         </footer>
       `;
     }
 
     // 2. Destaques Secundários (Itens 1 e 2)
     if (secondaryCol) {
-      const secundarias = aprovadas.slice(1, 3);
+      const secundarias = noticias.slice(1, 3);
       secondaryCol.innerHTML = secundarias.map(sec => {
         const badgeClass = categoriaBadgeClass(sec.categoria);
-        const urlMateria = sec.url_materia || '#';
+        const urlDestino = sec.url_materia || sec.url_original || '#';
+        const targetAttr = !sec.url_materia && sec.url_original ? 'target="_blank" rel="noopener noreferrer"' : '';
+
         return `
           <article class="secondary-card">
             <div>
-              <span class="hat-badge ${badgeClass}" style="font-size:0.72rem;">${escapar(sec.categoria)}</span>
+              <span class="hat-badge ${badgeClass}" style="font-size:0.72rem;">${escapar(sec.categoria || 'Geral')}</span>
               <h3 class="secondary-title">
-                <a href="${escapar(urlMateria)}">${escapar(sec.titulo)}</a>
+                <a href="${escapar(urlDestino)}" ${targetAttr}>${escapar(sec.titulo)}</a>
               </h3>
               <p class="secondary-excerpt">${escapar(sec.resumo)}</p>
             </div>
             <footer class="hero-meta-footer" style="padding-top:0.6rem;">
               <span>${escapar(sec.fonte)} &bull; ${escapar(sec.data)}</span>
-              ${sec.url_materia ? `<a href="${escapar(urlMateria)}" class="btn-curate btn-curate-sm">Ler</a>` : ''}
+              <a href="${escapar(urlDestino)}" class="btn-curate btn-curate-sm" ${targetAttr}>
+                ${sec.url_materia ? 'Ler' : 'Ver'}
+              </a>
             </footer>
           </article>
         `;
@@ -90,7 +115,7 @@
 
     // 3. Feed "Últimas do Serviço Público" (Estilo G1)
     if (feedCol) {
-      const ultimas = (acervoLinks && acervoLinks.length ? acervoLinks : aprovadas).slice(0, 5);
+      const ultimas = noticias.slice(0, 5);
       feedCol.innerHTML = ultimas.map(item => {
         const urlDestino = item.url_materia || item.url_original || '#';
         const targetAttr = !item.url_materia && item.url_original ? 'target="_blank" rel="noopener noreferrer"' : '';
@@ -111,14 +136,14 @@
     const grid = document.getElementById('bentoGrid');
     if (!grid) return;
 
-    let aprovadas = noticias.filter(n => n.status === 'Aprovada');
+    let lista = [...noticias];
 
     if (categoriaAtiva !== 'Todas') {
-      aprovadas = aprovadas.filter(n => n.categoria === categoriaAtiva);
+      lista = lista.filter(n => n.categoria === categoriaAtiva);
     }
 
     // Pula os primeiros 3 itens no modo "Todas" pois já estão em destaque no Hero Grid
-    const paraGrid = (categoriaAtiva === 'Todas' && aprovadas.length > 3) ? aprovadas.slice(3) : aprovadas;
+    const paraGrid = (categoriaAtiva === 'Todas' && lista.length > 3) ? lista.slice(3) : lista;
 
     if (paraGrid.length === 0) {
       grid.innerHTML = '<p style="color: var(--text-muted); padding: 2rem; text-align: center; width: 100%;">Nenhuma notícia adicional nesta editoria no momento.</p>';
@@ -127,19 +152,24 @@
 
     grid.innerHTML = paraGrid.map((noticia) => {
       const categoriaBadge = categoriaBadgeClass(noticia.categoria);
-      const urlMateria = noticia.url_materia ? `href="${noticia.url_materia}"` : '#';
+      const urlDestino = noticia.url_materia || noticia.url_original || '#';
+      const targetAttr = !noticia.url_materia && noticia.url_original ? 'target="_blank" rel="noopener noreferrer"' : '';
 
       return `
         <article class="card-news" data-categoria="${escapar(noticia.categoria)}">
           <header>
-            <span class="news-badge ${categoriaBadge}" aria-label="Categoria: ${escapar(noticia.categoria)}">${escapar(noticia.categoria)}</span>
-            <h3 class="news-title">${escapar(noticia.titulo)}</h3>
+            <span class="news-badge ${categoriaBadge}" aria-label="Categoria: ${escapar(noticia.categoria)}">${escapar(noticia.categoria || 'Geral')}</span>
+            <h3 class="news-title">
+              <a href="${escapar(urlDestino)}" ${targetAttr} style="color:inherit; text-decoration:none;">${escapar(noticia.titulo)}</a>
+            </h3>
           </header>
           <p class="news-summary">${escapar(noticia.resumo)}</p>
           <footer class="news-meta">
             <span>${escapar(noticia.fonte)} &mdash; ${escapar(noticia.data)}</span>
             <div class="news-actions">
-              ${noticia.url_materia ? `<a href="${escapar(noticia.url_materia)}" class="btn-curate" aria-label="Ler matéria completa: ${escapar(noticia.titulo)}">Ler mais</a>` : ''}
+              <a href="${escapar(urlDestino)}" class="btn-curate" ${targetAttr} aria-label="Acessar matéria: ${escapar(noticia.titulo)}">
+                ${noticia.url_materia ? 'Ler mais' : 'Ver fonte'}
+              </a>
             </div>
           </footer>
         </article>
@@ -171,7 +201,7 @@
     const input = document.getElementById('searchInput');
     const termo = input ? input.value.toLowerCase().trim() : '';
 
-    let filtradas = [...noticiasMestre].filter(n => n.status === 'Aprovada');
+    let filtradas = [...noticiasMestre];
 
     if (categoriaAtiva !== 'Todas') {
       filtradas = filtradas.filter(n => n.categoria === categoriaAtiva);
@@ -181,7 +211,8 @@
       filtradas = filtradas.filter(n =>
         (n.titulo || '').toLowerCase().includes(termo) ||
         (n.resumo || '').toLowerCase().includes(termo) ||
-        (n.categoria || '').toLowerCase().includes(termo)
+        (n.categoria || '').toLowerCase().includes(termo) ||
+        (n.fonte || '').toLowerCase().includes(termo)
       );
     }
 
@@ -250,6 +281,20 @@
         aplicarTema(novoTema);
       });
     }
+  }
+
+  // --- Utilitário: Mapeamento de Badge de Categoria ---
+  function categoriaBadgeClass(categoria) {
+    const mapa = {
+      'Artes e Literatura':         'badge-artes',
+      'Esportes e Aventura':        'badge-esportes',
+      'Ciência e Tecnologia':       'badge-ciencia',
+      'Cultura Pop e Gastronomia':  'badge-cultura',
+      'Solidariedade e Comunidade': 'badge-solidariedade',
+      'Histórias e Superação':      'badge-historias',
+      'Carreira e Conquistas':      'badge-carreira',
+    };
+    return mapa[categoria] || 'badge-carreira';
   }
 
   // --- Utilitário: Escape de HTML ---

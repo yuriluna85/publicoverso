@@ -18,16 +18,40 @@
   // --- Inicialização ---
   async function inicializar() {
     try {
-      let res = await fetch('data/acervo_links_minerados.json');
-      if (!res.ok) {
-        res = await fetch('data/noticias_curadoria.json');
+      const [resCuradoria, resAcervo] = await Promise.all([
+        fetch('data/noticias_curadoria.json').catch(() => null),
+        fetch('data/acervo_links_minerados.json').catch(() => null)
+      ]);
+
+      const curadas = (resCuradoria && resCuradoria.ok) ? await resCuradoria.json() : [];
+      const mineradas = (resAcervo && resAcervo.ok) ? await resAcervo.json() : [];
+
+      // Mescla deduplicando por URL
+      const urlsVistas = new Set();
+      const mescla = [];
+
+      for (const n of curadas) {
+        const chave = n.url_materia || n.url_original || n.id;
+        if (chave) urlsVistas.add(chave);
+        if (n.status_curadoria !== 'Rejeitada' && n.status !== 'Rejeitada') {
+          mescla.push(n);
+        }
       }
-      if (!res.ok) throw new Error('Falha ao carregar o acervo de notícias.');
 
-      const dados = await res.json();
-      noticiasMestre = dados.filter(n => n.status_curadoria !== 'Rejeitada' && n.status !== 'Rejeitada');
+      for (const m of mineradas) {
+        const chave = m.url_materia || m.url_original || m.id;
+        if (chave && urlsVistas.has(chave)) continue;
+        if (chave) urlsVistas.add(chave);
+        if (m.status_curadoria !== 'Rejeitada' && m.status !== 'Rejeitada') {
+          mescla.push(m);
+        }
+      }
 
-      // Ordena da notícia mais recente para a mais antiga (DD/MM/AAAA)
+      if (mescla.length === 0) throw new Error('Nenhuma notícia disponível no acervo.');
+
+      noticiasMestre = mescla;
+
+      // Ordena da mais recente para a mais antiga (DD/MM/AAAA)
       noticiasMestre.sort((a, b) => converterData(b.data) - converterData(a.data));
 
       configurarEventos();
