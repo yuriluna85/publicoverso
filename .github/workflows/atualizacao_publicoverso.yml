@@ -52,9 +52,9 @@ jobs:
         run: |
           python scripts/radar_concursos.py
 
-      - name: Classificar Notícias e Agrupar Editorias (Policial & Segurança Pública)
+      - name: Executar Curador e Classificador Semântico (Sanitização & Desambiguação)
         run: |
-          python scripts/classificador_noticias.py
+          python scripts/agent_curador_semantico.py
 
       - name: Build de Paginas Estaticas
         run: |

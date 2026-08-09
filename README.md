@@ -147,8 +147,11 @@ Antes de solicitar aprovacao do AdSense:
 - Criado o mini servidor local Python nativo `server.py` na porta 8088 com suporte a MIME types UTF-8, no-cache em desenvolvimento e logs limpos.
 - Criado o executável Windows `iniciar_servidor_local.bat` para disparo automatizado com 1 clique e abertura direta do navegador em `http://localhost:8088`.
 - Inserido o e-mail de contato e curadoria direta `publicoverso@gmail.com` em todas as páginas (`contato.html`, `sobre.html`, `privacidade.html`, `termos.html`, `build_materias.py` e Mega-Rodapé Editorial).
-- Propagado o Mega-Rodapé Editorial em 4 Colunas para 100% das páginas institucionais secundárias.
-- Varredura e homologação de links e ativos externos com protocolo HTTPS estrito.
+### 09/08/2026 (Sessao 12 - Agente Curador e Classificador Semântico de Notícias)
+- Criado o módulo autônomo `scripts/agent_curador_semantico.py` para sanitização semântica, desambiguação e descarte de não-notícias do Publicoverso.
+- Implementado o pipeline de 4 camadas: (1) Garbage Collector para expurgo de PDFs estáticos de órgãos (`@@download.pdf`), acórdãos forenses do STJ/Jusbrasil, propagandas de escritórios advocatícios/apostilas e ruído social; (2) Enriquecedor textual leve via raspagem de meta description e parágrafos iniciais; (3) Matriz hierárquica de 9 níveis com contra-indicações estritas para eliminar falsos cognatos (ex.: "show" em homicídio -> Policial; "aposentadoria" em Física -> Carreira); (4) Normalização para as 8 landing pages.
+- Integrado o novo agente ao `scripts/pipeline_completo.py` e ao agendamento do GitHub Actions em `.github/workflows/atualizacao_publicoverso.yml`.
+- Executada a higienização retroativa completa no acervo (`data/acervo_links_minerados.json`), descartando 10 itens de lixo/duplicatas e reclassificando 8 matérias com alta precisão factual.
 
 ### 09/08/2026 (Sessao 5 - Reestruturacao Editorial, Mega-Roda-pe e Banner LGPD)
 - Reestruturado o System Design de Cores (`SYSTEM_DESIGN_PUBLICOVERSO.md`) calibrando a luminosidade dos tokens de leitura para garantir contraste estrito WCAG 2.1 AA/AAA em todos os 3 modos de cor.

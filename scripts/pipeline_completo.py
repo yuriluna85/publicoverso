@@ -30,7 +30,7 @@ SCRIPT_MINERADOR_HISTORIAS = RAIZ / 'scripts' / 'minerador_historias.py'
 SCRIPT_MINERADOR_PROTAGONISTAS = RAIZ / 'scripts' / 'minerador_protagonistas.py'
 SCRIPT_RADAR_MOVIMENTACAO = RAIZ / 'scripts' / 'radar_movimentacao_servidores.py'
 SCRIPT_RADAR = RAIZ / 'scripts' / 'radar_concursos.py'
-SCRIPT_CLASSIFICADOR = RAIZ / 'scripts' / 'classificador_noticias.py'
+SCRIPT_CURADOR_SEMANTICO = RAIZ / 'scripts' / 'agent_curador_semantico.py'
 SCRIPT_BUILD = RAIZ / 'build_materias.py'
 
 
@@ -73,7 +73,7 @@ def main():
         ok2 = executar(SCRIPT_MINERADOR_PROTAGONISTAS, 'Minerador Especialista de Protagonistas (Vida Alem do Trabalho)')
         ok3 = executar(SCRIPT_RADAR_MOVIMENTACAO, 'Robô de Movimentação Funcional (Posse, Nomeação & Aposentadoria)')
         ok4 = executar(SCRIPT_RADAR, 'Radar de Editais de Concursos')
-        ok5 = executar(SCRIPT_CLASSIFICADOR, 'Classificador Inteligente de Notícias (Policial & Segurança Pública)')
+        ok5 = executar(SCRIPT_CURADOR_SEMANTICO, 'Agente Curador e Classificador Semântico (Sanitização & Desambiguação)')
         sucesso_total = ok1 and ok2 and ok3 and ok4 and ok5
 
     if not args.apenas_mineracao:
