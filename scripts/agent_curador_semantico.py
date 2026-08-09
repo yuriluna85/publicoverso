@@ -41,7 +41,13 @@ LOG_FILE = RAIZ / 'scripts' / 'log_mineracao.txt'
 PADROES_URL_EXCLUIDOS = [
     '@@download.pdf', '/download.pdf', '/contato', '/fale-conosco', '/ouvidoria',
     '/jurisprudencia/', '/inteiro-teor/', '/processo-consulta/',
-    'droliveira.adv.br', 'apostilaopcao.com.br', 'jusbrasil.com.br/jurisprudencia'
+    'droliveira.adv.br', 'apostilaopcao.com.br', 'jusbrasil.com.br/jurisprudencia',
+    'instagram.com', 'facebook.com', 'fb.watch', 'linkedin.com', 'tiktok.com',
+    'reddit.com', 'twitter.com', 'x.com', 't.co', 'threads.net', 'pinterest.com', 'kwai.com'
+]
+
+FONTES_REDES_BANIDAS = [
+    'instagram', 'facebook', 'linkedin', 'tiktok', 'reddit', 'twitter', 'x', 'threads', 'pinterest', 'kwai'
 ]
 
 TERMOS_TITULO_EXCLUIDOS = [
@@ -148,17 +154,23 @@ KEYWORDS_CARREIRA = [
 def eh_lixo_digital(titulo, resumo, url, fonte):
     """Valida se o item deve ser sumariamente descartado."""
     texto_total = f"{titulo} {resumo} {url} {fonte}".lower()
+    fonte_lower = (fonte or '').strip().lower()
 
     # 1. Checagem de tamanho mínimo de título
     if len(titulo.strip()) < 20:
         return True, "Título muito curto (< 20 caracteres)"
 
-    # 2. Checagem de padrões de URL excluídos
+    # 2. Checagem de fontes de redes sociais
+    for f_banida in FONTES_REDES_BANIDAS:
+        if f_banida == fonte_lower or f_banida in fonte_lower:
+            return True, f"Fonte de rede social banida ({fonte})"
+
+    # 3. Checagem de padrões de URL excluídos
     for padrao in PADROES_URL_EXCLUIDOS:
         if padrao in url.lower() or padrao in texto_total:
             return True, f"Padrão de URL/Texto banido ({padrao})"
 
-    # 3. Checagem de títulos de não-notícias ou jurisprudência
+    # 4. Checagem de títulos de não-notícias ou jurisprudência
     for termo in TERMOS_TITULO_EXCLUIDOS:
         if termo in texto_total:
             return True, f"Termo excluído detectado ({termo})"

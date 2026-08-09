@@ -15,6 +15,21 @@
   let editoriaAtiva = 'Todas';
   let termoBusca = '';
 
+  // Trava de Segurança Defensiva Anti-Redes Sociais
+  const REDES_BANIDAS = ['instagram.com', 'facebook.com', 'linkedin.com', 'tiktok.com', 'reddit.com', 'twitter.com', 'x.com', 'threads.net', 'youtube.com', 'pinterest.com', 'kwai.com'];
+
+  function ehVeiculoNoticiosoValido(item) {
+    if (!item) return false;
+    const url = (item.url_original || item.url_materia || '').toLowerCase();
+    const fonte = (item.fonte || '').toLowerCase();
+    for (const r of REDES_BANIDAS) {
+      if (url.includes(r) || fonte.includes(r.split('.')[0])) {
+        return false;
+      }
+    }
+    return true;
+  }
+
   // --- Inicialização ---
   async function inicializar() {
     try {
@@ -31,6 +46,7 @@
       const mescla = [];
 
       for (const n of curadas) {
+        if (!ehVeiculoNoticiosoValido(n)) continue;
         const chave = n.url_materia || n.url_original || n.id;
         if (chave) urlsVistas.add(chave);
         if (n.status_curadoria !== 'Rejeitada' && n.status !== 'Rejeitada') {
@@ -39,6 +55,7 @@
       }
 
       for (const m of mineradas) {
+        if (!ehVeiculoNoticiosoValido(m)) continue;
         const chave = m.url_materia || m.url_original || m.id;
         if (chave && urlsVistas.has(chave)) continue;
         if (chave) urlsVistas.add(chave);

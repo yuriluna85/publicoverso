@@ -112,50 +112,49 @@ ANCORAS_VINCULO_PUBLICO_BR = [
     'embrapa', 'diário oficial da união', 'diário oficial do estado', 'dou'
 ]
 
-# --- Dorks de Busca: Histórias Humanas ---
+# Sufixo universal de exclusão de redes sociais e contextos irrelevantes
+SUFIXO_EXCLUSAO_REDES_E_LIXO = '-site:instagram.com -site:facebook.com -site:linkedin.com -site:tiktok.com -site:reddit.com -site:twitter.com -site:x.com -site:threads.net -site:youtube.com -site:pinterest.com -site:kwai.com -site:*.pt -Portugal -vereador -prefeito -deputado'
+
+# --- Dorks de Busca: Histórias Humanas e Vida Além do Trabalho ---
 DORKS_HISTORIAS = [
     # Categoria: Cultura Pop e Gastronomia
     {
         'categoria': 'Cultura Pop e Gastronomia',
-        'query': '("servidor público" OR "servidora pública" OR "policial federal" OR "policial civil" OR "policial militar" OR "professor universitário" OR "médica do SUS" OR "analista judiciário" OR "auditor fiscal") AND ("BBB" OR "Big Brother" OR "MasterChef" OR "The Voice" OR "reality show" OR "gastronomia" OR "culinária") -site:*.pt -Portugal -vereador -prefeito -deputado',
+        'query': f'("servidor público" OR "servidora pública" OR "policial federal" OR "policial civil" OR "policial militar" OR "professor universitário" OR "médica do SUS" OR "analista judiciário" OR "auditor fiscal") AND ("BBB" OR "Big Brother" OR "MasterChef" OR "The Voice" OR "reality show" OR "gastronomia" OR "culinária" OR "stand-up comedy") {SUFIXO_EXCLUSAO_REDES_E_LIXO}',
     },
     # Categoria: Artes e Literatura
     {
         'categoria': 'Artes e Literatura',
-        'query': '("servidor público" OR "funcionário público" OR "servidora pública") AND ("lança livro" OR "publicou livro" OR "autor de livro" OR "exposição de arte" OR "artista plástico" OR "músico" OR "cantor" OR "ator" OR "bailarino" OR "fotógrafo" OR "poesia") -site:*.pt -Portugal -vereador -prefeito',
+        'query': f'("servidor público" OR "funcionário público" OR "servidora pública" OR "policial" OR "analista" OR "médico") AND ("lança livro" OR "lançou romance" OR "publicou livro" OR "autor do livro" OR "autora do livro" OR "exposição de arte" OR "artista plástico" OR "músico" OR "cantor" OR "poesia" OR "álbum musical") {SUFIXO_EXCLUSAO_REDES_E_LIXO}',
     },
     # Categoria: Esportes e Aventura
     {
         'categoria': 'Esportes e Aventura',
-        'query': '("servidor público" OR "servidora pública" OR "policial militar" OR "bombeiro militar" OR "guarda municipal concursado") AND ("atleta" OR "campeão" OR "maratona" OR "jiu-jitsu" OR "natação" OR "corrida" OR "triatlo" OR "ironman" OR "olimpíadas") -site:*.pt -Portugal -vereador -prefeito',
+        'query': f'("servidor público" OR "servidora pública" OR "policial militar" OR "bombeiro militar" OR "guarda municipal" OR "enfermeira") AND ("atleta" OR "campeão" OR "maratona" OR "completou maratona" OR "jiu-jitsu" OR "faixa preta" OR "natação" OR "corrida de rua" OR "triatlo" OR "ironman" OR "subiu ao pódio") {SUFIXO_EXCLUSAO_REDES_E_LIXO}',
+    },
+    {
+        'categoria': 'Esportes e Aventura',
+        'query': f'("jogos dos servidores" OR "torneio dos servidores" OR "olimpíada dos servidores" OR "corrida do servidor público") AND ("sindicato" OR "associação" OR "prefeitura" OR "tribunal" OR "instituto federal") {SUFIXO_EXCLUSAO_REDES_E_LIXO}',
     },
     # Categoria: Ciência e Tecnologia
     {
         'categoria': 'Ciência e Tecnologia',
-        'query': '("servidor público" OR "professora da rede pública" OR "pesquisador federal" OR "médica do SUS") AND ("prêmio internacional" OR "vence prêmio" OR "reconhecimento internacional" OR "patente registrada" OR "descoberta científica" OR "criou aplicativo" OR "desenvolveu sistema" OR "inovação") -site:*.pt -Portugal -vereador -prefeito',
-    },
-    {
-        'categoria': 'Ciência e Tecnologia',
-        'query': '("servidor do IF" OR "servidor da UFBA" OR "servidor da UFRJ" OR "servidor da Fiocruz" OR "servidor da Embrapa" OR "servidor do INPE" OR "pesquisador federal") AND ("descoberta" OR "prêmio" OR "artigo publicado" OR "conquista" OR "tecnologia") -site:*.pt -Portugal -vereador -prefeito',
+        'query': f'("servidor público" OR "professora da rede pública" OR "pesquisador federal" OR "médica do SUS") AND ("prêmio internacional" OR "vence prêmio" OR "patente registrada" OR "descoberta científica" OR "criou aplicativo" OR "desenvolveu sistema" OR "inovação") {SUFIXO_EXCLUSAO_REDES_E_LIXO}',
     },
     # Categoria: Solidariedade e Comunidade
     {
         'categoria': 'Solidariedade e Comunidade',
-        'query': '("servidor público" OR "funcionário público" OR "agente público estatutário") AND ("projeto social" OR "ong" OR "voluntariado" OR "ato de bravura" OR "salvou vidas" OR "heroísmo" OR "ação comunitária") -site:*.pt -Portugal -vereador -prefeito',
+        'query': f'("servidor público" OR "funcionário público" OR "servidora pública") AND ("criou ONG" OR "projeto social independente" OR "fora do expediente" OR "fora do horário de trabalho" OR "voluntariado" OR "resgate de animais" OR "sopão comunitário") {SUFIXO_EXCLUSAO_REDES_E_LIXO}',
     },
     # Categoria: Histórias e Superação
     {
         'categoria': 'Histórias e Superação',
-        'query': '("servidor público" OR "servidora pública") AND ("trajetória inspiradora" OR "de gari a" OR "superação" OR "aprovado em concurso" OR "aposentadoria" OR "30 anos de serviço" OR "virou médico" OR "virou juiz") -site:*.pt -Portugal -vereador -prefeito',
+        'query': f'("servidor público" OR "servidora pública") AND ("trajetória inspiradora" OR "de gari a" OR "de vigilante a" OR "de merendeira a" OR "de estagiário a" OR "superação" OR "aprovado em concurso" OR "aposentadoria" OR "legado de vida") {SUFIXO_EXCLUSAO_REDES_E_LIXO}',
     },
     # Categoria: Carreira e Conquistas
     {
         'categoria': 'Carreira e Conquistas',
-        'query': '("servidor público federal" OR "servidor estadual" OR "servidor municipal") AND ("progressão de carreira" OR "reestruturação de carreira" OR "RSC" OR "capacitação" OR "conquista de direitos") -site:*.pt -Portugal -vereador -prefeito',
-    },
-    {
-        'categoria': 'Carreira e Conquistas',
-        'query': '(PCCTAE OR "plano de carreira" OR "reajuste salarial" OR "revisão geral anual" OR "licença capacitação" OR "afastamento para mestrado" OR "afastamento para doutorado") AND ("servidor público" OR "funcional") -site:*.pt -Portugal -vereador -prefeito',
+        'query': f'("servidor público federal" OR "servidor estadual" OR "servidor municipal") AND ("toma posse" OR "cerimônia de posse" OR "nomeação" OR "progressão de carreira" OR "reestruturação de carreira" OR "RSC" OR "capacitação" OR "conquista de direitos") {SUFIXO_EXCLUSAO_REDES_E_LIXO}',
     }
 ]
 

@@ -147,6 +147,12 @@ Antes de solicitar aprovacao do AdSense:
 - Criado o mini servidor local Python nativo `server.py` na porta 8088 com suporte a MIME types UTF-8, no-cache em desenvolvimento e logs limpos.
 - Criado o executável Windows `iniciar_servidor_local.bat` para disparo automatizado com 1 clique e abertura direta do navegador em `http://localhost:8088`.
 - Inserido o e-mail de contato e curadoria direta `publicoverso@gmail.com` em todas as páginas (`contato.html`, `sobre.html`, `privacidade.html`, `termos.html`, `build_materias.py` e Mega-Rodapé Editorial).
+### 09/08/2026 (Sessao 13 - Mineração Aberta da Vida Além do Trabalho & Expurgo Total de Redes Sociais)
+- Reformulada a engenharia de busca do Publicoverso: mineração aberta em toda a internet (sem cercadinho de domínios), cobrindo portais de sindicatos (SINPF, FASUBRA, SINASEFE, ANDES, SINDIFISCO), associações de classe (ADPESP, delegados.com.br), portais regionais/locais e imprensa nacional.
+- Implementadas Dorks de cauda longa focadas no protagonismo humano da "Vida dos Servidores Para Além do Trabalho" (livros, romances, poesia, maratonas, jiu-jitsu, MasterChef, BBB, programas de TV, voluntariado, ONGs e superação).
+- Implementada a blindagem quádrupla anti-redes sociais (Instagram, Facebook, LinkedIn, TikTok, Reddit, X/Twitter, Threads, YouTube, Pinterest, Kwai) nas Dorks, no `agent_curador_semantico.py` e nas travas defensivas do frontend JavaScript (`app.js`, `app_noticias.js`, `app_categoria.js`).
+- Executada a curadoria retroativa, eliminando 100% dos posts de redes sociais e mantendo 75 notícias puras de veículos noticiosos e comunicados institucionais de imprensa.
+
 ### 09/08/2026 (Sessao 12 - Agente Curador e Classificador Semântico de Notícias)
 - Criado o módulo autônomo `scripts/agent_curador_semantico.py` para sanitização semântica, desambiguação e descarte de não-notícias do Publicoverso.
 - Implementado o pipeline de 4 camadas: (1) Garbage Collector para expurgo de PDFs estáticos de órgãos (`@@download.pdf`), acórdãos forenses do STJ/Jusbrasil, propagandas de escritórios advocatícios/apostilas e ruído social; (2) Enriquecedor textual leve via raspagem de meta description e parágrafos iniciais; (3) Matriz hierárquica de 9 níveis com contra-indicações estritas para eliminar falsos cognatos (ex.: "show" em homicídio -> Policial; "aposentadoria" em Física -> Carreira); (4) Normalização para as 8 landing pages.

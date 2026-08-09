@@ -12,6 +12,21 @@
   let artigosMestre = [];
   let categoriaAtiva = 'Todas';
 
+  // Trava de Segurança Defensiva Anti-Redes Sociais
+  const REDES_BANIDAS = ['instagram.com', 'facebook.com', 'linkedin.com', 'tiktok.com', 'reddit.com', 'twitter.com', 'x.com', 'threads.net', 'youtube.com', 'pinterest.com', 'kwai.com'];
+
+  function ehVeiculoNoticiosoValido(item) {
+    if (!item) return false;
+    const url = (item.url_original || item.url_materia || '').toLowerCase();
+    const fonte = (item.fonte || '').toLowerCase();
+    for (const r of REDES_BANIDAS) {
+      if (url.includes(r) || fonte.includes(r.split('.')[0])) {
+        return false;
+      }
+    }
+    return true;
+  }
+
   // --- Carregamento de Dados ---
   async function inicializar() {
     try {
@@ -29,15 +44,17 @@
       const urlsVistas = new Set();
       noticiasMestre = [];
 
-      // Adiciona primeiro as curadas
+      // Adiciona primeiro as curadas válidas
       for (const n of curadas) {
+        if (!ehVeiculoNoticiosoValido(n)) continue;
         const chave = n.url_materia || n.url_original || n.id;
         urlsVistas.add(chave);
         noticiasMestre.push(n);
       }
 
-      // Em seguida, adiciona as mineradas encontradas pelos robôs
+      // Em seguida, adiciona as mineradas encontradas pelos robôs (apenas veículos noticiosos válidos)
       for (const m of mineradas) {
+        if (!ehVeiculoNoticiosoValido(m)) continue;
         const chave = m.url_materia || m.url_original || m.id;
         if (!urlsVistas.has(chave)) {
           urlsVistas.add(chave);
