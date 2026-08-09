@@ -72,9 +72,12 @@ def main():
         ok1 = executar(SCRIPT_MINERADOR_HISTORIAS, 'Minerador de Histórias Gerais de Servidores')
         ok2 = executar(SCRIPT_MINERADOR_PROTAGONISTAS, 'Minerador Especialista de Protagonistas (Vida Alem do Trabalho)')
         ok3 = executar(SCRIPT_RADAR_MOVIMENTACAO, 'Robô de Movimentação Funcional (Posse, Nomeação & Aposentadoria)')
-        ok4 = executar(SCRIPT_RADAR, 'Radar de Editais de Concursos')
-        ok5 = executar(SCRIPT_CURADOR_SEMANTICO, 'Agente Curador e Classificador Semântico (Sanitização & Desambiguação)')
-        sucesso_total = ok1 and ok2 and ok3 and ok4 and ok5
+        ok4 = executar(SCRIPT_EXTRATOR_DIARIO_OFICIAL, 'Extrator de Portarias do Diário Oficial (DOU / DOE)')
+        ok5 = executar(SCRIPT_RADAR, 'Radar de Editais de Concursos')
+        print(f'\n[INICIANDO] Agente Curador e Classificador Semântico (Sanitização & Desambiguação)')
+        res_curador = subprocess.run([sys.executable, str(SCRIPT_CURADOR_SEMANTICO), '--reclassificar-tudo'])
+        ok6 = (res_curador.returncode == 0)
+        sucesso_total = ok1 and ok2 and ok3 and ok4 and ok5 and ok6
 
     if not args.apenas_mineracao:
         ok4 = executar(SCRIPT_BUILD, 'Build das Páginas HTML')

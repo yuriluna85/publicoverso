@@ -45,6 +45,13 @@ jobs:
         run: |
           python scripts/radar_movimentacao_servidores.py
 
+      - name: Executar Extrator do Diário Oficial (DOU / DOE)
+        env:
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+        run: |
+          python scripts/extrator_diario_oficial.py
+
       - name: Executar Radar de Concursos
         env:
           SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
@@ -54,7 +61,7 @@ jobs:
 
       - name: Executar Curador e Classificador Semântico (Sanitização & Desambiguação)
         run: |
-          python scripts/agent_curador_semantico.py
+          python scripts/agent_curador_semantico.py --reclassificar-tudo
 
       - name: Build de Paginas Estaticas
         run: |

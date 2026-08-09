@@ -27,40 +27,45 @@
     return true;
   }
 
+  function gerarSlugTitulo(titulo) {
+    if (!titulo) return '';
+    return titulo.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9\s]/g, '').split(/\s+/).slice(0, 8).join(' ');
+  }
+
   // --- Carregamento de Dados ---
   async function inicializar() {
     try {
       const [resNoticias, resAcervo, resArtigos] = await Promise.all([
-        fetch('data/noticias_curadoria.json'),
+        fetch('data/noticias_curadoria.json').catch(() => null),
         fetch('data/acervo_links_minerados.json').catch(() => null),
         fetch('data/artigos_autorais.json').catch(() => null)
       ]);
 
-      let curadas = resNoticias.ok ? await resNoticias.json() : [];
+      let curadas = (resNoticias && resNoticias.ok) ? await resNoticias.json() : [];
       let mineradas = (resAcervo && resAcervo.ok) ? await resAcervo.json() : [];
       artigosMestre = (resArtigos && resArtigos.ok) ? await resArtigos.json() : [];
 
       // Unifica curadas e mineradas em uma lista mestre para a capa
       const urlsVistas = new Set();
+      const slugsVistos = new Set();
       noticiasMestre = [];
 
-      // Adiciona primeiro as curadas válidas
-      for (const n of curadas) {
-        if (!ehVeiculoNoticiosoValido(n)) continue;
-        const chave = n.url_materia || n.url_original || n.id;
-        urlsVistas.add(chave);
-        noticiasMestre.push(n);
+      function processarItem(item) {
+        if (!ehVeiculoNoticiosoValido(item)) return;
+        const urlChave = item.url_materia || item.url_original || item.id;
+        const slugChave = gerarSlugTitulo(item.titulo);
+
+        if (urlChave && urlsVistas.has(urlChave)) return;
+        if (slugChave && slugsVistos.has(slugChave)) return;
+
+        if (urlChave) urlsVistas.add(urlChave);
+        if (slugChave) slugsVistos.add(slugChave);
+
+        noticiasMestre.push(item);
       }
 
-      // Em seguida, adiciona as mineradas encontradas pelos robôs (apenas veículos noticiosos válidos)
-      for (const m of mineradas) {
-        if (!ehVeiculoNoticiosoValido(m)) continue;
-        const chave = m.url_materia || m.url_original || m.id;
-        if (!urlsVistas.has(chave)) {
-          urlsVistas.add(chave);
-          noticiasMestre.push(m);
-        }
-      }
+      for (const n of curadas) processarItem(n);
+      for (const m of mineradas) processarItem(m);
 
       renderizarHeroGrid(noticiasMestre);
       renderizarColunasOpiniao(artigosMestre);

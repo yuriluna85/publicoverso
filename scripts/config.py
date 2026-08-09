@@ -27,10 +27,57 @@ ARQUIVO_NOTICIAS = RAIZ_PROJETO / 'data' / 'noticias_curadoria.json'
 ARQUIVO_CONCURSOS = RAIZ_PROJETO / 'data' / 'concursos_radar.json'
 ARQUIVO_ARTIGOS = RAIZ_PROJETO / 'data' / 'artigos_autorais.json'
 ARQUIVO_HISTORICO = RAIZ_PROJETO / 'data' / 'historico_mineracao.json'
+ARQUIVO_BLACKLIST = RAIZ_PROJETO / 'data' / 'blacklist_descartes.json'
 DIRETORIO_RASCUNHOS = RAIZ_PROJETO / 'materias' / 'conteúdo'
 DIRETORIO_PRE_CURADORIA = RAIZ_PROJETO / 'pre_curadoria'
 DIRETORIO_PAGINAS = RAIZ_PROJETO / 'materias' / 'páginas'
 ARQUIVO_LOG = RAIZ_PROJETO / 'scripts' / 'log_mineracao.txt'
+
+import unicodedata
+from urllib.parse import urlparse, parse_qs
+
+def normalizar_titulo_para_slug(titulo):
+    """Gera um slug canônico das primeiras 8 palavras para deduplicação."""
+    if not titulo:
+        return ""
+    txt = unicodedata.normalize('NFKD', titulo).encode('ASCII', 'ignore').decode('utf-8').lower()
+    txt = re.sub(r'[^a-z0-9\s]', '', txt)
+    palavras = txt.split()
+    return " ".join(palavras[:8])
+
+def normalizar_url_para_deduplicacao(url):
+    """Limpa redirecionamentos do Google Serper e parâmetros de rastreamento."""
+    if not url:
+        return ""
+    url_lower = url.lower().strip()
+    if 'google.com/goto' in url_lower and 'url=' in url_lower:
+        parsed = urlparse(url)
+        params = parse_qs(parsed.query)
+        if 'url' in params and params['url']:
+            url_lower = params['url'][0].lower()
+    parsed = urlparse(url_lower)
+    netloc = parsed.netloc.replace('www.', '')
+    path = parsed.path.rstrip('/')
+    return f"{netloc}{path}"
+
+def carregar_blacklist_descartes():
+    """Carrega slugs e URLs descartados anteriormente."""
+    if not ARQUIVO_BLACKLIST.exists():
+        return set()
+    try:
+        with open(ARQUIVO_BLACKLIST, 'r', encoding='utf-8') as f:
+            dados = json.load(f)
+            return set(dados)
+    except Exception:
+        return set()
+
+def salvar_blacklist_descartes(blacklist_set):
+    """Persiste a blacklist de descartes em JSON."""
+    try:
+        with open(ARQUIVO_BLACKLIST, 'w', encoding='utf-8') as f:
+            json.dump(sorted(list(blacklist_set)), f, ensure_ascii=False, indent=2)
+    except Exception:
+        pass
 
 # --- Carregamento de Variaveis de Ambiente ---
 def _carregar_dotenv():

@@ -147,6 +147,28 @@ Antes de solicitar aprovacao do AdSense:
 - Criado o mini servidor local Python nativo `server.py` na porta 8088 com suporte a MIME types UTF-8, no-cache em desenvolvimento e logs limpos.
 - Criado o executável Windows `iniciar_servidor_local.bat` para disparo automatizado com 1 clique e abertura direta do navegador em `http://localhost:8088`.
 - Inserido o e-mail de contato e curadoria direta `publicoverso@gmail.com` em todas as páginas (`contato.html`, `sobre.html`, `privacidade.html`, `termos.html`, `build_materias.py` e Mega-Rodapé Editorial).
+### 09/08/2026 (Sessao 17 - Monitor de Movimentações do Diário Oficial - DOU/DOE)
+- Desenvolvida a nova área especializada e independente do portal: **Monitor do Diário Oficial** (`diario-oficial.html` e `app_diario_oficial.js`).
+- Criado o robô extrator `scripts/extrator_diario_oficial.py` para consulta de atos de pessoal na Seção 2 do DOU (`site:in.gov.br/web/dou/-/`) e Diários Estaduais.
+- Segmentação em 6 categorias de atos oficiais: (1) Admissões & Nomeações, (2) Convocações de Aprovados, (3) Exonerações & Dispensas, (4) Aposentadorias, (5) Demissões & Penalidades (PAD), (6) Comissões & Funções Gratificadas (CD, FG, FCE).
+- Implementada a arquitetura de armazenamento particionado por **Ano e Mês em arquivos CSV** (`data/diario_oficial/AAAA/MM/movimentacoes_AAAA_MM.csv`) com link direto para a portaria original no `in.gov.br`.
+- Desenvolvida a interface `diario-oficial.html` em Bento Grid / Dark Tech com KPIs do mês, filtros por chips de tipo de ato, seletor de mês/ano, busca rápida por nome de servidor ou órgão, tabela responsiva e botão de download do CSV do mês.
+- Integrado o robô no orquestrador local `scripts/pipeline_completo.py` e na esteira agendada do GitHub Actions (`.github/workflows/atualizacao_publicoverso.yml`).
+
+### 09/08/2026 (Sessao 16 - Blindagem de Robôs Mineradores e Automação GitHub Actions)
+- Centralizadas as funções canônicas de deduplicação por slug (`normalizar_titulo_para_slug`) e despoluição de URLs (`normalizar_url_para_deduplicacao`) no módulo global `scripts/config.py`.
+- Criado o mecanismo de consulta e persistência da blacklist de descartes (`data/blacklist_descartes.json`), evitando que matérias já rejeitadas anteriormente (políticas, sem vínculo público ou mocks) gastem raspagem ou entrem temporariamente no acervo.
+- Blindados os robôs `minerador_protagonistas.py` e `radar_movimentacao_servidores.py` com pré-deduplicação por slug de 8 palavras e decodificação imediata de links de redirecionamento `google.com/goto?url=...`.
+- Atualizados o orquestrador local `scripts/pipeline_completo.py` e a automação do GitHub Actions (`.github/workflows/atualizacao_publicoverso.yml`) para invocar obrigatoriamente `agent_curador_semantico.py --reclassificar-tudo` antes do build estático.
+- Homologação completa: pipeline executado em 56s com 100% de sucesso.
+
+### 09/08/2026 (Sessao 15 - Deduplicação Inteligente por Slug e Expurgo Absoluto de Dados Inventados)
+- Implementado o motor de deduplicação inteligente em multi-camada (`normalizar_titulo_para_slug` e `normalizar_url_para_deduplicacao`), eliminando réplicas da mesma matéria com URLs de redirecionamento distintas (ex.: matéria da policial em Umuarama minerada 3 vezes).
+- Executado o expurgo absoluto e definitivo de 100% dos dados fictícios/mocks residuais no acervo (expurgadas matérias de demonstração com fonte "Curadoria Publicoverso" ou URLs fictícias `/exemplo`).
+- Adotada a exibição condicional graciosa no frontend (`app.js` e landing pages): se uma editoria não possuir notícias reais mineradas no momento, a interface oculta seções vazias sem inventar dados.
+- Reclassificadas matérias de eventos/celebrações institucionais (ex.: HSPM homenageará os pais pelo seu dia) para **Solidariedade e Comunidade**.
+- Sanitização concluída: acervo higienizado para 23 notícias puras, únicas e 100% autênticas.
+
 ### 09/08/2026 (Sessao 14 - Calibragem Semântica Fina & Gatekeeper de Vínculo Público)
 - Implementada a validação factual de vínculo funcional público obrigatório no Gatekeeper de triagem (`TERMOS_VINCULO_PUBLICO_OBRIGATORIO`). Notícias genéricas sem menção a servidores públicos (ex.: maratonista Daniel Ferreira) são sumariamente descartadas.
 - Implementado o filtro estrito anti-eleitoral e político-partidário (`TERMOS_EXPURGO_POLITICO_ELEITORAL`), eliminando candidaturas ao governo/prefeitura e convenções partidárias (ex.: candidatos ao governo de Roraima).

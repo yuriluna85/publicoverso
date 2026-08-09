@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diário Oficial &bull; Monitor de Nomeações, Exonerações e Aposentadorias | Publicoverso</title>
+  <meta name="description" content="Consulta diária e transparente de atos de pessoal, nomeações, convocações, exonerações, aposentadorias e portarias do Diário Oficial da União (DOU) e Diários Oficiais dos Estados.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <a href="#main-content" class="sr-only sr-only-focusable">Pular para o conteúdo principal</a>
+
+  <!-- Cabeçalho Principal do Portal -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <div class="brand-group">
+        <a href="index.html" class="logo-link" aria-label="Página inicial do Publicoverso">
+          <span class="logo-badge">LABs</span>
+          <span class="logo-text">PUBLICOVERSO</span>
+        </a>
+        <span class="header-divider" aria-hidden="true">|</span>
+        <span class="header-tagline">Jornalismo Independente do Servidorismo</span>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Navegação Principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Capa</a></li>
+          <li><a href="noticias.html" class="nav-link">Todas as Notícias</a></li>
+          <li><a href="diario-oficial.html" class="nav-link active" aria-current="page">Diário Oficial</a></li>
+          <li><a href="concursos.html" class="nav-link">Concursos</a></li>
+          <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+          <li><a href="contato.html" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="theme-switcher" role="radiogroup" aria-label="Seletor de Tema Visual">
+          <button id="btnThemeDark" class="theme-btn" role="radio" aria-checked="true" title="Tema Escuro">Escuro</button>
+          <button id="btnThemeLight" class="theme-btn" role="radio" aria-checked="false" title="Tema Claro">Claro</button>
+          <button id="btnThemeContrast" class="theme-btn" role="radio" aria-checked="false" title="Alto Contraste AAA">Contraste</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main id="main-content" class="site-main container" role="main">
+    
+    <!-- Hero Header Editorial do Diário Oficial -->
+    <header class="do-hero-header" style="margin-bottom: 2rem; border-bottom: 2px solid var(--border-color); padding-bottom: 1.5rem;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <span class="hat-badge" style="background: rgba(0, 210, 200, 0.15); color: #00D2C8; border: 1px solid rgba(0, 210, 200, 0.3);">Painel de Atos Oficiais</span>
+          <h1 class="page-title" style="font-size: 2.2rem; margin-top: 0.5rem; color: var(--text-primary);">Monitor do Diário Oficial (DOU / DOE)</h1>
+          <p class="page-meta" style="font-size: 1.05rem; line-height: 1.5; color: var(--text-muted); max-width: 800px;">
+            Consulta pública, transparente e organizada de nomeações, convocações, exonerações, aposentadorias, demissões e funções gratificadas publicadas no Diário Oficial da União (Seção 2) e Diários Estaduais.
+          </p>
+        </div>
+        <div style="text-align: right;">
+          <a id="btnDownloadCSV" href="javascript:void(0)" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--color-brand-cyan); color: #0A0E1A; font-weight: 700; padding: 0.65rem 1.2rem; border-radius: 8px; text-decoration: none;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Baixar CSV do Mês
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Bento Grid de KPIs do Mês -->
+    <section class="do-kpi-grid" aria-label="Métricas de Publicações Oficiais" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; margin-bottom: 2.5rem;">
+      <div class="kpi-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; text-align: center;">
+        <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase;">Total Registrado</span>
+        <h2 id="kpiTotalAtos" style="font-family: 'Outfit', sans-serif; font-size: 2.2rem; font-weight: 800; color: #00D2C8; margin: 0.4rem 0 0 0;">--</h2>
+      </div>
+
+      <div class="kpi-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; text-align: center;">
+        <span style="font-size: 0.85rem; color: #10B981; font-weight: 600; text-transform: uppercase;">Admissões &amp; Nomeações</span>
+        <h2 id="kpiNomeacoes" style="font-family: 'Outfit', sans-serif; font-size: 2.2rem; font-weight: 800; color: #10B981; margin: 0.4rem 0 0 0;">--</h2>
+      </div>
+
+      <div class="kpi-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; text-align: center;">
+        <span style="font-size: 0.85rem; color: #9146FF; font-weight: 600; text-transform: uppercase;">Convocações</span>
+        <h2 id="kpiConvocacoes" style="font-family: 'Outfit', sans-serif; font-size: 2.2rem; font-weight: 800; color: #9146FF; margin: 0.4rem 0 0 0;">--</h2>
+      </div>
+
+      <div class="kpi-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; text-align: center;">
+        <span style="font-size: 0.85rem; color: #F59E0B; font-weight: 600; text-transform: uppercase;">Exonerações &amp; Dispensas</span>
+        <h2 id="kpiExoneracoes" style="font-family: 'Outfit', sans-serif; font-size: 2.2rem; font-weight: 800; color: #F59E0B; margin: 0.4rem 0 0 0;">--</h2>
+      </div>
+
+      <div class="kpi-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; text-align: center;">
+        <span style="font-size: 0.85rem; color: #3B82F6; font-weight: 600; text-transform: uppercase;">Aposentadorias</span>
+        <h2 id="kpiAposentadorias" style="font-family: 'Outfit', sans-serif; font-size: 2.2rem; font-weight: 800; color: #3B82F6; margin: 0.4rem 0 0 0;">--</h2>
+      </div>
+    </section>
+
+    <!-- Filtros por Chips Interativos -->
+    <section class="do-filter-chips" aria-label="Filtrar por Categoria do Ato" style="margin-bottom: 1.5rem;">
+      <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center;" id="doChipsContainer">
+        <button class="chip-btn active" data-tipo="Todas">Todas as Publicações</button>
+        <button class="chip-btn" data-tipo="Admissões & Nomeações">Admissões &amp; Nomeações</button>
+        <button class="chip-btn" data-tipo="Convocações">Convocações</button>
+        <button class="chip-btn" data-tipo="Exonerações & Dispensas">Exonerações &amp; Dispensas</button>
+        <button class="chip-btn" data-tipo="Aposentadorias">Aposentadorias</button>
+        <button class="chip-btn" data-tipo="Demissões & Penalidades">Demissões &amp; PAD</button>
+        <button class="chip-btn" data-tipo="Comissões & Funções Gratificadas">Comissões &amp; Funções</button>
+      </div>
+    </section>
+
+    <!-- Toolbar de Busca Rápida e Seletor de Mês/Ano -->
+    <div class="noticias-toolbar" aria-label="Controles de busca e período">
+      <div class="toolbar-group">
+        <label for="doSelectMesAno" class="toolbar-label">Período Histórico:</label>
+        <select id="doSelectMesAno" class="toolbar-select">
+          <option value="recentes" selected>Agosto / 2026 (Atual)</option>
+        </select>
+      </div>
+
+      <div class="toolbar-group">
+        <label for="doSelectLinhas" class="toolbar-label">Exibir:</label>
+        <select id="doSelectLinhas" class="toolbar-select">
+          <option value="10" selected>10 por página</option>
+          <option value="25">25 por página</option>
+          <option value="50">50 por página</option>
+        </select>
+      </div>
+
+      <div class="toolbar-group toolbar-search" style="flex: 1; min-width: 260px;">
+        <input type="search" id="doSearchInput" class="search-input" placeholder="Buscar por Nome do Servidor, Órgão ou Portaria..." aria-label="Buscar publicações oficiais">
+      </div>
+    </div>
+
+    <!-- Estatísticas de Resultados -->
+    <div class="noticias-stats" id="doStats">
+      Carregando publicações do Diário Oficial...
+    </div>
+
+    <!-- Tabela Principal de Atos do Diário Oficial -->
+    <div class="noticias-list-container" style="margin-bottom: 2rem;">
+      <table class="noticias-table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 120px;">Data &amp; Seção</th>
+            <th scope="col" style="width: 170px;">Tipo de Ato</th>
+            <th scope="col" style="width: 220px;">Servidor &amp; Cargo</th>
+            <th scope="col">Órgão &amp; Ementa da Portaria</th>
+            <th scope="col" style="width: 140px; text-align: center;">Link Oficial</th>
+          </tr>
+        </thead>
+        <tbody id="doTbody">
+          <!-- Renderizado dinamicamente via app_diario_oficial.js -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Barra de Paginação -->
+    <div class="pagination-bar" style="margin-bottom: 3rem;">
+      <button id="doBtnPagAnterior" class="btn-page" disabled>&larr; Anterior</button>
+      <span id="doInfoPagina" class="info-pagina">Página 1 de 1</span>
+      <button id="doBtnPagProxima" class="btn-page" disabled>Próxima &rarr;</button>
+    </div>
+
+  </main>
+
+  <!-- Rodapé Institucional do Portal -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="logo-text">PUBLICOVERSO</span>
+        <p class="footer-desc">Jornalismo independente, transparência pública e notícias sobre o servidorismo brasileiro.</p>
+        <p class="footer-contact">Contato Editorial: <a href="mailto:publicoverso@gmail.com" class="footer-email">publicoverso@gmail.com</a></p>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-title">Editorias</h4>
+        <ul>
+          <li><a href="noticias.html">Todas as Notícias</a></li>
+          <li><a href="diario-oficial.html">Diário Oficial (DOU/DOE)</a></li>
+          <li><a href="concursos.html">Radar de Concursos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-title">Institucional</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre o Portal</a></li>
+          <li><a href="contato.html">Fale Conosco</a></li>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
+          <li><a href="termos.html">Termos de Uso</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Publicoverso LABs. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="app_diario_oficial.js"></script>
+</body>
+</html>

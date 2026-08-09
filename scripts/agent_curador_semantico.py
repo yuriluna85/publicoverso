@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-agent_curador_semantico.py - Agente Curador e Classificador Semântico Fino de Notícias
+agent_curador_semantico.py - Agente Curador, Deduplicador Inteligente e Classificador Semântico
 Portal: Publicoverso (publicoverso.com.br)
 Laboratório: YLuna85 LABs
 
-Módulo autônomo responsável pela triagem, validação de vínculo funcional público,
-expurgo político-eleitoral, desambiguação semântica fina por árvore determinística de 9 níveis
-e normalização de editorias do acervo minerado.
+Módulo autônomo responsável por:
+1. Deduplicação inteligente em multi-camada (por slug de título normalizado e URL canônica).
+2. Expurgo estrito e definitivo de mocks/dados fictícios (fonte 'Curadoria Publicoverso' ou URLs sintéticas).
+3. Gatekeeper com validação factual de vínculo público e expurgo político-eleitoral.
+4. Classificação semântica fina por árvore determinística de 9 níveis (incluindo eventos/homenagens em Solidariedade).
+5. Normalização de editorias e gravação dupla JSON/CSV.
 
 Uso:
   python scripts/agent_curador_semantico.py
@@ -19,11 +22,15 @@ import os
 import json
 import csv
 import re
+import unicodedata
 import argparse
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qs
 
 sys.stdout.reconfigure(encoding='utf-8')
+
+sys.path.insert(0, str(Path(__file__).parent))
+import config
 
 try:
     import requests
@@ -37,7 +44,12 @@ ARQUIVO_ACERVO_JSON = DATA_DIR / 'acervo_links_minerados.json'
 ARQUIVO_ACERVO_CSV = DATA_DIR / 'acervo_links_minerados.csv'
 LOG_FILE = RAIZ / 'scripts' / 'log_mineracao.txt'
 
-# --- 1. Gatekeeper: Lista Obrigatória de Vínculo Funcional Público ---
+# --- 1. Gatekeeper: Expurgo Estrito de Mocks e Dados Fictícios ---
+FONTES_MOCK_BANIDAS = ['curadoria publicoverso', 'mock', 'teste']
+IDS_MOCK_BANIDOS = ['noticia-01', 'noticia-06', 'test-12345']
+URLS_MOCK_BANIDAS = ['/exemplo', 'bbb.ghtml', 'masterchef.htm', 'policial-federal-bbb']
+
+# --- 2. Gatekeeper: Lista Obrigatória de Vínculo Funcional Público ---
 TERMOS_VINCULO_PUBLICO_OBRIGATORIO = [
     'servidor público', 'servidora pública', 'servidor publico', 'servidora publica',
     'funcionário público', 'funcionária pública', 'funcionario publico', 'funcionaria publica',
@@ -53,10 +65,11 @@ TERMOS_VINCULO_PUBLICO_OBRIGATORIO = [
     'técnico judiciário', 'analista judiciário', 'auditor fiscal', 'auditora fiscal',
     'defensor público', 'defensora pública', 'promotor de justiça', 'promotora de justiça',
     'juiz de direito', 'juíza de direito', 'magistrado', 'magistrada', 'desembargador', 'desembargadora',
-    'gari concursado', 'serviço público', 'servico publico', 'funcionalismo público', 'funcionalismo publico'
+    'gari concursado', 'serviço público', 'servico publico', 'funcionalismo público', 'funcionalismo publico',
+    'hospital do servidor público', 'hospital do servidor publico', 'hspm'
 ]
 
-# --- 2. Gatekeeper: Expurgo Político-Eleitoral e Campanhas ---
+# --- 3. Gatekeeper: Expurgo Político-Eleitoral e Campanhas ---
 TERMOS_EXPURGO_POLITICO_ELEITORAL = [
     'disputam o governo', 'disputa o governo', 'candidatos a governador', 'candidato a governador',
     'candidata a governadora', 'candidato a prefeito', 'candidata a prefeita', 'disputa a prefeitura',
@@ -66,7 +79,7 @@ TERMOS_EXPURGO_POLITICO_ELEITORAL = [
     'pesquisa eleitoral aponta', 'corrida eleitoral', 'palanque eleitoral'
 ]
 
-# --- 3. Matriz de Expurgo de Lixo, Jurisprudência Seca e Propagandas ---
+# --- 4. Matriz de Expurgo de Lixo, Jurisprudência Seca e Propagandas ---
 PADROES_URL_EXCLUIDOS = [
     '@@download.pdf', '/download.pdf', '/contato', '/fale-conosco', '/ouvidoria',
     '/jurisprudencia/', '/inteiro-teor/', '/processo-consulta/',
@@ -99,7 +112,15 @@ TERMOS_ESTRANGEIROS = [
     'angola', 'luanda', 'moçambique', 'maputo'
 ]
 
-# --- 4. Palavras-Chave para a Árvore Determinística de 9 Níveis ---
+# --- 5. Termos para Eventos e Homenagens Institucionais ---
+TERMOS_EVENTOS_HOMENAGENS = [
+    'homenageará', 'homenageara', 'homenagem', 'dia dos pais', 'dia das mães',
+    'dia das maes', 'dia do servidor', 'celebração', 'celebracao', 'comemoração',
+    'comemoracao', 'semana do servidor', 'aniversário do hospital', 'aniversario do hospital',
+    'homenageia servidores', 'presta homenagem', 'festa de confraternização'
+]
+
+# --- 6. Palavras-Chave para a Árvore Determinística de 9 Níveis ---
 
 TERMOS_POLICIAL_CRIMES = [
     'homicídio', 'homicidio', 'assassinado', 'assassinada', 'assaltado', 'assaltada',
@@ -161,41 +182,88 @@ TERMOS_CARREIRA = [
 ]
 
 
-def eh_lixo_digital(titulo, resumo, url, fonte):
-    """Valida se o item deve ser descartado (Gatekeeper)."""
+# --- 7. Funções de Deduplicação Inteligente ---
+
+def normalizar_titulo_para_slug(titulo):
+    """Converte o título em um slug canônico das primeiras 8 palavras para deduplicação."""
+    if not titulo:
+        return ""
+    txt = unicodedata.normalize('NFKD', titulo).encode('ASCII', 'ignore').decode('utf-8').lower()
+    txt = re.sub(r'[^a-z0-9\s]', '', txt)
+    palavras = txt.split()
+    return " ".join(palavras[:8])
+
+
+def normalizar_url_para_deduplicacao(url):
+    """Limpa redirecionamentos do Google e parâmetros de tracking."""
+    if not url:
+        return ""
+    url_lower = url.lower().strip()
+
+    # Se for link de goto do google serper com parametro url=, extrai o destino real se legível
+    if 'google.com/goto' in url_lower and 'url=' in url_lower:
+        parsed = urlparse(url)
+        params = parse_qs(parsed.query)
+        if 'url' in params and params['url']:
+            url_lower = params['url'][0].lower()
+
+    # Limpa hash e trailing slashes
+    parsed = urlparse(url_lower)
+    netloc = parsed.netloc.replace('www.', '')
+    path = parsed.path.rstrip('/')
+
+    return f"{netloc}{path}"
+
+
+# --- 8. Funções de Gatekeeper e Classificação ---
+
+def eh_lixo_digital_ou_mock(titulo, resumo, url, fonte, item_id=""):
+    """Valida se o item deve ser sumariamente descartado (Gatekeeper)."""
     texto_total = f"{titulo} {resumo} {url} {fonte}".lower()
     fonte_lower = (fonte or '').strip().lower()
+    id_lower = (item_id or '').strip().lower()
 
-    # 1. Checagem de tamanho mínimo de título
+    # 1. Expurgo Estrito de Mocks / Dados Fictícios
+    if fonte_lower in FONTES_MOCK_BANIDAS:
+        return True, f"Fonte sintética/mock banida ({fonte})"
+
+    if id_lower in IDS_MOCK_BANIDOS:
+        return True, f"ID sintético/mock banido ({item_id})"
+
+    for u_mock in URLS_MOCK_BANIDAS:
+        if u_mock in url.lower():
+            return True, f"URL sintética/mock banida ({u_mock})"
+
+    # 2. Checagem de tamanho mínimo de título
     if len(titulo.strip()) < 20:
         return True, "Título muito curto (< 20 caracteres)"
 
-    # 2. Validação OBRIGATÓRIA de Vínculo Funcional Público
+    # 3. Validação OBRIGATÓRIA de Vínculo Funcional Público
     tem_vinculo = any(term in texto_total for term in TERMOS_VINCULO_PUBLICO_OBRIGATORIO)
     if not tem_vinculo:
         return True, "Sem vínculo funcional público comprovado no texto"
 
-    # 3. Expurgo Político-Eleitoral e Campanhas
+    # 4. Expurgo Político-Eleitoral e Campanhas
     for t_pol in TERMOS_EXPURGO_POLITICO_ELEITORAL:
         if t_pol in texto_total:
             return True, f"Notícia sobre disputa político-eleitoral ({t_pol})"
 
-    # 4. Checagem de fontes de redes sociais
+    # 5. Checagem de fontes de redes sociais
     for f_banida in FONTES_REDES_BANIDAS:
         if f_banida == fonte_lower or f_banida in fonte_lower:
             return True, f"Fonte de rede social banida ({fonte})"
 
-    # 5. Checagem de padrões de URL excluídos
+    # 6. Checagem de padrões de URL excluídos
     for padrao in PADROES_URL_EXCLUIDOS:
         if padrao in url.lower() or padrao in texto_total:
             return True, f"Padrão de URL/Texto banido ({padrao})"
 
-    # 6. Checagem de títulos de não-notícias ou jurisprudência
+    # 7. Checagem de títulos de não-notícias ou jurisprudência
     for termo in TERMOS_TITULO_EXCLUIDOS:
         if termo in texto_total:
             return True, f"Termo excluído detectado ({termo})"
 
-    # 7. Checagem de contextos internacionais
+    # 8. Checagem de contextos internacionais
     parsed_url = urlparse(url)
     dominio = parsed_url.netloc.lower()
     for dom in DOMINIOS_ESTRANGEIROS:
@@ -250,31 +318,35 @@ def classificar_semantica_fina(titulo, resumo, categoria_atual=""):
     if any(kw in texto for kw in TERMOS_JURIDICO_STF_PAD):
         return 'Jurídico e PAD'
 
-    # NÍVEL 3: Artes e Literatura (Produção autoral concreta de servidores)
+    # NÍVEL 3: Eventos e Homenagens Institucionais (Encaminhados para Solidariedade e Comunidade)
+    if any(kw in texto for kw in TERMOS_EVENTOS_HOMENAGENS):
+        return 'Solidariedade e Comunidade'
+
+    # NÍVEL 4: Artes e Literatura (Produção autoral concreta de servidores)
     if any(kw in texto for kw in TERMOS_ARTES_LIVROS):
         return 'Artes e Literatura'
 
-    # NÍVEL 4: Esportes e Aventura (Atletas e competições de servidores)
+    # NÍVEL 5: Esportes e Aventura (Atletas e competições de servidores)
     if any(kw in texto for kw in TERMOS_ESPORTES_LUCIDOS):
         return 'Esportes e Aventura'
 
-    # NÍVEL 5: Ciência e Tecnologia (Inovações e pesquisas científicas reais)
+    # NÍVEL 6: Ciência e Tecnologia (Inovações e pesquisas científicas reais)
     if any(kw in texto for kw in TERMOS_CIENCIA_PESQUISA):
         return 'Ciência e Tecnologia'
 
-    # NÍVEL 6: Cultura Pop e Gastronomia (Realities, culinária, humor)
+    # NÍVEL 7: Cultura Pop e Gastronomia (Realities, culinária, humor)
     if any(kw in texto for kw in TERMOS_CULTURA_POP):
         return 'Cultura Pop e Gastronomia'
 
-    # NÍVEL 7: Solidariedade e Comunidade (Voluntariado, doações, resgates)
+    # NÍVEL 8: Solidariedade e Comunidade (Voluntariado, doações, resgates)
     if any(kw in texto for kw in TERMOS_SOLIDARIEDADE):
         return 'Solidariedade e Comunidade'
 
-    # NÍVEL 8: Histórias e Superação (Trajetórias inspiradoras de vida)
+    # NÍVEL 9: Histórias e Superação (Trajetórias inspiradoras de vida)
     if any(kw in texto for kw in TERMOS_HISTORIAS):
         return 'Histórias e Superação'
 
-    # NÍVEL 9: Carreira e Conquistas (Vida funcional, posses, concursos, reajustes, aposentadorias)
+    # NÍVEL 10: Carreira e Conquistas (Vida funcional, posses, concursos, reajustes, aposentadorias)
     if any(kw in texto for kw in TERMOS_CARREIRA):
         return 'Carreira e Conquistas'
 
@@ -292,7 +364,7 @@ def classificar_semantica_fina(titulo, resumo, categoria_atual=""):
 
 
 def processar_curadoria(reclassificar_tudo=False):
-    """Executa o pipeline completo de curadoria e sanitização semântica."""
+    """Executa o pipeline completo de curadoria, deduplicação inteligente e sanitização semântica."""
     if not ARQUIVO_ACERVO_JSON.exists():
         print(f"[AVISO] Arquivo {ARQUIVO_ACERVO_JSON} não encontrado.")
         return
@@ -305,42 +377,64 @@ def processar_curadoria(reclassificar_tudo=False):
         return
 
     print("=" * 65)
-    print("AGENTE CURADOR E CLASSIFICADOR SEMÂNTICO DO PUBLICOVERSO")
-    print(f"Total de itens para análise: {len(itens)}")
+    print("AGENTE CURADOR, DEDUPLICADOR E CLASSIFICADOR SEMÂNTICO DO PUBLICOVERSO")
+    print(f"Total de itens no acervo para análise: {len(itens)}")
     print("=" * 65)
 
     descartados = 0
+    duplicados = 0
     reclassificados = 0
     acervo_sanitizado = []
+
+    slugs_vistos = set()
     urls_vistas = set()
+
+    blacklist_descartes = config.carregar_blacklist_descartes()
 
     for item in itens:
         titulo = item.get('titulo', '').strip()
         resumo = item.get('resumo', '').strip()
         url = item.get('url_original', '').strip()
         fonte = item.get('fonte', '').strip()
+        item_id = str(item.get('id', '')).strip()
         cat_original = item.get('categoria', '').strip()
 
-        # Deduplicação por URL
-        if url in urls_vistas:
-            descartados += 1
-            print(f"[DESCARTE DUPLICADO] {titulo[:50]}...")
-            continue
-        urls_vistas.add(url)
+        # 1. Deduplicação Inteligente Multi-Camada (URL Canônica + Slug de Título)
+        url_canon = config.normalizar_url_para_deduplicacao(url)
+        slug_titulo = config.normalizar_titulo_para_slug(titulo)
 
-        # 1. Gatekeeper Anti-Lixo, Anti-Político e Validação de Vínculo Público
-        lixo, motivo = eh_lixo_digital(titulo, resumo, url, fonte)
+        if url_canon and url_canon in urls_vistas:
+            duplicados += 1
+            print(f"[DUPLICATA CANÔNICA URL] {titulo[:50]}...")
+            continue
+
+        if slug_titulo and slug_titulo in slugs_vistos:
+            duplicados += 1
+            print(f"[DUPLICATA DE TÍTULO SLUG] {titulo[:50]}...")
+            continue
+
+        if url_canon and url_canon != "google_goto_tracked":
+            urls_vistas.add(url_canon)
+        if slug_titulo:
+            slugs_vistos.add(slug_titulo)
+
+        # 2. Gatekeeper Anti-Lixo, Expurgo de Mocks, Expurgo Político e Validação de Vínculo Público
+        lixo, motivo = eh_lixo_digital_ou_mock(titulo, resumo, url, fonte, item_id)
         if lixo:
             descartados += 1
+            if url_canon and url_canon != "google_goto_tracked":
+                blacklist_descartes.add(url_canon)
+            if slug_titulo:
+                blacklist_descartes.add(slug_titulo)
             print(f"[DESCARTE GATEKEEPER] Motivo: {motivo} | {titulo[:60]}")
             continue
 
-        # 2. Enriquecimento textual condicional
+        # 3. Enriquecimento textual condicional
         if not resumo or len(resumo) < 30:
             resumo = enriquecer_resumo_se_necessario(url, resumo)
             item['resumo'] = resumo
 
-        # 3. Classificação semântica fina determinística
+        # 4. Classificação semântica fina determinística
         cat_nova = classificar_semantica_fina(titulo, resumo, cat_original)
 
         if cat_nova != cat_original:
@@ -350,7 +444,9 @@ def processar_curadoria(reclassificar_tudo=False):
 
         acervo_sanitizado.append(item)
 
-    # 4. Salvar base JSON e CSV sincronizados
+    # 5. Salvar base JSON, CSV e Blacklist sincronizados
+    config.salvar_blacklist_descartes(blacklist_descartes)
+
     with open(ARQUIVO_ACERVO_JSON, 'w', encoding='utf-8') as f:
         json.dump(acervo_sanitizado, f, ensure_ascii=False, indent=2)
 
@@ -370,15 +466,16 @@ def processar_curadoria(reclassificar_tudo=False):
             })
 
     print("-" * 65)
-    print(f"SANITIÇÃO CONCLUÍDA:")
-    print(f"  - Itens mantidos no acervo: {len(acervo_sanitizado)}")
-    print(f"  - Itens descartados (Lixo/Política/Sem Vínculo): {descartados}")
+    print(f"SANITIÇÃO E DEDUPLICAÇÃO CONCLUÍDAS:")
+    print(f"  - Itens legítimos mantidos no acervo: {len(acervo_sanitizado)}")
+    print(f"  - Itens descartados (Mocks/Lixo/Política/Sem Vínculo): {descartados}")
+    print(f"  - Duplicatas eliminadas: {duplicados}")
     print(f"  - Itens reclassificados semanticamente: {reclassificados}")
     print("=" * 65)
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Publicoverso - Agente Curador e Classificador Semântico Fino")
+    parser = argparse.ArgumentParser(description="Publicoverso - Agente Curador, Deduplicador e Classificador Semântico")
     parser.add_argument('--reclassificar-tudo', action='store_true', help="Reprocessa todo o acervo histórico de notícias")
     args = parser.parse_args()
 
