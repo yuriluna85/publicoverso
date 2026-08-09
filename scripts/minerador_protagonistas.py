@@ -103,6 +103,14 @@ DORKS_PROTAGONISTAS = [
     },
 ]
 
+MAPA_EIXOS_EDITORIAS = {
+    'Literatura e Artes': 'Artes e Literatura',
+    'Esportes e Desafios': 'Esportes e Aventura',
+    'Entretenimento e Cultura Pop': 'Cultura Pop e Gastronomia',
+    'Voluntariado e Causa Social': 'Solidariedade e Comunidade',
+    'Trajetoria e Superacao': 'Histórias e Superação',
+}
+
 
 def classificar_editoria(titulo, resumo, categoria_fallback='Carreira e Conquistas'):
     """Classifica automaticamente a notícia em uma das 7 editorias jornalisticas."""
@@ -404,7 +412,7 @@ def main():
             urls_conhecidas.add(url_limpa)
 
             # Grava no Acervo Geral de Links Minerados (CSV + JSON)
-            cat_mapeada = MAPA_EIXOS_EDITORIAS.get(item['eixo'], 'Histórias e Superação')
+            cat_mapeada = item.get('categoria') or MAPA_EIXOS_EDITORIAS.get(item.get('eixo'), 'Histórias e Superação')
             id_prot = 'prot-' + hashlib.md5(url_limpa.encode()).hexdigest()[:10]
             data_hoje = datetime.now().strftime('%d/%m/%Y')
             resumo_limpo = (resumo[:200] if resumo else titulo).replace('\n', ' ').replace(',', ';')
