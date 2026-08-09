@@ -150,6 +150,7 @@ def gerar_html(metadados, corpo_html):
         <a href="../../apps/radar-concursos/index.html" class="nav-link">Radar de Concursos</a>
         <a href="../../sobre.html" class="nav-link">Sobre</a>
         <a href="../../contato.html" class="nav-link">Contato</a>
+        <a href="https://taes-federal.com.br/" class="nav-link nav-link-external" target="_blank" rel="noopener noreferrer">Calculadora TAE</a>
       </nav>
 
       <!-- Controles de Acessibilidade e Tema -->
