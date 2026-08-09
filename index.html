@@ -100,9 +100,38 @@
     <!-- Banner Principal -->
     <section class="hero-banner">
       <div class="hero-content">
-        <div class="hero-badge">Curadoria: Cristina Mascarenhas</div>
+        <div class="hero-badge">Curadoria Editorial: Cristina Mascarenhas</div>
         <h2 class="hero-title">Quem faz o Estado funcionar também tem história</h2>
-        <p class="hero-subtitle">Servidores públicos no BBB, MasterChef, vencedores de prêmios internacionais, autores de livros, atletas e inovadores. O Publicoverso indexa e celebra as pessoas por trás do serviço público.</p>
+        <p class="hero-subtitle">Servidores públicos no BBB, MasterChef, vencedores de prêmios internacionais, autores de livros, atletas e inovadores. O Publicoverso celebra as pessoas por trás do serviço público brasileiro.</p>
+      </div>
+    </section>
+
+    <!-- Bloco Principal de Manchetes (Padrão G1 + Jornal da USP) -->
+    <section class="hero-grid-container" aria-label="Notícias em Destaque">
+      <div class="hero-grid-g1-usp">
+        
+        <!-- Coluna 1: Super Manchete Principal (50% no Desktop) -->
+        <article class="hero-col-main" id="heroMainCard">
+          <!-- Renderizado dinamicamente via app.js -->
+        </article>
+
+        <!-- Coluna 2: Destaques Secundários Vertical (25% no Desktop) -->
+        <div class="hero-col-secondary" id="heroSecondaryCards">
+          <!-- Renderizado dinamicamente via app.js -->
+        </div>
+
+        <!-- Coluna 3: Feed "Últimas Notícias da Web" (25% no Desktop - Estilo G1) -->
+        <aside class="hero-col-feed" aria-label="Últimas notícias do acervo">
+          <div class="feed-header">
+            <h3 class="feed-title">Últimas do Serviço Público</h3>
+            <span class="feed-live-dot" title="Atualizado em tempo real"></span>
+          </div>
+          <div class="feed-list" id="heroFeedList">
+            <!-- Renderizado dinamicamente via app.js -->
+          </div>
+          <a href="noticias.html" class="btn-feed-ver-todas">Ver acervo completo &rarr;</a>
+        </aside>
+
       </div>
     </section>
 
@@ -160,7 +189,10 @@
 
     <!-- Seção de Notícias em Bento Grid -->
     <section aria-labelledby="news-section-heading">
-      <h2 id="news-section-heading" class="section-heading">Histórias e Notícias</h2>
+      <div class="section-header-usp">
+        <h2 id="news-section-heading" class="section-heading">Mais Histórias e Conquistas</h2>
+        <div class="section-line-usp"></div>
+      </div>
       <div id="bentoGrid" class="bento-grid">
         <!-- Renderizado dinamicamente via app.js -->
       </div>

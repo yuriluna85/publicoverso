@@ -84,11 +84,26 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizações (Changelog)
 
-### 08/08/2026 (Sessao 6 - Arquitetura de Acervo Mined CSV/JSON e Notícias Curadas)
-- **Separação de Camadas (Curadorias em Destaque vs Acervo Geral de Links):**
-  - **Portal Principal (`index.html`):** Renders exclusivamente matérias autorais e curadas com status `"Aprovada"` em formato de cartões Bento Grid (vindas de `data/noticias_curadoria.json`).
-  - **Índice Geral de Notícias (`noticias.html`):** Carrega o **Acervo Geral de Links Minerados** (`data/acervo_links_minerados.csv` e `data/acervo_links_minerados.json`). Exibe a lista completa de todas as notícias encontradas pelo robô na web (com link direto para o veículo original, data, categoria, fonte e seletor de 10, 20 ou 50 itens por página).
-- **Scripts de Mineração (`minerador_historias.py` e `minerador_protagonistas.py`):** Atualizados para alimentar automaticamente o arquivo CSV/JSON do acervo a cada rodada no GitHub Actions sem poluir as matérias curadas da página principal.
+### 08/08/2026 (Sessão 7 - Validação Factual em 4 Camadas, Expurgo Político e Robô de Movimentação Funcional)
+- **Filtro de Blindagem Anti-Político e Anti-Eleitoral:**
+  - Expurgo automático de qualquer conteúdo sobre mandatos eletivos (vereadores, prefeitos, deputados, senadores, governadores, presidente) e disputas partidárias/eleitorais.
+- **Validação Factual Estrita de Servidores Públicos do Brasil (`validar_servidor_publico_brasileiro`):**
+  - **Camada 1 (Dorks Estritos):** Exclusão ativa de domínios internacionais (`-site:*.pt -site:*.ao -site:*.mz -Portugal`).
+  - **Camada 2 (Expurgo Geográfico Internacional):** Bloqueio automático de domínios estrangeiros e cidades de fora do país (ex: `diarioviseu.pt`, `Castro Daire`, `Lisboa`).
+  - **Camada 3 (Expurgo Político):** Rejeição sumária de políticos e candidatos.
+  - **Camada 4 (Prova Factual de Vínculo):** Exigência de âncora textual comprovatória de vínculo com o serviço público brasileiro (`servidor público`, `estatutário`, `concursado`, `SUS`, `instituto federal`, `universidade federal`, `polícia`, `tribunal`, `DOU`).
+- **Novo Robô de Movimentação Funcional (`scripts/radar_movimentacao_servidores.py`):**
+  - Rastreamento exclusivo de posses, nomeações de aprovados em concursos, aposentadorias e trajetórias de legado funcional nos Diários Oficiais e na imprensa.
+  - Integrado ao `pipeline_completo.py` e ao workflow agendado do GitHub Actions (`.github/workflows/atualizacao_publicoverso.yml`).
+
+### 08/08/2026 (Sessao 6 - Novo Layout Editorial Fusão G1 + Jornal da USP)
+- **Reestruturação Completa da Capa (`index.html`):**
+  - **Grid Editorial Hero em 3 Colunas:**
+    1. **Coluna 1 (Super Manchete - 50% Desktop):** Manchete de grande impacto com chapéu de editoria, título em `Outfit` 800, linha-fina contextual e rodapé com meta-informações.
+    2. **Coluna 2 (Destaques Secundários - 25% Desktop):** Dois cartões médios verticais empilhados com resumo objetivo e acabamento nobre.
+    3. **Coluna 3 (Feed "Últimas do Serviço Público" - 25% Desktop):** Feed dinâmico ao vivo com os últimos 5 links minerados da web, indicador pulsante e atalho para o acervo completo (`noticias.html`).
+  - **Estética Editorial Inspirada no Jornal da USP:** Inclusão de cabeçalhos de seção com linhas divisórias de gradiente suave (`.section-line-usp`), tipografia hierárquica e espaçamento proporcional.
+  - **Preservação de Identidade & A11y:** Manutenção da paleta de cores (Azul Petróleo, Turquesa Neon e Roxo Luna), botões balão arredondados no cabeçalho e suporte total aos 3 temas (Claro, Escuro e Alto Contraste AAA).
 
 ### 08/08/2026 (Sessao 4 - Minerador de Protagonistas e Atribuição de Fonte)
 - Criado o robô `scripts/minerador_protagonistas.py` dedicado a minerar histórias humanas de servidores e servidoras pública fora da reparticao (Literatura, Esportes, Cultura Pop/Realities, Voluntariado e Superacao Pessoal).

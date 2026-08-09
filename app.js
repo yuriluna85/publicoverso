@@ -15,12 +15,18 @@
   // --- Carregamento de Dados ---
   async function inicializar() {
     try {
-      const resNoticias = await fetch('data/noticias_curadoria.json');
+      const [resNoticias, resAcervo] = await Promise.all([
+        fetch('data/noticias_curadoria.json'),
+        fetch('data/acervo_links_minerados.json').catch(() => null)
+      ]);
+
       if (!resNoticias.ok) throw new Error('Falha ao carregar noticias_curadoria.json.');
 
       noticiasMestre = await resNoticias.json();
+      let acervoLinks = (resAcervo && resAcervo.ok) ? await resAcervo.json() : noticiasMestre;
 
-      renderizarNoticias(noticiasMestre);
+      renderizarHeroGrid(noticiasMestre, acervoLinks);
+      renderizarBentoGrid(noticiasMestre);
       configurarFiltros();
       configurarBusca();
       configurarAcessibilidade();
@@ -29,72 +35,116 @@
     }
   }
 
-  // --- Renderização de Notícias ---
-  function renderizarNoticias(notícias) {
+  // --- Renderização do Hero Grid (G1 + Jornal da USP) ---
+  function renderizarHeroGrid(noticiasCuradas, acervoLinks) {
+    const mainCol = document.getElementById('heroMainCard');
+    const secondaryCol = document.getElementById('heroSecondaryCards');
+    const feedCol = document.getElementById('heroFeedList');
+
+    const aprovadas = noticiasCuradas.filter(n => n.status === 'Aprovada');
+    if (aprovadas.length === 0) return;
+
+    // 1. Super Manchete (Item 0)
+    const principal = aprovadas[0];
+    if (mainCol && principal) {
+      const badgeClass = categoriaBadgeClass(principal.categoria);
+      const urlMateria = principal.url_materia || '#';
+      mainCol.innerHTML = `
+        <div>
+          <span class="hat-badge ${badgeClass}">${escapar(principal.categoria)}</span>
+          <h2 class="main-title">
+            <a href="${escapar(urlMateria)}">${escapar(principal.titulo)}</a>
+          </h2>
+          <p class="line-fine">${escapar(principal.resumo)}</p>
+        </div>
+        <footer class="hero-meta-footer">
+          <span>${escapar(principal.fonte)} &bull; ${escapar(principal.data)}</span>
+          ${principal.url_materia ? `<a href="${escapar(urlMateria)}" class="btn-curate" aria-label="Ler matéria: ${escapar(principal.titulo)}">Ler matéria completa &rarr;</a>` : ''}
+        </footer>
+      `;
+    }
+
+    // 2. Destaques Secundários (Itens 1 e 2)
+    if (secondaryCol) {
+      const secundarias = aprovadas.slice(1, 3);
+      secondaryCol.innerHTML = secundarias.map(sec => {
+        const badgeClass = categoriaBadgeClass(sec.categoria);
+        const urlMateria = sec.url_materia || '#';
+        return `
+          <article class="secondary-card">
+            <div>
+              <span class="hat-badge ${badgeClass}" style="font-size:0.72rem;">${escapar(sec.categoria)}</span>
+              <h3 class="secondary-title">
+                <a href="${escapar(urlMateria)}">${escapar(sec.titulo)}</a>
+              </h3>
+              <p class="secondary-excerpt">${escapar(sec.resumo)}</p>
+            </div>
+            <footer class="hero-meta-footer" style="padding-top:0.6rem;">
+              <span>${escapar(sec.fonte)} &bull; ${escapar(sec.data)}</span>
+              ${sec.url_materia ? `<a href="${escapar(urlMateria)}" class="btn-curate btn-curate-sm">Ler</a>` : ''}
+            </footer>
+          </article>
+        `;
+      }).join('');
+    }
+
+    // 3. Feed "Últimas do Serviço Público" (Estilo G1)
+    if (feedCol) {
+      const ultimas = (acervoLinks && acervoLinks.length ? acervoLinks : aprovadas).slice(0, 5);
+      feedCol.innerHTML = ultimas.map(item => {
+        const urlDestino = item.url_materia || item.url_original || '#';
+        const targetAttr = !item.url_materia && item.url_original ? 'target="_blank" rel="noopener noreferrer"' : '';
+        return `
+          <div class="feed-item-mini">
+            <span class="feed-meta-time">${escapar(item.data)} &bull; ${escapar(item.categoria || 'Geral')}</span>
+            <h4 class="feed-item-title">
+              <a href="${escapar(urlDestino)}" ${targetAttr}>${escapar(item.titulo)}</a>
+            </h4>
+          </div>
+        `;
+      }).join('');
+    }
+  }
+
+  // --- Renderização do Bento Grid Geral ---
+  function renderizarBentoGrid(noticias) {
     const grid = document.getElementById('bentoGrid');
     if (!grid) return;
 
-    const aprovadas = notícias.filter(n => n.status === 'Aprovada');
+    let aprovadas = noticias.filter(n => n.status === 'Aprovada');
 
-    if (aprovadas.length === 0) {
-      grid.innerHTML = '<p style="color: var(--text-muted); padding: 2rem;">Nenhuma notícia disponível no momento.</p>';
+    if (categoriaAtiva !== 'Todas') {
+      aprovadas = aprovadas.filter(n => n.categoria === categoriaAtiva);
+    }
+
+    // Pula os primeiros 3 itens no modo "Todas" pois já estão em destaque no Hero Grid
+    const paraGrid = (categoriaAtiva === 'Todas' && aprovadas.length > 3) ? aprovadas.slice(3) : aprovadas;
+
+    if (paraGrid.length === 0) {
+      grid.innerHTML = '<p style="color: var(--text-muted); padding: 2rem; text-align: center; width: 100%;">Nenhuma notícia adicional nesta editoria no momento.</p>';
       return;
     }
 
-    grid.innerHTML = aprovadas.map((notícia, idx) => {
-      const classeDestaque = (notícia.destaque && idx === 0) ? ' featured' : '';
-      const categoriaBadge = categoriaBadgeClass(notícia.categoria);
-      const urlMateria = notícia.url_materia ? `href="${notícia.url_materia}"` : '#';
+    grid.innerHTML = paraGrid.map((noticia) => {
+      const categoriaBadge = categoriaBadgeClass(noticia.categoria);
+      const urlMateria = noticia.url_materia ? `href="${noticia.url_materia}"` : '#';
 
       return `
-        <article class="card-news${classeDestaque}" data-categoria="${escapar(notícia.categoria)}">
+        <article class="card-news" data-categoria="${escapar(noticia.categoria)}">
           <header>
-            <span class="news-badge ${categoriaBadge}" aria-label="Categoria: ${escapar(notícia.categoria)}">${escapar(notícia.categoria)}</span>
-            <h3 class="news-title">${escapar(notícia.titulo)}</h3>
+            <span class="news-badge ${categoriaBadge}" aria-label="Categoria: ${escapar(noticia.categoria)}">${escapar(noticia.categoria)}</span>
+            <h3 class="news-title">${escapar(noticia.titulo)}</h3>
           </header>
-          <p class="news-summary">${escapar(notícia.resumo)}</p>
+          <p class="news-summary">${escapar(noticia.resumo)}</p>
           <footer class="news-meta">
-            <span>${escapar(notícia.fonte)} &mdash; ${escapar(notícia.data)}</span>
+            <span>${escapar(noticia.fonte)} &mdash; ${escapar(noticia.data)}</span>
             <div class="news-actions">
-              ${notícia.url_materia ? `<a href="${escapar(notícia.url_materia)}" class="btn-curate" aria-label="Ler matéria completa: ${escapar(notícia.titulo)}">Ler mais</a>` : ''}
+              ${noticia.url_materia ? `<a href="${escapar(noticia.url_materia)}" class="btn-curate" aria-label="Ler matéria completa: ${escapar(noticia.titulo)}">Ler mais</a>` : ''}
             </div>
           </footer>
         </article>
       `;
     }).join('');
-  }
-
-  // --- Renderizacao de Artigos Autorais (Desativado) ---
-  /*
-  function renderizarArtigos(artigos) {
-    const grid = document.getElementById('authorsGrid');
-    if (!grid) return;
-
-    grid.innerHTML = artigos.map(artigo => `
-      <article class="card-author">
-        <p class="author-name">${escapar(artigo.autor)}</p>
-        <p class="author-role">${escapar(artigo.persona)} &bull; ${escapar(artigo.data)}</p>
-        <h3 class="article-title">${escapar(artigo.titulo)}</h3>
-        <p class="article-excerpt">${escapar(artigo.resumo)}</p>
-      </article>
-    `).join('');
-  }
-  */
-
-  // --- Mapeamento de Categoria para Classe de Badge ---
-  function categoriaBadgeClass(categoria) {
-    const mapa = {
-      'Artes e Literatura': 'badge-artes',
-      'Esportes e Aventura': 'badge-esportes',
-      'Ciência e Tecnologia': 'badge-ciencia',
-      'Ciencia e Tecnologia': 'badge-ciencia',
-      'Cultura Pop e Gastronomia': 'badge-culturapop',
-      'Solidariedade e Comunidade': 'badge-solidariedade',
-      'Histórias e Superação': 'badge-histórias',
-      'Histórias e Superacao': 'badge-histórias',
-      'Carreira e Conquistas': 'badge-carreira',
-    };
-    return mapa[categoria] || 'badge-default';
   }
 
   // --- Filtros de Categoria ---
@@ -135,7 +185,7 @@
       );
     }
 
-    renderizarNoticias(filtradas);
+    renderizarBentoGrid(filtradas);
   }
 
   // --- Acessibilidade: Fonte e Sistema Triplo de Temas ---

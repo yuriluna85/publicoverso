@@ -123,9 +123,11 @@ def extrair_texto_limpo(html):
     return '\n\n'.join(paragrafos[:20])  # Limita a 20 paragrafos
 
 
-# --- Verificacao de Relevancia ---
-def e_relevante(titulo, resumo):
-    """Verifica se o resultado e relevante e não esta na lista de exclusao."""
+# --- Verificação de Relevância ---
+def e_relevante(titulo, resumo, url='', corpo=''):
+    """Verifica se o resultado é relevante e passa na validação factual de servidores públicos do Brasil."""
+    if not config.validar_servidor_publico_brasileiro(titulo, resumo, url, corpo):
+        return False
     texto_verificar = (titulo + ' ' + (resumo or '')).lower()
     for termo in TERMOS_EXCLUSAO:
         if termo.lower() in texto_verificar:

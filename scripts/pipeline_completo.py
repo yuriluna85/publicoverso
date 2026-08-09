@@ -28,6 +28,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 RAIZ = Path(__file__).parent.parent
 SCRIPT_MINERADOR_HISTORIAS = RAIZ / 'scripts' / 'minerador_historias.py'
 SCRIPT_MINERADOR_PROTAGONISTAS = RAIZ / 'scripts' / 'minerador_protagonistas.py'
+SCRIPT_RADAR_MOVIMENTACAO = RAIZ / 'scripts' / 'radar_movimentacao_servidores.py'
 SCRIPT_RADAR = RAIZ / 'scripts' / 'radar_concursos.py'
 SCRIPT_BUILD = RAIZ / 'build_materias.py'
 
@@ -69,8 +70,9 @@ def main():
     if not args.apenas_build:
         ok1 = executar(SCRIPT_MINERADOR_HISTORIAS, 'Minerador de Histórias Gerais de Servidores')
         ok2 = executar(SCRIPT_MINERADOR_PROTAGONISTAS, 'Minerador Especialista de Protagonistas (Vida Alem do Trabalho)')
-        ok3 = executar(SCRIPT_RADAR, 'Radar de Editais de Concursos')
-        sucesso_total = ok1 and ok2 and ok3
+        ok3 = executar(SCRIPT_RADAR_MOVIMENTACAO, 'Robô de Movimentação Funcional (Posse, Nomeação & Aposentadoria)')
+        ok4 = executar(SCRIPT_RADAR, 'Radar de Editais de Concursos')
+        sucesso_total = ok1 and ok2 and ok3 and ok4
 
     if not args.apenas_mineracao:
         ok4 = executar(SCRIPT_BUILD, 'Build das Páginas HTML')

@@ -382,6 +382,10 @@ def main():
             if not url_bruta or url_bruta in urls_conhecidas:
                 continue
 
+            # Filtro Factual de Servidor Público Brasileiro
+            if not config.validar_servidor_publico_brasileiro(titulo, resumo, url_bruta):
+                continue
+
             # Filtro de expurgo institucional
             if not e_materia_humanizada(titulo, resumo):
                 config.registrar_log(f'  [EXPURGADO INSTITUCIONAL] {titulo[:60]}...')
@@ -406,6 +410,10 @@ def main():
                         conteudo_raspado = extrair_texto_limpo(r.text)
                 except Exception:
                     pass
+
+            # Segunda verificação factual pós-raspagem
+            if not config.validar_servidor_publico_brasileiro(titulo, resumo, url_limpa, conteudo_raspado):
+                continue
 
             caminho_rascunho = salvar_rascunho_protagonista(res, item, url_limpa, veiculo, conteudo_raspado)
             salvar_historico_url(url_limpa)

@@ -451,3 +451,105 @@
 [2026-08-08 21:00:41]   Resultados: 0
 [2026-08-08 21:00:44] === Radar concluído. 0 novos editais adicionados. Total: 5. ===
 [2026-08-08 21:00:44] Revise os editais com status "Em Analise" e altere para "Inscrições Abertas" apos verificacao manual.
+[2026-08-08 21:19:35] === Iniciando mineracao de histórias ===
+[2026-08-08 21:19:35] [ERRO] SERPER_API_KEY não configurada no arquivo .env
+[2026-08-08 21:19:35] [ERRO] SCRAPER_API_KEY não configurada no arquivo .env
+[2026-08-08 21:19:35] [INFO] Execute em modo de simulação: a Serper API não sera chamada.
+[2026-08-08 21:19:35] Registros existentes no JSON / Historico: 9
+[2026-08-08 21:19:35] Buscando: [Cultura Pop e Gastronomia] ...
+[2026-08-08 21:19:35] [AVISO] SERPER_API_KEY não configurada. Abortando busca.
+[2026-08-08 21:19:35]   Resultados retornados: 0
+[2026-08-08 21:19:38] Buscando: [Artes e Literatura] ...
+[2026-08-08 21:19:38] [AVISO] SERPER_API_KEY não configurada. Abortando busca.
+[2026-08-08 21:19:38]   Resultados retornados: 0
+[2026-08-08 21:19:40] Buscando: [Esportes e Aventura] ...
+[2026-08-08 21:19:40] [AVISO] SERPER_API_KEY não configurada. Abortando busca.
+[2026-08-08 21:19:40]   Resultados retornados: 0
+[2026-08-08 21:19:43] Buscando: [Ciência e Tecnologia] ...
+[2026-08-08 21:19:43] [AVISO] SERPER_API_KEY não configurada. Abortando busca.
+[2026-08-08 21:19:43]   Resultados retornados: 0
+[2026-08-08 21:19:45] Buscando: [Ciência e Tecnologia] ...
+[2026-08-08 21:19:45] [AVISO] SERPER_API_KEY não configurada. Abortando busca.
+[2026-08-08 21:19:45]   Resultados retornados: 0
+[2026-08-08 21:19:48] Buscando: [Solidariedade e Comunidade] ...
+[2026-08-08 21:19:48] [AVISO] SERPER_API_KEY não configurada. Abortando busca.
+[2026-08-08 21:19:48]   Resultados retornados: 0
+[2026-08-08 21:19:50] Buscando: [Histórias e Superação] ...
+[2026-08-08 21:19:50] [AVISO] SERPER_API_KEY não configurada. Abortando busca.
+[2026-08-08 21:19:50]   Resultados retornados: 0
+[2026-08-08 21:19:53] Buscando: [Carreira e Conquistas] ...
+[2026-08-08 21:19:53] [AVISO] SERPER_API_KEY não configurada. Abortando busca.
+[2026-08-08 21:19:53]   Resultados retornados: 0
+[2026-08-08 21:19:55] Buscando: [Carreira e Conquistas] ...
+[2026-08-08 21:19:55] [AVISO] SERPER_API_KEY não configurada. Abortando busca.
+[2026-08-08 21:19:56]   Resultados retornados: 0
+[2026-08-08 21:19:58] === Mineracao concluida. 0 novos rascunhos salvos em pre_curadoria/. ===
+[2026-08-08 21:19:58] Utilize scripts/promover_materia.py para aprovar e publicar as materias.
+[2026-08-08 21:19:59] === Iniciando minerador de Protagonistas ("Vida Alem do Trabalho") ===
+[2026-08-08 21:19:59] [ERRO] SERPER_API_KEY não configurada no arquivo .env
+[2026-08-08 21:19:59] [ERRO] SCRAPER_API_KEY não configurada no arquivo .env
+[2026-08-08 21:19:59] URLs conhecidas no historico: 3
+[2026-08-08 21:19:59] Buscando eixo humano: [Literatura e Artes] ...
+[2026-08-08 21:19:59]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 21:19:59] Buscando eixo humano: [Literatura e Artes] ...
+[2026-08-08 21:20:00]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 21:20:00] Buscando eixo humano: [Esportes e Desafios] ...
+[2026-08-08 21:20:00]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 21:20:00] Buscando eixo humano: [Esportes e Desafios] ...
+[2026-08-08 21:20:00]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 21:20:00] Buscando eixo humano: [Entretenimento e Cultura Pop] ...
+[2026-08-08 21:20:01]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 21:20:01] Buscando eixo humano: [Entretenimento e Cultura Pop] ...
+[2026-08-08 21:20:01]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 21:20:01] Buscando eixo humano: [Voluntariado e Causa Social] ...
+[2026-08-08 21:20:02]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 21:20:02] Buscando eixo humano: [Voluntariado e Causa Social] ...
+[2026-08-08 21:20:02]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 21:20:02] Buscando eixo humano: [Trajetoria e Superacao] ...
+[2026-08-08 21:20:02]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 21:20:02] Buscando eixo humano: [Trajetoria e Superacao] ...
+[2026-08-08 21:20:03]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 21:20:03] === Mineracao de Protagonistas concluida. 0 novas histórias salvas em pre_curadoria/. ===
+[2026-08-08 21:20:03] === Iniciando Robô de Movimentação Funcional (Posse, Nomeação & Aposentadoria) ===
+[2026-08-08 21:20:03] [ERRO] SERPER_API_KEY não configurada no arquivo .env
+[2026-08-08 21:20:03] [ERRO] SCRAPER_API_KEY não configurada no arquivo .env
+[2026-08-08 21:20:03] URLs de movimentação no historico: 0
+[2026-08-08 21:20:03] Buscando movimentação funcional: [Posse e Nomeação] ...
+[2026-08-08 21:20:04]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 21:20:04] Buscando movimentação funcional: [Posse e Nomeação] ...
+[2026-08-08 21:20:04]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 21:20:04] Buscando movimentação funcional: [Aposentadoria e Legado] ...
+[2026-08-08 21:20:05]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 21:20:05] Buscando movimentação funcional: [Aposentadoria e Legado] ...
+[2026-08-08 21:20:05]   [ERRO] Serper API: 403 Client Error: Forbidden for url: https://google.serper.dev/news
+[2026-08-08 21:20:05] === Robô de Movimentação Funcional concluído. 0 novos registros adicionados. ===
+[2026-08-08 21:20:06] === Iniciando Radar de Concursos ===
+[2026-08-08 21:20:06] [ERRO] SERPER_API_KEY não configurada no arquivo .env
+[2026-08-08 21:20:06] [ERRO] SCRAPER_API_KEY não configurada no arquivo .env
+[2026-08-08 21:20:06] Editais existentes no radar: 5
+[2026-08-08 21:20:06] Buscando concursos: "inscrições abertas" ("concurso público" OR "processo seletivo") ("fed...
+[2026-08-08 21:20:06] [AVISO] SERPER_API_KEY não configurada.
+[2026-08-08 21:20:06]   Resultados: 0
+[2026-08-08 21:20:08] Buscando concursos: "edital publicado" "concurso público" ("DOU" OR "Diário Oficial") "vag...
+[2026-08-08 21:20:08] [AVISO] SERPER_API_KEY não configurada.
+[2026-08-08 21:20:09]   Resultados: 0
+[2026-08-08 21:20:11] Buscando concursos: site:cebraspe.org.br "inscrições" 2026...
+[2026-08-08 21:20:11] [AVISO] SERPER_API_KEY não configurada.
+[2026-08-08 21:20:11]   Resultados: 0
+[2026-08-08 21:20:14] Buscando concursos: site:conhecimento.fgv.br "concurso" "inscrições" 2026...
+[2026-08-08 21:20:14] [AVISO] SERPER_API_KEY não configurada.
+[2026-08-08 21:20:14]   Resultados: 0
+[2026-08-08 21:20:16] Buscando concursos: site:institutoaocp.org.br "edital" "inscrições abertas" 2026...
+[2026-08-08 21:20:16] [AVISO] SERPER_API_KEY não configurada.
+[2026-08-08 21:20:16]   Resultados: 0
+[2026-08-08 21:20:19] Buscando concursos: "concurso público" ("Receita Federal" OR "Banco Central" OR "Senado" O...
+[2026-08-08 21:20:19] [AVISO] SERPER_API_KEY não configurada.
+[2026-08-08 21:20:19]   Resultados: 0
+[2026-08-08 21:20:21] Buscando concursos: "concurso público" ("policial federal" OR "agente federal" OR "delegad...
+[2026-08-08 21:20:21] [AVISO] SERPER_API_KEY não configurada.
+[2026-08-08 21:20:21]   Resultados: 0
+[2026-08-08 21:20:24] Buscando concursos: "concurso público" ("Anatel" OR "ANAC" OR "ANVISA" OR "IBGE" OR "IPEA"...
+[2026-08-08 21:20:24] [AVISO] SERPER_API_KEY não configurada.
+[2026-08-08 21:20:24]   Resultados: 0
+[2026-08-08 21:20:26] === Radar concluído. 0 novos editais adicionados. Total: 5. ===
+[2026-08-08 21:20:26] Revise os editais com status "Em Analise" e altere para "Inscrições Abertas" apos verificacao manual.

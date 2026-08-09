@@ -74,52 +74,87 @@ CATEGORIAS_VALIDAS = [
     'Carreira e Conquistas',
 ]
 
+# --- Matrizes de Validação Factual e Expurgo ---
+DOMINIOS_INTERNACIONAIS_EXCLUIDOS = [
+    '.pt', '.ao', '.mz', '.cv', 'diarioviseu.pt', 'publico.pt', 'dn.pt', 'jn.pt',
+    'cmjornal.pt', 'record.pt', 'abola.pt', 'rtp.pt', 'sapo.pt', 'tsf.pt'
+]
+
+TERMOS_GEOGRAFICOS_ESTRANGEIROS = [
+    'portugal', 'lisboa', 'porto', 'coimbra', 'castro daire', 'viseu', 'braga',
+    'aveiro', 'leiria', 'algarve', 'funchal', 'angola', 'luanda', 'moçambique', 'maputo'
+]
+
+TERMOS_EXPURGO_POLITICO = [
+    'vereador', 'vereadora', 'prefeito', 'prefeita', 'deputado', 'deputada',
+    'senador', 'senadora', 'governador', 'governadora', 'presidente da república',
+    'ministro de estado', 'secretário municipal de governo', 'secretário estadual',
+    'candidato', 'candidata', 'eleições', 'campanha eleitoral', 'horário eleitoral',
+    'partido político', 'coligação', 'palanque', 'votos', 'disputa eleitoral',
+    'reeleição', 'comício', 'pesquisa eleitoral', 'câmara de vereadores',
+    'plenário da câmara', 'assembleia legislativa'
+]
+
+ANCORAS_VINCULO_PUBLICO_BR = [
+    'servidor público', 'servidora pública', 'funcionário público', 'funcionária pública',
+    'servidor federal', 'servidora federal', 'servidor estadual', 'servidora estadual',
+    'servidor municipal', 'servidora municipal', 'servidor concursado', 'servidora concursada',
+    'servidor estatutário', 'cargo público', 'função pública', 'órgão público',
+    'rede pública municipal', 'rede pública estadual', 'escola pública', 'colégio público',
+    'universidade federal', 'instituto federal', 'ifba', 'ufba', 'ufrj', 'usp', 'unicamp',
+    'unidade básica de saúde', 'posto de saúde', 'sus', 'hospital público', 'samu',
+    'polícia federal', 'polícia civil', 'polícia militar', 'polícia rodoviária federal',
+    'guarda municipal', 'guarda civil', 'bombeiro militar', 'perito criminal',
+    'tribunal de justiça', 'tribunal regional', 'ministério público', 'defensoria pública',
+    'receita federal', 'inss', 'ibama', 'icmbio', 'dnit', 'anvisa', 'anatel', 'fiocruz',
+    'embrapa', 'diário oficial da união', 'diário oficial do estado', 'dou'
+]
+
 # --- Dorks de Busca: Histórias Humanas ---
 DORKS_HISTORIAS = [
     # Categoria: Cultura Pop e Gastronomia
     {
         'categoria': 'Cultura Pop e Gastronomia',
-        'query': '("servidor público" OR "servidora pública" OR "policial federal" OR "policial civil" OR "policial militar" OR "professor universitário" OR "médico do SUS" OR "analista judiciário" OR "técnico administrativo" OR "auditor fiscal") AND ("BBB" OR "Big Brother" OR "MasterChef" OR "The Voice" OR "reality show" OR "gastronomia" OR "culinária")',
+        'query': '("servidor público" OR "servidora pública" OR "policial federal" OR "policial civil" OR "policial militar" OR "professor universitário" OR "médica do SUS" OR "analista judiciário" OR "auditor fiscal") AND ("BBB" OR "Big Brother" OR "MasterChef" OR "The Voice" OR "reality show" OR "gastronomia" OR "culinária") -site:*.pt -Portugal -vereador -prefeito -deputado',
     },
     # Categoria: Artes e Literatura
     {
         'categoria': 'Artes e Literatura',
-        'query': '("servidor público" OR "funcionário público" OR "servidora pública") AND ("lança livro" OR "publicou livro" OR "autor de livro" OR "exposição de arte" OR "artista plástico" OR "músico" OR "cantor" OR "ator" OR "bailarino" OR "fotógrafo" OR "poesia")',
+        'query': '("servidor público" OR "funcionário público" OR "servidora pública") AND ("lança livro" OR "publicou livro" OR "autor de livro" OR "exposição de arte" OR "artista plástico" OR "músico" OR "cantor" OR "ator" OR "bailarino" OR "fotógrafo" OR "poesia") -site:*.pt -Portugal -vereador -prefeito',
     },
-
     # Categoria: Esportes e Aventura
     {
         'categoria': 'Esportes e Aventura',
-        'query': '("servidor público" OR "servidora pública" OR "policial" OR "bombeiro") AND ("atleta" OR "campeão" OR "maratona" OR "jiu-jitsu" OR "natação" OR "corrida" OR "triatlo" OR "ironman" OR "olimpíadas")',
+        'query': '("servidor público" OR "servidora pública" OR "policial militar" OR "bombeiro militar" OR "guarda municipal concursado") AND ("atleta" OR "campeão" OR "maratona" OR "jiu-jitsu" OR "natação" OR "corrida" OR "triatlo" OR "ironman" OR "olimpíadas") -site:*.pt -Portugal -vereador -prefeito',
     },
-
     # Categoria: Ciência e Tecnologia
     {
         'categoria': 'Ciência e Tecnologia',
-        'query': '("servidor público" OR "professora da rede" OR "pesquisador" OR "médica" OR "enfermeira" OR "delegada") AND ("prêmio internacional" OR "vence prêmio" OR "reconhecimento internacional" OR "patente registrada" OR "descoberta científica" OR "criou aplicativo" OR "desenvolveu sistema" OR "inovação")',
+        'query': '("servidor público" OR "professora da rede pública" OR "pesquisador federal" OR "médica do SUS") AND ("prêmio internacional" OR "vence prêmio" OR "reconhecimento internacional" OR "patente registrada" OR "descoberta científica" OR "criou aplicativo" OR "desenvolveu sistema" OR "inovação") -site:*.pt -Portugal -vereador -prefeito',
     },
     {
         'categoria': 'Ciência e Tecnologia',
-        'query': '("servidor do IF" OR "servidor da UFBA" OR "servidor da UFRJ" OR "servidor da Fiocruz" OR "servidor da Embrapa" OR "servidor do INPE" OR "pesquisador federal") AND ("descoberta" OR "prêmio" OR "artigo publicado" OR "conquista" OR "tecnologia")',
+        'query': '("servidor do IF" OR "servidor da UFBA" OR "servidor da UFRJ" OR "servidor da Fiocruz" OR "servidor da Embrapa" OR "servidor do INPE" OR "pesquisador federal") AND ("descoberta" OR "prêmio" OR "artigo publicado" OR "conquista" OR "tecnologia") -site:*.pt -Portugal -vereador -prefeito',
     },
-
     # Categoria: Solidariedade e Comunidade
     {
         'categoria': 'Solidariedade e Comunidade',
-        'query': '("servidor público" OR "funcionário público" OR "agente público") AND ("projeto social" OR "ong" OR "voluntariado" OR "ato de bravura" OR "salvou vidas" OR "heroísmo" OR "ação comunitária")',
+        'query': '("servidor público" OR "funcionário público" OR "agente público estatutário") AND ("projeto social" OR "ong" OR "voluntariado" OR "ato de bravura" OR "salvou vidas" OR "heroísmo" OR "ação comunitária") -site:*.pt -Portugal -vereador -prefeito',
     },
-
     # Categoria: Histórias e Superação
     {
         'categoria': 'Histórias e Superação',
-        'query': '("servidor público" OR "serviço público") AND ("trajetória inspiradora" OR "de gari a" OR "superação" OR "aprovado em concurso" OR "aposentadoria" OR "30 anos de serviço" OR "virou médico" OR "virou juiz")',
+        'query': '("servidor público" OR "servidora pública") AND ("trajetória inspiradora" OR "de gari a" OR "superação" OR "aprovado em concurso" OR "aposentadoria" OR "30 anos de serviço" OR "virou médico" OR "virou juiz") -site:*.pt -Portugal -vereador -prefeito',
     },
-
     # Categoria: Carreira e Conquistas
     {
         'categoria': 'Carreira e Conquistas',
-        'query': '(PCCTAE OR "plano de carreira" OR "reajuste salarial" OR "revisão geral anual" OR "licença capacitação" OR "afastamento para mestrado" OR "afastamento para doutorado") AND ("servidor público" OR "funcional")',
+        'query': '("servidor público federal" OR "servidor estadual" OR "servidor municipal") AND ("progressão de carreira" OR "reestruturação de carreira" OR "RSC" OR "capacitação" OR "conquista de direitos") -site:*.pt -Portugal -vereador -prefeito',
     },
+    {
+        'categoria': 'Carreira e Conquistas',
+        'query': '(PCCTAE OR "plano de carreira" OR "reajuste salarial" OR "revisão geral anual" OR "licença capacitação" OR "afastamento para mestrado" OR "afastamento para doutorado") AND ("servidor público" OR "funcional") -site:*.pt -Portugal -vereador -prefeito',
+    }
 ]
 
 # --- Classificador Inteligente por Palavras-Chave (7 Editorias) ---
@@ -207,6 +242,43 @@ def classificar_categoria(titulo, resumo='', texto_completo=None, categoria_padr
         return melhor_categoria
 
     return categoria_padrao
+
+
+def validar_servidor_publico_brasileiro(titulo, resumo='', url='', corpo=''):
+    """
+    Validador Factual em 4 Camadas para Garantir Exclusividade de Servidores Públicos do Brasil:
+    1. Rejeita domínios internacionais (.pt, .ao, etc.)
+    2. Rejeita termos geográficos de Portugal e outros países sem menção ao Brasil
+    3. Rejeita mandatários políticos e termos eleitorais
+    4. Exige ao menos UMA âncora textual confirmando vínculo com o serviço público brasileiro
+    """
+    url_lower = (url or '').lower()
+    for dom in DOMINIOS_INTERNACIONAIS_EXCLUIDOS:
+        if dom in url_lower:
+            registrar_log(f'  [EXPURGADO INTERNACIONAL] Domínio excluído: {url}')
+            return False
+
+    texto_completo = ((titulo or '') + ' ' + (resumo or '') + ' ' + (corpo or '')).lower()
+
+    # Expurgo Geográfico Estrangeiro
+    for termo_geo in TERMOS_GEOGRAFICOS_ESTRANGEIROS:
+        if termo_geo in texto_completo and 'brasil' not in texto_completo and 'brasileir' not in texto_completo:
+            registrar_log(f'  [EXPURGADO ESTRANGEIRO] Menciona "{termo_geo}" sem vínculo com o Brasil.')
+            return False
+
+    # Expurgo Anti-Político
+    for termo_pol in TERMOS_EXPURGO_POLITICO:
+        if termo_pol in texto_completo:
+            registrar_log(f'  [EXPURGADO POLÍTICO] Contém termo político: "{termo_pol}".')
+            return False
+
+    # Confirmação de Vínculo com Serviço Público Brasileiro
+    tem_ancora = any(ancora in texto_completo for ancora in ANCORAS_VINCULO_PUBLICO_BR)
+    if not tem_ancora:
+        registrar_log(f'  [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.')
+        return False
+
+    return True
 
 # --- Dorks de Busca: Editais de Concursos ---
 DORKS_CONCURSOS = [
