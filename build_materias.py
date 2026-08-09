@@ -145,7 +145,9 @@ def gerar_html(metadados, corpo_html):
       <nav class="navbar-links" aria-label="Navegação principal">
         <a href="../../index.html" class="nav-link">Início</a>
         <a href="../../noticias.html" class="nav-link">Notícias</a>
-        <a href="../../concursos.html" class="nav-link">Radar de Concursos</a>
+        <a href="../../apps/diario-oficial/index.html" class="nav-link">Diário Oficial</a>
+        <a href="../../apps/diarias-estaduais/index.html" class="nav-link">Diárias Estaduais</a>
+        <a href="../../apps/radar-concursos/index.html" class="nav-link">Radar de Concursos</a>
         <a href="../../sobre.html" class="nav-link">Sobre</a>
         <a href="../../contato.html" class="nav-link">Contato</a>
       </nav>

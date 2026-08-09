@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Diárias Estaduais do Brasil &bull; Todos os 26 Estados e DF | Publicoverso</title>
+  <meta name="description" content="Calculadora e simulador oficial de valores de diárias de viagem para servidores públicos do Poder Executivo de todos os 26 Estados do Brasil e Distrito Federal.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+
+  <!-- System Design Master -->
+  <link rel="stylesheet" href="../../index.css">
+</head>
+<body>
+  <a href="#main-content" class="sr-only sr-only-focusable">Pular para o conteúdo principal</a>
+
+  <!-- Navbar Unificada do Super Portal -->
+  <header class="navbar" role="banner">
+    <div class="navbar-container">
+      <a href="../../index.html" class="brand-logo" aria-label="Página inicial do Publicoverso">
+        <svg class="logo-hex" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="20,2 35,10 35,30 20,38 5,30 5,10" stroke="url(#hexGradAppDiarias)" stroke-width="2" fill="rgba(0,210,200,0.06)"/>
+          <circle cx="20" cy="8" r="2.5" fill="#00D2C8"/>
+          <circle cx="31" cy="15" r="2.5" fill="#9146FF"/>
+          <circle cx="31" cy="27" r="2.5" fill="#00D2C8"/>
+          <circle cx="20" cy="33" r="2.5" fill="#9146FF"/>
+          <circle cx="9" cy="27" r="2.5" fill="#00D2C8"/>
+          <circle cx="9" cy="15" r="2.5" fill="#9146FF"/>
+          <circle cx="20" cy="20" r="3.5" fill="#00D2C8"/>
+          <line x1="20" y1="20" x2="20" y2="8" stroke="#00D2C8" stroke-width="1.2" opacity="0.7"/>
+          <line x1="20" y1="20" x2="31" y2="15" stroke="#9146FF" stroke-width="1.2" opacity="0.7"/>
+          <line x1="20" y1="20" x2="31" y2="27" stroke="#00D2C8" stroke-width="1.2" opacity="0.7"/>
+          <line x1="20" y1="20" x2="20" y2="33" stroke="#9146FF" stroke-width="1.2" opacity="0.7"/>
+          <line x1="20" y1="20" x2="9" y2="27" stroke="#00D2C8" stroke-width="1.2" opacity="0.7"/>
+          <line x1="20" y1="20" x2="9" y2="15" stroke="#9146FF" stroke-width="1.2" opacity="0.7"/>
+          <defs>
+            <linearGradient id="hexGradAppDiarias" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#00D2C8"/>
+              <stop offset="1" stop-color="#9146FF"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="brand-text">
+          <h1>Publicoverso</h1>
+          <span>A rede do serviço público</span>
+        </div>
+      </a>
+
+      <nav class="navbar-links" aria-label="Navegação principal">
+        <a href="../../index.html" class="nav-link">Início</a>
+        <a href="../../noticias.html" class="nav-link">Notícias</a>
+        <a href="../diario-oficial/index.html" class="nav-link">Diário Oficial</a>
+        <a href="index.html" class="nav-link active" aria-current="page">Diárias Estaduais</a>
+        <a href="../radar-concursos/index.html" class="nav-link">Radar de Concursos</a>
+        <a href="../../sobre.html" class="nav-link">Sobre</a>
+        <a href="../../contato.html" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="controls-bar" aria-label="Controles de Acessibilidade e Tema">
+        <button id="btnFontDecrease" class="btn-a11y" aria-label="Diminuir tamanho do texto">A-</button>
+        <button id="btnFontIncrease" class="btn-a11y" aria-label="Aumentar tamanho do texto">A+</button>
+        <button id="btnThemeToggle" class="btn-a11y" aria-label="Alternar Modo de Cores">Tema: Claro</button>
+        <button id="btnHighContrast" class="btn-a11y" aria-label="Alternar Alto Contraste">Alto Contraste</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main id="main-content" class="container main-content" role="main">
+    
+    <!-- Hero Header -->
+    <header class="page-header" style="margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1.5rem;">
+      <span class="hat-badge" style="background: rgba(145, 70, 255, 0.15); color: #9146FF; border: 1px solid rgba(145, 70, 255, 0.3);">Ferramenta Utilitária &bull; Cobertura Nacional</span>
+      <h1 class="page-title" style="font-size: 2.2rem; margin-top: 0.5rem; color: var(--text-primary);">Simulador de Diárias Estaduais do Brasil</h1>
+      <p class="page-description" style="font-size: 1.05rem; line-height: 1.5; color: var(--text-muted); max-width: 800px;">
+        Simule e calcule os valores exatos de diárias de viagem e indenização de transporte para servidores públicos civis e militares de todos os 26 Estados da Federação e Distrito Federal.
+      </p>
+    </header>
+
+    <!-- Grid Bento de 2 Colunas (Parâmetros vs Resultado) -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+      
+      <!-- Coluna 1: Formulário de Parâmetros -->
+      <section style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.75rem;">
+        <h2 style="font-family: 'Outfit', sans-serif; font-size: 1.3rem; margin-top: 0; margin-bottom: 1.25rem; color: var(--text-primary); border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">
+          Parâmetros do Deslocamento
+        </h2>
+
+        <form id="formDiarias" onsubmit="return false;">
+          <!-- Seleção do Estado -->
+          <div style="margin-bottom: 1.25rem;">
+            <label for="selectEstado" style="display: block; font-weight: 600; font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.4rem;">Estado de Origem / Vínculo:</label>
+            <select id="selectEstado" class="toolbar-select" style="width: 100%; box-sizing: border-box;" required>
+              <option value="" disabled selected>Selecione o Estado...</option>
+              <!-- Preenchido via app.js -->
+            </select>
+          </div>
+
+          <!-- Cargo Dinâmico -->
+          <div id="groupCargo" style="margin-bottom: 1.25rem; display: none;">
+            <label for="selectCargo" style="display: block; font-weight: 600; font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.4rem;" id="labelCargo">Classificação do Cargo / Função:</label>
+            <select id="selectCargo" class="toolbar-select" style="width: 100%; box-sizing: border-box;">
+              <!-- Preenchido via app.js -->
+            </select>
+          </div>
+
+          <!-- Destino Dinâmico -->
+          <div id="groupDestino" style="margin-bottom: 1.25rem; display: none;">
+            <label for="selectDestino" style="display: block; font-weight: 600; font-size: 0.9rem; color: var(--text-primary); margin-bottom: 0.4rem;" id="labelDestino">Destino do Deslocamento:</label>
+            <select id="selectDestino" class="toolbar-select" style="width: 100%; box-sizing: border-box;">
+              <!-- Preenchido via app.js -->
+            </select>
+          </div>
+
+          <!-- Período da Viagem -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+            <div>
+              <label for="dateInicio" style="display: block; font-weight: 600; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 0.4rem;">Data de Início:</label>
+              <input type="date" id="dateInicio" class="search-input" style="width: 100%; box-sizing: border-box;" required>
+            </div>
+            <div>
+              <label for="dateFim" style="display: block; font-weight: 600; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 0.4rem;">Data de Fim:</label>
+              <input type="date" id="dateFim" class="search-input" style="width: 100%; box-sizing: border-box;" required>
+            </div>
+          </div>
+
+          <!-- Condicionais Regulamentares -->
+          <div style="background: rgba(0, 210, 200, 0.04); border: 1px dashed rgba(0, 210, 200, 0.2); border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem;">
+            <span style="font-size: 0.85rem; font-weight: 700; color: #00D2C8; display: block; margin-bottom: 0.6rem;">Ajustes Regulamentares</span>
+            
+            <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; color: var(--text-primary); margin-bottom: 0.5rem; cursor: pointer;">
+              <input type="checkbox" id="chkSemPernoite"> Viagem sem pernoite (retorno no mesmo dia - 50% do valor)
+            </label>
+
+            <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; color: var(--text-primary); cursor: pointer;">
+              <input type="checkbox" id="chkAlimentacaoPaga"> Alimentação ou Pousada custeadas pelo órgão público
+            </label>
+          </div>
+
+          <button id="btnCalcular" class="btn-primary" style="width: 100%; padding: 0.85rem; font-size: 1.05rem; font-weight: 700; background: var(--color-brand-cyan); color: #0A0E1A; border: none; border-radius: 8px; cursor: pointer;">
+            Calcular Diárias Estaduais
+          </button>
+        </form>
+      </section>
+
+      <!-- Coluna 2: Resultado e Memória de Cálculo -->
+      <section style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.75rem;">
+        <h2 style="font-family: 'Outfit', sans-serif; font-size: 1.3rem; margin-top: 0; margin-bottom: 1.25rem; color: var(--text-primary); border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">
+          Resultado da Simulação
+        </h2>
+
+        <div id="resultContainer">
+          <div style="text-align: center; padding: 2rem 1rem; color: var(--text-muted);">
+            <p style="font-size: 1rem; margin-bottom: 0.5rem;">Selecione o estado e o período da viagem no formulário ao lado para calcular o valor total devido.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- Rodapé Institucional -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <h4 class="footer-title">Publicoverso</h4>
+        <p>A rede do serviço público brasileiro. Ferramentas utilitárias, calculadoras regulamentares e informação transparente para o servidor público.</p>
+        <p style="margin-top: 0.8rem; font-size: 0.85rem; color: var(--text-muted);">
+          Contato Editorial: <a href="mailto:publicoverso@gmail.com" style="color: var(--color-brand-cyan); text-decoration: none;">publicoverso@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Aplicações</h4>
+        <ul class="footer-links">
+          <li><a href="../diario-oficial/index.html">Monitor do Diário Oficial</a></li>
+          <li><a href="index.html">Simulador de Diárias Estaduais</a></li>
+          <li><a href="../radar-concursos/index.html">Radar de Concursos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Institucional</h4>
+        <ul class="footer-links">
+          <li><a href="../../sobre.html">Sobre o Portal</a></li>
+          <li><a href="../../contato.html">Fale Conosco</a></li>
+          <li><a href="../../privacidade.html">Política de Privacidade</a></li>
+          <li><a href="../../termos.html">Termos de Uso</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>&copy; 2026 Publicoverso LABs. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

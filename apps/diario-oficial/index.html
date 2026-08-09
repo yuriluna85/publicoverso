@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diário Oficial &bull; Monitor de Atos de Pessoal, Nomeações e Exonerações | Publicoverso</title>
+  <meta name="description" content="Consulta diária e transparente de atos de pessoal, nomeações, convocações, exonerações, aposentadorias e portarias do Diário Oficial da União (DOU) e Diários Estaduais.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+
+  <!-- System Design Master -->
+  <link rel="stylesheet" href="../../index.css">
+</head>
+<body>
+  <a href="#main-content" class="sr-only sr-only-focusable">Pular para o conteúdo principal</a>
+
+  <!-- Cabeçalho / Navbar Unificada do Super Portal -->
+  <header class="navbar" role="banner">
+    <div class="navbar-container">
+      <a href="../../index.html" class="brand-logo" aria-label="Página inicial do Publicoverso">
+        <svg class="logo-hex" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="20,2 35,10 35,30 20,38 5,30 5,10" stroke="url(#hexGradAppDO)" stroke-width="2" fill="rgba(0,210,200,0.06)"/>
+          <circle cx="20" cy="8" r="2.5" fill="#00D2C8"/>
+          <circle cx="31" cy="15" r="2.5" fill="#9146FF"/>
+          <circle cx="31" cy="27" r="2.5" fill="#00D2C8"/>
+          <circle cx="20" cy="33" r="2.5" fill="#9146FF"/>
+          <circle cx="9" cy="27" r="2.5" fill="#00D2C8"/>
+          <circle cx="9" cy="15" r="2.5" fill="#9146FF"/>
+          <circle cx="20" cy="20" r="3.5" fill="#00D2C8"/>
+          <line x1="20" y1="20" x2="20" y2="8" stroke="#00D2C8" stroke-width="1.2" opacity="0.7"/>
+          <line x1="20" y1="20" x2="31" y2="15" stroke="#9146FF" stroke-width="1.2" opacity="0.7"/>
+          <line x1="20" y1="20" x2="31" y2="27" stroke="#00D2C8" stroke-width="1.2" opacity="0.7"/>
+          <line x1="20" y1="20" x2="20" y2="33" stroke="#9146FF" stroke-width="1.2" opacity="0.7"/>
+          <line x1="20" y1="20" x2="9" y2="27" stroke="#00D2C8" stroke-width="1.2" opacity="0.7"/>
+          <line x1="20" y1="20" x2="9" y2="15" stroke="#9146FF" stroke-width="1.2" opacity="0.7"/>
+          <defs>
+            <linearGradient id="hexGradAppDO" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#00D2C8"/>
+              <stop offset="1" stop-color="#9146FF"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="brand-text">
+          <h1>Publicoverso</h1>
+          <span>A rede do serviço público</span>
+        </div>
+      </a>
+
+      <nav class="navbar-links" aria-label="Navegação principal">
+        <a href="../../index.html" class="nav-link">Início</a>
+        <a href="../../noticias.html" class="nav-link">Notícias</a>
+        <a href="index.html" class="nav-link active" aria-current="page">Diário Oficial</a>
+        <a href="../diarias-estaduais/index.html" class="nav-link">Diárias Estaduais</a>
+        <a href="../radar-concursos/index.html" class="nav-link">Radar de Concursos</a>
+        <a href="../../sobre.html" class="nav-link">Sobre</a>
+        <a href="../../contato.html" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="controls-bar" aria-label="Controles de Acessibilidade e Tema">
+        <button id="btnFontDecrease" class="btn-a11y" aria-label="Diminuir tamanho do texto">A-</button>
+        <button id="btnFontIncrease" class="btn-a11y" aria-label="Aumentar tamanho do texto">A+</button>
+        <button id="btnThemeToggle" class="btn-a11y" aria-label="Alternar Modo de Cores">Tema: Claro</button>
+        <button id="btnHighContrast" class="btn-a11y" aria-label="Alternar Alto Contraste">Alto Contraste</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main id="main-content" class="container main-content" role="main">
+    
+    <!-- Hero Header Editorial -->
+    <header class="page-header" style="margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1.5rem;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <span class="hat-badge" style="background: rgba(0, 210, 200, 0.15); color: #00D2C8; border: 1px solid rgba(0, 210, 200, 0.3);">Aplicação Oficial &bull; Transparência Pública</span>
+          <h1 class="page-title" style="font-size: 2.2rem; margin-top: 0.5rem; color: var(--text-primary);">Monitor do Diário Oficial (DOU / DOE)</h1>
+          <p class="page-description" style="font-size: 1.05rem; line-height: 1.5; color: var(--text-muted); max-width: 800px;">
+            Consulta transparente de portarias, nomeações, convocações, exonerações, aposentadorias e atos de pessoal publicados na Seção 2 do Diário Oficial da União e Diários Estaduais.
+          </p>
+        </div>
+        <div>
+          <a id="btnDownloadCSV" href="javascript:void(0)" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--color-brand-cyan); color: #0A0E1A; font-weight: 700; padding: 0.65rem 1.2rem; border-radius: 8px; text-decoration: none;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Baixar CSV do Mês
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Bento Grid de KPIs -->
+    <section class="do-kpi-grid" aria-label="Métricas de Publicações Oficiais" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; margin-bottom: 2.5rem;">
+      <div class="kpi-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; text-align: center;">
+        <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase;">Total Registrado</span>
+        <h2 id="kpiTotalAtos" style="font-family: 'Outfit', sans-serif; font-size: 2.2rem; font-weight: 800; color: #00D2C8; margin: 0.4rem 0 0 0;">--</h2>
+      </div>
+
+      <div class="kpi-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; text-align: center;">
+        <span style="font-size: 0.85rem; color: #10B981; font-weight: 600; text-transform: uppercase;">Admissões &amp; Nomeações</span>
+        <h2 id="kpiNomeacoes" style="font-family: 'Outfit', sans-serif; font-size: 2.2rem; font-weight: 800; color: #10B981; margin: 0.4rem 0 0 0;">--</h2>
+      </div>
+
+      <div class="kpi-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; text-align: center;">
+        <span style="font-size: 0.85rem; color: #9146FF; font-weight: 600; text-transform: uppercase;">Convocações</span>
+        <h2 id="kpiConvocacoes" style="font-family: 'Outfit', sans-serif; font-size: 2.2rem; font-weight: 800; color: #9146FF; margin: 0.4rem 0 0 0;">--</h2>
+      </div>
+
+      <div class="kpi-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; text-align: center;">
+        <span style="font-size: 0.85rem; color: #F59E0B; font-weight: 600; text-transform: uppercase;">Exonerações &amp; Dispensas</span>
+        <h2 id="kpiExoneracoes" style="font-family: 'Outfit', sans-serif; font-size: 2.2rem; font-weight: 800; color: #F59E0B; margin: 0.4rem 0 0 0;">--</h2>
+      </div>
+
+      <div class="kpi-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; text-align: center;">
+        <span style="font-size: 0.85rem; color: #3B82F6; font-weight: 600; text-transform: uppercase;">Aposentadorias</span>
+        <h2 id="kpiAposentadorias" style="font-family: 'Outfit', sans-serif; font-size: 2.2rem; font-weight: 800; color: #3B82F6; margin: 0.4rem 0 0 0;">--</h2>
+      </div>
+    </section>
+
+    <!-- Chips de Filtro por Categoria -->
+    <section class="do-filter-chips" aria-label="Filtrar por Categoria do Ato" style="margin-bottom: 1.5rem;">
+      <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center;" id="doChipsContainer">
+        <button class="chip-btn active" data-tipo="Todas">Todas as Publicações</button>
+        <button class="chip-btn" data-tipo="Admissões & Nomeações">Admissões &amp; Nomeações</button>
+        <button class="chip-btn" data-tipo="Convocações">Convocações</button>
+        <button class="chip-btn" data-tipo="Exonerações & Dispensas">Exonerações &amp; Dispensas</button>
+        <button class="chip-btn" data-tipo="Aposentadorias">Aposentadorias</button>
+        <button class="chip-btn" data-tipo="Demissões & Penalidades">Demissões &amp; PAD</button>
+        <button class="chip-btn" data-tipo="Comissões & Funções Gratificadas">Comissões &amp; Funções</button>
+      </div>
+    </section>
+
+    <!-- Toolbar de Controles de Busca e Período -->
+    <div class="noticias-toolbar" aria-label="Controles de busca e período">
+      <div class="toolbar-group">
+        <label for="doSelectMesAno" class="toolbar-label">Período Histórico:</label>
+        <select id="doSelectMesAno" class="toolbar-select">
+          <option value="recentes" selected>Agosto / 2026 (Atual)</option>
+        </select>
+      </div>
+
+      <div class="toolbar-group">
+        <label for="doSelectLinhas" class="toolbar-label">Exibir:</label>
+        <select id="doSelectLinhas" class="toolbar-select">
+          <option value="10" selected>10 por página</option>
+          <option value="25">25 por página</option>
+          <option value="50">50 por página</option>
+        </select>
+      </div>
+
+      <div class="toolbar-group toolbar-search" style="flex: 1; min-width: 260px;">
+        <input type="search" id="doSearchInput" class="search-input" placeholder="Buscar por Nome do Servidor, Órgão ou Portaria..." aria-label="Buscar publicações oficiais">
+      </div>
+    </div>
+
+    <!-- Estatísticas -->
+    <div class="noticias-stats" id="doStats">
+      Carregando publicações do Diário Oficial...
+    </div>
+
+    <!-- Tabela Principal -->
+    <div class="noticias-list-container" style="margin-bottom: 2rem;">
+      <table class="noticias-table">
+        <thead>
+          <tr>
+            <th scope="col" style="width: 120px;">Data &amp; Seção</th>
+            <th scope="col" style="width: 170px;">Tipo de Ato</th>
+            <th scope="col" style="width: 220px;">Servidor &amp; Cargo</th>
+            <th scope="col">Órgão &amp; Ementa da Portaria</th>
+            <th scope="col" style="width: 140px; text-align: center;">Link Oficial</th>
+          </tr>
+        </thead>
+        <tbody id="doTbody">
+          <!-- Renderizado via app.js -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Barra de Paginação -->
+    <div class="pagination-bar" style="margin-bottom: 3rem;">
+      <button id="doBtnPagAnterior" class="btn-page" disabled>&larr; Anterior</button>
+      <span id="doInfoPagina" class="info-pagina">Página 1 de 1</span>
+      <button id="doBtnPagProxima" class="btn-page" disabled>Próxima &rarr;</button>
+    </div>
+
+  </main>
+
+  <!-- Rodapé Institucional -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <h4 class="footer-title">Publicoverso</h4>
+        <p>A rede do serviço público brasileiro. Transparência, tecnologia e informação autêntica para servidores públicos e cidadãos.</p>
+        <p style="margin-top: 0.8rem; font-size: 0.85rem; color: var(--text-muted);">
+          Contato Editorial: <a href="mailto:publicoverso@gmail.com" style="color: var(--color-brand-cyan); text-decoration: none;">publicoverso@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Aplicações</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Monitor do Diário Oficial</a></li>
+          <li><a href="../diarias-estaduais/index.html">Simulador de Diárias Estaduais</a></li>
+          <li><a href="../radar-concursos/index.html">Radar de Concursos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Institucional</h4>
+        <ul class="footer-links">
+          <li><a href="../../sobre.html">Sobre o Portal</a></li>
+          <li><a href="../../contato.html">Fale Conosco</a></li>
+          <li><a href="../../privacidade.html">Política de Privacidade</a></li>
+          <li><a href="../../termos.html">Termos de Uso</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>&copy; 2026 Publicoverso LABs. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

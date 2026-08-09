@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radar de Concursos Públicos &bull; Editais e Vagas no Brasil | Publicoverso</title>
+  <meta name="description" content="Busca automatizada e transparente de editais abertos, processos seletivos e vagas de concursos públicos em todo o Brasil.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+
+  <!-- System Design Master -->
+  <link rel="stylesheet" href="../../index.css">
+</head>
+<body>
+  <a href="#main-content" class="sr-only sr-only-focusable">Pular para o conteúdo principal</a>
+
+  <!-- Navbar Unificada -->
+  <header class="navbar" role="banner">
+    <div class="navbar-container">
+      <a href="../../index.html" class="brand-logo" aria-label="Página inicial do Publicoverso">
+        <svg class="logo-hex" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="20,2 35,10 35,30 20,38 5,30 5,10" stroke="url(#hexGradAppConcursos)" stroke-width="2" fill="rgba(0,210,200,0.06)"/>
+          <circle cx="20" cy="8" r="2.5" fill="#00D2C8"/>
+          <circle cx="31" cy="15" r="2.5" fill="#9146FF"/>
+          <circle cx="31" cy="27" r="2.5" fill="#00D2C8"/>
+          <circle cx="20" cy="33" r="2.5" fill="#9146FF"/>
+          <circle cx="9" cy="27" r="2.5" fill="#00D2C8"/>
+          <circle cx="9" cy="15" r="2.5" fill="#9146FF"/>
+          <circle cx="20" cy="20" r="3.5" fill="#00D2C8"/>
+          <line x1="20" y1="20" x2="20" y2="8" stroke="#00D2C8" stroke-width="1.2" opacity="0.7"/>
+          <line x1="20" y1="20" x2="31" y2="15" stroke="#9146FF" stroke-width="1.2" opacity="0.7"/>
+          <line x1="20" y1="20" x2="31" y2="27" stroke="#00D2C8" stroke-width="1.2" opacity="0.7"/>
+          <line x1="20" y1="20" x2="20" y2="33" stroke="#9146FF" stroke-width="1.2" opacity="0.7"/>
+          <line x1="20" y1="20" x2="9" y2="27" stroke="#00D2C8" stroke-width="1.2" opacity="0.7"/>
+          <line x1="20" y1="20" x2="9" y2="15" stroke="#9146FF" stroke-width="1.2" opacity="0.7"/>
+          <defs>
+            <linearGradient id="hexGradAppConcursos" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#00D2C8"/>
+              <stop offset="1" stop-color="#9146FF"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="brand-text">
+          <h1>Publicoverso</h1>
+          <span>A rede do serviço público</span>
+        </div>
+      </a>
+
+      <nav class="navbar-links" aria-label="Navegação principal">
+        <a href="../../index.html" class="nav-link">Início</a>
+        <a href="../../noticias.html" class="nav-link">Notícias</a>
+        <a href="../diario-oficial/index.html" class="nav-link">Diário Oficial</a>
+        <a href="../diarias-estaduais/index.html" class="nav-link">Diárias Estaduais</a>
+        <a href="index.html" class="nav-link active" aria-current="page">Radar de Concursos</a>
+        <a href="../../sobre.html" class="nav-link">Sobre</a>
+        <a href="../../contato.html" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="controls-bar" aria-label="Controles de Acessibilidade e Tema">
+        <button id="btnFontDecrease" class="btn-a11y" aria-label="Diminuir tamanho do texto">A-</button>
+        <button id="btnFontIncrease" class="btn-a11y" aria-label="Aumentar tamanho do texto">A+</button>
+        <button id="btnThemeToggle" class="btn-a11y" aria-label="Alternar Modo de Cores">Tema: Claro</button>
+        <button id="btnHighContrast" class="btn-a11y" aria-label="Alternar Alto Contraste">Alto Contraste</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main id="main-content" class="container main-content" role="main">
+    <header class="page-header" style="margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1.5rem;">
+      <span class="hat-badge" style="background: rgba(0, 210, 200, 0.15); color: #00D2C8; border: 1px solid rgba(0, 210, 200, 0.3);">Oportunidades Públicas</span>
+      <h1 class="page-title" style="font-size: 2.2rem; margin-top: 0.5rem; color: var(--text-primary);">Radar de Editais e Concursos Públicos</h1>
+      <p class="page-description" style="font-size: 1.05rem; line-height: 1.5; color: var(--text-muted); max-width: 800px;">
+        Acompanhe diariamente editais publicados, inscrições abertas, vagas federais, estaduais e municipais em todo o Brasil.
+      </p>
+    </header>
+
+    <!-- Toolbar de Filtros -->
+    <div class="noticias-toolbar" aria-label="Filtros do Radar" style="margin-bottom: 2rem;">
+      <div class="toolbar-group toolbar-search" style="flex: 1;">
+        <input type="search" id="inputBuscaConcurso" class="search-input" placeholder="Buscar por Cargo, Órgão, Estado ou Banca..." aria-label="Buscar concursos">
+      </div>
+    </div>
+
+    <div class="noticias-stats" id="statsConcursos">
+      Carregando editais de concursos...
+    </div>
+
+    <!-- Grid de Concursos -->
+    <div id="gridConcursos" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+      <!-- Renderizado via app.js -->
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <h4 class="footer-title">Publicoverso</h4>
+        <p>A rede do serviço público brasileiro. Transparência, tecnologia e informação autêntica para servidores públicos e cidadãos.</p>
+        <p style="margin-top: 0.8rem; font-size: 0.85rem; color: var(--text-muted);">
+          Contato Editorial: <a href="mailto:publicoverso@gmail.com" style="color: var(--color-brand-cyan); text-decoration: none;">publicoverso@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Aplicações</h4>
+        <ul class="footer-links">
+          <li><a href="../diario-oficial/index.html">Monitor do Diário Oficial</a></li>
+          <li><a href="../diarias-estaduais/index.html">Simulador de Diárias Estaduais</a></li>
+          <li><a href="index.html">Radar de Concursos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Institucional</h4>
+        <ul class="footer-links">
+          <li><a href="../../sobre.html">Sobre o Portal</a></li>
+          <li><a href="../../contato.html">Fale Conosco</a></li>
+          <li><a href="../../privacidade.html">Política de Privacidade</a></li>
+          <li><a href="../../termos.html">Termos de Uso</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>&copy; 2026 Publicoverso LABs. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

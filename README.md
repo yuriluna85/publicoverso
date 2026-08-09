@@ -147,6 +147,15 @@ Antes de solicitar aprovacao do AdSense:
 - Criado o mini servidor local Python nativo `server.py` na porta 8088 com suporte a MIME types UTF-8, no-cache em desenvolvimento e logs limpos.
 - Criado o executável Windows `iniciar_servidor_local.bat` para disparo automatizado com 1 clique e abertura direta do navegador em `http://localhost:8088`.
 - Inserido o e-mail de contato e curadoria direta `publicoverso@gmail.com` em todas as páginas (`contato.html`, `sobre.html`, `privacidade.html`, `termos.html`, `build_materias.py` e Mega-Rodapé Editorial).
+### 09/08/2026 (Sessao 18 - Arquitetura Modular do Super Portal e Simulador de Diárias Estaduais)
+- Implementada a **Arquitetura Modular em Subpastas (`apps/`)**, transformando o Publicoverso em um Super Portal do Servidorismo Público com escalabilidade ilimitada.
+- Criada a aplicação dedicada **Simulador de Diárias Estaduais** (`apps/diarias-estaduais/index.html` e `apps/diarias-estaduais/app.js`), portando o banco regulamentar de decretos e memórias de cálculo dos **26 Estados da Federação e Distrito Federal**.
+- Migrada e refatorada a aplicação **Monitor do Diário Oficial** (`apps/diario-oficial/index.html` e `apps/diario-oficial/app.js`), 100% alinhada ao System Design Master `index.css` (Navbar SVG, Bento Grid, KPIs, filtros por tipo de ato e links de portarias).
+- Migrada a aplicação **Radar de Concursos** (`apps/radar-concursos/index.html` e `apps/radar-concursos/app.js`).
+- Criados arquivos ponte de retrocompatibilidade na raiz (`diario-oficial.html`, `simulador-diarias-estados.html` e `concursos.html`).
+- Atualizados os scripts de indexação e extratores (`extrator_diario_oficial.py`, `build_materias.py` e `pipeline_completo.py`) para leitura e gravação no diretório particionado de dados `data/diario_oficial/`.
+- Atualizada a navegação global e rodapés em 100% das páginas do portal.
+
 ### 09/08/2026 (Sessao 17 - Monitor de Movimentações do Diário Oficial - DOU/DOE)
 - Desenvolvida a nova área especializada e independente do portal: **Monitor do Diário Oficial** (`diario-oficial.html` e `app_diario_oficial.js`).
 - Criado o robô extrator `scripts/extrator_diario_oficial.py` para consulta de atos de pessoal na Seção 2 do DOU (`site:in.gov.br/web/dou/-/`) e Diários Estaduais.
