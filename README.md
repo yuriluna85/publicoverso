@@ -86,6 +86,13 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizações (Changelog)
 
+### 09/08/2026 (Sessão 10 - Seção Nobre de Desinformação, Landing Pages de Categoria, Verificador Semântico Inteligente e Expansão do Robô do DOU/DOEs)
+- **Desenvolvimento da Seção Nobre Mitos e Fatos (`desinformacao.html`):** Criação da página institucional destinada ao combate à desinformação sobre o serviço público brasileiro, com a apresentação de dados oficiais, esclarecimentos jurídicos e estatísticas auditadas contra mitos recorrentes do funcionalismo.
+- **Implementação das Landing Pages Exclusivas por Categoria:** Construção de 8 páginas tematizadas (`categoria-policial.html`, `categoria-esportes.html`, `categoria-saude.html`, `categoria-educacao.html`, `categoria-cultura.html`, `categoria-inovacao.html`, `categoria-carreira.html` e `categoria-premiacoes.html`) para indexação segmentada e otimização de navegação por editoria.
+- **Desenvolvimento do Verificador Semântico Inteligente (`scripts/verificador_semantico_noticias.py`):** Modulagem de motor analítico avançado com desambiguação fina de contexto textual, responsável pela validação semântica e filtragem de ruídos antes do processamento de matérias.
+- **Expansão do Robô de Monitoramento de Atos Oficiais (`scripts/radar_movimentacao_servidores.py`):** Ampliação da capacidade de varredura do robô para rastreamento automatizado de portarias de atos funcionais publicados no Diário Oficial da União (DOU) e Diários Oficiais dos Estados (DOEs), abrangendo admissões, exonerações e demissões decorrentes de Processos Administrativos Disciplinares (PAD).
+- **Expurgo Total e Limpeza da Base de Curadoria:** Sanitização integral e reinicialização da base `data/noticias_curadoria.json` (`[]`), garantindo a exclusão de conteúdos legados e preparando a infraestrutura para inserção de novos registros validados.
+
 ### 09/08/2026 (Sessão 9 - Expurgo de Arquivos de Teste/Template e Trava de Segurança no Pipeline de Materias)
 - **Expurgo Definitivo de Conteúdos de Teste e Templates:** Remoção completa dos arquivos de matérias de teste e modelos de rascunho dos diretórios `materias/conteudo/` e `materias/paginas/`, bem como a limpeza integral dos registros correspondentes na base de dados `data/noticias_curadoria.json`.
 - **Implementação de Trava de Segurança em `build_materias.py`:** Inclusão de filtro rígido de validação de arquivos no pipeline de compilação de matérias. O script foi atualizado para ignorar expressamente arquivos de modelo (`_TEMPLATE_MATERIA.txt`), rascunhos de homologação e artefatos de testes unitários ou de integração durante o processo de geração das páginas HTML e atualização da base JSON.

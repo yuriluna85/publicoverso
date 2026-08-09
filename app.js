@@ -226,6 +226,18 @@
       return;
     }
 
+    // Mapeamento de categorias para arquivos .html dedicados
+    const arquivosCategoria = {
+      'Policial e Segurança Pública': 'categoria-policial.html',
+      'Esportes e Aventura': 'categoria-esportes.html',
+      'Artes e Literatura': 'categoria-artes.html',
+      'Ciência e Tecnologia': 'categoria-ciencia.html',
+      'Cultura Pop e Gastronomia': 'categoria-cultura.html',
+      'Solidariedade e Comunidade': 'categoria-solidariedade.html',
+      'Carreira e Conquistas': 'categoria-carreira.html',
+      'Histórias e Superação': 'categoria-historias.html'
+    };
+
     // Agrupa notícias por categoria
     const categoriasMap = {};
     lista.forEach(item => {
@@ -236,16 +248,16 @@
 
     container.innerHTML = Object.keys(categoriasMap).map(catName => {
       const itensCat = categoriasMap[catName];
-      const badgeClass = categoriaBadgeClass(catName);
+      const linkCategoria = arquivosCategoria[catName] || `noticias.html?cat=${encodeURIComponent(catName)}`;
 
       return `
         <div class="editorial-block" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
           <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1rem;">
             <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--text-primary); margin: 0;">${escapar(catName)}</h3>
-            <a href="noticias.html?cat=${encodeURIComponent(catName)}" style="color: #00D2C8; font-size: 0.85rem; font-weight: 600; text-decoration: none;">Ver todas &rarr;</a>
+            <a href="${linkCategoria}" style="color: #00D2C8; font-size: 0.88rem; font-weight: 700; text-decoration: none;">Leia mais dessa categoria &rarr;</a>
           </div>
           <div class="news-list-rows" style="display: grid; gap: 1rem;">
-            ${itensCat.slice(0, 4).map(item => {
+            ${itensCat.slice(0, 3).map(item => {
               const urlDestino = item.url_materia || item.url_original || '#';
               const targetAttr = !item.url_materia && item.url_original ? 'target="_blank" rel="noopener noreferrer"' : '';
               return `
@@ -258,6 +270,9 @@
                 </article>
               `;
             }).join('')}
+          </div>
+          <div style="margin-top: 1rem; text-align: right;">
+            <a href="${linkCategoria}" class="btn-curate btn-curate-sm" style="display: inline-block;">Leia mais dessa categoria &rarr;</a>
           </div>
         </div>
       `;

@@ -61,7 +61,29 @@ DORKS_MOVIMENTACAO = [
     {
         'tipo': 'Aposentadoria e Legado',
         'categoria': 'Carreira e Conquistas',
-        'query': '("portaria de aposentadoria" OR "aposentadoria voluntária por tempo de contribuição") AND ("DOU" OR "Diário Oficial") ("servidor público federal" OR "servidor estadual") -cassado -improbidade -site:*.pt -Portugal -vereador -prefeito',
+        'query': '("portaria de aposentadoria" OR "aposentadoria voluntária por tempo de contribuição") AND ("DOU" OR "Diário Oficial") ("servidor público federal" OR "servidor estadual") -site:*.pt -Portugal -vereador -prefeito',
+    },
+    # Eixo 3: Portarias do DOU e DOEs (Nomeações, Exonerações e Vacâncias)
+    {
+        'tipo': 'Portaria de Nomeação (DOU/DOE)',
+        'categoria': 'Carreira e Conquistas',
+        'query': '("portaria de nomeação" OR "resolução de nomeação" OR "termo de posse") AND ("Diário Oficial da União" OR "DOU" OR "Diário Oficial do Estado") AND ("servidor público" OR "cargo efetivo" OR "servidor concursado") -site:*.pt -Portugal -vereador -prefeito -deputado',
+    },
+    {
+        'tipo': 'Portaria de Exoneração e Vacância (DOU/DOE)',
+        'categoria': 'Carreira e Conquistas',
+        'query': '("portaria de exoneração" OR "exoneração a pedido" OR "concessão de vacância") AND ("Diário Oficial da União" OR "DOU" OR "Diário Oficial do Estado") AND ("servidor público" OR "cargo efetivo") -site:*.pt -Portugal -vereador -prefeito -deputado',
+    },
+    # Eixo 4: Demissão a Bem do Serviço Público e PAD (Lei 8.112 / Estatutos)
+    {
+        'tipo': 'Demissão a Bem do Serviço Público e PAD',
+        'categoria': 'Jurídico e PAD',
+        'query': '("demissão a bem do serviço público" OR "aplicação da pena de demissão" OR "demitir o servidor" OR "portaria de demissão") AND ("Processo Administrativo Disciplinar" OR "PAD" OR "Lei 8.112" OR "Lei 8112") AND ("Diário Oficial" OR "DOU" OR "servidor público") -site:*.pt -Portugal -vereador -prefeito -deputado',
+    },
+    {
+        'tipo': 'PAD, Sindicância e Penalidades',
+        'categoria': 'Jurídico e PAD',
+        'query': '("Processo Administrativo Disciplinar" OR "sindicância punitiva" OR "cassação de aposentadoria") AND ("Lei 8.112" OR "servidor público federal" OR "servidor público estadual") AND ("demissão" OR "penalidade" OR "portaria") -site:*.pt -Portugal -vereador -prefeito',
     }
 ]
 

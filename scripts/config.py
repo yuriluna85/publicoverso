@@ -63,7 +63,7 @@ DIAS_RETROATIVOS_CONCURSOS = 30     # Janela de busca de editais (dias)
 MAX_RESULTADOS_POR_DORK = 10        # Limite de resultados por consulta
 PAUSA_ENTRE_REQUISICOES = 2.5       # Segundos entre chamadas de API
 
-# --- Categorias Validas do Portal (7 Editorias Jornalisticas) ---
+# --- Categorias Validas do Portal (9 Editorias Jornalisticas) ---
 CATEGORIAS_VALIDAS = [
     'Artes e Literatura',
     'Esportes e Aventura',
@@ -72,6 +72,8 @@ CATEGORIAS_VALIDAS = [
     'Solidariedade e Comunidade',
     'Histórias e Superação',
     'Carreira e Conquistas',
+    'Jurídico e PAD',
+    'Policial e Segurança Pública'
 ]
 
 # --- Matrizes de Validação Factual e Expurgo ---
