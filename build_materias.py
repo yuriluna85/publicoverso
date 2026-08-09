@@ -495,8 +495,9 @@ def main():
         processar_arquivo(caminho)
     else:
         arquivos = list(DIRETORIO_CONTEUDO.glob('*.txt')) + list(DIRETORIO_CONTEUDO.glob('*.docx'))
+        arquivos = [a for a in arquivos if not a.name.startswith('_') and 'teste' not in a.name.lower() and 'template' not in a.name.lower()]
         if not arquivos:
-            print('[AVISO] Nenhum arquivo .txt ou .docx encontrado em materias/conteúdo/')
+            print('[AVISO] Nenhum arquivo .txt ou .docx de matéria autoral encontrado em materias/conteúdo/')
             return
         for arq in sorted(arquivos):
             processar_arquivo(arq)

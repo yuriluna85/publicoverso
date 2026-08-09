@@ -86,6 +86,10 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizações (Changelog)
 
+### 09/08/2026 (Sessão 9 - Expurgo de Arquivos de Teste/Template e Trava de Segurança no Pipeline de Materias)
+- **Expurgo Definitivo de Conteúdos de Teste e Templates:** Remoção completa dos arquivos de matérias de teste e modelos de rascunho dos diretórios `materias/conteudo/` e `materias/paginas/`, bem como a limpeza integral dos registros correspondentes na base de dados `data/noticias_curadoria.json`.
+- **Implementação de Trava de Segurança em `build_materias.py`:** Inclusão de filtro rígido de validação de arquivos no pipeline de compilação de matérias. O script foi atualizado para ignorar expressamente arquivos de modelo (`_TEMPLATE_MATERIA.txt`), rascunhos de homologação e artefatos de testes unitários ou de integração durante o processo de geração das páginas HTML e atualização da base JSON.
+
 ### 09/08/2026 (Sessão 8 - Correções Finais e Consolidação do Portal)
 - **Corrigido bug crítico em `app.js`:** Adicionada a função `categoriaBadgeClass()` que estava sendo chamada nas três colunas do hero grid e no bento grid mas não estava definida, causando falha silenciosa na renderização de todos os badges de editoria.
 - **Corrigido carregamento das Google Fonts em `index.html`:** Adicionado o link `<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800">` que estava ausente, fazendo o portal usar tipografia de fallback do sistema.
