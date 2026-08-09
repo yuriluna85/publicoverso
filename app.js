@@ -15,13 +15,15 @@
   // --- Carregamento de Dados ---
   async function inicializar() {
     try {
-      const [resNoticias, resAcervo] = await Promise.all([
+      const [resNoticias, resAcervo, resArtigos] = await Promise.all([
         fetch('data/noticias_curadoria.json'),
-        fetch('data/acervo_links_minerados.json').catch(() => null)
+        fetch('data/acervo_links_minerados.json').catch(() => null),
+        fetch('data/artigos_autorais.json').catch(() => null)
       ]);
 
       let curadas = resNoticias.ok ? await resNoticias.json() : [];
       let mineradas = (resAcervo && resAcervo.ok) ? await resAcervo.json() : [];
+      artigosMestre = (resArtigos && resArtigos.ok) ? await resArtigos.json() : [];
 
       // Unifica curadas e mineradas em uma lista mestre para a capa
       const urlsVistas = new Set();
@@ -44,16 +46,91 @@
       }
 
       renderizarHeroGrid(noticiasMestre);
-      renderizarBentoGrid(noticiasMestre);
+      renderizarColunasOpiniao(artigosMestre);
+      renderizarListasEditoriais(noticiasMestre);
       configurarFiltros();
       configurarBusca();
       configurarAcessibilidade();
+      configurarBannerLGPD();
     } catch (erro) {
       console.error('[Publicoverso] Erro ao inicializar:', erro);
     }
   }
 
-  // --- Renderização do Hero Grid (G1 + Jornal da USP) ---
+  // --- Gestão de Cookies e Consentimento LGPD (Lei 13.709/2018) ---
+  function configurarBannerLGPD() {
+    const consentimento = localStorage.getItem('publicoverso_cookie_consent');
+    if (consentimento) return; // Usuário já respondeu anteriormente
+
+    const bannerHTML = `
+      <div id="lgpdBanner" class="lgpd-banner" role="dialog" aria-live="polite" aria-label="Consentimento de Cookies e Privacidade">
+        <div class="lgpd-content">
+          <p class="lgpd-text">
+            <strong>Privacidade e Transparência:</strong> Utilizamos cookies e tecnologias semelhantes para aprimorar a sua experiência de navegação, analisar o tráfego do portal e personalizar conteúdos, em estrita conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 - LGPD). Ao continuar, você concorda com a nossa <a href="privacidade.html" class="lgpd-link">Política de Privacidade</a>.
+          </p>
+          <div class="lgpd-actions">
+            <button id="btnLgpdAceitar" class="btn-lgpd btn-lgpd-primary">Aceitar Todos</button>
+            <button id="btnLgpdRecusar" class="btn-lgpd btn-lgpd-secondary">Apenas Necessários</button>
+          </div>
+        </div>
+      </div>
+    `;
+
+    document.body.insertAdjacentHTML('beforeend', bannerHTML);
+
+    const btnAceitar = document.getElementById('btnLgpdAceitar');
+    const btnRecusar = document.getElementById('btnLgpdRecusar');
+    const banner = document.getElementById('lgpdBanner');
+
+    if (btnAceitar) {
+      btnAceitar.addEventListener('click', function () {
+        localStorage.setItem('publicoverso_cookie_consent', 'todos');
+        if (banner) banner.remove();
+      });
+    }
+
+    if (btnRecusar) {
+      btnRecusar.addEventListener('click', function () {
+        localStorage.setItem('publicoverso_cookie_consent', 'necessarios');
+        if (banner) banner.remove();
+      });
+    }
+  }
+
+  // --- Renderização das Colunas de Opinião (Cristina Mascarenhas) ---
+  function renderizarColunasOpiniao(artigos) {
+    const container = document.getElementById('opinionArticlesList');
+    if (!container) return;
+
+    if (!artigos || artigos.length === 0) {
+      artigos = [
+        {
+          titulo: "O Desafio da Comunicação Pública em Tempos de Inteligência Artificial Generativa",
+          resumo: "Reflexão sobre a responsabilidade ética do comunicador público ao adotar ferramentas de IA sem perder a sensibilidade e a veracidade factual.",
+          data: "08/08/2026",
+          url: "sobre.html"
+        },
+        {
+          titulo: "Além da Repartição: A Dimensão Humana do Servidor Público Brasileiro",
+          resumo: "Por que contar as histórias de vida e as conquistas pessoais dos servidores fortalece a própria democracia e o respeito ao serviço público.",
+          data: "05/08/2026",
+          url: "sobre.html"
+        }
+      ];
+    }
+
+    container.innerHTML = artigos.map(artigo => `
+      <article style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">
+        <span style="font-size: 0.75rem; color: #00D2C8; font-weight: 700; text-transform: uppercase;">Opinião &bull; ${escapar(artigo.data || '2026')}</span>
+        <h4 style="font-family: 'Outfit', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin: 0.3rem 0;">
+          <a href="${escapar(artigo.url_materia || artigo.url || 'sobre.html')}" style="color: inherit; text-decoration: none;">${escapar(artigo.titulo)}</a>
+        </h4>
+        <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">${escapar(artigo.resumo)}</p>
+      </article>
+    `).join('');
+  }
+
+  // --- Renderização do Hero Grid (G1) ---
   function renderizarHeroGrid(noticias) {
     const mainCol = document.getElementById('heroMainCard');
     const secondaryCol = document.getElementById('heroSecondaryCards');
@@ -131,48 +208,58 @@
     }
   }
 
-  // --- Renderização do Bento Grid Geral ---
-  function renderizarBentoGrid(noticias) {
-    const grid = document.getElementById('bentoGrid');
-    if (!grid) return;
+  // --- Renderização de Listas Discretas de Notícias em Linhas por Editoria (Padrão G1/R7) ---
+  function renderizarListasEditoriais(noticias) {
+    const container = document.getElementById('editorialListsContainer');
+    if (!container) return;
 
     let lista = [...noticias];
 
     if (categoriaAtiva !== 'Todas') {
       lista = lista.filter(n => n.categoria === categoriaAtiva);
+    } else if (lista.length > 3) {
+      lista = lista.slice(3); // Pula os 3 destaques do Hero
     }
 
-    // Pula os primeiros 3 itens no modo "Todas" pois já estão em destaque no Hero Grid
-    const paraGrid = (categoriaAtiva === 'Todas' && lista.length > 3) ? lista.slice(3) : lista;
-
-    if (paraGrid.length === 0) {
-      grid.innerHTML = '<p style="color: var(--text-muted); padding: 2rem; text-align: center; width: 100%;">Nenhuma notícia adicional nesta editoria no momento.</p>';
+    if (lista.length === 0) {
+      container.innerHTML = '<p style="color: var(--text-muted); padding: 2rem; text-align: center; width: 100%;">Nenhuma notícia encontrada nesta editoria.</p>';
       return;
     }
 
-    grid.innerHTML = paraGrid.map((noticia) => {
-      const categoriaBadge = categoriaBadgeClass(noticia.categoria);
-      const urlDestino = noticia.url_materia || noticia.url_original || '#';
-      const targetAttr = !noticia.url_materia && noticia.url_original ? 'target="_blank" rel="noopener noreferrer"' : '';
+    // Agrupa notícias por categoria
+    const categoriasMap = {};
+    lista.forEach(item => {
+      const cat = item.categoria || 'Geral';
+      if (!categoriasMap[cat]) categoriasMap[cat] = [];
+      categoriasMap[cat].push(item);
+    });
+
+    container.innerHTML = Object.keys(categoriasMap).map(catName => {
+      const itensCat = categoriasMap[catName];
+      const badgeClass = categoriaBadgeClass(catName);
 
       return `
-        <article class="card-news" data-categoria="${escapar(noticia.categoria)}">
-          <header>
-            <span class="news-badge ${categoriaBadge}" aria-label="Categoria: ${escapar(noticia.categoria)}">${escapar(noticia.categoria || 'Geral')}</span>
-            <h3 class="news-title">
-              <a href="${escapar(urlDestino)}" ${targetAttr} style="color:inherit; text-decoration:none;">${escapar(noticia.titulo)}</a>
-            </h3>
-          </header>
-          <p class="news-summary">${escapar(noticia.resumo)}</p>
-          <footer class="news-meta">
-            <span>${escapar(noticia.fonte)} &mdash; ${escapar(noticia.data)}</span>
-            <div class="news-actions">
-              <a href="${escapar(urlDestino)}" class="btn-curate" ${targetAttr} aria-label="Acessar matéria: ${escapar(noticia.titulo)}">
-                ${noticia.url_materia ? 'Ler mais' : 'Ver fonte'}
-              </a>
-            </div>
-          </footer>
-        </article>
+        <div class="editorial-block" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1rem;">
+            <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--text-primary); margin: 0;">${escapar(catName)}</h3>
+            <a href="noticias.html?cat=${encodeURIComponent(catName)}" style="color: #00D2C8; font-size: 0.85rem; font-weight: 600; text-decoration: none;">Ver todas &rarr;</a>
+          </div>
+          <div class="news-list-rows" style="display: grid; gap: 1rem;">
+            ${itensCat.slice(0, 4).map(item => {
+              const urlDestino = item.url_materia || item.url_original || '#';
+              const targetAttr = !item.url_materia && item.url_original ? 'target="_blank" rel="noopener noreferrer"' : '';
+              return `
+                <article class="news-row-item" style="border-bottom: 1px dashed var(--border-color); padding-bottom: 0.75rem;">
+                  <h4 style="font-family: 'Inter', sans-serif; font-size: 1.05rem; font-weight: 600; margin: 0 0 0.25rem 0;">
+                    <a href="${escapar(urlDestino)}" ${targetAttr} style="color: var(--text-primary); text-decoration: none;">${escapar(item.titulo)}</a>
+                  </h4>
+                  <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.4; margin: 0 0 0.4rem 0;">${escapar(item.resumo)}</p>
+                  <span style="font-size: 0.75rem; color: var(--text-muted);">${escapar(item.fonte)} &bull; ${escapar(item.data)}</span>
+                </article>
+              `;
+            }).join('')}
+          </div>
+        </div>
       `;
     }).join('');
   }
@@ -216,7 +303,7 @@
       );
     }
 
-    renderizarBentoGrid(filtradas);
+    renderizarListasEditoriais(filtradas);
   }
 
   // --- Acessibilidade: Fonte e Sistema Triplo de Temas ---

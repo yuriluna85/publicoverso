@@ -1,15 +1,15 @@
 [
   {
     "id": "test-12345",
-    "titulo": "Servidor Público Vence Premio de Inovação em Gestao",
+    "titulo": "Servidor Publico Vence Premio de Inovacao em Gestao",
     "resumo": "Um analista de TI do governo federal desenvolveu uma ferramenta que automatiza a analise de dados.",
     "conteudo_completo": "Um analista de TI do governo federal desenvolveu uma ferramenta que automatiza a analise de dados.",
-    "categoria": "Ciência e Tecnologia",
+    "categoria": "Inovacao e Boas Praticas",
     "fonte": "Agência Brasil",
     "data": "08/08/2026",
     "status": "Aprovada",
     "destaque": false,
-    "url_materia": "materias/páginas/servidor-público-vence-premio-de-inovação-em-gestao.html",
+    "url_materia": "materias/páginas/servidor-publico-vence-premio-de-inovacao-em-gestao.html",
     "url_original": "https://agenciabrasil.ebc.com.br/exemplo"
   },
   {
@@ -17,7 +17,7 @@
     "titulo": "Modelo de Materia - Publicoverso",
     "resumo": "Este arquivo serve como template. Substitua este resumo por uma frase de abertura objetiva com ate 200 caracteres.",
     "conteudo_completo": "Este arquivo serve como template. Substitua este resumo por uma frase de abertura objetiva com ate 200 caracteres.",
-    "categoria": "Carreira e Conquistas",
+    "categoria": "Gente e Cultura",
     "fonte": "Curadoria Publicoverso",
     "data": "08/08/2026",
     "status": "Aprovada",

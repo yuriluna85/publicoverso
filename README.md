@@ -18,10 +18,12 @@ portal-servidores-públicos/
 |- contato.html             Página de contato editorial
 |- privacidade.html         Política de privacidade (LGPD + AdSense)
 |- termos.html              Termos de uso
+|- servicos.html            Página de serviços e utilitários
 |- robots.txt               Diretrizes de rastreamento
 |- sitemap.xml              Mapa de URLs para indexacao
 |- ads.txt                  Autorização para Google AdSense
 |- build_materias.py        Pipeline de conversao de materias para HTML
+|- classificador_noticias.py Agente classificador policial de notícias
 |- data/
 |  |- noticias_curadoria.json   Base de notícias e materias curadas
 |  |- artigos_autorais.json     Base de colunas autorais
@@ -90,6 +92,13 @@ Antes de solicitar aprovacao do AdSense:
 - **Atualizado `app_noticias.js`:** A página `noticias.html` agora mescla `noticias_curadoria.json` e `acervo_links_minerados.json` em paralelo com deduplicação por URL, exibindo o acervo completo (curadoria + mineração) em ordem cronológica.
 - **Adicionado alias `.badge-cultura` em `index.css`:** Corrigida incompatibilidade entre o nome de classe retornado por `categoriaBadgeClass()` (`badge-cultura`) e os seletores existentes no CSS (`badge-culturapop`). Badges de "Histórias e Superação" também foram padronizados removendo o seletor com acento (`.badge-histórias`) em favor do seletor ASCII-safe (`.badge-historias`).
 
+### 09/08/2026 (Sessão 7 - Arquitetura Editorial G1, Colunas de Opinião, Perfis Lattes, Agente Classificador Policial, Cron 05h e Serviços)
+- **Criação da Página de Serviços (`servicos.html`):** Desenvolvimento de interface centralizada para consulta de utilitários, simuladores e ferramentas voltadas aos servidores públicos.
+- **Implementação do Agente Classificador (`classificador_noticias.py`):** Módulo automatizado para classificação, categorização e triagem de notícias com inteligência aplicada ao segmento policial e de segurança pública.
+- **Ajuste da Cron no GitHub Actions (`.github/workflows/`):** Atualização do agendamento automatizado de execução das rotinas de mineração e publicação no GitHub Actions para às 05h.
+- **Integração dos Perfis Lattes da Curadoria:** Adição dos links e metadados dos currículos Lattes de Cristina Mascarenhas (com foto de perfil oficial) e Yuri Almeida na seção institucional (`sobre.html`).
+- **Expurgo Integral de Mocks:** Remoção completa de dados fictícios, estruturas mockadas e registros temporários das bases de dados JSON, garantindo 100% de conteúdos autênticos.
+
 ### 08/08/2026 (Sessão 8 - Exibição Direta das Notícias Mineradas na Capa Principal)
 - **Integração Imediata do Acervo na Capa (`index.html` e `app.js`):**
   - O motor de renderização `app.js` unifica `noticias_curadoria.json` e `acervo_links_minerados.json`.
@@ -115,6 +124,19 @@ Antes de solicitar aprovacao do AdSense:
     3. **Coluna 3 (Feed "Últimas do Serviço Público" - 25% Desktop):** Feed dinâmico ao vivo com os últimos 5 links minerados da web, indicador pulsante e atalho para o acervo completo (`noticias.html`).
   - **Estética Editorial Inspirada no Jornal da USP:** Inclusão de cabeçalhos de seção com linhas divisórias de gradiente suave (`.section-line-usp`), tipografia hierárquica e espaçamento proporcional.
   - **Preservação de Identidade & A11y:** Manutenção da paleta de cores (Azul Petróleo, Turquesa Neon e Roxo Luna), botões balão arredondados no cabeçalho e suporte total aos 3 temas (Claro, Escuro e Alto Contraste AAA).
+
+### 09/08/2026 (Sessao 6 - Servidor Local .bat, HTTPS Estrito e Novo E-mail de Contato)
+- Criado o mini servidor local Python nativo `server.py` na porta 8088 com suporte a MIME types UTF-8, no-cache em desenvolvimento e logs limpos.
+- Criado o executável Windows `iniciar_servidor_local.bat` para disparo automatizado com 1 clique e abertura direta do navegador em `http://localhost:8088`.
+- Inserido o e-mail de contato e curadoria direta `publicoverso@gmail.com` em todas as páginas (`contato.html`, `sobre.html`, `privacidade.html`, `termos.html`, `build_materias.py` e Mega-Rodapé Editorial).
+- Propagado o Mega-Rodapé Editorial em 4 Colunas para 100% das páginas institucionais secundárias.
+- Varredura e homologação de links e ativos externos com protocolo HTTPS estrito.
+
+### 09/08/2026 (Sessao 5 - Reestruturacao Editorial, Mega-Roda-pe e Banner LGPD)
+- Reestruturado o System Design de Cores (`SYSTEM_DESIGN_PUBLICOVERSO.md`) calibrando a luminosidade dos tokens de leitura para garantir contraste estrito WCAG 2.1 AA/AAA em todos os 3 modos de cor.
+- Implementado o componente de **Consentimento de Cookies e Privacidade (LGPD Lei nº 13.709/2018 / GDPR)** em `app.js` e `index.css`, com mensagem clara em Linguagem Simples, botões de ação e persistência de escolha do usuário via `localStorage` (`publicoverso_cookie_consent`).
+- Substituído o rodapé simples anterior pelo novo **Mega-Rodapé Editorial em 4 Colunas** em `index.html` (Marca/Curadoria, Editorias, Utilitários e Governança/LGPD/DPO).
+- Adicionadas regras no `index.css` para layout responsivo do rodapé (4 colunas no desktop, 2 colunas em tablet e 1 coluna em mobile) e contraste elevado em links e legendas.
 
 ### 08/08/2026 (Sessao 4 - Minerador de Protagonistas e Atribuição de Fonte)
 - Criado o robô `scripts/minerador_protagonistas.py` dedicado a minerar histórias humanas de servidores e servidoras pública fora da reparticao (Literatura, Esportes, Cultura Pop/Realities, Voluntariado e Superacao Pessoal).

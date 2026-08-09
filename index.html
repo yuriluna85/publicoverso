@@ -81,6 +81,7 @@
         <a href="noticias.html" class="nav-link">Notícias</a>
         <a href="concursos.html" class="nav-link">Radar de Concursos</a>
         <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="servicos.html" class="nav-link">Serviços</a>
         <a href="contato.html" class="nav-link">Contato</a>
         <a href="https://taes-federal.com.br/" class="nav-link nav-link-external" target="_blank" rel="noopener noreferrer">Calculadora TAE</a>
       </nav>
@@ -107,7 +108,7 @@
       </div>
     </section>
 
-    <!-- Bloco Principal de Manchetes (Padrão G1 + Jornal da USP) -->
+    <!-- Bloco Principal de Destaques da Capa (Padrão G1) -->
     <section class="hero-grid-container" aria-label="Notícias em Destaque">
       <div class="hero-grid-g1-usp">
         
@@ -121,7 +122,7 @@
           <!-- Renderizado dinamicamente via app.js -->
         </div>
 
-        <!-- Coluna 3: Feed "Últimas Notícias da Web" (25% no Desktop - Estilo G1) -->
+        <!-- Coluna 3: Feed "Últimas Notícias" (25% no Desktop) -->
         <aside class="hero-col-feed" aria-label="Últimas notícias do acervo">
           <div class="feed-header">
             <h3 class="feed-title">Últimas do Serviço Público</h3>
@@ -133,6 +134,25 @@
           <a href="noticias.html" class="btn-feed-ver-todas">Ver acervo completo &rarr;</a>
         </aside>
 
+      </div>
+    </section>
+
+    <!-- Seção Nobre: Colunas & Opinião da Jornalista Cristina Mascarenhas -->
+    <section class="opinion-section" aria-labelledby="opinion-heading" style="margin-top: 2.5rem; margin-bottom: 2.5rem;">
+      <div class="section-header-usp">
+        <h2 id="opinion-heading" class="section-heading">Colunas &amp; Análise Editorial</h2>
+        <div class="section-line-usp"></div>
+      </div>
+      <div class="opinion-container" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 2rem; display: flex; gap: 2rem; flex-wrap: wrap; align-items: flex-start;">
+        <div class="columnist-profile" style="flex: 0 0 260px; border-right: 1px solid var(--border-color); padding-right: 1.5rem;">
+          <img src="imagem cristina.gif" alt="Cristina Mascarenhas Santos - Colunista e Curadora Editorial" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid #00D2C8; margin-bottom: 0.75rem;">
+          <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.2rem; font-weight: 800; color: var(--text-primary); margin: 0;">Cristina Mascarenhas</h3>
+          <p style="color: #00D2C8; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.5rem;">Diretora Editorial | Mestre pela UFBA</p>
+          <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5;">Análises críticas, bastidores e reflexões sobre a comunicação pública, o papel do servidor e a sociedade brasileira.</p>
+        </div>
+        <div class="opinion-articles" id="opinionArticlesList" style="flex: 1; min-width: 280px; display: grid; gap: 1.25rem;">
+          <!-- Renderizado dinamicamente via app.js -->
+        </div>
       </div>
     </section>
 
@@ -179,6 +199,7 @@
         <button class="chip" data-category="Ciência e Tecnologia">Ciência &amp; Tecnologia</button>
         <button class="chip" data-category="Cultura Pop e Gastronomia">Cultura Pop &amp; Gastronomia</button>
         <button class="chip" data-category="Solidariedade e Comunidade">Solidariedade &amp; Comunidade</button>
+        <button class="chip" data-category="Policial e Segurança Pública">Policial &amp; Segurança Pública</button>
         <button class="chip" data-category="Histórias e Superação">Histórias &amp; Superação</button>
         <button class="chip" data-category="Carreira e Conquistas">Carreira &amp; Conquistas</button>
       </div>
@@ -188,37 +209,110 @@
       </div>
     </div>
 
-    <!-- Seção de Notícias em Bento Grid -->
+    <!-- Seção de Notícias em Formato Jornalístico de Listas Discretas em Linhas (Padrão G1) -->
     <section aria-labelledby="news-section-heading">
       <div class="section-header-usp">
-        <h2 id="news-section-heading" class="section-heading">Mais Histórias e Conquistas</h2>
+        <h2 id="news-section-heading" class="section-heading">Editorias e Manchetes Recentes</h2>
         <div class="section-line-usp"></div>
       </div>
-      <div id="bentoGrid" class="bento-grid">
+      <div id="editorialListsContainer" class="editorial-lists-container" style="display: grid; gap: 2rem;">
         <!-- Renderizado dinamicamente via app.js -->
       </div>
     </section>
 
-
     <!-- Bloco de Publicidade (AdSense) -->
     <aside class="adsense-block" aria-label="Publicidade">
       <p class="adsense-label">Publicidade</p>
-      <!-- Cole aqui o código do Google AdSense quando disponível -->
     </aside>
 
   </main>
 
-  <!-- Rodapé Institucional -->
-  <footer class="footer">
-    <p class="footer-brand">Publicoverso</p>
-    <nav class="footer-links" aria-label="Links institucionais do rodapé">
-      <a href="sobre.html">Sobre</a>
-      <a href="contato.html">Contato</a>
-      <a href="privacidade.html">Privacidade</a>
-      <a href="termos.html">Termos de Uso</a>
-    </nav>
-    <p class="footer-disclaimer">Portal independente, sem vínculo oficial com órgãos governamentais. Curadoria editorial: Cristina Mascarenhas.</p>
-    <p>&copy; 2026 Publicoverso. Todos os direitos reservados.</p>
+  <!-- Mega-Rodapé Editorial Institucional -->
+  <footer class="footer-mega" aria-label="Rodapé institucional e navegacional do Publicoverso">
+    <div class="footer-mega-container">
+      
+      <!-- Coluna 1: Marca & Curadoria -->
+      <div class="footer-col footer-col-brand">
+        <div class="footer-brand-header">
+          <div class="pv-logo-hexagon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+              <polygon points="20,2 35,10 35,30 20,38 5,30 5,10" stroke="url(#hexGradFooter)" stroke-width="2.5" fill="rgba(0, 210, 200, 0.08)"/>
+              <circle cx="20" cy="20" r="3.5" fill="#00D2C8"/>
+              <circle cx="20" cy="8" r="2.5" fill="#00D2C8"/>
+              <circle cx="31" cy="15" r="2.5" fill="#9146FF"/>
+              <circle cx="31" cy="27" r="2.5" fill="#00D2C8"/>
+              <circle cx="20" cy="33" r="2.5" fill="#9146FF"/>
+              <circle cx="9" cy="27" r="2.5" fill="#00D2C8"/>
+              <circle cx="9" cy="15" r="2.5" fill="#9146FF"/>
+              <defs>
+                <linearGradient id="hexGradFooter" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#00D2C8"/>
+                  <stop offset="1" stop-color="#9146FF"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <span class="footer-brand-title">Publicoverso</span>
+        </div>
+        <p class="footer-brand-desc">
+          O portal comunitário de notícias, conquistas e histórias inspiradoras de quem faz o serviço público acontecer no Brasil.
+        </p>
+        <div class="curatorial-badge">
+          <span class="curatorial-icon" aria-hidden="true">✍️</span>
+          <span>Curadoria Editorial: <strong>Cristina Mascarenhas</strong></span>
+        </div>
+      </div>
+
+      <!-- Coluna 2: Seções e Editorias -->
+      <div class="footer-col">
+        <h3 class="footer-col-title">Editorias</h3>
+        <ul class="footer-col-list">
+          <li><a href="noticias.html?cat=Artes%20e%20Literatura">Artes &amp; Literatura</a></li>
+          <li><a href="noticias.html?cat=Esportes%20e%20Aventura">Esportes &amp; Aventura</a></li>
+          <li><a href="noticias.html?cat=Ci%C3%AAncia%20e%20Tecnologia">Ciência &amp; Tecnologia</a></li>
+          <li><a href="noticias.html?cat=Cultura%20Pop%20e%20Gastronomia">Cultura Pop &amp; Gastronomia</a></li>
+          <li><a href="noticias.html?cat=Solidariedade%20e%20Comunidade">Solidariedade &amp; Comunidade</a></li>
+          <li><a href="noticias.html?cat=Hist%C3%B3rias%20e%20Supera%C3%A7%C3%A3o">Histórias &amp; Superação</a></li>
+          <li><a href="noticias.html?cat=Carreira%20e%20Conquistas">Carreira &amp; Conquistas</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 3: Ferramentas & Serviços -->
+      <div class="footer-col">
+        <h3 class="footer-col-title">Utilitários</h3>
+        <ul class="footer-col-list">
+          <li><a href="https://taes-federal.com.br/" target="_blank" rel="noopener noreferrer">Calculadora TAE Federal</a></li>
+          <li><a href="simulador-diárias.html">Simulador de Diárias</a></li>
+          <li><a href="concursos.html">Radar de Editais</a></li>
+          <li><a href="sobre.html">Sobre a Curadora</a></li>
+          <li><a href="contato.html">Canal de Sugestões</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 4: Governança, LGPD e Conformidade -->
+      <div class="footer-col">
+        <h3 class="footer-col-title">Governança &amp; Privacidade</h3>
+        <ul class="footer-col-list">
+          <li><a href="privacidade.html">Política de Privacidade (LGPD)</a></li>
+          <li><a href="termos.html">Termos e Condições de Uso</a></li>
+          <li><a href="privacidade.html#cookies">Gestão de Cookies</a></li>
+          <li><a href="contato.html#dpo">Contato Encarregado (DPO)</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Sub-Rodapé Inferior -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <p class="footer-legal-disclaimer">
+          Portal comunitário independente, sem vínculo oficial com órgãos governamentais. Conteúdos curados sob a Lei nº 13.709/2018 (LGPD).
+        </p>
+        <p class="footer-copyright">
+          &copy; 2026 Publicoverso. Todos os direitos reservados. Desenvolvimento e Tecnologia: YLuna85 LABs.
+        </p>
+      </div>
+    </div>
   </footer>
 
   <script src="app.js"></script>

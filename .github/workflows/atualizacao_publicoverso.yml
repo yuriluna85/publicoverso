@@ -2,7 +2,7 @@ name: Mineracao e Atualizacao Publicoverso
 
 on:
   schedule:
-    - cron: '0 9,21 * * *'
+    - cron: '0 8 * * *'
   workflow_dispatch:
 
 jobs:
@@ -51,6 +51,10 @@ jobs:
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
         run: |
           python scripts/radar_concursos.py
+
+      - name: Classificar Notícias e Agrupar Editorias (Policial & Segurança Pública)
+        run: |
+          python scripts/classificador_noticias.py
 
       - name: Build de Paginas Estaticas
         run: |
