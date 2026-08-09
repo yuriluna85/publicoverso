@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-dd4d015b52
+titulo: Proposta de Emenda à Constituição 19/1993
+resumo: Ementa Acrescenta dispositivo ao artigo 126 da Constituição do Estado, que dispõe sobre aposentadoria do servidor público. Data de Publicação 02/10/1993.
+autor: Curadoria Publicoverso
+categoria: Histórias e Superação
+data: 09/08/2026
+fonte: Assembleia Legislativa do Estado de São Paulo
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.al.sp.gov.br/propositura/77797
+---
+
+Ementa Acrescenta dispositivo ao artigo 126 da Constituição do Estado, que dispõe sobre aposentadoria do servidor público. Data de Publicação 02/10/1993.
+
+Fonte original: https://www.al.sp.gov.br/propositura/77797
