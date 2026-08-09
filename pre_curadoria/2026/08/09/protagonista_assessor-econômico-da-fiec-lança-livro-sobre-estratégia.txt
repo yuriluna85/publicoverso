@@ -1,0 +1,37 @@
+---
+id_mineracao: min-protagonista-20260809000703
+titulo: Assessor econômico da FIEC lança livro sobre estratégia e Inteligência Artificial para pequenas empresas
+resumo: O assessor econômico da Federação das Indústrias do Estado do Ceará (FIEC) e professor adjunto da Universidade Estadual do Ceará (UECE), Lauro Chaves Neto,...
+autor: Curadoria Publicoverso
+categoria: Artes e Literatura
+eixo_tematico: Literatura e Artes
+fonte: Www1
+url_original: https://www1.sfiec.org.br/fiec-noticias/search/173495/assessor-economico-da-fiec-lanca-livro-sobre-estrategia-e-inteligencia-artificial-para-pequenas-empresas
+link_status: Verificado (HTTP 200)
+data_verificacao: 09/08/2026 00:07
+status: Pendente
+---
+
+Assessor econômico da FIEC lança livro sobre estratégia e Inteligência Artificial para pequenas empresas -
+
+Assessor econômico da FIEC lança livro sobre estratégia e Inteligência Artificial para pequenas empresas
+
+O assessor econômico da Federação das Indústrias do Estado do Ceará (FIEC) e professor adjunto da Universidade Estadual do Ceará (UECE), Lauro Chaves Neto, lançou o livro "Competitive Advantage and Strategy for Small Businesses In An Artificial Intelligence Environment", resultado de sua pesquisa de pós-doutorado realizada na University of Massachusetts, nos Estados Unidos. A obra, a 11ª publicada pelo economista e professor, analisa como a Inteligência Artificial pode fortalecer a estratégia e a competitividade das pequenas empresas em um cenário de rápidas transformações tecnológicas.
+
+Desenvolvida a partir de uma pesquisa conduzida com empresas brasileiras e estadunidenses, a publicação mostra que a adoção da Inteligência Artificial produz melhores resultados quando está integrada ao planejamento estratégico, à inovação e à geração de valor para o cliente. Segundo Lauro Chaves, o estudo identificou que empresas que utilizam IA de forma estratégica apresentam desempenho superior às que ainda não incorporaram essas tecnologias aos seus modelos de gestão.
+
+"O diferencial deixou de ser apenas possuir tecnologia e passou a ser utilizá-la estrategicamente. A Inteligência Artificial é um recurso. Estratégia é decidir como esse recurso será utilizado para criar valor ao cliente, reduzir custos, desenvolver novos produtos ou conquistar mercados", afirma.
+
+Embora tenha como foco as pequenas empresas, o autor destaca que as conclusões dialogam diretamente com os desafios enfrentados pela indústria, especialmente diante do avanço da transformação digital. Para ele, o ganho competitivo depende menos do acesso às ferramentas tecnológicas e mais da capacidade de incorporá-las às decisões estratégicas e aos processos de inovação.
+
+"A indústria brasileira precisa enxergar a Inteligência Artificial não apenas como um investimento em tecnologia, mas como um instrumento para desenvolver novos produtos, ampliar mercados e fortalecer sua capacidade de inovação", ressalta.
+
+A pesquisa também aponta que organizações que aliam Inteligência Artificial, planejamento estratégico e inovação registram crescimento superior, reforçando a importância de desenvolver competências organizacionais voltadas à aprendizagem contínua, adaptação e tomada de decisão baseada em dados.
+
+Durante o período de pós-doutorado, em 2025, Lauro Chaves desenvolveu atividades em instituições e ambientes de inovação de Massachusetts, incluindo o Boston Innovation Gate, o MIT e a Universidade Harvard, além de ministrar palestras no Consulado-Geral do Brasil em Boston.
+
+Professor adjunto da UECE, doutor em Desenvolvimento Regional pela Universidade de Barcelona e pós-doutor em Estratégia Competitiva pela University of Massachusetts, Lauro Chaves reúne 35 anos de atuação acadêmica e profissional nas áreas de estratégia e finanças. Ao longo da carreira, participou da elaboração de mais de 400 planos estratégicos empresariais, mais de 50 planos diretores de desenvolvimento municipal, projetos para governos estaduais e para o Banco Mundial, entre outras iniciativas. Também atua como conteudista e certificador da solução premium de Gestão e Estratégia do SEBRAE Nacional.
+
+Av. Barão de Studart, 1980 - Aldeota - Fortaleza/CE - CEP: 60.120-024 - CNPJ: 07.264.385/0001-43
+
+Fonte original: https://www1.sfiec.org.br/fiec-noticias/search/173495/assessor-economico-da-fiec-lanca-livro-sobre-estrategia-e-inteligencia-artificial-para-pequenas-empresas

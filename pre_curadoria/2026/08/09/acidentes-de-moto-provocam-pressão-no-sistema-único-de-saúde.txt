@@ -1,0 +1,54 @@
+---
+id_mineracao: auto-eb6e050615
+titulo: Acidentes de moto provocam pressão no Sistema único de saúde do RN
+resumo: Valéria Credidio / Assessoria de Comunicação do LAIS/UFRN (ASCOM/LAIS) Foto: pexels.com/Wallace Chuck. Motociclistas homens, com idade entre 20 e 39 anos.
+autor: Curadoria Publicoverso
+categoria: Ciência e Tecnologia
+data: 09/08/2026
+fonte: Laboratório de Inovação Tecnológica em Saúde
+status: Pendente
+status_triagem: Pendente
+url_original: https://lais.huol.ufrn.br/acidentes-de-moto-provocam-pressao-no-sistema-unico-de-saude-do-rn/
+---
+
+Acidentes de moto provocam pressão no Sistema único de saúde do RN - Laboratório de Inovação Tecnológica em Saúde
+
+Motociclistas homens, com idade entre 20 e 39 anos. Esse é o perfil das principais vítimas dos acidentes de trânsito que ocorrem no Rio Grande do Norte. A consequência é a pressão assistencial no sistema de saúde pública, com mais de 22 mil registros, no intervalo de um ano, sendo a maior concentração dos casos, no Hospital Walfredo Gurgel. O gasto de recursos públicos com esses atendimentos ultrapassa os seis milhões de reais.
+
+Os dados são do documento “O impacto hospitalar e financeiro dos acidentes de trânsito no RN (2025-2026), um relatório técnico elaborado pela equipe de pesquisadores do Laboratório de Inovação Tecnológica em Saúde (LAIS/UFRN) e teve como objetivo mapear o impacto dos acidentes de trânsito no sistema de saúde pública estadual.
+
+O maior impacto dos acidentes, em tocante ao atendimento das vítimas, ocorre no Hospital Walfredo Gurgel, com 56% dos casos, tendo o Tarcísio Maia, em Mossoró, com mais de 33%. Conforme demonstrado pelos pesquisadores, Natal absorve o trauma gerado pelo movimento pendular da Região Metropolitana, registrando  5.488 ocorrências, mas apenas 4.744 residentes acidentados. “A prova definitiva dessa &#8220;esponja&#8221; está em cidades vizinhas como  Parnamirim , que possui 1.071 residentes acidentados para apenas 895 ocorrências locais. Esse excedente de vítimas residentes em &#8220;cidades dormitório&#8221; prova que o acidente ocorre no deslocamento diário para o polo central”, aponta o documento.
+
+Entre os dados levantados, alguns chamam a atenção, como o fato, por exemplo, dos acidentes ocorrerem, em sua maioria, nos finais de semana e a falta de proteção por parte das vítimas, mesmo sendo uma obrigatoriedade legal. Conforme apontado, 34,02% das vítimas deram entrada sem qualquer equipamento de proteção individual (EPI) e, em mais da metade dos casos, os motociclistas estavam sem capacete.
+
+Quanto à sazonalidade dos acidentes, o documento aponta que os finais de semana concentram em torno de 35% dos acidentes, com o domingo sendo o dia de maior fluxo, seguido do sábado. Para os pesquisadores, essas informações se tornam fundamentais para a organização da escala de profissionais de saúde, por exemplo, nos principais prontos socorros e urgências.
+
+Outra informação relevante levantada pelos pesquisadores diz respeito aos pedestres, vítimas de atropelamento que, em sua maioria são idosos acima de 70 anos. Por serem mais vulneráveis, essas pacientes apresentam taxas de internação, ocupação de UTIs e letalidade cinco vezes maiores do que os motociclistas.
+
+Para os pesquisadores, o maior desafio a ser enfrentado pelo SUS no RN é a vulnerabilidade de pedestres e idosos, gerando uma pressão nas unidades de terapia intensivas. “O trânsito no Rio Grande do Norte não é apenas uma questão de segurança viária; ele consolidou-se como o maior gargalo logístico e financeiro da saúde pública estadual, onde a imprudência individual é subsidiada por milhões de reais do erário público”, finaliza o documento.
+
+Ricardo Valentim Professor Titular na UFRN Pesquisador Sênior e Cofundador do LAIS Fernando Lucas Pesquisador em Saúde Digital no LAIS Doutor em Ciências da Computação (PPgSC/UFRN)
+
+Nicolas Veras Pesquisador em Saúde Digital no LAIS Doutor em Engenharia Elétrica e de Computação (PPgEEC/UFRN)
+
+Gleyson Caldeira Pesquisador em Ciencias de Dados na Saúde no LAIS Doutorando em Engenharia Elétrica e de Computação (PPgEEC/UFRN)
+
+Leticia Ainoan Pesquisadora em Ciências de Dados na Saúde no LAIS Doutoranda em Engenharia Elétrica e de Computação (PPgEEC/UFRN)
+
+Lemyson Lemos Pesquisador em Ciencias de Dados na Saúde no LAIS Doutorando em Engenharia Elétrica e de Computação (PPgEEC/UFRN)
+
+Raul Almeida Pesquisador em Saúde Digital no LAIS Mestre em Gestão e Inovação em Saúde (PPgGIS/UFRN)
+
+Antonio de Oliveira Pesquisador em Saúde Digital no LAIS Mestrando em Engenharia Elétrica e de Computação (PPgEEC/UFRN)
+
+Eventos        Brasil e Portugal fortalecem diálogo cultural, científico e acadêmico em Simpósio Internacional
+
+Jordana Vieira / Assessoria de Comunicação do LAIS/UFRN (ASCOM/LAIS) O destaque para a importância de um diálogo cultural,...
+
+Coronavírus        Mais de 8,6 mil pessoas podem estar com a 2ª dose da vacina contra a covid-19 atrasada, aponta RN Mais Vacina
+
+A vacinação contra a covid-19 no Rio Grande do Norte teve seu pontapé inicial em janeiro, com a chegada do primeiro lote da vacina...
+
+Por Gabriel Mascena - Assessoria de Comunicação do LAIS/UFRN (ASCOM/LAIS) Modernizar o Sistema Único de Saúde (SUS) significa...
+
+Fonte original: https://lais.huol.ufrn.br/acidentes-de-moto-provocam-pressao-no-sistema-unico-de-saude-do-rn/

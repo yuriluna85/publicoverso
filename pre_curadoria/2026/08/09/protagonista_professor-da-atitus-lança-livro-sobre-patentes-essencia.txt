@@ -1,0 +1,41 @@
+---
+id_mineracao: min-protagonista-20260809000627
+titulo: Professor da Atitus lança livro sobre patentes essenciais
+resumo: A Revista vinculada à pós-graduação Stricto Sensu em Direito da Atitus, lançou sua edição especial de 2026.
+autor: Curadoria Publicoverso
+categoria: Artes e Literatura
+eixo_tematico: Literatura e Artes
+fonte: Atitus
+url_original: https://www.atitus.edu.br/noticias/revista-brasileira-de-direito-da-atitus-lanca-edicao-especial-sobre-patentes-essenciais-e-o-futuro-da-inovacao-tecnologica
+link_status: Verificado (HTTP 200)
+data_verificacao: 09/08/2026 00:06
+status: Pendente
+---
+
+Professor da Atitus lança livro sobre patentes essenciais                                                                                 Todas as Unidades          Atitus      Cursos      Diferenciais      Inovação                            Minha conta              Acesso Aluno         Acesso Professor      Acesso Colaborador                        Revista Brasileira de Direito da Atitus lança edição especial sobre patentes essenciais e o futuro da inovação tecnológica             Publicado em 05/08/2026                     A Revista vinculada à pós-graduação Stricto Sensu em Direito da Atitus, lançou sua edição especial de 2026
+
+A Revista Brasileira de Direito é um periódico científico da Atitus com a mais alta avaliação de periódicos da Capes (Qualis A1), vinculado ao Programa de Pós-Graduação Stricto Sensu em Direito da instituição. No mês de julho, publicou sua mais nova edição especial: o volume 22 (2026), inteiramente dedicado a um dos debates mais estratégicos da propriedade industrial contemporânea: as Patentes Essenciais a Padrões, conhecidas pela sigla SEP (do inglês Standard Essential Patents), e o regime de licenciamento FRAND.
+
+Para entender por que isso importa, é simples: sempre que um celular se conecta a uma rede 5G, transmite um vídeo por Wi-Fi ou processa um pagamento por aproximação, ele está utilizando tecnologias protegidas por patentes que se tornaram indispensáveis para que os padrões de conectividade funcionem.
+
+Como não é possível utilizar sem autorização a tecnologia desse tipo de patente, pois ela é por natureza essencial, se instituiu a obrigação FRAND: as empresas detentoras dessas patentes se comprometem a licenciá-las em termos justos, razoáveis e não discriminatórios (Fair, Reasonable and Non-Discriminatory).
+
+A edição atual reúne 38 artigos científicos assinados por pesquisadores e especialistas do Brasil e do exterior, com contribuições vindas de países como Alemanha, Estados Unidos, Índia, Holanda e Rússia. Vários textos foram publicados em inglês, reforçando a proposta da revista de dialogar com a comunidade jurídica internacional.
+
+A Revista traz nomes de referência na área de propriedade industrial e direito concorrencial, com pesquisadores brasileiros e internacionais.
+
+Luiz Otávio Pimentel, professor e pesquisador nos programas de Mestrado e Doutorado em Direito da Atitus, ex presidente do INPI - Instituto Nacional da Propriedade Industrial do Brasil (2015-2019), consultor em Propriedade Industrial, residente na Suíça, explica que a escolha do tema desta edição especial não foi por acaso. As patentes essenciais e o licenciamento FRAND são o que garante que aparelhos de marcas diferentes consigam se comunicar entre si, é a base que sustenta tecnologias como 5G, Wi-Fi e USB.
+
+Criada em 2005 pelo curso de graduação em Direito da Atitus, a RBD passou a integrar o Programa de Pós-Graduação Stricto Sensu em 2013 e, desde então, se consolidou como espaço de referência para pesquisas nacionais e internacionais em Direito na medida em que o Brasil vem expandindo continuamente sua infraestrutura digital. A publicação é indexada na Web of Science, uma das bases internacionais de maior repercussão acadêmica, e adota o sistema de duplo blind peer review, com avaliação anônima por, no mínimo, dois pareceristas.
+
+“A telemedicina, ensino a distância e acesso à informação em regiões isoladas, estão diretamente ligados a metas de inclusão digital e redução de desigualdades. Por isso, entendemos que era hora de o PPGD da Atitus dedicar uma edição inteira ao assunto”, comenta o professor.
+
+Publicada em julho de 2026, a edição especial está disponível integralmente e em acesso aberto no portal da revista, para pesquisadores e profissionais interessados no tema. Todos os artigos podem ser baixados em PDF diretamente na página da publicação.
+
+A Revista Brasileira de Direito é um dos veículos científicos da Atitus e tem como missão dar visibilidade a pesquisas nacionais e internacionais de interesse dos programas de pós-graduação stricto sensu da instituição.
+
+A Edição Especial da RBD foi publicada em duas modalidades. Na versão online conta com 38 artigos e na impressa com 32 artigos, sendo 10 estrangeiros (Alemanha, Chile, Espanha, Estados Unidos, Holanda, Índia, Portugal, Reino Unido e Rússia), os autores são os mais importantes especialistas no assunto. Incluí dois artigos dos professores do PPGD da Atitus. Luiz Otávio Pimentel, Salete Oro Boff e Fausto Santos de Morais, com a participação do mestrando Gabriel Silveira Pacheco.
+
+Acesse e leia a edição completa:  Revista Brasileira de Direito da Atitus                    FIQUE LIGADO   NA ATITUS                Receber novidades                 Ao se cadastrar para receber nossos conteúdos, você concorda com os    Termos de Uso e Políticas de Privacidade.                  Unidades        Serviços        Notícias        Biblioteca        Ouvidoria        Política de Privacidade            Graduação        Mestrado        Doutorado        Edital Processo Seletivo 26/2  (Enem)        Edital Processo Seletivo 26/2  (Outras Formas de Ingresso)        Edital Transferência Medicina 26/2        Edital Processo Seletivo Stricto Sensu 26/2        Regulamento Programa Futuro+ 26/2        Provas e Gabaritos – Medicina        Relatório de Igualdade Salarial        Calendário Acadêmico        Bolsas e Créditos        Comitês        Trabalhe Conosco            Para Empresas        Para Cidades        Para Empreendedores        Inovação Social        Cadastro e-MEC         Fale com a gente            51 4004 4818                                                                                                                           © 2024 Atitus Educação.
+
+Fonte original: https://www.atitus.edu.br/noticias/revista-brasileira-de-direito-da-atitus-lanca-edicao-especial-sobre-patentes-essenciais-e-o-futuro-da-inovacao-tecnologica
