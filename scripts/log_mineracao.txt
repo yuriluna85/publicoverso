@@ -451,3 +451,183 @@
 [2026-08-08 21:00:41]   Resultados: 0
 [2026-08-08 21:00:44] === Radar concluído. 0 novos editais adicionados. Total: 5. ===
 [2026-08-08 21:00:44] Revise os editais com status "Em Analise" e altere para "Inscrições Abertas" apos verificacao manual.
+[2026-08-09 00:02:43] === Iniciando mineracao de histórias ===
+[2026-08-09 00:02:43] Registros existentes no JSON / Historico: 57
+[2026-08-09 00:02:43] Buscando: [Cultura Pop e Gastronomia] ...
+[2026-08-09 00:02:44]   Resultados retornados: 5
+[2026-08-09 00:02:48]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/policial-militar-é-homenageado-pela-câmara-de-quatá-por-serv.txt (Editoria: Carreira e Conquistas)
+[2026-08-09 00:03:06]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/concurso-ufba-terá-116-vagas-banca-em-definição.txt (Editoria: Carreira e Conquistas)
+[2026-08-09 00:03:06]   [EXCLUIDO] Policial civil é investigado após confusão no bairro Vista A...
+[2026-08-09 00:03:10]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/fefolt-terá-oito-dias-de-cultura-popular-gastronomia-e-atraç.txt (Editoria: Artes e Literatura)
+[2026-08-09 00:03:14]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/concurso-ifpi-lança-52-vagas-para-técnico-administrativo-em-.txt (Editoria: Carreira e Conquistas)
+[2026-08-09 00:03:16] Buscando: [Artes e Literatura] ...
+[2026-08-09 00:03:17]   Resultados retornados: 10
+[2026-08-09 00:03:23]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/joão-franzin-lança-o-pote-de-glicínias-e-o-mestre-em-rio-cla.txt (Editoria: Artes e Literatura)
+[2026-08-09 00:03:23]   [EXCLUIDO] Quem é o ator Marco Furlan, preso por estupro de vulnerável ...
+[2026-08-09 00:03:23]   [EXCLUIDO] Justiça de SP decreta prisão preventiva de ator investigado ...
+[2026-08-09 00:03:23]   [EXCLUIDO] Fotos: Preso sob suspeita de estupro de vulnerável, ator Mar...
+[2026-08-09 00:03:23]   [EXCLUIDO] Polícia Civil prende em MT foragido investigado por golpe de...
+[2026-08-09 00:03:23]   [EXCLUIDO] Preso em flagrante, ator da Globo é apontado como suspeito p...
+[2026-08-09 00:03:23]   [EXCLUIDO] Preso sob suspeita de estupro de vulnerável, ator Marco Furl...
+[2026-08-09 00:03:23]   [EXCLUIDO] Ator preso por abuso de criança diz ter ‘confundido’ vítima ...
+[2026-08-09 00:03:25] Buscando: [Esportes e Aventura] ...
+[2026-08-09 00:03:26]   Resultados retornados: 10
+[2026-08-09 00:03:32]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/pm-é-morto-a-tiros-durante-aula-de-jiu-jitsu-em-várzea-grand.txt (Editoria: Esportes e Aventura)
+[2026-08-09 00:03:41]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/sugar-a-série-policial-com-colin-farrell-que-quase-ninguém-v.txt (Editoria: Esportes e Aventura)
+[2026-08-09 00:03:46]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/policial-é-morto-a-tiros-durante-aula-de-jiu-jitsu-e-alunos-.txt (Editoria: Esportes e Aventura)
+[2026-08-09 00:03:52]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/policial-militar-é-morto-a-tiros-enquanto-dava-aula-de-jiu-j.txt (Editoria: Solidariedade e Comunidade)
+[2026-08-09 00:03:57]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/parceira-inesperada-policial-corre-ao-lado-de-atleta-que-que.txt (Editoria: Esportes e Aventura)
+[2026-08-09 00:04:02]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/2ª-corrida-da-polícia-civil-abre-inscrições-para-caminhada-e.txt (Editoria: Esportes e Aventura)
+[2026-08-09 00:04:06]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/últimas-vagas-para-a-2ª-corrida-com-o-senhor-bom-jesus-em-gu.txt (Editoria: Esportes e Aventura)
+[2026-08-09 00:04:10]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/concurso-bombeiro-ma-são-800-vagas-inscreva-se.txt (Editoria: Carreira e Conquistas)
+[2026-08-09 00:04:16]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/policial-é-morto-a-tiros-durante-aula-de-jiu-jitsu-em-vg.txt (Editoria: Esportes e Aventura)
+[2026-08-09 00:04:23]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/morte-de-pm-durante-aula-de-jiu-jitsu-em-mt-teria-sido-motiv.txt (Editoria: Esportes e Aventura)
+[2026-08-09 00:04:25] Buscando: [Ciência e Tecnologia] ...
+[2026-08-09 00:04:26]   Resultados retornados: 10
+[2026-08-09 00:04:38]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/prêmio-mercosul-de-ciência-tecnologia-e-inovação-inscrições-.txt (Editoria: Ciência e Tecnologia)
+[2026-08-09 00:04:41]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/4ª-edição-do-mind7-fortalece-debate-sobre-inovação-e-empreen.txt (Editoria: Ciência e Tecnologia)
+[2026-08-09 00:04:47]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/projeto-disciplina-uso-de-recursos-públicos-e-concessão-de-b.txt (Editoria: Ciência e Tecnologia)
+[2026-08-09 00:04:56]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/acidentes-de-moto-provocam-pressão-no-sistema-único-de-saúde.txt (Editoria: Ciência e Tecnologia)
+[2026-08-09 00:05:06]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/cfm-abre-inscrições-para-o-xii-fórum-de-medicina-do-trabalho.txt (Editoria: Ciência e Tecnologia)
+[2026-08-09 00:05:13]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/pesquisador-da-universidade-de-oxford-visita-rio-das-ostras.txt (Editoria: Ciência e Tecnologia)
+[2026-08-09 00:05:18]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/ufersa-entrega-cartão-pesquisador-a-25-docentes-contemplados.txt (Editoria: Ciência e Tecnologia)
+[2026-08-09 00:05:24]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/inteligência-artificial-na-educação-médica-entre-a-inovação-.txt (Editoria: Ciência e Tecnologia)
+[2026-08-09 00:05:30]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/valor-inovação-no-5º-lugar-natura-mantém-olfato-fino-para-no.txt (Editoria: Ciência e Tecnologia)
+[2026-08-09 00:05:33] Buscando: [Ciência e Tecnologia] ...
+[2026-08-09 00:05:33]   Resultados retornados: 0
+[2026-08-09 00:05:36] Buscando: [Solidariedade e Comunidade] ...
+[2026-08-09 00:05:37]   Resultados retornados: 6
+[2026-08-09 00:05:44]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/hspm-homenageará-os-pais-pelo-seu-dia.txt (Editoria: Artes e Literatura)
+[2026-08-09 00:05:48]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/uso-das-redes-sociais-na-medicina-será-tema-de-aula.txt (Editoria: Ciência e Tecnologia)
+[2026-08-09 00:05:54]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/8-de-agosto-é-o-dia-nacional-de-prevenção-e-controle-do-cole.txt (Editoria: Solidariedade e Comunidade)
+[2026-08-09 00:05:58]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/hspm-abre-a-12-turma-do-curso-à-distância-aprimoramento-em-q.txt (Editoria: Carreira e Conquistas)
+[2026-08-09 00:06:06]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/desospitalização-será-tema-do-ii-fórum-de-saúde-do-hspm.txt (Editoria: Ciência e Tecnologia)
+[2026-08-09 00:06:10]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/hspm-realiza-série-de-encontros-psicoeducativos-para-familia.txt (Editoria: Solidariedade e Comunidade)
+[2026-08-09 00:06:13] Buscando: [Histórias e Superação] ...
+[2026-08-09 00:06:14]   Resultados retornados: 10
+[2026-08-09 00:06:14] [AVISO] Scraper API falhou para https://www.instagram.com/reel/Dbwaz5tDaut/: 403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=5a40d600da34173c51b2a4f83b57ac08&url=https%3A%2F%2Fwww.instagram.com%2Freel%2FDbwaz5tDaut%2F&render=false
+[2026-08-09 00:06:16]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/08/09/opinião-carolina-brígido-magistrados-reivindicam-pagamentos-.txt (Editoria: Carreira e Conquistas)
+[2026-08-09 00:06:19] Buscando: [Carreira e Conquistas] ...
+[2026-08-09 00:06:20]   Resultados retornados: 8
+[2026-08-09 00:06:22] === Mineracao concluida. 31 novos rascunhos salvos em pre_curadoria/. ===
+[2026-08-09 00:06:22] Utilize scripts/promover_materia.py para aprovar e publicar as materias.
+[2026-08-09 00:06:22] === Iniciando minerador de Protagonistas ("Vida Alem do Trabalho") ===
+[2026-08-09 00:06:22] URLs conhecidas no historico: 82
+[2026-08-09 00:06:22] Buscando eixo humano: [Literatura e Artes] ...
+[2026-08-09 00:06:23]   Resultados brutos: 10
+[2026-08-09 00:06:27]   [RASCUNHO PROTAGONISTA] protagonista_professor-da-atitus-lança-livro-sobre-patentes-essencia.txt (Fonte: Atitus)
+[2026-08-09 00:06:34]   [RASCUNHO PROTAGONISTA] protagonista_médico-apaixonado-por-enologia-lança-livro-em-três-cora.txt (Fonte: G1)
+[2026-08-09 00:06:40]   [RASCUNHO PROTAGONISTA] protagonista_médico-e-poeta-lança-livro-no-ideal-clube.txt (Fonte: Mais)
+[2026-08-09 00:06:48]   [RASCUNHO PROTAGONISTA] protagonista_médico-de-rio-negrinho-lança-livro-de-ficção-científica.txt (Fonte: Gazetasbs)
+[2026-08-09 00:06:51]   [LINK MORTO] HTTP 403: https://monitormercantil.com.br/ubm-lanca-livro-mais-ser-do-direito-de-leonardo-iorio/
+[2026-08-09 00:07:03]   [RASCUNHO PROTAGONISTA] protagonista_assessor-econômico-da-fiec-lança-livro-sobre-estratégia.txt (Fonte: Www1)
+[2026-08-09 00:07:06]   [LINK MORTO] HTTP 403: https://www.impactonoticias.com.br/2026/08/professor-rildo-xapuri-lanca-livro-sobre-sua-trajetoria-do-acre-a-adamantina/
+[2026-08-09 00:07:08]   [RASCUNHO PROTAGONISTA] protagonista_lauro-chaves-neto-lança-livro-sobre-estratégia-e-uso-da.txt (Fonte: Portalin)
+[2026-08-09 00:07:18]   [RASCUNHO PROTAGONISTA] protagonista_delegado-lança-livro-sobre-facções-criminosas-e-governa.txt (Fonte: Delegados)
+[2026-08-09 00:07:21]   [LINK MORTO] HTTP 403: https://wscom.com.br/midias-entretenimento/cultura/2026/07/27/ninno-amorim-lanca-livro-antropologia-da-cachaca-ufpb/
+[2026-08-09 00:07:23] Buscando eixo humano: [Literatura e Artes] ...
+[2026-08-09 00:07:24]   Resultados brutos: 0
+[2026-08-09 00:07:26] Buscando eixo humano: [Esportes e Desafios] ...
+[2026-08-09 00:07:27]   Resultados brutos: 3
+[2026-08-09 00:07:30]   [RASCUNHO PROTAGONISTA] protagonista_maratonista-olímpico-daniel-ferreira-é-encontrado-vivo-.txt (Fonte: Tnh1)
+[2026-08-09 00:07:35]   [RASCUNHO PROTAGONISTA] protagonista_atleta-de-castro-daire-supera-prova-extrema-do-triatlo-.txt (Fonte: Diarioviseu)
+[2026-08-09 00:07:47]   [RASCUNHO PROTAGONISTA] protagonista_adolescente-morre-após-apontar-arma-para-a-gm-durante-p.txt (Fonte: Leojunior)
+[2026-08-09 00:07:52] Buscando eixo humano: [Esportes e Desafios] ...
+[2026-08-09 00:07:54]   Resultados brutos: 1
+[2026-08-09 00:07:57]   [RASCUNHO PROTAGONISTA] protagonista_olimpíadas-rio-2016-completam-10-anos-nesta-quarta-feir.txt (Fonte: Correiodamanha)
+[2026-08-09 00:08:02] Buscando eixo humano: [Entretenimento e Cultura Pop] ...
+[2026-08-09 00:08:03]   Resultados brutos: 2
+[2026-08-09 00:08:05]   [RASCUNHO PROTAGONISTA] protagonista_classe-média-endividada-por-que-tantas-famílias-estão-v.txt (Fonte: Tribunadosertao)
+[2026-08-09 00:08:15]   [RASCUNHO PROTAGONISTA] protagonista_quem-é-indi-lunar-mãe-do-segundo-filho-do-apresentador-.txt (Fonte: UOL)
+[2026-08-09 00:08:20] Buscando eixo humano: [Entretenimento e Cultura Pop] ...
+[2026-08-09 00:08:21]   Resultados brutos: 2
+[2026-08-09 00:08:23]   [RASCUNHO PROTAGONISTA] protagonista_arthur-henrique-farah-mesquita-rosi-aires-e-soldado-sam.txt (Fonte: Folhabv)
+[2026-08-09 00:08:29]   [RASCUNHO PROTAGONISTA] protagonista_influencer-morre-vítima-de-pneumonia-e-deixa-mensagem-r.txt (Fonte: Br)
+[2026-08-09 00:08:34] Buscando eixo humano: [Voluntariado e Causa Social] ...
+[2026-08-09 00:08:34]   Resultados brutos: 0
+[2026-08-09 00:08:37] Buscando eixo humano: [Voluntariado e Causa Social] ...
+[2026-08-09 00:08:38]   Resultados brutos: 0
+[2026-08-09 00:08:40] Buscando eixo humano: [Trajetoria e Superacao] ...
+[2026-08-09 00:08:41]   Resultados brutos: 0
+[2026-08-09 00:08:44] Buscando eixo humano: [Trajetoria e Superacao] ...
+[2026-08-09 00:08:44]   Resultados brutos: 0
+[2026-08-09 00:08:47] === Mineracao de Protagonistas concluida. 15 novas histórias salvas em pre_curadoria/. ===
+[2026-08-09 00:08:47] === Iniciando Radar de Concursos ===
+[2026-08-09 00:08:47] Editais existentes no radar: 5
+[2026-08-09 00:08:47] Buscando concursos: "inscrições abertas" ("concurso público" OR "processo seletivo") ("fed...
+[2026-08-09 00:08:48]   Resultados: 10
+[2026-08-09 00:08:48]   [NOVO EDITAL] Instituto ACCESS
+[2026-08-09 00:08:48]   [NOVO EDITAL] COMPEC - Concursos
+[2026-08-09 00:08:48]   [NOVO EDITAL] Concursos Abertos: 50 mil vagas esperam por você! VEJA!
+[2026-08-09 00:08:48]   [NOVO EDITAL] Quadrix
+[2026-08-09 00:08:48]   [NOVO EDITAL] tenção! O Instituto Federal do Sudeste de Minas Gerais abriu
+[2026-08-09 00:08:48]   [NOVO EDITAL] Concursos e seletivos - INSTITUTO FEDERAL MINAS GERAIS
+[2026-08-09 00:08:48]   [NOVO EDITAL] Concursos Federais 2026 - Concursos Públicos no Brasil
+[2026-08-09 00:08:48]   [NOVO EDITAL] Concursos com Inscrições Abertas - Instituto Avalia
+[2026-08-09 00:08:50] Buscando concursos: "edital publicado" "concurso público" ("DOU" OR "Diário Oficial") "vag...
+[2026-08-09 00:08:51]   Resultados: 10
+[2026-08-09 00:08:51]   [NOVO EDITAL] Foi publicado o Edital nº 228/2026 do Concurso Público ... -
+[2026-08-09 00:08:51]   [NOVO EDITAL] Notícias sobre edital de 07 de agosto de 2026 - Estratégia C
+[2026-08-09 00:08:51]   [NOVO EDITAL] [PDF] EDITAL Nº 1637, DE 13 DE JULHO DE 2026 - DOU - Letras
+[2026-08-09 00:08:51]   [NOVO EDITAL] Concurso SES TO 2026: edital publicado, 5.124 vagas
+[2026-08-09 00:08:51]   [NOVO EDITAL] Bora de mais concurso hoje? O Diário Oficial (DOE), desta se
+[2026-08-09 00:08:51]   [NOVO EDITAL] [PDF] EDITAL Nº 01/2026 ABERTURA DO CONCURSO PÚBLICO ...
+[2026-08-09 00:08:51]   [NOVO EDITAL] Diretoria-Geral: edital 2/2026 - Concurso Presidência - Valo
+[2026-08-09 00:08:51]   [NOVO EDITAL] Concurso Câmara dos Deputados: 3° edital previsto. Veja!
+[2026-08-09 00:08:51]   [NOVO EDITAL] Concurso Unificado RN tem edital publicado com 175 vagas; ve
+[2026-08-09 00:08:51]   [NOVO EDITAL] Concursos — Ministério do Trabalho e Emprego - Portal Gov.br
+[2026-08-09 00:08:54] Buscando concursos: site:cebraspe.org.br "inscrições" 2026...
+[2026-08-09 00:08:55]   Resultados: 10
+[2026-08-09 00:08:57] Buscando concursos: site:conhecimento.fgv.br "concurso" "inscrições" 2026...
+[2026-08-09 00:08:58]   Resultados: 10
+[2026-08-09 00:08:58]   [NOVO EDITAL] Concurso Público para o Ministério Público do Estado do Espí
+[2026-08-09 00:08:58]   [NOVO EDITAL] Concurso Público para a Defensoria Pública do Estado do Rio 
+[2026-08-09 00:08:58]   [NOVO EDITAL] [PDF] EDITAL DE CONCURSO Nº 01/2026 O PROCURADOR-GERAL DE ..
+[2026-08-09 00:08:58]   [NOVO EDITAL] Concurso Público para a Receita Federal do Brasil
+[2026-08-09 00:08:58]   [NOVO EDITAL] [PDF] 2ª RETIFICAÇÃO DO EDITAL DE CONCURSO Nº 01/2026 ...
+[2026-08-09 00:08:58]   [NOVO EDITAL] [PDF] CRONOGRAMA PREVISTO CONCURSO PÚBLICO PARA ...
+[2026-08-09 00:08:58]   [NOVO EDITAL] Concurso Público para o Ministério Público do Estado de Goiá
+[2026-08-09 00:08:58]   [NOVO EDITAL] [PDF] edital nº 01/2026, de 26 de maio de 2026 - FGV Conheci
+[2026-08-09 00:09:01] Buscando concursos: site:institutoaocp.org.br "edital" "inscrições abertas" 2026...
+[2026-08-09 00:09:01]   Resultados: 10
+[2026-08-09 00:09:01]   [NOVO EDITAL] seduc - secretaria de educação do estado do rio grande do su
+[2026-08-09 00:09:01]   [NOVO EDITAL] prefeitura municipal de vitória da conquista - ba - Institut
+[2026-08-09 00:09:01]   [NOVO EDITAL] reda/smed - secretaria municipal de educação de salvador
+[2026-08-09 00:09:01]   [NOVO EDITAL] sad/pe - secretaria de administração do estado de pernambuco
+[2026-08-09 00:09:01]   [NOVO EDITAL] mpgo - ministério público do estado de goiás - go - Institut
+[2026-08-09 00:09:01]   [NOVO EDITAL] hu brasil - empresa brasileira de serviços hospitalares - In
+[2026-08-09 00:09:01]   [NOVO EDITAL] ifce - instituto federal de educação, ciência e tecnologia d
+[2026-08-09 00:09:01]   [NOVO EDITAL] tj/pr - tribunal de justiça do estado do paraná - Instituto 
+[2026-08-09 00:09:01]   [NOVO EDITAL] IGP-RS - INSTITUTO-GERAL DE PERÍCIAS - Instituto AOCP
+[2026-08-09 00:09:01]   [NOVO EDITAL] cesama - companhia de saneamento municipal - mg - Instituto 
+[2026-08-09 00:09:04] Buscando concursos: "concurso público" ("Receita Federal" OR "Banco Central" OR "Senado" O...
+[2026-08-09 00:09:05]   Resultados: 10
+[2026-08-09 00:09:05]   [NOVO EDITAL] Concurso Receita Federal 2026: autorizado, banca em breve!
+[2026-08-09 00:09:05]   [NOVO EDITAL] Concursos - STJ
+[2026-08-09 00:09:05]   [NOVO EDITAL] EDITAL ATÉ JANEIRO DE 2027! O novo concurso do Banco Central
+[2026-08-09 00:09:05]   [NOVO EDITAL] Ministério da Gestão autoriza novo concurso para a Receita F
+[2026-08-09 00:09:05]   [NOVO EDITAL] Concursos Tribunais: mais de 8 mil vagas previstas para 2026
+[2026-08-09 00:09:05]   [NOVO EDITAL] TCU 25 AUFC - Cebraspe
+[2026-08-09 00:09:05]   [NOVO EDITAL] Concurso da Receita Federal autorizadoooo!! 116 vagas para .
+[2026-08-09 00:09:05]   [NOVO EDITAL] Concurso Receita Federal 2026: Edital autorizado! 146 vagas!
+[2026-08-09 00:09:05]   [NOVO EDITAL] Concurso Receita Federal 2026: Edital autorizado! 146 vagas!
+[2026-08-09 00:09:08] Buscando concursos: "concurso público" ("policial federal" OR "agente federal" OR "delegad...
+[2026-08-09 00:09:09]   Resultados: 10
+[2026-08-09 00:09:09]   [NOVO EDITAL] Concursos — Polícia Federal - Portal Gov.br
+[2026-08-09 00:09:09]   [NOVO EDITAL] A Polícia Federal publicou o Edital nº 41/2026, convocando .
+[2026-08-09 00:09:09]   [NOVO EDITAL] Veja requisitos e etapas do concurso da Polícia Federal (PF)
+[2026-08-09 00:09:09]   [NOVO EDITAL] polícia federal - Cebraspe
+[2026-08-09 00:09:09]   [NOVO EDITAL] Concurso delegado MG 2026: vagas, banca e histórico
+[2026-08-09 00:09:09]   [NOVO EDITAL] Edital Delegado PF: PUBLICADO; R$ 26,8 mil; 120 VAGAS!
+[2026-08-09 00:09:11] Buscando concursos: "concurso público" ("Anatel" OR "ANAC" OR "ANVISA" OR "IBGE" OR "IPEA"...
+[2026-08-09 00:09:13]   Resultados: 10
+[2026-08-09 00:09:13]   [NOVO EDITAL] Trabalhe Conosco - IBGE
+[2026-08-09 00:09:13]   [NOVO EDITAL] Concurso IBGE 2026: sai edital com 8 mil vagas de nível médi
+[2026-08-09 00:09:13]   [NOVO EDITAL] Concurso Anatel: 50 vagas; nomeações divulgadas! VEJA
+[2026-08-09 00:09:13]   [NOVO EDITAL] O Banco Central do Brasil (Bacen) pode abrir em breve um nov
+[2026-08-09 00:09:13]   [NOVO EDITAL] Concurso - Ipea
+[2026-08-09 00:09:13]   [NOVO EDITAL] Concurso BACEN 2026 : r/concursospublicos - Reddit
+[2026-08-09 00:09:13]   [NOVO EDITAL] Concurso Bacen: 170 vagas são autorizadas!
+[2026-08-09 00:09:13]   [NOVO EDITAL] [PDF] AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES (ANATEL ...
+[2026-08-09 00:09:15] === Radar concluído. 59 novos editais adicionados. Total: 64. ===
+[2026-08-09 00:09:15] Revise os editais com status "Em Analise" e altere para "Inscrições Abertas" apos verificacao manual.
