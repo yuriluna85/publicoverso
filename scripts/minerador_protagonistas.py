@@ -372,7 +372,7 @@ def main():
             config.registrar_log(f'  [ERRO] Serper API: {e}')
             continue
 
-        blacklist_descartes = config.carregar_blacklist_descartes()
+        config.registrar_log(f'  Resultados brutos: {len(resultados)}')
 
         for res in resultados:
             url_bruta = res.get('link', '')
@@ -380,15 +380,6 @@ def main():
             resumo = res.get('snippet', '')
 
             if not url_bruta or url_bruta in urls_conhecidas:
-                continue
-
-            # Despolui a URL e gera o slug do título
-            url_canon = config.normalizar_url_para_deduplicacao(url_bruta)
-            slug_titulo = config.normalizar_titulo_para_slug(titulo)
-
-            # Consulta Blacklist Persistente de Descartes
-            if url_canon in blacklist_descartes or slug_titulo in blacklist_descartes:
-                config.registrar_log(f'  [IGNORADO BLACKLIST] {titulo[:60]}...')
                 continue
 
             # Filtro Factual de Servidor Público Brasileiro

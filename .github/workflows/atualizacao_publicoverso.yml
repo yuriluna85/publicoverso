@@ -2,8 +2,9 @@ name: Mineracao e Atualizacao Publicoverso
 
 on:
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '0 12,16,21 * * 1-5'
   workflow_dispatch:
+
 
 jobs:
   build-and-mine:
@@ -45,13 +46,6 @@ jobs:
         run: |
           python scripts/radar_movimentacao_servidores.py
 
-      - name: Executar Extrator do Diário Oficial (DOU / DOE)
-        env:
-          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
-          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
-        run: |
-          python scripts/extrator_diario_oficial.py
-
       - name: Executar Radar de Concursos
         env:
           SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
@@ -59,9 +53,9 @@ jobs:
         run: |
           python scripts/radar_concursos.py
 
-      - name: Executar Curador e Classificador Semântico (Sanitização & Desambiguação)
+      - name: Classificar Notícias e Agrupar Editorias (Policial & Segurança Pública)
         run: |
-          python scripts/agent_curador_semantico.py --reclassificar-tudo
+          python scripts/classificador_noticias.py
 
       - name: Build de Paginas Estaticas
         run: |

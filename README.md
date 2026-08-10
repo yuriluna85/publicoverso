@@ -86,7 +86,8 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizações (Changelog)
 
-### 09/08/2026 (Sessão 11 - Correções Finas de Layout CSS, Convite Institucional Autoral e Reclassificação de Temas do STF e Histórias de Superação)
+### 09/08/2026 (Sessão 11 - Barreira Tripla Anti-Propaganda Comercial, Correções Finas de Layout CSS, Convite Institucional Autoral e Reclassificação de Temas do STF)
+- **Implementação da Barreira Tripla Anti-Propaganda Comercial e Captação Advocatícia Privada:** Integração de filtro algorítmico estrito em três camadas (scripts Python de mineração e verificação semântica, bem como nos módulos JavaScript do frontend `app.js`, `app_categoria.js` e `app_noticias.js`). A regra determina a desqualificação imediata de ofertas de serviços jurídicos privados e captação advocatícia (tais como "defesa em PAD", "defesa de carreira" e "escritório especializado") como matéria jornalística, descartando-as integralmente no servidor e no navegador. Conteúdos dessa natureza só poderão ser veiculados mediante contratação formal de espaço publicitário.
 - **Correção do Layout CSS de `.news-row-item` (`index.css`):** Ajuste da propriedade de largura para 100%, eliminando a restrição de dimensão anterior que ocasionava o esmagamento dos títulos das notícias a 140px.
 - **Esvaziamento e Atualização da Seção de Artigos Autorais:** Reinicialização da base de dados `data/artigos_autorais.json` (`[]`) e substituição da seção no portal por um convite institucional para submissão de colunas autorais.
 - **Reclassificação Temática de Decisões do STF e Legislação de C&T:** Reagrupamento dos conteúdos referentes aos Temas de Repercussão Geral do STF (1019, 1061 e 1261) e da legislação aplicável a Ciência e Tecnologia para a categoria "Jurídico e PAD".
@@ -147,59 +148,16 @@ Antes de solicitar aprovacao do AdSense:
 - Criado o mini servidor local Python nativo `server.py` na porta 8088 com suporte a MIME types UTF-8, no-cache em desenvolvimento e logs limpos.
 - Criado o executável Windows `iniciar_servidor_local.bat` para disparo automatizado com 1 clique e abertura direta do navegador em `http://localhost:8088`.
 - Inserido o e-mail de contato e curadoria direta `publicoverso@gmail.com` em todas as páginas (`contato.html`, `sobre.html`, `privacidade.html`, `termos.html`, `build_materias.py` e Mega-Rodapé Editorial).
-### 09/08/2026 (Sessao 18 - Arquitetura Modular do Super Portal e Simulador de Diárias Estaduais)
-- Implementada a **Arquitetura Modular em Subpastas (`apps/`)**, transformando o Publicoverso em um Super Portal do Servidorismo Público com escalabilidade ilimitada.
-- Criada a aplicação dedicada **Simulador de Diárias Estaduais** (`apps/diarias-estaduais/index.html` e `apps/diarias-estaduais/app.js`), portando o banco regulamentar de decretos e memórias de cálculo dos **26 Estados da Federação e Distrito Federal**.
-- Migrada e refatorada a aplicação **Monitor do Diário Oficial** (`apps/diario-oficial/index.html` e `apps/diario-oficial/app.js`), 100% alinhada ao System Design Master `index.css` (Navbar SVG, Bento Grid, KPIs, filtros por tipo de ato e links de portarias).
-- Migrada a aplicação **Radar de Concursos** (`apps/radar-concursos/index.html` e `apps/radar-concursos/app.js`).
-- Criados arquivos ponte de retrocompatibilidade na raiz (`diario-oficial.html`, `simulador-diarias-estados.html` e `concursos.html`).
-- Atualizados os scripts de indexação e extratores (`extrator_diario_oficial.py`, `build_materias.py` e `pipeline_completo.py`) para leitura e gravação no diretório particionado de dados `data/diario_oficial/`.
-- Atualizada a biografia oficial e o perfil de **Yuri de Oliveira Luna e Almeida (YLuna85 LABs)** na página `sobre.html`.
-- Atualizada a navegação global e rodapés em 100% das páginas do portal.
+- Propagado o Mega-Rodapé Editorial em 4 Colunas para 100% das páginas institucionais secundárias.
+- Varredura e homologação de links e ativos externos com protocolo HTTPS estrito.
 
-### 09/08/2026 (Sessao 17 - Monitor de Movimentações do Diário Oficial - DOU/DOE)
-- Desenvolvida a nova área especializada e independente do portal: **Monitor do Diário Oficial** (`diario-oficial.html` e `app_diario_oficial.js`).
-- Criado o robô extrator `scripts/extrator_diario_oficial.py` para consulta de atos de pessoal na Seção 2 do DOU (`site:in.gov.br/web/dou/-/`) e Diários Estaduais.
-- Segmentação em 6 categorias de atos oficiais: (1) Admissões & Nomeações, (2) Convocações de Aprovados, (3) Exonerações & Dispensas, (4) Aposentadorias, (5) Demissões & Penalidades (PAD), (6) Comissões & Funções Gratificadas (CD, FG, FCE).
-- Implementada a arquitetura de armazenamento particionado por **Ano e Mês em arquivos CSV** (`data/diario_oficial/AAAA/MM/movimentacoes_AAAA_MM.csv`) com link direto para a portaria original no `in.gov.br`.
-- Desenvolvida a interface `diario-oficial.html` em Bento Grid / Dark Tech com KPIs do mês, filtros por chips de tipo de ato, seletor de mês/ano, busca rápida por nome de servidor ou órgão, tabela responsiva e botão de download do CSV do mês.
-- Integrado o robô no orquestrador local `scripts/pipeline_completo.py` e na esteira agendada do GitHub Actions (`.github/workflows/atualizacao_publicoverso.yml`).
+### 10/08/2026 (Sessao 6 - Extrator Nativo do DOU & Automação GitHub Actions 100% Nuvem)
+- Implementada a Camada 1 de mineração nativa direta na busca pública do Diário Oficial da União (`in.gov.br`) no script `scripts/radar_movimentacao_servidores.py` com suporte a paginação multi-página (`page=1`, `page=2`).
+- Solucionada a limitação de dependência exclusiva de indexadores de terceiros (Google News / Serper API), permitindo que atos oficiais de Seção 2 (exoneração a pedido, demissão a bem do serviço público, portarias de nomeação, vacância e aposentadorias) sejam extraídos diretamente em tempo real no mesmo dia da publicação oficial.
+- Atualizado o `requirements.txt` com as bibliotecas `beautifulsoup4` e `lxml` para suporte integral no container `ubuntu-latest` do GitHub Actions.
+- Reconfigurado o workflow `.github/workflows/atualizacao_publicoverso.yml` com cron triplo (`0 12,16,21 * * 1-5` -> 9h, 13h e 18h BRT) coincidindo com a publicação e atualizações do DOU.
+- Extraídos e registrados no acervo (`data/acervo_links_minerados.json` e `.csv`) 64 atos oficiais do DOU do dia.
 
-### 09/08/2026 (Sessao 16 - Blindagem de Robôs Mineradores e Automação GitHub Actions)
-- Centralizadas as funções canônicas de deduplicação por slug (`normalizar_titulo_para_slug`) e despoluição de URLs (`normalizar_url_para_deduplicacao`) no módulo global `scripts/config.py`.
-- Criado o mecanismo de consulta e persistência da blacklist de descartes (`data/blacklist_descartes.json`), evitando que matérias já rejeitadas anteriormente (políticas, sem vínculo público ou mocks) gastem raspagem ou entrem temporariamente no acervo.
-- Blindados os robôs `minerador_protagonistas.py` e `radar_movimentacao_servidores.py` com pré-deduplicação por slug de 8 palavras e decodificação imediata de links de redirecionamento `google.com/goto?url=...`.
-- Atualizados o orquestrador local `scripts/pipeline_completo.py` e a automação do GitHub Actions (`.github/workflows/atualizacao_publicoverso.yml`) para invocar obrigatoriamente `agent_curador_semantico.py --reclassificar-tudo` antes do build estático.
-- Homologação completa: pipeline executado em 56s com 100% de sucesso.
-
-### 09/08/2026 (Sessao 15 - Deduplicação Inteligente por Slug e Expurgo Absoluto de Dados Inventados)
-- Implementado o motor de deduplicação inteligente em multi-camada (`normalizar_titulo_para_slug` e `normalizar_url_para_deduplicacao`), eliminando réplicas da mesma matéria com URLs de redirecionamento distintas (ex.: matéria da policial em Umuarama minerada 3 vezes).
-- Executado o expurgo absoluto e definitivo de 100% dos dados fictícios/mocks residuais no acervo (expurgadas matérias de demonstração com fonte "Curadoria Publicoverso" ou URLs fictícias `/exemplo`).
-- Adotada a exibição condicional graciosa no frontend (`app.js` e landing pages): se uma editoria não possuir notícias reais mineradas no momento, a interface oculta seções vazias sem inventar dados.
-- Reclassificadas matérias de eventos/celebrações institucionais (ex.: HSPM homenageará os pais pelo seu dia) para **Solidariedade e Comunidade**.
-- Sanitização concluída: acervo higienizado para 23 notícias puras, únicas e 100% autênticas.
-
-### 09/08/2026 (Sessao 14 - Calibragem Semântica Fina & Gatekeeper de Vínculo Público)
-- Implementada a validação factual de vínculo funcional público obrigatório no Gatekeeper de triagem (`TERMOS_VINCULO_PUBLICO_OBRIGATORIO`). Notícias genéricas sem menção a servidores públicos (ex.: maratonista Daniel Ferreira) são sumariamente descartadas.
-- Implementado o filtro estrito anti-eleitoral e político-partidário (`TERMOS_EXPURGO_POLITICO_ELEITORAL`), eliminando candidaturas ao governo/prefeitura e convenções partidárias (ex.: candidatos ao governo de Roraima).
-- Implementado o expurgo de documentos legislativos arcaicos (ex.: PEC de 1993).
-- Refatorada a matriz determinística de 9 editorias:
-  - Fatos criminais, assaltos e acidentes com servidores redirecionados para **Policial e Segurança Pública** (corrigindo desvios em Artes).
-  - Temas do STF (Tema 1019) e conflitos de interesses/regras de conduta (Fachin) redirecionados para **Jurídico e PAD** (corrigindo desvios em Ciência).
-  - Livros e romances reais de servidores mantidos em **Artes e Literatura**.
-- Executada a sanitização retroativa: 35 matérias 100% legítimas mantidas com categorização impecável.
-
-### 09/08/2026 (Sessao 13 - Mineração Aberta da Vida Além do Trabalho & Expurgo Total de Redes Sociais)
-- Reformulada a engenharia de busca do Publicoverso: mineração aberta em toda a internet (sem cercadinho de domínios), cobrindo portais de sindicatos (SINPF, FASUBRA, SINASEFE, ANDES, SINDIFISCO), associações de classe (ADPESP, delegados.com.br), portais regionais/locais e imprensa nacional.
-- Implementadas Dorks de cauda longa focadas no protagonismo humano da "Vida dos Servidores Para Além do Trabalho" (livros, romances, poesia, maratonas, jiu-jitsu, MasterChef, BBB, programas de TV, voluntariado, ONGs e superação).
-- Implementada a blindagem quádrupla anti-redes sociais (Instagram, Facebook, LinkedIn, TikTok, Reddit, X/Twitter, Threads, YouTube, Pinterest, Kwai) nas Dorks, no `agent_curador_semantico.py` e nas travas defensivas do frontend JavaScript (`app.js`, `app_noticias.js`, `app_categoria.js`).
-- Executada a curadoria retroativa, eliminando 100% dos posts de redes sociais e mantendo 75 notícias puras de veículos noticiosos e comunicados institucionais de imprensa.
-
-### 09/08/2026 (Sessao 12 - Agente Curador e Classificador Semântico de Notícias)
-- Criado o módulo autônomo `scripts/agent_curador_semantico.py` para sanitização semântica, desambiguação e descarte de não-notícias do Publicoverso.
-- Implementado o pipeline de 4 camadas: (1) Garbage Collector para expurgo de PDFs estáticos de órgãos (`@@download.pdf`), acórdãos forenses do STJ/Jusbrasil, propagandas de escritórios advocatícios/apostilas e ruído social; (2) Enriquecedor textual leve via raspagem de meta description e parágrafos iniciais; (3) Matriz hierárquica de 9 níveis com contra-indicações estritas para eliminar falsos cognatos (ex.: "show" em homicídio -> Policial; "aposentadoria" em Física -> Carreira); (4) Normalização para as 8 landing pages.
-- Integrado o novo agente ao `scripts/pipeline_completo.py` e ao agendamento do GitHub Actions em `.github/workflows/atualizacao_publicoverso.yml`.
-- Executada a higienização retroativa completa no acervo (`data/acervo_links_minerados.json`), descartando 10 itens de lixo/duplicatas e reclassificando 8 matérias com alta precisão factual.
 
 ### 09/08/2026 (Sessao 5 - Reestruturacao Editorial, Mega-Roda-pe e Banner LGPD)
 - Reestruturado o System Design de Cores (`SYSTEM_DESIGN_PUBLICOVERSO.md`) calibrando a luminosidade dos tokens de leitura para garantir contraste estrito WCAG 2.1 AA/AAA em todos os 3 modos de cor.

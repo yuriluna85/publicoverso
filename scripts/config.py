@@ -27,57 +27,10 @@ ARQUIVO_NOTICIAS = RAIZ_PROJETO / 'data' / 'noticias_curadoria.json'
 ARQUIVO_CONCURSOS = RAIZ_PROJETO / 'data' / 'concursos_radar.json'
 ARQUIVO_ARTIGOS = RAIZ_PROJETO / 'data' / 'artigos_autorais.json'
 ARQUIVO_HISTORICO = RAIZ_PROJETO / 'data' / 'historico_mineracao.json'
-ARQUIVO_BLACKLIST = RAIZ_PROJETO / 'data' / 'blacklist_descartes.json'
 DIRETORIO_RASCUNHOS = RAIZ_PROJETO / 'materias' / 'conteúdo'
 DIRETORIO_PRE_CURADORIA = RAIZ_PROJETO / 'pre_curadoria'
 DIRETORIO_PAGINAS = RAIZ_PROJETO / 'materias' / 'páginas'
 ARQUIVO_LOG = RAIZ_PROJETO / 'scripts' / 'log_mineracao.txt'
-
-import unicodedata
-from urllib.parse import urlparse, parse_qs
-
-def normalizar_titulo_para_slug(titulo):
-    """Gera um slug canônico das primeiras 8 palavras para deduplicação."""
-    if not titulo:
-        return ""
-    txt = unicodedata.normalize('NFKD', titulo).encode('ASCII', 'ignore').decode('utf-8').lower()
-    txt = re.sub(r'[^a-z0-9\s]', '', txt)
-    palavras = txt.split()
-    return " ".join(palavras[:8])
-
-def normalizar_url_para_deduplicacao(url):
-    """Limpa redirecionamentos do Google Serper e parâmetros de rastreamento."""
-    if not url:
-        return ""
-    url_lower = url.lower().strip()
-    if 'google.com/goto' in url_lower and 'url=' in url_lower:
-        parsed = urlparse(url)
-        params = parse_qs(parsed.query)
-        if 'url' in params and params['url']:
-            url_lower = params['url'][0].lower()
-    parsed = urlparse(url_lower)
-    netloc = parsed.netloc.replace('www.', '')
-    path = parsed.path.rstrip('/')
-    return f"{netloc}{path}"
-
-def carregar_blacklist_descartes():
-    """Carrega slugs e URLs descartados anteriormente."""
-    if not ARQUIVO_BLACKLIST.exists():
-        return set()
-    try:
-        with open(ARQUIVO_BLACKLIST, 'r', encoding='utf-8') as f:
-            dados = json.load(f)
-            return set(dados)
-    except Exception:
-        return set()
-
-def salvar_blacklist_descartes(blacklist_set):
-    """Persiste a blacklist de descartes em JSON."""
-    try:
-        with open(ARQUIVO_BLACKLIST, 'w', encoding='utf-8') as f:
-            json.dump(sorted(list(blacklist_set)), f, ensure_ascii=False, indent=2)
-    except Exception:
-        pass
 
 # --- Carregamento de Variaveis de Ambiente ---
 def _carregar_dotenv():
@@ -159,49 +112,50 @@ ANCORAS_VINCULO_PUBLICO_BR = [
     'embrapa', 'diário oficial da união', 'diário oficial do estado', 'dou'
 ]
 
-# Sufixo universal de exclusão de redes sociais e contextos irrelevantes
-SUFIXO_EXCLUSAO_REDES_E_LIXO = '-site:instagram.com -site:facebook.com -site:linkedin.com -site:tiktok.com -site:reddit.com -site:twitter.com -site:x.com -site:threads.net -site:youtube.com -site:pinterest.com -site:kwai.com -site:*.pt -Portugal -vereador -prefeito -deputado'
-
-# --- Dorks de Busca: Histórias Humanas e Vida Além do Trabalho ---
+# --- Dorks de Busca: Histórias Humanas ---
 DORKS_HISTORIAS = [
     # Categoria: Cultura Pop e Gastronomia
     {
         'categoria': 'Cultura Pop e Gastronomia',
-        'query': f'("servidor público" OR "servidora pública" OR "policial federal" OR "policial civil" OR "policial militar" OR "professor universitário" OR "médica do SUS" OR "analista judiciário" OR "auditor fiscal") AND ("BBB" OR "Big Brother" OR "MasterChef" OR "The Voice" OR "reality show" OR "gastronomia" OR "culinária" OR "stand-up comedy") {SUFIXO_EXCLUSAO_REDES_E_LIXO}',
+        'query': '("servidor público" OR "servidora pública" OR "policial federal" OR "policial civil" OR "policial militar" OR "professor universitário" OR "médica do SUS" OR "analista judiciário" OR "auditor fiscal") AND ("BBB" OR "Big Brother" OR "MasterChef" OR "The Voice" OR "reality show" OR "gastronomia" OR "culinária") -site:*.pt -Portugal -vereador -prefeito -deputado',
     },
     # Categoria: Artes e Literatura
     {
         'categoria': 'Artes e Literatura',
-        'query': f'("servidor público" OR "funcionário público" OR "servidora pública" OR "policial" OR "analista" OR "médico") AND ("lança livro" OR "lançou romance" OR "publicou livro" OR "autor do livro" OR "autora do livro" OR "exposição de arte" OR "artista plástico" OR "músico" OR "cantor" OR "poesia" OR "álbum musical") {SUFIXO_EXCLUSAO_REDES_E_LIXO}',
+        'query': '("servidor público" OR "funcionário público" OR "servidora pública") AND ("lança livro" OR "publicou livro" OR "autor de livro" OR "exposição de arte" OR "artista plástico" OR "músico" OR "cantor" OR "ator" OR "bailarino" OR "fotógrafo" OR "poesia") -site:*.pt -Portugal -vereador -prefeito',
     },
     # Categoria: Esportes e Aventura
     {
         'categoria': 'Esportes e Aventura',
-        'query': f'("servidor público" OR "servidora pública" OR "policial militar" OR "bombeiro militar" OR "guarda municipal" OR "enfermeira") AND ("atleta" OR "campeão" OR "maratona" OR "completou maratona" OR "jiu-jitsu" OR "faixa preta" OR "natação" OR "corrida de rua" OR "triatlo" OR "ironman" OR "subiu ao pódio") {SUFIXO_EXCLUSAO_REDES_E_LIXO}',
-    },
-    {
-        'categoria': 'Esportes e Aventura',
-        'query': f'("jogos dos servidores" OR "torneio dos servidores" OR "olimpíada dos servidores" OR "corrida do servidor público") AND ("sindicato" OR "associação" OR "prefeitura" OR "tribunal" OR "instituto federal") {SUFIXO_EXCLUSAO_REDES_E_LIXO}',
+        'query': '("servidor público" OR "servidora pública" OR "policial militar" OR "bombeiro militar" OR "guarda municipal concursado") AND ("atleta" OR "campeão" OR "maratona" OR "jiu-jitsu" OR "natação" OR "corrida" OR "triatlo" OR "ironman" OR "olimpíadas") -site:*.pt -Portugal -vereador -prefeito',
     },
     # Categoria: Ciência e Tecnologia
     {
         'categoria': 'Ciência e Tecnologia',
-        'query': f'("servidor público" OR "professora da rede pública" OR "pesquisador federal" OR "médica do SUS") AND ("prêmio internacional" OR "vence prêmio" OR "patente registrada" OR "descoberta científica" OR "criou aplicativo" OR "desenvolveu sistema" OR "inovação") {SUFIXO_EXCLUSAO_REDES_E_LIXO}',
+        'query': '("servidor público" OR "professora da rede pública" OR "pesquisador federal" OR "médica do SUS") AND ("prêmio internacional" OR "vence prêmio" OR "reconhecimento internacional" OR "patente registrada" OR "descoberta científica" OR "criou aplicativo" OR "desenvolveu sistema" OR "inovação") -site:*.pt -Portugal -vereador -prefeito',
+    },
+    {
+        'categoria': 'Ciência e Tecnologia',
+        'query': '("servidor do IF" OR "servidor da UFBA" OR "servidor da UFRJ" OR "servidor da Fiocruz" OR "servidor da Embrapa" OR "servidor do INPE" OR "pesquisador federal") AND ("descoberta" OR "prêmio" OR "artigo publicado" OR "conquista" OR "tecnologia") -site:*.pt -Portugal -vereador -prefeito',
     },
     # Categoria: Solidariedade e Comunidade
     {
         'categoria': 'Solidariedade e Comunidade',
-        'query': f'("servidor público" OR "funcionário público" OR "servidora pública") AND ("criou ONG" OR "projeto social independente" OR "fora do expediente" OR "fora do horário de trabalho" OR "voluntariado" OR "resgate de animais" OR "sopão comunitário") {SUFIXO_EXCLUSAO_REDES_E_LIXO}',
+        'query': '("servidor público" OR "funcionário público" OR "agente público estatutário") AND ("projeto social" OR "ong" OR "voluntariado" OR "ato de bravura" OR "salvou vidas" OR "heroísmo" OR "ação comunitária") -site:*.pt -Portugal -vereador -prefeito',
     },
     # Categoria: Histórias e Superação
     {
         'categoria': 'Histórias e Superação',
-        'query': f'("servidor público" OR "servidora pública") AND ("trajetória inspiradora" OR "de gari a" OR "de vigilante a" OR "de merendeira a" OR "de estagiário a" OR "superação" OR "aprovado em concurso" OR "aposentadoria" OR "legado de vida") {SUFIXO_EXCLUSAO_REDES_E_LIXO}',
+        'query': '("servidor público" OR "servidora pública") AND ("trajetória inspiradora" OR "de gari a" OR "superação" OR "aprovado em concurso" OR "aposentadoria" OR "30 anos de serviço" OR "virou médico" OR "virou juiz") -site:*.pt -Portugal -vereador -prefeito',
     },
     # Categoria: Carreira e Conquistas
     {
         'categoria': 'Carreira e Conquistas',
-        'query': f'("servidor público federal" OR "servidor estadual" OR "servidor municipal") AND ("toma posse" OR "cerimônia de posse" OR "nomeação" OR "progressão de carreira" OR "reestruturação de carreira" OR "RSC" OR "capacitação" OR "conquista de direitos") {SUFIXO_EXCLUSAO_REDES_E_LIXO}',
+        'query': '("servidor público federal" OR "servidor estadual" OR "servidor municipal") AND ("progressão de carreira" OR "reestruturação de carreira" OR "RSC" OR "capacitação" OR "conquista de direitos") -site:*.pt -Portugal -vereador -prefeito',
+    },
+    {
+        'categoria': 'Carreira e Conquistas',
+        'query': '(PCCTAE OR "plano de carreira" OR "reajuste salarial" OR "revisão geral anual" OR "licença capacitação" OR "afastamento para mestrado" OR "afastamento para doutorado") AND ("servidor público" OR "funcional") -site:*.pt -Portugal -vereador -prefeito',
     }
 ]
 

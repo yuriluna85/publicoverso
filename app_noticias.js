@@ -15,21 +15,6 @@
   let editoriaAtiva = 'Todas';
   let termoBusca = '';
 
-  // Trava de Segurança Defensiva Anti-Redes Sociais
-  const REDES_BANIDAS = ['instagram.com', 'facebook.com', 'linkedin.com', 'tiktok.com', 'reddit.com', 'twitter.com', 'x.com', 'threads.net', 'youtube.com', 'pinterest.com', 'kwai.com'];
-
-  function ehVeiculoNoticiosoValido(item) {
-    if (!item) return false;
-    const url = (item.url_original || item.url_materia || '').toLowerCase();
-    const fonte = (item.fonte || '').toLowerCase();
-    for (const r of REDES_BANIDAS) {
-      if (url.includes(r) || fonte.includes(r.split('.')[0])) {
-        return false;
-      }
-    }
-    return true;
-  }
-
   // --- Inicialização ---
   async function inicializar() {
     try {
@@ -45,8 +30,29 @@
       const urlsVistas = new Set();
       const mescla = [];
 
+      function ehPropagandaComercial(item) {
+        if (!item) return true;
+        const txt = ((item.titulo || '') + ' ' + (item.resumo || '') + ' ' + (item.fonte || '')).toLowerCase();
+        const termos = [
+          'sindicância contra você', 'sindicancia contra voce', 'pad contra você', 'pad contra voce',
+          'defesa técnica agora', 'defesa tecnica agora', 'contrate um advogado', 'advocacia especializada',
+          'escritório de advocacia', 'escritorio de advocacia', 'fale conosco pelo whatsapp',
+          'fale com nosso advogado', 'consulte nossos advogados', 'agende uma consulta', 'precisa de defesa',
+          'defenda seu cargo', 'fale com um especialista', 'nossos serviços jurídicos',
+          'nossos servicos juridicos', 'nosso escritório', 'nosso escritorio',
+          'prestamos assessoria jurídica', 'prestamos assessoria juridica',
+          'entre em contato conosco', 'serviços advocatícios', 'servicos advocaticios',
+          'defesa em pad', 'defesa de servidores públicos', 'defesa de servidor',
+          'escritório especializado', 'escritorio especializado', 'garanta seus direitos',
+          'responde a processo administrativo', 'responde a pad', 'defesa técnica do servidor',
+          'proteger carreira', 'proteger sua carreira', 'defesa em sindicância', 'advogado de servidor',
+          'advocacia para servidores', 'fale com um advogado', 'consultoria jurídica para servidores'
+        ];
+        return termos.some(t => txt.includes(t));
+      }
+
       for (const n of curadas) {
-        if (!ehVeiculoNoticiosoValido(n)) continue;
+        if (ehPropagandaComercial(n)) continue;
         const chave = n.url_materia || n.url_original || n.id;
         if (chave) urlsVistas.add(chave);
         if (n.status_curadoria !== 'Rejeitada' && n.status !== 'Rejeitada') {
@@ -55,7 +61,7 @@
       }
 
       for (const m of mineradas) {
-        if (!ehVeiculoNoticiosoValido(m)) continue;
+        if (ehPropagandaComercial(m)) continue;
         const chave = m.url_materia || m.url_original || m.id;
         if (chave && urlsVistas.has(chave)) continue;
         if (chave) urlsVistas.add(chave);

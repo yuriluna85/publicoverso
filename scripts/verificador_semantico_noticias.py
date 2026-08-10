@@ -37,7 +37,7 @@ DIRETORIO_RAIZ = Path(__file__).parent.parent
 ARQUIVO_ACERVO_JSON = DIRETORIO_RAIZ / 'data' / 'acervo_links_minerados.json'
 ARQUIVO_ACERVO_CSV = DIRETORIO_RAIZ / 'data' / 'acervo_links_minerados.csv'
 
-# --- Filtro Estrito Anti-Anúncios Comerciais e Serviços Advocatícios ---
+# --- Filtro Estrito Anti-Anúncios Comerciais, Propaganda e Serviços Advocatícios ---
 KEYWORDS_ANUNCIO_COMERCIAL = [
     'sindicância contra você', 'sindicancia contra voce', 'pad contra você', 'pad contra voce',
     'defesa técnica agora', 'defesa tecnica agora', 'contrate um advogado', 'advocacia especializada',
@@ -48,7 +48,11 @@ KEYWORDS_ANUNCIO_COMERCIAL = [
     'prestamos assessoria jurídica', 'prestamos assessoria juridica',
     'entre em contato conosco', 'serviços advocatícios', 'servicos advocaticios',
     'defesa em pad', 'defesa de servidores públicos', 'defesa de servidor',
-    'escritório especializado', 'escritorio especializado', 'garanta seus direitos'
+    'escritório especializado', 'escritorio especializado', 'garanta seus direitos',
+    'responde a processo administrativo', 'responde a pad', 'defesa técnica do servidor',
+    'defesa tecnica do servidor', 'proteger carreira', 'proteger sua carreira',
+    'defesa em sindicância', 'defesa em sindicancia', 'advogado de servidor',
+    'advocacia para servidores', 'fale com um advogado', 'consultoria jurídica para servidores'
 ]
 
 
