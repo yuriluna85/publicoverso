@@ -151,12 +151,14 @@ Antes de solicitar aprovacao do AdSense:
 - Propagado o Mega-Rodapé Editorial em 4 Colunas para 100% das páginas institucionais secundárias.
 - Varredura e homologação de links e ativos externos com protocolo HTTPS estrito.
 
-### 10/08/2026 (Sessao 6 - Extrator Nativo do DOU & Automação GitHub Actions 100% Nuvem)
+### 10/08/2026 (Sessao 6 - Extrator Nativo do DOU & Correção do Build GitHub Pages)
+- Criados os arquivos `.nojekyll` e `_config.yml` na raiz do repositório para desativar a compilação do motor Jekyll pelo GitHub Pages. Isso soluciona definitivamente os erros de parse YAML/Liquid (`actions/jekyll-build-pages`) causados por dois pontos (`:`) e chaves (`{{`) nos arquivos de rascunho de matérias mineradas em `pre_curadoria/`.
 - Implementada a Camada 1 de mineração nativa direta na busca pública do Diário Oficial da União (`in.gov.br`) no script `scripts/radar_movimentacao_servidores.py` com suporte a paginação multi-página (`page=1`, `page=2`).
 - Solucionada a limitação de dependência exclusiva de indexadores de terceiros (Google News / Serper API), permitindo que atos oficiais de Seção 2 (exoneração a pedido, demissão a bem do serviço público, portarias de nomeação, vacância e aposentadorias) sejam extraídos diretamente em tempo real no mesmo dia da publicação oficial.
 - Atualizado o `requirements.txt` com as bibliotecas `beautifulsoup4` e `lxml` para suporte integral no container `ubuntu-latest` do GitHub Actions.
 - Reconfigurado o workflow `.github/workflows/atualizacao_publicoverso.yml` com cron triplo (`0 12,16,21 * * 1-5` -> 9h, 13h e 18h BRT) coincidindo com a publicação e atualizações do DOU.
 - Extraídos e registrados no acervo (`data/acervo_links_minerados.json` e `.csv`) 64 atos oficiais do DOU do dia.
+
 
 
 ### 09/08/2026 (Sessao 5 - Reestruturacao Editorial, Mega-Roda-pe e Banner LGPD)

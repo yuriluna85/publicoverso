@@ -1,0 +1,11 @@
+# Configuração do Jekyll para o GitHub Pages (Exclusão de diretórios de rascunhos e scripts)
+include:
+  - .nojekyll
+
+exclude:
+  - pre_curadoria
+  - materias/conteúdo
+  - scripts
+  - data
+  - README.md
+  - requirements.txt

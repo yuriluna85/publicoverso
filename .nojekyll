@@ -1,0 +1,1 @@
+# Arquivo .nojekyll desativa o processador Jekyll no GitHub Pages, prevenindo erros de sintaxe YAML/Liquid em arquivos de rascunhos (.txt).
