@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-b126489764
+titulo: Meu RSC - IFAM
+resumo: Portal de Reconhecimento de Saberes e Competências dos servidores PCCTAE do Instituto Federal do Amazonas.
+autor: Curadoria Publicoverso
+categoria: Carreira e Conquistas
+data: 11/08/2026
+fonte: IFAM - Instituto Federal do Amazonas
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.google.com/goto?url=CAESWgHuR6pNwxj_NJDNPelmZnwmTGiPISdVD2BX_4V90HRgM7pZ0XOn9Pt_n6JGrYAytIuI-M4EdGodjB0rodPiKRcOg764D-NlXQNimW5bfCCAX0qjTzPqqBOSKw==
+---
+
+Portal de Reconhecimento de Saberes e Competências dos servidores PCCTAE do Instituto Federal do Amazonas.
+
+Fonte original: https://www.google.com/goto?url=CAESWgHuR6pNwxj_NJDNPelmZnwmTGiPISdVD2BX_4V90HRgM7pZ0XOn9Pt_n6JGrYAytIuI-M4EdGodjB0rodPiKRcOg764D-NlXQNimW5bfCCAX0qjTzPqqBOSKw==
