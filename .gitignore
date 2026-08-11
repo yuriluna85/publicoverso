@@ -1,0 +1,22 @@
+# Ignorar ambientes virtuais Python
+.venv/
+venv/
+ENV/
+env/
+
+# Ignorar caches e arquivos compilados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar logs e arquivos temporários de mineração local
+*.log
+scripts/log_mineracao.txt
+_temp/
+temp/
+
+# Ignorar arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini

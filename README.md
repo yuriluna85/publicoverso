@@ -86,6 +86,16 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizações (Changelog)
 
+### 11/08/2026 (Sessão 20 - Separação Estrita de Código x Dados Gerados e Suporte a Dry-Run)
+- **Implementação do Modo `--dry-run` em Scripts de Mineração:** Adicionada a opção `--dry-run` nos scripts `radar_movimentacao_servidores.py` e `pipeline_completo.py`, permitindo testar a lógica dos robôs em ambiente local sem regravar ou alterar arquivos de dados no disco.
+- **Isolamento de Arquivos de Dados e Caches:** Criação do arquivo `.gitignore` para garantir que logs temporários de mineração local e caches não poluam o controle de versão.
+- **Enforcement da Regra 20 do Laboratório:** Garantida a preservação integral das bases de dados mineradas exclusivamente na nuvem via GitHub Actions (`data/*.json`, `data/*.csv`), impedindo sobreposição acidental por commits locais de código.
+
+### 11/08/2026 (Sessão 19 - Restauração e Lançamento do Monitor do Diário Oficial da União)
+- **Desenvolvimento da Interface Dedicada (`diario-oficial.html`):** Criação da página exclusiva para consulta pública de portarias de nomeação, exoneração a pedido, vacâncias, demissões e concessões de aposentadoria da Seção 2 do Diário Oficial da União (in.gov.br).
+- **Desenvolvimento do Controlador JavaScript (`app_diario_oficial.js`):** Construção do motor de busca, filtragem por tipo de ato funcional (Nomeações, Exonerações, Aposentadorias, Demissões), indicadores KPI e controles de acessibilidade (A+/A-, Alto Contraste AAA e Temas Claro/Escuro).
+- **Integração de Navegação e SEO:** Inclusão do link do Diário Oficial no menu de navegação (`navbar`), utilitários, rodapé de todas as páginas do portal e injeção no arquivo `sitemap.xml`.
+
 ### 09/08/2026 (Sessão 11 - Barreira Tripla Anti-Propaganda Comercial, Correções Finas de Layout CSS, Convite Institucional Autoral e Reclassificação de Temas do STF)
 - **Implementação da Barreira Tripla Anti-Propaganda Comercial e Captação Advocatícia Privada:** Integração de filtro algorítmico estrito em três camadas (scripts Python de mineração e verificação semântica, bem como nos módulos JavaScript do frontend `app.js`, `app_categoria.js` e `app_noticias.js`). A regra determina a desqualificação imediata de ofertas de serviços jurídicos privados e captação advocatícia (tais como "defesa em PAD", "defesa de carreira" e "escritório especializado") como matéria jornalística, descartando-as integralmente no servidor e no navegador. Conteúdos dessa natureza só poderão ser veiculados mediante contratação formal de espaço publicitário.
 - **Correção do Layout CSS de `.news-row-item` (`index.css`):** Ajuste da propriedade de largura para 100%, eliminando a restrição de dimensão anterior que ocasionava o esmagamento dos títulos das notícias a 140px.
@@ -151,12 +161,14 @@ Antes de solicitar aprovacao do AdSense:
 - Propagado o Mega-Rodapé Editorial em 4 Colunas para 100% das páginas institucionais secundárias.
 - Varredura e homologação de links e ativos externos com protocolo HTTPS estrito.
 
-### 10/08/2026 (Sessao 6 - Extrator Nativo do DOU, Automação GitHub Actions & Suporte HTTPS CNAME)
-- Criado o arquivo `CNAME` na raiz com o domínio `publicoverso.com.br` para persistência da configuração de domínio personalizado e emissão do certificado SSL/HTTPS Let's Encrypt no GitHub Pages.
-- Criados os arquivos `.nojekyll` e `_config.yml` na raiz do repositório para desativar a compilação do motor Jekyll pelo GitHub Pages, solucionando os erros de parse YAML/Liquid (`actions/jekyll-build-pages`) em rascunhos de matérias em `pre_curadoria/`.
-- Verificada 100% da integridade de ativos e scripts, confirmando ausência de conteúdo misto (`http://`).
-- Implementada a Camada 1 de mineração nativa direta no Diário Oficial da União (`in.gov.br`) no script `scripts/radar_movimentacao_servidores.py` com paginação multi-página (`page=1`, `page=2`).
-- Reconfigurado o workflow `.github/workflows/atualizacao_publicoverso.yml` com cron triplo (`0 12,16,21 * * 1-5` -> 9h, 13h e 18h BRT) e dependências (`beautifulsoup4`, `lxml`) no `requirements.txt`.
+### 10/08/2026 (Sessao 6 - Favicons de Alta Resolução, Extrator Nativo DOU & Suporte HTTPS CNAME)
+- Gerados novos favicons em PNG de alta resolução para o Publicoverso ([favicon-98x98.png](file:///G:/Meu%20Drive/APP/2.%20Projetos%20e%20Aplica%C3%A7%C3%B5es/2.2%20Aplica%C3%A7%C3%B5es%20e%20C%C3%B3digos%20%28GitHub%29/YLuna85%20LABs%20APPs/portal-servidores-publicos/favicon-98x98.png), `favicon-96x96.png`, `favicon-128x128.png`, `favicon-192x192.png`, `favicon-512x512.png` e `apple-touch-icon.png`), além do `favicon.svg` vetorial e `favicon.ico` multi-resolução.
+- Atualizado o script [generate_favicons.py](file:///G:/Meu%20Drive/APP/2.%20Projetos%20e%20Aplica%C3%A7%C3%B5es/2.2%20Aplica%C3%A7%C3%B5es%20e%20C%C3%B3digos%20%28GitHub%29/YLuna85%20LABs%20APPs/portal-servidores-publicos/generate_favicons.py) com super-sampling antialiased e gradiente adaptativo nos nós da constelação do Publicoverso.
+- Atualizadas as declarações de marca no `<head>` das páginas HTML e no gerador `build_materias.py`.
+- Criado o arquivo `CNAME` na raiz com o domínio `publicoverso.com.br` para persistência da configuração no GitHub Pages.
+- Criados os arquivos `.nojekyll` e `_config.yml` na raiz para desativar o motor Jekyll e evitar erros de build.
+- Implementada a Camada 1 de mineração nativa no Diário Oficial da União (`in.gov.br`) em `scripts/radar_movimentacao_servidores.py`.
+
 
 
 

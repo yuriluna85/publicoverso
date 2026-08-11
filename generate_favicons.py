@@ -132,8 +132,14 @@ def main():
         'favicon-16x16.png': (16, 16),
         'favicon-32x32.png': (32, 32),
         'favicon-48x48.png': (48, 48),
+        'favicon-96x96.png': (96, 96),
+        'favicon-98x98.png': (98, 98),
+        'favicon-128x128.png': (128, 128),
+        'favicon-192x192.png': (192, 192),
+        'favicon-512x512.png': (512, 512),
         'apple-touch-icon.png': (180, 180),
     }
+
 
     images_png = {}
     for nome, size in tamanhos.items():

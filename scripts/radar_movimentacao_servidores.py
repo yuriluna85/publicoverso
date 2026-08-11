@@ -238,9 +238,12 @@ def minerar_dou_oficial_direto(termo_busca, exact_date="dia", max_paginas=2):
 def main():
     parser = argparse.ArgumentParser(description='Publicoverso - Robô de Movimentação Funcional de Servidores.')
     parser.add_argument('--dias', type=int, default=15, help='Janela de busca em dias (padrao: 15)')
+    parser.add_argument('--dry-run', action='store_true', help='Executa busca sem alterar arquivos de dados no disco')
     args = parser.parse_args()
 
     config.registrar_log('=== Iniciando Robô de Movimentação Funcional (Portal Publicoverso + DOU Oficial Direct) ===')
+    if args.dry_run:
+        config.registrar_log('[MODO DRY-RUN ATIVADO: Nenhum arquivo de dados será alterado no disco]')
 
     urls_conhecidas = carregar_historico_urls()
     config.registrar_log(f'URLs de movimentação no historico: {len(urls_conhecidas)}')
@@ -268,14 +271,17 @@ def main():
             if not url_bruta or url_bruta in urls_conhecidas:
                 continue
 
-            salvar_historico_url(url_bruta)
-            urls_conhecidas.add(url_bruta)
+            if not args.dry_run:
+                salvar_historico_url(url_bruta)
+                urls_conhecidas.add(url_bruta)
 
-            id_mov = 'dou-' + hashlib.md5(url_bruta.encode()).hexdigest()[:10]
-            registrar_no_acervo(id_mov, data_pub, categoria, titulo, resumo, fonte, url_bruta)
+                id_mov = 'dou-' + hashlib.md5(url_bruta.encode()).hexdigest()[:10]
+                registrar_no_acervo(id_mov, data_pub, categoria, titulo, resumo, fonte, url_bruta)
+                config.registrar_log(f'  [ATO DOU REGISTRADO] {titulo[:60]}... ({data_pub})')
+            else:
+                config.registrar_log(f'  [DRY-RUN - ATO DOU ENCONTRADO] {titulo[:60]}... ({data_pub})')
 
             total_novas += 1
-            config.registrar_log(f'  [ATO DOU REGISTRADO] {titulo[:60]}... ({data_pub})')
 
         time.sleep(config.PAUSA_ENTRE_REQUISICOES)
 
@@ -315,19 +321,23 @@ def main():
             texto_chk = f"{titulo} {resumo} {url_bruta} {fonte}".lower()
             if any(kw in texto_chk for kw in ['sindicância contra você', 'sindicancia contra voce', 'pad contra você', 'defesa técnica agora', 'contrate um advogado', 'advocacia especializada', 'escritório de advocacia', 'fale conosco pelo whatsapp', 'fale com nosso advogado', 'consulte nossos advogados', 'agende uma consulta', 'precisa de defesa', 'defenda seu cargo', 'fale com um especialista', 'nossos serviços jurídicos', 'nossos servicos juridicos', 'nosso escritório', 'prestamos assessoria jurídica', 'entre em contato conosco', 'serviços advocatícios', 'defesa em pad', 'defesa de servidores públicos', 'escritório especializado', 'garanta seus direitos', 'responde a processo administrativo', 'responde a pad', 'defesa técnica do servidor', 'proteger carreira', 'proteger sua carreira', 'defesa em sindicância', 'advogado de servidor', 'advocacia para servidores', 'fale com um advogado', 'consultoria jurídica para servidores']):
                 config.registrar_log(f'  [DESCARTADO ANÚNCIO/PROPAGANDA] {titulo}')
-                salvar_historico_url(url_bruta)
+                if not args.dry_run:
+                    salvar_historico_url(url_bruta)
                 continue
 
-            salvar_historico_url(url_bruta)
-            urls_conhecidas.add(url_bruta)
+            if not args.dry_run:
+                salvar_historico_url(url_bruta)
+                urls_conhecidas.add(url_bruta)
 
-            id_mov = 'mov-' + hashlib.md5(url_bruta.encode()).hexdigest()[:10]
-            data_hoje = datetime.now().strftime('%d/%m/%Y')
-            cat_mapeada = item.get('categoria', 'Carreira e Conquistas')
-            registrar_no_acervo(id_mov, data_hoje, cat_mapeada, titulo, resumo, fonte, url_bruta)
+                id_mov = 'mov-' + hashlib.md5(url_bruta.encode()).hexdigest()[:10]
+                data_hoje = datetime.now().strftime('%d/%m/%Y')
+                cat_mapeada = item.get('categoria', 'Carreira e Conquistas')
+                registrar_no_acervo(id_mov, data_hoje, cat_mapeada, titulo, resumo, fonte, url_bruta)
+                config.registrar_log(f'  [MOVIMENTAÇÃO REGISTRADA] {titulo[:60]}... (Fonte: {fonte})')
+            else:
+                config.registrar_log(f'  [DRY-RUN - MOVIMENTAÇÃO ENCONTRADA] {titulo[:60]}... (Fonte: {fonte})')
 
             total_novas += 1
-            config.registrar_log(f'  [MOVIMENTAÇÃO REGISTRADA] {titulo[:60]}... (Fonte: {fonte})')
             time.sleep(config.PAUSA_ENTRE_REQUISICOES)
 
         time.sleep(config.PAUSA_ENTRE_REQUISICOES)

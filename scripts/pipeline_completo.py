@@ -34,13 +34,16 @@ SCRIPT_CLASSIFICADOR = RAIZ / 'scripts' / 'classificador_noticias.py'
 SCRIPT_BUILD = RAIZ / 'build_materias.py'
 
 
-def executar(script, descrição):
+def executar(script, descrição, dry_run=False):
     """Executa um script Python e exibe o resultado."""
     print(f'\n[INICIANDO] {descrição}')
     print(f'  Script: {script}')
+    cmd = [sys.executable, str(script)]
+    if dry_run:
+        cmd.append('--dry-run')
     início = datetime.now()
     resultado = subprocess.run(
-        [sys.executable, str(script)],
+        cmd,
         capture_output=False,
         text=True,
         encoding='utf-8',
@@ -59,20 +62,24 @@ def main():
                         help='Executa apenas a mineracao de histórias e concursos')
     parser.add_argument('--apenas-build', action='store_true',
                         help='Executa apenas o build das páginas HTML')
+    parser.add_argument('--dry-run', action='store_true',
+                        help='Executa o pipeline em modo teste sem alterar dados no disco')
     args = parser.parse_args()
 
     print('=' * 60)
     print('PUBLICOVERSO - Pipeline Completo')
     print(f'Início: {datetime.now().strftime("%d/%m/%Y %H:%M:%S")}')
+    if args.dry_run:
+        print('[MODO DRY-RUN ATIVADO: Nenhum arquivo de dados será alterado no disco]')
     print('=' * 60)
 
     sucesso_total = True
 
     if not args.apenas_build:
-        ok1 = executar(SCRIPT_MINERADOR_HISTORIAS, 'Minerador de Histórias Gerais de Servidores')
-        ok2 = executar(SCRIPT_MINERADOR_PROTAGONISTAS, 'Minerador Especialista de Protagonistas (Vida Alem do Trabalho)')
-        ok3 = executar(SCRIPT_RADAR_MOVIMENTACAO, 'Robô de Movimentação Funcional (Posse, Nomeação & Aposentadoria)')
-        ok4 = executar(SCRIPT_RADAR, 'Radar de Editais de Concursos')
+        ok1 = executar(SCRIPT_MINERADOR_HISTORIAS, 'Minerador de Histórias Gerais de Servidores', dry_run=args.dry_run)
+        ok2 = executar(SCRIPT_MINERADOR_PROTAGONISTAS, 'Minerador Especialista de Protagonistas (Vida Alem do Trabalho)', dry_run=args.dry_run)
+        ok3 = executar(SCRIPT_RADAR_MOVIMENTACAO, 'Robô de Movimentação Funcional (Posse, Nomeação & Aposentadoria)', dry_run=args.dry_run)
+        ok4 = executar(SCRIPT_RADAR, 'Radar de Editais de Concursos', dry_run=args.dry_run)
         ok5 = executar(SCRIPT_CLASSIFICADOR, 'Classificador Inteligente de Notícias (Policial & Segurança Pública)')
         sucesso_total = ok1 and ok2 and ok3 and ok4 and ok5
 
