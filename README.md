@@ -86,6 +86,12 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizações (Changelog)
 
+### 11/08/2026 (Sessão 22 - Destacamento e Visibilidade do Diário Oficial da União na Página Inicial)
+- **Barra de Ações Rápidas no Hero Banner (`index.html`):** Inseridos botões de atalho diretamente no topo da capa, com destaque para a consulta ao "Monitor do Diário Oficial (DOU)", além do Radar de Concursos e Calculadora TAE.
+- **Card Utilitário Dedicado (`utilities-grid`):** Adicionado o quarto card de utilitários na barra de ferramentas da página principal, direcionando o leitor diretamente para a consulta de portarias e atos do DOU.
+- **Banner Bento de Chamada Institucional:** Criado bloco visual em destaque horizontal (*Bento Card*) no meio do feed da capa, reforçando a ferramenta de consulta às portarias da Seção 2 do Diário Oficial da União.
+- **Estilização e Acessibilidade em `index.css`:** Desenvolvidos botões com suporte visual a temas claro, escuro, alto contraste e foco de teclado para leitores de tela.
+
 ### 11/08/2026 (Sessão 20 - Separação Estrita de Código x Dados Gerados e Suporte a Dry-Run)
 - **Implementação do Modo `--dry-run` em Scripts de Mineração:** Adicionada a opção `--dry-run` nos scripts `radar_movimentacao_servidores.py` e `pipeline_completo.py`, permitindo testar a lógica dos robôs em ambiente local sem regravar ou alterar arquivos de dados no disco.
 - **Isolamento de Arquivos de Dados e Caches:** Criação do arquivo `.gitignore` para garantir que logs temporários de mineração local e caches não poluam o controle de versão.
