@@ -101,7 +101,20 @@ DORKS_PROTAGONISTAS = [
         'categoria': 'Histórias e Superação',
         'query': '("aposentou-se aos" OR "servidor com 90 anos" OR "servidora centenária" OR "40 anos dedicados") AND ("história de vida" OR "legado de vida")',
     },
+
+    # Eixo 6: Virais, Pegadinhas, Redes Sociais e Policial Inusitado
+    {
+        'eixo': 'Virais e Inusitados',
+        'categoria': 'Policial e Segurança Pública',
+        'query': '("PMs" OR "PM" OR "policial militar" OR "policiais" OR "guarda municipal" OR "servidor público") AND ("pegadinha" OR "influenciador" OR "Carlinhos Maia" OR "viralizou" OR "vídeo viral" OR "emprestar viatura" OR "presos após")',
+    },
+    {
+        'eixo': 'Virais e Inusitados',
+        'categoria': 'Cultura Pop e Gastronomia',
+        'query': '("PMs" OR "servidor" OR "professor" OR "gari") AND ("bombou na internet" OR "vídeo viral" OR "redes sociais" OR "meme" OR "fato inusitado")',
+    },
 ]
+
 
 MAPA_EIXOS_EDITORIAS = {
     'Literatura e Artes': 'Artes e Literatura',

@@ -175,17 +175,6 @@ Antes de solicitar aprovacao do AdSense:
 - Criados os arquivos `.nojekyll` e `_config.yml` na raiz para desativar o motor Jekyll e evitar erros de build.
 - Implementada a Camada 1 de mineração nativa no Diário Oficial da União (`in.gov.br`) em `scripts/radar_movimentacao_servidores.py`.
 
-
-
-
-
-### 12/08/2026 (Sessão 24 - Saneamento de Dados, Deduplicação por Slug/URL e Visual Inspiração Omelete)
-- Atualizado o motor de curadoria e deduplicação em `scripts/agent_curador_semantico.py`:
-  - Implementado o desembrulhador de URLs diretas para remover redirecionamentos `google.com/goto` e sufixos AMP (`/google/amp/`).
-  - Implementada a deduplicação inteligente multi-camada combinando URL canônica sanitizada e slug de título normalizado das 8 primeiras palavras.
-  - Implementada a extração e padronização da data real de publicação em formato ISO (`data_iso`) via metadados HTML OpenGraph e Schema.org.
-  - Implementado o isolamento e roteamento estrito de atos administrativos puros do Diário Oficial da União (DOU) para a página reservada `/diario-oficial.html`.
-- Atualizado o controlador JavaScript principal `app.js`:
   - Implementada a ordenação temporal decrescente das notícias no portal com base no campo `data_iso`.
   - Implementado o motor de renderização da nova **Barra Ticker de Destaques em Tempo Real** (`.omelete-ticker-bar`).
 - Atualizados `index.html` e `index.css`:

@@ -1,5 +1,16 @@
 [
   {
+    "id": "manual-02c106918e",
+    "data": "12/08/2026",
+    "data_iso": "2026-08-12",
+    "categoria": "Policial e Segurança Pública",
+    "titulo": "Três PMs são presos após 'emprestar' viatura para pegadinha de Carlinhos Maia",
+    "resumo": "Viatura aparece em gravação publicadas nas redes sociais pelo influenciador",
+    "fonte": "Correio 24 Horas",
+    "url_original": "https://www.correio24horas.com.br/brasil/tres-pms-sao-presos-apos-emprestar-viatura-para-pegadinha-de-carlinhos-maia-0826",
+    "status_curadoria": "Aprovado"
+  },
+  {
     "id": "mov-fd1b533a0c",
     "data": "11/08/2026",
     "categoria": "Jurídico e PAD",
@@ -46,7 +57,7 @@
   {
     "id": "auto-2086fd6a4a",
     "data": "11/08/2026",
-    "categoria": "Solidariedade e Comunidade",
+    "categoria": "Policial e Segurança Pública",
     "titulo": "Servidor público é detido após perseguir e assediar faxineira em rodoviária de Limeira, diz Guarda",
     "resumo": "Um servidor público, de 46 anos, foi detido pela Guarda de Limeira (SP) suspeito de perseguir e assediar com frequência uma funcionária da limpeza do...",
     "fonte": "G1",

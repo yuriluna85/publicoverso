@@ -75,8 +75,27 @@
         return termos.some(t => txt.includes(t));
       }
 
+      function ehAtoDiarioOficial(item) {
+        if (!item) return true;
+        const url = (item.url_materia || item.url_original || '').toLowerCase();
+        const fonte = (item.fonte || '').toLowerCase();
+        const titulo = (item.titulo || '').toLowerCase();
+
+        if (url.includes('in.gov.br') || url.includes('diariooficial') || url.includes('imprensaoficial') || fonte.includes('diário oficial')) {
+          return true;
+        }
+
+        const padroes = [
+          'portaria', 'edital', 'despacho', 'instrução normativa', 'instrucao normativa',
+          'resolução', 'resolucao', 'decreto', 'retificação', 'retificacao', 'extrato de contrato',
+          'termo aditivo', 'sindicância', 'sindicancia', 'dgp n'
+        ];
+        return padroes.some(p => titulo.startsWith(p) || (titulo.includes(p) && (titulo.includes('n°') || titulo.includes('nº') || titulo.includes('de 202'))));
+      }
+
       // Unifica, ordena por data mais recente e deduplica
-      let todosItens = [...curadas, ...mineradas].filter(n => !ehPropagandaComercial(n));
+      let todosItens = [...curadas, ...mineradas].filter(n => !ehPropagandaComercial(n) && !ehAtoDiarioOficial(n));
+
       todosItens.sort((a, b) => obterDataSort(b).localeCompare(obterDataSort(a)));
 
       const urlsVistas = new Set();

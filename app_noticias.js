@@ -51,8 +51,26 @@
         return termos.some(t => txt.includes(t));
       }
 
+      function ehAtoDiarioOficial(item) {
+        if (!item) return true;
+        const url = (item.url_materia || item.url_original || '').toLowerCase();
+        const fonte = (item.fonte || '').toLowerCase();
+        const titulo = (item.titulo || '').toLowerCase();
+
+        if (url.includes('in.gov.br') || url.includes('diariooficial') || url.includes('imprensaoficial') || fonte.includes('diário oficial')) {
+          return true;
+        }
+
+        const padroes = [
+          'portaria', 'edital', 'despacho', 'instrução normativa', 'instrucao normativa',
+          'resolução', 'resolucao', 'decreto', 'retificação', 'retificacao', 'extrato de contrato',
+          'termo aditivo', 'sindicância', 'sindicancia', 'dgp n'
+        ];
+        return padroes.some(p => titulo.startsWith(p) || (titulo.includes(p) && (titulo.includes('n°') || titulo.includes('nº') || titulo.includes('de 202'))));
+      }
+
       for (const n of curadas) {
-        if (ehPropagandaComercial(n)) continue;
+        if (ehPropagandaComercial(n) || ehAtoDiarioOficial(n)) continue;
         const chave = n.url_materia || n.url_original || n.id;
         if (chave) urlsVistas.add(chave);
         if (n.status_curadoria !== 'Rejeitada' && n.status !== 'Rejeitada') {
@@ -61,7 +79,7 @@
       }
 
       for (const m of mineradas) {
-        if (ehPropagandaComercial(m)) continue;
+        if (ehPropagandaComercial(m) || ehAtoDiarioOficial(m)) continue;
         const chave = m.url_materia || m.url_original || m.id;
         if (chave && urlsVistas.has(chave)) continue;
         if (chave) urlsVistas.add(chave);
@@ -69,6 +87,7 @@
           mescla.push(m);
         }
       }
+
 
       if (mescla.length === 0) throw new Error('Nenhuma notícia disponível no acervo.');
 

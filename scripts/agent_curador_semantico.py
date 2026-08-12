@@ -56,7 +56,8 @@ TERMOS_VINCULO_PUBLICO_OBRIGATORIO = [
     'servidor federal', 'servidora federal', 'servidor estadual', 'servidora estadual',
     'servidor municipal', 'servidora municipal', 'servidor concursado', 'servidora concursada',
     'servidor estatutário', 'servidora estatutária', 'servidor da união', 'servidor do estado',
-    'policial civil', 'policial militar', 'policial federal', 'policial rodoviário', 'policial rodoviario',
+    'policial civil', 'policial militar', 'policiais militares', 'policial federal', 'policial rodoviário', 'policial rodoviario',
+    'pms', 'pm', 'policiais', 'policial',
     'delegado de polícia', 'delegada de polícia', 'delegado de policia', 'delegada de policia',
     'perito criminal', 'perita criminal', 'agente penitenciário', 'agente penitenciario',
     'policial penal', 'guarda municipal', 'guarda civil', 'bombeiro militar', 'bombeira militar',
@@ -68,6 +69,7 @@ TERMOS_VINCULO_PUBLICO_OBRIGATORIO = [
     'gari concursado', 'serviço público', 'servico publico', 'funcionalismo público', 'funcionalismo publico',
     'hospital do servidor público', 'hospital do servidor publico', 'hspm'
 ]
+
 
 # --- 3. Gatekeeper: Expurgo Político-Eleitoral e Campanhas ---
 TERMOS_EXPURGO_POLITICO_ELEITORAL = [
@@ -128,8 +130,10 @@ TERMOS_POLICIAL_CRIMES = [
     'morto ao tentar', 'morta ao tentar', 'morre após moto', 'morre e neto', 'acidente fatal',
     'operação policial', 'operacao policial', 'investigação criminal', 'investigacao criminal',
     'prisão em flagrante', 'prisao em flagrante', 'mandado de prisão', 'apreensão de drogas',
-    'facção criminosa', 'crime organizado', 'perícia criminal', 'confronto armado'
+    'facção criminosa', 'crime organizado', 'perícia criminal', 'confronto armado',
+    'presos', 'preso', 'viatura', 'detido', 'detida', 'pms são presos', 'pm é preso'
 ]
+
 
 TERMOS_JURIDICO_STF_PAD = [
     'tema 1019', 'stf', 'stj', 'trânsito em julgado', 'transito em julgado', 'conflito de interesses',
@@ -512,10 +516,17 @@ def processar_curadoria(reclassificar_tudo=False):
 
         # 5. Isolamento Estrito do Diário Oficial (Roteamento para /diario-oficial.html)
         texto_dou = f"{titulo} {resumo} {url}".lower()
-        if 'in.gov.br' in texto_dou or 'portaria nº' in texto_dou or 'extrato de contrato' in texto_dou:
+        eh_dou = (
+            'in.gov.br' in texto_dou or
+            'diariooficial' in texto_dou or
+            'imprensaoficial' in texto_dou or
+            re.search(r'\b(portaria|resolução|instrução normativa|despacho|decreto|edital|retificação|extrato de contrato|termo aditivo|sindicância|dgp\s*n[°º\.]?)\b', texto_dou)
+        )
+        if eh_dou:
             descartados += 1
             print(f"[ROTEADO PARA DIÁRIO OFICIAL] {titulo[:60]}")
             continue
+
 
         # 6. Enriquecimento textual condicional
         if not resumo or len(resumo) < 30:
