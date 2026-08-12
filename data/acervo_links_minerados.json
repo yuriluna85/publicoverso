@@ -1,5 +1,95 @@
 [
   {
+    "id": "mov-4a76d0eb9a",
+    "data": "12/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Advogado Marcos Antonio de Sousa toma posse como desembargador do Tribunal de Justiça do Tocantins",
+    "resumo": "O advogado Marcos Antonio de Sousa, de 56 anos, assumiu o cargo de desembargador do Tribunal de Justiça do Tocantins (TJTO) em posse administrativa no...",
+    "fonte": "Tribunal de Justiça do Tocantins",
+    "url_original": "https://www.tjto.jus.br/comunicacao/noticias/advogado-marcos-antonio-de-sousa-toma-posse-como-desembargador-do-tribunal-de-justica-do-tocantins",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "mov-e50edb4a78",
+    "data": "12/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Nova direção do STJ toma posse em 19 de agosto; profissionais de imprensa devem se credenciar",
+    "resumo": "​A nova direção do Superior Tribunal de Justiça (STJ) tomará posse no dia 19 de agosto, às 18h, em cerimônia restrita a convidados.",
+    "fonte": "Superior Tribunal de Justiça",
+    "url_original": "https://www.stj.jus.br/sites/portalp/paginas/comunicacao/noticias/2026/12082026-nova-direcao-do-stj-toma-posse-em-19-08-profissionais-de-imprensa-devem-se-credenciar.aspx",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "prot-52c926a45b",
+    "data": "12/08/2026",
+    "categoria": "Policial e Segurança Pública",
+    "titulo": "Viatura da PM em gravação de Carlinhos Maia gera investigação em Alagoas",
+    "resumo": "Corregedoria investiga o uso de uma viatura da Polícia Militar de Alagoas durante as gravações do reality digital Rancho do Maia.",
+    "fonte": "Band",
+    "url_original": "https://www.band.com.br/entretenimento/melhor-da-tarde/noticias/viatura-da-pm-em-gravacao-de-carlinhos-maia-gera-investigacao-em-alagoas-202608111541",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-a9da929d45",
+    "data": "12/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "UFSC formaliza aposentadoria de servidor vigilante com proventos integrais e adicionais",
+    "resumo": "Portaria publicada no Diário Oficial da União detalha concessão de benefício com base em regras de transição da reforma da previdência.",
+    "fonte": "O TEMPO",
+    "url_original": "https://www.otempo.com.br/politica/2026/8/7/ufsc-formaliza-aposentadoria-de-servidor-vigilante-com-proventos-integrais-e-adicionais",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-3342d183e9",
+    "data": "12/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Atos Administrativos - PGP - 11-08-2026",
+    "resumo": "ATO Nº 0360/2026/PGP, DE 4 DE MAIO DE 2026 – O Pró-Reitor de Gestão de Pessoas da. Universidade Federal de Viçosa, no uso de suas atribuições,...",
+    "fonte": "UFV – Universidade Federal de Viçosa",
+    "url_original": "https://www2.dti.ufv.br/noticias/files/anexos/1786472826.pdf",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-1498d0c0fa",
+    "data": "12/08/2026",
+    "categoria": "Ciência e Tecnologia",
+    "titulo": "O INSS pode negar benefício por falta de documentos? Veja os erros mais comuns",
+    "resumo": "Falhas no CNIS, documentos médicos incompletos e divergências cadastrais estão entre os problemas que podem levar à negativa de aposentadorias,...",
+    "fonte": "Jornal Correio",
+    "url_original": "https://www.google.com/goto?url=CAESuQEB7keqTVYxoTbRdJv-3WtC59bJIm5q_ygoBdgFZJ9C7SpKs1gG7RTMKtSRsvOA9u4ml5S0IrlKwjuKtL9Qa4vAc8EuYQTd2C82UHoH7BFMzUxfvTLbFhG78CvDWBB7GY1xSZBIGd5veAdd0B4Q3o_BDhVL40MLMZxogHG0cYxCmSeIsiSjhVtJjXOu21JTMVbRXp9z6KXcAMxEImH9ZkB531DuHBWl-A-j6LR9jez4hQnybXn2_qLYzA==",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-59f0527642",
+    "data": "12/08/2026",
+    "categoria": "Ciência e Tecnologia",
+    "titulo": "Aposentadoria por idade: o que saber antes de pedir o benefício ao INSS. Confira cinco dicas",
+    "resumo": "A aposentadoria é o benefício mais comum entre os pagos mensalmente pelo Instituto Nacional do Seguro Social (INSS). Elas somam 69% de todos os benefícios...",
+    "fonte": "Extra online",
+    "url_original": "https://www.google.com/goto?url=CAESygEB7keqTZeEQN8FkGQV9tSiCKoTEVflsA-gIs1PvFuPiTqUcZ0zM9oAz1zFEs0iALt7ghs4_yc7faYBZgrtN5cjI2ATqrIc6RmWP_lN-yy2Qk15L8zTAh4zJ-9KH3TV6JEMyx48t8UtHg3fIBHc3r4LfWD6t9rPL3SlNRWP4pDbNCXF8w8XDzMOsX1VJohrmEJxPNBsFoP8eLWROifxGo3HZ4feP_Nsjrf0jUrzs2blcTfZonyBmaMEtRHBR9XxbZmMk20CNw-vsET2",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-cc6e93d69f",
+    "data": "12/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "Servidor Público: 7 projetos de lei em Brasília que podem aumentar a renda de aposentados",
+    "resumo": "Descubra as principais propostas no Congresso que visam ampliar a renda dos servidores e pensionistas federais inativos.",
+    "fonte": "Money Times",
+    "url_original": "https://www.google.com/goto?url=CAEStAEB7keqTWurh-OHoMWDXgnD6G49xnI_Cg4JpwTGCvuk7jgWAkl3G3NYZIoS1I8kPxKQIT-cDvU1-2w2HmRldsFrSozCufOBQAvRKnXVxBxhR_sSe8goch2-XBVITQZCXSi9Gwp7EyawtRZCB4SdOIIWcRra93XuikNz7LkglUY9JSv5_lbqxA6eTCLFa4w6OOlGqtIYC-04ccS1ytf_v0dWvN8R7S2HXR6Bslc7tlD5Lpc6xUU=",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-157d63f484",
+    "data": "12/08/2026",
+    "categoria": "Ciência e Tecnologia",
+    "titulo": "Conselho Superior do Ministério Público - 1",
+    "resumo": "RESOLUCÕES. RESOLUÇÃO Nº 2.327/2026-PGJ, DE 03 DE JULHO DE 2026. (SEI Nº 29.0001.0023150.2026-02). Homologa a modificação das atribuições dos cargos de...",
+    "fonte": "Ministério Público do Estado de São Paulo",
+    "url_original": "https://www.mpsp.mp.br/w/do-11-08-2026",
+    "status_curadoria": "Pendente"
+  },
+  {
     "id": "mov-31a90ab7f7",
     "data": "12/08/2026",
     "categoria": "Carreira e Conquistas",
