@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-4bbbe749ee
+titulo: Proposta de Emenda à Constituição 15/1995
+resumo: Ementa Altera o artigo 126 da Constituição do Estado, que dispõe sobre o Servidor Público. Data de Publicação 10/06/1995.
+autor: Curadoria Publicoverso
+categoria: Histórias e Superação
+data: 12/08/2026
+fonte: Assembleia Legislativa do Estado de São Paulo
+status: Pendente
+status_triagem: Pendente
+url_original: https://www4.al.sp.gov.br/propositura/4207
+---
+
+Ementa Altera o artigo 126 da Constituição do Estado, que dispõe sobre o Servidor Público. Data de Publicação 10/06/1995.
+
+Fonte original: https://www4.al.sp.gov.br/propositura/4207
