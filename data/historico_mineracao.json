@@ -842,5 +842,41 @@
     "titulo": "Equipes de saúde recebem capacitação sobre aleitamento materno",
     "categoria": "Carreira e Conquistas",
     "data_mineracao": "2026-08-11 21:51:39"
+  },
+  {
+    "id_mineracao": "auto-ea5102eb07",
+    "url": "https://www.opovo.com.br/noticias/seguranca-publica/2026/08/11/policial-militar-e-presa-suspeita-pela-morte-de-soldado-da-pm.html",
+    "titulo": "Policial Militar é presa suspeita pela morte de soldado da PM",
+    "categoria": "Ciência e Tecnologia",
+    "data_mineracao": "2026-08-12 15:41:57"
+  },
+  {
+    "id_mineracao": "auto-2a06c9245c",
+    "url": "https://extra.globo.com/rio/casos-de-policia/noticia/2026/08/policia-prende-suspeito-de-roubar-celular-de-jovem-que-implorou-para-nao-ser-assaltada-em-caxias.ghtml",
+    "titulo": "Polícia prende suspeito de roubar celular de jovem que implorou para não ser assaltada, em Caxias",
+    "categoria": "Ciência e Tecnologia",
+    "data_mineracao": "2026-08-12 15:42:06"
+  },
+  {
+    "id_mineracao": "auto-7b080c6d0c",
+    "url": "https://extra.globo.com/blogs/aposenta-ai/post/2026/08/inss-alerta-familia-de-segurado-falecido-nao-deve-sacar-beneficio.ghtml",
+    "titulo": "INSS alerta: família de segurado falecido não deve sacar benefício",
+    "categoria": "Ciência e Tecnologia",
+    "data_mineracao": "2026-08-12 15:42:30"
+  },
+  {
+    "id_mineracao": "auto-a598cd2ae8",
+    "url": "https://meu-rsc.ifam.edu.br/termos",
+    "titulo": "Meu RSC - IFAM",
+    "categoria": "Carreira e Conquistas",
+    "data_mineracao": "2026-08-12 15:42:47"
+  },
+  {
+    "url": "https://www.terra.com.br/noticias/pms-sao-presos-apos-uso-de-viatura-em-gravacao-de-pegadinha-de-carlinhos-maia,d412edf4ce6c7615b0ad6ec307b46ed4ea09gp5w.html",
+    "data_mineracao": "2026-08-12 15:43:59"
+  },
+  {
+    "url": "https://horadopovo.com.br/professor-da-unila-desmascara-governo-milei-e-o-capitalismo-mafioso-na-argentina/",
+    "data_mineracao": "2026-08-12 15:44:10"
   }
 ]
