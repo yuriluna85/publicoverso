@@ -228,6 +228,78 @@ body.theme-high-contrast .btn-a11y {
   color: #FFFF00;
 }
 
+/* ==========================================================================
+   BARRA TICKER DE DESTAQUES (ESTILO OMELETE)
+   ========================================================================== */
+.omelete-ticker-bar {
+  background: #0B1924;
+  border-bottom: 1px solid rgba(0, 210, 200, 0.2);
+  padding: 0.5rem 1.5rem;
+  overflow: hidden;
+  font-family: var(--font-main);
+  font-size: 0.85rem;
+}
+
+.ticker-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ticker-label {
+  background: #00D2C8;
+  color: #090D16;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.ticker-track {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.ticker-track::-webkit-scrollbar {
+  display: none;
+}
+
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ticker-dot {
+  color: #00D2C8;
+  font-weight: bold;
+}
+
+.ticker-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.ticker-link:hover {
+  color: #00D2C8;
+  text-decoration: underline;
+}
+
+
 .btn-a11y:hover,
 .btn-a11y:focus-visible {
   background: var(--color-brand-turquoise);

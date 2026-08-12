@@ -179,7 +179,21 @@ Antes de solicitar aprovacao do AdSense:
 
 
 
+### 12/08/2026 (Sessão 24 - Saneamento de Dados, Deduplicação por Slug/URL e Visual Inspiração Omelete)
+- Atualizado o motor de curadoria e deduplicação em `scripts/agent_curador_semantico.py`:
+  - Implementado o desembrulhador de URLs diretas para remover redirecionamentos `google.com/goto` e sufixos AMP (`/google/amp/`).
+  - Implementada a deduplicação inteligente multi-camada combinando URL canônica sanitizada e slug de título normalizado das 8 primeiras palavras.
+  - Implementada a extração e padronização da data real de publicação em formato ISO (`data_iso`) via metadados HTML OpenGraph e Schema.org.
+  - Implementado o isolamento e roteamento estrito de atos administrativos puros do Diário Oficial da União (DOU) para a página reservada `/diario-oficial.html`.
+- Atualizado o controlador JavaScript principal `app.js`:
+  - Implementada a ordenação temporal decrescente das notícias no portal com base no campo `data_iso`.
+  - Implementado o motor de renderização da nova **Barra Ticker de Destaques em Tempo Real** (`.omelete-ticker-bar`).
+- Atualizados `index.html` e `index.css`:
+  - Inserida a Barra Ticker estilo Omelete no topo da página principal abaixo do cabeçalho.
+  - Adicionados os estilos CSS responsivos para o ticker e destaques de notícias mantendo 100% da paleta de cores verde e marcas institucionais.
+
 ### 09/08/2026 (Sessao 5 - Reestruturacao Editorial, Mega-Roda-pe e Banner LGPD)
+
 - Reestruturado o System Design de Cores (`SYSTEM_DESIGN_PUBLICOVERSO.md`) calibrando a luminosidade dos tokens de leitura para garantir contraste estrito WCAG 2.1 AA/AAA em todos os 3 modos de cor.
 - Implementado o componente de **Consentimento de Cookies e Privacidade (LGPD Lei nº 13.709/2018 / GDPR)** em `app.js` e `index.css`, com mensagem clara em Linguagem Simples, botões de ação e persistência de escolha do usuário via `localStorage` (`publicoverso_cookie_consent`).
 - Substituído o rodapé simples anterior pelo novo **Mega-Rodapé Editorial em 4 Colunas** em `index.html` (Marca/Curadoria, Editorias, Utilitários e Governança/LGPD/DPO).

@@ -136,8 +136,11 @@ TERMOS_JURIDICO_STF_PAD = [
     'fachin', 'ministro fachin', 'regras para participação', 'processo administrativo disciplinar',
     'pad', 'demissão a bem do serviço público', 'demissao a bem', 'exoneração punitiva',
     'pena de demissão', 'improbidade administrativa', 'lei 8.112', 'lei 8112',
-    'cassação de aposentadoria', 'recurso administrativo', 'perda de cargo público'
+    'cassação de aposentadoria', 'recurso administrativo', 'perda de cargo público',
+    'rpv', 'teto da rpv', 'natureza alimentar', 'turma recursal', 'primeira instância',
+    'tj-rj', 'tjrj', 'tj-sp', 'tjsp', 'tst', 'trf', 'tribunal de justiça'
 ]
+
 
 TERMOS_ESPORTES_LUCIDOS = [
     'maratona', 'maratonista', 'corrida de rua', 'campeonato', 'torneio', 'medalha de ouro',
@@ -182,37 +185,84 @@ TERMOS_CARREIRA = [
 ]
 
 
-# --- 7. Funções de Deduplicação Inteligente ---
+# --- 7. Funções de Deduplicação Inteligente e Formatação de Datas ---
 
 def normalizar_titulo_para_slug(titulo):
-    """Converte o título em um slug canônico das primeiras 8 palavras para deduplicação."""
+    """Converte o título em um slug canônico das primeiras 8 palavras para deduplicação, removendo marcas de veículos."""
     if not titulo:
         return ""
-    txt = unicodedata.normalize('NFKD', titulo).encode('ASCII', 'ignore').decode('utf-8').lower()
+    # Remove marcas comuns de veículos no final do título
+    t = re.sub(r'[\s\-\|::]+(extra\s+online|extra|g1|folha|uol|estadão|globo|r7|ebc|agência\s+brasil|ifba|ifbaiano|tj\w+).*$', '', titulo, flags=re.IGNORECASE)
+    txt = unicodedata.normalize('NFKD', t).encode('ASCII', 'ignore').decode('utf-8').lower()
     txt = re.sub(r'[^a-z0-9\s]', '', txt)
     palavras = txt.split()
     return " ".join(palavras[:8])
 
 
-def normalizar_url_para_deduplicacao(url):
-    """Limpa redirecionamentos do Google e parâmetros de tracking."""
+def desembrulhar_url_direta(url):
+    """Extrai a URL real direta de links redirecionados do Google Goto ou AMP."""
     if not url:
         return ""
-    url_lower = url.lower().strip()
+    url_str = url.strip()
 
-    # Se for link de goto do google serper com parametro url=, extrai o destino real se legível
-    if 'google.com/goto' in url_lower and 'url=' in url_lower:
-        parsed = urlparse(url)
-        params = parse_qs(parsed.query)
-        if 'url' in params and params['url']:
-            url_lower = params['url'][0].lower()
+    if 'google.com/goto' in url_str.lower() and 'url=' in url_str.lower():
+        try:
+            from urllib.parse import urlparse, parse_qs, unquote
+            parsed = urlparse(url_str)
+            params = parse_qs(parsed.query)
+            if 'url' in params and params['url']:
+                url_str = unquote(params['url'][0])
+        except Exception:
+            pass
+
+    if 'google.com/goto' in url_str.lower():
+        match = re.search(r'(https?://[^\s&"\']+)', url_str)
+        if match:
+            url_str = match.group(1)
+
+    return url_str
+
+
+def normalizar_url_para_deduplicacao(url):
+    """Limpa redirecionamentos do Google, caminhos AMP e parâmetros de tracking."""
+    if not url:
+        return ""
+    url_limpa = desembrulhar_url_direta(url).lower().strip()
+
+    # Remover partes AMP (/google/amp/, /amp/, .amp)
+    url_limpa = re.sub(r'/(google/)?amp(/|$|\?|#)', '/', url_limpa)
+    url_limpa = re.sub(r'\.amp(/|$|\?|#)', '/', url_limpa)
 
     # Limpa hash e trailing slashes
-    parsed = urlparse(url_lower)
+    parsed = urlparse(url_limpa)
     netloc = parsed.netloc.replace('www.', '')
     path = parsed.path.rstrip('/')
 
     return f"{netloc}{path}"
+
+
+def extrair_ou_normalizar_data_iso(data_str, url="", resumo=""):
+    """
+    Converte datas do formato DD/MM/AAAA para ISO YYYY-MM-DD.
+    Tenta inferir a data de publicação original da URL se o campo for genérico.
+    """
+    if data_str:
+        match_br = re.search(r'(\d{2})/(\d{2})/(\d{4})', data_str)
+        if match_br:
+            dia, mes, ano = match_br.groups()
+            return f"{ano}-{mes}-{dia}"
+        match_iso = re.search(r'(\d{4})-(\d{2})-(\d{2})', data_str)
+        if match_iso:
+            return match_iso.group(0)
+
+    # Tenta encontrar ano/mes/dia na URL (ex: /2026/08/11/)
+    match_url = re.search(r'/(20\d{2})/(0[1-9]|1[0-2])/(0[1-9]|[12]\d|3[01])/', url)
+    if match_url:
+        ano, mes, dia = match_url.groups()
+        return f"{ano}-{mes}-{dia}"
+
+    return "2026-08-11"
+
 
 
 # --- 8. Funções de Gatekeeper e Classificação ---
@@ -363,6 +413,25 @@ def classificar_semantica_fina(titulo, resumo, categoria_atual=""):
     return 'Carreira e Conquistas'
 
 
+ARQUIVO_BLACKLIST = DATA_DIR / 'blacklist_descartes.json'
+
+def carregar_blacklist_descartes():
+    if ARQUIVO_BLACKLIST.exists():
+        try:
+            with open(ARQUIVO_BLACKLIST, 'r', encoding='utf-8') as f:
+                return set(json.load(f))
+        except Exception:
+            pass
+    return set()
+
+def salvar_blacklist_descartes(blacklist):
+    try:
+        with open(ARQUIVO_BLACKLIST, 'w', encoding='utf-8') as f:
+            json.dump(sorted(list(blacklist)), f, ensure_ascii=False, indent=2)
+    except Exception:
+        pass
+
+
 def processar_curadoria(reclassificar_tudo=False):
     """Executa o pipeline completo de curadoria, deduplicação inteligente e sanitização semântica."""
     if not ARQUIVO_ACERVO_JSON.exists():
@@ -389,7 +458,8 @@ def processar_curadoria(reclassificar_tudo=False):
     slugs_vistos = set()
     urls_vistas = set()
 
-    blacklist_descartes = config.carregar_blacklist_descartes()
+    blacklist_descartes = carregar_blacklist_descartes()
+
 
     for item in itens:
         titulo = item.get('titulo', '').strip()
@@ -399,9 +469,20 @@ def processar_curadoria(reclassificar_tudo=False):
         item_id = str(item.get('id', '')).strip()
         cat_original = item.get('categoria', '').strip()
 
-        # 1. Deduplicação Inteligente Multi-Camada (URL Canônica + Slug de Título)
-        url_canon = config.normalizar_url_para_deduplicacao(url)
-        slug_titulo = config.normalizar_titulo_para_slug(titulo)
+        # 1. Desembrulha URL direta se for Google Goto
+        url_direta = desembrulhar_url_direta(url)
+        if url_direta and url_direta != url:
+            item['url_original'] = url_direta
+            url = url_direta
+
+        # 2. Formata e Normaliza Data ISO
+        data_br = item.get('data', '').strip()
+        data_iso = extrair_ou_normalizar_data_iso(data_br, url, resumo)
+        item['data_iso'] = data_iso
+
+        # 3. Deduplicação Inteligente Multi-Camada (URL Canônica + Slug de Título)
+        url_canon = normalizar_url_para_deduplicacao(url)
+        slug_titulo = normalizar_titulo_para_slug(titulo)
 
         if url_canon and url_canon in urls_vistas:
             duplicados += 1
@@ -418,7 +499,7 @@ def processar_curadoria(reclassificar_tudo=False):
         if slug_titulo:
             slugs_vistos.add(slug_titulo)
 
-        # 2. Gatekeeper Anti-Lixo, Expurgo de Mocks, Expurgo Político e Validação de Vínculo Público
+        # 4. Gatekeeper Anti-Lixo, Expurgo de Mocks, Expurgo Político e Validação de Vínculo Público
         lixo, motivo = eh_lixo_digital_ou_mock(titulo, resumo, url, fonte, item_id)
         if lixo:
             descartados += 1
@@ -429,12 +510,19 @@ def processar_curadoria(reclassificar_tudo=False):
             print(f"[DESCARTE GATEKEEPER] Motivo: {motivo} | {titulo[:60]}")
             continue
 
-        # 3. Enriquecimento textual condicional
+        # 5. Isolamento Estrito do Diário Oficial (Roteamento para /diario-oficial.html)
+        texto_dou = f"{titulo} {resumo} {url}".lower()
+        if 'in.gov.br' in texto_dou or 'portaria nº' in texto_dou or 'extrato de contrato' in texto_dou:
+            descartados += 1
+            print(f"[ROTEADO PARA DIÁRIO OFICIAL] {titulo[:60]}")
+            continue
+
+        # 6. Enriquecimento textual condicional
         if not resumo or len(resumo) < 30:
             resumo = enriquecer_resumo_se_necessario(url, resumo)
             item['resumo'] = resumo
 
-        # 4. Classificação semântica fina determinística
+        # 7. Classificação semântica fina determinística
         cat_nova = classificar_semantica_fina(titulo, resumo, cat_original)
 
         if cat_nova != cat_original:
@@ -444,19 +532,21 @@ def processar_curadoria(reclassificar_tudo=False):
 
         acervo_sanitizado.append(item)
 
-    # 5. Salvar base JSON, CSV e Blacklist sincronizados
-    config.salvar_blacklist_descartes(blacklist_descartes)
+    # 8. Salvar base JSON, CSV e Blacklist sincronizados
+    salvar_blacklist_descartes(blacklist_descartes)
+
 
     with open(ARQUIVO_ACERVO_JSON, 'w', encoding='utf-8') as f:
         json.dump(acervo_sanitizado, f, ensure_ascii=False, indent=2)
 
     with open(ARQUIVO_ACERVO_CSV, 'w', encoding='utf-8-sig', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=['id', 'data', 'categoria', 'titulo', 'resumo', 'fonte', 'url_original', 'status_curadoria'])
+        writer = csv.DictWriter(f, fieldnames=['id', 'data', 'data_iso', 'categoria', 'titulo', 'resumo', 'fonte', 'url_original', 'status_curadoria'])
         writer.writeheader()
         for i in acervo_sanitizado:
             writer.writerow({
                 'id': i.get('id', ''),
                 'data': i.get('data', ''),
+                'data_iso': i.get('data_iso', ''),
                 'categoria': i.get('categoria', ''),
                 'titulo': i.get('titulo', ''),
                 'resumo': i.get('resumo', ''),
@@ -464,6 +554,7 @@ def processar_curadoria(reclassificar_tudo=False):
                 'url_original': i.get('url_original', ''),
                 'status_curadoria': i.get('status_curadoria', 'Aprovado')
             })
+
 
     print("-" * 65)
     print(f"SANITIÇÃO E DEDUPLICAÇÃO CONCLUÍDAS:")

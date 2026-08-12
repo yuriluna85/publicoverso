@@ -1,7 +1,7 @@
 /**
  * Publicoverso - app.js
- * Motor de renderização, busca por categoria, curadoria e acessibilidade.
- * Sistema Design: Dark Tech / Bento Grid / Glassmorphism
+ * Motor de renderização, busca por categoria, curadoria, ordenação temporal e acessibilidade.
+ * Sistema Design: Dark Tech / Omelete Spotlight / Glassmorphism
  */
 
 (function () {
@@ -11,6 +11,35 @@
   let noticiasMestre = [];
   let artigosMestre = [];
   let categoriaAtiva = 'Todas';
+
+  // --- Funções de Sanitização e Ordenação Temporal ---
+  function extrairSlug(titulo) {
+    if (!titulo) return '';
+    const t = String(titulo).toLowerCase().replace(/[\s\-\|::]+(extra\s+online|extra|g1|folha|uol|estadão|globo|r7|ebc|agência\s+brasil|ifba|ifbaiano|tj\w+).*$/gi, '');
+    return t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9\s]/g, '').split(/\s+/).slice(0, 8).join(' ');
+  }
+
+  function extrairUrlCanon(url) {
+    if (!url) return '';
+    let u = String(url).toLowerCase().trim();
+    if (u.includes('google.com/goto') && u.includes('url=')) {
+      try {
+        const p = new URL(u);
+        const paramUrl = p.searchParams.get('url');
+        if (paramUrl) u = decodeURIComponent(paramUrl).toLowerCase();
+      } catch (e) {}
+    }
+    return u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/(google\/)?amp(\/|$|\?|#)/, '/').split('?')[0].replace(/\/$/, '');
+  }
+
+  function obterDataSort(item) {
+    if (item && item.data_iso) return item.data_iso;
+    if (item && item.data && item.data.includes('/')) {
+      const p = item.data.split('/');
+      if (p.length === 3) return `${p[2]}-${p[1].padStart(2, '0')}-${p[0].padStart(2, '0')}`;
+    }
+    return '2026-08-11';
+  }
 
   // --- Carregamento de Dados ---
   async function inicializar() {
@@ -24,10 +53,6 @@
       let curadas = resNoticias.ok ? await resNoticias.json() : [];
       let mineradas = (resAcervo && resAcervo.ok) ? await resAcervo.json() : [];
       artigosMestre = (resArtigos && resArtigos.ok) ? await resArtigos.json() : [];
-
-      // Unifica curadas e mineradas em uma lista mestre para a capa
-      const urlsVistas = new Set();
-      noticiasMestre = [];
 
       function ehPropagandaComercial(item) {
         if (!item) return true;
@@ -50,24 +75,28 @@
         return termos.some(t => txt.includes(t));
       }
 
-      // Adiciona primeiro as curadas (se validas)
-      for (const n of curadas) {
-        if (ehPropagandaComercial(n)) continue;
-        const chave = n.url_materia || n.url_original || n.id;
-        urlsVistas.add(chave);
-        noticiasMestre.push(n);
+      // Unifica, ordena por data mais recente e deduplica
+      let todosItens = [...curadas, ...mineradas].filter(n => !ehPropagandaComercial(n));
+      todosItens.sort((a, b) => obterDataSort(b).localeCompare(obterDataSort(a)));
+
+      const urlsVistas = new Set();
+      const slugsVistos = new Set();
+      noticiasMestre = [];
+
+      for (const item of todosItens) {
+        const urlCanon = extrairUrlCanon(item.url_materia || item.url_original || item.id);
+        const slug = extrairSlug(item.titulo);
+
+        if (urlCanon && urlsVistas.has(urlCanon)) continue;
+        if (slug && slugsVistos.has(slug)) continue;
+
+        if (urlCanon) urlsVistas.add(urlCanon);
+        if (slug) slugsVistos.add(slug);
+
+        noticiasMestre.push(item);
       }
 
-      // Em seguida, adiciona as mineradas (se nao forem propaganda)
-      for (const m of mineradas) {
-        if (ehPropagandaComercial(m)) continue;
-        const chave = m.url_materia || m.url_original || m.id;
-        if (!urlsVistas.has(chave)) {
-          urlsVistas.add(chave);
-          noticiasMestre.push(m);
-        }
-      }
-
+      renderizarTickerBar(noticiasMestre);
       renderizarHeroGrid(noticiasMestre);
       renderizarColunasOpiniao(artigosMestre);
       renderizarListasEditoriais(noticiasMestre);
@@ -80,10 +109,28 @@
     }
   }
 
+  // --- Renderização da Barra Ticker de Destaques (Estilo Omelete) ---
+  function renderizarTickerBar(noticias) {
+    const track = document.getElementById('tickerTrack');
+    if (!track || !noticias || noticias.length === 0) return;
+
+    const destaques = noticias.slice(0, 6);
+    track.innerHTML = destaques.map(n => {
+      const urlDestino = n.url_materia || n.url_original || '#';
+      const targetAttr = !n.url_materia && n.url_original ? 'target="_blank" rel="noopener noreferrer"' : '';
+      return `
+        <span class="ticker-item">
+          <span class="ticker-dot">&bull;</span>
+          <a href="${escapar(urlDestino)}" ${targetAttr} class="ticker-link">${escapar(n.titulo)}</a>
+        </span>
+      `;
+    }).join('');
+  }
+
   // --- Gestão de Cookies e Consentimento LGPD (Lei 13.709/2018) ---
   function configurarBannerLGPD() {
     const consentimento = localStorage.getItem('publicoverso_cookie_consent');
-    if (consentimento) return; // Usuário já respondeu anteriormente
+    if (consentimento) return;
 
     const bannerHTML = `
       <div id="lgpdBanner" class="lgpd-banner" role="dialog" aria-live="polite" aria-label="Consentimento de Cookies e Privacidade">
@@ -147,7 +194,7 @@
     `).join('');
   }
 
-  // --- Renderização do Hero Grid (G1) ---
+  // --- Renderização do Hero Grid (Estilo Omelete Spotlight) ---
   function renderizarHeroGrid(noticias) {
     const mainCol = document.getElementById('heroMainCard');
     const secondaryCol = document.getElementById('heroSecondaryCards');
@@ -171,7 +218,7 @@
           <p class="line-fine">${escapar(principal.resumo)}</p>
         </div>
         <footer class="hero-meta-footer">
-          <span>${escapar(principal.fonte)} &bull; ${escapar(principal.data)}</span>
+          <span>${escapar(principal.fonte)} &bull; ${escapar(principal.data || 'Atualizado recentemente')}</span>
           <a href="${escapar(urlDestino)}" class="btn-curate" ${targetAttr} aria-label="Ler matéria: ${escapar(principal.titulo)}">
             ${principal.url_materia ? 'Ler matéria completa &rarr;' : 'Ver no veículo original &rarr;'}
           </a>
@@ -197,7 +244,7 @@
               <p class="secondary-excerpt">${escapar(sec.resumo)}</p>
             </div>
             <footer class="hero-meta-footer" style="padding-top:0.6rem;">
-              <span>${escapar(sec.fonte)} &bull; ${escapar(sec.data)}</span>
+              <span>${escapar(sec.fonte)} &bull; ${escapar(sec.data || 'Atualizado recentemente')}</span>
               <a href="${escapar(urlDestino)}" class="btn-curate btn-curate-sm" ${targetAttr}>
                 ${sec.url_materia ? 'Ler' : 'Ver'}
               </a>
@@ -207,7 +254,7 @@
       }).join('');
     }
 
-    // 3. Feed "Últimas do Serviço Público" (Estilo G1)
+    // 3. Feed "Últimas do Serviço Público"
     if (feedCol) {
       const ultimas = noticias.slice(0, 5);
       feedCol.innerHTML = ultimas.map(item => {
@@ -215,7 +262,7 @@
         const targetAttr = !item.url_materia && item.url_original ? 'target="_blank" rel="noopener noreferrer"' : '';
         return `
           <div class="feed-item-mini">
-            <span class="feed-meta-time">${escapar(item.data)} &bull; ${escapar(item.categoria || 'Geral')}</span>
+            <span class="feed-meta-time">${escapar(item.data || 'Recente')} &bull; ${escapar(item.categoria || 'Geral')}</span>
             <h4 class="feed-item-title">
               <a href="${escapar(urlDestino)}" ${targetAttr}>${escapar(item.titulo)}</a>
             </h4>
@@ -225,7 +272,7 @@
     }
   }
 
-  // --- Renderização de Listas Discretas de Notícias em Linhas por Editoria (Padrão G1/R7) ---
+  // --- Renderização de Listas Discretas e Trilhos por Editoria ---
   function renderizarListasEditoriais(noticias) {
     const container = document.getElementById('editorialListsContainer');
     if (!container) return;
@@ -235,7 +282,7 @@
     if (categoriaAtiva !== 'Todas') {
       lista = lista.filter(n => n.categoria === categoriaAtiva);
     } else if (lista.length > 3) {
-      lista = lista.slice(3); // Pula os 3 destaques do Hero
+      lista = lista.slice(3);
     }
 
     if (lista.length === 0) {
@@ -243,7 +290,6 @@
       return;
     }
 
-    // Mapeamento de categorias para arquivos .html dedicados
     const arquivosCategoria = {
       'Policial e Segurança Pública': 'categoria-policial.html',
       'Esportes e Aventura': 'categoria-esportes.html',
@@ -255,7 +301,6 @@
       'Histórias e Superação': 'categoria-historias.html'
     };
 
-    // Agrupa notícias por categoria
     const categoriasMap = {};
     lista.forEach(item => {
       const cat = item.categoria || 'Geral';
@@ -283,7 +328,7 @@
                     <a href="${escapar(urlDestino)}" ${targetAttr} style="color: var(--text-primary); text-decoration: none;">${escapar(item.titulo)}</a>
                   </h4>
                   <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.4; margin: 0 0 0.4rem 0;">${escapar(item.resumo)}</p>
-                  <span style="font-size: 0.75rem; color: var(--text-muted);">${escapar(item.fonte)} &bull; ${escapar(item.data)}</span>
+                  <span style="font-size: 0.75rem; color: var(--text-muted);">${escapar(item.fonte)} &bull; ${escapar(item.data || 'Recente')}</span>
                 </article>
               `;
             }).join('')}
@@ -359,7 +404,6 @@
         if (btnTemaToggle) btnTemaToggle.textContent = 'Tema: Claro';
         if (btnContraste) btnContraste.classList.add('active');
       } else {
-        // Claro (Padrão)
         if (btnTemaToggle) btnTemaToggle.textContent = 'Tema: Claro';
         if (btnContraste) btnContraste.classList.remove('active');
       }
@@ -367,7 +411,6 @@
       localStorage.setItem('publicoverso-tema-v3', tema);
     }
 
-    // Restaura preferência de tema salva no navegador (Padrão: 'claro')
     const temaSalvo = localStorage.getItem('publicoverso-tema-v3') || 'claro';
     aplicarTema(temaSalvo);
 
@@ -412,6 +455,8 @@
       'Solidariedade e Comunidade': 'badge-solidariedade',
       'Histórias e Superação':      'badge-historias',
       'Carreira e Conquistas':      'badge-carreira',
+      'Jurídico e PAD':             'badge-carreira',
+      'Policial e Segurança Pública': 'badge-esportes'
     };
     return mapa[categoria] || 'badge-carreira';
   }
