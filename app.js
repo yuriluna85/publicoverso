@@ -93,8 +93,17 @@
         return padroes.some(p => titulo.startsWith(p) || (titulo.includes(p) && (titulo.includes('n°') || titulo.includes('nº') || titulo.includes('de 202'))));
       }
 
+      function ehUrlValida(url) {
+        if (!url) return false;
+        const u = String(url).trim().toLowerCase();
+        if (!u.startsWith('http://') && !u.startsWith('https://')) return false;
+        if (u.includes('publicoverso.com.br/caes') || u.startsWith('caes')) return false;
+        return true;
+      }
+
       // Unifica, ordena por data mais recente e deduplica
-      let todosItens = [...curadas, ...mineradas].filter(n => !ehPropagandaComercial(n) && !ehAtoDiarioOficial(n));
+      let todosItens = [...curadas, ...mineradas].filter(n => !ehPropagandaComercial(n) && !ehAtoDiarioOficial(n) && ehUrlValida(n.url_materia || n.url_original));
+
 
       todosItens.sort((a, b) => obterDataSort(b).localeCompare(obterDataSort(a)));
 

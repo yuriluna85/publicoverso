@@ -69,8 +69,16 @@
         return padroes.some(p => titulo.startsWith(p) || (titulo.includes(p) && (titulo.includes('n°') || titulo.includes('nº') || titulo.includes('de 202'))));
       }
 
+      function ehUrlValida(url) {
+        if (!url) return false;
+        const u = String(url).trim().toLowerCase();
+        if (!u.startsWith('http://') && !u.startsWith('https://')) return false;
+        if (u.includes('publicoverso.com.br/caes') || u.startsWith('caes')) return false;
+        return true;
+      }
+
       for (const n of curadas) {
-        if (ehPropagandaComercial(n) || ehAtoDiarioOficial(n)) continue;
+        if (ehPropagandaComercial(n) || ehAtoDiarioOficial(n) || !ehUrlValida(n.url_materia || n.url_original)) continue;
         const chave = n.url_materia || n.url_original || n.id;
         if (chave) urlsVistas.add(chave);
         if (n.status_curadoria !== 'Rejeitada' && n.status !== 'Rejeitada') {
@@ -79,7 +87,7 @@
       }
 
       for (const m of mineradas) {
-        if (ehPropagandaComercial(m) || ehAtoDiarioOficial(m)) continue;
+        if (ehPropagandaComercial(m) || ehAtoDiarioOficial(m) || !ehUrlValida(m.url_materia || m.url_original)) continue;
         const chave = m.url_materia || m.url_original || m.id;
         if (chave && urlsVistas.has(chave)) continue;
         if (chave) urlsVistas.add(chave);
@@ -87,6 +95,7 @@
           mescla.push(m);
         }
       }
+
 
 
       if (mescla.length === 0) throw new Error('Nenhuma notícia disponível no acervo.');
