@@ -966,5 +966,26 @@
   {
     "url": "https://www.band.com.br/entretenimento/melhor-da-tarde/noticias/viatura-da-pm-em-gravacao-de-carlinhos-maia-gera-investigacao-em-alagoas-202608111541",
     "data_mineracao": "2026-08-12 21:51:13"
+  },
+  {
+    "id_mineracao": "auto-12ddc7dccb",
+    "url": "https://g1.globo.com/pb/paraiba/noticia/2026/08/13/seis-pessoas-sao-detidas-e-um-policial-militar-e-baleado-durante-troca-de-tiros-na-grande-joao-pessoa.ghtml",
+    "titulo": "Troca de tiros deixa um morto, seis detidos e um policial militar ferido, na Grande João Pessoa",
+    "categoria": "Esportes e Aventura",
+    "data_mineracao": "2026-08-13 13:15:15"
+  },
+  {
+    "id_mineracao": "auto-1fc8f8ba32",
+    "url": "https://g1.globo.com/ce/ceara/noticia/2026/08/12/policial-militar-e-mordido-por-suspeito-e-tem-arma-roubada-em-fortaleza.ghtml",
+    "titulo": "Policial militar é mordido por suspeito e tem arma roubada em Fortaleza",
+    "categoria": "Esportes e Aventura",
+    "data_mineracao": "2026-08-13 13:15:25"
+  },
+  {
+    "id_mineracao": "auto-bf3a23264c",
+    "url": "https://www.tnh1.com.br/videos/single-de-video/vid/inss-amplia-numero-de-doencas-que-permitem-acesso-a-auxilio-e-aposentadoria-z2OF9PyM5no/",
+    "titulo": "INSS amplia número de doenças que permitem acesso a auxílio e aposentadoria",
+    "categoria": "Histórias e Superação",
+    "data_mineracao": "2026-08-13 13:15:46"
   }
 ]

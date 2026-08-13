@@ -1040,6 +1040,22 @@
     "data_atualizacao": "12/08/2026"
   },
   {
+    "id": "concurso-0e79788f",
+    "órgão": "Concurso Bacen: 170 vagas são autorizadas!",
+    "sigla": "",
+    "esfera": "Estadual",
+    "cargos": "Consultar edital",
+    "vagas": 170,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://www.novaconcursos.com.br/portal/concursos/concurso-bacen/?srsltid",
+    "status": "Em Analise",
+    "destaque": true,
+    "data_atualizacao": "13/08/2026"
+  },
+  {
     "id": "concurso-2026-004",
     "órgão": "Conselho Nacional de Justiça",
     "sigla": "CNJ",
@@ -2398,5 +2414,21 @@
     "status": "Em Analise",
     "destaque": false,
     "data_atualizacao": "12/08/2026"
+  },
+  {
+    "id": "concurso-1c7cd1bd",
+    "órgão": "🚨 DELEGADO E PERITO DA POLÍCIA FEDERAL PODEM ...",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 0,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://www.instagram.com/p/DZVb-zxlP7X/",
+    "status": "Em Analise",
+    "destaque": false,
+    "data_atualizacao": "13/08/2026"
   }
 ]
