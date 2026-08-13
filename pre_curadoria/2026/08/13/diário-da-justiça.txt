@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-ceae18a58f
+titulo: DIÁRIO DA JUSTIÇA
+resumo: PORTARIA GP N. 1809 DE 12 DE AGOSTO DE 2026. Instaura processo administrativo disciplinar. O PRESIDENTE DO TRIBUNAL DE JUSTIÇA DO ESTADO DE.
+autor: Curadoria Publicoverso
+categoria: Carreira e Conquistas
+data: 13/08/2026
+fonte: Tribunal de Justiça de Santa Catarina
+status: Pendente
+status_triagem: Pendente
+url_original: https://busca.tjsc.jus.br/dje-consulta/rest/diario/caderno?edicao=4789&cdCaderno=4
+---
+
+PORTARIA GP N. 1809 DE 12 DE AGOSTO DE 2026. Instaura processo administrativo disciplinar. O PRESIDENTE DO TRIBUNAL DE JUSTIÇA DO ESTADO DE.
+
+Fonte original: https://busca.tjsc.jus.br/dje-consulta/rest/diario/caderno?edicao=4789&cdCaderno=4
