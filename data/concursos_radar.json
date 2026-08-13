@@ -1040,6 +1040,38 @@
     "data_atualizacao": "12/08/2026"
   },
   {
+    "id": "concurso-9754d706",
+    "órgão": "Inscrições FUNCERN",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 0,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://inscricoes.funcern.org/",
+    "status": "Em Analise",
+    "destaque": true,
+    "data_atualizacao": "13/08/2026"
+  },
+  {
+    "id": "concurso-70f29194",
+    "órgão": "ufabc - fundação universidade federal do abc",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 0,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://www.institutoaocp.org.br/concursos/665",
+    "status": "Em Analise",
+    "destaque": true,
+    "data_atualizacao": "13/08/2026"
+  },
+  {
     "id": "concurso-0e79788f",
     "órgão": "Concurso Bacen: 170 vagas são autorizadas!",
     "sigla": "",
