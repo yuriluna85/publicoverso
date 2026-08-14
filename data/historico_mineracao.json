@@ -933,5 +933,19 @@
     "titulo": "DIÁRIO DA JUSTIÇA",
     "categoria": "Jurídico e PAD",
     "data_mineracao": "2026-08-14 18:08:55"
+  },
+  {
+    "id_mineracao": "auto-deabb8c81f",
+    "url": "https://www.google.com/goto?url=CAES1wEB7keqTT5iUeVhd0XQ4Q6zumcIc-VUJaIscr8k2RdwbhMfYP7pVXkJCCrgP3h8N2GUzEsIFC6UWFF3Lv_IgKZwnPkuDFx4RHd1cF7ljHVNVqEO8VT4MtwuSiRd2cKFLxYhbpLYjZH6Cjz2RQ500m4VEAy7M6QG2US0qPieh2-suma4LKyoQBaMxJ8ykigDmTf9_t5Ul3pWJRXzCs4vzUydeWmBZiljOwEnV4zANEAOIbb2YIu6T-OksYBgK7SrELIVi_vtZq1x8c2nEh3yUMD6XmjMVA43Uw==",
+    "titulo": "Troca de tiros deixa um morto, seis detidos e um policial militar ferido, na Grande João Pessoa",
+    "categoria": "Policial e Segurança Pública",
+    "data_mineracao": "2026-08-14 21:27:10"
+  },
+  {
+    "id_mineracao": "auto-cba92165df",
+    "url": "https://www.fenae.org.br/portal/fenae-portal/saude-caixa-banco-insiste-em-proposta-que-gera-perda-de-remuneracao-aos-empregados.htm",
+    "titulo": "Saúde Caixa: Banco insiste em proposta que gera perda de remuneração aos empregados",
+    "categoria": "Carreira e Conquistas",
+    "data_mineracao": "2026-08-14 21:27:41"
   }
 ]
