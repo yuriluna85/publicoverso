@@ -34,7 +34,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 # Ajuste do path para importar config.py do mesmo diretorio
 sys.path.insert(0, str(Path(__file__).parent))
 import config
-from minerador_protagonistas import classificar_editoria
+from classificador_noticias import classificar_materia, e_documento_burocratico
 
 try:
     import requests
@@ -322,8 +322,8 @@ def main():
                 conteudo_raspado = raspar_conteudo(url)
                 time.sleep(config.PAUSA_ENTRE_REQUISICOES)
 
-            # Classificacao automatica inteligente por palavras-chave (7 Editorias)
-            cat_classificada = config.classificar_categoria(titulo, resumo, conteudo_raspado, categoria_padrao=categoria)
+            # Classificacao automatica inteligente via Matriz Semantica de Pesos
+            cat_classificada, _ = classificar_materia(titulo, resumo or '', categoria_sugerida=categoria)
 
             # Salva rascunho .txt em pre_curadoria/AAAA/MM/DD/slug.txt
             caminho_rascunho, id_mineracao = gerar_rascunho_txt(res, cat_classificada, conteudo_raspado)

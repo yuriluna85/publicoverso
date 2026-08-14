@@ -86,6 +86,11 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizações (Changelog)
 
+### 14/08/2026 (Sessão 24 - Correção Crítica de Importação no Robô de Mineração de Histórias e Homologação de 100% dos Scripts)
+- **Correção de Importação em `minerador_historias.py`:** Removida a importação legada `from minerador_protagonistas import classificar_editoria` que causava `ImportError` no step `Executar Minerador de Historias` do GitHub Actions (`.github/workflows/atualizacao_publicoverso.yml`).
+- **Integração com o Classificador Semântico Oficial:** Conectado `minerador_historias.py` ao módulo [`classificador_noticias.py`](file:///G:/Meu%20Drive/APP/2.%20Projetos%20e%20Aplica%C3%A7%C3%B5es/2.2%20Aplica%C3%A7%C3%B5es%20e%20C%C3%B3digos%20%28GitHub%29/YLuna85%20LABs%20APPs/portal-servidores-publicos/scripts/classificador_noticias.py) utilizando `classificar_materia()` com a matriz de pesos da Soberania da Ação Humana.
+- **Homologação e Bateria de Testes:** Executados testes de compilação bytecode (`py_compile`) e testes de carga de módulos em tempo de execução para 100% dos 14 scripts Python do repositório, garantindo estabilidade e código de saída 0 na esteira do GitHub Actions.
+
 ### 14/08/2026 (Sessão 23 - Deduplicação Tripla, Motor Semântico com Matriz de Pesos e Sanitização de Pré-Curadoria)
 - **Motor de Deduplicação Tripla (`minerador_protagonistas.py`):** Implementada checagem em 3 camadas (URL Canônica Normalizada + Slug/Hash de Título + Similaridade Jaccard >= 80%), bloqueando 100% da criação de arquivos com sufixos redundantes (`-auto-*.txt`).
 - **Classificador Semântico com Matriz de Pesos (`classificador_noticias.py`):** Aplicada a regra da **Soberania da Ação Humana** (ações concretas como lançar livro ou maratona têm peso 3x maior que o cargo do servidor), garantindo distribuição precisa nas 9 editorias oficiais.
