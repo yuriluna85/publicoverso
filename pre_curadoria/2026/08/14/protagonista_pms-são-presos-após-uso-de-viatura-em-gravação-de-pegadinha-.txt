@@ -1,0 +1,17 @@
+---
+id_mineracao: min-protagonista-20260814181058
+titulo: PMs são presos após uso de viatura em gravação de pegadinha de Carlinhos Maia
+resumo: Polícia Militar de Alagoas prende administrativamente três policiais suspeitos de utilizar viatura oficial em pegadinha gravada por Carlinhos Maia.
+autor: Curadoria Publicoverso
+categoria: Policial e Segurança Pública
+eixo_tematico: Virais e Inusitados
+fonte: Terra
+url_original: https://terra.com.br/noticias/pms-sao-presos-apos-uso-de-viatura-em-gravacao-de-pegadinha-de-carlinhos-maia,d412edf4ce6c7615b0ad6ec307b46ed4ea09gp5w.html
+link_status: Verificado (HTTP 200)
+data_verificacao: 14/08/2026 18:10
+status: Pendente
+---
+
+Polícia Militar de Alagoas prende administrativamente três policiais suspeitos de utilizar viatura oficial em pegadinha gravada por Carlinhos Maia.
+
+Fonte original: https://terra.com.br/noticias/pms-sao-presos-apos-uso-de-viatura-em-gravacao-de-pegadinha-de-carlinhos-maia,d412edf4ce6c7615b0ad6ec307b46ed4ea09gp5w.html
