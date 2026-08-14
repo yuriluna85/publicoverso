@@ -86,6 +86,13 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizações (Changelog)
 
+### 14/08/2026 (Sessão 23 - Deduplicação Tripla, Motor Semântico com Matriz de Pesos e Sanitização de Pré-Curadoria)
+- **Motor de Deduplicação Tripla (`minerador_protagonistas.py`):** Implementada checagem em 3 camadas (URL Canônica Normalizada + Slug/Hash de Título + Similaridade Jaccard >= 80%), bloqueando 100% da criação de arquivos com sufixos redundantes (`-auto-*.txt`).
+- **Classificador Semântico com Matriz de Pesos (`classificador_noticias.py`):** Aplicada a regra da **Soberania da Ação Humana** (ações concretas como lançar livro ou maratona têm peso 3x maior que o cargo do servidor), garantindo distribuição precisa nas 9 editorias oficiais.
+- **Filtro de Expurgo Burocrático Aprimorado:** Adicionado bloqueio estrito contra memoriais descritivos de RSC, bancas acadêmicas e portarias rotineiras sem foco em histórias humanas.
+- **Utilitário de Higienização de Pré-Curadoria (`sanitizar_duplicatas_precuradoria.py`):** Criado script de limpeza automatizada que auditou e removeu 19 arquivos duplicados com sufixos redundantes em `pre_curadoria/`.
+- **Conformidade com os Recursos AGy:** Alinhamento com as diretrizes do System Design (`SYSTEM_DESIGN_PUBLICOVERSO.md`) e regras de curadoria do laboratório.
+
 ### 11/08/2026 (Sessão 22 - Destacamento e Visibilidade do Diário Oficial da União na Página Inicial)
 - **Barra de Ações Rápidas no Hero Banner (`index.html`):** Inseridos botões de atalho diretamente no topo da capa, com destaque para a consulta ao "Monitor do Diário Oficial (DOU)", além do Radar de Concursos e Calculadora TAE.
 - **Card Utilitário Dedicado (`utilities-grid`):** Adicionado o quarto card de utilitários na barra de ferramentas da página principal, direcionando o leitor diretamente para a consulta de portarias e atos do DOU.
