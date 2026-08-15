@@ -193,6 +193,27 @@ Antes de solicitar aprovacao do AdSense:
   - Inserida a Barra Ticker estilo Omelete no topo da página principal abaixo do cabeçalho.
   - Adicionados os estilos CSS responsivos para o ticker e destaques de notícias mantendo 100% da paleta de cores verde e marcas institucionais.
 
+### 15/08/2026 (Sessão 29 - Módulo 4: Acessibilidade Universal 360º & Sintetizador de Voz Nativo)
+- Integrado o **Sintetizador de Voz Nativo via Web Speech API** (`window.speechSynthesis`) com botão tátil "Ouvir Manchete" (`.btn-read-aloud`) nos cards da capa, permitindo leitura imediata sem dependências externas ou plugins pesados.
+- Implementados os **Atalhos Universais de Teclado**: `Alt + 1` (saltar para o conteúdo principal), `Alt + 2` (alternar Alto Contraste AAA) e `Alt + 3` (focar no campo de busca).
+- Ajustados estilos de foco, estados ativos de áudio pulsante e alto contraste nos botões de acessibilidade.
+
+### 15/08/2026 (Sessão 29 - Módulo 3: Ergonomia Mobile, Bottom Navigation Bar & Drawer de Filtros)
+- Implementada a **Barra de Navegação Inferior Fixa** (`.mobile-bottom-nav`) para smartphones (< 768px), facilitando a navegação com uma só mão (Início, Notícias, Monitor do DOU, Radar de Concursos e Menu de Editorias).
+- Criado o **Drawer Deslizante de Editorias** (`.mobile-drawer-overlay` / Bottom Sheet) com transições suaves e chips confortáveis ao toque do polegar.
+- Atualizado `index.css` com tipografia fluida via `clamp()`, padding inferior de segurança no `body` para evitar sobreposição da barra e sincronização bidirecional de filtros no `app.js`.
+
+### 15/08/2026 (Sessão 29 - Módulo 2: Redesign Visual High-End, Opinião Cristina & Efeitos Aurora Tech)
+- Redesenhada a seção de **Colunas & Análise Editorial** (`.opinion-editorial-wrapper` e `.opinion-editorial-card`) em `index.html` e `index.css`, incorporando o Card Assinatura com foto circular bioluminescente, selo de verificação de curadoria, minibiografia e link de trajetória.
+- Implementado o componente de citação editorial em destaque (*pull quote*) com bordas temáticas ciano e tipografia itálica refinada.
+- Adicionados os efeitos visuais **Aurora Tech Glow** nos cards de manchetes (`.hero-main-card:hover`, `.hero-secondary-card:hover`, `.editorial-card:hover`) com elevação fluida e iluminação suave multicor nos 3 modos de tema (Light, Dark e Alto Contraste AAA).
+- Atualizada a função `renderizarColunasOpiniao` em `app.js` com o novo template dinâmico enriquecido.
+
+### 15/08/2026 (Sessão 29 - Módulo 1: Cockpit Bento de Utilitários e Posicionamento de Hub)
+- Implantado o novo **Cockpit Bento Integrado** (`.cockpit-section`) na página inicial (`index.html`), unificando o acesso às 4 ferramentas centrais do portal: Monitor do Diário Oficial da União (DOU - Seção 2), Calculadora TAE Federal (`taes-federal.com.br`), Simulador de Diárias Estaduais e Radar de Concursos Públicos.
+- Adicionados os estilos responsivos do Cockpit Bento em `index.css` com suporte completo aos 3 modos de tema (Light, Dark e Alto Contraste AAA).
+- Atualizado `app.js` com a rotina assíncrona `atualizarContadorCockpit()` para exibir a contagem e status dos atos oficiais em tempo real na interface.
+
 ### 09/08/2026 (Sessao 5 - Reestruturacao Editorial, Mega-Roda-pe e Banner LGPD)
 
 - Reestruturado o System Design de Cores (`SYSTEM_DESIGN_PUBLICOVERSO.md`) calibrando a luminosidade dos tokens de leitura para garantir contraste estrito WCAG 2.1 AA/AAA em todos os 3 modos de cor.

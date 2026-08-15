@@ -128,12 +128,31 @@
       renderizarHeroGrid(noticiasMestre);
       renderizarColunasOpiniao(artigosMestre);
       renderizarListasEditoriais(noticiasMestre);
+      atualizarContadorCockpit();
       configurarFiltros();
       configurarBusca();
       configurarAcessibilidade();
       configurarBannerLGPD();
     } catch (erro) {
       console.error('[Publicoverso] Erro ao inicializar:', erro);
+    }
+  }
+
+  async function atualizarContadorCockpit() {
+    const el = document.getElementById('cockpitLiveCount');
+    if (!el) return;
+    try {
+      const res = await fetch('data/diario_oficial/atos_diario_oficial.json').catch(() => null);
+      if (res && res.ok) {
+        const atos = await res.json();
+        if (Array.isArray(atos) && atos.length > 0) {
+          el.textContent = `${atos.length} atos oficiais monitorados hoje`;
+          return;
+        }
+      }
+      el.textContent = 'Monitoramento oficial ativo (DOU Seção 2)';
+    } catch (e) {
+      el.textContent = 'Monitoramento oficial ativo';
     }
   }
 
@@ -195,29 +214,46 @@
     }
   }
 
-  // --- Renderização das Colunas de Opinião (Cristina Mascarenhas) ---
+  // --- Renderização das Colunas de Opinião (Cristina Mascarenhas - Módulo 2) ---
   function renderizarColunasOpiniao(artigos) {
     const container = document.getElementById('opinionArticlesList');
     if (!container) return;
 
     if (!artigos || artigos.length === 0) {
       container.innerHTML = `
-        <div style="background: var(--bg-card); border: 1px dashed var(--border-color); border-radius: 8px; padding: 1.25rem; text-align: center;">
-          <h4 style="font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin: 0 0 0.5rem 0;">Espaço Aberto para Artigos e Reflexões</h4>
-          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.4; margin: 0 0 0.8rem 0;">Temas sobre a práxis docente, tecnologia na gestão e valorização do servidorismo público.</p>
-          <a href="contato.html" style="display: inline-block; background: var(--color-brand-purple); color: #FFF; font-size: 0.8rem; font-weight: 700; padding: 0.4rem 0.9rem; border-radius: 4px; text-decoration: none;">Envie sua sugestão de pauta &rarr;</a>
+        <div class="opinion-featured-inner">
+          <span class="opinion-tag">Análise Editorial em Destaque</span>
+          <h4 class="opinion-article-title">A Inteligência Artificial e a Humanização da Gestão Pública</h4>
+          <p class="opinion-article-excerpt">Como a transformação digital e os algoritmos podem potencializar o serviço público sem comprometer a sensibilidade humana, a impessoalidade e a memória social.</p>
+          <blockquote class="opinion-pull-quote">
+            "O serviço público não é feito de formulários ou carimbos, mas de pessoas servindo pessoas com o auxílio da técnica e da ética."
+          </blockquote>
+          <div class="opinion-meta">
+            <span class="opinion-date">Curadoria Editorial &bull; 2026</span>
+            <span class="opinion-reading-time">3 min de reflexão</span>
+          </div>
+          <div style="margin-top: 1rem;">
+            <a href="sobre.html" class="btn-primary" style="font-size: 0.82rem; padding: 6px 14px; text-decoration: none; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px;">
+              Ler dossiê da curadora &rarr;
+            </a>
+          </div>
         </div>
       `;
       return;
     }
 
     container.innerHTML = artigos.map(artigo => `
-      <article style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">
-        <span style="font-size: 0.75rem; color: #00D2C8; font-weight: 700; text-transform: uppercase;">Opinião &bull; ${escapar(artigo.data || '2026')}</span>
-        <h4 style="font-family: 'Outfit', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin: 0.3rem 0;">
-          <a href="${escapar(artigo.url_materia || artigo.url || 'sobre.html')}" style="color: inherit; text-decoration: none;">${escapar(artigo.titulo)}</a>
+      <article class="opinion-article-item">
+        <span class="opinion-tag">Opinião &bull; ${escapar(artigo.data || '2026')}</span>
+        <h4 class="opinion-article-title">
+          <a href="${escapar(artigo.url_materia || artigo.url || 'sobre.html')}">${escapar(artigo.titulo)}</a>
         </h4>
-        <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin: 0;">${escapar(artigo.resumo)}</p>
+        <p class="opinion-article-excerpt">${escapar(artigo.resumo)}</p>
+        ${artigo.citacao ? `<blockquote class="opinion-pull-quote">"${escapar(artigo.citacao)}"</blockquote>` : ''}
+        <div class="opinion-meta">
+          <span class="opinion-date">${escapar(artigo.data || '2026')}</span>
+          <span class="opinion-reading-time">${escapar(artigo.tempo_leitura || '4 min de leitura')}</span>
+        </div>
       </article>
     `).join('');
   }
@@ -236,6 +272,7 @@
       const badgeClass = categoriaBadgeClass(principal.categoria);
       const urlDestino = principal.url_materia || principal.url_original || '#';
       const targetAttr = !principal.url_materia && principal.url_original ? 'target="_blank" rel="noopener noreferrer"' : '';
+      const textoParaNarrar = `${principal.titulo}. ${principal.resumo || ''}`;
 
       mainCol.innerHTML = `
         <div>
@@ -247,9 +284,15 @@
         </div>
         <footer class="hero-meta-footer">
           <span>${escapar(principal.fonte)} &bull; ${escapar(principal.data || 'Atualizado recentemente')}</span>
-          <a href="${escapar(urlDestino)}" class="btn-curate" ${targetAttr} aria-label="Ler matéria: ${escapar(principal.titulo)}">
-            ${principal.url_materia ? 'Ler matéria completa &rarr;' : 'Ver no veículo original &rarr;'}
-          </a>
+          <div style="display: flex; gap: 8px; align-items: center;">
+            <button type="button" class="btn-read-aloud" data-text-to-read="${escapar(textoParaNarrar)}" aria-label="Ouvir manchete em áudio">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" stroke="currentColor" stroke-width="2"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07" stroke="currentColor" stroke-width="2"/></svg>
+              Ouvir
+            </button>
+            <a href="${escapar(urlDestino)}" class="btn-curate" ${targetAttr} aria-label="Ler matéria: ${escapar(principal.titulo)}">
+              ${principal.url_materia ? 'Ler matéria completa &rarr;' : 'Ver no veículo original &rarr;'}
+            </a>
+          </div>
         </footer>
       `;
     }
@@ -261,6 +304,7 @@
         const badgeClass = categoriaBadgeClass(sec.categoria);
         const urlDestino = sec.url_materia || sec.url_original || '#';
         const targetAttr = !sec.url_materia && sec.url_original ? 'target="_blank" rel="noopener noreferrer"' : '';
+        const textoParaNarrar = `${sec.titulo}. ${sec.resumo || ''}`;
 
         return `
           <article class="secondary-card">
@@ -273,9 +317,15 @@
             </div>
             <footer class="hero-meta-footer" style="padding-top:0.6rem;">
               <span>${escapar(sec.fonte)} &bull; ${escapar(sec.data || 'Atualizado recentemente')}</span>
-              <a href="${escapar(urlDestino)}" class="btn-curate btn-curate-sm" ${targetAttr}>
-                ${sec.url_materia ? 'Ler' : 'Ver'}
-              </a>
+              <div style="display: flex; gap: 6px; align-items: center;">
+                <button type="button" class="btn-read-aloud btn-read-aloud-sm" data-text-to-read="${escapar(textoParaNarrar)}" aria-label="Ouvir manchete">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" stroke="currentColor" stroke-width="2"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07" stroke="currentColor" stroke-width="2"/></svg>
+                  Ouvir
+                </button>
+                <a href="${escapar(urlDestino)}" class="btn-curate btn-curate-sm" ${targetAttr}>
+                  ${sec.url_materia ? 'Ler' : 'Ver'}
+                </a>
+              </div>
             </footer>
           </article>
         `;
@@ -369,17 +419,54 @@
     }).join('');
   }
 
-  // --- Filtros de Categoria ---
+  // --- Filtros de Categoria e Drawer Mobile (Módulo 3) ---
   function configurarFiltros() {
     const chips = document.querySelectorAll('.chip[data-category]');
     chips.forEach(chip => {
       chip.addEventListener('click', () => {
-        chips.forEach(c => c.classList.remove('active'));
-        chip.classList.add('active');
-        categoriaAtiva = chip.dataset.category;
+        const cat = chip.dataset.category;
+        chips.forEach(c => {
+          if (c.dataset.category === cat) {
+            c.classList.add('active');
+          } else {
+            c.classList.remove('active');
+          }
+        });
+        categoriaAtiva = cat;
         aplicarFiltros();
+
+        // Se clicou no drawer, fecha após seleção
+        const overlay = document.getElementById('mobileDrawerOverlay');
+        if (overlay && overlay.classList.contains('active')) {
+          overlay.classList.remove('active');
+        }
       });
     });
+
+    // Controle do Drawer Mobile
+    const btnOpenDrawer = document.getElementById('btnOpenMobileDrawer');
+    const btnCloseDrawer = document.getElementById('btnCloseMobileDrawer');
+    const drawerOverlay = document.getElementById('mobileDrawerOverlay');
+
+    if (btnOpenDrawer && drawerOverlay) {
+      btnOpenDrawer.addEventListener('click', () => {
+        drawerOverlay.classList.add('active');
+      });
+    }
+
+    if (btnCloseDrawer && drawerOverlay) {
+      btnCloseDrawer.addEventListener('click', () => {
+        drawerOverlay.classList.remove('active');
+      });
+    }
+
+    if (drawerOverlay) {
+      drawerOverlay.addEventListener('click', (e) => {
+        if (e.target === drawerOverlay) {
+          drawerOverlay.classList.remove('active');
+        }
+      });
+    }
   }
 
   // --- Busca por Texto ---
@@ -471,6 +558,95 @@
         aplicarTema(novoTema);
       });
     }
+
+    // Atalhos Universais de Teclado (Módulo 4: Acessibilidade 360º)
+    window.addEventListener('keydown', (e) => {
+      if (e.altKey && e.key === '1') {
+        e.preventDefault();
+        const mainContent = document.getElementById('mainContent') || document.querySelector('main') || document.querySelector('.hero-omelete-grid');
+        if (mainContent) {
+          mainContent.scrollIntoView({ behavior: 'smooth' });
+          mainContent.setAttribute('tabindex', '-1');
+          mainContent.focus();
+        }
+      } else if (e.altKey && e.key === '2') {
+        e.preventDefault();
+        const temaAtual = localStorage.getItem('publicoverso-tema-v3') || 'claro';
+        const novoTema = (temaAtual === 'alto-contraste') ? 'claro' : 'alto-contraste';
+        aplicarTema(novoTema);
+      } else if (e.altKey && e.key === '3') {
+        e.preventDefault();
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) {
+          searchInput.focus();
+          searchInput.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+
+    configurarVozNativa();
+  }
+
+  // --- Sintetizador de Voz Nativo Web Speech API (Módulo 4) ---
+  let sinteseVozAtiva = false;
+
+  function falarTexto(texto, btnElement) {
+    if (!('speechSynthesis' in window)) {
+      alert('Seu navegador não possui suporte nativo à síntese de voz.');
+      return;
+    }
+
+    if (window.speechSynthesis.speaking) {
+      window.speechSynthesis.cancel();
+      sinteseVozAtiva = false;
+      document.querySelectorAll('.btn-read-aloud').forEach(b => {
+        b.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" stroke="currentColor" stroke-width="2"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07" stroke="currentColor" stroke-width="2"/></svg> Ouvir`;
+        b.classList.remove('speaking');
+      });
+      return;
+    }
+
+    const narracao = new SpeechSynthesisUtterance(texto);
+    narracao.lang = 'pt-BR';
+    narracao.rate = 1.05;
+    narracao.pitch = 1.0;
+
+    narracao.onstart = function () {
+      sinteseVozAtiva = true;
+      if (btnElement) {
+        btnElement.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="6" y="4" width="4" height="16" fill="currentColor"/><rect x="14" y="4" width="4" height="16" fill="currentColor"/></svg> Parar`;
+        btnElement.classList.add('speaking');
+      }
+    };
+
+    narracao.onend = function () {
+      sinteseVozAtiva = false;
+      if (btnElement) {
+        btnElement.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" stroke="currentColor" stroke-width="2"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07" stroke="currentColor" stroke-width="2"/></svg> Ouvir`;
+        btnElement.classList.remove('speaking');
+      }
+    };
+
+    narracao.onerror = function () {
+      sinteseVozAtiva = false;
+      if (btnElement) {
+        btnElement.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" stroke="currentColor" stroke-width="2"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07" stroke="currentColor" stroke-width="2"/></svg> Ouvir`;
+        btnElement.classList.remove('speaking');
+      }
+    };
+
+    window.speechSynthesis.speak(narracao);
+  }
+
+  function configurarVozNativa() {
+    document.addEventListener('click', function (e) {
+      const btn = e.target.closest('.btn-read-aloud');
+      if (!btn) return;
+      const textoParaLer = btn.getAttribute('data-text-to-read') || '';
+      if (textoParaLer) {
+        falarTexto(textoParaLer, btn);
+      }
+    });
   }
 
   // --- Utilitário: Mapeamento de Badge de Categoria ---
