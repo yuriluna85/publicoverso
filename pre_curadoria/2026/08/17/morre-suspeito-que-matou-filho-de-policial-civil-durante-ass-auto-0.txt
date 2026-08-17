@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-0598b0e167
+titulo: Morre suspeito que matou filho de policial civil durante assalto em SP
+resumo: Morreu no hospital o assaltante que trocou tiros com um policial civil e matou o filho dele durante uma tentativa de assalto na zona norte de São Paulo.
+autor: Curadoria Publicoverso
+categoria: Cultura Pop e Gastronomia
+data: 17/08/2026
+fonte: UOL Notícias
+status: Pendente
+status_triagem: Pendente
+url_original: https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/08/17/morre-suspeito-que-matou-filho-de-policial-civil-durante-assalto-em-sp.amp.htm
+---
+
+Morreu no hospital o assaltante que trocou tiros com um policial civil e matou o filho dele durante uma tentativa de assalto na zona norte de São Paulo.
+
+Fonte original: https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/08/17/morre-suspeito-que-matou-filho-de-policial-civil-durante-assalto-em-sp.amp.htm

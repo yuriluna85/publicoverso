@@ -1038,5 +1038,26 @@
     "titulo": "DIÁRIO DA JUSTIÇA",
     "categoria": "Jurídico e PAD",
     "data_mineracao": "2026-08-17 16:30:12"
+  },
+  {
+    "id_mineracao": "auto-0598b0e167",
+    "url": "https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/08/17/morre-suspeito-que-matou-filho-de-policial-civil-durante-assalto-em-sp.amp.htm",
+    "titulo": "Morre suspeito que matou filho de policial civil durante assalto em SP",
+    "categoria": "Cultura Pop e Gastronomia",
+    "data_mineracao": "2026-08-17 21:27:19"
+  },
+  {
+    "id_mineracao": "auto-d256c8451f",
+    "url": "https://www.bol.uol.com.br/noticias/2026/08/17/suspeito-de-matar-pm-durante-aula-de-jiu-jitsu-e-indiciado-em-mt.amp.htm",
+    "titulo": "PM morto em aula de jiu-jitsu tinha caso com mulher do suspeito há 2 anos",
+    "categoria": "Esportes e Aventura",
+    "data_mineracao": "2026-08-17 21:27:31"
+  },
+  {
+    "id_mineracao": "auto-74ad93cdb7",
+    "url": "https://www.google.com/goto?url=CAESvwEB7keqTaY9S8eFtqsLkT124yHmYHae-pa3z6T5bWJVmIcuu871W2AUmC92422E-ccU-gUW5DImBy0Hefah2d-UAZ10cCHCI3y8PGwhpxN0Z4TtK8M6AIb9M5zM0Dg3F1iyBeSo1t7vz0zIUzXxavaWowxM1lwqPum740haiyjVKWr2pWWvz_DtPJyBqNsyfODNbf2C0deTLKwq9z03Vp4FzhAhgVI91gcXUqV_pf7e6EA8o02tOf-n1PKY4I1DkQ==",
+    "titulo": "Sob suspeita, programa para idosos leva a 35 exonerações e fim de secretaria estadual",
+    "categoria": "Jurídico e PAD",
+    "data_mineracao": "2026-08-17 21:27:46"
   }
 ]
