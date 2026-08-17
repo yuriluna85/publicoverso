@@ -23,11 +23,11 @@
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-  <link rel="stylesheet" href="index.css?v=bahia_brand_unified_v4">
+  <link rel="stylesheet" href="index.css?v=bahia_brand_unified_v5">
 </head>
 <body>
-
-    <header class="navbar" id="mainHeader" aria-label="Cabeçalho institucional e navegação principal">
+  <!-- Cabeçalho Principal Unificado -->
+  <header class="navbar" id="mainHeader" aria-label="Cabeçalho institucional e navegação principal">
     <div class="navbar-container">
       <a href="index.html" class="brand-logo" aria-label="Publicoverso - Início">
         <div class="pv-logo-hexagon" aria-hidden="true">
@@ -63,14 +63,14 @@
       </a>
 
       <nav class="navbar-links" aria-label="Navegação principal">
-      <a href="index.html" class="nav-link">Início</a>
-      <a href="noticias.html" class="nav-link">Notícias</a>
-      <a href="diario-oficial.html" class="nav-link">Diário Oficial</a>
-      <a href="concursos.html" class="nav-link">Radar de Concursos</a>
-      <a href="sobre.html" class="nav-link">Sobre</a>
-      <a href="servicos.html" class="nav-link">Serviços</a>
-      <a href="contato.html" class="nav-link">Contato</a>
-      <a href="https://taes-federal.com.br/" class="nav-link nav-link-external" target="_blank" rel="noopener noreferrer">Calculadora TAE</a>
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="noticias.html" class="nav-link">Notícias</a>
+        <a href="diario-oficial.html" class="nav-link">Diário Oficial</a>
+        <a href="concursos.html" class="nav-link">Radar de Concursos</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="servicos.html" class="nav-link">Serviços</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+        <a href="https://taes-federal.com.br/" class="nav-link nav-link-external" target="_blank" rel="noopener noreferrer">Calculadora TAE</a>
       </nav>
 
       <div class="controls-bar" aria-label="Controles de Acessibilidade e Tema">
@@ -82,22 +82,14 @@
     </div>
   </header>
 
-  <main class="main-wrapper" data-categoria="Artes e Literatura">
+      <main class="main-wrapper" data-categoria="Artes e Literatura">
 
     <section class="institutional-page">
       <nav class="breadcrumb" aria-label="Localização na página">
         <a href="index.html">Início</a> &rsaquo; <a href="noticias.html">Notícias</a> &rsaquo; <span>Artes e Literatura</span>
       </nav>
 
-      <header style="margin-bottom: 2rem; border-bottom: 2px solid var(--border-color); padding-bottom: 1.5rem;">
-        <span class="hat-badge badge-artes">Editoria Especializada</span>
-        <h1 class="page-title" style="font-size: 2.2rem; margin-top: 0.5rem;">Artes e Literatura</h1>
-        <p class="page-meta" style="font-size: 1.05rem; line-height: 1.5; color: var(--text-muted);">
-          Produções literárias, livros, ensaios acadêmicos, exposições de artes plásticas, fotografia e dramaturgia escritas e criadas por servidores públicas e públicos.
-        </p>
-      </header>
-
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem;">
         <div id="catHeroMain" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
           <p style="color: var(--text-muted);">Carregando manchete principal...</p>
         </div>
@@ -155,10 +147,12 @@
 
   </main>
 
-    <footer class="footer-mega" aria-label="Rodapé institucional">
+      <script src="app_categoria.js"></script>
+  <!-- Rodapé Institucional Mega Unificado (4 Colunas) -->
+  <footer class="footer-mega" aria-label="Rodapé institucional">
     <div class="footer-grid">
-      <!-- Coluna 1: Sobre e Curadoria -->
-      <div class="footer-col">
+      <!-- Coluna 1: Sobre e Curadoria Editorial -->
+      <div class="footer-col footer-col-brand">
         <div class="footer-brand">
           <div class="pv-logo-hexagon" aria-hidden="true">
             <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -191,9 +185,9 @@
         <p class="footer-desc">
           O portal editorial que celebra a trajetória, as conquistas e o impacto dos servidores públicos brasileiros.
         </p>
-        <p class="curadoria-badge">
+        <div class="curadoria-badge">
           Curadoria Editorial: <strong>Cristina Mascarenhas</strong> (Mestre pela UFBA)
-        </p>
+        </div>
       </div>
 
       <!-- Coluna 2: Editorias -->
@@ -205,7 +199,7 @@
           <li><a href="categoria-carreira.html">Carreira e Gestão</a></li>
           <li><a href="categoria-ciencia.html">Ciência e Inovação</a></li>
           <li><a href="categoria-esportes.html">Esportes</a></li>
-          <li><a href="categoria-artes.html">Artes e Literatura</a></li>
+          <li><span class="footer-current-page" aria-current="page">Artes e Literatura</span></li>
           <li><a href="categoria-solidariedade.html">Solidariedade</a></li>
           <li><a href="categoria-policial.html">Segurança e Cidadania</a></li>
         </ul>
@@ -232,18 +226,19 @@
           <li><a href="privacidade.html">Política de Privacidade (LGPD)</a></li>
           <li><a href="termos.html">Termos de Uso</a></li>
         </ul>
-        <p class="footer-contact-info">
+        <div class="footer-contact-info">
           Atendimento: <a href="mailto:contato@publicoverso.com.br">contato@publicoverso.com.br</a>
-        </p>
+        </div>
       </div>
     </div>
 
     <!-- Barra Inferior de Direitos -->
     <div class="footer-bottom">
-      <p>Publicoverso - Todos os direitos reservados. Projeto mantido pelo YLuna85 LABs.</p>
+      <div class="footer-bottom-container">
+        <p class="footer-legal-disclaimer">O Publicoverso e uma publicacao jornalistica e editorial independente. Nao possui vinculo governamental oficial direto com os orgaos citados.</p>
+        <p class="footer-copyright">Publicoverso - Todos os direitos reservados. Projeto mantido pelo YLuna85 LABs.</p>
+      </div>
     </div>
   </footer>
-
-  <script src="app_categoria.js"></script>
 </body>
 </html>

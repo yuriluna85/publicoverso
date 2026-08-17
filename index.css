@@ -761,117 +761,157 @@ body.high-contrast .author-name {
 
 .footer-mega {
   background: var(--color-brand-primary);
-  border-top: 2px solid var(--color-brand-turquoise);
+  border-top: 3px solid var(--color-brand-accent);
   color: #FFFFFF;
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   font-family: var(--font-main);
 }
 
 body.theme-dark .footer-mega {
-  background: #0B0418;
-  border-top: 2px solid var(--color-brand-turquoise);
-  color: #F8FAFC;
+  background: #060B12;
+  border-top: 3px solid var(--color-brand-accent);
+  color: #FFFFFF;
 }
 
 body.theme-high-contrast .footer-mega {
   background: #000000;
-  border-top: 3px solid #FFFFFF;
+  border-top: 3px solid #FFFF00;
   color: #FFFFFF;
 }
 
+/* Container do Rodapé em Grade (4 Colunas) */
+.footer-grid,
 .footer-mega-container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 3rem 2rem 2rem;
+  padding: 3.5rem 2rem 2.5rem;
   display: grid;
-  grid-template-columns: 1.5fr repeat(3, 1fr);
+  grid-template-columns: 1.4fr 1fr 1fr 1.1fr;
   gap: 2.5rem;
+  box-sizing: border-box;
 }
 
 @media (max-width: 992px) {
+  .footer-grid,
   .footer-mega-container {
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 }
 
 @media (max-width: 576px) {
+  .footer-grid,
   .footer-mega-container {
     grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 2rem 1.25rem;
+    padding: 2.25rem 1.25rem 1.75rem;
   }
 }
 
+/* Colunas do Rodapé */
+.footer-col,
 .footer-col-brand {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.85rem;
+  text-align: left;
 }
 
-.footer-brand-header {
+.footer-brand-header,
+.footer-brand {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  margin-bottom: 0.25rem;
 }
 
+.footer-brand h3,
 .footer-brand-title {
   font-family: var(--font-heading);
-  font-size: 1.4rem;
+  font-size: 1.45rem;
   font-weight: 800;
   color: #FFFFFF;
   letter-spacing: 0.02em;
+  margin: 0;
 }
 
+body.theme-high-contrast .footer-brand h3,
 body.theme-high-contrast .footer-brand-title {
   color: #FFFF00;
 }
 
+.footer-desc,
 .footer-brand-desc {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   line-height: 1.6;
-  color: #CBD5E1;
+  color: #F1F5F9;
+  margin: 0;
 }
 
-body.theme-dark .footer-brand-desc {
-  color: #94A3B8;
-}
-
+body.theme-high-contrast .footer-desc,
 body.theme-high-contrast .footer-brand-desc {
   color: #FFFFFF;
 }
 
+/* Badge de Curadoria Editorial */
+.curadoria-badge,
 .curatorial-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: rgba(0, 85, 165, 0.12);
-  border: 1px solid var(--color-brand-turquoise);
-  color: var(--color-brand-turquoise);
-  padding: 0.4rem 0.85rem;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #FFFFFF !important;
+  padding: 0.55rem 0.9rem;
   border-radius: var(--radius-sm);
-  font-size: 0.82rem;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  backdrop-filter: blur(4px);
 }
 
+.curadoria-badge strong,
+.curatorial-badge strong {
+  color: #FFFFFF !important;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+body.theme-high-contrast .curadoria-badge,
 body.theme-high-contrast .curatorial-badge {
   background: #000000;
-  border: 1px solid #FFFF00;
-  color: #FFFF00;
+  border: 2px solid #FFFF00;
+  color: #FFFF00 !important;
 }
 
+body.theme-high-contrast .curadoria-badge strong,
+body.theme-high-contrast .curatorial-badge strong {
+  color: #FFFF00 !important;
+}
+
+/* Títulos das Colunas */
+.footer-col h4,
 .footer-col-title {
   font-family: var(--font-heading);
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--color-brand-turquoise);
-  margin-bottom: 1.2rem;
+  color: #FFFFFF;
+  margin: 0 0 0.85rem 0;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  border-bottom: 2px solid var(--color-brand-accent);
+  padding-bottom: 0.35rem;
+  display: inline-block;
+  align-self: flex-start;
 }
 
+body.theme-high-contrast .footer-col h4,
 body.theme-high-contrast .footer-col-title {
   color: #FFFF00;
+  border-bottom-color: #FFFF00;
 }
 
+/* Listas e Links do Rodapé */
+.footer-col ul,
 .footer-col-list {
   list-style: none;
   padding: 0;
@@ -881,45 +921,97 @@ body.theme-high-contrast .footer-col-title {
   gap: 0.65rem;
 }
 
+.footer-col ul li,
+.footer-col-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-col a,
 .footer-col-list a {
-  color: #E2E8F0;
+  color: #FFFFFF !important;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
+  font-weight: 500;
   transition: var(--transition-fast);
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
 }
 
-body.theme-dark .footer-col-list a {
-  color: #CBD5E1;
-}
-
-body.theme-high-contrast .footer-col-list a {
-  color: #00FFFF;
-  font-weight: 600;
-}
-
+.footer-col a:hover,
+.footer-col a:focus-visible,
 .footer-col-list a:hover,
 .footer-col-list a:focus-visible {
-  color: var(--color-brand-turquoise);
+  color: #FBBF24 !important;
   transform: translateX(4px);
   text-decoration: underline;
 }
 
-body.theme-high-contrast .footer-col-list a:hover {
-  color: #FFFF00;
+body.theme-high-contrast .footer-col a,
+body.theme-high-contrast .footer-col-list a {
+  color: #00FFFF !important;
+  font-weight: 600;
 }
 
-/* Sub-Rodapé Inferior */
+body.theme-high-contrast .footer-col a:hover,
+body.theme-high-contrast .footer-col-list a:hover {
+  color: #FFFF00 !important;
+}
+
+/* Item de Página Atual no Rodapé (Inativo) */
+.footer-link-active,
+.footer-current-page {
+  color: #FBBF24;
+  font-size: 0.92rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  opacity: 0.95;
+}
+
+.footer-link-active::before,
+.footer-current-page::before {
+  content: "•";
+  color: #FBBF24;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* Contato no Rodapé */
+.footer-contact-info {
+  color: #F1F5F9;
+  font-size: 0.88rem;
+  margin-top: 0.75rem;
+  line-height: 1.5;
+}
+
+.footer-contact-info a {
+  color: #FFFFFF !important;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Sub-Rodapé Inferior de Direitos */
 .footer-bottom {
-  background: rgba(0, 0, 0, 0.3);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.28);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   padding: 1.25rem 2rem;
-  font-size: 0.82rem;
+  font-size: 0.84rem;
+  text-align: center;
+  color: #F1F5F9;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #F1F5F9;
 }
 
 body.theme-high-contrast .footer-bottom {
   background: #000000;
   border-top: 1px solid #FFFFFF;
+  color: #FFFFFF;
 }
 
 .footer-bottom-container {
@@ -933,8 +1025,9 @@ body.theme-high-contrast .footer-bottom {
 }
 
 .footer-legal-disclaimer {
-  color: #94A3B8;
+  color: #E2E8F0;
   max-width: 800px;
+  margin: 0;
 }
 
 body.theme-high-contrast .footer-legal-disclaimer {
@@ -942,8 +1035,9 @@ body.theme-high-contrast .footer-legal-disclaimer {
 }
 
 .footer-copyright {
-  color: #64748B;
+  color: #CBD5E1;
   font-weight: 500;
+  margin: 0;
 }
 
 body.theme-high-contrast .footer-copyright {

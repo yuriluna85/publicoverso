@@ -15,18 +15,17 @@
   <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
 
   <!-- System Design Master -->
-  <link rel="stylesheet" href="../../index.css?v=bahia_brand_unified_v4">
+  <link rel="stylesheet" href="../../index.css?v=bahia_brand_unified_v5">
 </head>
 <body>
-  <a href="#main-content" class="sr-only sr-only-focusable">Pular para o conteúdo principal</a>
-
-  <!-- Cabeçalho / Navbar Unificada do Super Portal -->
-  <header class="navbar" role="banner">
+  <!-- Cabeçalho Principal Unificado -->
+  <header class="navbar" id="mainHeader" aria-label="Cabeçalho institucional e navegação principal">
     <div class="navbar-container">
-      <a href="../../index.html" class="brand-logo" aria-label="Página inicial do Publicoverso">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <a href="../../index.html" class="brand-logo" aria-label="Publicoverso - Início">
+        <div class="pv-logo-hexagon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect x="1" y="1" width="38" height="38" rx="9" fill="#FFFFFF" stroke="rgba(0, 85, 165, 0.25)" stroke-width="1.2"/>
-  <polygon points="20,5 33,12 33,28 20,35 7,28 7,12" stroke="url(#hexGradWhiteApp)" stroke-width="2" fill="rgba(0, 85, 165, 0.08)"/>
+  <polygon points="20,5 33,12 33,28 20,35 7,28 7,12" stroke="url(#hexGradWhiteNav)" stroke-width="2" fill="rgba(0, 85, 165, 0.08)"/>
   <line x1="20" y1="20" x2="20" y2="10" stroke="#B45309" stroke-width="1.2" opacity="0.9"/>
   <line x1="20" y1="20" x2="29.5" y2="15.5" stroke="#0055A5" stroke-width="1.2" opacity="0.9"/>
   <line x1="20" y1="20" x2="29.5" y2="24.5" stroke="#B91C1C" stroke-width="1.2" opacity="0.9"/>
@@ -41,26 +40,27 @@
   <circle cx="10.5" cy="15.5" r="2.4" fill="#0055A5"/>
   <circle cx="20" cy="20" r="3.4" fill="#B45309"/>
   <defs>
-    <linearGradient id="hexGradWhiteApp" x1="7" y1="5" x2="33" y2="35" gradientUnits="userSpaceOnUse">
+    <linearGradient id="hexGradWhiteNav" x1="7" y1="5" x2="33" y2="35" gradientUnits="userSpaceOnUse">
       <stop stop-color="#0055A5"/>
       <stop offset="0.5" stop-color="#003882"/>
       <stop offset="1" stop-color="#B91C1C"/>
     </linearGradient>
   </defs>
 </svg>
+        </div>
         <div class="brand-text">
           <h1>Publicoverso</h1>
-          <span>A rede do serviço público</span>
+          <span>Histórias do Serviço Público</span>
         </div>
       </a>
 
       <nav class="navbar-links" aria-label="Navegação principal">
-        <a href="../../index.html" class="nav-link">Início</a>
+        <a href="../../index.html" class="nav-link active" aria-current="page">Início</a>
         <a href="../../noticias.html" class="nav-link">Notícias</a>
-        <a href="index.html" class="nav-link active" aria-current="page">Diário Oficial</a>
-        <a href="../diarias-estaduais/index.html" class="nav-link">Diárias Estaduais</a>
-        <a href="../radar-concursos/index.html" class="nav-link">Radar de Concursos</a>
+        <a href="../../diario-oficial.html" class="nav-link">Diário Oficial</a>
+        <a href="../../concursos.html" class="nav-link">Radar de Concursos</a>
         <a href="../../sobre.html" class="nav-link">Sobre</a>
+        <a href="../../servicos.html" class="nav-link">Serviços</a>
         <a href="../../contato.html" class="nav-link">Contato</a>
         <a href="https://taes-federal.com.br/" class="nav-link nav-link-external" target="_blank" rel="noopener noreferrer">Calculadora TAE</a>
       </nav>
@@ -68,35 +68,19 @@
       <div class="controls-bar" aria-label="Controles de Acessibilidade e Tema">
         <button id="btnFontDecrease" class="btn-a11y" aria-label="Diminuir tamanho do texto">A-</button>
         <button id="btnFontIncrease" class="btn-a11y" aria-label="Aumentar tamanho do texto">A+</button>
-        <button id="btnThemeToggle" class="btn-a11y" aria-label="Alternar Modo de Cores">Tema: Claro</button>
-        <button id="btnHighContrast" class="btn-a11y" aria-label="Alternar Alto Contraste">Alto Contraste</button>
+        <button id="btnThemeToggle" class="btn-a11y" aria-label="Alternar entre Modo Claro e Escuro">Tema: Claro</button>
+        <button id="btnHighContrast" class="btn-a11y" aria-label="Alternar Modo Alto Contraste para baixa visão">Alto Contraste</button>
       </div>
     </div>
   </header>
+  <a href="#main-content" class="sr-only sr-only-focusable">Pular para o conteúdo principal</a>
 
-  <!-- Conteúdo Principal -->
+  <!-- Cabeçalho / Navbar Unificada do Super Portal -->
+    <!-- Conteúdo Principal -->
   <main id="main-content" class="container main-content" role="main">
     
     <!-- Hero Header Editorial -->
-    <header class="page-header" style="margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1.5rem;">
-      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
-        <div>
-          <span class="hat-badge" style="background: rgba(0, 210, 200, 0.15); color: #0055A5; border: 1px solid rgba(0, 210, 200, 0.3);">Aplicação Oficial &bull; Transparência Pública</span>
-          <h1 class="page-title" style="font-size: 2.2rem; margin-top: 0.5rem; color: var(--text-primary);">Monitor do Diário Oficial (DOU / DOE)</h1>
-          <p class="page-description" style="font-size: 1.05rem; line-height: 1.5; color: var(--text-muted); max-width: 800px;">
-            Consulta transparente de portarias, nomeações, convocações, exonerações, aposentadorias e atos de pessoal publicados na Seção 2 do Diário Oficial da União e Diários Estaduais.
-          </p>
-        </div>
-        <div>
-          <a id="btnDownloadCSV" href="javascript:void(0)" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--color-brand-cyan); color: #0A0E1A; font-weight: 700; padding: 0.65rem 1.2rem; border-radius: 8px; text-decoration: none;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Baixar CSV do Mês
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <!-- Bento Grid de KPIs -->
+      <!-- Bento Grid de KPIs -->
     <section class="do-kpi-grid" aria-label="Métricas de Publicações Oficiais" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; margin-bottom: 2.5rem;">
       <div class="kpi-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem; text-align: center;">
         <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase;">Total Registrado</span>
@@ -192,44 +176,98 @@
 
   </main>
 
-  <!-- Rodapé Institucional -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-grid">
-      <div class="footer-col footer-about">
-        <h4 class="footer-title">Publicoverso</h4>
-        <p>A rede do serviço público brasileiro. Transparência, tecnologia e informação autêntica para servidores públicos e cidadãos.</p>
-        <p style="margin-top: 0.8rem; font-size: 0.85rem; color: var(--text-muted);">
-          Contato Editorial: <a href="mailto:publicoverso@gmail.com" style="color: var(--color-brand-cyan); text-decoration: none;">publicoverso@gmail.com</a>
+  <script src="app.js"></script>
+  <!-- Rodapé Institucional Mega Unificado (4 Colunas) -->
+  <footer class="footer-mega" aria-label="Rodapé institucional">
+    <div class="footer-grid">
+      <!-- Coluna 1: Sobre e Curadoria Editorial -->
+      <div class="footer-col footer-col-brand">
+        <div class="footer-brand">
+          <div class="pv-logo-hexagon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" width="38" height="38" rx="9" fill="#FFFFFF" stroke="rgba(0, 85, 165, 0.25)" stroke-width="1.2"/>
+  <polygon points="20,5 33,12 33,28 20,35 7,28 7,12" stroke="url(#hexGradWhiteNav)" stroke-width="2" fill="rgba(0, 85, 165, 0.08)"/>
+  <line x1="20" y1="20" x2="20" y2="10" stroke="#B45309" stroke-width="1.2" opacity="0.9"/>
+  <line x1="20" y1="20" x2="29.5" y2="15.5" stroke="#0055A5" stroke-width="1.2" opacity="0.9"/>
+  <line x1="20" y1="20" x2="29.5" y2="24.5" stroke="#B91C1C" stroke-width="1.2" opacity="0.9"/>
+  <line x1="20" y1="20" x2="20" y2="30" stroke="#0055A5" stroke-width="1.2" opacity="0.9"/>
+  <line x1="20" y1="20" x2="10.5" y2="24.5" stroke="#B91C1C" stroke-width="1.2" opacity="0.9"/>
+  <line x1="20" y1="20" x2="10.5" y2="15.5" stroke="#0055A5" stroke-width="1.2" opacity="0.9"/>
+  <circle cx="20" cy="10" r="2.4" fill="#B45309"/>
+  <circle cx="29.5" cy="15.5" r="2.4" fill="#0055A5"/>
+  <circle cx="29.5" cy="24.5" r="2.4" fill="#B91C1C"/>
+  <circle cx="20" cy="30" r="2.4" fill="#0055A5"/>
+  <circle cx="10.5" cy="24.5" r="2.4" fill="#B91C1C"/>
+  <circle cx="10.5" cy="15.5" r="2.4" fill="#0055A5"/>
+  <circle cx="20" cy="20" r="3.4" fill="#B45309"/>
+  <defs>
+    <linearGradient id="hexGradWhiteNav" x1="7" y1="5" x2="33" y2="35" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0055A5"/>
+      <stop offset="0.5" stop-color="#003882"/>
+      <stop offset="1" stop-color="#B91C1C"/>
+    </linearGradient>
+  </defs>
+</svg>
+          </div>
+          <h3>Publicoverso</h3>
+        </div>
+        <p class="footer-desc">
+          O portal editorial que celebra a trajetória, as conquistas e o impacto dos servidores públicos brasileiros.
         </p>
+        <div class="curadoria-badge">
+          Curadoria Editorial: <strong>Cristina Mascarenhas</strong> (Mestre pela UFBA)
+        </div>
       </div>
 
+      <!-- Coluna 2: Editorias -->
       <div class="footer-col">
-        <h4 class="footer-title">Aplicações</h4>
-        <ul class="footer-links">
-          <li><a href="index.html">Monitor do Diário Oficial</a></li>
-          <li><a href="../diarias-estaduais/index.html">Simulador de Diárias Estaduais</a></li>
-          <li><a href="../radar-concursos/index.html">Radar de Concursos</a></li>
+        <h4>Editorias</h4>
+        <ul>
+          <li><a href="../../categoria-cultura.html">Gente e Cultura</a></li>
+          <li><a href="../../categoria-historias.html">Conquistas e Histórias</a></li>
+          <li><a href="../../categoria-carreira.html">Carreira e Gestão</a></li>
+          <li><a href="../../categoria-ciencia.html">Ciência e Inovação</a></li>
+          <li><a href="../../categoria-esportes.html">Esportes</a></li>
+          <li><a href="../../categoria-artes.html">Artes e Literatura</a></li>
+          <li><a href="../../categoria-solidariedade.html">Solidariedade</a></li>
+          <li><a href="../../categoria-policial.html">Segurança e Cidadania</a></li>
         </ul>
       </div>
 
+      <!-- Coluna 3: Ferramentas e Radar -->
       <div class="footer-col">
-        <h4 class="footer-title">Institucional</h4>
-        <ul class="footer-links">
+        <h4>Ferramentas</h4>
+        <ul>
+          <li><a href="../../diario-oficial.html">Monitor do DOU</a></li>
+          <li><a href="../../concursos.html">Radar de Concursos</a></li>
+          <li><a href="../../servicos.html">Serviços Especializados</a></li>
+          <li><a href="https://taes-federal.com.br/" target="_blank" rel="noopener noreferrer">Calculadora TAE</a></li>
+          <li><a href="../../desinformacao.html">Combate à Desinformação</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 4: Institucional e Contato -->
+      <div class="footer-col">
+        <h4>Institucional</h4>
+        <ul>
           <li><a href="../../sobre.html">Sobre o Portal</a></li>
           <li><a href="../../contato.html">Fale Conosco</a></li>
-          <li><a href="../../privacidade.html">Política de Privacidade</a></li>
+          <li><a href="../../privacidade.html">Política de Privacidade (LGPD)</a></li>
           <li><a href="../../termos.html">Termos de Uso</a></li>
         </ul>
+        <div class="footer-contact-info">
+          Atendimento: <a href="mailto:contato@publicoverso.com.br">contato@publicoverso.com.br</a>
+        </div>
       </div>
     </div>
 
+    <!-- Barra Inferior de Direitos -->
     <div class="footer-bottom">
-      <div class="container footer-bottom-content">
-        <p>&copy; 2026 Publicoverso LABs. Todos os direitos reservados.</p>
+      <div class="footer-bottom-container">
+        <p class="footer-legal-disclaimer">O Publicoverso e uma publicacao jornalistica e editorial independente. Nao possui vinculo governamental oficial direto com os orgaos citados.</p>
+        <p class="footer-copyright">Publicoverso - Todos os direitos reservados. Projeto mantido pelo YLuna85 LABs.</p>
       </div>
     </div>
   </footer>
-
-  <script src="app.js"></script>
 </body>
 </html>
