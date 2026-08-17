@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-b82b11d601
+titulo: Polícia divulga foto de suspeito de matar policial militar em Parnaíba; vídeo mostra crime
+resumo: Lucas da Silva Oliveira, de 28 anos, é procurado por suspeita de matar o 3º sargento da Polícia Militar do Piauí (PMPI) José Arnobio Farias Cardoso.
+autor: Curadoria Publicoverso
+categoria: Policial e Segurança Pública
+data: 17/08/2026
+fonte: G1
+status: Pendente
+status_triagem: Pendente
+url_original: https://g1.globo.com/pi/piaui/noticia/2026/08/14/foto-suspeito-matar-policial-militar-parnaiba.ghtml
+---
+
+Lucas da Silva Oliveira, de 28 anos, é procurado por suspeita de matar o 3º sargento da Polícia Militar do Piauí (PMPI) José Arnobio Farias Cardoso.
+
+Fonte original: https://g1.globo.com/pi/piaui/noticia/2026/08/14/foto-suspeito-matar-policial-militar-parnaiba.ghtml

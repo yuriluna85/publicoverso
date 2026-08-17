@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-271ad19bea
+titulo: Sob suspeita, programa para idosos leva a 35 exonerações e fim de secretaria estadual
+resumo: Irregularidades do '60+ Reabilita', desde celebração dos contratos, são pagamentos antecipados sem obra correspondente, estruturas administrativas...
+autor: Curadoria Publicoverso
+categoria: Jurídico e PAD
+data: 17/08/2026
+fonte: Extra online
+status: Pendente
+status_triagem: Pendente
+url_original: https://extra.globo.com/rio/noticia/2026/08/sob-suspeita-programa-para-idosos-leva-a-35-exoneracoes-e-fim-de-secretaria-estadual.ghtml
+---
+
+Irregularidades do '60+ Reabilita', desde celebração dos contratos, são pagamentos antecipados sem obra correspondente, estruturas administrativas...
+
+Fonte original: https://extra.globo.com/rio/noticia/2026/08/sob-suspeita-programa-para-idosos-leva-a-35-exoneracoes-e-fim-de-secretaria-estadual.ghtml

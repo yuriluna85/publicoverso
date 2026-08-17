@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-be8fd8e5f8
+titulo: Programação
+resumo: Centro de Convenções Ulysses Guimarães - Endereço: SDC - Ulysses Guimarães, Brasília - Distrito Federal, 70655-775; Fiocruz Brasília - Endereço: Avenida L3...
+autor: Curadoria Publicoverso
+categoria: Carreira e Conquistas
+data: 17/08/2026
+fonte: MEDTROP 2026
+status: Pendente
+status_triagem: Pendente
+url_original: https://medtrop2026.com.br/evento/medtrop2026/pt/programacao/lista
+---
+
+Centro de Convenções Ulysses Guimarães - Endereço: SDC - Ulysses Guimarães, Brasília - Distrito Federal, 70655-775; Fiocruz Brasília - Endereço: Avenida L3...
+
+Fonte original: https://medtrop2026.com.br/evento/medtrop2026/pt/programacao/lista

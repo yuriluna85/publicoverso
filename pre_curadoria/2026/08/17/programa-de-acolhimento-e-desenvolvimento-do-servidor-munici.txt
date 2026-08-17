@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-1d349cd207
+titulo: Programa de Acolhimento e Desenvolvimento do Servidor Municipal de Londrina
+resumo: Decreto nº 706 de 24 de junho de 2026 - Institui o Programa de Acolhimento e Desenvolvimento do Servidor Municipal de Londrina. Acessar...
+autor: Curadoria Publicoverso
+categoria: Carreira e Conquistas
+data: 17/08/2026
+fonte: Portal da Prefeitura de Londrina
+status: Pendente
+status_triagem: Pendente
+url_original: https://portal.londrina.pr.gov.br/programa-de-acolhimento
+---
+
+Decreto nº 706 de 24 de junho de 2026 - Institui o Programa de Acolhimento e Desenvolvimento do Servidor Municipal de Londrina. Acessar...
+
+Fonte original: https://portal.londrina.pr.gov.br/programa-de-acolhimento
