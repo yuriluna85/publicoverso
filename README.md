@@ -86,6 +86,11 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizações (Changelog)
 
+### 17/08/2026 (Sessão 25 - Redesign Visual Institucional: Adoção do Padrão Editorial Sóbrio Obituarium)
+- **Migração Cromática de Alto Prestígio (`index.css`):** Substituída a estética legada *Dark Tech/Neon* pelo novo padrão editorial institucional consolidado no Obituarium, ancorado no Bordô Nobre (`#7F1135`), Azul Ardósia Institucional (`#1E293B`), Ouro Âmbar (`#B45309`) e Mármore Sóbrio (`#F8F9FA`).
+- **Harmonização do Modo Noturno e Alto Contraste:** O modo escuro agora adota fundos grafite e ardósia profundos (`#0A0D14` / `#121722`), eliminando saturações violeta, e o modo de Alto Contraste mantém conformidade estrita com a WCAG 2.1 AAA.
+- **Ajuste Fino nas 9 Editorias e Páginas de Matérias (`materia.css`):** Rebalanceadas as cores e bordas de todas as badges e caixas de citação (*blockquotes*), conferindo um tom jornalístico sóbrio e profissional ao portal.
+
 ### 14/08/2026 (Sessão 24 - Correção Crítica de Importação no Robô de Mineração de Histórias e Homologação de 100% dos Scripts)
 - **Correção de Importação em `minerador_historias.py`:** Removida a importação legada `from minerador_protagonistas import classificar_editoria` que causava `ImportError` no step `Executar Minerador de Historias` do GitHub Actions (`.github/workflows/atualizacao_publicoverso.yml`).
 - **Integração com o Classificador Semântico Oficial:** Conectado `minerador_historias.py` ao módulo [`classificador_noticias.py`](file:///G:/Meu%20Drive/APP/2.%20Projetos%20e%20Aplica%C3%A7%C3%B5es/2.2%20Aplica%C3%A7%C3%B5es%20e%20C%C3%B3digos%20%28GitHub%29/YLuna85%20LABs%20APPs/portal-servidores-publicos/scripts/classificador_noticias.py) utilizando `classificar_materia()` com a matriz de pesos da Soberania da Ação Humana.
