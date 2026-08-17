@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-5ba4171d67
+titulo: PM morto em aula de jiu-jitsu tinha caso com mulher do suspeito há 2 anos
+resumo: A Polícia Civil do Mato Grosso concluiu o inquérito que investigava a morte do policial militar Renato Oliveira Aragão durante uma aula de jiu-jitsu em...
+autor: Curadoria Publicoverso
+categoria: Esportes e Aventura
+data: 17/08/2026
+fonte: UOL Notícias
+status: Pendente
+status_triagem: Pendente
+url_original: https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/08/17/suspeito-de-matar-pm-durante-aula-de-jiu-jitsu-e-indiciado-em-mt.ghtm
+---
+
+A Polícia Civil do Mato Grosso concluiu o inquérito que investigava a morte do policial militar Renato Oliveira Aragão durante uma aula de jiu-jitsu em...
+
+Fonte original: https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/08/17/suspeito-de-matar-pm-durante-aula-de-jiu-jitsu-e-indiciado-em-mt.ghtm
