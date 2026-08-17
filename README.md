@@ -86,6 +86,12 @@ Antes de solicitar aprovacao do AdSense:
 
 ## Log de Atualizações (Changelog)
 
+### 17/08/2026 (Sessão 26 - Logotipo com Fundo Branco, Unificação de Cabeçalhos e Rodapés e Higienização Estrita de Caracteres)
+- **Novo Logotipo com Base Branca e Cores do Esporte Clube Bahia:** Implementado medalhão de fundo branco puro (`#FFFFFF`) com cantos arredondados e borda de ancoragem sutil para o logotipo vetorial SVG (`favicon.svg`, `.pv-logo-hexagon`) e gerada a suíte completa de favicons via `generate_favicons.py` (`favicon.ico`, `favicon-16x16.png` a `favicon-512x512.png` e `apple-touch-icon.png`), eliminando problemas de fusão óptica em abas escuras e garantindo contraste universal (WCAG 2.1 AAA).
+- **Unificação Arquitetural de Cabeçalhos e Rodapés:** Padronizados o Navbar institucional (`.navbar` com controles de acessibilidade A+/A-, Modo Claro/Escuro e Alto Contraste AAA), a barra Ticker de destaques (`.omelete-ticker-bar`) e o Mega-Rodapé em 4 colunas (`.footer-mega`) em 100% das páginas do portal, sanando discrepâncias visuais em `servicos.html` e `simulador-diarias-estados.html`.
+- **Higienização Estrita de Emojis e Caracteres Especiais:** Realizado expurgo absoluto de emojis em todas as páginas HTML e substituído o caractere informal `&` pela conjunção aditiva "e" em títulos, cards e links, preservando o caractere `@` exclusivamente em correios eletrônicos de atendimento.
+- **Versionamento de Cache (`index.css?v=bahia_brand_unified_v4`):** Invalidação de cache aplicada em todas as 19 páginas HTML do portal e subpastas de aplicativos.
+
 ### 17/08/2026 (Sessão 25 - Redesign Visual Institucional: Adoção do Padrão Editorial Sóbrio Obituarium)
 - **Migração Cromática de Alto Prestígio (`index.css`):** Substituída a estética legada *Dark Tech/Neon* pelo novo padrão editorial institucional consolidado no Obituarium, ancorado no Bordô Nobre (`#7F1135`), Azul Ardósia Institucional (`#1E293B`), Ouro Âmbar (`#B45309`) e Mármore Sóbrio (`#F8F9FA`).
 - **Harmonização do Modo Noturno e Alto Contraste:** O modo escuro agora adota fundos grafite e ardósia profundos (`#0A0D14` / `#121722`), eliminando saturações violeta, e o modo de Alto Contraste mantém conformidade estrita com a WCAG 2.1 AAA.
