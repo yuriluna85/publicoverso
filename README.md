@@ -198,6 +198,12 @@ Antes de solicitar aprovacao do AdSense:
   - Inserida a Barra Ticker estilo Omelete no topo da página principal abaixo do cabeçalho.
   - Adicionados os estilos CSS responsivos para o ticker e destaques de notícias mantendo 100% da paleta de cores verde e marcas institucionais.
 
+### 17/08/2026 (Sessão 30 - Identidade Visual Tricolor Baiano: Esporte Clube Bahia & WCAG 2.1 AAA)
+- Atualizada a paleta cromatica global do portal alinhando o design system a paixao da fundadora e curadora Cristina Mascarenhas pelo **Esporte Clube Bahia** (Tricolor Baiano).
+- Calibracao matematica de contraste executada via `color_contrast_harmonizer.py`: Azul Bahia Oficial (`#0055A5` - 7.01:1 AAA), Azul Tricolor Profundo (`#003882` - 10.55:1 AAA), Vermelho Tricolor Nobre (`#B91C1C` - 6.14:1 AA/AAA), Vermelho Carmim (`#991B1B` - 7.88:1 AAA), Azul Noite de Salvador (`#071D41` - 15.90:1 AAA) e Dourado Estrelas (`#B45309` - 4.76:1 AA).
+- Refatorados os tokens CSS em `index.css` e `materias/materia.css` com suporte harmonico aos tres modos: Claro (Marmore Sobrio), Escuro (Grafite Noturno Azulado) e Alto Contraste (Norma ABNT / WCAG 2.1 AAA).
+- Atualizado o icone SVG hexagonal da constelacao em todas as páginas HTML e regenerada a suite completa de favicons de alta resolucao (`favicon.ico`, `favicon.svg`, `favicon-16x16.png` a `favicon-512x512.png` e `apple-touch-icon.png`) via `generate_favicons.py`.
+
 ### 15/08/2026 (Sessão 29 - Módulo 4: Acessibilidade Universal 360º & Sintetizador de Voz Nativo)
 - Integrado o **Sintetizador de Voz Nativo via Web Speech API** (`window.speechSynthesis`) com botão tátil "Ouvir Manchete" (`.btn-read-aloud`) nos cards da capa, permitindo leitura imediata sem dependências externas ou plugins pesados.
 - Implementados os **Atalhos Universais de Teclado**: `Alt + 1` (saltar para o conteúdo principal), `Alt + 2` (alternar Alto Contraste AAA) e `Alt + 3` (focar no campo de busca).

@@ -1,46 +1,56 @@
 /* ==========================================================================
-   SYSTEM DESIGN SPECIFICATION: PORTAL COMUNITÁRIO DO SERVIDOR PÚBLICO
-   Identidade: Bordô Nobre (#7F1135), Azul Ardósia (#1E293B), Ouro Âmbar (#B45309)
-   Estética: Editorial Institucional Nobre / Mármore Sóbrio / WCAG 2.1 AA A11y
+   SYSTEM DESIGN SPECIFICATION: PORTAL DO SERVIDOR PUBLICO (PUBLICOVERSO)
+   Identidade: Azul Bahia Nobre (#0055A5), Vermelho Tricolor (#B91C1C), Ouro Estrelas (#B45309)
+   Estetica: Jornalismo Editorial Nobre / Marmore Sobrio / WCAG 2.1 AAA
    ========================================================================== */
 
 :root {
-  /* Modo Claro Padrão (Mármore Sóbrio #F8F9FA, Cartões Brancos #FFFFFF, Textos Escuros #0F172A) */
+  /* Modo Claro Padrao (Marmore Sobrio, Cartoes Brancos, Textos Escuros Azul-Ardósia) */
   --bg-primary: #F8F9FA;
   --bg-surface: #FFFFFF;
   --bg-card: #FFFFFF;
   --bg-card-hover: #F1F5F9;
-  --bg-header: #1E293B;
-  --bg-featured: linear-gradient(135deg, #FFFFFF, #F8FAFC);
+  --bg-header: #071D41; /* Azul Noite de Salvador */
+  --bg-featured: linear-gradient(135deg, #FFFFFF 0%, #F0F4F8 100%);
   
-  --color-brand-primary: #7F1135; /* Bordô Nobre Institucional */
-  --color-brand-primary-hover: #9E1742;
-  --color-brand-turquoise: #1E293B; /* Azul Ardósia */
-  --color-brand-purple: #7F1135; /* Unificado com Bordô Nobre */
-  --color-brand-purple-deep: #580B23;
-  --color-brand-gold: #B45309; /* Ouro Antigo / Âmbar */
+  /* Cores de Marca Tricolor Bahia */
+  --color-brand-primary: #0055A5; /* Azul Bahia Oficial */
+  --color-brand-primary-hover: #003882; /* Azul Tricolor Escuro */
+  --color-brand-secondary: #B91C1C; /* Vermelho Tricolor Nobre */
+  --color-brand-secondary-hover: #991B1B; /* Vermelho Carmim Profundo */
+  --color-brand-accent: #B45309; /* Dourado das Estrelas */
+  --color-brand-accent-hover: #92400E;
   
+  /* Compatibilidade de Legado com Nomes Antigos */
+  --color-brand-turquoise: #0055A5;
+  --color-brand-purple: #B91C1C;
+  --color-brand-purple-deep: #003882;
+  --color-brand-gold: #B45309;
+  
+  /* Tipografia e Textos */
   --text-main: #0F172A;
   --text-secondary: #334155;
   --text-muted: #64748B;
   --text-header: #F8FAFC;
   
+  /* Bordas e Divisores */
   --border-color: #E2E8F0;
   --border-subtle: #F1F5F9;
-  --border-color-active: #7F1135;
+  --border-color-active: #0055A5;
   --border-featured: #CBD5E1;
   
-  --shadow-glow: 0 4px 20px rgba(127, 17, 53, 0.08);
+  /* Efeitos e Sombras */
+  --shadow-glow: 0 4px 20px rgba(0, 85, 165, 0.10);
   --shadow-card: 0 2px 10px rgba(15, 23, 42, 0.05);
 
-  /* Badges das Editorias - Modo Claro Institucional */
-  --badge-artes-bg: #FAF5FF; --badge-artes-color: #6B21A8; --badge-artes-border: #D8B4FE;
-  --badge-esportes-bg: #FFF7ED; --badge-esportes-color: #9A3412; --badge-esportes-border: #FDBA74;
+  /* Badges das Editorias Jornalisticas */
+  --badge-artes-bg: #EFF6FF; --badge-artes-color: #0055A5; --badge-artes-border: #BFDBFE;
+  --badge-esportes-bg: #FEF2F2; --badge-esportes-color: #991B1B; --badge-esportes-border: #FECACA;
   --badge-ciencia-bg: #ECFDF5; --badge-ciencia-color: #065F46; --badge-ciencia-border: #6EE7B7;
   --badge-pop-bg: #FDF2F8; --badge-pop-color: #9D174D; --badge-pop-border: #FBCFE8;
   --badge-social-bg: #F0FDF4; --badge-social-color: #166534; --badge-social-border: #86EFAC;
   --badge-superacao-bg: #FEFCE8; --badge-superacao-color: #854D0E; --badge-superacao-border: #FDE047;
-  --badge-carreira-bg: #EFF6FF; --badge-carreira-color: #1E40AF; --badge-carreira-border: #93C5FD;
+  --badge-carreira-bg: #F0F9FF; --badge-carreira-color: #0369A1; --badge-carreira-border: #BAE6FD;
   --badge-policial-bg: #F1F5F9; --badge-policial-color: #334155; --badge-policial-border: #CBD5E1;
   
   /* Typography Scale */
@@ -55,37 +65,42 @@
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Modo Escuro (Grafite Noturno Institucional / Sóbrio) */
+/* Modo Escuro (Grafite Noturno Azulado / Sobrio) */
 body.theme-dark {
-  --bg-primary: #0A0D14;
-  --bg-surface: #121722;
-  --bg-card: #1A2232;
-  --bg-card-hover: #222D42;
-  --bg-header: #0F141F;
-  --bg-featured: linear-gradient(135deg, #1A2232, #222D42);
+  --bg-primary: #090E17;
+  --bg-surface: #101926;
+  --bg-card: #162234;
+  --bg-card-hover: #1D2D45;
+  --bg-header: #060B12;
+  --bg-featured: linear-gradient(135deg, #162234 0%, #1D2D45 100%);
   
-  --color-brand-primary: #9E1742;
-  --color-brand-primary-hover: #BE123C;
+  --color-brand-primary: #38BDF8;
+  --color-brand-primary-hover: #60A5FA;
+  --color-brand-secondary: #F43F5E;
+  --color-brand-secondary-hover: #FB7185;
+  --color-brand-accent: #FBBF24;
+  
   --color-brand-turquoise: #38BDF8;
   --color-brand-purple: #F43F5E;
-  --color-brand-gold: #F59E0B;
+  --color-brand-purple-deep: #1E3A8A;
+  --color-brand-gold: #FBBF24;
   
   --text-main: #F1F5F9;
   --text-secondary: #CBD5E1;
   --text-muted: #94A3B8;
   --text-header: #F8FAFC;
   
-  --border-color: #242E42;
+  --border-color: #24354D;
   --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-color-active: #F43F5E;
-  --border-featured: #334155;
+  --border-color-active: #38BDF8;
+  --border-featured: #334B6E;
   
-  --shadow-glow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  --shadow-card: 0 4px 14px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  --shadow-card: 0 4px 14px rgba(0, 0, 0, 0.5);
 
   /* Badges - Modo Escuro Sóbrio */
-  --badge-artes-bg: rgba(168, 85, 247, 0.15); --badge-artes-color: #D8B4FE; --badge-artes-border: #A855F7;
-  --badge-esportes-bg: rgba(249, 115, 22, 0.15); --badge-esportes-color: #FDBA74; --badge-esportes-border: #F97316;
+  --badge-artes-bg: rgba(56, 189, 248, 0.15); --badge-artes-color: #7DD3FC; --badge-artes-border: #38BDF8;
+  --badge-esportes-bg: rgba(244, 63, 94, 0.15); --badge-esportes-color: #FDA4AF; --badge-esportes-border: #F43F5E;
   --badge-ciencia-bg: rgba(16, 185, 129, 0.15); --badge-ciencia-color: #6EE7B7; --badge-ciencia-border: #10B981;
   --badge-pop-bg: rgba(244, 63, 94, 0.15); --badge-pop-color: #FDA4AF; --badge-pop-border: #F43F5E;
   --badge-social-bg: rgba(34, 197, 94, 0.15); --badge-social-color: #86EFAC; --badge-social-border: #22C55E;
@@ -104,6 +119,8 @@ body.theme-high-contrast {
   --bg-featured: #000000;
   
   --color-brand-primary: #FFFF00;
+  --color-brand-secondary: #00FFFF;
+  --color-brand-accent: #FFFF00;
   --color-brand-turquoise: #00FFFF;
   --color-brand-purple: #FFFF00;
   --color-brand-gold: #FFFF00;
@@ -122,7 +139,7 @@ body.theme-high-contrast {
   --shadow-card: none;
 
   /* Badges - Alto Contraste AAA */
-  --badge-artes-bg: #000000; --badge-artes-color: #FFFF00; --badge-artes-border: #FFFFFF;
+  --badge-artes-bg: #000000; --badge-artes-color: #00FFFF; --badge-artes-border: #FFFFFF;
   --badge-esportes-bg: #000000; --badge-esportes-color: #FFFF00; --badge-esportes-border: #FFFFFF;
   --badge-ciencia-bg: #000000; --badge-ciencia-color: #00FFFF; --badge-ciencia-border: #FFFFFF;
   --badge-pop-bg: #000000; --badge-pop-color: #FFFF00; --badge-pop-border: #FFFFFF;

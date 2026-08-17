@@ -31,24 +31,25 @@ def hex_to_rgb(hex_str):
 
 # --- 1. Gerar SVG ---
 SVG_CONTENT = """<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <polygon points="20,2 35,10 35,30 20,38 5,30 5,10" stroke="url(#hexGradFavicon)" stroke-width="2" fill="rgba(0,210,200,0.08)"/>
-  <circle cx="20" cy="8" r="2.5" fill="#00D2C8"/>
-  <circle cx="31" cy="15" r="2.5" fill="#9146FF"/>
-  <circle cx="31" cy="27" r="2.5" fill="#00D2C8"/>
-  <circle cx="20" cy="33" r="2.5" fill="#9146FF"/>
-  <circle cx="9" cy="27" r="2.5" fill="#00D2C8"/>
-  <circle cx="9" cy="15" r="2.5" fill="#9146FF"/>
-  <circle cx="20" cy="20" r="3.5" fill="#00D2C8"/>
-  <line x1="20" y1="20" x2="20" y2="8" stroke="#00D2C8" stroke-width="1.2" opacity="0.75"/>
-  <line x1="20" y1="20" x2="31" y2="15" stroke="#9146FF" stroke-width="1.2" opacity="0.75"/>
-  <line x1="20" y1="20" x2="31" y2="27" stroke="#00D2C8" stroke-width="1.2" opacity="0.75"/>
-  <line x1="20" y1="20" x2="20" y2="33" stroke="#9146FF" stroke-width="1.2" opacity="0.75"/>
-  <line x1="20" y1="20" x2="9" y2="27" stroke="#00D2C8" stroke-width="1.2" opacity="0.75"/>
-  <line x1="20" y1="20" x2="9" y2="15" stroke="#9146FF" stroke-width="1.2" opacity="0.75"/>
+  <polygon points="20,2 35,10 35,30 20,38 5,30 5,10" stroke="url(#hexGradFavicon)" stroke-width="2" fill="rgba(0,85,165,0.12)"/>
+  <circle cx="20" cy="8" r="2.5" fill="#B45309"/>
+  <circle cx="31" cy="15" r="2.5" fill="#0055A5"/>
+  <circle cx="31" cy="27" r="2.5" fill="#B91C1C"/>
+  <circle cx="20" cy="33" r="2.5" fill="#0055A5"/>
+  <circle cx="9" cy="27" r="2.5" fill="#B91C1C"/>
+  <circle cx="9" cy="15" r="2.5" fill="#0055A5"/>
+  <circle cx="20" cy="20" r="3.5" fill="#B45309"/>
+  <line x1="20" y1="20" x2="20" y2="8" stroke="#B45309" stroke-width="1.2" opacity="0.85"/>
+  <line x1="20" y1="20" x2="31" y2="15" stroke="#0055A5" stroke-width="1.2" opacity="0.85"/>
+  <line x1="20" y1="20" x2="31" y2="27" stroke="#B91C1C" stroke-width="1.2" opacity="0.85"/>
+  <line x1="20" y1="20" x2="20" y2="33" stroke="#0055A5" stroke-width="1.2" opacity="0.85"/>
+  <line x1="20" y1="20" x2="9" y2="27" stroke="#B91C1C" stroke-width="1.2" opacity="0.85"/>
+  <line x1="20" y1="20" x2="9" y2="15" stroke="#0055A5" stroke-width="1.2" opacity="0.85"/>
   <defs>
     <linearGradient id="hexGradFavicon" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#00D2C8"/>
-      <stop offset="1" stop-color="#9146FF"/>
+      <stop stop-color="#0055A5"/>
+      <stop offset="0.5" stop-color="#003882"/>
+      <stop offset="1" stop-color="#B91C1C"/>
     </linearGradient>
   </defs>
 </svg>
@@ -62,19 +63,20 @@ def criar_imagem_base(size=512):
 
     scale = size / 40.0
 
-    # Cores
-    c_turquesa = hex_to_rgb('#00D2C8')
-    c_roxo = hex_to_rgb('#9146FF')
+    # Cores Tricolor Bahia
+    c_azul = hex_to_rgb('#0055A5')
+    c_vermelho = hex_to_rgb('#B91C1C')
+    c_ouro = hex_to_rgb('#B45309')
 
     # Pontos do Hexagono
     points_orig = [(20, 2), (35, 10), (35, 30), (20, 38), (5, 30), (5, 10)]
     points_scaled = [(x * scale, y * scale) for x, y in points_orig]
 
     # Preenchimento translucido
-    fill_color = (c_turquesa[0], c_turquesa[1], c_turquesa[2], 25)
+    fill_color = (c_azul[0], c_azul[1], c_azul[2], 30)
     draw.polygon(points_scaled, fill=fill_color)
 
-    # Linha do Hexagono com gradiente interpolado
+    # Linha do Hexagono com gradiente interpolado (Azul -> Vermelho)
     stroke_w = int(2.2 * scale)
     n_pts = len(points_scaled)
     for i in range(n_pts):
@@ -83,20 +85,20 @@ def criar_imagem_base(size=512):
 
         # Gradiente dinamico no contorno
         t = i / float(n_pts)
-        r = int(c_turquesa[0] * (1 - t) + c_roxo[0] * t)
-        g = int(c_turquesa[1] * (1 - t) + c_roxo[1] * t)
-        b = int(c_turquesa[2] * (1 - t) + c_roxo[2] * t)
+        r = int(c_azul[0] * (1 - t) + c_vermelho[0] * t)
+        g = int(c_azul[1] * (1 - t) + c_vermelho[1] * t)
+        b = int(c_azul[2] * (1 - t) + c_vermelho[2] * t)
         draw.line([p1, p2], fill=(r, g, b, 255), width=stroke_w)
 
     # Nos da Constelacao (cx, cy, cor, raio)
     nos = [
-        (20, 8, c_turquesa, 2.5),
-        (31, 15, c_roxo, 2.5),
-        (31, 27, c_turquesa, 2.5),
-        (20, 33, c_roxo, 2.5),
-        (9, 27, c_turquesa, 2.5),
-        (9, 15, c_roxo, 2.5),
-        (20, 20, c_turquesa, 3.8),
+        (20, 8, c_ouro, 2.5),
+        (31, 15, c_azul, 2.5),
+        (31, 27, c_vermelho, 2.5),
+        (20, 33, c_azul, 2.5),
+        (9, 27, c_vermelho, 2.5),
+        (9, 15, c_azul, 2.5),
+        (20, 20, c_ouro, 3.8),
     ]
 
     cx0, cy0 = 20 * scale, 20 * scale
@@ -105,7 +107,7 @@ def criar_imagem_base(size=512):
     # Linhas radiais da constelacao
     for cx, cy, cor, r in nos[:6]:
         px, py = cx * scale, cy * scale
-        draw.line([(cx0, cy0), (px, py)], fill=(cor[0], cor[1], cor[2], 200), width=line_w)
+        draw.line([(cx0, cy0), (px, py)], fill=(cor[0], cor[1], cor[2], 215), width=line_w)
 
     # Circulos dos nos
     for cx, cy, cor, r in nos:
