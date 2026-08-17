@@ -152,21 +152,17 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: 
-    radial-gradient(circle at 15% 15%, rgba(145, 70, 255, 0.12) 0%, transparent 40%),
-    radial-gradient(circle at 85% 75%, rgba(0, 210, 200, 0.08) 0%, transparent 40%);
-  background-attachment: fixed;
 }
 
-/* Cabeçalho Institucional */
+/* Cabeçalho Institucional (Padrão Obituarium) */
 .navbar {
   background: var(--bg-header);
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 3px solid var(--color-brand-primary);
   position: sticky;
   top: 0;
   z-index: 100;
   padding: 1rem 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.15);
 }
 
 .navbar-container {
@@ -240,8 +236,8 @@ body.theme-high-contrast .btn-a11y {
    BARRA TICKER DE DESTAQUES (ESTILO OMELETE)
    ========================================================================== */
 .omelete-ticker-bar {
-  background: #0B1924;
-  border-bottom: 1px solid rgba(0, 210, 200, 0.2);
+  background: #0F172A;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 0.5rem 1.5rem;
   overflow: hidden;
   font-family: var(--font-main);
@@ -257,8 +253,8 @@ body.theme-high-contrast .btn-a11y {
 }
 
 .ticker-label {
-  background: #00D2C8;
-  color: #090D16;
+  background: var(--color-brand-primary);
+  color: #FFFFFF;
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: 0.72rem;
@@ -291,7 +287,7 @@ body.theme-high-contrast .btn-a11y {
 }
 
 .ticker-dot {
-  color: #00D2C8;
+  color: var(--color-brand-gold);
   font-weight: bold;
 }
 
@@ -303,16 +299,16 @@ body.theme-high-contrast .btn-a11y {
 }
 
 .ticker-link:hover {
-  color: #00D2C8;
+  color: var(--color-brand-gold);
   text-decoration: underline;
 }
 
 
 .btn-a11y:hover,
 .btn-a11y:focus-visible {
-  background: var(--color-brand-turquoise);
-  border-color: var(--color-brand-turquoise);
-  color: #0F172A;
+  background: var(--color-brand-primary);
+  border-color: var(--color-brand-primary);
+  color: #FFFFFF;
   outline: none;
 }
 
@@ -332,12 +328,13 @@ body.theme-high-contrast .btn-a11y:hover {
 
 /* Hero Section */
 .hero-banner {
-  background: linear-gradient(135deg, #0F2C3D 0%, #172554 100%);
-  border: 1px solid rgba(0, 210, 200, 0.3);
+  background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--color-brand-primary);
   border-radius: var(--radius-lg);
   padding: 2.5rem;
   margin-bottom: 2.5rem;
-  box-shadow: 0 8px 30px rgba(15, 44, 61, 0.2);
+  box-shadow: var(--shadow-card);
   position: relative;
   overflow: hidden;
 }
@@ -349,7 +346,7 @@ body.theme-high-contrast .btn-a11y:hover {
   right: 0;
   width: 300px;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(0, 210, 200, 0.15));
+  background: linear-gradient(90deg, transparent, rgba(127, 17, 53, 0.08));
   pointer-events: none;
 }
 
@@ -1123,16 +1120,17 @@ body.theme-high-contrast .nav-link.active {
 
 .hero-badge {
   display: inline-block;
-  background: rgba(0, 210, 200, 0.12);
-  border: 1px solid rgba(0, 210, 200, 0.4);
-  color: var(--color-brand-turquoise);
+  background: rgba(180, 83, 9, 0.15);
+  border: 1px solid rgba(180, 83, 9, 0.4);
+  color: #FBBF24;
   padding: 0.4rem 1rem;
   border-radius: 20px;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.05em;
   margin-bottom: 1rem;
   font-family: var(--font-heading);
+  text-transform: uppercase;
 }
 
 /* Utilitários de Redirecionamento */
@@ -1193,8 +1191,8 @@ body.theme-high-contrast .nav-link.active {
 }
 
 .utility-card-highlight {
-  border-color: rgba(0, 210, 200, 0.4);
-  background: linear-gradient(135deg, rgba(0, 210, 200, 0.08) 0%, rgba(15, 23, 42, 0.4) 100%);
+  border-color: var(--color-brand-primary);
+  background: linear-gradient(135deg, rgba(127, 17, 53, 0.06) 0%, rgba(15, 23, 42, 0.02) 100%);
 }
 
 /* Botões de Ação Rápida do Hero Banner */
@@ -1202,22 +1200,23 @@ body.theme-high-contrast .nav-link.active {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #00D2C8 0%, #00B3AA 100%);
-  color: #090D16;
+  background: linear-gradient(135deg, #7F1135 0%, #9E1742 100%);
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 0.95rem;
   padding: 0.65rem 1.35rem;
   border-radius: 24px;
   text-decoration: none;
   transition: var(--transition-fast);
-  box-shadow: 0 4px 14px rgba(0, 210, 200, 0.3);
+  box-shadow: 0 4px 14px rgba(127, 17, 53, 0.3);
 }
 
 .hero-btn-primary:hover,
 .hero-btn-primary:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 210, 200, 0.45);
-  background: linear-gradient(135deg, #00E5D8 0%, #00D2C8 100%);
+  box-shadow: 0 6px 20px rgba(127, 17, 53, 0.45);
+  background: linear-gradient(135deg, #9E1742 0%, #BE123C 100%);
+  color: #FFFFFF;
 }
 
 .hero-btn-secondary {
@@ -1273,9 +1272,7 @@ body.theme-high-contrast .nav-link.active {
   font-family: var(--font-heading);
   font-size: 1.1rem;
   font-weight: 800;
-  background: linear-gradient(90deg, #FFFFFF, var(--color-brand-turquoise));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-header);
   margin-bottom: 1rem;
 }
 
@@ -1295,7 +1292,7 @@ body.theme-high-contrast .nav-link.active {
 }
 
 .footer-links a:hover {
-  color: var(--color-brand-turquoise);
+  color: var(--color-brand-primary);
 }
 
 .footer-disclaimer {
@@ -1344,21 +1341,21 @@ body.theme-high-contrast .nav-link.active {
 
 /* Badges de Status de Concursos */
 .badge-inscrições-abertas {
-  background: rgba(0, 210, 200, 0.18);
-  color: #00E5D8;
-  border: 1px solid #00D2C8;
+  background: #ECFDF5;
+  color: #065F46;
+  border: 1px solid #6EE7B7;
 }
 
 .badge-previsto {
-  background: rgba(255, 202, 99, 0.15);
-  color: #FFD77A;
-  border: 1px solid #FFCA63;
+  background: #FEFCE8;
+  color: #854D0E;
+  border: 1px solid #FDE047;
 }
 
 .badge-default {
-  background: rgba(145, 70, 255, 0.15);
-  color: #B388FF;
-  border: 1px solid #9146FF;
+  background: #EFF6FF;
+  color: #1E40AF;
+  border: 1px solid #93C5FD;
 }
 
 /* Card de Concurso */
@@ -2595,21 +2592,21 @@ body.theme-high-contrast .columnist-box {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--color-brand-turquoise);
-  box-shadow: 0 0 16px rgba(0, 210, 200, 0.35);
+  border: 3px solid var(--color-brand-primary);
+  box-shadow: 0 0 16px rgba(127, 17, 53, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .columnist-avatar-wrapper:hover .columnist-avatar {
   transform: scale(1.05);
-  box-shadow: 0 0 24px rgba(0, 210, 200, 0.6);
+  box-shadow: 0 0 24px rgba(127, 17, 53, 0.4);
 }
 
 .columnist-verified-badge {
   position: absolute;
   bottom: 4px;
   right: 4px;
-  background: #0B1924;
+  background: #0F172A;
   border-radius: 50%;
   padding: 2px;
   display: flex;
@@ -2633,7 +2630,7 @@ body.theme-high-contrast .columnist-name {
 .columnist-role {
   font-size: 0.78rem;
   font-weight: 700;
-  color: var(--color-brand-turquoise);
+  color: var(--color-brand-gold);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 0.75rem;
