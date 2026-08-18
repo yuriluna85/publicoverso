@@ -1115,5 +1115,33 @@
     "titulo": "Suspeito de troca de tiros que matou policial militar é transferido para carceragem",
     "categoria": "Cultura Pop e Gastronomia",
     "data_mineracao": "2026-08-18 16:33:37"
+  },
+  {
+    "id_mineracao": "auto-919b12ba6f",
+    "url": "https://g1.globo.com/to/tocantins/noticia/2026/08/18/servidor-publico-sai-para-trabalhar-e-tem-portao-de-casa-furtado-diz-policia.ghtml",
+    "titulo": "Servidor público sai para trabalhar e tem portão de casa furtado, diz polícia",
+    "categoria": "Policial e Segurança Pública",
+    "data_mineracao": "2026-08-18 21:26:29"
+  },
+  {
+    "id_mineracao": "auto-b50f99e61b",
+    "url": "https://www.google.com/goto?url=CAEScAHuR6pNJWyQ2UJ7AVsQoh3lTz1SoaKz4cKBTtM-NMJLpkpU5Ay5eAJvFF8MMYfVuRigUj1z2297m0w87jiVeBRf4fhtGw3L061YzkWrX7UcQPvCh3ffGAwElboa9yNTdfdYcm31lIWsgoC4xdK2tAA=",
+    "titulo": "Reserva de Auditório",
+    "categoria": "Ciência e Tecnologia",
+    "data_mineracao": "2026-08-18 21:26:35"
+  },
+  {
+    "id_mineracao": "auto-6feddcac14",
+    "url": "https://extra.globo.com/rio/noticia/2026/08/policia-identifica-dez-suspeitos-de-torturar-moradores-e-motociclistas-de-aplicativo-na-zona-norte-do-rio.ghtml",
+    "titulo": "Polícia identifica dez suspeitos de torturar moradores e motociclistas de aplicativo na Zona Norte do Rio",
+    "categoria": "Ciência e Tecnologia",
+    "data_mineracao": "2026-08-18 21:26:41"
+  },
+  {
+    "id_mineracao": "auto-220ced8f9c",
+    "url": "https://g1.globo.com/sc/santa-catarina/noticia/2026/08/18/mulher-morta-adolescente-tiro-rosto-sc-servidora-publica-mae.ghtml",
+    "titulo": "Mulher morta por adolescente com tiro no rosto em SC era servidora pública e mãe de criança de 3 anos",
+    "categoria": "Histórias e Superação",
+    "data_mineracao": "2026-08-18 21:26:47"
   }
 ]

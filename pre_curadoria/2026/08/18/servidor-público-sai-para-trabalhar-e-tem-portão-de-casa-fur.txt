@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-919b12ba6f
+titulo: Servidor público sai para trabalhar e tem portão de casa furtado, diz polícia
+resumo: O portão da casa de um servidor público em Palmas foi recuperado pela Polícia Civil nesta terça-feira (18), após ser furtado.
+autor: Curadoria Publicoverso
+categoria: Policial e Segurança Pública
+data: 18/08/2026
+fonte: G1
+status: Pendente
+status_triagem: Pendente
+url_original: https://g1.globo.com/to/tocantins/noticia/2026/08/18/servidor-publico-sai-para-trabalhar-e-tem-portao-de-casa-furtado-diz-policia.ghtml
+---
+
+O portão da casa de um servidor público em Palmas foi recuperado pela Polícia Civil nesta terça-feira (18), após ser furtado.
+
+Fonte original: https://g1.globo.com/to/tocantins/noticia/2026/08/18/servidor-publico-sai-para-trabalhar-e-tem-portao-de-casa-furtado-diz-policia.ghtml

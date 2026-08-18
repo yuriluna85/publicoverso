@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-6feddcac14
+titulo: Polícia identifica dez suspeitos de torturar moradores e motociclistas de aplicativo na Zona Norte do Rio
+resumo: Casos aconteceram na comunidade do Quitungo, na Penha; três pessoas foram presas, e um adolescente foi detido. Grupo é suspeito de integrar o Comando...
+autor: Curadoria Publicoverso
+categoria: Ciência e Tecnologia
+data: 18/08/2026
+fonte: Extra online
+status: Pendente
+status_triagem: Pendente
+url_original: https://extra.globo.com/rio/noticia/2026/08/policia-identifica-dez-suspeitos-de-torturar-moradores-e-motociclistas-de-aplicativo-na-zona-norte-do-rio.ghtml
+---
+
+Casos aconteceram na comunidade do Quitungo, na Penha; três pessoas foram presas, e um adolescente foi detido. Grupo é suspeito de integrar o Comando...
+
+Fonte original: https://extra.globo.com/rio/noticia/2026/08/policia-identifica-dez-suspeitos-de-torturar-moradores-e-motociclistas-de-aplicativo-na-zona-norte-do-rio.ghtml

@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-220ced8f9c
+titulo: Mulher morta por adolescente com tiro no rosto em SC era servidora pública e mãe de criança de 3 anos
+resumo: A mulher morta com um tiro no rosto em Palmitos, no Oeste de Santa Catarina, era servidora pública na cidade e mãe de um menino de três anos.
+autor: Curadoria Publicoverso
+categoria: Histórias e Superação
+data: 18/08/2026
+fonte: G1
+status: Pendente
+status_triagem: Pendente
+url_original: https://g1.globo.com/sc/santa-catarina/noticia/2026/08/18/mulher-morta-adolescente-tiro-rosto-sc-servidora-publica-mae.ghtml
+---
+
+A mulher morta com um tiro no rosto em Palmitos, no Oeste de Santa Catarina, era servidora pública na cidade e mãe de um menino de três anos.
+
+Fonte original: https://g1.globo.com/sc/santa-catarina/noticia/2026/08/18/mulher-morta-adolescente-tiro-rosto-sc-servidora-publica-mae.ghtml
