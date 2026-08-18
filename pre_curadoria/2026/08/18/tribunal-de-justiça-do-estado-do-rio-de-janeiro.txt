@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-f228de412b
+titulo: Tribunal de Justiça do Estado do Rio de Janeiro
+resumo: TRIBUNAL DE JUSTICA DO ESTADO DO RIO DE JANEIRO *** QUARTA CAMARA DE DIREITO PUBLICO (ANTIGA 7ª CÂMARA CÍVEL) ***. ----------------------------
+autor: Curadoria Publicoverso
+categoria: Jurídico e PAD
+data: 18/08/2026
+fonte: Poder Judiciário do Estado do Rio de Janeiro
+status: Pendente
+status_triagem: Pendente
+url_original: http://www4.tjrj.jus.br/camarasweb/listaPauta.aspx?pOJ=12280&pDataSessao=25/08/2026%2000:00:00
+---
+
+TRIBUNAL DE JUSTICA DO ESTADO DO RIO DE JANEIRO *** QUARTA CAMARA DE DIREITO PUBLICO (ANTIGA 7ª CÂMARA CÍVEL) ***. ----------------------------
+
+Fonte original: http://www4.tjrj.jus.br/camarasweb/listaPauta.aspx?pOJ=12280&pDataSessao=25/08/2026%2000:00:00

@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-e9fbde4a2d
+titulo: Governo do Rio cria Escola de Saúde Pública. São ofertadas inicialmente 180 vagas
+resumo: Objetivo é qualificar trabalhadores do Sistema Único de Saúde (SUS), fomentar pesquisas para rede estadual e estimular inovação e gestão.
+autor: Curadoria Publicoverso
+categoria: Ciência e Tecnologia
+data: 18/08/2026
+fonte: Extra online
+status: Pendente
+status_triagem: Pendente
+url_original: https://extra.globo.com/economia/servidor-publico/noticia/2026/08/governo-do-rio-cria-escola-de-saude-publica-sao-ofertadas-inicialmente-180-vagas.ghtml
+---
+
+Objetivo é qualificar trabalhadores do Sistema Único de Saúde (SUS), fomentar pesquisas para rede estadual e estimular inovação e gestão.
+
+Fonte original: https://extra.globo.com/economia/servidor-publico/noticia/2026/08/governo-do-rio-cria-escola-de-saude-publica-sao-ofertadas-inicialmente-180-vagas.ghtml

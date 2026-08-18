@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-8da65ddcc7
+titulo: Reserva de Auditório
+resumo: Visando a conservação dos espaços físicos do Centro Multidisciplinar UFRJ-Macaé, a Decania, em consonância com as normas dos principais auditórios das...
+autor: Curadoria Publicoverso
+categoria: Ciência e Tecnologia
+data: 18/08/2026
+fonte: CENTRO MULTIDISCIPLINAR UFRJ – MACAÉ – .
+status: Pendente
+status_triagem: Pendente
+url_original: https://portal.macae.ufrj.br/pt_br/reserva-de-auditorio/
+---
+
+Visando a conservação dos espaços físicos do Centro Multidisciplinar UFRJ-Macaé, a Decania, em consonância com as normas dos principais auditórios das...
+
+Fonte original: https://portal.macae.ufrj.br/pt_br/reserva-de-auditorio/

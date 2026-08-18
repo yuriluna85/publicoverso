@@ -1,5 +1,635 @@
 [
   {
+    "id": "dou-44c9db8b0f",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "Ato PRES/TRF2 Nº 464, DE 14 DE agosto DE 2026",
+    "resumo": "vista o que consta nos autos do Procedimento Administrativo nº 0010556-17.2026.4.02.8000, resolve: CONCEDER ... aposentadoria voluntária, com proventos integrais, à servidora MARIA DO AMPARO VIEIRA DE",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/ato-pres/trf2-n-464-de-14-de-agosto-de-2026-725946391",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-a59ceac2c1",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "Portaria nº 2.281, de 14 de agosto de 2026",
+    "resumo": "FURG, no uso das atribuições que lhe conferem o Estatuto e o Regimento Geral da Universidade, resolve: Conceder ... aposentadoria por incapacidade, com proventos proporcionais, a contar da data desta ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-2.281-de-14-de-agosto-de-2026-725947266",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-4bc6178440",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA /CGBEN/DECIPEX/SGP/MGI Nº 9.790, DE 17 DE AGOSTO DE 2026",
+    "resumo": "de dezembro de 2018, e considerando o disposto no Processo nº 13113.212026/2026-11, resolve: Art.1º Conceder ... aposentadoria voluntária ao servidor ADOLPHO LOPEZ CLARO, matrícula SIAPE nº 1454092, o",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-/cgben/decipex/sgp/mgi-n-9.790-de-17-de-agosto-de-2026-725948273",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-9ee9218832",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "ATO Nº 8.206, DE 4 DE AGOSTO DE 2026",
+    "resumo": "7.219, de 21 de outubro de 2025, publicado em 29 de outubro de 2025 no Diário Oficial da União, que concedeu ... aposentadoria ao servidor ESTEVO CELSO DOS SANTOS, RF n.º 1247, anterior ocupante do ca",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/ato-n-8.206-de-4-de-agosto-de-2026-725949436",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-16897a61d1",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA SGA/SE/MEC Nº 276, DE 13 DE AGOSTO DE 2026",
+    "resumo": "União de 29 de abril de 2024, examinando os autos do Processo nº 23000.037665/2026-11, resolve: Art. 1º Conceder ... aposentadoria voluntária ao servidor AROUDINAN MARTINS, matrícula nº 0039726, ocupa",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-sga/se/mec-n-276-de-13-de-agosto-de-2026-725950014",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-e064fdd687",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA CGBEN/DECIPEX/SGP/MGI Nº 9.794, DE 17 DE AGOSTO DE 2026",
+    "resumo": "de dezembro de 2018, e considerando o disposto no Processo nº 10199.004877/2026-09, resolve: Art. 1º Conceder ... aposentadoria voluntária com proventos integrais à servidora MARIA FERNANDA TORRES ELI",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-cgben/decipex/sgp/mgi-n-9.794-de-17-de-agosto-de-2026-725951716",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-09e4d37c86",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA TRT/GP/DG Nº 191, de 13 de agosto de 2026",
+    "resumo": "suas atribuições legais e regimentais, CONSIDERANDO a instrução realizada no PA nº 3826/2026; resolve: CONCEDER ... aposentadoria ao servidor PAULO DIONEL DA SILVA, ocupante do cargo efetivo de Técnic",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-trt/gp/dg-n-191-de-13-de-agosto-de-2026-725954666",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-0741eff808",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "ATO TRT6-GP nº 200, de 17 de agosto de 2026",
+    "resumo": "deliberação ocorrida na sessão plenária de 10/08/2026 e o constante do PROAD nº 10.260/2026, resolve: CONCEDER ... aposentadoria voluntária, com fundamento no art. 4º da Emenda Constitucional nº 103/2",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/ato-trt6-gp-n-200-de-17-de-agosto-de-2026-725957174",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-4a686be133",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA Nº 783, DE 17 DE AGOSTO DE 2026",
+    "resumo": "em 13/11/2019, Considerando o que consta do Processo nº 23113.032915/2026-50/UFS, resolve: Art. 1º - Conceder ... aposentadoria voluntária, com proventos integrais, ao(à) servidor(a) COSME ASSIS, matr",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-783-de-17-de-agosto-de-2026-725960199",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-47a95deee8",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA DE PESSOAL Nº 5, DE 13 DE AGOSTO DE 2026",
+    "resumo": "e considerando as informações contidas no Processo Administrativo nº 54000.122556/2026-22, resolve: Conceder ... aposentadoria voluntária a ELIETE ALVES DA COSTA, no cargo de Auxiliar de Administração",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-de-pessoal-n-5-de-13-de-agosto-de-2026-725961147",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-c07b0f7880",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA CGBEN/DECIPEX/SGP/MGI Nº 9.806, DE 17 DE AGOSTO DE 2026",
+    "resumo": "de dezembro de 2018, e considerando o disposto no Processo nº 10265.236901/2026-28, resolve: Art. 1º Conceder ... aposentadoria voluntária ao servidor, SIDNEI MOTA CERQUEIRA, matrícula SIAPE nº 128518",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-cgben/decipex/sgp/mgi-n-9.806-de-17-de-agosto-de-2026-725963012",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-1a491359d0",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "ATO Nº 1.437, de 17 de agosto de 2026",
+    "resumo": "agosto de 2026 A REITORA DA UNIVERSIDADE FEDERAL DO PIAUÍ, no uso de suas atribuições legais, resolve: Conceder ... aposentadoria voluntária a JOSILDA FLORIANO MELO MARTINS, matrícula SIAPE nº 1167661",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/ato-n-1.437-de-17-de-agosto-de-2026-725963170",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-eca35a3ee9",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA DGP Nº 2.893, DE 14 DE AGOSTO DE 2026",
+    "resumo": "de 17/10/2018, e tendo em vista o que consta do Processo nº 08270.010589/2026-23, resolve: Art. 1º Conceder ... aposentadoria especial voluntária, com integralidade e paridade, a FRANCISCO WETHER ARAR",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-dgp-n-2.893-de-14-de-agosto-de-2026-725965991",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-c7dfd3eed5",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA Nº 156, DE 12 DE AGOSTO DE 2026.",
+    "resumo": "atribuições regimentais e considerando o que consta do SEI n. 0012350-11.2026.6.26.8171, resolve: Art. 1º Conceder ... aposentadoria especial voluntária, com proventos integrais, calculados pela média",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-156-de-12-de-agosto-de-2026.-725970826",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-55ddbbc7d1",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA CGBEN/DECIPEX/SGP/MGI Nº 9.802, DE 17 DE AGOSTO DE 2026",
+    "resumo": "de dezembro de 2018, e considerando o disposto no Processo nº 13113.234608/2026-58, resolve: Art.1º Conceder ... aposentadoria voluntária ao servidor, PAULO ROBERTO DE SOUZA SANTOS, matrícula SIAPE nº",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-cgben/decipex/sgp/mgi-n-9.802-de-17-de-agosto-de-2026-725971303",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-515b0c2d50",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "ATO Nº 4.844, DE 17 DE AGOSTO DE 2026",
+    "resumo": "55.2026.4.04.8000, resolve: ALTERAR a fundamentação legal do Ato 3865/2025, publicado no DOU(2) de 17/06/2025, que concedeu ... aposentadoria voluntária à servidora MARIANGELA URSI VENTURA LOBO, matrí",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/ato-n-4.844-de-17-de-agosto-de-2026-725972959",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-e2fc175d99",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA CGBEN/DECIPEX/SGP/MGI Nº 9.809, DE 17 DE AGOSTO DE 2026",
+    "resumo": "de dezembro de 2018, e considerando o disposto no Processo nº 14021.034729/2026-93, resolve: Art.1º Conceder ... aposentadoria voluntária com proventos integrais ao servidor, ANTONIO PEREIRA DA SILVA ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-cgben/decipex/sgp/mgi-n-9.809-de-17-de-agosto-de-2026-725973513",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-606dec2fe6",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA /CGBEN/DECIPEX/SGP/MGI Nº 9.748, DE 14 DE AGOSTO DE 2026",
+    "resumo": "de dezembro de 2018, e considerando o disposto no Processo nº 11070.726403/2026-12, resolve: Art. 1º Conceder ... aposentadoria voluntária com proventos integrais à servidora, SONIA REGINA FETTER, mat",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-/cgben/decipex/sgp/mgi-n-9.748-de-14-de-agosto-de-2026-725973587",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-34532ab876",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA Nº 2.786, DE 11 DE AGOSTO DE 2026",
+    "resumo": "2022, com base nas informações constantes no Processo SEI nº 25225.000616/2026-14, resolve: Art. 1º - Conceder ... aposentadoria voluntária, com proventos integrais ao servidor SEVERINO DOS SANTOS COR",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-2.786-de-11-de-agosto-de-2026-725975643",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-4baaa13d0e",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA CGBEN/DECIPEX/SGP/MGI Nº 9.791, DE 17 DE AGOSTO DE 2026",
+    "resumo": "dezembro de 2018, e considerando o disposto no Processo nº 14021.012574/2026-34, resolve: Art. 1º - Conceder ... aposentadoria voluntária com proventos integrais ao servidor, JOSE CARLOS FERREIRA AMAN",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-cgben/decipex/sgp/mgi-n-9.791-de-17-de-agosto-de-2026-725976273",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-27444ef913",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL Nº 746/2026-TCU/SEPROC, DE 17 DE AGOSTO DE 2026",
+    "resumo": "contas, se esta for a natureza do processo (art. 16, inciso III, da Lei 8.443/1992); d) inscrição do nome ... previstos no art. 3º, inciso I, alínea \"g\" e no art. 3º da Lei Complementar 64/1990; e) in",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-n-746/2026-tcu/seproc-de-17-de-agosto-de-2026-726070126",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-47d825257e",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EXTRATO DE ACORDO DE COOPERAÇÃO TÉCNICA",
+    "resumo": "DE COOPERAÇÃO TÉCNICA nºs: 352/2026, 353/2026, 354/2026 e 355/2026; Data da assinatura: 05/08/2026; Nome ... do Órgão ou Entidade Pública: Prefeitura Municipal de Tianguá /CE; CNPJ: 07.735.178/0001-20",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-cooperacao-tecnica-726075611",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-f564de9d1d",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EXTRATO DE CONTRATO",
+    "resumo": "VIGÊNCIA: 9 (nove) meses, contados a partir da assinatura do Contrato; DATA DA ASSINATURA: 13/08/2026; NOME E CARGO DOS SIGNATÁRIOS: Pela contratante: Sra. Marcela Loyo de Queiroz Campos - Superintend",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/extrato-de-contrato-726086607",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-0e8ccd3784",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EXTRATO DE TERMO ADITIVO",
+    "resumo": "16/08/2026, para aquisição de acessórios para ponte rolante do CMC; DATA DA ASSINATURA: 13/08/2026; NOMENTOS E COMPONENTES FERROVIÁRIOS LTDA; RESUMO DO OBJETO: Prorrogação do prazo de vigência do Cont",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-726089254",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-7c00348e85",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL Nº 740/2026-TCU/SEPROC, DE 17 DE AGOSTO DE 2026",
+    "resumo": "responsáveis de processo de contas anuais (art. 16, inciso III, da Lei 8.443/1992); d) inscrição do nome ... previstos no art. 3º, inciso I, alínea \"g\" e no art. 3º da Lei Complementar 64/1990; e) inc",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-n-740/2026-tcu/seproc-de-17-de-agosto-de-2026-726097003",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-04dc4a8a64",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EXTRATO DE ACORDO DE COOPERAÇÃO TÉCNICA",
+    "resumo": "EXTRATO DE ACORDO DE COOPERAÇÃO TÉCNICA Convênio nº 364/2026; Data da assinatura: 10 de agosto de 2026; Nome ... da convenente: PREFEITURA MUNICIPAL DE CACHOEIRO DE ITAPEMIRIM; Nome da Agência de Corr",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-cooperacao-tecnica-726099432",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-7383eb8864",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL DE 17 de agosto de 2026",
+    "resumo": "I - Relação das pessoas examinandas habilitadas - GERAL, na seguinte ordem: número de inscrição e nome ... pessoas examinandas habilitadas - PESSOA COM DEFICIÊNCIA (PcD), na seguinte ordem: número de ",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-de-17-de-agosto-de-2026-726099690",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-a03284cf4f",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL Nº 43 - PF - POLICIAL, DE 17 DE AGOSTO DE 2026",
+    "resumo": "candidatos que enviaram solicitação de final de fila, na seguinte ordem: cargo/área, número de inscrição e nome ... candidatos negros que enviaram solicitação de final de fila, na seguinte ordem: núme",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-n-43-pf-policial-de-17-de-agosto-de-2026-726108757",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-9281b920f8",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "AVISO DE INEXIGIBILIDADE DE LICITAÇÃO",
+    "resumo": "Licitação nº 011/2026, decorrente do Processo Administrativo nº 042/2026; Contratado: Marcos José Santana, nomeAVISO DE INEXIGIBILIDADE DE LICITAÇÃO Por intermédio de sua Agente de Contratação, torna ",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/aviso-de-inexigibilidade-de-licitacao-726112608",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-0d552d63e8",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EXTRATO DE ACORDO DE COOPERAÇÃO TÉCNICA Nº 2/2026",
+    "resumo": "UNIVERSIDADE FEDERAL DO OESTE DA BAHIA - UFOB CNPJ: 18.641.263/0001-45 o Produtor Rural IVANOR JOSÉ GUERRA (Nomesso nº 23520.005723/2026-79 Partícipes: UNIVERSIDADE FEDERAL DO OESTE DA BAHIA - UFOB CN",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/extrato-de-acordo-de-cooperacao-tecnica-n-2/2026-726118113",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-dfa0dbff09",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EXTRATO DE CONVÊNIO",
+    "resumo": "EXTRATO DE CONVÊNIO Convênio nº 88/2026 (CTR ERP 66010956/2026); Data da assinatura: 08/06/2026; Nome ... da Convenente: PREFEITURA MUNICIPAL PARARI/PB, CNPJ 01.612.532/0001-42; Nome da Agência Correi",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/extrato-de-convenio-726120160",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-293c96dff1",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EXTRATO DE TERMO ADITIVO",
+    "resumo": "CALCATERRA, Representante-residente adjunta do PNUD no Brasil; ALFREDO MACEDO GOMES, Reitor, assinado em nome ... da UFPE e MAIRA GALDINO DA ROCHA PITTA, Diretora Presidente, assinado em nome da FADE ",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/extrato-de-termo-aditivo-726123484",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-c21256aa09",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL nº 726/2026-TCU/SEPROC, DE 14 DE AGOSTO DE 2026",
+    "resumo": "O não atendimento desta notificação poderá ensejar a inclusão do nome do responsável no cadastro informativo do disposto no art. 22, III, da Lei 8.443/1992, fica NOTIFICADA Caroline Carvalho Noleto, C",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-n-726/2026-tcu/seproc-de-14-de-agosto-de-2026-726130086",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-be81e1b054",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL DE NOTIFICAÇÃO Nº 14/2026 - 02 JARI PRF-MS",
+    "resumo": "O padrão de sequência de identificação dos processos abaixo relacionados será: nº do processo, nome dos de Infração - 02 JARI da Polícia Rodoviária Federal no Estado de Mato Grosso do Sul, em conformi",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-de-notificacao-n-14/2026-02-jari-prf-ms-726131946",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-171b05a6c8",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Edital DPU-SP/GABDPC SP Nº 30, DE 17 DE agosto DE 2026",
+    "resumo": "RELAÇÃO PARCIAL DE SELECIONADOS Nome Cota PCD (item 3 do edital) Sim/Não Cota racial (item 4 do edital DPU-SP/GABDPC SP Nº 30, DE 17 DE agosto DE 2026 PROCESSO SELETIVO RESIDENTES EM DIREITO PARA ATUA",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-dpu-sp/gabdpc-sp-n-30-de-17-de-agosto-de-2026-726147411",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-94a3b01b95",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL DE NOTIFICAÇÃO Nº 50/2026 - CGREC/PARCOB",
+    "resumo": "prestações de contas de recursos descentralizados por esta Autarquia, conforme na tabela a seguir: Nomento da Educação - FNDE, Autarquia Federal, Setor Bancário Sul, Quadra 02 Bloco \"F\", Edifício FNDE",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-de-notificacao-n-50/2026-cgrec/parcob-726151069",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-9f5022ca30",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL DE INTIMAÇÃO",
+    "resumo": "Nome/Razão Social Número CPF/CNPJ Número Processo Albano Fenner Clauss ***.054.290-20 2025113495 AndréEDITAL DE INTIMAÇÃO O CONSELHO REGIONAL DE ENGENHARIA E AGRONOMIA DO RIO GRANDE DO SUL-CREA-RS, no",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-de-intimacao-726155177",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-ed39235347",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL DE NOTIFICAÇÃO Nº 15/2026 - 03 JARI PRF-MS",
+    "resumo": "O padrão de sequência de identificação dos processos abaixo relacionados será: nº do processo, nome dos de Infração - 03 JARI da Polícia Rodoviária Federal no Estado de Mato Grosso do Sul, em conformi",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-de-notificacao-n-15/2026-03-jari-prf-ms-726158680",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-7dbe7a3f47",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL Nº 1, de 17 de agosto de 2026",
+    "resumo": "exercerá as atribuições de Comissão Examinadora, é composta pelos seguintes membros: MEMBROS CATEGORIA NOME ... social, ficando ciente de que tal nome será o único divulgado em toda e qualquer publica",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-n-1-de-17-de-agosto-de-2026-726162418",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-647d8732c3",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL DE NOTIFICAÇÃO",
+    "resumo": "AGÊNCIA OPERAÇÃO NOME PARTICIPAÇÃO AGÊNCIA OPERAÇÃO NOME PARTICIPAÇÃO 1059 105907716 ADAILTON BEZERRA ... 956 4003794 LINDOMAR ALVES ANDRE MUTUÁRIO 2760 4000590 ZENILDO DOURADO VAZ MUTUÁRIO AGÊNCIA OP",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-de-notificacao-726163254",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-172009314b",
+    "data": "18/08/2026",
+    "categoria": "Jurídico e PAD",
+    "titulo": "CIRCULAR Nº 76, DE 17 DE AGOSTO DE 2026",
+    "resumo": "cenário aponta para a possibilidade de fechamento de plantas produtivas de cabos de fibras ópticas, demissãoCIRCULAR Nº 76, DE 17 DE AGOSTO DE 2026 A SECRETÁRIA DE COMÉRCIO EXTERIOR, DO MINISTÉRIO DO ",
+    "fonte": "Diário Oficial da União (DO1)",
+    "url_original": "https://www.in.gov.br/web/dou/-/circular-n-76-de-17-de-agosto-de-2026-725911230",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-54752fede1",
+    "data": "18/08/2026",
+    "categoria": "Jurídico e PAD",
+    "titulo": "PORTARIA Coren-PI N° 891, DE 12 DE AGOSTO DE 2026",
+    "resumo": "de 2024, revogando, naquela oportunidade, a Portaria Coren-PI nº 661/2021; CONSIDERANDO o pedido de demissão ... Art. 2º A vacância de que trata este artigo decorre exclusivamente do pedido de demissã",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-coren-pi-n-891-de-12-de-agosto-de-2026-725936904",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-91d0aaf5ca",
+    "data": "18/08/2026",
+    "categoria": "Jurídico e PAD",
+    "titulo": "PORTARIA MPS Nº 1.239, DE 17 DE AGOSTO DE 2026",
+    "resumo": "do Processo Administrativo Disciplinar nº 10128.107136/2021-08, resolve: Art. 1º Aplicar a pena de demissão que lhe confere o inciso IV do parágrafo único do art. 87 da Constituição Federal, e consoan",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-mps-n-1.239-de-17-de-agosto-de-2026-725944218",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-f2cb448d04",
+    "data": "18/08/2026",
+    "categoria": "Jurídico e PAD",
+    "titulo": "PORTARIA MPS Nº 1.240, DE 17 DE AGOSTO DE 2026",
+    "resumo": "no Processo Administrativo Disciplinar nº 17316.100285/2021-60, resolve: Art. 1º Aplicar a pena de demissão que lhe confere o inciso IV do parágrafo único do art. 87 da Constituição Federal, e consoan",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-mps-n-1.240-de-17-de-agosto-de-2026-725951242",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-0c4ad20d0c",
+    "data": "18/08/2026",
+    "categoria": "Jurídico e PAD",
+    "titulo": "PORTARIA MPS Nº 1.241, DE 17 DE AGOSTO DE 2026",
+    "resumo": "no Processo Administrativo Disciplinar nº 19955.102838/2023-81, resolve: Art. 1º Aplicar a pena de demissão que lhe confere o inciso IV do parágrafo único do art. 87 da Constituição Federal, e consoan",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-mps-n-1.241-de-17-de-agosto-de-2026-725962016",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-c4038288c4",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "ATO TRT5 Nº 388, DE 17 DE AGOSTO DE 2026",
+    "resumo": "conformidade com o artigo 33, inciso I, da Lei nº 8.112/1990, e com o PROAD nº 9874/2026; resolve: Exonerar ... , a pedido, a servidora MELISSA BARBOSA DE PAIVA, do cargo de Técnico Judiciário/Área Ad",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/ato-trt5-n-388-de-17-de-agosto-de-2026-725930966",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-3ae58c6227",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA DE PESSOAL SE/MPI N° 276, DE 17 DE AGOSTO DE 2026",
+    "resumo": "alterações, e demais informações que constam no Processo nº 15000.002629/2026-17, resolve: Art. 1° Exonerar ... , a pedido, a partir de 18 de agosto de 2026, FERNANDA DA SILVA MACHADO VILELA, matrícul",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-de-pessoal-se/mpi-n-276-de-17-de-agosto-de-2026-725931756",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-d053d00afd",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA MTE Nº 1.489, DE 17 DE AGOSTO DE 2026",
+    "resumo": "de 1990, e as demais informações que constam do Processo nº 10260.218895/2026-77, resolve: Art. 1º Exonerar ... , a pedido, FELIPE RODRIGUES PIRES, matrícula nº 3512149, do cargo de Auditor-Fiscal do ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-mte-n-1.489-de-17-de-agosto-de-2026-725938284",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-fe74e8a0be",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 763, DE 17 DE AGOSTO DE 2026",
+    "resumo": "34, da Lei n. 8.112 de 11/12/1990, combinado com o art. 18 da Lei n. 8.216 de 13/08/1991, resolve: Exonerar ... a pedido, o servidor REGIS LUIZ ARCE ROTTOLI, matrícula SIAPE nº 1809666, ocupante do ca",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-763-de-17-de-agosto-de-2026-725941250",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-fbb2561941",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 929, de 17 de AGOSTO de 2026",
+    "resumo": "ANDRADE ARAUJO, matrícula SIAPE n° 3002432, do quadro de pessoal efetivo desta Agência, em virtude de exoneração ... , a pedido, de cargo efetivo, com fundamento nos arts. 33, inciso I, e 34 da Lei nº",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-929-de-17-de-agosto-de-2026-725944111",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-4bdc5e65df",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "ATOS DE 17 DE AGOSTO DE 2026",
+    "resumo": "atribuições estatutárias e considerando o constante no Processo nº 23106.085766/2026-11, resolve: Nº 1.109 - Exonerar ... , a pedido e a partir de 10/8/2026, a servidora DANIELA DA SILVA RODRIGUES da ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/atos-de-17-de-agosto-de-2026-725944692",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-9a5c7c26cd",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIAS DE 17 DE AGOSTO DE 2026",
+    "resumo": "regulamentares, e tendo em vista o que consta no processo eletrônico número 1397313, resolve: Nº 3.143 - exonerar ... , a pedido, na forma do disposto no art. 35, inciso II, da Lei n o 8.112, de 1990,",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portarias-de-17-de-agosto-de-2026-725946710",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-a26ff595ac",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA SG/MPF Nº 841, DE 14 DE AGOSTO DE 2026",
+    "resumo": "- inciso II da Lei nº 8.112, de 11 de dezembro de 1990, e no expediente PGR-00340954/2026, resolve: Exonerar ... , a pedido, a partir de 17 de agosto de 2026, GABRIEL DIAS DUTRA DE JESUS, matrícula nº",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-sg/mpf-n-841-de-14-de-agosto-de-2026-725952587",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-ff7a20294b",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA CJF nº 488, DE 12 DE agosto DE 2026",
+    "resumo": "atribuições legais, e tendo em vista o que consta no Processo n. 0002633-46.2026.4.90.8000, resolve: Art. 1º Exonerar ... , a pedido, a partir de 18 de agosto de 2026, DANIEL MARTINS FERREIRA, matrícu",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-cjf-n-488-de-12-de-agosto-de-2026-725954982",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-c1cbd5fbe4",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 730, DE 17 DE AGOSTO DE 2026",
+    "resumo": "8.112, de 11 de dezembro de 1990, e no Decreto nº 12.769, de 5 de dezembro de 2025, resolve: Nº 731- Exonerar ... , a pedido, SHIRLEY FARIAS NASCIMENTO, matrícula Siape nº 3377143, do cargo de Chefe d",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-730-de-17-de-agosto-de-2026-725963802",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-08dbdc9353",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 8.622, DE 17 DE AGOSTO DE 2026",
+    "resumo": "de 27 de Junho de 2023, publicada no Diário Oficial da União nº 121 de 28 de Junho de 2023, resolve: Exonerar ... , a pedido, de acordo com o artigo 35, inciso II, da Lei 8.112, de 11/12/90, ANGELA GR",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-8.622-de-17-de-agosto-de-2026-725976752",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-1b210d4ac4",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Arquivos salário servidor público",
+    "resumo": "Maceió · Prefeitura confirma reajuste salarial para servidores de Maceió; veja como será o aumento. Os servidores municipais de Maceió já sabem quanto...",
+    "fonte": "Alagoas 24 Horas",
+    "url_original": "https://www.alagoas24horas.com.br/tags/salario-servidor-publico/",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-618ed5cfcc",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Arquivos servidor público Maceió",
+    "resumo": "Maceió · Prefeitura confirma reajuste salarial para servidores de Maceió; veja como será o aumento. Os servidores municipais de Maceió já sabem quanto...",
+    "fonte": "Alagoas 24 Horas",
+    "url_original": "https://www.alagoas24horas.com.br/tags/servidor-publico-maceio/",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-3f5e1d5d72",
+    "data": "18/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "O servidor municipal aposentado Fernando Farinelli será o diretor-presidente da Autarquia Gestora do Programa de Saúde dos Servidores (AGPSS), responsável pela cogestão do Programa de Saúde dos Servidores e Empregados Públicos Municipais (PAS",
+    "resumo": "",
+    "fonte": "Instagram",
+    "url_original": "https://www.instagram.com/p/Db8OkoqkS3W/",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-f228de412b",
+    "data": "18/08/2026",
+    "categoria": "Jurídico e PAD",
+    "titulo": "Tribunal de Justiça do Estado do Rio de Janeiro",
+    "resumo": "TRIBUNAL DE JUSTICA DO ESTADO DO RIO DE JANEIRO *** QUARTA CAMARA DE DIREITO PUBLICO (ANTIGA 7ª CÂMARA CÍVEL) ***. ----------------------------",
+    "fonte": "Poder Judiciário do Estado do Rio de Janeiro",
+    "url_original": "http://www4.tjrj.jus.br/camarasweb/listaPauta.aspx?pOJ=12280&pDataSessao=25/08/2026%2000:00:00",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-d10c9d0a71",
+    "data": "18/08/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "Servidora pública é demitida após faltar por mais de três anos ao trabalho e terá que devolver R$ 12 mil",
+    "resumo": "Uma professora da rede municipal de ensino de Rondonópolis, em Mato Grosso, foi demitida por abandono de cargo após permanecer mais de três anos afastada...",
+    "fonte": "Jornal Correio",
+    "url_original": "https://www.correio24horas.com.br/brasil/servidora-publica-e-demitida-apos-faltar-por-mais-de-tres-anos-ao-trabalho-e-tera-que-devolver-r-12-mil-0826",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-8da65ddcc7",
+    "data": "18/08/2026",
+    "categoria": "Ciência e Tecnologia",
+    "titulo": "Reserva de Auditório",
+    "resumo": "Visando a conservação dos espaços físicos do Centro Multidisciplinar UFRJ-Macaé, a Decania, em consonância com as normas dos principais auditórios das...",
+    "fonte": "CENTRO MULTIDISCIPLINAR UFRJ – MACAÉ – .",
+    "url_original": "https://portal.macae.ufrj.br/pt_br/reserva-de-auditorio/",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-e9fbde4a2d",
+    "data": "18/08/2026",
+    "categoria": "Ciência e Tecnologia",
+    "titulo": "Governo do Rio cria Escola de Saúde Pública. São ofertadas inicialmente 180 vagas",
+    "resumo": "Objetivo é qualificar trabalhadores do Sistema Único de Saúde (SUS), fomentar pesquisas para rede estadual e estimular inovação e gestão.",
+    "fonte": "Extra online",
+    "url_original": "https://extra.globo.com/economia/servidor-publico/noticia/2026/08/governo-do-rio-cria-escola-de-saude-publica-sao-ofertadas-inicialmente-180-vagas.ghtml",
+    "status_curadoria": "Pendente"
+  },
+  {
     "id": "auto-74ad93cdb7",
     "data": "17/08/2026",
     "categoria": "Jurídico e PAD",

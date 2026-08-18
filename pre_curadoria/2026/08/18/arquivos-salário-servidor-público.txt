@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-1b210d4ac4
+titulo: Arquivos salário servidor público
+resumo: Maceió · Prefeitura confirma reajuste salarial para servidores de Maceió; veja como será o aumento. Os servidores municipais de Maceió já sabem quanto...
+autor: Curadoria Publicoverso
+categoria: Carreira e Conquistas
+data: 18/08/2026
+fonte: Alagoas 24 Horas
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.alagoas24horas.com.br/tags/salario-servidor-publico/
+---
+
+Maceió · Prefeitura confirma reajuste salarial para servidores de Maceió; veja como será o aumento. Os servidores municipais de Maceió já sabem quanto...
+
+Fonte original: https://www.alagoas24horas.com.br/tags/salario-servidor-publico/
