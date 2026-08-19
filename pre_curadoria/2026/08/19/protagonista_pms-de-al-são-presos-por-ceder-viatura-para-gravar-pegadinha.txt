@@ -1,0 +1,17 @@
+---
+id_mineracao: min-protagonista-20260819125129
+titulo: PMs de AL são presos por ceder viatura para gravar 'pegadinha' de influenciador Carlinhos Maia
+resumo: A Polícia Militar de Alagoas (PM-AL) determinou a prisão administrativa de três policiais militares suspeitos de ceder uma viatura policial para a gravação.
+autor: Curadoria Publicoverso
+categoria: Policial e Segurança Pública
+eixo_tematico: Virais e Inusitados
+fonte: Folhape
+url_original: https://folhape.com.br/noticias/pms-de-al-sao-presos-por-ceder-viatura-para-gravar-pegadinha-de/505740
+link_status: Verificado (HTTP 200)
+data_verificacao: 19/08/2026 12:51
+status: Pendente
+---
+
+A Polícia Militar de Alagoas (PM-AL) determinou a prisão administrativa de três policiais militares suspeitos de ceder uma viatura policial para a gravação.
+
+Fonte original: https://folhape.com.br/noticias/pms-de-al-sao-presos-por-ceder-viatura-para-gravar-pegadinha-de/505740

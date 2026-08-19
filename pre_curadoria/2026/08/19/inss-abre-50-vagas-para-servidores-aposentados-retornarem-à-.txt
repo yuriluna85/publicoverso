@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-0fedecbd7b
+titulo: INSS abre 50 vagas para servidores aposentados retornarem à ativa
+resumo: Portaria 1.999/2026 esclarece que são dez para analista e 40 para técnico. Interessados devem ter se aposentado até 2021.
+autor: Curadoria Publicoverso
+categoria: Histórias e Superação
+data: 19/08/2026
+fonte: Extra online
+status: Pendente
+status_triagem: Pendente
+url_original: https://extra.globo.com/google/amp/economia/servidor-publico/noticia/2026/08/inss-abre-50-vagas-para-servidores-aposentados-retornarem-a-ativa.ghtml
+---
+
+Portaria 1.999/2026 esclarece que são dez para analista e 40 para técnico. Interessados devem ter se aposentado até 2021.
+
+Fonte original: https://extra.globo.com/google/amp/economia/servidor-publico/noticia/2026/08/inss-abre-50-vagas-para-servidores-aposentados-retornarem-a-ativa.ghtml
