@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-4034344db1
+titulo: Campo Grande
+resumo: Aquidauana, Campo Grande, Miranda. 1892 – Fundação de Aquidauana. tempo Campo Grande, Dourados, Três Lagoas. Sábado será de calor intenso em MS,...
+autor: Curadoria Publicoverso
+categoria: Esportes e Aventura
+data: 19/08/2026
+fonte: Midiamax
+status: Pendente
+status_triagem: Pendente
+url_original: https://midiamax.com.br/municipios/campo-grande/page/17/?page=20
+---
+
+Aquidauana, Campo Grande, Miranda. 1892 – Fundação de Aquidauana. tempo Campo Grande, Dourados, Três Lagoas. Sábado será de calor intenso em MS,...
+
+Fonte original: https://midiamax.com.br/municipios/campo-grande/page/17/?page=20
