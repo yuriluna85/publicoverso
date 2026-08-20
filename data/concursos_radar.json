@@ -1328,6 +1328,38 @@
     "data_atualizacao": "19/08/2026"
   },
   {
+    "id": "concurso-c34b356d",
+    "órgão": "Concurso Receita Federal 2026: Edital autorizado! 146 ...",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 146,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://www.editorasolucao.com.br/blog/concurso/receita-federal?srsltid=AfmBOooopfhzDUyHy_u5y8yiBxxtKDePle6nGbBWYKtPsWFVOUXNsbLi",
+    "status": "Em Analise",
+    "destaque": true,
+    "data_atualizacao": "20/08/2026"
+  },
+  {
+    "id": "concurso-b6d1db02",
+    "órgão": "Concurso Anatel: Pedido de edital enviado ao MGI! 191 ...",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 0,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://www.novaconcursos.com.br/portal/concursos/concurso-anatel/?srsltid=AfmBOop4Z9GTTzhYNgZOkg6RjtICdZ8G6ia47on4rNrBOmNVqtbqJ3ru",
+    "status": "Em Analise",
+    "destaque": true,
+    "data_atualizacao": "20/08/2026"
+  },
+  {
     "id": "concurso-2026-004",
     "órgão": "Conselho Nacional de Justiça",
     "sigla": "CNJ",
@@ -3326,5 +3358,37 @@
     "status": "Em Analise",
     "destaque": false,
     "data_atualizacao": "19/08/2026"
+  },
+  {
+    "id": "concurso-af3b80a4",
+    "órgão": "LXII Concurso Público para o Tribunal de Justiça do ...",
+    "sigla": "",
+    "esfera": "Estadual",
+    "cargos": "Consultar edital",
+    "vagas": 0,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://conhecimento.fgv.br/concursos/tjrjservidores25/01",
+    "status": "Em Analise",
+    "destaque": false,
+    "data_atualizacao": "20/08/2026"
+  },
+  {
+    "id": "concurso-222e242e",
+    "órgão": "Concursos Públicos para o segundo semestre de 2026 ...",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 63,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://www.instagram.com/reel/DZI2_4BAYO0/",
+    "status": "Em Analise",
+    "destaque": false,
+    "data_atualizacao": "20/08/2026"
   }
 ]
