@@ -1,0 +1,17 @@
+---
+id_mineracao: min-protagonista-20260820163806
+titulo: Servidora pública desaparece no oeste do Bahia; ex-namorado é preso - iBahia
+resumo: Uma servidora pública de 41 anos está desaparecida há dois dias em Santa Maria da Vitória, cidade localizada no oeste da Bahia. Édina Barbosa da Silva foi...
+autor: Curadoria Publicoverso
+categoria: Cultura Pop e Gastronomia
+eixo_tematico: Entretenimento e Cultura Pop
+fonte: iBahia
+url_original: https://ibahia.com/noticias/seguranca/corpo-de-servidora-e-encontrado-queimado-em-cova-rasa-ex-foi-preso-389744?_=amp
+link_status: Verificado (HTTP 200)
+data_verificacao: 20/08/2026 16:38
+status: Pendente
+---
+
+Uma servidora pública de 41 anos está desaparecida há dois dias em Santa Maria da Vitória, cidade localizada no oeste da Bahia. Édina Barbosa da Silva foi...
+
+Fonte original: https://ibahia.com/noticias/seguranca/corpo-de-servidora-e-encontrado-queimado-em-cova-rasa-ex-foi-preso-389744?_=amp
