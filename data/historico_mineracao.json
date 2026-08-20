@@ -1213,5 +1213,19 @@
     "titulo": "Clube do Servidor Municipal",
     "categoria": "Carreira e Conquistas",
     "data_mineracao": "2026-08-20 16:37:39"
+  },
+  {
+    "id_mineracao": "auto-c1d959f0b4",
+    "url": "https://g1.globo.com/es/espirito-santo/norte-noroeste-es/noticia/2026/08/20/servidor-publico-morre-apos-ser-atingido-por-portao-de-secretaria-municipal-no-es.ghtml",
+    "titulo": "Servidor público morre após ser atingido por portão de secretaria municipal no ES",
+    "categoria": "Ciência e Tecnologia",
+    "data_mineracao": "2026-08-20 21:29:32"
+  },
+  {
+    "id_mineracao": "auto-dc6699e166",
+    "url": "https://www.facebook.com/prefeituraibitinga/posts/aten%C3%A7%C3%A3o-servidor-municipal-essa-mensagem-%C3%A9-para-voc%C3%AA/1373585134950183/",
+    "titulo": "Atenção servidor municipal essa mensagem é para você!",
+    "categoria": "Carreira e Conquistas",
+    "data_mineracao": "2026-08-20 21:29:51"
   }
 ]

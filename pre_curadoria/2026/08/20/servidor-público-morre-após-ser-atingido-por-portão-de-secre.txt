@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-c1d959f0b4
+titulo: Servidor público morre após ser atingido por portão de secretaria municipal no ES
+resumo: Um servidor público de 63 anos morreu após ser atingido por um portão na manhã desta quinta-feira (20) em São Domingos do Norte, no Noroeste do Espírito...
+autor: Curadoria Publicoverso
+categoria: Ciência e Tecnologia
+data: 20/08/2026
+fonte: G1
+status: Pendente
+status_triagem: Pendente
+url_original: https://g1.globo.com/es/espirito-santo/norte-noroeste-es/noticia/2026/08/20/servidor-publico-morre-apos-ser-atingido-por-portao-de-secretaria-municipal-no-es.ghtml
+---
+
+Um servidor público de 63 anos morreu após ser atingido por um portão na manhã desta quinta-feira (20) em São Domingos do Norte, no Noroeste do Espírito...
+
+Fonte original: https://g1.globo.com/es/espirito-santo/norte-noroeste-es/noticia/2026/08/20/servidor-publico-morre-apos-ser-atingido-por-portao-de-secretaria-municipal-no-es.ghtml
