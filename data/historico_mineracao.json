@@ -1262,5 +1262,19 @@
     "titulo": "Servidor municipal é condenado a 24 anos de prisão por tentativa de feminicídio contra ex-companheira no MA",
     "categoria": "Policial e Segurança Pública",
     "data_mineracao": "2026-08-21 12:51:38"
+  },
+  {
+    "id_mineracao": "auto-e69d4c32b2",
+    "url": "https://extra.globo.com/economia/servidor-publico/noticia/2026/08/servidor-federal-veja-como-contestar-descontos-indevidos-no-contracheque-pelo-sougov.ghtml",
+    "titulo": "Servidor federal, veja como contestar descontos indevidos no contracheque pelo SouGov.br",
+    "categoria": "Ciência e Tecnologia",
+    "data_mineracao": "2026-08-21 21:26:24"
+  },
+  {
+    "id_mineracao": "auto-eb4326a615",
+    "url": "http://www.ufrrj.br/concursos/EDITAL52-2026-TAE_SUPERIOR.pdf",
+    "titulo": "UNIVERSIDADE FEDERAL RURAL DO RIO DE JANEIRO",
+    "categoria": "Carreira e Conquistas",
+    "data_mineracao": "2026-08-21 21:26:58"
   }
 ]

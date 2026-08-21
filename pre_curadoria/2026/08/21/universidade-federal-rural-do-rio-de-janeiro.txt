@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-eb4326a615
+titulo: UNIVERSIDADE FEDERAL RURAL DO RIO DE JANEIRO
+resumo: O REITOR DA UNIVERSIDADE FEDERAL RURAL DO RIO DE JANEIRO, no uso de suas atribuições legais, tendo em vista o Art. 37, inciso II, da Constituição Federal,...
+autor: Curadoria Publicoverso
+categoria: Carreira e Conquistas
+data: 21/08/2026
+fonte: UFRRJ
+status: Pendente
+status_triagem: Pendente
+url_original: http://www.ufrrj.br/concursos/EDITAL52-2026-TAE_SUPERIOR.pdf
+---
+
+O REITOR DA UNIVERSIDADE FEDERAL RURAL DO RIO DE JANEIRO, no uso de suas atribuições legais, tendo em vista o Art. 37, inciso II, da Constituição Federal,...
+
+Fonte original: http://www.ufrrj.br/concursos/EDITAL52-2026-TAE_SUPERIOR.pdf

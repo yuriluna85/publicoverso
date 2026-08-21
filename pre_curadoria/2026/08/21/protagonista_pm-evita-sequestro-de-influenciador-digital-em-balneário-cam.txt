@@ -1,0 +1,17 @@
+---
+id_mineracao: min-protagonista-20260821212743
+titulo: PM evita sequestro de influenciador digital em Balneário Camboriú
+resumo: Polícia Militar impede sequestro de influenciador em Balneário Camboriú; três suspeitos presos com arma falsa, abraçadeiras, bastão e drone,...
+autor: Curadoria Publicoverso
+categoria: Cultura Pop e Gastronomia
+eixo_tematico: Virais e Inusitados
+fonte: Diarinho
+url_original: https://diarinho.net/materia/674463/PM-evita-sequestro-de-influenciador-digital-em-Balneario-Camboriu
+link_status: Verificado (HTTP 200)
+data_verificacao: 21/08/2026 21:27
+status: Pendente
+---
+
+Polícia Militar impede sequestro de influenciador em Balneário Camboriú; três suspeitos presos com arma falsa, abraçadeiras, bastão e drone,...
+
+Fonte original: https://diarinho.net/materia/674463/PM-evita-sequestro-de-influenciador-digital-em-Balneario-Camboriu

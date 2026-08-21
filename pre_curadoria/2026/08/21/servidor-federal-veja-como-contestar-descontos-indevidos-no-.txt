@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-e69d4c32b2
+titulo: Servidor federal, veja como contestar descontos indevidos no contracheque pelo SouGov.br
+resumo: Mecanismo, que pode ser acessado pelo aplicativo ou pelo site, permite registrar reclamação administrativa e solicitar regularização da situação.
+autor: Curadoria Publicoverso
+categoria: Ciência e Tecnologia
+data: 21/08/2026
+fonte: Extra online
+status: Pendente
+status_triagem: Pendente
+url_original: https://extra.globo.com/economia/servidor-publico/noticia/2026/08/servidor-federal-veja-como-contestar-descontos-indevidos-no-contracheque-pelo-sougov.ghtml
+---
+
+Mecanismo, que pode ser acessado pelo aplicativo ou pelo site, permite registrar reclamação administrativa e solicitar regularização da situação.
+
+Fonte original: https://extra.globo.com/economia/servidor-publico/noticia/2026/08/servidor-federal-veja-como-contestar-descontos-indevidos-no-contracheque-pelo-sougov.ghtml
