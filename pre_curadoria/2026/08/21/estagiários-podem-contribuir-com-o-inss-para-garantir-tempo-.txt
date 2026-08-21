@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-b9bae8109b
+titulo: Estagiários podem contribuir com o INSS para garantir tempo de aposentadoria no futuro; veja como
+resumo: Estudante maior de 16 anos pode se inscrever como "segurado facultativo" e garantir cobertura previdenciária antes mesmo do primeiro emprego com carteira...
+autor: Curadoria Publicoverso
+categoria: Histórias e Superação
+data: 21/08/2026
+fonte: Extra online
+status: Pendente
+status_triagem: Pendente
+url_original: https://extra.globo.com/economia/noticia/2026/08/estagiarios-podem-contribuir-com-o-inss-para-garantir-tempo-de-aposentadoria-no-futuro-veja-como.ghtml
+---
+
+Estudante maior de 16 anos pode se inscrever como "segurado facultativo" e garantir cobertura previdenciária antes mesmo do primeiro emprego com carteira...
+
+Fonte original: https://extra.globo.com/economia/noticia/2026/08/estagiarios-podem-contribuir-com-o-inss-para-garantir-tempo-de-aposentadoria-no-futuro-veja-como.ghtml

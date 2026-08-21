@@ -1,0 +1,17 @@
+---
+id_mineracao: min-protagonista-20260821125221
+titulo: Policiais são afastados por uso indevido de viatura em 'pegadinha' de Carlinhos Maia em Alagoas
+resumo: A Polícia Militar de Alagoas (PM-AL) afastou administrativamente policiais militares suspeitos de utilizarem uma viatura para a gravação de conteúdo,...
+autor: Curadoria Publicoverso
+categoria: Policial e Segurança Pública
+eixo_tematico: Virais e Inusitados
+fonte: Globo
+url_original: https://oglobo.globo.com/brasil/noticia/2026/08/10/policiais-sao-afastados-por-uso-indevido-de-viatura-em-pegadinha-de-carlinhos-maia-em-alagoas.ghtml
+link_status: Verificado (HTTP 200)
+data_verificacao: 21/08/2026 12:52
+status: Pendente
+---
+
+A Polícia Militar de Alagoas (PM-AL) afastou administrativamente policiais militares suspeitos de utilizarem uma viatura para a gravação de conteúdo,...
+
+Fonte original: https://oglobo.globo.com/brasil/noticia/2026/08/10/policiais-sao-afastados-por-uso-indevido-de-viatura-em-pegadinha-de-carlinhos-maia-em-alagoas.ghtml

@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-fc211fdd74
+titulo: Servidor público morre após ser atingido por portão de secretaria municipal no Norte do ES
+resumo: Servidor público morre após ser atingido por portão de secretaria municipal no Norte do ES. Expandir ou colapsar descrição. Assista...
+autor: Curadoria Publicoverso
+categoria: Ciência e Tecnologia
+data: 21/08/2026
+fonte: G1
+status: Pendente
+status_triagem: Pendente
+url_original: https://g1.globo.com/es/espirito-santo/videos-bom-dia-es/video/servidor-publico-morre-apos-ser-atingido-por-portao-de-secretaria-municipal-no-norte-do-es-14888560.ghtml
+---
+
+Servidor público morre após ser atingido por portão de secretaria municipal no Norte do ES. Expandir ou colapsar descrição. Assista...
+
+Fonte original: https://g1.globo.com/es/espirito-santo/videos-bom-dia-es/video/servidor-publico-morre-apos-ser-atingido-por-portao-de-secretaria-municipal-no-norte-do-es-14888560.ghtml

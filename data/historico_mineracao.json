@@ -1227,5 +1227,40 @@
     "titulo": "Atenção servidor municipal essa mensagem é para você!",
     "categoria": "Carreira e Conquistas",
     "data_mineracao": "2026-08-20 21:29:51"
+  },
+  {
+    "id_mineracao": "auto-06454e3f9d",
+    "url": "https://noticias.r7.com/eleicoes/2026/com-a-promessa-de-fazer-uma-reforma-administrativa-zema-diz-que-servidor-publico-deve-trabalhar-por-voacao-20082026/",
+    "titulo": "Com a promessa de fazer uma reforma administrativa, Zema diz que servidor público deve trabalhar por ‘vocação’",
+    "categoria": "Ciência e Tecnologia",
+    "data_mineracao": "2026-08-21 12:51:13"
+  },
+  {
+    "id_mineracao": "auto-fc211fdd74",
+    "url": "https://g1.globo.com/es/espirito-santo/videos-bom-dia-es/video/servidor-publico-morre-apos-ser-atingido-por-portao-de-secretaria-municipal-no-norte-do-es-14888560.ghtml",
+    "titulo": "Servidor público morre após ser atingido por portão de secretaria municipal no Norte do ES",
+    "categoria": "Ciência e Tecnologia",
+    "data_mineracao": "2026-08-21 12:51:16"
+  },
+  {
+    "id_mineracao": "auto-4c25f760e8",
+    "url": "https://www.google.com/goto?url=CAEScAHrOzAVVsHdoIssVIV-2um3VkndHkS5RlfvCFDm2idnpCOuEUMnDg410ulU6SR50hRv1MAivScil038amsTDtlEaBXt351B5gwaKfBQ2CqM5bHoEuPB5QSXHinpw10bezvn3T3FhfD2XTAd6pOumTE",
+    "titulo": "Reserva de Auditório",
+    "categoria": "Ciência e Tecnologia",
+    "data_mineracao": "2026-08-21 12:51:22"
+  },
+  {
+    "id_mineracao": "auto-b9bae8109b",
+    "url": "https://extra.globo.com/economia/noticia/2026/08/estagiarios-podem-contribuir-com-o-inss-para-garantir-tempo-de-aposentadoria-no-futuro-veja-como.ghtml",
+    "titulo": "Estagiários podem contribuir com o INSS para garantir tempo de aposentadoria no futuro; veja como",
+    "categoria": "Histórias e Superação",
+    "data_mineracao": "2026-08-21 12:51:32"
+  },
+  {
+    "id_mineracao": "auto-ab87958d7b",
+    "url": "https://g1.globo.com/ma/maranhao/noticia/2026/08/14/servidor-municipal-e-condenado-a-24-anos-de-prisao-por-tentativa-de-feminicidio-contra-ex-companheira-no-ma.ghtml",
+    "titulo": "Servidor municipal é condenado a 24 anos de prisão por tentativa de feminicídio contra ex-companheira no MA",
+    "categoria": "Policial e Segurança Pública",
+    "data_mineracao": "2026-08-21 12:51:38"
   }
 ]

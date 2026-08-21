@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-ab87958d7b
+titulo: Servidor municipal é condenado a 24 anos de prisão por tentativa de feminicídio contra ex-companheira no MA
+resumo: Roondney Penha Lobato, servidor municipal de Viana, foi condenado a 24 anos e sete meses de prisão por tentativa de feminicídio contra a ex-companheira,...
+autor: Curadoria Publicoverso
+categoria: Policial e Segurança Pública
+data: 21/08/2026
+fonte: G1
+status: Pendente
+status_triagem: Pendente
+url_original: https://g1.globo.com/ma/maranhao/noticia/2026/08/14/servidor-municipal-e-condenado-a-24-anos-de-prisao-por-tentativa-de-feminicidio-contra-ex-companheira-no-ma.ghtml
+---
+
+Roondney Penha Lobato, servidor municipal de Viana, foi condenado a 24 anos e sete meses de prisão por tentativa de feminicídio contra a ex-companheira,...
+
+Fonte original: https://g1.globo.com/ma/maranhao/noticia/2026/08/14/servidor-municipal-e-condenado-a-24-anos-de-prisao-por-tentativa-de-feminicidio-contra-ex-companheira-no-ma.ghtml

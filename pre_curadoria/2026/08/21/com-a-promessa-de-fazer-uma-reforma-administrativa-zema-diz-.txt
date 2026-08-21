@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-06454e3f9d
+titulo: Com a promessa de fazer uma reforma administrativa, Zema diz que servidor público deve trabalhar por ‘vocação’
+resumo: Presidenciável do Novo criticou altos salários no setor público e disse que quem quiser ficar rico deve procurar a iniciativa privada.
+autor: Curadoria Publicoverso
+categoria: Ciência e Tecnologia
+data: 21/08/2026
+fonte: R7
+status: Pendente
+status_triagem: Pendente
+url_original: https://noticias.r7.com/eleicoes/2026/com-a-promessa-de-fazer-uma-reforma-administrativa-zema-diz-que-servidor-publico-deve-trabalhar-por-voacao-20082026/
+---
+
+Presidenciável do Novo criticou altos salários no setor público e disse que quem quiser ficar rico deve procurar a iniciativa privada.
+
+Fonte original: https://noticias.r7.com/eleicoes/2026/com-a-promessa-de-fazer-uma-reforma-administrativa-zema-diz-que-servidor-publico-deve-trabalhar-por-voacao-20082026/
