@@ -1,0 +1,17 @@
+---
+id_mineracao: min-protagonista-20260824125412
+titulo: Professor do Ifal lança livro sobre inclusão e acessibilidade ética na EPT
+resumo: O professor Aluísio Antônio Bezerra de Carvalho, do Instituto Federal de Alagoas (Ifal), Campus Santana do Ipanema, transformou em livro os 11 anos de...
+autor: Curadoria Publicoverso
+categoria: Artes e Literatura
+eixo_tematico: Literatura e Artes
+fonte: Www2
+url_original: https://www2.ifal.edu.br/campus/santana/noticias/professor-do-ifal-lanca-livro-sobre-inclusao-e-acessibilidade-etica-na-ept
+link_status: Verificado (HTTP 200)
+data_verificacao: 24/08/2026 12:54
+status: Pendente
+---
+
+O professor Aluísio Antônio Bezerra de Carvalho, do Instituto Federal de Alagoas (Ifal), Campus Santana do Ipanema, transformou em livro os 11 anos de...
+
+Fonte original: https://www2.ifal.edu.br/campus/santana/noticias/professor-do-ifal-lanca-livro-sobre-inclusao-e-acessibilidade-etica-na-ept

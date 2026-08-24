@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-063be9c098
+titulo: Curriculum Vitae
+resumo: Sobre. Bacharel e Licenciado em Química pela Universidade de São Paulo - USP com MBA em Gestão de Petróleo e Gás pela Universidade Gama Filho - UGF.
+autor: Curadoria Publicoverso
+categoria: Carreira e Conquistas
+data: 24/08/2026
+fonte: curriculo.sougov.economia.gov.br
+status: Pendente
+status_triagem: Pendente
+url_original: https://curriculo.sougov.economia.gov.br/miguel-camacho-82939953
+---
+
+Sobre. Bacharel e Licenciado em Química pela Universidade de São Paulo - USP com MBA em Gestão de Petróleo e Gás pela Universidade Gama Filho - UGF.
+
+Fonte original: https://curriculo.sougov.economia.gov.br/miguel-camacho-82939953

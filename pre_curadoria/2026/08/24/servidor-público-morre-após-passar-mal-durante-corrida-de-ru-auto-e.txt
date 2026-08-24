@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-e376dfb51b
+titulo: Servidor público morre após passar mal durante corrida de rua em Feira de Santana
+resumo: O atleta foi identificado como José Paulo Cerqueira dos Santos. Ele era servidor da Secretaria Estadual de Cultura da Bahia (SecultBA) há 5 anos.
+autor: Curadoria Publicoverso
+categoria: Esportes e Aventura
+data: 24/08/2026
+fonte: G1
+status: Pendente
+status_triagem: Pendente
+url_original: https://g1.globo.com/ba/feira-de-santana-regiao/noticia/2026/08/23/homem-morre-apos-corrida.ghtml
+---
+
+O atleta foi identificado como José Paulo Cerqueira dos Santos. Ele era servidor da Secretaria Estadual de Cultura da Bahia (SecultBA) há 5 anos.
+
+Fonte original: https://g1.globo.com/ba/feira-de-santana-regiao/noticia/2026/08/23/homem-morre-apos-corrida.ghtml

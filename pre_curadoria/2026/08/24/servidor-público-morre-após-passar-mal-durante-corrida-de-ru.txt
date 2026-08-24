@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-ed1a292e0c
+titulo: Servidor público morre após passar mal durante corrida de rua em Feira de Santana
+resumo: O servidor público estadual José Paulo Cerqueira dos Santos, de 49 anos, morreu neste domingo (23) enquanto participava de uma corrida de rua em Feira de...
+autor: Curadoria Publicoverso
+categoria: Esportes e Aventura
+data: 24/08/2026
+fonte: Bahia Notícias
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.bahianoticias.com.br/noticia/320308-servidor-publico-morre-apos-passar-mal-durante-corrida-de-rua-em-feira-de-santana
+---
+
+O servidor público estadual José Paulo Cerqueira dos Santos, de 49 anos, morreu neste domingo (23) enquanto participava de uma corrida de rua em Feira de...
+
+Fonte original: https://www.bahianoticias.com.br/noticia/320308-servidor-publico-morre-apos-passar-mal-durante-corrida-de-rua-em-feira-de-santana

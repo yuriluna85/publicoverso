@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-b25c7e426d
+titulo: Delegado é roubado, PM de folga vê, dispara e suspeito morre em SP
+resumo: Um suspeito de roubar um delegado e uma policial civil morreu após ser baleado por um policial militar de folga que viu a ação. O caso aconteceu na tarde de...
+autor: Curadoria Publicoverso
+categoria: Histórias e Superação
+data: 24/08/2026
+fonte: UOL Notícias
+status: Pendente
+status_triagem: Pendente
+url_original: https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/08/22/policial-civil-folga-pm-morte-osasco-sp.ghtm
+---
+
+Um suspeito de roubar um delegado e uma policial civil morreu após ser baleado por um policial militar de folga que viu a ação. O caso aconteceu na tarde de...
+
+Fonte original: https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/08/22/policial-civil-folga-pm-morte-osasco-sp.ghtm
