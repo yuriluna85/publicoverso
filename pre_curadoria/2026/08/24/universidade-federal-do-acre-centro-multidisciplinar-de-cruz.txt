@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-20581fc1a3
+titulo: UNIVERSIDADE FEDERAL DO ACRE CENTRO MULTIDISCIPLINAR DE CRUZEIRO DO SUL MEMORIAL PARA O RECONHECIMENTO DE SABERES E COMPETÊNCIA
+resumo: Meu nome é Francisco Vaniclei Araujo da Silva, servidor público federal ocupante do cargo de Técnico de Laboratório – Área: Ciências Biológicas e da...
+autor: Curadoria Publicoverso
+categoria: Ciência e Tecnologia
+data: 24/08/2026
+fonte: Ufac
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.ufac.br/site/rsc/memoriais/francisco-vaniclei-araujo-da-silva.pdf/view
+---
+
+Meu nome é Francisco Vaniclei Araujo da Silva, servidor público federal ocupante do cargo de Técnico de Laboratório – Área: Ciências Biológicas e da...
+
+Fonte original: https://www.ufac.br/site/rsc/memoriais/francisco-vaniclei-araujo-da-silva.pdf/view
