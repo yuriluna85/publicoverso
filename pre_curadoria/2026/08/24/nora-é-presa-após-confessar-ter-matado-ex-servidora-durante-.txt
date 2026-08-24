@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-010876ac1f
+titulo: Nora é presa após confessar ter matado ex-servidora durante suposto surto em Confresa
+resumo: Ex-servidora pública de Confresa foi morta dentro de casa neste sábado (22). Nora da vítima confessou o homicídio e afirmou que “surtou”.
+autor: Curadoria Publicoverso
+categoria: Esportes e Aventura
+data: 24/08/2026
+fonte: Primeira Página
+status: Pendente
+status_triagem: Pendente
+url_original: https://primeirapagina.com.br/seguranca/ex-servidora-publica-e-morta-em-casa-e-nora-confessa-crime-em-confresa/
+---
+
+Ex-servidora pública de Confresa foi morta dentro de casa neste sábado (22). Nora da vítima confessou o homicídio e afirmou que “surtou”.
+
+Fonte original: https://primeirapagina.com.br/seguranca/ex-servidora-publica-e-morta-em-casa-e-nora-confessa-crime-em-confresa/
