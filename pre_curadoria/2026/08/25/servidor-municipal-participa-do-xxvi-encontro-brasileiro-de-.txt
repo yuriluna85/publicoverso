@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-4b3b880979
+titulo: Servidor municipal participa do XXVI Encontro Brasileiro de Administração, no Rio de Janeiro
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Carreira e Conquistas
+data: 25/08/2026
+fonte: Prefeitura de Araras
+status: Pendente
+status_triagem: Pendente
+url_original: https://araras.sp.gov.br/noticias/20614
+---
+
+
+
+Fonte original: https://araras.sp.gov.br/noticias/20614

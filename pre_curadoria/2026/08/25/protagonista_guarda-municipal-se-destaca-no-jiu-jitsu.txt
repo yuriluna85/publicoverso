@@ -1,0 +1,17 @@
+---
+id_mineracao: min-protagonista-20260825164008
+titulo: Guarda Municipal se destaca no Jiu-Jitsu
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Esportes e Aventura
+eixo_tematico: Esportes e Desafios
+fonte: Portal Gov.br
+url_original: https://riodasostras.rj.gov.br/guarda-municipal-se-destaca-no-jiu-jitsu
+link_status: Verificado (HTTP 200)
+data_verificacao: 25/08/2026 16:40
+status: Pendente
+---
+
+
+
+Fonte original: https://riodasostras.rj.gov.br/guarda-municipal-se-destaca-no-jiu-jitsu

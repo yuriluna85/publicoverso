@@ -1,5 +1,35 @@
 [
   {
+    "id": "prot-d5e12e7a49",
+    "data": "25/08/2026",
+    "categoria": "Policial e Segurança Pública",
+    "titulo": "Guarda Municipal oferece aulas gratuitas de artes marciais e treinamento funcional no Parque Radical de Deodoro",
+    "resumo": "",
+    "fonte": "Prefeitura",
+    "url_original": "https://prefeitura.rio/cidade/guarda-municipal-oferece-aulas-gratuitas-de-artes-marciais-e-treinamento-funcional-no-parque-radical-de-deodoro",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "prot-b131186a55",
+    "data": "25/08/2026",
+    "categoria": "Esportes e Aventura",
+    "titulo": "Guarda Municipal se destaca no Jiu-Jitsu",
+    "resumo": "",
+    "fonte": "Portal Gov.br",
+    "url_original": "https://riodasostras.rj.gov.br/guarda-municipal-se-destaca-no-jiu-jitsu",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-4b3b880979",
+    "data": "25/08/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Servidor municipal participa do XXVI Encontro Brasileiro de Administração, no Rio de Janeiro",
+    "resumo": "",
+    "fonte": "Prefeitura de Araras",
+    "url_original": "https://araras.sp.gov.br/noticias/20614",
+    "status_curadoria": "Pendente"
+  },
+  {
     "id": "mov-2d19017b2d",
     "data": "25/08/2026",
     "categoria": "Jurídico e PAD",

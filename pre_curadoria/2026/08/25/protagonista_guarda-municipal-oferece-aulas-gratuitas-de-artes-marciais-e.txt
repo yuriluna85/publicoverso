@@ -1,0 +1,17 @@
+---
+id_mineracao: min-protagonista-20260825164013
+titulo: Guarda Municipal oferece aulas gratuitas de artes marciais e treinamento funcional no Parque Radical de Deodoro
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Policial e Segurança Pública
+eixo_tematico: Esportes e Desafios
+fonte: Prefeitura
+url_original: https://prefeitura.rio/cidade/guarda-municipal-oferece-aulas-gratuitas-de-artes-marciais-e-treinamento-funcional-no-parque-radical-de-deodoro
+link_status: Verificado (HTTP 200)
+data_verificacao: 25/08/2026 16:40
+status: Pendente
+---
+
+
+
+Fonte original: https://prefeitura.rio/cidade/guarda-municipal-oferece-aulas-gratuitas-de-artes-marciais-e-treinamento-funcional-no-parque-radical-de-deodoro
