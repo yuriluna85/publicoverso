@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-22f3176b94
+titulo: BOMBEIRO MILITAR CONQUISTA PRIMEIRO LUGAR NO CHOQUE JIU-JITSU COMBAT
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Esportes e Aventura
+data: 25/08/2026
+fonte: CBMSC
+status: Pendente
+status_triagem: Pendente
+url_original: https://cbm.sc.gov.br/index.php/blog-de-noticias/bombeiro-militar-conquista-primeiro-lugar-no-choque-jiu-jitsu-combat
+---
+
+
+
+Fonte original: https://cbm.sc.gov.br/index.php/blog-de-noticias/bombeiro-militar-conquista-primeiro-lugar-no-choque-jiu-jitsu-combat

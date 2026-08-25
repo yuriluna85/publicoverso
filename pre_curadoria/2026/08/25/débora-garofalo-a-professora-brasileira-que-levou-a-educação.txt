@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-b58c426b16
+titulo: Débora Garofalo: a professora brasileira que levou a educação sustentável ao cenário mundial
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Ciência e Tecnologia
+data: 25/08/2026
+fonte: Jornal DR1
+status: Pendente
+status_triagem: Pendente
+url_original: https://jornaldr1.com.br/debora-garofalo-a-professora-brasileira-que-levou-a-educacao-sustentavel-ao-cenario-mundial/
+---
+
+
+
+Fonte original: https://jornaldr1.com.br/debora-garofalo-a-professora-brasileira-que-levou-a-educacao-sustentavel-ao-cenario-mundial/

@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-8517f3d364
+titulo: Prefeitura concede reajuste salarial ao servidor municipal
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Carreira e Conquistas
+data: 25/08/2026
+fonte: Prefeitura Municipal de Imperatriz
+status: Pendente
+status_triagem: Pendente
+url_original: https://imperatriz.ma.gov.br/noticias/incentivo/prefeitura-concede-reajuste-salarial-ao-servidor-municipal.html
+---
+
+
+
+Fonte original: https://imperatriz.ma.gov.br/noticias/incentivo/prefeitura-concede-reajuste-salarial-ao-servidor-municipal.html

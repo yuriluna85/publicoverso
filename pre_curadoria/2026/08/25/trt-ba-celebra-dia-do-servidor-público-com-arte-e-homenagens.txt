@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-cf77e1c458
+titulo: TRT-BA celebra Dia do Servidor Público com arte e homenagens
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Artes e Literatura
+data: 25/08/2026
+fonte: trt5.jus.br
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.trt5.jus.br/noticias/trt-ba-celebra-dia-servidor-publico-com-arte-homenagens
+---
+
+
+
+Fonte original: https://www.trt5.jus.br/noticias/trt-ba-celebra-dia-servidor-publico-com-arte-homenagens

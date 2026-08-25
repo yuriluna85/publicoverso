@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-5596102d5c
+titulo: Servidora pública de Três Corações conquista pódio na Copa Minas Gerais de Natação
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Esportes e Aventura
+data: 25/08/2026
+fonte: Radio Tropical – Três Corações
+status: Pendente
+status_triagem: Pendente
+url_original: https://radiotropical.net/servidora-publica-de-tres-coracoes-conquista-podio-na-copa-minas-gerais-de-natacao/
+---
+
+
+
+Fonte original: https://radiotropical.net/servidora-publica-de-tres-coracoes-conquista-podio-na-copa-minas-gerais-de-natacao/

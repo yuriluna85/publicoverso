@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-33e7b061a5
+titulo: Policial civil é alvo de operação da PF por suspeita de acessar indevidamente sistemas de segurança na Bahia
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Cultura Pop e Gastronomia
+data: 25/08/2026
+fonte: G1
+status: Pendente
+status_triagem: Pendente
+url_original: https://g1.globo.com/ba/feira-de-santana-regiao/noticia/2026/08/25/operacao-espionagem-interior-da-bahia.ghtml
+---
+
+
+
+Fonte original: https://g1.globo.com/ba/feira-de-santana-regiao/noticia/2026/08/25/operacao-espionagem-interior-da-bahia.ghtml

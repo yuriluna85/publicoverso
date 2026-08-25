@@ -1,0 +1,17 @@
+---
+id_mineracao: min-protagonista-20260825125206
+titulo: Professor da UnB lança livro no Tribunal de Justiça de Sergipe
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Artes e Literatura
+eixo_tematico: Literatura e Artes
+fonte: Agencia
+url_original: https://agencia.tjse.jus.br/noticias/item/13477-professor-da-unb-lanca-livro-no-tribunal-de-justica-de-sergipe
+link_status: Verificado (HTTP 200)
+data_verificacao: 25/08/2026 12:52
+status: Pendente
+---
+
+
+
+Fonte original: https://agencia.tjse.jus.br/noticias/item/13477-professor-da-unb-lanca-livro-no-tribunal-de-justica-de-sergipe

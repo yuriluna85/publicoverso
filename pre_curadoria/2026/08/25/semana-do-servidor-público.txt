@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-34d06f36eb
+titulo: Semana do Servidor Público
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Artes e Literatura
+data: 25/08/2026
+fonte: Assembleia Legislativa do Estado de Santa Catarina
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.alesc.sc.gov.br/fotos/album/semana-do-servidor-publico1/
+---
+
+
+
+Fonte original: https://www.alesc.sc.gov.br/fotos/album/semana-do-servidor-publico1/

@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-fb8b45e87a
+titulo: Bombeiro Militar de Torres se supera ao realizar Ultra Maratona Rota da Baleia
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Esportes e Aventura
+data: 25/08/2026
+fonte: a folha torres
+status: Pendente
+status_triagem: Pendente
+url_original: https://afolhatorres.com.br/bombeiro-militar-de-torres-se-supera-ao-realizar-ultra-maratona-rota-da-baleia/
+---
+
+
+
+Fonte original: https://afolhatorres.com.br/bombeiro-militar-de-torres-se-supera-ao-realizar-ultra-maratona-rota-da-baleia/

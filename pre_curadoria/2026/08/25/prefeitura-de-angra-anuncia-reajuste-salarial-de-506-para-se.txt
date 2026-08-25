@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-3bac3cbdf9
+titulo: Prefeitura de Angra anuncia reajuste salarial de 5,06% para servidor municipal
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Carreira e Conquistas
+data: 25/08/2026
+fonte: Prefeitura Angra dos Reis
+status: Pendente
+status_triagem: Pendente
+url_original: https://angra.rj.gov.br/noticias/28-03-2025/prefeitura-de-angra-anuncia-reajuste-salarial-de-506-para-servidor-municipal
+---
+
+
+
+Fonte original: https://angra.rj.gov.br/noticias/28-03-2025/prefeitura-de-angra-anuncia-reajuste-salarial-de-506-para-servidor-municipal

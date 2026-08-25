@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-0e0732763e
+titulo: Paulo Guedes compara funcionário público a 'parasita' ao defender reforma administrativa
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Histórias e Superação
+data: 25/08/2026
+fonte: G1
+status: Pendente
+status_triagem: Pendente
+url_original: https://g1.globo.com/economia/noticia/2020/02/07/paulo-guedes-compara-funcionario-publico-a-parasita-ao-defender-reforma-administrativa.ghtml
+---
+
+
+
+Fonte original: https://g1.globo.com/economia/noticia/2020/02/07/paulo-guedes-compara-funcionario-publico-a-parasita-ao-defender-reforma-administrativa.ghtml

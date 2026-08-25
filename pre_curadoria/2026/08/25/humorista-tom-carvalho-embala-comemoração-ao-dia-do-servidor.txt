@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-10ef26f308
+titulo: Humorista Tom Carvalho embala comemoração ao Dia do Servidor Público em Aparecida
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Cultura Pop e Gastronomia
+data: 25/08/2026
+fonte: Prefeitura de Aparecida de Goiânia
+status: Pendente
+status_triagem: Pendente
+url_original: https://aparecida.go.gov.br/humorista-tom-carvalho-embala-comemoracao-ao-dia-do-servidor-publico-em-aparecida
+---
+
+
+
+Fonte original: https://aparecida.go.gov.br/humorista-tom-carvalho-embala-comemoracao-ao-dia-do-servidor-publico-em-aparecida

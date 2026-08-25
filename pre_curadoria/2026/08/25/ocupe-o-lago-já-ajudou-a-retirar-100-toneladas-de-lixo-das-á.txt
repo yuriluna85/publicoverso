@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-34b791ad2c
+titulo: "Ocupe o Lago" já ajudou a retirar 100 toneladas de lixo das águas
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Solidariedade e Comunidade
+data: 25/08/2026
+fonte: Agência de Notícias CEUB
+status: Pendente
+status_triagem: Pendente
+url_original: https://agenciadenoticias.uniceub.br/destaque/ocupe-o-lago-ja-ajudou-a-retirar-100-toneladas-de-lixo-das-aguas/
+---
+
+
+
+Fonte original: https://agenciadenoticias.uniceub.br/destaque/ocupe-o-lago-ja-ajudou-a-retirar-100-toneladas-de-lixo-das-aguas/

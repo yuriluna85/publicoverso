@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-c88f6d3a2f
+titulo: Show do Servidor Público 2026: lista de interessados será liberada em 2/9
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Artes e Literatura
+data: 25/08/2026
+fonte: AFPESP
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.afpesp.org.br/folha-do-servidor/acontece-na-afpesp/show-servidor-publico-2026-lista-interessados
+---
+
+
+
+Fonte original: https://www.afpesp.org.br/folha-do-servidor/acontece-na-afpesp/show-servidor-publico-2026-lista-interessados

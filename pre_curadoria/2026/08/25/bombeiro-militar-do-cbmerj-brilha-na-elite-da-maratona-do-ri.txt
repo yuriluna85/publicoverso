@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-00e76edad2
+titulo: Bombeiro militar do CBMERJ brilha na elite da Maratona do Rio e entra para a história da prova
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Esportes e Aventura
+data: 25/08/2026
+fonte: Corpo de Bombeiros do Rio de Janeiro
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.cbmerj.rj.gov.br/bombeiro-militar-do-cbmerj-brilha-na-elite-da-maratona-do-rio-e-entra-para-a-historia-da-prova/
+---
+
+
+
+Fonte original: https://www.cbmerj.rj.gov.br/bombeiro-militar-do-cbmerj-brilha-na-elite-da-maratona-do-rio-e-entra-para-a-historia-da-prova/

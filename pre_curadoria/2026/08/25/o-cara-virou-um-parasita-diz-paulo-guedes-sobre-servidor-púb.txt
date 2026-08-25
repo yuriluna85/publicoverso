@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-2711fd25e8
+titulo: 'O cara virou um parasita', diz Paulo Guedes sobre servidor público
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Histórias e Superação
+data: 25/08/2026
+fonte: O GLOBO
+status: Pendente
+status_triagem: Pendente
+url_original: https://oglobo.globo.com/economia/o-cara-virou-um-parasita-diz-paulo-guedes-sobre-servidor-publico-1-24235727
+---
+
+
+
+Fonte original: https://oglobo.globo.com/economia/o-cara-virou-um-parasita-diz-paulo-guedes-sobre-servidor-publico-1-24235727

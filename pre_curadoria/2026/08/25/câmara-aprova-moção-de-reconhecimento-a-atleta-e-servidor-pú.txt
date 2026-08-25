@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-04a5c58d3f
+titulo: Câmara aprova moção de reconhecimento a atleta e servidor público Felipe Soares de Lima Santos
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Esportes e Aventura
+data: 25/08/2026
+fonte: Câmara Municipal de Limeira
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.limeira.sp.leg.br/noticias/view/2025-06-10_camara-aprova-mocao-de-reconhecimento-a-atleta-e-servidor-publico-felipe-soares-de-lima-santos
+---
+
+
+
+Fonte original: https://www.limeira.sp.leg.br/noticias/view/2025-06-10_camara-aprova-mocao-de-reconhecimento-a-atleta-e-servidor-publico-felipe-soares-de-lima-santos

@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-67fcd79db4
+titulo: Servidor público do Paraná terá reajuste salarial de 5%
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Carreira e Conquistas
+data: 25/08/2026
+fonte: Contraponto
+status: Pendente
+status_triagem: Pendente
+url_original: https://contraponto.jor.br/servidor-publico-do-parana-tera-reajuste-salarial-de-5/
+---
+
+
+
+Fonte original: https://contraponto.jor.br/servidor-publico-do-parana-tera-reajuste-salarial-de-5/

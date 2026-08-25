@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-708add7d2f
+titulo: Paulo Guedes diz que servidor público é "parasita" do governo
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Histórias e Superação
+data: 25/08/2026
+fonte: CartaCapital
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.cartacapital.com.br/politica/paulo-guedes-diz-que-servidor-publico-e-parasita-do-governo/
+---
+
+
+
+Fonte original: https://www.cartacapital.com.br/politica/paulo-guedes-diz-que-servidor-publico-e-parasita-do-governo/

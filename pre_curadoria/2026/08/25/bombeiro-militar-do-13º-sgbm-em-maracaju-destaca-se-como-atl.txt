@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-0e41f30b2a
+titulo: Bombeiro Militar do 13º SGBM em Maracaju destaca-se como atleta
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Esportes e Aventura
+data: 25/08/2026
+fonte: bombeiros.ms.gov.br
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.bombeiros.ms.gov.br/bombeiro-militar-do-13o-sgbm-em-maracaju-se-destaca-como-atleta/
+---
+
+
+
+Fonte original: https://www.bombeiros.ms.gov.br/bombeiro-militar-do-13o-sgbm-em-maracaju-se-destaca-como-atleta/
