@@ -1,5 +1,25 @@
 [
   {
+    "id": "prot-e68682415b",
+    "data": "26/08/2026",
+    "categoria": "Policial e Segurança Pública",
+    "titulo": "Três suspeitos são presos e drogas são apreendidas em Cajazeiras",
+    "resumo": "",
+    "fonte": "Clickpb",
+    "url_original": "https://clickpb.com.br/policial/suspeitos-drogas-cajazeiras-2.html",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-6c667e31e9",
+    "data": "26/08/2026",
+    "categoria": "Cultura Pop e Gastronomia",
+    "titulo": "PM prende três suspeitos de roubar casa de policial civil em São Paulo",
+    "resumo": "",
+    "fonte": "Folha de S.Paulo",
+    "url_original": "https://www1.folha.uol.com.br/cotidiano/2026/08/pm-prende-tres-suspeitos-de-roubar-casa-de-policial-civil-em-sao-paulo.shtml",
+    "status_curadoria": "Pendente"
+  },
+  {
     "id": "dou-e99c8c6be6",
     "data": "26/08/2026",
     "categoria": "Histórias e Superação",

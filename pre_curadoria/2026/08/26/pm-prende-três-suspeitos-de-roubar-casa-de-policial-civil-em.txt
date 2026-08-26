@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-6c667e31e9
+titulo: PM prende três suspeitos de roubar casa de policial civil em São Paulo
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Cultura Pop e Gastronomia
+data: 26/08/2026
+fonte: Folha de S.Paulo
+status: Pendente
+status_triagem: Pendente
+url_original: https://www1.folha.uol.com.br/cotidiano/2026/08/pm-prende-tres-suspeitos-de-roubar-casa-de-policial-civil-em-sao-paulo.shtml
+---
+
+
+
+Fonte original: https://www1.folha.uol.com.br/cotidiano/2026/08/pm-prende-tres-suspeitos-de-roubar-casa-de-policial-civil-em-sao-paulo.shtml

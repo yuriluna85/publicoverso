@@ -1,0 +1,17 @@
+---
+id_mineracao: min-protagonista-20260826165047
+titulo: Três suspeitos são presos e drogas são apreendidas em Cajazeiras
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Policial e Segurança Pública
+eixo_tematico: Virais e Inusitados
+fonte: Clickpb
+url_original: https://clickpb.com.br/policial/suspeitos-drogas-cajazeiras-2.html
+link_status: Verificado (HTTP 200)
+data_verificacao: 26/08/2026 16:50
+status: Pendente
+---
+
+
+
+Fonte original: https://clickpb.com.br/policial/suspeitos-drogas-cajazeiras-2.html
