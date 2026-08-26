@@ -1,0 +1,17 @@
+---
+id_mineracao: min-protagonista-20260826125627
+titulo: Corpo de conselheira tutelar é encontrado enterrado em zona rural de MG; PM é suspeito
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Policial e Segurança Pública
+eixo_tematico: Virais e Inusitados
+fonte: G1
+url_original: https://g1.globo.com/google/amp/mg/sul-de-minas/video/corpo-de-conselheira-tutelar-e-encontrado-enterrado-em-zona-rural-de-mg-pm-e-suspeito-14901112.ghtml
+link_status: Verificado (HTTP 200)
+data_verificacao: 26/08/2026 12:56
+status: Pendente
+---
+
+
+
+Fonte original: https://g1.globo.com/google/amp/mg/sul-de-minas/video/corpo-de-conselheira-tutelar-e-encontrado-enterrado-em-zona-rural-de-mg-pm-e-suspeito-14901112.ghtml

@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-574d202ab6
+titulo: Policial militar suspeito de matar homem na BR-101, na PB, tem prisão mantida após audiência de custódia
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Policial e Segurança Pública
+data: 26/08/2026
+fonte: G1
+status: Pendente
+status_triagem: Pendente
+url_original: https://g1.globo.com/pb/paraiba/noticia/2026/08/25/policial-militar-suspeito-de-matar-homem-na-br-101-na-pb-tem-prisao-mantida-apos-audiencia-de-custodia.ghtml
+---
+
+
+
+Fonte original: https://g1.globo.com/pb/paraiba/noticia/2026/08/25/policial-militar-suspeito-de-matar-homem-na-br-101-na-pb-tem-prisao-mantida-apos-audiencia-de-custodia.ghtml

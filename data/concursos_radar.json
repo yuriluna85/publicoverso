@@ -1824,6 +1824,38 @@
     "data_atualizacao": "25/08/2026"
   },
   {
+    "id": "concurso-74ecec3a",
+    "órgão": "Concurso Universidade Federal do Rio de Janeiro: edital 942 ...",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 0,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://valorfinal.com.br/concursos/edital/universidade-federal-do-rio-de-janeiro__942-2026",
+    "status": "Em Analise",
+    "destaque": true,
+    "data_atualizacao": "26/08/2026"
+  },
+  {
+    "id": "concurso-2fa9a0a2",
+    "órgão": "Concurso Receita Federal 2026: Edital autorizado! 146 ...",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 146,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://www.editorasolucao.com.br/blog/concurso/receita-federal?srsltid=AfmBOopGaBLxXFPwS2Ir1TCBbB_jz3B8i3J_2wGt9G_r6S8OTYB4rzHO",
+    "status": "Em Analise",
+    "destaque": true,
+    "data_atualizacao": "26/08/2026"
+  },
+  {
     "id": "concurso-2026-004",
     "órgão": "Conselho Nacional de Justiça",
     "sigla": "CNJ",
@@ -4270,5 +4302,21 @@
     "status": "Em Analise",
     "destaque": false,
     "data_atualizacao": "25/08/2026"
+  },
+  {
+    "id": "concurso-9375be90",
+    "órgão": "Concurso Bacen: 170 vagas são autorizadas!",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 170,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://www.novaconcursos.com.br/portal/concursos/concurso-bacen/?srsltid=AfmBOor-NigBkDDbaxWgk4sbWEROuHV7OnWy4aEOvCxlrnxO4b-1Ijl-",
+    "status": "Em Analise",
+    "destaque": false,
+    "data_atualizacao": "26/08/2026"
   }
 ]

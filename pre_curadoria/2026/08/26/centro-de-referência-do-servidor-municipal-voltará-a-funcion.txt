@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-8fb674ee5c
+titulo: Centro de Referência do Servidor Municipal voltará a funcionar este semestre com capacitações
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Carreira e Conquistas
+data: 26/08/2026
+fonte: Prefeitura de Rio Branco
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.riobranco.ac.gov.br/noticias/centro-de-referencia-do-servidor-municipal-voltara-a-funcionar-este-semestre-com-capacitacoes/
+---
+
+
+
+Fonte original: https://www.riobranco.ac.gov.br/noticias/centro-de-referencia-do-servidor-municipal-voltara-a-funcionar-este-semestre-com-capacitacoes/

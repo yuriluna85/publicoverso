@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-f80737ef48
+titulo: Servidor público estadual lança livro sobre a história do Espírito Santo
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Artes e Literatura
+data: 26/08/2026
+fonte: SECULT
+status: Pendente
+status_triagem: Pendente
+url_original: https://secult.es.gov.br/servidor-publico-estadual-lanca-livro-sobre-a
+---
+
+
+
+Fonte original: https://secult.es.gov.br/servidor-publico-estadual-lanca-livro-sobre-a

@@ -1598,5 +1598,26 @@
     "titulo": "Servidor municipal participa do XXVI Encontro Brasileiro de Administração, no Rio de Janeiro",
     "categoria": "Carreira e Conquistas",
     "data_mineracao": "2026-08-25 16:39:43"
+  },
+  {
+    "id_mineracao": "auto-574d202ab6",
+    "url": "https://g1.globo.com/pb/paraiba/noticia/2026/08/25/policial-militar-suspeito-de-matar-homem-na-br-101-na-pb-tem-prisao-mantida-apos-audiencia-de-custodia.ghtml",
+    "titulo": "Policial militar suspeito de matar homem na BR-101, na PB, tem prisão mantida após audiência de custódia",
+    "categoria": "Policial e Segurança Pública",
+    "data_mineracao": "2026-08-26 12:54:58"
+  },
+  {
+    "id_mineracao": "auto-f80737ef48",
+    "url": "https://secult.es.gov.br/servidor-publico-estadual-lanca-livro-sobre-a",
+    "titulo": "Servidor público estadual lança livro sobre a história do Espírito Santo",
+    "categoria": "Artes e Literatura",
+    "data_mineracao": "2026-08-26 12:55:06"
+  },
+  {
+    "id_mineracao": "auto-8fb674ee5c",
+    "url": "https://www.riobranco.ac.gov.br/noticias/centro-de-referencia-do-servidor-municipal-voltara-a-funcionar-este-semestre-com-capacitacoes/",
+    "titulo": "Centro de Referência do Servidor Municipal voltará a funcionar este semestre com capacitações",
+    "categoria": "Carreira e Conquistas",
+    "data_mineracao": "2026-08-26 12:55:33"
   }
 ]

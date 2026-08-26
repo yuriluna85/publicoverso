@@ -1,0 +1,17 @@
+---
+id_mineracao: min-protagonista-20260826125630
+titulo: Justiça da Paraíba aceita denúncia do MPPB e torna delegado e agentes da Polícia Civil réus por organização criminosa
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Histórias e Superação
+eixo_tematico: Virais e Inusitados
+fonte: Clickpb
+url_original: https://clickpb.com.br/policial/justica-paraiba-delegado-reus.html
+link_status: Verificado (HTTP 200)
+data_verificacao: 26/08/2026 12:56
+status: Pendente
+---
+
+
+
+Fonte original: https://clickpb.com.br/policial/justica-paraiba-delegado-reus.html
