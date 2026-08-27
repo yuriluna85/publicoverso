@@ -1,0 +1,17 @@
+---
+id_mineracao: min-protagonista-20260827003235
+titulo: Roubo de R$ 800 mil e ouro em Roraima: veja como foi e quem são policiais e suspeitos envolvidos
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Policial e Segurança Pública
+eixo_tematico: Virais e Inusitados
+fonte: G1
+url_original: https://g1.globo.com/rr/roraima/noticia/2026/08/26/roubo-de-r-800-mil-e-ouro-em-roraima-veja-como-foi-e-quem-sao-policiais-e-suspeitos-envolvidos.ghtml
+link_status: Verificado (HTTP 200)
+data_verificacao: 27/08/2026 00:32
+status: Pendente
+---
+
+
+
+Fonte original: https://g1.globo.com/rr/roraima/noticia/2026/08/26/roubo-de-r-800-mil-e-ouro-em-roraima-veja-como-foi-e-quem-sao-policiais-e-suspeitos-envolvidos.ghtml

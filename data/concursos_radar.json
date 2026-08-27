@@ -1856,6 +1856,22 @@
     "data_atualizacao": "26/08/2026"
   },
   {
+    "id": "concurso-fb9baab4",
+    "órgão": "Concursos Bacen e Receita Federal: contratação da banca ...",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 146,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://www.estrategiaconcursos.com.br/blog/concursos-bacen-e-receita-federal-contratacao-banca/amp/",
+    "status": "Em Analise",
+    "destaque": true,
+    "data_atualizacao": "27/08/2026"
+  },
+  {
     "id": "concurso-2026-004",
     "órgão": "Conselho Nacional de Justiça",
     "sigla": "CNJ",
@@ -4318,5 +4334,21 @@
     "status": "Em Analise",
     "destaque": false,
     "data_atualizacao": "26/08/2026"
+  },
+  {
+    "id": "concurso-678ab591",
+    "órgão": "Concurso PMERJ 2026: requisitos que o edital pode exigir",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 0,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://marcelofernandes.adv.br/concurso-pmerj-2026-requisitos/",
+    "status": "Em Analise",
+    "destaque": false,
+    "data_atualizacao": "27/08/2026"
   }
 ]
