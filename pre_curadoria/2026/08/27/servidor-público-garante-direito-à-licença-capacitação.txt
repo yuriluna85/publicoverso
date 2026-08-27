@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-593ab32896
+titulo: Servidor Público garante direito à licença capacitação
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Carreira e Conquistas
+data: 27/08/2026
+fonte: Cassel Ruzzarin Advogados
+status: Pendente
+status_triagem: Pendente
+url_original: https://servidor.adv.br/servidor-publico-garante-direito-a-licenca-capacitacao/
+---
+
+
+
+Fonte original: https://servidor.adv.br/servidor-publico-garante-direito-a-licenca-capacitacao/

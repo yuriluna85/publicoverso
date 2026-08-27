@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-d227096c8d
+titulo: Servidor público de Barueri terá reajuste salarial de 10% a partir de maio
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Carreira e Conquistas
+data: 27/08/2026
+fonte: Barueri na Rede
+status: Pendente
+status_triagem: Pendente
+url_original: https://baruerinarede.tv.br/servidor-publico-de-barueri-tera-reajuste-salarial-de-10a-partir-de-maio/
+---
+
+
+
+Fonte original: https://baruerinarede.tv.br/servidor-publico-de-barueri-tera-reajuste-salarial-de-10a-partir-de-maio/

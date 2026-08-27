@@ -1856,6 +1856,22 @@
     "data_atualizacao": "26/08/2026"
   },
   {
+    "id": "concurso-f6177e7e",
+    "órgão": "Concurso Receita Federal: salários, vagas e etapas",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 146,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://magistrarcursos.com.br/blog/concurso-receita-federal/",
+    "status": "Em Analise",
+    "destaque": true,
+    "data_atualizacao": "27/08/2026"
+  },
+  {
     "id": "concurso-fb9baab4",
     "órgão": "Concursos Bacen e Receita Federal: contratação da banca ...",
     "sigla": "",
@@ -4334,6 +4350,38 @@
     "status": "Em Analise",
     "destaque": false,
     "data_atualizacao": "26/08/2026"
+  },
+  {
+    "id": "concurso-275e6d6b",
+    "órgão": "Novos Concursos",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 0,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://www.institutoaocp.org.br/concursos/status/novos",
+    "status": "Em Analise",
+    "destaque": false,
+    "data_atualizacao": "27/08/2026"
+  },
+  {
+    "id": "concurso-96ece0e4",
+    "órgão": "Concurso Polícia Federal: Novas nomeações são ...",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 0,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://www.novaconcursos.com.br/portal/concursos/concurso-policia-federal/?srsltid",
+    "status": "Em Analise",
+    "destaque": false,
+    "data_atualizacao": "27/08/2026"
   },
   {
     "id": "concurso-678ab591",

@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-fa2d5793ca
+titulo: Concurso Receita Federal: veja o percentual do que mais cai
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Cultura Pop e Gastronomia
+data: 27/08/2026
+fonte: Qconcursos Folha Dirigida
+status: Pendente
+status_triagem: Pendente
+url_original: https://folha.qconcursos.com/n/concurso-receita-federal-disciplina-mais-cobrada
+---
+
+
+
+Fonte original: https://folha.qconcursos.com/n/concurso-receita-federal-disciplina-mais-cobrada
