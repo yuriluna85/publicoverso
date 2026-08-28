@@ -1668,5 +1668,26 @@
     "titulo": "Servidor Público garante direito à licença capacitação",
     "categoria": "Carreira e Conquistas",
     "data_mineracao": "2026-08-27 21:56:30"
+  },
+  {
+    "id_mineracao": "auto-9232c8d656",
+    "url": "https://g1.globo.com/go/goias/transito/noticia/2026/08/28/servidor-publico-morre-aos-21-anos-em-acidente-entre-tres-veiculos.ghtml",
+    "titulo": "Servidor público morre aos 21 anos em acidente entre três veículos na BR-158",
+    "categoria": "Cultura Pop e Gastronomia",
+    "data_mineracao": "2026-08-28 21:48:27"
+  },
+  {
+    "id_mineracao": "auto-4518d6e338",
+    "url": "https://acil.com.br/noticias/prefeitura-vai-celebrar-o-mes-do-servidor-publico-com-acao-voltada-aos-empresarios/",
+    "titulo": "Prefeitura vai celebrar o Mês do Servidor Público com ação voltada aos empresários",
+    "categoria": "Cultura Pop e Gastronomia",
+    "data_mineracao": "2026-08-28 21:48:29"
+  },
+  {
+    "id_mineracao": "auto-d27c54eedd",
+    "url": "https://www.bahia.fiocruz.br/tese-de-servidor-da-fiocruz-bahia-e-indicada-ao-premio-capes-de-teses-2022/",
+    "titulo": "Tese de servidor da Fiocruz Bahia é indicada ao Prêmio Capes de Teses 2022 – Instituto Gonçalo Moniz",
+    "categoria": "Ciência e Tecnologia",
+    "data_mineracao": "2026-08-28 21:48:47"
   }
 ]

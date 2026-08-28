@@ -1888,6 +1888,38 @@
     "data_atualizacao": "27/08/2026"
   },
   {
+    "id": "concurso-e319fe1d",
+    "órgão": "Instituto Nacional de Seleções e Concursos - SELECON",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 0,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://selecon.org.br/",
+    "status": "Em Analise",
+    "destaque": true,
+    "data_atualizacao": "28/08/2026"
+  },
+  {
+    "id": "concurso-e948cf92",
+    "órgão": "Concurso Anatel: Pedido de edital enviado ao MGI! 191 ...",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 0,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://www.novaconcursos.com.br/portal/concursos/concurso-anatel/?srsltid=AfmBOooKc62nP9H1PzQyPqKDn0Smre8i2nvNkgP5Osvz3B2ZHqlklZ4y",
+    "status": "Em Analise",
+    "destaque": true,
+    "data_atualizacao": "28/08/2026"
+  },
+  {
     "id": "concurso-2026-004",
     "órgão": "Conselho Nacional de Justiça",
     "sigla": "CNJ",

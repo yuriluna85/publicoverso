@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-9232c8d656
+titulo: Servidor público morre aos 21 anos em acidente entre três veículos na BR-158
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Cultura Pop e Gastronomia
+data: 28/08/2026
+fonte: G1
+status: Pendente
+status_triagem: Pendente
+url_original: https://g1.globo.com/go/goias/transito/noticia/2026/08/28/servidor-publico-morre-aos-21-anos-em-acidente-entre-tres-veiculos.ghtml
+---
+
+
+
+Fonte original: https://g1.globo.com/go/goias/transito/noticia/2026/08/28/servidor-publico-morre-aos-21-anos-em-acidente-entre-tres-veiculos.ghtml

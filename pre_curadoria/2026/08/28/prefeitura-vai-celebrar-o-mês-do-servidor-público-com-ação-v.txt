@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-4518d6e338
+titulo: Prefeitura vai celebrar o Mês do Servidor Público com ação voltada aos empresários
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Cultura Pop e Gastronomia
+data: 28/08/2026
+fonte: Acil
+status: Pendente
+status_triagem: Pendente
+url_original: https://acil.com.br/noticias/prefeitura-vai-celebrar-o-mes-do-servidor-publico-com-acao-voltada-aos-empresarios/
+---
+
+
+
+Fonte original: https://acil.com.br/noticias/prefeitura-vai-celebrar-o-mes-do-servidor-publico-com-acao-voltada-aos-empresarios/

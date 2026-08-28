@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-d27c54eedd
+titulo: Tese de servidor da Fiocruz Bahia é indicada ao Prêmio Capes de Teses 2022 – Instituto Gonçalo Moniz
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Ciência e Tecnologia
+data: 28/08/2026
+fonte: Fiocruz Bahia
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.bahia.fiocruz.br/tese-de-servidor-da-fiocruz-bahia-e-indicada-ao-premio-capes-de-teses-2022/
+---
+
+
+
+Fonte original: https://www.bahia.fiocruz.br/tese-de-servidor-da-fiocruz-bahia-e-indicada-ao-premio-capes-de-teses-2022/
