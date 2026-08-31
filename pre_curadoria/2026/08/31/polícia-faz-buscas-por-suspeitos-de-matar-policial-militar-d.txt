@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-6249983ece
+titulo: Polícia faz buscas por suspeitos de matar policial militar durante assalto na Marginal Tietê, em SP
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Cultura Pop e Gastronomia
+data: 31/08/2026
+fonte: R7
+status: Pendente
+status_triagem: Pendente
+url_original: https://record.r7.com/fala-brasil/video/policia-faz-buscas-por-suspeitos-de-matar-policial-militar-durante-assalto-na-marginal-tiete-em-sp-31082026/
+---
+
+
+
+Fonte original: https://record.r7.com/fala-brasil/video/policia-faz-buscas-por-suspeitos-de-matar-policial-militar-durante-assalto-na-marginal-tiete-em-sp-31082026/

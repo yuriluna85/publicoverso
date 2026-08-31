@@ -1,0 +1,17 @@
+---
+id_mineracao: min-protagonista-20260831185528
+titulo: Jean Wyllys, Serginho, Doutor Marcelo, Angélica Morango... Relembre os participantes LGBTQIA+ do 'BBB' e veja como estão agora
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Cultura Pop e Gastronomia
+eixo_tematico: Entretenimento e Cultura Pop
+fonte: Globo
+url_original: https://extra.globo.com/famosos/jean-wyllys-serginho-doutor-marcelo-angelica-morango-relembre-os-participantes-lgbtqia-do-bbb-veja-como-estao-agora-24830948.html
+link_status: Verificado (HTTP 200)
+data_verificacao: 31/08/2026 18:55
+status: Pendente
+---
+
+
+
+Fonte original: https://extra.globo.com/famosos/jean-wyllys-serginho-doutor-marcelo-angelica-morango-relembre-os-participantes-lgbtqia-do-bbb-veja-como-estao-agora-24830948.html
