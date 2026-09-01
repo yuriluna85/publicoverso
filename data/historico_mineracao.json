@@ -1710,5 +1710,12 @@
     "titulo": "Polícia Federal deflagra operação contra ex-policial militar em Salvador",
     "categoria": "Policial e Segurança Pública",
     "data_mineracao": "2026-09-01 16:14:02"
+  },
+  {
+    "id_mineracao": "auto-9d91e8d60d",
+    "url": "https://anajustrafederal.org.br/videos/17-de-junho-dia-do-servidor-publico-aposentado",
+    "titulo": "17 de junho, Dia do Servidor Público Aposentado",
+    "categoria": "Cultura Pop e Gastronomia",
+    "data_mineracao": "2026-09-01 23:06:09"
   }
 ]

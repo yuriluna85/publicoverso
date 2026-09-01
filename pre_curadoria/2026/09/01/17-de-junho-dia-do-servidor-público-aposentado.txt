@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-9d91e8d60d
+titulo: 17 de junho, Dia do Servidor Público Aposentado
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Cultura Pop e Gastronomia
+data: 01/09/2026
+fonte: anajustrafederal.org.br
+status: Pendente
+status_triagem: Pendente
+url_original: https://anajustrafederal.org.br/videos/17-de-junho-dia-do-servidor-publico-aposentado
+---
+
+
+
+Fonte original: https://anajustrafederal.org.br/videos/17-de-junho-dia-do-servidor-publico-aposentado
