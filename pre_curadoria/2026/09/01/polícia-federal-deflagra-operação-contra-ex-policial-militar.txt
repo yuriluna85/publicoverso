@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-c85509a91d
+titulo: Polícia Federal deflagra operação contra ex-policial militar em Salvador
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Policial e Segurança Pública
+data: 01/09/2026
+fonte: GP1
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.gp1.com.br/ba/bahia/noticia/2026/9/1/policia-federal-deflagra-operacao-contra-ex-policial-militar-em-salvador-630383.html
+---
+
+
+
+Fonte original: https://www.gp1.com.br/ba/bahia/noticia/2026/9/1/policia-federal-deflagra-operacao-contra-ex-policial-militar-em-salvador-630383.html

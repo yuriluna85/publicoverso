@@ -1703,5 +1703,12 @@
     "titulo": "“Eu nunca votei em nenhuma matéria contra servidor público”, afirma Agaciel Maia em sua participação no “Café com Política”",
     "categoria": "Cultura Pop e Gastronomia",
     "data_mineracao": "2026-09-01 00:25:53"
+  },
+  {
+    "id_mineracao": "auto-c85509a91d",
+    "url": "https://www.gp1.com.br/ba/bahia/noticia/2026/9/1/policia-federal-deflagra-operacao-contra-ex-policial-militar-em-salvador-630383.html",
+    "titulo": "Polícia Federal deflagra operação contra ex-policial militar em Salvador",
+    "categoria": "Policial e Segurança Pública",
+    "data_mineracao": "2026-09-01 16:14:02"
   }
 ]
