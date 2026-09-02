@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-4de9454456
+titulo: Chegada da Primavera é celebrada - Hospital do Servidor Público Municipal
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Solidariedade e Comunidade
+data: 02/09/2026
+fonte: Prefeitura de São Paulo
+status: Pendente
+status_triagem: Pendente
+url_original: https://prefeitura.sp.gov.br/web/hospital_do_servidor_publico_municipal/w/noticias/336284
+---
+
+
+
+Fonte original: https://prefeitura.sp.gov.br/web/hospital_do_servidor_publico_municipal/w/noticias/336284

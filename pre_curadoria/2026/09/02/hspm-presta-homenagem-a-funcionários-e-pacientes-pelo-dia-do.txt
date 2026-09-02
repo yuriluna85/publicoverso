@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-6b722c1aba
+titulo: HSPM presta homenagem a funcionários e pacientes pelo Dia dos Pais - Hospital do Servidor Público Municipal
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Carreira e Conquistas
+data: 02/09/2026
+fonte: Prefeitura de São Paulo
+status: Pendente
+status_triagem: Pendente
+url_original: https://prefeitura.sp.gov.br/web/hospital_do_servidor_publico_municipal/w/noticias/301824
+---
+
+
+
+Fonte original: https://prefeitura.sp.gov.br/web/hospital_do_servidor_publico_municipal/w/noticias/301824

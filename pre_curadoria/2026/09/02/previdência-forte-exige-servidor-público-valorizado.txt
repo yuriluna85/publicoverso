@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-91eab04ad6
+titulo: Previdência forte exige servidor público valorizado
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Cultura Pop e Gastronomia
+data: 02/09/2026
+fonte: jornaluniao.com.br
+status: Pendente
+status_triagem: Pendente
+url_original: https://jornaluniao.com.br/noticias/artigos/previdencia-forte-exige-servidor-publico-valorizado/
+---
+
+
+
+Fonte original: https://jornaluniao.com.br/noticias/artigos/previdencia-forte-exige-servidor-publico-valorizado/

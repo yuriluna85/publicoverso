@@ -1,5 +1,45 @@
 [
   {
+    "id": "auto-6b722c1aba",
+    "data": "02/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "HSPM presta homenagem a funcionários e pacientes pelo Dia dos Pais - Hospital do Servidor Público Municipal",
+    "resumo": "",
+    "fonte": "Prefeitura de São Paulo",
+    "url_original": "https://prefeitura.sp.gov.br/web/hospital_do_servidor_publico_municipal/w/noticias/301824",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-4de9454456",
+    "data": "02/09/2026",
+    "categoria": "Solidariedade e Comunidade",
+    "titulo": "Chegada da Primavera é celebrada - Hospital do Servidor Público Municipal",
+    "resumo": "",
+    "fonte": "Prefeitura de São Paulo",
+    "url_original": "https://prefeitura.sp.gov.br/web/hospital_do_servidor_publico_municipal/w/noticias/336284",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-d08938484b",
+    "data": "02/09/2026",
+    "categoria": "Cultura Pop e Gastronomia",
+    "titulo": "Servidor público atrai adolescente a ginásio esportivo e tenta estuprá-lo",
+    "resumo": "",
+    "fonte": "Metrópoles",
+    "url_original": "https://www.metropoles.com/colunas/mirelle-pinheiro/servidor-publico-atrai-adolescente-a-ginasio-esportivo-e-tenta-estupra-lo",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-91eab04ad6",
+    "data": "02/09/2026",
+    "categoria": "Cultura Pop e Gastronomia",
+    "titulo": "Previdência forte exige servidor público valorizado",
+    "resumo": "",
+    "fonte": "jornaluniao.com.br",
+    "url_original": "https://jornaluniao.com.br/noticias/artigos/previdencia-forte-exige-servidor-publico-valorizado/",
+    "status_curadoria": "Pendente"
+  },
+  {
     "id": "dou-5ac9dfcaed",
     "data": "02/09/2026",
     "categoria": "Histórias e Superação",
