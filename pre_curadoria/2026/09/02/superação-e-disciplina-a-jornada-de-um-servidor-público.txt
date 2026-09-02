@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-fc6fe674b1
+titulo: Superação e disciplina: a jornada de um servidor público
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Histórias e Superação
+data: 02/09/2026
+fonte: FOLHAMAX
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.folhamax.com/esporte/superacao-e-disciplina-a-jornada-de-um-servidor-publico/530473
+---
+
+
+
+Fonte original: https://www.folhamax.com/esporte/superacao-e-disciplina-a-jornada-de-um-servidor-publico/530473

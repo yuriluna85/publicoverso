@@ -1,0 +1,17 @@
+---
+id_mineracao: min-protagonista-20260902161031
+titulo: Suspeito de atirar em Leandro Lo, campeão de jiu-jitsu, é preso em São Paulo
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Esportes e Aventura
+eixo_tematico: Esportes e Desafios
+fonte: Lance
+url_original: https://lance.com.br/mais-esportes/suspeito-de-atirar-em-leandro-lo-campeao-de-jiu-jitsu-e-preso-em-sao-paulo.html
+link_status: Verificado (HTTP 200)
+data_verificacao: 02/09/2026 16:10
+status: Pendente
+---
+
+
+
+Fonte original: https://lance.com.br/mais-esportes/suspeito-de-atirar-em-leandro-lo-campeao-de-jiu-jitsu-e-preso-em-sao-paulo.html

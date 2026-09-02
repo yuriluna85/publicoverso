@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-90d49a2d95
+titulo: Servidor público é encontrado morto dentro de imóvel em MS
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Cultura Pop e Gastronomia
+data: 02/09/2026
+fonte: Midiamax
+status: Pendente
+status_triagem: Pendente
+url_original: https://midiamax.com.br/policia/2026/servidor-publico-encontrado-morto-dentro-imovel-ms/
+---
+
+
+
+Fonte original: https://midiamax.com.br/policia/2026/servidor-publico-encontrado-morto-dentro-imovel-ms/

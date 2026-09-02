@@ -1717,5 +1717,26 @@
     "titulo": "17 de junho, Dia do Servidor Público Aposentado",
     "categoria": "Cultura Pop e Gastronomia",
     "data_mineracao": "2026-09-01 23:06:09"
+  },
+  {
+    "id_mineracao": "auto-90d49a2d95",
+    "url": "https://midiamax.com.br/policia/2026/servidor-publico-encontrado-morto-dentro-imovel-ms/",
+    "titulo": "Servidor público é encontrado morto dentro de imóvel em MS",
+    "categoria": "Cultura Pop e Gastronomia",
+    "data_mineracao": "2026-09-02 16:09:24"
+  },
+  {
+    "id_mineracao": "auto-fc6fe674b1",
+    "url": "https://www.folhamax.com/esporte/superacao-e-disciplina-a-jornada-de-um-servidor-publico/530473",
+    "titulo": "Superação e disciplina: a jornada de um servidor público",
+    "categoria": "Histórias e Superação",
+    "data_mineracao": "2026-09-02 16:09:34"
+  },
+  {
+    "id_mineracao": "auto-b4d969650f",
+    "url": "https://www.cartacapital.com.br/politica/paulo-guedes-pede-desculpas-por-chamar-servidor-publico-de-parasita/",
+    "titulo": "Paulo Guedes pede desculpas por chamar servidor público de \"parasita\"",
+    "categoria": "Histórias e Superação",
+    "data_mineracao": "2026-09-02 16:09:55"
   }
 ]
