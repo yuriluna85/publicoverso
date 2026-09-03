@@ -1766,5 +1766,26 @@
     "titulo": "HSPM presta homenagem a funcionários e pacientes pelo Dia dos Pais - Hospital do Servidor Público Municipal",
     "categoria": "Carreira e Conquistas",
     "data_mineracao": "2026-09-02 23:04:29"
+  },
+  {
+    "id_mineracao": "auto-025eecd9ad",
+    "url": "https://prefeitura.sp.gov.br/web/hospital_do_servidor_publico_municipal/w/noticias/357613",
+    "titulo": "Dia do médico foi celebrado com ações de integração e reconhecimento - Hospital do Servidor Público Municipal",
+    "categoria": "Solidariedade e Comunidade",
+    "data_mineracao": "2026-09-03 15:59:10"
+  },
+  {
+    "id_mineracao": "auto-b7bddd5e68",
+    "url": "https://midiamax.com.br/politica/2026/camara-dourados-aprova-reajuste-salarial-45-servidores-municipais/",
+    "titulo": "Câmara de Dourados aprova reajuste salarial de 4,5% para servidores municipais",
+    "categoria": "Carreira e Conquistas",
+    "data_mineracao": "2026-09-03 15:59:27"
+  },
+  {
+    "id_mineracao": "auto-764875fe12",
+    "url": "https://www.migalhas.com.br/depeso/340555/a-im-possibilidade-de-reajuste-salarial-ao-servidor-publico",
+    "titulo": "A (im)possibilidade de reajuste salarial ao servidor público: análise à luz da LC 173/20",
+    "categoria": "Carreira e Conquistas",
+    "data_mineracao": "2026-09-03 15:59:30"
   }
 ]

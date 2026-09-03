@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-b7bddd5e68
+titulo: Câmara de Dourados aprova reajuste salarial de 4,5% para servidores municipais
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Carreira e Conquistas
+data: 03/09/2026
+fonte: Midiamax
+status: Pendente
+status_triagem: Pendente
+url_original: https://midiamax.com.br/politica/2026/camara-dourados-aprova-reajuste-salarial-45-servidores-municipais/
+---
+
+
+
+Fonte original: https://midiamax.com.br/politica/2026/camara-dourados-aprova-reajuste-salarial-45-servidores-municipais/

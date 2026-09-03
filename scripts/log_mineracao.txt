@@ -10064,3 +10064,199 @@
 [2026-09-02 23:06:49]   [NOVO EDITAL] Concurso IBGE: cargos, provas e como se preparar - Quero Bol
 [2026-09-02 23:06:52] === Radar concluído. 12 novos editais adicionados. Total: 338. ===
 [2026-09-02 23:06:52] Revise os editais com status "Em Analise" e altere para "Inscrições Abertas" apos verificacao manual.
+[2026-09-03 15:58:44] === Iniciando mineracao de histórias ===
+[2026-09-03 15:58:44] Registros existentes no JSON / Historico: 244
+[2026-09-03 15:58:44] Buscando: [Cultura Pop e Gastronomia] ...
+[2026-09-03 15:58:45]   Resultados retornados: 0
+[2026-09-03 15:58:48] Buscando: [Artes e Literatura] ...
+[2026-09-03 15:58:49]   Resultados retornados: 0
+[2026-09-03 15:58:52] Buscando: [Esportes e Aventura] ...
+[2026-09-03 15:58:56]   Resultados retornados: 0
+[2026-09-03 15:58:58] Buscando: [Ciência e Tecnologia] ...
+[2026-09-03 15:58:59]   Resultados retornados: 0
+[2026-09-03 15:59:02] Buscando: [Ciência e Tecnologia] ...
+[2026-09-03 15:59:03]   Resultados retornados: 0
+[2026-09-03 15:59:06] Buscando: [Solidariedade e Comunidade] ...
+[2026-09-03 15:59:07]   Resultados retornados: 8
+[2026-09-03 15:59:07]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-03 15:59:07]   [EXCLUIDO] Superintendente do HSPM promove encontro com integrantes da ...
+[2026-09-03 15:59:07]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-03 15:59:07]   [EXCLUIDO] Juiz concede a policial militar promoção por ato de bravura...
+[2026-09-03 15:59:07]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-03 15:59:07]   [EXCLUIDO] Dia de Ação para Eliminação do Câncer de Colo de útero é com...
+[2026-09-03 15:59:07]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-03 15:59:07]   [EXCLUIDO] Com soltura de 3 milhões de peixes, ONG recupera pesca em ri...
+[2026-09-03 15:59:07]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-03 15:59:07]   [EXCLUIDO] Políticos do DF fazem envio intrigante de R$26 milhões para ...
+[2026-09-03 15:59:07]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-03 15:59:07]   [EXCLUIDO] Com “Homem de Ferro”, ONG faz alerta sobre câncer infantil...
+[2026-09-03 15:59:08] [AVISO] Scraper API falhou para https://prefeitura.sp.gov.br/web/hospital_do_servidor_publico_municipal/w/noticias/357613: 403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=5a40d600da34173c51b2a4f83b57ac08&url=https%3A%2F%2Fprefeitura.sp.gov.br%2Fweb%2Fhospital_do_servidor_publico_municipal%2Fw%2Fnoticias%2F357613&render=false
+[2026-09-03 15:59:10]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/09/03/dia-do-médico-foi-celebrado-com-ações-de-integração-e-reconh.txt (Editoria: Solidariedade e Comunidade)
+[2026-09-03 15:59:10]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-03 15:59:10]   [EXCLUIDO] HSPM abre processo seletivo para médicos de diversas especia...
+[2026-09-03 15:59:13] Buscando: [Histórias e Superação] ...
+[2026-09-03 15:59:14]   Resultados retornados: 4
+[2026-09-03 15:59:14]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-03 15:59:14]   [EXCLUIDO] Setembro Amarelo: história de superação motiva a seguir em f...
+[2026-09-03 15:59:14]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-03 15:59:14]   [EXCLUIDO] Lei Suely, uma distorção de 1963 que aumentou gastos com apo...
+[2026-09-03 15:59:16] Buscando: [Carreira e Conquistas] ...
+[2026-09-03 15:59:19]   Resultados retornados: 0
+[2026-09-03 15:59:22] Buscando: [Carreira e Conquistas] ...
+[2026-09-03 15:59:25]   Resultados retornados: 10
+[2026-09-03 15:59:25]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-03 15:59:25]   [EXCLUIDO] Reajuste salarial de 8% para servidores do Judiciário federa...
+[2026-09-03 15:59:25] [AVISO] Scraper API falhou para https://midiamax.com.br/politica/2026/camara-dourados-aprova-reajuste-salarial-45-servidores-municipais/: 403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=5a40d600da34173c51b2a4f83b57ac08&url=https%3A%2F%2Fmidiamax.com.br%2Fpolitica%2F2026%2Fcamara-dourados-aprova-reajuste-salarial-45-servidores-municipais%2F&render=false
+[2026-09-03 15:59:27]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/09/03/câmara-de-dourados-aprova-reajuste-salarial-de-45-para-servi.txt (Editoria: Carreira e Conquistas)
+[2026-09-03 15:59:27]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-03 15:59:27]   [EXCLUIDO] Município tem que regulamentar plano de carreira de servidor...
+[2026-09-03 15:59:28] [AVISO] Scraper API falhou para https://www.migalhas.com.br/depeso/340555/a-im-possibilidade-de-reajuste-salarial-ao-servidor-publico: 403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=5a40d600da34173c51b2a4f83b57ac08&url=https%3A%2F%2Fwww.migalhas.com.br%2Fdepeso%2F340555%2Fa-im-possibilidade-de-reajuste-salarial-ao-servidor-publico&render=false
+[2026-09-03 15:59:30]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/09/03/a-impossibilidade-de-reajuste-salarial-ao-servidor-público-a.txt (Editoria: Carreira e Conquistas)
+[2026-09-03 15:59:30]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-03 15:59:30]   [EXCLUIDO] Câmara aprova reajuste para servidores do Poder Judiciário...
+[2026-09-03 15:59:30]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-03 15:59:30]   [EXCLUIDO] Com aumento real a servidores, proposta de reajuste salarial...
+[2026-09-03 15:59:30]   [EXPURGADO POLÍTICO] Contém termo político: "prefeito".
+[2026-09-03 15:59:30]   [EXCLUIDO] Juazeiro (BA): Prefeito Andrei Gonçalves anuncia reajuste sa...
+[2026-09-03 15:59:30]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-03 15:59:30]   [EXCLUIDO] Câmara aprova reajuste salarial de 10% para servidores munic...
+[2026-09-03 15:59:33] === Mineracao concluida. 3 novos rascunhos salvos em pre_curadoria/. ===
+[2026-09-03 15:59:33] Utilize scripts/promover_materia.py para aprovar e publicar as materias.
+[2026-09-03 15:59:33] === Iniciando minerador de Protagonistas ("Vida Além do Trabalho") ===
+[2026-09-03 15:59:33] Base anti-duplicidade: 1067 URLs, 1240 slugs, 1067 títulos.
+[2026-09-03 15:59:33] Buscando eixo humano: [Literatura e Artes] ...
+[2026-09-03 15:59:35]   Resultados brutos: 0
+[2026-09-03 15:59:38] Buscando eixo humano: [Literatura e Artes] ...
+[2026-09-03 15:59:39]   Resultados brutos: 0
+[2026-09-03 15:59:41] Buscando eixo humano: [Esportes e Desafios] ...
+[2026-09-03 15:59:43]   Resultados brutos: 0
+[2026-09-03 15:59:45] Buscando eixo humano: [Esportes e Desafios] ...
+[2026-09-03 15:59:46]   Resultados brutos: 0
+[2026-09-03 15:59:49] Buscando eixo humano: [Entretenimento e Cultura Pop] ...
+[2026-09-03 15:59:51]   Resultados brutos: 0
+[2026-09-03 15:59:54] Buscando eixo humano: [Entretenimento e Cultura Pop] ...
+[2026-09-03 15:59:55]   Resultados brutos: 0
+[2026-09-03 15:59:58] Buscando eixo humano: [Voluntariado e Causa Social] ...
+[2026-09-03 15:59:59]   Resultados brutos: 0
+[2026-09-03 16:00:01] Buscando eixo humano: [Voluntariado e Causa Social] ...
+[2026-09-03 16:00:05]   Resultados brutos: 0
+[2026-09-03 16:00:07] Buscando eixo humano: [Trajetoria e Superacao] ...
+[2026-09-03 16:00:10]   Resultados brutos: 0
+[2026-09-03 16:00:12] Buscando eixo humano: [Trajetoria e Superacao] ...
+[2026-09-03 16:00:15]   Resultados brutos: 0
+[2026-09-03 16:00:17] Buscando eixo humano: [Virais e Inusitados] ...
+[2026-09-03 16:00:19]   Resultados brutos: 0
+[2026-09-03 16:00:22] === Mineração Concluída: 0 novas matérias, 0 duplicatas bloqueadas, 0 burocracias expurgadas. ===
+[2026-09-03 16:00:22] === Iniciando Robô de Movimentação Funcional (Portal Publicoverso + DOU Oficial Direct) ===
+[2026-09-03 16:00:22] URLs de movimentação no historico: 1014
+[2026-09-03 16:00:22] --- [CAMADA 1] Minerando atos oficiais diretamente do in.gov.br (DOU) ---
+[2026-09-03 16:00:22] Buscando DOU Nativo: [Exoneração a Pedido (DOU)] ("exonerar a pedido")...
+[2026-09-03 16:00:27]   Encontrados 18 atos no DOU hoje.
+[2026-09-03 16:00:27]   [ATO DOU REGISTRADO] PORTARIA Nº 721, DE 27 DE AGOSTO DE 2026... (03/09/2026)
+[2026-09-03 16:00:27]   [ATO DOU REGISTRADO] PORTARIA Nº 9.370, DE 2 DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:27]   [ATO DOU REGISTRADO] ATOS DE 1º DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:27]   [ATO DOU REGISTRADO] PORTARIA Nº 174 CREMESP, DE 24 DE AGOSTO DE 2026... (03/09/2026)
+[2026-09-03 16:00:27]   [ATO DOU REGISTRADO] PORTARIA Nº 206, DE 1º DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:27]   [ATO DOU REGISTRADO] Portaria INTO/MS nº 673, de 28 de Agosto de 2026... (03/09/2026)
+[2026-09-03 16:00:27]   [ATO DOU REGISTRADO] Portaria Nº 1.464, DE 18 DE agosto DE 2026... (03/09/2026)
+[2026-09-03 16:00:27]   [ATO DOU REGISTRADO] PORTARIA de PESSOAL Nº 842, DE 31 DE AGOSTO DE 2026... (03/09/2026)
+[2026-09-03 16:00:27]   [ATO DOU REGISTRADO] PORTARIA Nº 1.245, DE 30 DE AGOSTO DE 2026... (03/09/2026)
+[2026-09-03 16:00:27]   [ATO DOU REGISTRADO] ATO PRES Nº 8.261, DE 26 DE AGOSTO DE 2026... (03/09/2026)
+[2026-09-03 16:00:27]   [ATO DOU REGISTRADO] Portarias de 1º de setembro de 2026... (03/09/2026)
+[2026-09-03 16:00:27]   [ATO DOU REGISTRADO] PORTARIA STJ/GP Nº 653, DE 24 DE AGOSTO DE 2026... (03/09/2026)
+[2026-09-03 16:00:27]   [ATO DOU REGISTRADO] PORTARIA - C Ex Nº 1.154, DE 1º DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:27]   [ATO DOU REGISTRADO] PORTARIA DE PESSOAL DGP/SSC/MGI Nº 10.597, DE 2 DE setembrO ... (03/09/2026)
+[2026-09-03 16:00:27]   [ATO DOU REGISTRADO] PORTARIAS DE 2 DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:27]   [ATO DOU REGISTRADO] PORTARIA Nº 1.203, DE 1º DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:27]   [ATO DOU REGISTRADO] Portaria Nº 1.466, DE 18 DE agosto DE 2026... (03/09/2026)
+[2026-09-03 16:00:27]   [ATO DOU REGISTRADO] ATO PRES Nº 8.262, DE 26 DE AGOSTO DE 2026... (03/09/2026)
+[2026-09-03 16:00:30] Buscando DOU Nativo: [Demissão a Bem do Serviço Público (DOU)] ("demissão")...
+[2026-09-03 16:00:33]   Encontrados 2 atos no DOU hoje.
+[2026-09-03 16:00:33]   [ATO DOU REGISTRADO] RESOLUÇÃO CONTER Nº 9, DE 1º DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:33]   [ATO DOU REGISTRADO] PORTARIA DE PESSOAL Nº 487, DE 2 DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:36] Buscando DOU Nativo: [Portaria de Nomeação (DOU)] ("nomear")...
+[2026-09-03 16:00:40]   Encontrados 20 atos no DOU hoje.
+[2026-09-03 16:00:40]   [ATO DOU REGISTRADO] ATO Nº 53, DE 1º DE SETEMBRO DE 2026.... (03/09/2026)
+[2026-09-03 16:00:40]   [ATO DOU REGISTRADO] PORTARIA Nº 2.168, DE 1º DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:40]   [ATO DOU REGISTRADO] ATA Nº 32, DE 25 DE AGOSTO DE 2026... (03/09/2026)
+[2026-09-03 16:00:41]   [ATO DOU REGISTRADO] ATA Nº 150, DE 25 DE JUNHO DE 2026... (03/09/2026)
+[2026-09-03 16:00:41]   [ATO DOU REGISTRADO] PORTARIA Nº 2.181, DE 1º DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:41]   [ATO DOU REGISTRADO] Portaria SFA-PI/SE/MAPA nº 163, de 31 de agosto de 2026... (03/09/2026)
+[2026-09-03 16:00:41]   [ATO DOU REGISTRADO] ATO DECLARATÓRIO EXECUTIVO DEFIS/DRF/REC Nº 17, DE 1º DE SET... (03/09/2026)
+[2026-09-03 16:00:41]   [ATO DOU REGISTRADO] DESPACHOS... (03/09/2026)
+[2026-09-03 16:00:41]   [ATO DOU REGISTRADO] PORTARIA Nº 19.881, DE 25 DE AGOSTO DE 2026... (03/09/2026)
+[2026-09-03 16:00:41]   [ATO DOU REGISTRADO] EXTRATO DE PARECER CONCEA/MCTI Nº 86/2026... (03/09/2026)
+[2026-09-03 16:00:41]   [ATO DOU REGISTRADO] PORTARIA Nº 5.314/PROGEP/IFNMG, DE 2 DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:41]   [ATO DOU REGISTRADO] PORTARIA Nº 271, de 31 de AGOSTO de 2026... (03/09/2026)
+[2026-09-03 16:00:41]   [ATO DOU REGISTRADO] PORTARIA SG/MPF Nº 897, DE 27 DE AGOSTO DE 2026... (03/09/2026)
+[2026-09-03 16:00:41]   [ATO DOU REGISTRADO] PORTARIA CJF nº 573, DE 2 DE setembro DE 2026... (03/09/2026)
+[2026-09-03 16:00:41]   [ATO DOU REGISTRADO] PORTARIA Nº 204, DE 1º DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:41]   [ATO DOU REGISTRADO] PORTARIA DAP PROGESP UFCSPA Nº 7.878, DE 2 DE SETEMBRO DE 20... (03/09/2026)
+[2026-09-03 16:00:41]   [ATO DOU REGISTRADO] PORTARIA DE PESSOAL SSC/MGI Nº 10.625, DE 2 DE SETEMBRO DE 2... (03/09/2026)
+[2026-09-03 16:00:41]   [ATO DOU REGISTRADO] RETIFICAÇÃO... (03/09/2026)
+[2026-09-03 16:00:41]   [ATO DOU REGISTRADO] EXTRATO DE PARECER CONCEA/MCTI Nº 87/2026... (03/09/2026)
+[2026-09-03 16:00:41]   [ATO DOU REGISTRADO] PORTARIA Nº 2.171, DE 1º SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:44] Buscando DOU Nativo: [Vacância de Cargo (DOU)] ("conceder vacância")...
+[2026-09-03 16:00:48]   Encontrados 3 atos no DOU hoje.
+[2026-09-03 16:00:48]   [ATO DOU REGISTRADO] PORTARIA DE PESSOAL Nº 649/GR/UFFS, DE 2 DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:48]   [ATO DOU REGISTRADO] PORTARIA DE PESSOAL Nº 648/GR/UFFS, DE 2 DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:48]   [ATO DOU REGISTRADO] PORTARIA DE PESSOAL Nº 650/GR/UFFS, DE 2 DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:51] Buscando DOU Nativo: [Aposentadoria Voluntária (DOU)] ("conceder aposentadoria")...
+[2026-09-03 16:00:54]   Encontrados 20 atos no DOU hoje.
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] Portaria CGBEN/MGI nº 10.577, de 2 de Setembro de 2026... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] PORTARIA CGBEN/DECIPEX/SGP/MGI Nº 10.621, DE 2 DE SETEMBRO D... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] PORTARIA DE PESSOAL GABSEC/SENAPPEN/MJSP 516, DE 1º DE SETEM... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] Portaria CGBEN/MGI nº 10.580, de 2 de Setembro de 2026... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] Portaria DIAP/INCA/MS nº 434, de 7 de Agosto de 2026... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] PORTARIA GP/SGPE Nº 2.350, DE 1º DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] PORTARIA Nº 3.511 - REITORIA/IFG, DE 2 DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] Portaria CGBEN/MGI nº 10.604, de 2 de Setembro de 2026... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] PORTARIA STJ/GP Nº 680, DE 1º DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] PORTARIA - DAP/DGP/C Ex Nº 756, DE 31 DE AGOSTO DE 2026... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] Portaria CGBEN/MGI nº 10.575, de 2 de Setembro de 2026... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] Portaria CGBEN/MGI nº 10.559, de 2 de Setembro de 2026... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] PORTARIA CGBEN/DECIPEX/SGP/MGI Nº 10.606, DE 2 DE SETEMBRO D... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] Portaria Nº 1.033, de 2 de setembro de 2026... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] PORTARIA - DAP/DGP/C Ex Nº 761, DE 1º DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] Portaria CGBEN/MGI nº 10.539, de 1º de Setembro de 2026... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] PORTARIA DE PESSOAL Nº 447, DE 2 DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] PORTARIA CGBEN/DECIPEX/SGP/MGI Nº 10.616, DE 2 DE SETEMBRO D... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] Portaria DIAP/INCA/MS nº 467, de 31 de Agosto de 2026... (03/09/2026)
+[2026-09-03 16:00:54]   [ATO DOU REGISTRADO] PORTARIA GP/SGPE Nº 2.351, DE 1º DE SETEMBRO DE 2026... (03/09/2026)
+[2026-09-03 16:00:57] --- [CAMADA 2] Minerando notícias e imprensa funcional via Serper News ---
+[2026-09-03 16:00:57] Buscando imprensa funcional: [Posse e Nomeação] ...
+[2026-09-03 16:00:59]   Resultados brutos: 0
+[2026-09-03 16:01:02] Buscando imprensa funcional: [Posse e Nomeação] ...
+[2026-09-03 16:01:03]   Resultados brutos: 0
+[2026-09-03 16:01:05] Buscando imprensa funcional: [Aposentadoria e Legado] ...
+[2026-09-03 16:01:07]   Resultados brutos: 0
+[2026-09-03 16:01:09] Buscando imprensa funcional: [Demissão a Bem do Serviço Público e PAD] ...
+[2026-09-03 16:01:10]   Resultados brutos: 3
+[2026-09-03 16:01:10]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-03 16:01:10]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-03 16:01:13] === Robô de Movimentação Funcional concluído. 63 novos registros adicionados. ===
+[2026-09-03 16:01:13] === Iniciando Radar de Concursos ===
+[2026-09-03 16:01:13] Editais existentes no radar: 338
+[2026-09-03 16:01:13] Buscando concursos: "inscrições abertas" ("concurso público" OR "processo seletivo") ("fed...
+[2026-09-03 16:01:14]   Resultados: 10
+[2026-09-03 16:01:14]   [NOVO EDITAL] Reta final de inscrições para o concurso público do IFSC ‍  
+[2026-09-03 16:01:17] Buscando concursos: "edital publicado" "concurso público" ("DOU" OR "Diário Oficial") "vag...
+[2026-09-03 16:01:18]   Resultados: 10
+[2026-09-03 16:01:20] Buscando concursos: site:cebraspe.org.br "inscrições" 2026...
+[2026-09-03 16:01:21]   Resultados: 10
+[2026-09-03 16:01:24] Buscando concursos: site:conhecimento.fgv.br "concurso" "inscrições" 2026...
+[2026-09-03 16:01:25]   Resultados: 10
+[2026-09-03 16:01:27] Buscando concursos: site:institutoaocp.org.br "edital" "inscrições abertas" 2026...
+[2026-09-03 16:01:28]   Resultados: 10
+[2026-09-03 16:01:31] Buscando concursos: "concurso público" ("Receita Federal" OR "Banco Central" OR "Senado" O...
+[2026-09-03 16:01:32]   Resultados: 10
+[2026-09-03 16:01:32]   [NOVO EDITAL] Concurso Receita Federal 2026: Edital autorizado! 146 vagas!
+[2026-09-03 16:01:34] Buscando concursos: "concurso público" ("policial federal" OR "agente federal" OR "delegad...
+[2026-09-03 16:01:35]   Resultados: 10
+[2026-09-03 16:01:35]   [NOVO EDITAL] 750 VAGAS e uma delas pode ser SUA! Inscreva-se AGORA no ...
+[2026-09-03 16:01:38] Buscando concursos: "concurso público" ("Anatel" OR "ANAC" OR "ANVISA" OR "IBGE" OR "IPEA"...
+[2026-09-03 16:01:40]   Resultados: 10
+[2026-09-03 16:01:40]   [NOVO EDITAL] Concurso Anatel: Pedido de edital com 191 vagas enviado ao M
+[2026-09-03 16:01:40]   [NOVO EDITAL] Concurso IBGE: cargos, provas e como se preparar - Quero Bol
+[2026-09-03 16:01:42] === Radar concluído. 5 novos editais adicionados. Total: 343. ===
+[2026-09-03 16:01:42] Revise os editais com status "Em Analise" e altere para "Inscrições Abertas" apos verificacao manual.

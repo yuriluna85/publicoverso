@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-025eecd9ad
+titulo: Dia do médico foi celebrado com ações de integração e reconhecimento - Hospital do Servidor Público Municipal
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Solidariedade e Comunidade
+data: 03/09/2026
+fonte: Prefeitura de São Paulo
+status: Pendente
+status_triagem: Pendente
+url_original: https://prefeitura.sp.gov.br/web/hospital_do_servidor_publico_municipal/w/noticias/357613
+---
+
+
+
+Fonte original: https://prefeitura.sp.gov.br/web/hospital_do_servidor_publico_municipal/w/noticias/357613
