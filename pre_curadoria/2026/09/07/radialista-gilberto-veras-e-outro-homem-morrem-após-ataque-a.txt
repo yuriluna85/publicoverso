@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-3dddbb9eba
+titulo: Radialista Gilberto Veras e outro homem morrem após ataque a tiros no litoral do Piauí
+resumo: O radialista e servidor público Gilberto Veras, de 63 anos, morreu na manhã desta quinta-feira (3), após ser baleado em um ataque a tiros em Luís Correia,...
+autor: Curadoria Publicoverso
+categoria: Ciência e Tecnologia
+data: 07/09/2026
+fonte: G1
+status: Pendente
+status_triagem: Pendente
+url_original: https://g1.globo.com/pi/piaui/noticia/2026/09/03/radialista-e-homem-mortos-ataque-a-tiros.ghtml
+---
+
+O radialista e servidor público Gilberto Veras, de 63 anos, morreu na manhã desta quinta-feira (3), após ser baleado em um ataque a tiros em Luís Correia,...
+
+Fonte original: https://g1.globo.com/pi/piaui/noticia/2026/09/03/radialista-e-homem-mortos-ataque-a-tiros.ghtml

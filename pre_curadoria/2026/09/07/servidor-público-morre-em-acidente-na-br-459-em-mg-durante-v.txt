@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-2aaacae5e4
+titulo: Servidor público morre em acidente na BR-459, em MG, durante volta de motorromaria
+resumo: Servidor público morre em acidente na BR-459, em MG, durante volta de motorromaria.
+autor: Curadoria Publicoverso
+categoria: Ciência e Tecnologia
+data: 07/09/2026
+fonte: G1
+status: Pendente
+status_triagem: Pendente
+url_original: https://g1.globo.com/mg/sul-de-minas/video/servidor-publico-morre-em-acidente-na-br-459-em-mg-durante-volta-de-motorromaria-14936277.ghtml
+---
+
+Servidor público morre em acidente na BR-459, em MG, durante volta de motorromaria.
+
+Fonte original: https://g1.globo.com/mg/sul-de-minas/video/servidor-publico-morre-em-acidente-na-br-459-em-mg-durante-volta-de-motorromaria-14936277.ghtml

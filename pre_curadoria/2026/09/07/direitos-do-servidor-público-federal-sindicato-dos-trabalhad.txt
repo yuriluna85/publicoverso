@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-2ba6b17299
+titulo: Direitos do Servidor Público Federal – Sindicato dos Trabalhadores em Universidades Federais do Estado do Piauí
+resumo: Conhecer os direitos é fundamental para fortalecer a valorização dos trabalhadores. Os servidores públicos federais possuem um conjunto de direitos...
+autor: Curadoria Publicoverso
+categoria: Jurídico e PAD
+data: 07/09/2026
+fonte: sintufpi.org.br
+status: Pendente
+status_triagem: Pendente
+url_original: https://sintufpi.org.br/direitos-do-servidor-publico-federal/
+---
+
+Conhecer os direitos é fundamental para fortalecer a valorização dos trabalhadores. Os servidores públicos federais possuem um conjunto de direitos...
+
+Fonte original: https://sintufpi.org.br/direitos-do-servidor-publico-federal/

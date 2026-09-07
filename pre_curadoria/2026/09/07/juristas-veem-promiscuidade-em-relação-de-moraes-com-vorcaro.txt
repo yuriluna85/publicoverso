@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-82d710fd99
+titulo: Juristas veem 'promiscuidade' em relação de Moraes com Vorcaro e defendem apuração
+resumo: As mensagens entre o banqueiro Daniel Vorcaro e o ministro Alexandre de Moraes, do Supremo Tribunal Federal (STF), levantam suspeitas sobre os limites da...
+autor: Curadoria Publicoverso
+categoria: Jurídico e PAD
+data: 07/09/2026
+fonte: Diário do Grande ABC
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.dgabc.com.br/Noticia/4344504/juristas-veem-promiscuidade-em-relacao-de-moraes-com-vorcaro-e-defendem-apuracao
+---
+
+As mensagens entre o banqueiro Daniel Vorcaro e o ministro Alexandre de Moraes, do Supremo Tribunal Federal (STF), levantam suspeitas sobre os limites da...
+
+Fonte original: https://www.dgabc.com.br/Noticia/4344504/juristas-veem-promiscuidade-em-relacao-de-moraes-com-vorcaro-e-defendem-apuracao

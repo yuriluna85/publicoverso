@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-d3a41f0297
+titulo: Servidora pública de 24 anos morre após carro atingir ônibus parado em rodovia do Tocantins
+resumo: Sebastiana Alves Ribeiro trabalhava na Prefeitura de Caseara. Acidente deixou ainda um homem e uma criança feridos.
+autor: Curadoria Publicoverso
+categoria: Esportes e Aventura
+data: 07/09/2026
+fonte: Jornal do Tocantins
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.jornaldotocantins.com.br/cidades/servidora-publica-de-24-anos-morre-apos-carro-atingir-onibus-parado-em-rodovia-do-tocantins-1.3453136
+---
+
+Sebastiana Alves Ribeiro trabalhava na Prefeitura de Caseara. Acidente deixou ainda um homem e uma criança feridos.
+
+Fonte original: https://www.jornaldotocantins.com.br/cidades/servidora-publica-de-24-anos-morre-apos-carro-atingir-onibus-parado-em-rodovia-do-tocantins-1.3453136

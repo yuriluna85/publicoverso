@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-332cdfeeea
+titulo: Marcelo Auler
+resumo: Especial para o Consultor Jurídico A auditora da Receita Federal do Brasil Maria Tereza Alves percorreu diversos gabinetes da Justiça Federal do Rio de...
+autor: Curadoria Publicoverso
+categoria: Solidariedade e Comunidade
+data: 07/09/2026
+fonte: Consultor Jurídico
+status: Pendente
+status_triagem: Pendente
+url_original: https://conjur.com.br/assinaturas/marcelo-auler-3/
+---
+
+Especial para o Consultor Jurídico A auditora da Receita Federal do Brasil Maria Tereza Alves percorreu diversos gabinetes da Justiça Federal do Rio de...
+
+Fonte original: https://conjur.com.br/assinaturas/marcelo-auler-3/

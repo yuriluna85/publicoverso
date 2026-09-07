@@ -1,0 +1,17 @@
+---
+id_mineracao: min-protagonista-20260907172919
+titulo: Professor da UFNT lança livro de contos em Araguaína
+resumo: Escritor, professor da Universidade Federal do Norte do Tocantins e doutor em Ensino de Língua e Literatura, Francisco Neto Pereira Pinto promove evento de...
+autor: Curadoria Publicoverso
+categoria: Artes e Literatura
+eixo_tematico: Literatura e Artes
+fonte: Conexaoto
+url_original: https://conexaoto.com.br/2026/09/02/professor-da-ufnt-lanca-livro-de-contos-em-araguaina
+link_status: Verificado (HTTP 200)
+data_verificacao: 07/09/2026 17:29
+status: Pendente
+---
+
+Escritor, professor da Universidade Federal do Norte do Tocantins e doutor em Ensino de Língua e Literatura, Francisco Neto Pereira Pinto promove evento de...
+
+Fonte original: https://conexaoto.com.br/2026/09/02/professor-da-ufnt-lanca-livro-de-contos-em-araguaina

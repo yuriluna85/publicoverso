@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-396489f57c
+titulo: Limbo entre o trabalho e o INSS pode deixar o empregado isolado
+resumo: Há situações em que o direito parece construir um corredor entre duas portas e deixa alguém parado exatamente no meio.
+autor: Curadoria Publicoverso
+categoria: Histórias e Superação
+data: 07/09/2026
+fonte: Consultor Jurídico
+status: Pendente
+status_triagem: Pendente
+url_original: https://conjur.com.br/2026-set-05/limbo-trabalhista-previdenciario-como-proceder/
+---
+
+Há situações em que o direito parece construir um corredor entre duas portas e deixa alguém parado exatamente no meio.
+
+Fonte original: https://conjur.com.br/2026-set-05/limbo-trabalhista-previdenciario-como-proceder/

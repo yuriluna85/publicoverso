@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-58d58320ca
+titulo: Categoria: Atestados e Licenças
+resumo: A Licença Adotante é um direito concedido ao servidor municipal que adotar ou obtiver guarda judicial para adoção de uma criança ou adolescente,...
+autor: Curadoria Publicoverso
+categoria: Carreira e Conquistas
+data: 07/09/2026
+fonte: Prefeitura de Hortolândia
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.hortolandia.sp.gov.br/category/categorias/portaldoservidor/atestados-e-licencas/
+---
+
+A Licença Adotante é um direito concedido ao servidor municipal que adotar ou obtiver guarda judicial para adoção de uma criança ou adolescente,...
+
+Fonte original: https://www.hortolandia.sp.gov.br/category/categorias/portaldoservidor/atestados-e-licencas/

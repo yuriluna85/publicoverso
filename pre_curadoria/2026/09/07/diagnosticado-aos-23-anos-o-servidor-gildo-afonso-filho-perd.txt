@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-248e5bbb41
+titulo: Diagnosticado aos 23 anos, o servidor Gildo Afonso Filho perdeu metade dos movimentos e precisou de cadeira de rodas, recomeçou com uma caminhada de menos de 100 metros, voltou a andar e, cinco anos depois, completou os 226 km do Ironman Bras
+resumo: A trajetória do servidor público Gildo Afonso Filho mostra como a determinação permitiu superar a cadeira de rodas e vencer o Ironman.
+autor: Curadoria Publicoverso
+categoria: Esportes e Aventura
+data: 07/09/2026
+fonte: Brasil 247
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.brasil247.com/tendencias/2026/09/01/diagnosticado-aos-23-anos-o-servidor-gildo-afonso-filho-perdeu-metade-dos-movimentos-e-precisou-de-cadeira-de-rodas-recomecou-com-uma-caminhada-de-menos-de-100-metros-voltou-a-andar-e-cinco-anos-d/
+---
+
+A trajetória do servidor público Gildo Afonso Filho mostra como a determinação permitiu superar a cadeira de rodas e vencer o Ironman.
+
+Fonte original: https://www.brasil247.com/tendencias/2026/09/01/diagnosticado-aos-23-anos-o-servidor-gildo-afonso-filho-perdeu-metade-dos-movimentos-e-precisou-de-cadeira-de-rodas-recomecou-com-uma-caminhada-de-menos-de-100-metros-voltou-a-andar-e-cinco-anos-d/
