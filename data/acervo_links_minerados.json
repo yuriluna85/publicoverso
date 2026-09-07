@@ -1,5 +1,75 @@
 [
   {
+    "id": "mov-09e2dc3c4f",
+    "data": "07/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Nota de esclarecimento",
+    "resumo": "O Tribunal Regional Eleitoral do Paraná (TRE-PR), diante da ciência da juntada de documentos fiscais sigilosos de autoridades no processo do pedido de...",
+    "fonte": "Tribunal Regional Eleitoral do Paraná",
+    "url_original": "https://www.tre-pr.jus.br/comunicacao/noticias/2026/Setembro/nota-de-esclarecimento",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "mov-494b486f6f",
+    "data": "07/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PF faz operação contra fraudes no registro de armas de colecionadores",
+    "resumo": "Agentes da Polícia Federal foram às ruas nesta sexta-feira (4) para apurar a atuação de um grupo suspeito de fraudar procedimentos administrativos...",
+    "fonte": "Midiamax",
+    "url_original": "https://midiamax.com.br/brasil/2026/pf-faz-operacao-contra-fraudes-registro-armas-colecionadores/",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-43efec51ec",
+    "data": "07/09/2026",
+    "categoria": "Solidariedade e Comunidade",
+    "titulo": "Prefeitura de São Sebastião suspende programação Cívica da Independência devido ao mau tempo",
+    "resumo": "A Prefeitura de São Sebastião informa que, diante da manutenção da previsão de condições meteorológicas adversas e dos alertas emitidos pela Defesa Civil...",
+    "fonte": "Tamoios News",
+    "url_original": "https://tamoiosnews.com.br/prefeitura-de-sao-sebastiao-suspende-programacao-civica-da-independencia-devido-ao-mau-tempo/",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-3118c2581d",
+    "data": "07/09/2026",
+    "categoria": "Solidariedade e Comunidade",
+    "titulo": "Notícias de Ribeirão Preto e região",
+    "resumo": "Prefeitura de Ribeirão diz que fará esforço para pagar IPM até o 5º dia útil de janeiro. Funcionário público é assaltado em avenida de Ribeirão Preto...",
+    "fonte": "Revide",
+    "url_original": "https://www.revide.com.br/noticias/tag/ribeirao-preto/17853/?page=809",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-18bfe8edb0",
+    "data": "07/09/2026",
+    "categoria": "Policial e Segurança Pública",
+    "titulo": "Prisão em Itapiranga: servidor público é suspeito de abusar de adolescente em ginásio",
+    "resumo": "Prisão em Itapiranga: servidor público é suspeito de abusar de adolescente em ginásio. Expandir ou colapsar descrição. Prisão em Itapiranga: servidor...",
+    "fonte": "G1",
+    "url_original": "https://g1.globo.com/am/amazonas/videos-jam-1-edicao/video/prisao-em-itapiranga-servidor-publico-e-suspeito-de-abusar-de-adolescente-em-ginasio-14925190.ghtml",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-3bf3e539c8",
+    "data": "07/09/2026",
+    "categoria": "Cultura Pop e Gastronomia",
+    "titulo": "Policial militar da reserva reage a assalto e mata suspeito ... - Record",
+    "resumo": "",
+    "fonte": "record.r7.com › balanco-geral-manha › video › policial-militar-da-reserva-...",
+    "url_original": "https://record.r7.com/balanco-geral-manha/video/policial-militar-da-reserva-reage-a-assalto-e-mata-suspeito-na-grande-sao-paulo-07092026/",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-738d4383c5",
+    "data": "07/09/2026",
+    "categoria": "Cultura Pop e Gastronomia",
+    "titulo": "Justiça decide que deixar servidor público sem atribuições ...",
+    "resumo": "",
+    "fonte": "extra.globo.com › economia › servidor-publico › noticia › 2026/09 › justi...",
+    "url_original": "https://extra.globo.com/economia/servidor-publico/noticia/2026/09/justica-decide-que-deixar-servidor-publico-sem-atribuicoes-configura-danos-morais-ao-trabalhador.ghtml",
+    "status_curadoria": "Pendente"
+  },
+  {
     "id": "mov-a9c1509a66",
     "data": "07/09/2026",
     "categoria": "Jurídico e PAD",

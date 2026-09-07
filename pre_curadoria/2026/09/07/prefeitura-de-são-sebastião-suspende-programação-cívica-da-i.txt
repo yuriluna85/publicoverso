@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-43efec51ec
+titulo: Prefeitura de São Sebastião suspende programação Cívica da Independência devido ao mau tempo
+resumo: A Prefeitura de São Sebastião informa que, diante da manutenção da previsão de condições meteorológicas adversas e dos alertas emitidos pela Defesa Civil...
+autor: Curadoria Publicoverso
+categoria: Solidariedade e Comunidade
+data: 07/09/2026
+fonte: Tamoios News
+status: Pendente
+status_triagem: Pendente
+url_original: https://tamoiosnews.com.br/prefeitura-de-sao-sebastiao-suspende-programacao-civica-da-independencia-devido-ao-mau-tempo/
+---
+
+A Prefeitura de São Sebastião informa que, diante da manutenção da previsão de condições meteorológicas adversas e dos alertas emitidos pela Defesa Civil...
+
+Fonte original: https://tamoiosnews.com.br/prefeitura-de-sao-sebastiao-suspende-programacao-civica-da-independencia-devido-ao-mau-tempo/

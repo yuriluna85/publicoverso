@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-738d4383c5
+titulo: Justiça decide que deixar servidor público sem atribuições ...
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Cultura Pop e Gastronomia
+data: 07/09/2026
+fonte: extra.globo.com › economia › servidor-publico › noticia › 2026/09 › justi...
+status: Pendente
+status_triagem: Pendente
+url_original: https://extra.globo.com/economia/servidor-publico/noticia/2026/09/justica-decide-que-deixar-servidor-publico-sem-atribuicoes-configura-danos-morais-ao-trabalhador.ghtml
+---
+
+
+
+Fonte original: https://extra.globo.com/economia/servidor-publico/noticia/2026/09/justica-decide-que-deixar-servidor-publico-sem-atribuicoes-configura-danos-morais-ao-trabalhador.ghtml
