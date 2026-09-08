@@ -784,6 +784,22 @@
     "data_atualizacao": "08/08/2026"
   },
   {
+    "id": "concurso-226a7096",
+    "órgão": "Concurso Anatel: Pedido de edital enviado ao MGI! 191 vagas!",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 191,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://www.novaconcursos.com.br/portal/concursos/concurso-anatel/?srsltid=AfmBOoqWC2EVXaitEsy2dIpiXypIbhPdXF1zP7QQ5vv7rmxzifqQI65K",
+    "status": "Em Analise",
+    "destaque": true,
+    "data_atualizacao": "08/09/2026"
+  },
+  {
     "id": "concurso-4d190dc8",
     "órgão": "O Ministério da Gestão e da Inovação (MGI) autorizou ... - Instagram",
     "sigla": "",
@@ -3614,6 +3630,22 @@
     "status": "Previsto 2026",
     "destaque": false,
     "data_atualizacao": "08/08/2026"
+  },
+  {
+    "id": "concurso-55fce9fb",
+    "órgão": "Concursos com Inscrições Abertas - Instituto AOCP",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 0,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Instituto AOCP",
+    "link_edital": "https://beta.institutoaocp.org.br/concursos/status/inscricoes-abertas",
+    "status": "Em Analise",
+    "destaque": false,
+    "data_atualizacao": "08/09/2026"
   },
   {
     "id": "concurso-d9193766",
