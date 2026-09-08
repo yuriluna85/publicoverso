@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-1ff16a589a
+titulo: Publicação de UFU - Universidade Federal de Uberlândia - LinkedIn
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Artes e Literatura
+data: 08/09/2026
+fonte: pt.linkedin.com › posts › ufuoficial_graduado-em-gestão-pública-e-técnico...
+status: Pendente
+status_triagem: Pendente
+url_original: https://pt.linkedin.com/posts/ufuoficial_graduado-em-gest%C3%A3o-p%C3%BAblica-e-t%C3%A9cnico-administrativo-activity-7501217538492719104-KNsb
+---
+
+
+
+Fonte original: https://pt.linkedin.com/posts/ufuoficial_graduado-em-gest%C3%A3o-p%C3%BAblica-e-t%C3%A9cnico-administrativo-activity-7501217538492719104-KNsb

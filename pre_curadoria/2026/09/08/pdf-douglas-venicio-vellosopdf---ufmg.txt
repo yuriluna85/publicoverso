@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-9d59184f79
+titulo: [PDF] Douglas-Venicio-Velloso.pdf - UFMG
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Carreira e Conquistas
+data: 08/09/2026
+fonte: www.ufmg.br › prorh › wp-content › uploads › 2026/09 › Douglas-...
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.ufmg.br/prorh/wp-content/uploads/2026/09/Douglas-Venicio-Velloso.pdf
+---
+
+
+
+Fonte original: https://www.ufmg.br/prorh/wp-content/uploads/2026/09/Douglas-Venicio-Velloso.pdf

@@ -11342,3 +11342,286 @@
 [2026-09-07 23:22:15]   [NOVO EDITAL] Concurso Anatel: Pedido de edital enviado ao MGI! 191 vagas!
 [2026-09-07 23:22:17] === Radar concluído. 6 novos editais adicionados. Total: 384. ===
 [2026-09-07 23:22:17] Revise os editais com status "Em Analise" e altere para "Inscrições Abertas" apos verificacao manual.
+[2026-09-08 16:12:41] === Iniciando mineracao de histórias ===
+[2026-09-08 16:12:41] Registros existentes no JSON / Historico: 269
+[2026-09-08 16:12:41] Buscando: [Cultura Pop e Gastronomia] ...
+[2026-09-08 16:12:42]   Resultados retornados: 10
+[2026-09-08 16:12:42]   [EXCLUIDO] Policial militar é preso suspeito de feminicídio em Embu das...
+[2026-09-08 16:12:42]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:42]   [EXCLUIDO] Quem é Vinícius Costa Silva, policial militar preso em inves...
+[2026-09-08 16:12:42]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:42]   [EXCLUIDO] Exames periciais levam à prisão de PM por morte da esposa em...
+[2026-09-08 16:12:42]   [EXCLUIDO] Policial militar é preso no velório da esposa; ele é suspeit...
+[2026-09-08 16:12:42]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:42]   [EXCLUIDO] BO aponta 'dúvida razoável' sobre suicídio de esposa de PM c...
+[2026-09-08 16:12:42]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:42]   [EXCLUIDO] Um policial militar que estava de folga interveio em um assa...
+[2026-09-08 16:12:42]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:42]   [EXCLUIDO] FEIRA DE ARTES E GASTRONOMIA SERÁ REALIZADA NESTE ......
+[2026-09-08 16:12:42]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:42]   [EXCLUIDO] MORMAÇO CULTURAL 2026: 2ª edição do Rolê Gastronômico ......
+[2026-09-08 16:12:42]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:42]   [EXCLUIDO] Futebol, gastronomia e diversão: Praça... - Prefeitura de Co...
+[2026-09-08 16:12:42]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:42]   [EXCLUIDO] Chef convidado Fábio Lessa Formado em gastronomia pela Puc ....
+[2026-09-08 16:12:44] Buscando: [Artes e Literatura] ...
+[2026-09-08 16:12:45]   Resultados retornados: 10
+[2026-09-08 16:12:45]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:45]   [EXCLUIDO] A AVÁ Editora dá as boas-vindas aos cinco autores que passam...
+[2026-09-08 16:12:46] [AVISO] Scraper API falhou para https://www.facebook.com/ComunicacaoUfu/posts/graduado-em-gest%C3%A3o-p%C3%BAblica-e-t%C3%A9cnico-administrativo-no-instituto-de-artes-da-ufu/1607128224787255/: 403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=5a40d600da34173c51b2a4f83b57ac08&url=https%3A%2F%2Fwww.facebook.com%2FComunicacaoUfu%2Fposts%2Fgraduado-em-gest%25C3%25A3o-p%25C3%25BAblica-e-t%25C3%25A9cnico-administrativo-no-instituto-de-artes-da-ufu%2F1607128224787255%2F&render=false
+[2026-09-08 16:12:48]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/09/08/ufu---universidade-federal-de-uberlândia---facebook.txt (Editoria: Artes e Literatura)
+[2026-09-08 16:12:48]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:48]   [EXCLUIDO] A lista para os interessados em participar do Show do ... - ...
+[2026-09-08 16:12:48]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:48]   [EXCLUIDO] A SENTINELA QUE FICA: Milton Rezende - Amaité Poesia & Cia |...
+[2026-09-08 16:12:48]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:48]   [EXCLUIDO] TV Universitária de Uberlândia on Instagram: "Fernando Neves...
+[2026-09-08 16:12:48]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:48]   [EXCLUIDO] Elenco de 'Quem ama cuida' presta apoio a ator da novela apó...
+[2026-09-08 16:12:48]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:48]   [EXCLUIDO] Foi Machado de Assis quem falou e eu concordei, você ... - I...
+[2026-09-08 16:12:48]   [EXPURGADO ESTRANGEIRO] Menciona "porto" sem vínculo com o Brasil.
+[2026-09-08 16:12:48]   [EXCLUIDO] Antes de Porto Solidão Jessé já fazia muito sucesso - Facebo...
+[2026-09-08 16:12:49] [AVISO] Scraper API falhou para https://pt.linkedin.com/posts/ufuoficial_graduado-em-gest%C3%A3o-p%C3%BAblica-e-t%C3%A9cnico-administrativo-activity-7501217538492719104-KNsb: 403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=5a40d600da34173c51b2a4f83b57ac08&url=https%3A%2F%2Fpt.linkedin.com%2Fposts%2Fufuoficial_graduado-em-gest%25C3%25A3o-p%25C3%25BAblica-e-t%25C3%25A9cnico-administrativo-activity-7501217538492719104-KNsb&render=false
+[2026-09-08 16:12:51]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/09/08/publicação-de-ufu---universidade-federal-de-uberlândia---lin.txt (Editoria: Artes e Literatura)
+[2026-09-08 16:12:51]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:51]   [EXCLUIDO] Entrevista com o escritor capixaba Vaninho Viana...
+[2026-09-08 16:12:54] Buscando: [Esportes e Aventura] ...
+[2026-09-08 16:12:54]   Resultados retornados: 10
+[2026-09-08 16:12:55] [AVISO] Scraper API falhou para https://www.instagram.com/p/DdAJwusjVsn/: 403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=5a40d600da34173c51b2a4f83b57ac08&url=https%3A%2F%2Fwww.instagram.com%2Fp%2FDdAJwusjVsn%2F&render=false
+[2026-09-08 16:12:57]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/09/08/correndo-uma-maratona-sendo-servidor-público-advogado-no.txt (Editoria: Esportes e Aventura)
+[2026-09-08 16:12:57]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:57]   [EXCLUIDO] POLICIAL MILITAR DO 27º BPM/I CONQUISTA O TÍTULO NO JIU ......
+[2026-09-08 16:12:57]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:57]   [EXCLUIDO] Conheci o Cléber Climaco (@climacocleber ) no Triatlon há mu...
+[2026-09-08 16:12:57]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:57]   [EXCLUIDO] Policial militar de Santa Catarina conquista 5º lugar geral ...
+[2026-09-08 16:12:57]   [EXPURGADO POLÍTICO] Contém termo político: "senador".
+[2026-09-08 16:12:57]   [EXCLUIDO] Policial Militar de Senador Canedo conquista títulos de xadr...
+[2026-09-08 16:12:57]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:57]   [EXCLUIDO] Recentemente, um atleta brasileiro oito vezes campeão mundi....
+[2026-09-08 16:12:57]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:57]   [EXCLUIDO] Mexa-SE - Setembro 2026 - PINTURA, HIDROGINÁSTICA E CLUBE .....
+[2026-09-08 16:12:57]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:57]   [EXCLUIDO] Paracuru sediará Encontro dos Servidores deste ano - IFCE...
+[2026-09-08 16:12:57]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:12:57]   [EXCLUIDO] PROEBOM 3ºBBM - Corpo de Bombeiros Militar do Estado de Goiá...
+[2026-09-08 16:12:58] [AVISO] Scraper API falhou para https://www.facebook.com/leandro.cotrim.712/videos/ele-tem-um-sonho-de-se-tornar-bombeiro-militar-%F0%9D%90%93%F0%9D%90%A1%F0%9D%90%A2%F0%9D%90%9A%F0%9D%90%A0%F0%9D%90%A8-%F0%9D%90%8F%F0%9D%90%9E%F0%9D%90%AB%F0%9D%90%9E%F0%9D%90%A2%F0%9D%90%AB%F0%9D%90%9A-%F0%9D%90%81%F0%9D%90%A8%F0%9D%90%A6%F0%9D%90%9B%F0%9D%90%9E%F0%9D%90%A2%F0%9D%90%AB%F0%9D%90%A8-%F0%9D%90%9E-%F0%9D%90%AD%F0%9D%90%AB%F0%9D%90%A2%F0%9D%90%9A%F0%9D%90%AD%F0%9D%90%A5%F0%9D%90%9E/1845586680158703/: 403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=5a40d600da34173c51b2a4f83b57ac08&url=https%3A%2F%2Fwww.facebook.com%2Fleandro.cotrim.712%2Fvideos%2Fele-tem-um-sonho-de-se-tornar-bombeiro-militar-%25F0%259D%2590%2593%25F0%259D%2590%25A1%25F0%259D%2590%25A2%25F0%259D%2590%259A%25F0%259D%2590%25A0%25F0%259D%2590%25A8-%25F0%259D%2590%258F%25F0%259D%2590%259E%25F0%259D%2590%25AB%25F0%259D%2590%259E%25F0%259D%2590%25A2%25F0%259D%2590%25AB%25F0%259D%2590%259A-%25F0%259D%2590%2581%25F0%259D%2590%25A8%25F0%259D%2590%25A6%25F0%259D%2590%259B%25F0%259D%2590%259E%25F0%259D%2590%25A2%25F0%259D%2590%25AB%25F0%259D%2590%25A8-%25F0%259D%2590%259E-%25F0%259D%2590%25AD%25F0%259D%2590%25AB%25F0%259D%2590%25A2%25F0%259D%2590%259A%25F0%259D%2590%25AD%25F0%259D%2590%25A5%25F0%259D%2590%259E%2F1845586680158703%2F&render=false
+[2026-09-08 16:13:00]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/09/08/ele-tem-um-sonho-de-se-tornar-bombeiro-militar-thiago-pereir.txt (Editoria: Esportes e Aventura)
+[2026-09-08 16:13:03] Buscando: [Ciência e Tecnologia] ...
+[2026-09-08 16:13:04]   Resultados retornados: 0
+[2026-09-08 16:13:06] Buscando: [Ciência e Tecnologia] ...
+[2026-09-08 16:13:07]   Resultados retornados: 1
+[2026-09-08 16:13:10] Buscando: [Solidariedade e Comunidade] ...
+[2026-09-08 16:13:10]   Resultados retornados: 0
+[2026-09-08 16:13:13] Buscando: [Histórias e Superação] ...
+[2026-09-08 16:13:14]   Resultados retornados: 0
+[2026-09-08 16:13:16] Buscando: [Carreira e Conquistas] ...
+[2026-09-08 16:13:17]   Resultados retornados: 10
+[2026-09-08 16:13:17]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:17]   [EXCLUIDO] [PDF] Barbara-Valsechi-Carneiro.pdf - UFMG...
+[2026-09-08 16:13:17]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:17]   [EXCLUIDO] Cerca de 50 servidores e colaboradores da Prefeitura de Pelo...
+[2026-09-08 16:13:17]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:17]   [EXCLUIDO] A Assistência Social sentiu a necessidade de avançar ... - I...
+[2026-09-08 16:13:17]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:17]   [EXCLUIDO] 5 de setembro de 2026 - Prefeitura de Cubatão...
+[2026-09-08 16:13:17]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:17]   [EXCLUIDO] Foram quatro dias de muito aprendizado, troca de ... - Insta...
+[2026-09-08 16:13:17]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:17]   [EXCLUIDO] Inscrições abertas: Oficina do Código oferece capacitação gr...
+[2026-09-08 16:13:17]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:17]   [EXCLUIDO] CONTRATA+BRASIL & USO DA IA APÓS A LICITAÇÃO - Doity...
+[2026-09-08 16:13:17]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:17]   [EXCLUIDO] [PDF] IDENTIFICAÇÃO INTRODUÇÃO O presente memorial descritiv...
+[2026-09-08 16:13:20] Buscando: [Carreira e Conquistas] ...
+[2026-09-08 16:13:21]   Resultados retornados: 10
+[2026-09-08 16:13:21] [AVISO] Scraper API falhou para https://www.instagram.com/reel/Dc_3eKTFZLD/: 403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=5a40d600da34173c51b2a4f83b57ac08&url=https%3A%2F%2Fwww.instagram.com%2Freel%2FDc_3eKTFZLD%2F&render=false
+[2026-09-08 16:13:24]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/09/08/reajuste-salarial-2027-do-servidor-público-tudo---instagram.txt (Editoria: Carreira e Conquistas)
+[2026-09-08 16:13:24] [AVISO] Scraper API falhou para https://www.facebook.com/AlternativaRJ/videos/reajuste-salarial-2027-do-servidor-p%C3%BAblico-tudo-que-sabemos-at%C3%A9-agora-confirao-g/1059790090182749/: 403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=5a40d600da34173c51b2a4f83b57ac08&url=https%3A%2F%2Fwww.facebook.com%2FAlternativaRJ%2Fvideos%2Freajuste-salarial-2027-do-servidor-p%25C3%25BAblico-tudo-que-sabemos-at%25C3%25A9-agora-confirao-g%2F1059790090182749%2F&render=false
+[2026-09-08 16:13:26]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/09/08/reajuste-salarial-2027-do-servidor-público-tudo---facebook.txt (Editoria: Carreira e Conquistas)
+[2026-09-08 16:13:27]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:27]   [EXCLUIDO] Comissão para Reconhecimento de Saberes e Competências aos ....
+[2026-09-08 16:13:27] [AVISO] Scraper API falhou para https://www.ufmg.br/prorh/wp-content/uploads/2026/09/Douglas-Venicio-Velloso.pdf: 403 Client Error: Forbidden for url: https://api.scraperapi.com/?api_key=5a40d600da34173c51b2a4f83b57ac08&url=https%3A%2F%2Fwww.ufmg.br%2Fprorh%2Fwp-content%2Fuploads%2F2026%2F09%2FDouglas-Venicio-Velloso.pdf&render=false
+[2026-09-08 16:13:30]   [RASCUNHO] /home/runner/work/publicoverso/publicoverso/pre_curadoria/2026/09/08/pdf-douglas-venicio-vellosopdf---ufmg.txt (Editoria: Carreira e Conquistas)
+[2026-09-08 16:13:30]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:30]   [EXCLUIDO] Lei que fixa os subsídios dos Agentes Políticos - ES...
+[2026-09-08 16:13:30]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:30]   [EXCLUIDO] 4 days ago - Instagram...
+[2026-09-08 16:13:30]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:30]   [EXCLUIDO] Tutorial de requerimento do RSC-PCCTAE na UFMG - Sindifes-MG...
+[2026-09-08 16:13:30]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:30]   [EXCLUIDO] Desenvolvimento profissional é um direito previsto na carrei...
+[2026-09-08 16:13:30]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:30]   [EXCLUIDO] [PDF] PDF 2026 Guia de Plano de Carreira A4 v1 - UNESC...
+[2026-09-08 16:13:30]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:30]   [EXCLUIDO] Petição Inicial - TJPR - Ação Parte Autora é Servidor(A) Púb...
+[2026-09-08 16:13:32] === Mineracao concluida. 7 novos rascunhos salvos em pre_curadoria/. ===
+[2026-09-08 16:13:32] Utilize scripts/promover_materia.py para aprovar e publicar as materias.
+[2026-09-08 16:13:32] === Iniciando minerador de Protagonistas ("Vida Além do Trabalho") ===
+[2026-09-08 16:13:32] Base anti-duplicidade: 1236 URLs, 1420 slugs, 1236 títulos.
+[2026-09-08 16:13:32] Buscando eixo humano: [Literatura e Artes] ...
+[2026-09-08 16:13:33]   Resultados brutos: 10
+[2026-09-08 16:13:33]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:33]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:33]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:33]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:33]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:33]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:33]   [DUPLICATA IGNORADA] URL idêntica já minerada
+[2026-09-08 16:13:33]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:33]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:33]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:36] Buscando eixo humano: [Literatura e Artes] ...
+[2026-09-08 16:13:42]   Resultados brutos: 2
+[2026-09-08 16:13:42]   [EXPURGADO POLÍTICO] Contém termo político: "deputado".
+[2026-09-08 16:13:42]   [EXPURGADO POLÍTICO] Contém termo político: "deputado".
+[2026-09-08 16:13:45] Buscando eixo humano: [Esportes e Desafios] ...
+[2026-09-08 16:13:45]   Resultados brutos: 1
+[2026-09-08 16:13:46]   [DUPLICATA IGNORADA] URL idêntica já minerada
+[2026-09-08 16:13:49] Buscando eixo humano: [Esportes e Desafios] ...
+[2026-09-08 16:13:50]   Resultados brutos: 3
+[2026-09-08 16:13:50]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:50]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:50]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:13:52] Buscando eixo humano: [Entretenimento e Cultura Pop] ...
+[2026-09-08 16:13:53]   Resultados brutos: 0
+[2026-09-08 16:13:56] Buscando eixo humano: [Entretenimento e Cultura Pop] ...
+[2026-09-08 16:13:57]   Resultados brutos: 0
+[2026-09-08 16:13:59] Buscando eixo humano: [Voluntariado e Causa Social] ...
+[2026-09-08 16:14:00]   Resultados brutos: 0
+[2026-09-08 16:14:02] Buscando eixo humano: [Voluntariado e Causa Social] ...
+[2026-09-08 16:14:03]   Resultados brutos: 0
+[2026-09-08 16:14:05] Buscando eixo humano: [Trajetoria e Superacao] ...
+[2026-09-08 16:14:06]   Resultados brutos: 0
+[2026-09-08 16:14:08] Buscando eixo humano: [Trajetoria e Superacao] ...
+[2026-09-08 16:14:09]   Resultados brutos: 0
+[2026-09-08 16:14:12] Buscando eixo humano: [Virais e Inusitados] ...
+[2026-09-08 16:14:12]   Resultados brutos: 10
+[2026-09-08 16:14:12]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:14:12]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:14:12]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:14:12]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:14:12]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:14:12]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:14:12]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:14:12]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:14:12]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:14:12]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:14:15] === Mineração Concluída: 0 novas matérias, 2 duplicatas bloqueadas, 0 burocracias expurgadas. ===
+[2026-09-08 16:14:15] === Iniciando Robô de Movimentação Funcional (Portal Publicoverso + DOU Oficial Direct) ===
+[2026-09-08 16:14:15] URLs de movimentação no historico: 1153
+[2026-09-08 16:14:15] --- [CAMADA 1] Minerando atos oficiais diretamente do in.gov.br (DOU) ---
+[2026-09-08 16:14:15] Buscando DOU Nativo: [Exoneração a Pedido (DOU)] ("exonerar a pedido")...
+[2026-09-08 16:14:17]   Encontrados 20 atos no DOU hoje.
+[2026-09-08 16:14:17]   [ATO DOU REGISTRADO] PORTARIA DIRAP Nº 4.928/1PC, DE 3 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:17]   [ATO DOU REGISTRADO] PORTARIA Nº 1.013, DE 4 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:17]   [ATO DOU REGISTRADO] ATO PRESI Nº 271, DE 3 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:17]   [ATO DOU REGISTRADO] PORTARIA Nº 8.504, DE 3 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:17]   [ATO DOU REGISTRADO] PORTARIA DE PESSOAL SE/CC/PR Nº 791, DE 4 DE SETEMBRO DE 202... (08/09/2026)
+[2026-09-08 16:14:17]   [ATO DOU REGISTRADO] PORTARIA SE/MF N° 2.690, DE 4 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:17]   [ATO DOU REGISTRADO] PORTARIA DE PESSOAL Nº 864, DE 4 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:17]   [ATO DOU REGISTRADO] PORTARIA DE PESSOAL Nº 860, DE 4 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:17]   [ATO DOU REGISTRADO] PORTARIA FUNDAJ Nº 230, DE 4 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:17]   [ATO DOU REGISTRADO] PORTARIA CADE Nº 396, de 03 de setembro de 2026... (08/09/2026)
+[2026-09-08 16:14:17]   [ATO DOU REGISTRADO] PORTARIA Nº 154, DE 3 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:17]   [ATO DOU REGISTRADO] Portaria de Pessoal DGP/SSC/MGI Nº 10.744, DE 4 DE setembro ... (08/09/2026)
+[2026-09-08 16:14:17]   [ATO DOU REGISTRADO] PORTARIA nº 1.671, DE 1º DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:17]   [ATO DOU REGISTRADO] PORTARIAS DE 4 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:17]   [ATO DOU REGISTRADO] PORTARIA DE PESSOAL SE/MAPA Nº 1.506, DE 4 DE SETEMBRO DE 20... (08/09/2026)
+[2026-09-08 16:14:17]   [ATO DOU REGISTRADO] PORTARIA Nº 2.806, DE 1º DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:17]   [ATO DOU REGISTRADO] Portaria COGEP/MS nº 1.104, de 3 de Setembro de 2026... (08/09/2026)
+[2026-09-08 16:14:18]   [ATO DOU REGISTRADO] PORTARIA DAP PROGESP UFCSPA Nº 7.878, DE 31 DE AGOSTO DE 202... (08/09/2026)
+[2026-09-08 16:14:18]   [ATO DOU REGISTRADO] PORTARIA - C Ex Nº 1.177, DE 4 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:18]   [ATO DOU REGISTRADO] Portaria de Pessoal DGP/SSc/MGI Nº 10.752, DE 4 DE setembro ... (08/09/2026)
+[2026-09-08 16:14:20] Buscando DOU Nativo: [Demissão a Bem do Serviço Público (DOU)] ("demissão")...
+[2026-09-08 16:14:21]   Encontrados 0 atos no DOU hoje.
+[2026-09-08 16:14:24] Buscando DOU Nativo: [Portaria de Nomeação (DOU)] ("nomear")...
+[2026-09-08 16:14:27]   Encontrados 20 atos no DOU hoje.
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] EDITAL Nº 2 DE 4 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] EDITAL DE CONVOCAÇÃO... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] EDITAL Nº 10, de 4 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] EDITAL Nº 21, DE 4 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] Edital nº 15/2026... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] EXTRATO DE CESSÃO DE USO... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] EDITAL DE INTIMAÇÃO Nº 17, DE 3 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] EDITAL Nº 2, de 8 de setembro de 2026... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] AVISO DE CREDENCIAMENTO Nº 1/2024... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] EDITAL ELEITORAL Nº 2/2026... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] EDITAL nº 813-TCU/SEPROC, DE 28 DE AGOSTO DE 2026... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] EDITAL Nº 41/2026... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] EDITAL DE INTIMAÇÃO... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] EDITAL Nº 853-TCU/SEPROC, DE 4 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] EDITAL DE INTIMAÇÃO... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] EXTRATO DE TERMO ADITIVO... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] Edital - DPU-SP/GABDPC SP - Nº 33, DE 4 DE setembro DE 2026... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] EXTRATO DE CONVÊNIO... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] EDITAL Nº 844-TCU/SEPROC, DE 4 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:27]   [ATO DOU REGISTRADO] EXTRATO DE CONTRATO... (08/09/2026)
+[2026-09-08 16:14:30] Buscando DOU Nativo: [Vacância de Cargo (DOU)] ("conceder vacância")...
+[2026-09-08 16:14:32]   Encontrados 1 atos no DOU hoje.
+[2026-09-08 16:14:32]   [ATO DOU REGISTRADO] Portaria de Pessoal GABIR/UTFPR nº 1.437, de 3 de setembro d... (08/09/2026)
+[2026-09-08 16:14:35] Buscando DOU Nativo: [Aposentadoria Voluntária (DOU)] ("conceder aposentadoria")...
+[2026-09-08 16:14:37]   Encontrados 20 atos no DOU hoje.
+[2026-09-08 16:14:37]   [ATO DOU REGISTRADO] PORTARIA CGBEN/DECIPEX/SGP/MGI Nº 10.763, DE 4 DE SETEMBRO D... (08/09/2026)
+[2026-09-08 16:14:37]   [ATO DOU REGISTRADO] PORTARIA Nº 591, DE 3 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:37]   [ATO DOU REGISTRADO] PORTARIA Nº 1.549, DE 28 DE AGOSTO DE 2026... (08/09/2026)
+[2026-09-08 16:14:37]   [ATO DOU REGISTRADO] ATO Nº 4.867, DE 3 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:37]   [ATO DOU REGISTRADO] PORTARIA - DAP/DGP/C Ex Nº 773, DE 3 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:37]   [ATO DOU REGISTRADO] PORTARIA Nº 1.071, DE 4 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:37]   [ATO DOU REGISTRADO] PORTARIA Nº 1.809, DE 21 DE AGOSTO DE 2026... (08/09/2026)
+[2026-09-08 16:14:37]   [ATO DOU REGISTRADO] PORTARIA SEGEP/RJ Nº 1.245, DE 3 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:37]   [ATO DOU REGISTRADO] PORTARIA CGBEN/DECIPEX/SGP/MGI Nº 10.771, DE 4 DE SETEMBRO D... (08/09/2026)
+[2026-09-08 16:14:37]   [ATO DOU REGISTRADO] PORTARIA PROGEP-DLCP Nº 262, DE 21 DE AGOSTO DE 2026... (08/09/2026)
+[2026-09-08 16:14:37]   [ATO DOU REGISTRADO] PORTARIA Nº 1.309, DE 4 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:37]   [ATO DOU REGISTRADO] ATO SEGEP.PR Nº 84, de 4 de agosto de 2026... (08/09/2026)
+[2026-09-08 16:14:37]   [ATO DOU REGISTRADO] PORTARIA DG/SGP nº 814, de 2 de setembro de 2026... (08/09/2026)
+[2026-09-08 16:14:38]   [ATO DOU REGISTRADO] PORTARIA GP/SGPE Nº 2.376, DE 3 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:38]   [ATO DOU REGISTRADO] PORTARIA Nº 2.467, DE 3 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:38]   [ATO DOU REGISTRADO] ATOS de 3 de agosto de 2026... (08/09/2026)
+[2026-09-08 16:14:38]   [ATO DOU REGISTRADO] PORTARIA Nº 127.637, DE 3 DE SETEMBRO DE 2026... (08/09/2026)
+[2026-09-08 16:14:38]   [ATO DOU REGISTRADO] PORTARIA CGBEN/DECIPEX/SGP/MGI Nº 10.742, DE 4 DE SETEMBRO D... (08/09/2026)
+[2026-09-08 16:14:38]   [ATO DOU REGISTRADO] PORTARIA CGBEN/DECIPEX/SGP/MGI Nº 10.622, DE 2 DE SETEMBRO D... (08/09/2026)
+[2026-09-08 16:14:38]   [ATO DOU REGISTRADO] PORTARIA DE PESSOAL CGGP/SPOA/SE/MME Nº 54, DE 3 DE SETEMBRO... (08/09/2026)
+[2026-09-08 16:14:40] --- [CAMADA 2] Minerando notícias e imprensa funcional via Serper News ---
+[2026-09-08 16:14:40] Buscando imprensa funcional: [Posse e Nomeação] ...
+[2026-09-08 16:14:42]   Resultados brutos: 0
+[2026-09-08 16:14:44] Buscando imprensa funcional: [Posse e Nomeação] ...
+[2026-09-08 16:14:45]   Resultados brutos: 0
+[2026-09-08 16:14:47] Buscando imprensa funcional: [Aposentadoria e Legado] ...
+[2026-09-08 16:14:48]   Resultados brutos: 10
+[2026-09-08 16:14:48]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:14:48]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:14:48]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:14:48]   [MOVIMENTAÇÃO REGISTRADA] Álvaro Barreto o mestre que ajudou a construir o Jiu-Jitsu b... (Fonte: jiujitsubjj.com › alvaro-barreto-o-mestre-que-ajudou-a-construir-o-jiu-jitsu...)
+[2026-09-08 16:14:51]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:14:51]   [EXPURGADO SEM VÍNCULO] Não encontrada âncora comprovatória de serviço público BR.
+[2026-09-08 16:14:53] Buscando imprensa funcional: [Demissão a Bem do Serviço Público e PAD] ...
+[2026-09-08 16:14:55]   Resultados brutos: 2
+[2026-09-08 16:14:55]   [MOVIMENTAÇÃO REGISTRADA] universidade federal de santa catarina - Boletim Oficial... (Fonte: boletimoficial.ufsc.br › page)
+[2026-09-08 16:15:00] === Robô de Movimentação Funcional concluído. 63 novos registros adicionados. ===
+[2026-09-08 16:15:00] === Iniciando Radar de Concursos ===
+[2026-09-08 16:15:00] Editais existentes no radar: 384
+[2026-09-08 16:15:00] Buscando concursos: "inscrições abertas" ("concurso público" OR "processo seletivo") ("fed...
+[2026-09-08 16:15:01]   Resultados: 10
+[2026-09-08 16:15:01]   [NOVO EDITAL] Concursos Públicos
+[2026-09-08 16:15:03] Buscando concursos: "edital publicado" "concurso público" ("DOU" OR "Diário Oficial") "vag...
+[2026-09-08 16:15:04]   Resultados: 10
+[2026-09-08 16:15:07] Buscando concursos: site:cebraspe.org.br "inscrições" 2026...
+[2026-09-08 16:15:09]   Resultados: 10
+[2026-09-08 16:15:09]   [NOVO EDITAL] Edital - Cebraspe
+[2026-09-08 16:15:12] Buscando concursos: site:conhecimento.fgv.br "concurso" "inscrições" 2026...
+[2026-09-08 16:15:13]   Resultados: 10
+[2026-09-08 16:15:15] Buscando concursos: site:institutoaocp.org.br "edital" "inscrições abertas" 2026...
+[2026-09-08 16:15:17]   Resultados: 10
+[2026-09-08 16:15:19] Buscando concursos: "concurso público" ("Receita Federal" OR "Banco Central" OR "Senado" O...
+[2026-09-08 16:15:21]   Resultados: 10
+[2026-09-08 16:15:21]   [NOVO EDITAL] O Ministério da Gestão e da Inovação (MGI) autorizou ... - I
+[2026-09-08 16:15:21]   [NOVO EDITAL] Concurso Receita Federal 2026: Edital autorizado! 146 vagas!
+[2026-09-08 16:15:24] Buscando concursos: "concurso público" ("policial federal" OR "agente federal" OR "delegad...
+[2026-09-08 16:15:25]   Resultados: 10
+[2026-09-08 16:15:27] Buscando concursos: "concurso público" ("Anatel" OR "ANAC" OR "ANVISA" OR "IBGE" OR "IPEA"...
+[2026-09-08 16:15:28]   Resultados: 10
+[2026-09-08 16:15:28]   [NOVO EDITAL] Concurso Anatel: Pedido de edital enviado ao MGI! 191 vagas!
+[2026-09-08 16:15:31] === Radar concluído. 5 novos editais adicionados. Total: 389. ===
+[2026-09-08 16:15:31] Revise os editais com status "Em Analise" e altere para "Inscrições Abertas" apos verificacao manual.
