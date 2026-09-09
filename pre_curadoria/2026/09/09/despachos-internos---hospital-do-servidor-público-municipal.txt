@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-096954e9b9
+titulo: Despachos internos - Hospital do Servidor Público Municipal
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Solidariedade e Comunidade
+data: 09/09/2026
+fonte: prefeitura.sp.gov.br › web › hospital_do_servidor_publico_municipal
+status: Pendente
+status_triagem: Pendente
+url_original: https://prefeitura.sp.gov.br/web/hospital_do_servidor_publico_municipal/l/60544557
+---
+
+
+
+Fonte original: https://prefeitura.sp.gov.br/web/hospital_do_servidor_publico_municipal/l/60544557
