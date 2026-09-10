@@ -1,5 +1,65 @@
 [
   {
+    "id": "prot-a9f99741ec",
+    "data": "10/09/2026",
+    "categoria": "Esportes e Aventura",
+    "titulo": "Nayara Karoline é convocada para representar o Brasil no Mundial de Karatê-Dô",
+    "resumo": "Servidora municipal e faixa-preta 3º Dan, Nayara Karoline soma 29 anos no esporte e se prepara para disputar o Mundial no Egito.",
+    "fonte": "Obomdanoticia",
+    "url_original": "https://obomdanoticia.com.br/esportes/nayara-karoline-e-convocada-para-representar-o-brasil-no-mundial-de-karate-do/243883",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "prot-95e96937eb",
+    "data": "10/09/2026",
+    "categoria": "Artes e Literatura",
+    "titulo": "Corpo de servidor público é encontrado em estado de decomposição em residência, no Litoral Norte de AL",
+    "resumo": "Um servidor público foi encontrado morto dentro da própria casa na tarde desta quarta-feira (9), no bairro Alto da Boa Vista, em Barra de Santo Antônio,...",
+    "fonte": "Jaenoticia",
+    "url_original": "https://jaenoticia.com.br/noticias/2026/09/09/151001-corpo-de-servidor-publico-e-encontrado-em-estado-de-decomposicao-em-residencia-no-litoral-norte-de-al",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-14dd40aafc",
+    "data": "10/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "Quando falamos em aposentadoria de servidor público ... - Instagram",
+    "resumo": "",
+    "fonte": "www.instagram.com › reel › DdFEdFTxJij",
+    "url_original": "https://www.instagram.com/reel/DdFEdFTxJij/",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-caafb48491",
+    "data": "10/09/2026",
+    "categoria": "Solidariedade e Comunidade",
+    "titulo": "Despachos internos - Hospital do Servidor Público Municipal",
+    "resumo": "",
+    "fonte": "prefeitura.sp.gov.br › web › hospital_do_servidor_publico_municipal",
+    "url_original": "https://prefeitura.sp.gov.br/web/hospital_do_servidor_publico_municipal/l/60544865",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-6cd17e93ec",
+    "data": "10/09/2026",
+    "categoria": "Solidariedade e Comunidade",
+    "titulo": "Ministério Público do Estado de Mato Grosso - Facebook",
+    "resumo": "",
+    "fonte": "www.facebook.com › mpemt › posts › a-promotoria-de-justiça-de-nova-m...",
+    "url_original": "https://www.facebook.com/mpemt/posts/a-promotoria-de-justi%C3%A7a-de-nova-mutum-a-264-km-de-cuiab%C3%A1-recebeu-nesta-quarta-fe/1390675883217981/",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-edbf7004d6",
+    "data": "10/09/2026",
+    "categoria": "Solidariedade e Comunidade",
+    "titulo": "Hospital do Servidor Público Municipal - Prefeitura de São Paulo",
+    "resumo": "",
+    "fonte": "prefeitura.sp.gov.br › 10-de-setembro-dia-mundial-de-prevenção-ao-suicídio",
+    "url_original": "https://prefeitura.sp.gov.br/web/hospital_do_servidor_publico_municipal/w/10-de-setembro-dia-mundial-de-preven%C3%A7%C3%A3o-ao-suic%C3%ADdio",
+    "status_curadoria": "Pendente"
+  },
+  {
     "id": "mov-1f3120d874",
     "data": "10/09/2026",
     "categoria": "Carreira e Conquistas",

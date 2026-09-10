@@ -1664,6 +1664,38 @@
     "data_atualizacao": "09/09/2026"
   },
   {
+    "id": "concurso-83172492",
+    "órgão": "Veja os concursos previstos para 2026, com salários de até R$ 30 mil",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 66,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "R$ 30",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://g1.globo.com/trabalho-e-carreira/concursos/noticia/2026/01/24/ibge-camara-e-mais-veja-os-concursos-abertos-e-previstos-para-2026-com-salarios-de-ate-r-30-mil.ghtml",
+    "status": "Em Analise",
+    "destaque": true,
+    "data_atualizacao": "10/09/2026"
+  },
+  {
+    "id": "concurso-c81f081a",
+    "órgão": "Concurso Anatel 2026",
+    "sigla": "",
+    "esfera": "Federal",
+    "cargos": "Consultar edital",
+    "vagas": 362,
+    "escolaridade": "Consultar edital",
+    "remuneracao_max": "Consultar edital",
+    "periodo_inscricao": "Consultar edital",
+    "banca": "Não identificada",
+    "link_edital": "https://jcconcursos.com.br/concurso/concurso-anatel-79513",
+    "status": "Em Analise",
+    "destaque": true,
+    "data_atualizacao": "10/09/2026"
+  },
+  {
     "id": "concurso-4c9ab6d8",
     "órgão": "Concursos em Andamento - Fundatec",
     "sigla": "",
