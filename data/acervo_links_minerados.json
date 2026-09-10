@@ -1,5 +1,35 @@
 [
   {
+    "id": "prot-0bfb88fc1b",
+    "data": "10/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Influenciador César Rincon é detido em operação da Polícia Civil em rancho de Santa Catarina",
+    "resumo": "Influenciador foi levado à delegacia após operação em Araranguá. Ele pagou fiança de R$ 10 mil e responderá em liberdade por posse de munição.",
+    "fonte": "Tribunahoje",
+    "url_original": "https://tribunahoje.com/noticias/brasil/2026/09/10/193392-influenciador-cesar-rincon-e-detido-em-operacao-da-policia-civil-em-rancho-de-santa-catarina",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-37efd0533a",
+    "data": "10/09/2026",
+    "categoria": "Artes e Literatura",
+    "titulo": "Servidor público morre após caçamba tocar em fios de alta tensão ...",
+    "resumo": "",
+    "fonte": "g1.globo.com › servidor-publico-morre-apos-descarga-eletrica-na-bahia",
+    "url_original": "https://g1.globo.com/ba/feira-de-santana-regiao/noticia/2026/09/10/servidor-publico-morre-apos-descarga-eletrica-na-bahia.ghtml",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "auto-db65d4baa1",
+    "data": "10/09/2026",
+    "categoria": "Esportes e Aventura",
+    "titulo": "Servidor público suspeito de fazer corrida em app durante expediente",
+    "resumo": "",
+    "fonte": "g1.globo.com › tocantins › noticia › 2026/09/10 › servidor-publico-e-susp...",
+    "url_original": "https://g1.globo.com/to/tocantins/noticia/2026/09/10/servidor-publico-e-suspeito-de-trabalhar-como-motorista-de-aplicativo-durante-o-horario-de-expediente.ghtml",
+    "status_curadoria": "Pendente"
+  },
+  {
     "id": "prot-a9f99741ec",
     "data": "10/09/2026",
     "categoria": "Esportes e Aventura",
