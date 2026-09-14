@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-1b26c5b979
+titulo: 612 – Morre, aos 87 anos, o antigo servidor do INSS e músico ...
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Artes e Literatura
+data: 14/09/2026
+fonte: www.jornaldasegunda.com.br › CIDADE
+status: Pendente
+status_triagem: Pendente
+url_original: https://www.jornaldasegunda.com.br/612-morre-aos-87-anos-o-musico-aparicio-sacconi/
+---
+
+
+
+Fonte original: https://www.jornaldasegunda.com.br/612-morre-aos-87-anos-o-musico-aparicio-sacconi/
