@@ -1,0 +1,17 @@
+---
+id_mineracao: min-protagonista-20260914175357
+titulo: Influenciador César Rincon é autuado após polícia encontrar 329 munições em rancho em SC
+resumo: Polícia Civil cumpriu mandado após investigação iniciada há cerca de dois meses; influenciador pagou R$ 10 mil de fiança e responderá em liberdade.
+autor: Curadoria Publicoverso
+categoria: Policial e Segurança Pública
+eixo_tematico: Virais e Inusitados
+fonte: Jornaldr1
+url_original: https://jornaldr1.com.br/influenciador-cesar-rincon-e-autuado-apos-policia-encontrar-329-municoes-em-rancho-em-sc
+link_status: Verificado (HTTP 200)
+data_verificacao: 14/09/2026 17:53
+status: Pendente
+---
+
+Polícia Civil cumpriu mandado após investigação iniciada há cerca de dois meses; influenciador pagou R$ 10 mil de fiança e responderá em liberdade.
+
+Fonte original: https://jornaldr1.com.br/influenciador-cesar-rincon-e-autuado-apos-policia-encontrar-329-municoes-em-rancho-em-sc

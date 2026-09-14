@@ -1,0 +1,17 @@
+---
+id_mineracao: min-protagonista-20260914175402
+titulo: Rincon é preso em operação da Polícia Civil e paga fiança de R$ 10 mil
+resumo: A Polícia Civil prendeu o influenciador digital César Rincon nesta quarta-feira (9), durante uma operação em um rancho na área rural de Araranguá,...
+autor: Curadoria Publicoverso
+categoria: Cultura Pop e Gastronomia
+eixo_tematico: Virais e Inusitados
+fonte: Vtvnews
+url_original: https://vtvnews.com.br/noticias/rincon-e-preso-em-operacao-da-policia-civil-e-paga-fianca-de-r-10-mil-lg
+link_status: Verificado (HTTP 200)
+data_verificacao: 14/09/2026 17:54
+status: Pendente
+---
+
+A Polícia Civil prendeu o influenciador digital César Rincon nesta quarta-feira (9), durante uma operação em um rancho na área rural de Araranguá,...
+
+Fonte original: https://vtvnews.com.br/noticias/rincon-e-preso-em-operacao-da-policia-civil-e-paga-fianca-de-r-10-mil-lg

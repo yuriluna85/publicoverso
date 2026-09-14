@@ -1,0 +1,16 @@
+---
+id_mineracao: auto-dbb3005b22
+titulo: PCD: como funciona a pontuação do INSS?
+resumo: 
+autor: Curadoria Publicoverso
+categoria: Histórias e Superação
+data: 14/09/2026
+fonte: rsadvocaciaprevidenciaria.com.br › blog › pcd-como-funciona-a-pontuaca...
+status: Pendente
+status_triagem: Pendente
+url_original: https://rsadvocaciaprevidenciaria.com.br/blog/pcd-como-funciona-a-pontuacao-do-inss-entenda-o-que-medico-e
+---
+
+
+
+Fonte original: https://rsadvocaciaprevidenciaria.com.br/blog/pcd-como-funciona-a-pontuacao-do-inss-entenda-o-que-medico-e
