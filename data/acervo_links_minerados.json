@@ -1,5 +1,615 @@
 [
   {
+    "id": "dou-ec14589be0",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA DCOMB-RPPU/INSS Nº 712, DE 18 DE SETEMBRO DE 2026",
+    "resumo": "SEI nº 35014.255061/2026-85 e Tarefa PAT nº 3613667180686, e na forma da legislação vigente, resolve: Conceder ... aposentadoria voluntária a servidora MARIA LUZIA DE AMORIM FREITAS, matrícula SIAPE 0",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-dcomb-rppu/inss-n-712-de-18-de-setembro-de-2026-732993122",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-3355d7893a",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA Nº 127.767, DE 18 DE SETEMBRO DE 2026",
+    "resumo": "Resolução BCB nº 340, de 21 de setembro de 2023, publicada no DOU de 25 de setembro de 2023, resolve: Conceder ... aposentadoria a FLAVIO HENRIQUE SOARES DE CAMPOS, matrícula nº 3.306.644-2, ocupante ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-127.767-de-18-de-setembro-de-2026-732994304",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-d322fd4e42",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA DCOMB-RPPU/INSS Nº 706, DE 17 DE SETEMBRO DE 2026",
+    "resumo": "SEI nº 35014.262833/2026-35 e Tarefa PAT nº 8173030666647, e na forma da legislação vigente, resolve: Conceder ... aposentadoria voluntária a servidora LIONETE CONDE GUIMARAES, matrícula SIAPE 1077735",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-dcomb-rppu/inss-n-706-de-17-de-setembro-de-2026-732994541",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-3007c280de",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA CGBEN/DECIPEX/SGP/MGI Nº 11.437, DE 18 DE SETEMBRO DE 2026",
+    "resumo": "de dezembro de 2018, e considerando o disposto no Processo nº 18001.000702/2026-96, resolve: Art. 1º Conceder ... aposentadoria voluntária ao servidor ROGERIO BAPTISTA TEIXEIRA FERNANDES, matrícula SI",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-cgben/decipex/sgp/mgi-n-11.437-de-18-de-setembro-de-2026-732994857",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-56a6effa24",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA Nº 300, DE 11 DE SETEMBRO DE 2026",
+    "resumo": "atribuições, e tendo em vista o que consta do Processo nº 0017138-59.2026.6.13.8000, resolve: Art. 1º Conceder ... aposentadoria voluntária por tempo de contribuição, com proventos integrais, à servid",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-300-de-11-de-setembro-de-2026-732997490",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-6f03aa425d",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "RETIFICAÇÃO",
+    "resumo": "setembro de 2026, publicada no DOU nº 172, de 11 de setembro de 2026, seção 2, pág.46; Onde se lê: \"Conceder ... aposentadoria voluntária, com integralidade e paridade ... \"; Leia-se: \"Conceder aposen",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/retificacao-732999620",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-f157e7c724",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA CGBEN/DECIPEX/SGP/MGI Nº 11.414, DE 18 DE SETEMBRO DE 2026",
+    "resumo": "de dezembro de 2018, e considerando o disposto no Processo nº 14021.099326/2025-17, resolve: Art. 1º Conceder ... aposentadoria voluntária ao servidor, ALEXANDRE GALINDO MALAQUIAS, matrícula SIAPE nº ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-cgben/decipex/sgp/mgi-n-11.414-de-18-de-setembro-de-2026-733000201",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-458612d3c4",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "ATO Nº 8.348, DE 14 DE SETEMBRO DE 2026",
+    "resumo": "tendo em vista o que consta do Processo Administrativo n.º 0025759-89.2026.4.03.8000 - SEI, resolve: Conceder ... APOSENTADORIA VOLUNTÁRIA, com proventos integrais, nos termos do art. 20 da EC n.º 103",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/ato-n-8.348-de-14-de-setembro-de-2026-733001441",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-57b3c69f34",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA Nº 2.761, de 23 de setembro de 2026",
+    "resumo": "legais, estatutárias e regimentais, e em face ao contido no processo nº 23115.015888/2026-31, resolve: Conceder ... aposentadoria Voluntária a MARIA DA CONCEICAO SANTOS SILVA, ocupante do cargo de AUX",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-2.761-de-23-de-setembro-de-2026-733007096",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-260d6138b4",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "ATO PRESI Nº 287, DE 17 DE SETEMBRO DE 2026",
+    "resumo": "legais e regimentais e tendo em vista o constante nos autos do PAe 0008460-15.2026.4.06.8001, resolve: CONCEDER ... APOSENTADORIA à servidora SÔNIA REGINA LEMOS, Técnico Judiciário/Administrativa, Nív",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/ato-presi-n-287-de-17-de-setembro-de-2026-733009732",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-95d0e62090",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "ATO Nº 466, DE 18 DE SETEMBRO DE 2026",
+    "resumo": "Interno e tendo em vista o que consta no Processo Administrativo n.º 0002770-89.2026.4.05.7400, resolve: CONCEDER ... APOSENTADORIA voluntária à servidora SIMONE BARRETO DE CARVALHO, matrícula PB-352,",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/ato-n-466-de-18-de-setembro-de-2026-733010493",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-203e425e87",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "Portaria SGGI/ANSN Nº 122, de 17 de SETEMBRO de 2026",
+    "resumo": "2026, publicada no Diário Oficial da União nº 36, Seção I, de 13 de abril de 2026, resolve: Art. 1º Conceder ... aposentadoria voluntária, por tempo de contribuição, proventos baseados na última remun",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-sggi/ansn-n-122-de-17-de-setembro-de-2026-733012919",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-131b56f1c5",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA DGP N° 3.411, DE 16 DE SETEMBRO DE 2026",
+    "resumo": "de 17/10/2018, e tendo em vista o que consta do Processo nº 08420.003756/2020-23, resolve: Art. 1° Conceder ... aposentadoria especial voluntária, com integralidade e paridade, a MORVAN FRANCISCO BORG",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-dgp-n-3.411-de-16-de-setembro-de-2026-733013235",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-0115493308",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA Nº 3.125, DE 17 DE SETEMBRO DE 2026",
+    "resumo": "FURG, no uso das atribuições que lhe conferem o Estatuto e o Regimento Geral da Universidade, resolve: Conceder ... aposentadoria voluntária, com proventos integrais, a contar da data desta publicação",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-3.125-de-17-de-setembro-de-2026-733013865",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-18d7a8e176",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA DCOMB-RPPU/INSS Nº 702, DE 17 DE SETEMBRO DE 2026",
+    "resumo": "SEI nº 35014.261029/2026-39 e Tarefa PAT nº 1342526311, e na forma da legislação vigente, resolve: Conceder ... aposentadoria voluntária a servidora MIRELA MANES, matrícula SIAPE 0632264, ocupante do ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-dcomb-rppu/inss-n-702-de-17-de-setembro-de-2026-733015919",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-7bc5384688",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA TRT/GP/DG Nº 202, DE 11 DE SETEMBRO DE 2026",
+    "resumo": "suas atribuições legais e regimentais, CONSIDERANDO a instrução realizada no PA nº 4285/2026, resolve: CONCEDER ... aposentadoria ao servidor LUIZ CARLOS DA SILVA, ocupante do cargo efetivo de Técnico",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-trt/gp/dg-n-202-de-11-de-setembro-de-2026-733020270",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-8352b4285b",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA GR Nº 751, 15 de Setembro de 2026",
+    "resumo": "dezembro de 2003, e tendo em vista o que consta no Processo nº 23065.026023/2026-32, resolve: Art. 1º Conceder ... aposentadoria voluntária, com proventos integrais, à servidora LUCY VIEIRA DA SILVA L",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-gr-n-751-15-de-setembro-de-2026-733021927",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-3dcc44be01",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "ATO TRT/SGH/DG/GP nº 62, de 18 de setembro de 2026",
+    "resumo": "quantitativos constantes no Anexo do referido Ofício; Considerando o ATO TRT/DG/GP - 100/2024, que concedeu ... aposentadoria voluntária especial por deficiência em grau leve ao servidor David Geraldo",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/ato-trt/sgh/dg/gp-n-62-de-18-de-setembro-de-2026-733024771",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-ff577a90d9",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "ATO Nº 8.312, DE 9 DE SETEMBRO DE 2026",
+    "resumo": "tendo em vista o que consta do Processo Administrativo n.º 0026134-90.2026.4.03.8000-SEI, resolve: Conceder ... APOSENTADORIA VOLUNTÁRIA, com proventos integrais, nos termos do art. 20 da EC n.º 103/2",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/ato-n-8.312-de-9-de-setembro-de-2026-733024850",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-38afd78056",
+    "data": "21/09/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA Nº 9.217, DE 17 DE SETEMBRO DE 2026",
+    "resumo": "parte, a Portaria nº 8.848, de 11/09/2026, publicada no DOU de 15/09/2026, Seção 2, página 35, que concedeu ... aposentadoria ao servidor Gregory Thomas Kitten, matrícula SIAPE n.° 1287600, o que faz ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-9.217-de-17-de-setembro-de-2026-733027822",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-2ac5a3e8cd",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL de 18 de setembro de 2026",
+    "resumo": "sorteio do ponto: 26/10/2026 9h (segunda-feira) Data da prova: 27/10/2026 9h (terça-feira) Inscrição Nome ... sorteio do ponto: 26/10/2026 14h (segunda-feira) Data da prova: 27/10/2026 14h (terça-feir",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-de-18-de-setembro-de-2026-733150982",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-cccaf5a397",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EXTRATO DE CONVÊNIO",
+    "resumo": "EXTRATO DE CONVÊNIO Convênio nº 134/2026; Data da assinatura: 17/08/2026; Nome da Convenente: PREFEITURA ... MUNICIPAL DE CAAPIRANGA/AM, CNPJ 04.628.046/0001-00 ; Nome da Agência Correios Essencial: C",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/extrato-de-convenio-733153667",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-ccddd486c7",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL DE 18 de setembro de 2026",
+    "resumo": "observada a ordem de classificação e os critérios de reserva de vagas previstos no edital do certame: Nome setembro de 2026 CONVOCAÇÃO de candidatos - edital nº 1/2023 O Conselho Regional de Fisiotera",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-de-18-de-setembro-de-2026-733156373",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-36ddc20948",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL Nº 217, DE 17 DE SETEMBRO DE 2026",
+    "resumo": "cargo exigir). 9) UMA cópia do COMPROVANTE DE RESIDÊNCIA (conta de: luz, água, telefone ou gás) em nome ... OBS: Caso não possua comprovante de residência no próprio nome, apresentar declaração de res",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-n-217-de-17-de-setembro-de-2026-733157698",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-145af2534c",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL Nº 1955298",
+    "resumo": "CARGO DE TÉCNICO JUDICIÁRIO - ÁREA ADMINISTRATIVA, REGIÃO CENTRAL NOME CLASSIFICAÇÃO MUNICÍPIO JESSICA ... 66º AC Belo Horizonte PAULO VITOR VALERIANO DOS SANTOS 67º AC Belo Horizonte Candidato não op",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-n-1955298-733165501",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-a49852982a",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL Nº 871/2026-TCU/SEPROC, DE 17 DE SETEMBRO DE 2026",
+    "resumo": "O não atendimento desta notificação poderá ensejar a inclusão do nome do responsável no cadastro informativo do disposto no art. 22, III, da Lei 8.443/1992, fica NOTIFICADO AFONSO DALBERTO, CPF: 284.6",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-n-871/2026-tcu/seproc-de-17-de-setembro-de-2026-733165659",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-6b7c27b725",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "AVISO DE LICITAÇÃO FRACASSADA",
+    "resumo": "(um) caminhão caçamba basculante traçado (6x4), novo, zero quilômetro, com primeiro emplacamento em nomeAVISO DE LICITAÇÃO FRACASSADA PREGÃO ELETRÔNICO Nº 19/2026 Processo Licitatório N° 075/2026 - Pr",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/aviso-de-licitacao-fracassada-733171021",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-c5407c2488",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL Nº 843/2026-TCU/SEPROC, DE 17 DE SETEMBRO DE 2026",
+    "resumo": "O não atendimento desta notificação poderá ensejar a inclusão do nome do responsável no cadastro informativoio à Gestão de Processos TC 000.274/2024-0 - Em razão do disposto no art. 22, III, da Lei 8.",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-n-843/2026-tcu/seproc-de-17-de-setembro-de-2026-733173334",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-5a280429ce",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL",
+    "resumo": "CATEGORIA A - R$ 25.000,00 - informações na sequência de - Proponente - Nome do Projeto - Nota - Resultado item 7.6 do Edital de Chamamento Público nº 01/2026, caberá recurso contra o presente resulta",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-733177159",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-1857b1b50b",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL DE NOTIFICAÇÃO DE MULTA GEAUT/SUDEG/ANTT Nº 123.587/2026/WEB/RNTRC",
+    "resumo": "BRASÍLIA, 18 de setembro de 2026, NOME DO INFRATOR, Nº CNPJ/CPF, Nº AUTO, DT.INFRAÇÃO, VALOR; JOAO DOSEDITAL DE NOTIFICAÇÃO DE MULTA GEAUT/SUDEG/ANTT Nº 123.587/2026/WEB/RNTRC A AGÊNCIA NACIONAL DE TR",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-de-notificacao-de-multa-geaut/sudeg/antt-n-123.587/2026/web/rntrc-733179762",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-79ce009c30",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Resultado de JULGAMENTO",
+    "resumo": "A relação dos estabelecimentos credenciados segue disposta na tabela abaixo: Nome do Estabelecimento nº 1/2026 O SECRETÁRIO DE ATENÇÃO ESPECIALIZADA À SAÚDE, no uso das atribuições que lhe confere o D",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/resultado-de-julgamento-733179944",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-dca24b483f",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL Nº 887/2026-TCU/SEPROC, DE 17 DE SETEMBRO DE 2026",
+    "resumo": "O não atendimento desta notificação poderá ensejar a inclusão do nome do responsável no cadastro informativoio à Gestão de Processos TC 028.327/2020-9 - Em razão do disposto no art. 22, III, da Lei 8.",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-n-887/2026-tcu/seproc-de-17-de-setembro-de-2026-733186406",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-089c166176",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL Nº 680, DE 18 DE SETEMBRO DE 2026",
+    "resumo": "nº 710/2025 Cargo - Médico/Área: Ginecologia e Obstetrícia LISTA AMPLA CONCORRÊNCIA (AC) Inscrição Nome ... nº 710/2025 Cargo - Médico/Área: Ginecologia e Obstetrícia LISTA AMPLA CONCORRÊNCIA (AC) Ins",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-n-680-de-18-de-setembro-de-2026-733188874",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-b767e2f74d",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EXTRATO DE CONVÊNIO",
+    "resumo": "EXTRATO DE CONVÊNIO Convênio nº 137/2026 (CTR ERP 67862886/2026); Data da assinatura: 28/08/2026; Nome ... da Convenente: PREFEITURA MUNICIPAL CURRAL DE CIMA/PB, CNPJ 01.612.372/0001-31; Nome da Agênc",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/extrato-de-convenio-733189749",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-ea5f1da2a4",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL nº 876/2026-TCU/SEPROC, DE 18 DE SETEMBRO DE 2026",
+    "resumo": "O não atendimento desta notificação poderá ensejar a inclusão do nome do responsável no cadastro informativo do disposto no art. 22, III, da Lei 8.443/1992, fica NOTIFICADO BENEDITO JOSÉ DE AZEVEDO NE",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-n-876/2026-tcu/seproc-de-18-de-setembro-de-2026-733193889",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-9158f1038c",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL DE NOTIFICAÇÃO",
+    "resumo": "Processo Nome ou Razão Social CPF/CNPJ R$ MULTA 1558/2021 ANTONIO MARCIO DA SILVA SERVICO E COMERCIOTIFICAÇÃO NOTIFICAÇÃO DE DECISÃO Nº 24/2026 O PRESIDENTE DO INSTITUTO DE PESOS E MEDIDAS DO ESTADO P",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-de-notificacao-733196233",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-c4ec3b4104",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL",
+    "resumo": "01/2023, publicado no DOU, para preenchimento de vagas, nos cargos abaixo indicado: Cargo: ADVOGADO Nome ... : Maria Beatriz José Gambôa 8º convocado Cargo: ANALISTA JURÍDICO Nome: Hudson Dos Santos D",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-733200898",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-a15fc37f84",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL Nº 895/2026-TCU/SEPROC, DE 18 DE SETEMBRO DE 2026",
+    "resumo": "O não atendimento desta notificação poderá ensejar a inclusão do nome do responsável no cadastro informativoio à Gestão de Processos TC 008.336/2025-3 Em razão do disposto no art. 22, III, da Lei 8.44",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-n-895/2026-tcu/seproc-de-18-de-setembro-de-2026-733200975",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-99efeeed7b",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "EDITAL DE NOTIFICAÇÃO DE MULTA GEAUT/SUDEG/ANTT Nº 123.588/2026/WEB/VALE-PEDÁGIO",
+    "resumo": "BRASÍLIA, 18 de setembro de 2026, NOME DO INFRATOR, Nº CNPJ/CPF, Nº AUTO, DT.INFRAÇÃO, VALOR; TRANSCARBONATOEDITAL DE NOTIFICAÇÃO DE MULTA GEAUT/SUDEG/ANTT Nº 123.588/2026/WEB/VALE-PEDÁGIO A AGÊNCIA N",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-de-notificacao-de-multa-geaut/sudeg/antt-n-123.588/2026/web/vale-pedagio-733201137",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-ae77ecb9a5",
+    "data": "21/09/2026",
+    "categoria": "Jurídico e PAD",
+    "titulo": "PORTARIA TRE Nº 328, DE 15 DE SETEMBRO DE 2026",
+    "resumo": "2.237.003,56 2.285.955,55 2.220.226,27 2.313.722,18 2.343.544,66 26.966.260,44 27.804,16 Indenizações por Demissão ... e Incentivos a Demissão Voluntária 0,00 0,00 0,00 0,00 0,00 0,00 0,00 0,00 0,00 0",
+    "fonte": "Diário Oficial da União (DO1)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-tre-n-328-de-15-de-setembro-de-2026-732961581",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-0ed3334028",
+    "data": "21/09/2026",
+    "categoria": "Jurídico e PAD",
+    "titulo": "PORTARIA PRES 300, de 17 DE SETEMBRO DE 2026",
+    "resumo": "2.410.970,17 2.395.429,94 2.381.380,07 2.663.005,95 2.544.597,68 29.901.116,19 569,42 Indenizações por Demissão ... e Incentivos à Demissão Voluntária - - 30.664,07 95.362,23 - - 19.349,02 32.589,82 -",
+    "fonte": "Diário Oficial da União (DO1)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-pres-300-de-17-de-setembro-de-2026-732979592",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-e7fa52624c",
+    "data": "21/09/2026",
+    "categoria": "Jurídico e PAD",
+    "titulo": "EXTRATO DA ATA DA ASSEMBLEIA GERAL ORDINÁRIA E EXTRAORDINÁRIA",
+    "resumo": "comissão ou função de confiança no âmbito da Administração Pública; III - não ter sofrido penalidade de demissão ... controlada ou de cujo capital a CEF participe sem deter o controle; IV - não ter so",
+    "fonte": "Diário Oficial da União (DO1)",
+    "url_original": "https://www.in.gov.br/web/dou/-/extrato-da-ata-da-assembleia-geral-ordinaria-e-extraordinaria-732983435",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-91d20b1d2b",
+    "data": "21/09/2026",
+    "categoria": "Jurídico e PAD",
+    "titulo": "PORTARIA PRES/INSS Nº 1.794, DE 18 DE SETEMBRO DE 2026",
+    "resumo": "ou judicial do ex-servidor, em relação aos processos disciplinares anteriores que resultaram na sua demissãoPORTARIA PRES/INSS Nº 1.794, DE 18 DE SETEMBRO DE 2026 A PRESIDENTE DO INSTITUTO NACIONAL DO",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-pres/inss-n-1.794-de-18-de-setembro-de-2026-732987219",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-fdaa322482",
+    "data": "21/09/2026",
+    "categoria": "Jurídico e PAD",
+    "titulo": "PORTARIA PRES/INSS Nº 1.795, DE 18 DE SETEMBRO DE 2026",
+    "resumo": "ou judicial do ex-servidor, em relação aos processos disciplinares anteriores que resultaram na sua demissãoPORTARIA PRES/INSS Nº 1.795, DE 18 DE SETEMBRO DE 2026 A PRESIDENTE DO INSTITUTO NACIONAL DO",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-pres/inss-n-1.795-de-18-de-setembro-de-2026-732988673",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-5480d1feac",
+    "data": "21/09/2026",
+    "categoria": "Jurídico e PAD",
+    "titulo": "PORTARIA PRES/INSS Nº 1.793, DE 18 DE SETEMBRO DE 2026",
+    "resumo": "ou judicial da ex-servidora, em relação aos processos disciplinares anteriores que resultaram na sua demissão uso das atribuições que lhe confere o Decreto nº 10.995, de 14 de março de 2022, e conside",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-pres/inss-n-1.793-de-18-de-setembro-de-2026-733018210",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-14171b5ad4",
+    "data": "21/09/2026",
+    "categoria": "Jurídico e PAD",
+    "titulo": "EDITAL Nº 5-IFPA, DE 18 DE SETEMBRO DE 2026",
+    "resumo": "eliminação do certame e, se já empossado, a abertura de processo administrativo disciplinar para fins de demissão de 02 de agosto de 2023, publicado no Diário Oficial da União em 02 de agosto de 2023,",
+    "fonte": "Diário Oficial da União (DO3)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-n-5-ifpa-de-18-de-setembro-de-2026-733151005",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-c06ad7b991",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA PR/RJ Nº 816, DE 17 DE SETEMBRO DE 2026",
+    "resumo": "Ministério Público Federal, aprovado pela Portaria PGR/MPF nº 357, de 05/05/2015, resolve: Art. 1º Exonerar ... , a pedido, CAIO FARIA MARIANO LEITE, matrícula 32554, a partir de 21/09/2026, do Cargo ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-pr/rj-n-816-de-17-de-setembro-de-2026-732962011",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-863c6f5b84",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Portaria de Pessoal DGP/SSC/MGI Nº 11.428, DE 18 DE SETEMBRO DE 2026",
+    "resumo": "de 30 de julho de 2025, bem como o que consta no Processo nº 10128.016437/2026-20, resolve: Art. 1º Exonerar ... , a pedido, AMANDA MARTINS UMBELINO, matrícula Siape nº 1028969, do cargo de Perito Méd",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-de-pessoal-dgp/ssc/mgi-n-11.428-de-18-de-setembro-de-2026-732980786",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-bea92eead5",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 161, DE 18 DE SETEMBRO DE 2026",
+    "resumo": "competência que lhe foi subdelegada pelo art. 3º da Portaria nº 117, de 31 de dezembro de 2015, resolve: EXONERAR ... ,a pedido, JOSÉ LUIS BALALAICA DOS SANTOS do cargo de Gerente de Projeto da Direto",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-161-de-18-de-setembro-de-2026-732985620",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-ca3c61c350",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA PRR2 Nº 150, DE 14 DE SETEMBRO DE 2026",
+    "resumo": "considerando ainda o contido no MEMORANDO 538/2026 GABPRR47-SPMS - PRR2ª-00021844/2026, resolve: Art 1º Exonerar ... , a pedido, a contar de 21/09/2026, a servidora CAROLINA FELIPE FERREIRA KOCH, matr",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-prr2-n-150-de-14-de-setembro-de-2026-732998992",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-43e3b8eb61",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Portaria UFPR nº 849, de 14 de Setembro de 2026",
+    "resumo": "uso de suas atribuições e tendo em vista o que consta no processo nº 23075.042148/2026-91, resolve: Exonerar ... , a pedido, a partir de 20 de setembro de 2026, o servidor LUCIANO GUARACI RENNER - 305",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-ufpr-n-849-de-14-de-setembro-de-2026-733000094",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-4eca169a97",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIAS DE PESSOAL FUNAI DE 18 DE SETEMBRO DE 2026",
+    "resumo": "Nº 1.488 - Exonerar, a pedido, DAIANE AMARAL DOS SANTOS, matrícula nº 1819268, do cargo de AssistentePORTARIAS DE PESSOAL FUNAI DE 18 DE SETEMBRO DE 2026 A PRESIDENTA DA FUNDAÇÃO NACIONAL DOS POVOS IN",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portarias-de-pessoal-funai-de-18-de-setembro-de-2026-733001706",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-1e3c9b6a27",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 4.471, DE 11 DE SETEMBRO DE 2026",
+    "resumo": "competência que foi delegada pela Portaria no 654 de 12/03/20, publicada no DOU de 13/03/20, resolve: Exonerar ... , a pedido, nos termos do Artigo 34 da Lei no 8.112/90, o servidor Vanessa Helena Gab",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-4.471-de-11-de-setembro-de-2026-733007333",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-26f8d38466",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIAS de 10 DE SETEMBRO DE 2026",
+    "resumo": "Nº 782 - EXONERAR, a pedido, a partir de 01/09/2026, a servidora LILIAN SANTOS LIMA ROCHA DE ARAUJO, SIAPE 1913088, para a cidade de New York/EUA, no período de 20 de Setembro de 2026 a 26 de Setembro",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portarias-de-10-de-setembro-de-2026-733019158",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-c5b1f43b41",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Portaria Nº 1.587, DE 3 DE setembro DE 2026",
+    "resumo": "estatutárias e regimentais e considerando o que consta no Processo nº 23069.164689/2026-58, resolve: Art. 1º Exonerar ... , a pedido, o (a) servidor (a) GABRIEL BAPTISTA LUCENA, do cargo de Professor ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-1.587-de-3-de-setembro-de-2026-733019316",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-c0a6dad7be",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Portaria de Pessoal DGP/SSC/MGI Nº 11.421, DE 18 DE SETEMBRO DE 2026",
+    "resumo": "de 30 de julho de 2025, bem como o que consta no Processo nº 14021.071310/2026-12, resolve: Art. 1º Exonerar ... , a pedido, LUIZ GREGÓRIO ELEUTÉRIO JUNIOR, matrícula Siape nº 3543194, do cargo de Ana",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-de-pessoal-dgp/ssc/mgi-n-11.421-de-18-de-setembro-de-2026-733023823",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-99d7fd998c",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA DE PESSOAL SE/MPO Nº 646, DE 17 DE SETEMBRO DE 2026",
+    "resumo": "59, de 17 de março de 2023 e considerando o que consta nos Processo nº 03101.002753/2026-57: Art. 1º Exonerar ... , a pedido, a contar de 21 de setembro de 2026, o servidor ÁLVARO JOSÉ DE ANDRADE CARN",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-de-pessoal-se/mpo-n-646-de-17-de-setembro-de-2026-733025324",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-53edf5209e",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 1.024, DE 15 DE SETEMBRO DE 2026",
+    "resumo": "da Lei nº 8.112/90, considerando o Processo Interno UFOP n° 23109.011548/2026-10, resolve: Art. 1º Exonerar ... , a pedido, a partir de 21/09/2026, o servidor ALEX VITORINO, matrícula SIAPE nº 1.034.2",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-1.024-de-15-de-setembro-de-2026-733026033",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-b3afb48893",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "RETIFICAÇÃO",
+    "resumo": "Exonerar, a pedido, a partir de 8 de setembro de 2026, FRANCISCO ALVES DA SILVA, Matrícula SIAPE nº 3540805, do contrato temporário de Analista Técnico de Complexidade Intelectual - Engenharia Ambient",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/retificacao-733026823",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-010c682809",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA - Gab Cmt Ex/C Ex Nº 284, DE 17 DE SETEMBRO DE 2026",
+    "resumo": "dezembro de 1980, com a redação dada pelo art. 2º da Lei nº 13.954, de 16 de dezembro de 2019, resolve: EXONERAR ... a pedido, o 2º Sgt R/1 (1126738846) REGINALDO PEREIRA NASCIMENTO, Prec-CP: 96183495",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-gab-cmt-ex/c-ex-n-284-de-17-de-setembro-de-2026-733028456",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-ba9d8946cd",
+    "data": "21/09/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIAS de 10 de setembro de 2026",
+    "resumo": "112/2026/PPGCTS/CECH (2428606) do Processo nº 23112.030188/2026-04; resolve: Nº 1.118 - Art. 1º) Fica exonerada ... , a pedido, a Profa.PORTARIAS de 10 de setembro de 2026 A Diretora do Centro de Educ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portarias-de-10-de-setembro-de-2026-733034494",
+    "status_curadoria": "Pendente"
+  },
+  {
     "id": "dou-867308bdab",
     "data": "18/09/2026",
     "categoria": "Histórias e Superação",
