@@ -1,5 +1,585 @@
 [
   {
+    "id": "dou-2b0546ae56",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA Nº 2.177/IFFLU, DE 5 DE OUTUBRO DE 2026",
+    "resumo": "2025, publicada no D.O.U. em 17 de abril de 2025, nos seguintes termos: Onde se lê: (...) 1cArt. 1.º CONCEDER ... APOSENTADORIA ESPECIAL, ao servidor José Joaquim Lopes Guerreiro, Matrícula SIAPE 3638",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-2.177/ifflu-de-5-de-outubro-de-2026-736719026",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-8d1605f0ae",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA SGCS/AGU Nº 468, DE 2 DE OUTUBRO DE 2026",
+    "resumo": "maio de 2026, e considerando o que consta no Processo Administrativo nº 00417.144732/2026-66, resolve: Conceder ... aposentadoria voluntária a ROBSON GONÇALVES VALADARES, matrícula Siape nº 0950269, o",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-sgcs/agu-n-468-de-2-de-outubro-de-2026-736719502",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-29ce0072f0",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "RETIFICAÇÃO",
+    "resumo": "agosto de 2026, publicado no D.O.U de 24 de agosto de 2026, seção 2, página 159, onde se lê \"Art. 1º Conceder ... aposentadoria voluntária a servidora Daisy Magalhães Soares, Analista de Sistemas, Nív",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/retificacao-736726645",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-a33c24c9aa",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "Portaria DCOMB-RPPU/INSS Nº 753, DE 1 DE OUTUBRO DE 2026",
+    "resumo": "processo SEI nº 35014.137470/2026-09, e Tarefa PAT nº 54613858, e na forma da legislação vigente, resolve: Conceder ... aposentadoria por Incapacidade Permanente para o trabalho à servidora MARIA JOSE",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-dcomb-rppu/inss-n-753-de-1-de-outubro-de-2026-736749710",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-43c965bf96",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA MIDR N° 3.354, DE 2 DE OUTUBRO DE 2026",
+    "resumo": "Conceder aposentadoria por incapacidade permanente para o trabalho à servidora MARIA LUCIMAR ALVES DAPORTARIA MIDR N° 3.354, DE 2 DE OUTUBRO DE 2026 O DIRETOR DE ADMINISTRAÇÃO DA SECRETARIA EXECUTIVA ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-midr-n-3.354-de-2-de-outubro-de-2026-736750105",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-6ac0d7de1f",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "Portaria DCOMB-RPPU/INSS Nº 760, DE 2 DE outubro DE 2026",
+    "resumo": "conforme o constante no processo SEI nº 35014.124717/2026-19 e na forma da legislação vigente, resolve: Conceder ... aposentadoria voluntária ao servidor JORGE ROBERTO PIMENTEL RODRIGUES, matrícula SI",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-dcomb-rppu/inss-n-760-de-2-de-outubro-de-2026-736752528",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-50c7583a4c",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA SGCS/AGU Nº 466, DE 2 DE OUTUBRO DE 2026",
+    "resumo": "maio de 2026, e considerando o que consta no Processo Administrativo nº 00404.004189/2026-12, resolve: Conceder ... aposentadoria voluntária a JOSÉ NEWTON DE FARIA, matrícula Siape nº 1332638, ocupant",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-sgcs/agu-n-466-de-2-de-outubro-de-2026-736754134",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-4713d66e7f",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "Portaria DCOMB-RPPU/INSS Nº 759, DE 1º DE OUTUBRO DE 2026",
+    "resumo": "SEI nº 35014.155237/2026-08, e Tarefa PAT nº 1072357052, e na forma da legislação vigente, Resolve: Conceder ... aposentadoria voluntária a servidora SABINO PEREIRA DOS SANTOS, matrícula SIAPE 0172987",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-dcomb-rppu/inss-n-759-de-1-de-outubro-de-2026-736754847",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-146b0e5b2e",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA DE PESSOAL GABSEC/SENAPPEN/MJSP Nº 586, DE 25 DE SETEMBRO DE 2026",
+    "resumo": "novembro de 2021, alterada pela Portaria SE/MJSP nº 1.561, de 4 de julho de 2022, resolve: Art. 1º Conceder ... aposentadoria especial voluntária, com integralidade e paridade, a KRIEGEL NEVOLAND DO N",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-de-pessoal-gabsec/senappen/mjsp-n-586-de-25-de-setembro-de-2026-736755319",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-5770574d4a",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA Nº 1.231, DE 5 DE OUTUBRO DE 2026",
+    "resumo": "setembro de 2026, resolve: Art. 1º - Retificar a Portaria Nº 1177/GR, DE 28 de setembro de 2026, que concedeu ... aposentadoria voluntária, com proventos calculados pela totalidade da remuneração, ao(",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-1.231-de-5-de-outubro-de-2026-736773762",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-0bfa59dcf6",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA SEGEP/CE Nº 289, DE 29 DE SETEMBRO DE 2026",
+    "resumo": "SE/MS Nº 552, de 04/08/2025, publicada no DOU N°. 147, de 06/08/2025, seção 2, página 52, resolve: Conceder ... aposentadoria especial a FRANCISCO ANTONIO CAMPOS COELHO, matrícula SIAPE 1082461, cargo",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-segep/ce-n-289-de-29-de-setembro-de-2026-736775348",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-2fe3ed8d34",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA MIDR N° 3.266, DE 2 DE OUTUBRO DE 2026",
+    "resumo": "Conceder aposentadoria por incapacidade permanente para o trabalho ao servidor MANOEL JULIO VENANCIO DA INTEGRAÇÃO E DO DESENVOLVIMENTO REGIONAL, no uso da competência que lhe foi subdelegada pelo inc",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-midr-n-3.266-de-2-de-outubro-de-2026-736775506",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-0a120c44e8",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA SEGEP/CE Nº 295, DE 5 DE OUTUBRO DE 2026",
+    "resumo": "SE/MS Nº 552, de 04/08/2025, publicada no DOU N°. 147, de 06/08/2025, seção 2, página 52, resolve: Conceder ... aposentadoria compulsória a contar de 06/06/2026 a FRANCISCO RAIMUNDO SILVA, matrícula S",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-segep/ce-n-295-de-5-de-outubro-de-2026-736783097",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-e8f580284b",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA SGCS/AGU Nº 470, DE 2 DE OUTUBRO DE 2026",
+    "resumo": "maio de 2026, e considerando o que consta no Processo Administrativo nº 00479.000075/2026-11, resolve: Conceder ... aposentadoria voluntária a JAILDO PEIXOTO DA SILVA, matrícula Siape nº 0714148, ocup",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-sgcs/agu-n-470-de-2-de-outubro-de-2026-736785393",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-794ccdc276",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "Ato Nº 4.929, DE 29 DE SETEMBRO DE 2026",
+    "resumo": "regimentais, tendo em vista o que consta do Processo Administrativo 0004410-68.2024.4.04.8001, resolve: CONCEDER ... APOSENTADORIA VOLUNTÁRIA com proventos integrais à servidora ANA LUISA PEREIRA, mat",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/ato-n-4.929-de-29-de-setembro-de-2026-736785551",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-c354b8adce",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "Portaria DCOMB-RPPU/INSS Nº 746, DE 2 de outubro DE 2026",
+    "resumo": "processo SEI nº 35014.276155/2026-98 e Tarefa PAT nº 607155832, e na forma da legislação vigente, resolve: Conceder ... aposentadoria voluntária ao(a) servidor(a) NEUZA APARECIDA SANTOS DA CRUZ, matrí",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-dcomb-rppu/inss-n-746-de-2-de-outubro-de-2026-736786025",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-950d857e56",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "Portaria DCOMB-RPPU/INSS Nº 758, DE 1º DE OUTUBRO DE 2026",
+    "resumo": "nº 35014.293450/2026-17, e Tarefa PAT nº 2914063199977, e na forma da legislação vigente, Resolve: Conceder ... aposentadoria voluntária a servidora CLEA REGINA ADRIANO, matrícula SIAPE 0929756, ocupa",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-dcomb-rppu/inss-n-758-de-1-de-outubro-de-2026-736788077",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-9e4f1cdb5c",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA Nº 2.082/GR/IFAM, DE 1º DE OUTUBRO DE 2026",
+    "resumo": "Oficial da União (DOU) Nº 116-A, de 21 de junho de 2023, Seção 2 - Extra A, pág. 1, resolve: Art. 1º Conceder ... aposentadoria voluntária ao servidor Jorge Rezende Maia, ocupante do cargo efetivo de ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-2.082/gr/ifam-de-1-de-outubro-de-2026-736791178",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-99a285cdc9",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA SEGEP/CE Nº 292, DE 1º DE OUTUBRO DE 2026",
+    "resumo": "Conceder aposentadoria voluntária a MANOEL CARLOS DE VASCONCELOS, matrícula SIAPE 542611, cargo de AgentePORTARIA SEGEP/CE Nº 292, DE 1º DE OUTUBRO DE 2026 A CHEFE DO SERVIÇO DE GESTÃO DE PESSOAS DA S",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-segep/ce-n-292-de-1-de-outubro-de-2026-736794658",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-cc4523573a",
+    "data": "06/10/2026",
+    "categoria": "Histórias e Superação",
+    "titulo": "PORTARIA MIDR N° 3.363, DE 2 DE OUTUBRO DE 2026",
+    "resumo": "Conceder aposentadoria por incapacidade permanente para o trabalho ao servidor VERIDIANO JOSÉ DA SILVARIA MIDR N° 3.363, DE 2 DE OUTUBRO DE 2026 O DIRETOR DE ADMINISTRAÇÃO DA SECRETARIA EXECUTIVA DO M",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-midr-n-3.363-de-2-de-outubro-de-2026-736794974",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-326319fa9f",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 3.920/GAB/REI/IFPI, de 5 de outubro de 2026",
+    "resumo": "de suas atribuições legais e tendo em vista o disposto no Processo Nº 23182.000909/2026-10, resolve: Nomear a servidora ELIANE VOGADO MENDES, SIAPE nº 1222251, ocupante do cargo de Chefe do Departamen",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-3.920/gab/rei/ifpi-de-5-de-outubro-de-2026-736788946",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-77566f03ad",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Portaria nº 137/E1/CMA, de 30 de Setembro de 2026",
+    "resumo": "NOMEAR o Sargento da Reserva Remunerada (1275728135) DELCY QUEIROZ LUCAS,, Prec-CP nº 961817378, no Comando Comando de Fronteira Solimões/8º BIS (Tabatinga-AM), a partir de 31/10/2026, de acordo com a",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-137/e1/cma-de-30-de-setembro-de-2026-736789341",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-c79537f382",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA CRP-06 Nº 264, DE 28 DE SETEMBRO DE 2026",
+    "resumo": "Psicologia de São Paulo - 6ª Região (CRP-06), realizada no dia 19 de setembro de 2026, resolvem: Art. 1º Nomear ... Subsede Nome CRP Função Metropolitana Gabriel Basílio Barbosa Costa 185699 Membra/o ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-crp-06-n-264-de-28-de-setembro-de-2026-736789667",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-c42efa0512",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "ATO SEGEP/PR Nº 120, de 2 de OUTUBRO de 2026",
+    "resumo": "uso de suas atribuições legais e regimentais, considerando o contido no PROAD Nº 3137/2026, resolve: Nomear o candidato LEANDRO BOONE SUBTIL, classificado em 7º lugar no concurso público homologado pe",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/ato-segep/pr-n-120-de-2-de-outubro-de-2026-736789827",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-6df2611404",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 258, DE 25 DE SETEMBRO DE 2026",
+    "resumo": "Psicologia de São Paulo - 6ª Região (CRP-06), realizada no dia 19 de setembro de 2026, resolvem: Art. 1º Nomear ... a composição e nomear as psicólogas e os psicólogos abaixo relacionados como integra",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-258-de-25-de-setembro-de-2026-736790309",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-e17524f90d",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA N° 1.129, DE 5 DE OUTUBRO DE 2026",
+    "resumo": "Interno aprovado pela Resolução da Diretoria Colegiada - RDC nº 585, de 10 de dezembro de 2021, resolve: Nomearibuições que lhe confere o art. 172, VI, aliado ao art. 203, III, §3º do Regimento Intern",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-1.129-de-5-de-outubro-de-2026-736790625",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-4db26a6cef",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 4.480, de 5 de outubro de 2026",
+    "resumo": "de 20/07/2010, seção 1, pg. 3, e em face ao que consta no processo nº 23115.028277/2026-52, resolve: Nomearo de 2026 O REITOR DA UNIVERSIDADE FEDERAL DO MARANHÃO, no uso de suas atribuições legais, es",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-4.480-de-5-de-outubro-de-2026-736791020",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-279d3b79d7",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 7.013/IFSP, DE 5 DE OUTUBRO DE 2026",
+    "resumo": "seção 2, página 1, considerando o que consta no Processo nº 23305.018638.2026-15, resolve: Art. 1º - NomearPORTARIA Nº 7.013/IFSP, DE 5 DE OUTUBRO DE 2026 O REITOR DO INSTITUTO FEDERAL DE EDUCAÇÃO, CI",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-7.013/ifsp-de-5-de-outubro-de-2026-736791099",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-6fc4032d6d",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Portarias de 2 de outubro de 2026",
+    "resumo": "n.º 1, de 2026, do Senhor Diretor do Departamento de Administração de Pessoal, resolve: Nº 5.033 - Nomear ... Nº 5.034 - Nomear, na forma do artigo 9º, inciso II, da Lei nº 8.112, de 11 de dezembro de",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portarias-de-2-de-outubro-de-2026-736792049",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-bf7dd18561",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 7.009/IFSP, DE 5 DE OUTUBRO DE 2026",
+    "resumo": "seção 2, página 1, considerando o que consta no Processo nº 23305.018913.2026-09, resolve: Art. 1º - NomearPORTARIA Nº 7.009/IFSP, DE 5 DE OUTUBRO DE 2026 O REITOR DO INSTITUTO FEDERAL DE EDUCAÇÃO, CI",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-7.009/ifsp-de-5-de-outubro-de-2026-736792997",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-7e1b3064ba",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 6.982/IFSP, DE 2 DE OUTUBRO DE 2026",
+    "resumo": "seção 2, página 1, considerando o que consta no Processo nº 23305.018689.2026-47, resolve: Art. 1º - NomearPORTARIA Nº 6.982/IFSP, DE 2 DE OUTUBRO DE 2026 O REITOR DO INSTITUTO FEDERAL DE EDUCAÇÃO, CI",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-6.982/ifsp-de-2-de-outubro-de-2026-736793076",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-7011871acc",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 865, DE 5 DE OUTUBRO DE 2026",
+    "resumo": "Geral de Cargos do Poder Executivo - PGPE, do Quadro Permanente do Ministério da Educação: Inscrição NomePORTARIA Nº 865, DE 5 DE OUTUBRO DE 2026 O SECRETÁRIO-EXECUTIVO DO MINISTÉRIO DA EDUCAÇÃO, no u",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-865-de-5-de-outubro-de-2026-736793232",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-e2d6505d2d",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Portaria nº 132/E1/CMA, de 30 de setembro de 2026",
+    "resumo": "NOMEAR o Coronel da Reserva Remunerada (1180512731) CELMO ALEXANDRE GIAROLA, Prec-CP nº 961803113, no uso da competência que lhe foi conferida pela Portaria nº 218/Cmt Ex, de 20 de março de 2017, reso",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-132/e1/cma-de-30-de-setembro-de-2026-736793548",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-1935819240",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA DE PESSOAL SE/MAPA Nº 1.787, DE 5 DE OUTUBRO DE 2026",
+    "resumo": "12.642, de 1º de outubro de 2025, e o que consta no Processo SEI nº 21030.002052/2026-81, resolve: Nomearia MAPA nº 548, de 16 de janeiro de 2023, publicada no Diário Oficial da União de 20 de janeiro",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-de-pessoal-se/mapa-n-1.787-de-5-de-outubro-de-2026-736793999",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-6f1e393a36",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Portaria CREF16/RN nº 51, de 28 de setembro de 2026",
+    "resumo": "Oficial da União, no dia 01 de abril de 2024, edição n° 62, Seção 1, páginas 255/256, resolve: Art. 1º NomearPortaria CREF16/RN nº 51, de 28 de setembro de 2026 O PRESIDENTE DO CONSELHO REGIONAL DE ED",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-cref16/rn-n-51-de-28-de-setembro-de-2026-736794022",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-8680d5a88c",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIAS DE PESSOAL FUNAI DE 2 DE OUTUBRO DE 2026",
+    "resumo": "Nº 1.536 - Nomear HAMYLA ELIZABETH DA SILVA TRINDADE, matrícula nº 3489031, para exercer o cargo de Assistenterado pelo Decreto nº 12.581, de 6 de agosto de 2025, e pela Portaria GM/MPI nº 136, de 26 ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portarias-de-pessoal-funai-de-2-de-outubro-de-2026-736794816",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-f0e44c0d52",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 4.076, DE 2 DE outubro DE 2026",
+    "resumo": "Geral da UFAC, e o que consta no processo administrativo nº 23107.027745/2026-71, resolve: Art. 1º NOMEARTARIA Nº 4.076, DE 2 DE outubro DE 2026 O REITOR DA UNIVERSIDADE FEDERAL DO ACRE, no uso das at",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-4.076-de-2-de-outubro-de-2026-736795527",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-9fcfeaab92",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 3.633, DE 2 DE OUTUBRO DE 2026",
+    "resumo": "regimentais e regulamentares, e tendo em vista o que consta no processo eletrônico número 1408729, resolve: nomearibuições regimentais e regulamentares, e tendo em vista o que consta no processo eletr",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-3.633-de-2-de-outubro-de-2026-736797034",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-9aa4fd0aa9",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 1.657-RTR/UFMS, DE 30 DE SETEMBRO DE 2026",
+    "resumo": "setembro de 2025, e o contido nos Processos nº 23104.018937/2025-35 e 23104.017651/2025-32, resolve: Nomeartaria n.º 1.819, de 11 de setembro de 2023, Ministro de Estado da Educação, e tendo em vista ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-1.657-rtr/ufms-de-30-de-setembro-de-2026-736797666",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-f7d26a9c1b",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 7.005/IFSP, DE 5 DE OUTUBRO DE 2026",
+    "resumo": "seção 2, página 1, considerando o que consta no Processo nº 23305.019044.2026-21, resolve: Art. 1º - NomearPORTARIA Nº 7.005/IFSP, DE 5 DE OUTUBRO DE 2026 O REITOR DO INSTITUTO FEDERAL DE EDUCAÇÃO, CI",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-7.005/ifsp-de-5-de-outubro-de-2026-736798140",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-ac7e4dbda5",
+    "data": "06/10/2026",
+    "categoria": "Jurídico e PAD",
+    "titulo": "PORTARIA Nº 130/Asse Ap As Jurd/DSM, DE 5 DE OUTUBRO DE 2026",
+    "resumo": "de dezembro de 1980; e no art. 4º, inciso II, e art. 5º, inciso II, das Normas para os Processos de Demissão uso da subdelegação de competência que lhe confere o art. 5º, inciso V, do Regulamento do D",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-130/asse-ap-as-jurd/dsm-de-5-de-outubro-de-2026-736719576",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-1c80f6ff08",
+    "data": "06/10/2026",
+    "categoria": "Jurídico e PAD",
+    "titulo": "Edital PROGEDEP/UFT nº 53, de 5 de Outubro de 2026",
+    "resumo": "23101.004083/2024-59, que concluiu pela necessidade de ressarcimento a acertos financeiros em razão de demissão de 2026 A PRÓ-REITORA DE GESTÃO E DESENVOLVIMENTO DE PESSOAS DA UNIVERSIDADE FEDERAL DO ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/edital-progedep/uft-n-53-de-5-de-outubro-de-2026-736749394",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-a4ecde07b7",
+    "data": "06/10/2026",
+    "categoria": "Jurídico e PAD",
+    "titulo": "PORTARIA MPS N° 1.431, DE 5 DE OUTUBRO DE 2026",
+    "resumo": "no Processo Administrativo Disciplinar nº 10128.028832/2025-74, resolve: Art. 1º Aplicar a pena de demissão que lhe confere o inciso IV do parágrafo único do art. 87 da Constituição Federal, e consoan",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-mps-n-1.431-de-5-de-outubro-de-2026-736752635",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-2bb6ad84a9",
+    "data": "06/10/2026",
+    "categoria": "Jurídico e PAD",
+    "titulo": "PORTARIA DE PESSOAL UFSM Nº 2.316, DE 29 DE SETEMBRO DE 2026 (*)",
+    "resumo": "23081.052864/2023-54 e conforme o que consta no PEN nº 23081.130373/2026-02, resolve: APLICAR A PENA DE DEMISSÃOPORTARIA DE PESSOAL UFSM Nº 2.316, DE 29 DE SETEMBRO DE 2026 (*) A REITORA DA UNIVERSIDA",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-de-pessoal-ufsm-n-2.316-de-29-de-setembro-de-2026-*-736773841",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-b2d254ea10",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA MTE Nº 1.786, DE 5 DE OUTUBRO DE 2026",
+    "resumo": "de 1990, e as demais informações que constam do Processo nº 13621.215880/2026-07, resolve: Art. 1º Exonerar ... , a pedido, FABIOLA BARBOSA MARTINS CASTRO, matrícula nº 1741331, do cargo de Agente Adm",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-mte-n-1.786-de-5-de-outubro-de-2026-736697423",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-1b90882e5b",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIAS DE 5 DE OUTUBRO DE 2026",
+    "resumo": "dezembro de 2021, publicada no Diário Oficial da União de 17 de dezembro de 2021, resolve: Nº 10.896 - Exonerar ... , a pedido, a partir de 10/09/2026, nos termos do inciso I do artigo 33, da Lei nº 8",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portarias-de-5-de-outubro-de-2026-736712500",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-c71d1f0fbb",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA STJ/GP Nº 815, DE 1º DE OUTUBRO DE 2026",
+    "resumo": "1990, resolve: Art. 1º Efetuar as seguintes alterações no Gabinete da Ministra Isabel Gallotti: I - Exonerar ... , a pedido, VALNÊIDES MATTOS FERREIRA DE REZENDE, matrícula S036743, do cargo em comiss",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-stj/gp-n-815-de-1-de-outubro-de-2026-736751768",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-00dbf6c7f5",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA IFRJ Nº 3.464, DE 5 DE OUTUBRO DE 2026",
+    "resumo": "regimentais, e tendo em vista os autos do processo eletrônico n° 23270.003390/2026-32, resolve: Art. 1º Exonerar ... a pedido, de acordo com o disposto no Artigo 34, caput, da Lei n°. 8.112/90, a part",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-ifrj-n-3.464-de-5-de-outubro-de-2026-736753581",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-33580974d0",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIAS DE 1º DE OUTUBRO DE 2026",
+    "resumo": "Geográficas e Estatísticas, classe B, padrão II, do quadro permanente desta Fundação, por motivo de exoneração ... a pedido do(a) servidor(a) GUILHERME LINHEIRA, CPF nº XXX.862.599-XX, matrícula nº 18",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portarias-de-1-de-outubro-de-2026-736759613",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-24cb0e42da",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA DG Nº 242, DE 5 DE OUTUBRO DE 2026",
+    "resumo": "setembro de 2026, com fundamento no art. 33, da Lei nº 8.112, de 11 de dezembro de 1990, por motivo de exoneração ... a pedido, o cargo de Especialista em Regulação de Serviços de Transportes Terrestr",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-dg-n-242-de-5-de-outubro-de-2026-736770916",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-864b7df60c",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIAS DE 5 DE OUTUBRO DE 2026",
+    "resumo": "tendo em vista o disposto no art. 4º do Decreto nº 9.794, de 14 de maio de 2019, resolve: Nº 1.071 -EXONERAR ... , a pedido, JOSÉ LUÍZ SÁ DE CASTRO LIMA do cargo de Assessor Especial de ex-Presidente ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portarias-de-5-de-outubro-de-2026-736772312",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-e204d7c710",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA Nº 6.486/REIT/IFRO, DE 1º DE OUTUBRO DE 2026",
+    "resumo": "2015, e posteriores, considerando o que consta no Processo nº 23243.016171/2023-06, resolve: Art. 1º Exonerar ... , a pedido, o servidor COLLIEN RODRIGO DE OLIVEIRA NERY, ocupante do cargo de Programa",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-6.486/reit/ifro-de-1-de-outubro-de-2026-736776375",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-b4759c4e0d",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIAS DE 1º DE OUTUBRO DE 2026",
+    "resumo": "Nº 10.799 - Exonerar, a pedido, a partir de 01/10/2026, nos termos do inciso I do artigo 33, da Lei nºPORTARIAS DE 1º DE OUTUBRO DE 2026 A PRÓ-REITORA DE PESSOAL - PR4, no uso da competência delegada ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portarias-de-1-de-outubro-de-2026-736778646",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-f6aee769ef",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA DE PESSOAL Nº 766/GR/UFFS/2026, DE 5 DE OUTUBRO DE 2026",
+    "resumo": "ONDE SE LÊ: \"Art. 1º CONCEDER vacância por exoneração, a pedido, por motivo de desistência durante o ... LEIA-SE: \"Art. 1º CONCEDER vacância por exoneração, a pedido, por motivo de desistência durante",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-de-pessoal-n-766/gr/uffs/2026-de-5-de-outubro-de-2026-736786787",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-f1c7d87ee7",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA DE PESSOAL MDA N° 1.244, DE 5 DE OUTUBRO DE 2026",
+    "resumo": "nº 12.971, de 13 de maio de 2026, e o que consta no Processo SEI nº 55000.011898/2025-08, resolve: EXONERAR ... , a pedido, a partir de 29 de setembro de 2026, TATIANE ALMEIDA DE VASCONCELOS, do Cargo",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-de-pessoal-mda-n-1.244-de-5-de-outubro-de-2026-736787445",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-98b55f2e0c",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "Portaria Nº 199, DE 2 DE OUTUBRO DE 2026",
+    "resumo": "suas atribuições e tendo em vista o art. 35, II, da Lei n.º 8.112, de 11 de dezembro de 1990, resolve: Exonerar ... , a pedido, a contar de 28 de setembro de 2026, o servidor BRENO PINHEIRO FRANCO DE ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-n-199-de-2-de-outubro-de-2026-736791970",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-a6d5bf7b59",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA IFMG Nº 5.434, DE 5 DE OUTUBRO DE 2026",
+    "resumo": ", Seção 2, pág. 20, considerando o que consta no Processo nº 23213.002792/2026-02, resolve: Art. 1º Exonerar ... , a pedido, a servidora TALITA VALADARES, ocupante do cargo de Pedagogo-Area, SIAPE nº ",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-ifmg-n-5.434-de-5-de-outubro-de-2026-736793204",
+    "status_curadoria": "Pendente"
+  },
+  {
+    "id": "dou-b9efe9a7ac",
+    "data": "06/10/2026",
+    "categoria": "Carreira e Conquistas",
+    "titulo": "PORTARIA DEC/C Ex, Nº 206 DE 5 DE OUTUBRO DE 2026",
+    "resumo": "2017 e dentro da cota de vagas previstas na Portaria nº 345-DGP, de 15 de dezembro de 2021, resolve: EXONERAR ... a pedido, o 2º Sgt R/1 (Idt 113.828.254-4), VOLNEY DA CRUZ SANTOS, Prec CP 96 196.210-",
+    "fonte": "Diário Oficial da União (DO2)",
+    "url_original": "https://www.in.gov.br/web/dou/-/portaria-dec/c-ex-n-206-de-5-de-outubro-de-2026-736798377",
+    "status_curadoria": "Pendente"
+  },
+  {
     "id": "dou-d02357b9da",
     "data": "02/10/2026",
     "categoria": "Carreira e Conquistas",
