@@ -25197,3 +25197,157 @@
 [2026-11-13 01:44:10]   Resultados: 0
 [2026-11-13 01:44:13] === Radar concluído. 0 novos editais adicionados. Total: 427. ===
 [2026-11-13 01:44:13] Revise os editais com status "Em Analise" e altere para "Inscrições Abertas" apos verificacao manual.
+[2026-11-13 19:20:28] === Iniciando mineracao de histórias ===
+[2026-11-13 19:20:28] Registros existentes no JSON / Historico: 309
+[2026-11-13 19:20:28] Buscando: [Cultura Pop e Gastronomia] ...
+[2026-11-13 19:20:28] [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:28]   Resultados retornados: 0
+[2026-11-13 19:20:31] Buscando: [Artes e Literatura] ...
+[2026-11-13 19:20:31] [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:31]   Resultados retornados: 0
+[2026-11-13 19:20:33] Buscando: [Esportes e Aventura] ...
+[2026-11-13 19:20:33] [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:33]   Resultados retornados: 0
+[2026-11-13 19:20:36] Buscando: [Ciência e Tecnologia] ...
+[2026-11-13 19:20:36] [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:36]   Resultados retornados: 0
+[2026-11-13 19:20:38] Buscando: [Ciência e Tecnologia] ...
+[2026-11-13 19:20:38] [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:38]   Resultados retornados: 0
+[2026-11-13 19:20:41] Buscando: [Solidariedade e Comunidade] ...
+[2026-11-13 19:20:41] [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:41]   Resultados retornados: 0
+[2026-11-13 19:20:44] Buscando: [Histórias e Superação] ...
+[2026-11-13 19:20:44] [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:44]   Resultados retornados: 0
+[2026-11-13 19:20:46] Buscando: [Carreira e Conquistas] ...
+[2026-11-13 19:20:46] [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:46]   Resultados retornados: 0
+[2026-11-13 19:20:49] Buscando: [Carreira e Conquistas] ...
+[2026-11-13 19:20:49] [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:49]   Resultados retornados: 0
+[2026-11-13 19:20:51] === Mineracao concluida. 0 novos rascunhos salvos em pre_curadoria/. ===
+[2026-11-13 19:20:51] Utilize scripts/promover_materia.py para aprovar e publicar as materias.
+[2026-11-13 19:20:52] === Iniciando minerador de Protagonistas ("Vida Além do Trabalho") ===
+[2026-11-13 19:20:52] Base anti-duplicidade: 3918 URLs, 3768 slugs, 3918 títulos.
+[2026-11-13 19:20:52] Buscando eixo humano: [Literatura e Artes] ...
+[2026-11-13 19:20:52]   [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:52] Buscando eixo humano: [Literatura e Artes] ...
+[2026-11-13 19:20:52]   [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:52] Buscando eixo humano: [Esportes e Desafios] ...
+[2026-11-13 19:20:52]   [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:52] Buscando eixo humano: [Esportes e Desafios] ...
+[2026-11-13 19:20:52]   [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:52] Buscando eixo humano: [Entretenimento e Cultura Pop] ...
+[2026-11-13 19:20:52]   [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:52] Buscando eixo humano: [Entretenimento e Cultura Pop] ...
+[2026-11-13 19:20:52]   [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:52] Buscando eixo humano: [Voluntariado e Causa Social] ...
+[2026-11-13 19:20:52]   [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:52] Buscando eixo humano: [Voluntariado e Causa Social] ...
+[2026-11-13 19:20:52]   [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:52] Buscando eixo humano: [Trajetoria e Superacao] ...
+[2026-11-13 19:20:53]   [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:53] Buscando eixo humano: [Trajetoria e Superacao] ...
+[2026-11-13 19:20:53]   [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:53] Buscando eixo humano: [Virais e Inusitados] ...
+[2026-11-13 19:20:53]   [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:20:53] === Mineração Concluída: 0 novas matérias, 0 duplicatas bloqueadas, 0 burocracias expurgadas. ===
+[2026-11-13 19:20:53] === Iniciando Robô de Movimentação Funcional (Portal Publicoverso + DOU Oficial Direct) ===
+[2026-11-13 19:20:53] URLs de movimentação no historico: 3784
+[2026-11-13 19:20:53] --- [CAMADA 1] Minerando atos oficiais diretamente do in.gov.br (DOU) ---
+[2026-11-13 19:20:53] Buscando DOU Nativo: [Exoneração a Pedido (DOU)] ("exonerar a pedido")...
+[2026-11-13 19:20:55]   Encontrados 14 atos no DOU hoje.
+[2026-11-13 19:20:55]   [ATO DOU REGISTRADO] PORTARIA RE/IFRN Nº 3.012, DE 12 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:20:55]   [ATO DOU REGISTRADO] PORTARIA Nº 2.749, DE 11 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:20:55]   [ATO DOU REGISTRADO] PORTARIAS DE 12 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:20:55]   [ATO DOU REGISTRADO] PORTARIA DE PESSOAL IFAC Nº 1.989, DE 12 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:20:55]   [ATO DOU REGISTRADO] PORTARIA CROGO N° 82, DE 3 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:20:55]   [ATO DOU REGISTRADO] PORTARIA Nº 1.807 REI/IFPB, de 12 de novembro de 2026... (13/11/2026)
+[2026-11-13 19:20:55]   [ATO DOU REGISTRADO] PORTARIA Nº 2.659/IFFLU, DE 12 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:20:55]   [ATO DOU REGISTRADO] PORTARIA DE PESSOAL GM/MS Nº 953, DE 12 DE novembro DE 2026... (13/11/2026)
+[2026-11-13 19:20:55]   [ATO DOU REGISTRADO] PORTARIAS R/SRH DE 9 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:20:56]   [ATO DOU REGISTRADO] PORTARIA SEXEC/MCTI Nº 717, DE 12 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:20:56]   [ATO DOU REGISTRADO] Portaria UFPR nº 1.153, de 28 de Outubro de 2026... (13/11/2026)
+[2026-11-13 19:20:56]   [ATO DOU REGISTRADO] PORTARIA SEXEC/MCTI Nº 718, DE 6 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:20:56]   [ATO DOU REGISTRADO] PORTARIA Nº 1.800, DE 12 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:20:56]   [ATO DOU REGISTRADO] PORTARIA Nº 433, de 12 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:20:58] Buscando DOU Nativo: [Demissão a Bem do Serviço Público (DOU)] ("demissão")...
+[2026-11-13 19:21:01]   Encontrados 4 atos no DOU hoje.
+[2026-11-13 19:21:02]   [ATO DOU REGISTRADO] EDITAL Nº 13/2026... (13/11/2026)
+[2026-11-13 19:21:02]   [ATO DOU REGISTRADO] EDITAL Nº 14/2026... (13/11/2026)
+[2026-11-13 19:21:02]   [ATO DOU REGISTRADO] PORTARIA Nº 1.509, DE 11 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:02]   [ATO DOU REGISTRADO] PORTARIAS DE 10 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:04] Buscando DOU Nativo: [Portaria de Nomeação (DOU)] ("nomear")...
+[2026-11-13 19:21:07]   Encontrados 20 atos no DOU hoje.
+[2026-11-13 19:21:07]   [ATO DOU REGISTRADO] DECRETO Nº 13.165, DE 12 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:07]   [ATO DOU REGISTRADO] EDITAL Nº 1.090/2026-TCU/SEPROC, DE 11 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:07]   [ATO DOU REGISTRADO] EDITAL Nº 1.091/2026-TCU/SEPROC, DE 11 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:07]   [ATO DOU REGISTRADO] EDITAL Nº 16/2026... (13/11/2026)
+[2026-11-13 19:21:07]   [ATO DOU REGISTRADO] EDITAL Nº 52/2026/CCV/UFC, DE 11 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:07]   [ATO DOU REGISTRADO] EDITAL, DE 10 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:07]   [ATO DOU REGISTRADO] EDITAL... (13/11/2026)
+[2026-11-13 19:21:07]   [ATO DOU REGISTRADO] EDITAL MINC Nº 19, DE 12 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:07]   [ATO DOU REGISTRADO] EDITAL Nº 1.103/2026-TCU/SEPROC, DE 12 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:07]   [ATO DOU REGISTRADO] EDITAL DE NOTIFICAÇÃO... (13/11/2026)
+[2026-11-13 19:21:07]   [ATO DOU REGISTRADO] EDITAL DE CONVOCAÇÃO... (13/11/2026)
+[2026-11-13 19:21:07]   [ATO DOU REGISTRADO] EDITAL... (13/11/2026)
+[2026-11-13 19:21:08]   [ATO DOU REGISTRADO] EDITAL/COANA Nº 4, DE 11 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:08]   [ATO DOU REGISTRADO] EXTRATO DE TERMO ADITIVO... (13/11/2026)
+[2026-11-13 19:21:08]   [ATO DOU REGISTRADO] EDITAL Nº 1.092/2026-TCU/SEPROC, DE 11 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:08]   [ATO DOU REGISTRADO] EDITAL DE CONVOCAÇÃO... (13/11/2026)
+[2026-11-13 19:21:08]   [ATO DOU REGISTRADO] RESULTADO DE CHAMADA PÚBLICA IPEA/PIPA Nº 32/2026... (13/11/2026)
+[2026-11-13 19:21:08]   [ATO DOU REGISTRADO] aviso de adjudicação e homologação... (13/11/2026)
+[2026-11-13 19:21:08]   [ATO DOU REGISTRADO] edital DE PROGEP Nº 83/2026... (13/11/2026)
+[2026-11-13 19:21:08]   [ATO DOU REGISTRADO] EDITAL Nº 1.089/2026-TCU/SEPROC, DE 11 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:11] Buscando DOU Nativo: [Vacância de Cargo (DOU)] ("conceder vacância")...
+[2026-11-13 19:21:12]   Encontrados 1 atos no DOU hoje.
+[2026-11-13 19:21:12]   [ATO DOU REGISTRADO] PORTARIA DAP Nº 2.083, DE 9 de novembro de 2026... (13/11/2026)
+[2026-11-13 19:21:15] Buscando DOU Nativo: [Aposentadoria Voluntária (DOU)] ("conceder aposentadoria")...
+[2026-11-13 19:21:17]   Encontrados 8 atos no DOU hoje.
+[2026-11-13 19:21:17]   [ATO DOU REGISTRADO] PORTARIA PROGEP/UFR Nº 520, DE 11 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:17]   [ATO DOU REGISTRADO] PORTARIA DE PESSOAL Nº 1.145, DE 12 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:17]   [ATO DOU REGISTRADO] PORTARIAS DE 12 de NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:17]   [ATO DOU REGISTRADO] PORTARIA MS/INC/RJ Nº 431, DE 3 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:17]   [ATO DOU REGISTRADO] PORTARIA Nº 182, DE 12 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:18]   [ATO DOU REGISTRADO] PORTARIA Nº 6.094/IFMG, DE 10 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:18]   [ATO DOU REGISTRADO] PORTARIA DE PESSOAL Nº 1.144, DE 12 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:18]   [ATO DOU REGISTRADO] DECRETO DE 12 DE NOVEMBRO DE 2026... (13/11/2026)
+[2026-11-13 19:21:20] --- [CAMADA 2] Minerando notícias e imprensa funcional via Serper News ---
+[2026-11-13 19:21:20] Buscando imprensa funcional: [Posse e Nomeação] ...
+[2026-11-13 19:21:20]   [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:21:20] Buscando imprensa funcional: [Posse e Nomeação] ...
+[2026-11-13 19:21:20]   [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:21:20] Buscando imprensa funcional: [Aposentadoria e Legado] ...
+[2026-11-13 19:21:20]   [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:21:20] Buscando imprensa funcional: [Demissão a Bem do Serviço Público e PAD] ...
+[2026-11-13 19:21:21]   [ERRO] Serper API: 400 Client Error: Bad Request for url: https://google.serper.dev/news
+[2026-11-13 19:21:21] === Robô de Movimentação Funcional concluído. 47 novos registros adicionados. ===
+[2026-11-13 19:21:21] === Iniciando Radar de Concursos ===
+[2026-11-13 19:21:21] Editais existentes no radar: 427
+[2026-11-13 19:21:21] Buscando concursos: "inscrições abertas" ("concurso público" OR "processo seletivo") ("fed...
+[2026-11-13 19:21:21] [ERRO] Serper (concursos): 400 Client Error: Bad Request for url: https://google.serper.dev/search
+[2026-11-13 19:21:21]   Resultados: 0
+[2026-11-13 19:21:23] Buscando concursos: "edital publicado" "concurso público" ("DOU" OR "Diário Oficial") "vag...
+[2026-11-13 19:21:23] [ERRO] Serper (concursos): 400 Client Error: Bad Request for url: https://google.serper.dev/search
+[2026-11-13 19:21:23]   Resultados: 0
+[2026-11-13 19:21:26] Buscando concursos: site:cebraspe.org.br "inscrições" 2026...
+[2026-11-13 19:21:26] [ERRO] Serper (concursos): 400 Client Error: Bad Request for url: https://google.serper.dev/search
+[2026-11-13 19:21:26]   Resultados: 0
+[2026-11-13 19:21:28] Buscando concursos: site:conhecimento.fgv.br "concurso" "inscrições" 2026...
+[2026-11-13 19:21:29] [ERRO] Serper (concursos): 400 Client Error: Bad Request for url: https://google.serper.dev/search
+[2026-11-13 19:21:29]   Resultados: 0
+[2026-11-13 19:21:31] Buscando concursos: site:institutoaocp.org.br "edital" "inscrições abertas" 2026...
+[2026-11-13 19:21:31] [ERRO] Serper (concursos): 400 Client Error: Bad Request for url: https://google.serper.dev/search
+[2026-11-13 19:21:31]   Resultados: 0
+[2026-11-13 19:21:34] Buscando concursos: "concurso público" ("Receita Federal" OR "Banco Central" OR "Senado" O...
+[2026-11-13 19:21:34] [ERRO] Serper (concursos): 400 Client Error: Bad Request for url: https://google.serper.dev/search
+[2026-11-13 19:21:34]   Resultados: 0
+[2026-11-13 19:21:36] Buscando concursos: "concurso público" ("policial federal" OR "agente federal" OR "delegad...
+[2026-11-13 19:21:36] [ERRO] Serper (concursos): 400 Client Error: Bad Request for url: https://google.serper.dev/search
+[2026-11-13 19:21:36]   Resultados: 0
+[2026-11-13 19:21:39] Buscando concursos: "concurso público" ("Anatel" OR "ANAC" OR "ANVISA" OR "IBGE" OR "IPEA"...
+[2026-11-13 19:21:39] [ERRO] Serper (concursos): 400 Client Error: Bad Request for url: https://google.serper.dev/search
+[2026-11-13 19:21:39]   Resultados: 0
+[2026-11-13 19:21:41] === Radar concluído. 0 novos editais adicionados. Total: 427. ===
+[2026-11-13 19:21:42] Revise os editais com status "Em Analise" e altere para "Inscrições Abertas" apos verificacao manual.
